@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BrineBench dataset validator (standalone: numpy/pandas only).
+"""GasBrineBench dataset validator (standalone: numpy/pandas only).
 
 Run from the repo root:  python tools/validate.py
 Exit code 0 = all checks pass. Used as PR CI.

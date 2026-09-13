@@ -1,4 +1,4 @@
-# Contributing data to BrineBench
+# Contributing data to GasBrineBench
 
 Contributions land as pull requests that add rows to the family
 csvs under `data/` (or a new family csv following `SCHEMA.md`).

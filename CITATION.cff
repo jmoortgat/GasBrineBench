@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "BrineBench: a benchmark dataset of experimental gas-brine thermodynamic data"
+title: "GasBrineBench: a benchmark dataset of experimental gas-brine thermodynamic data"
 message: "Pre-release; citation details (Zenodo DOI, data descriptor) will be added at v1.0."
 type: dataset
 authors:

@@ -1,4 +1,4 @@
-# BrineBench
+# GasBrineBench
 
 A curated, community-extensible benchmark dataset of experimental
 thermodynamic data for **gas–brine systems**: gas solubility, brine

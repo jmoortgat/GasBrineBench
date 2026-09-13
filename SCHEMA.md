@@ -1,4 +1,4 @@
-# BrineBench row schema
+# GasBrineBench row schema
 
 One csv per property family (`data/<family>.csv`), all sharing the
 columns below. Encoding UTF-8, comma-separated, one header row.
