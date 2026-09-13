@@ -42,6 +42,24 @@ in preparation.**
 4. **Quality is auditable.** All corrections, deduplications, and
    quality-code decisions live in `LEDGER.md` with reasons.
 
+## Sources
+
+`SOURCES.md` is the source manifest: for every source contributing data it
+records the bibliographic reference, DOI, resolvable URL, the property
+families and row counts it contributes, the gas/salt/T/P/molality ranges it
+covers, and its quality-code mix. `SOURCES.bib` holds the machine-readable
+records.
+
+The manifest exists so that the primary literature never has to be
+redistributed to make this dataset reproducible: a reader can walk it, obtain
+each paper through their own library, and rebuild the database from primary
+sources.
+
+Both files are **generated** by `tools/make_sources.py`, which reads the CSVs
+directly — so the coverage figures cannot drift away from the data. Re-run it
+after any change and commit the diff. It never invents a citation: sources
+without a bibliographic record are listed by name under *Needs citation*.
+
 ## Contributing
 
 Contributions of additional experimental data — new sources for
