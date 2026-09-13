@@ -1,0 +1,29 @@
+# Keep this list narrow: the dataset csvs under data/ MUST stay tracked.
+# Only editor/OS/interpreter junk and local scratch belongs here.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS / editors
+.DS_Store
+*.swp
+*~
+*.bak
+
+# Local scratch (never the curated data/ csvs)
+scratch/
+tmp/
+*.log
