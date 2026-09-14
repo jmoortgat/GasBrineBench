@@ -16,13 +16,13 @@ WHY THIS EXISTS
 `Multi_Salt/source_materials/` is a 2.9 GB read-only trove handed over by
 collaborators. Almost none of it belongs in version control:
 
-  884 MB  433 publisher PDFs                 copyrighted, must never be committed
+  884 MB  433 .pdf                           not redistributable
   1.0 GB  10,839 .png                        regenerable plot output
   696 MB  3,990 .dat                         solver sweeps / warm-start tables
   228 MB  1,889 .txt  <-- but only 251 KB of these are hand work
    54 MB  a vendored third-party venv        .so/.pyc/.whl
-  310 KB  25 .tex                            collaborators' unpublished drafts
-  6.4 KB  emails/email_copies.txt            private correspondence
+  310 KB  25 .tex                            not redistributable
+  6.4 KB  private correspondence             not redistributable
 
 The irreplaceable part is the set of files named `EXP*.txt`: hand-typed
 digitisations of experimental tables out of the primary literature. Each one

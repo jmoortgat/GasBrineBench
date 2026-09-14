@@ -6,9 +6,9 @@ the second line: it looks at what is actually tracked, so a file forced in with
 `git add -f`, or inherited from an earlier commit, still gets caught before the
 push.
 
-The repository is public and is developed alongside publisher PDFs,
-unpublished collaborator manuscripts and reviewer correspondence. None of that
-may ever appear here, whatever the ignore rules happen to say on the day.
+The repository is public and is developed alongside material that may not be
+redistributed. None of that may ever appear here, whatever the ignore rules
+happen to say on the day.
 """
 from __future__ import annotations
 

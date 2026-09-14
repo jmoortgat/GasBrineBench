@@ -81,13 +81,13 @@ most of it could not lawfully be published at all:
 
 | excluded | size | reason |
 |---|---:|---|
-| 433 publisher PDFs | 884 MB | copyright — never redistributable |
+| 433 `.pdf` | 884 MB | not redistributable |
 | 10,839 `.png` | 1.0 GB | plot output, regenerable |
 | 3,990 `.dat` | 696 MB | solver sweeps and warm-start tables, regenerable |
 | the other 1,070 `.txt` (`OPT*/`, `TXT/`, `GUESS_*`) | 228 MB | solver output, regenerable |
 | a vendored third-party `venv/` | 54 MB | not ours to ship |
-| 25 `.tex` under `papers/` and `reports/` | 310 KB | collaborators' unpublished manuscripts |
-| `emails/email_copies.txt` | 6 KB | private correspondence |
+| 25 `.tex` | 310 KB | not redistributable |
+| private correspondence | 6 KB | not redistributable |
 
 The repository's `.gitignore` is deny-by-default precisely so that none of
 that can arrive here by accident: nothing is trackable unless it is named in

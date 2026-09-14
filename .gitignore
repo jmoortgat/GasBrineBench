@@ -1,11 +1,10 @@
 # GasBrineBench -- DENY BY DEFAULT.
 #
 # This repository is public, and it is developed inside a working tree that
-# also holds 884 MB of publisher PDFs, unpublished collaborator manuscripts,
-# reviewer correspondence and .tex sources. None of that may ever be
-# committed. A conventional ignore list cannot guarantee that: it enumerates
-# what to exclude, so anything nobody thought of gets committed by the next
-# `git add -A`.
+# also holds material which may not be redistributed. None of that may ever
+# be committed. A conventional ignore list cannot guarantee that: it
+# enumerates what to exclude, so anything nobody thought of gets committed by
+# the next `git add -A`.
 #
 # So nothing here is trackable unless it is named below. Adding a new kind of
 # file to this repository is a deliberate act that has to be written into this
