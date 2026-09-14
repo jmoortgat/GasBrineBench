@@ -45,6 +45,151 @@ whose heavy phase is a liquid (mutual solubility, not gas solubility) and the
 rather than a phase-equilibrium property. `SCHEMA.md` and `data/QUALITY.md`
 Sec. 7 explain both.
 
+## Using it from Python
+
+The `gasbrinebench` package in this repository reads, filters and exports the
+CSVs. It needs **pandas and nothing else**; there is nothing to install and
+nothing to build — clone the repository and import it.
+
+```python
+import gasbrinebench as gbb
+
+df = gbb.load()                    # every family, as one DataFrame
+co2 = gbb.load("solubility", gas="co2", T=(373, 425), quality="R")
+gbb.write(co2, "co2.parquet")
+```
+
+`notebooks/gasbrinebench_tour.ipynb` is an executed tour of both the package
+and the data — coverage, salting-out trends, isotherms, water content, brine
+density, the quality-code mix — and it runs from a fresh clone.
+
+### Loading
+
+| call | does |
+|---|---|
+| `gbb.load(family="all", **filters)` | read one family, several, or all; returns a DataFrame |
+| `gbb.load_family(name)` | one family's CSV verbatim, no filtering, no derived columns |
+| `gbb.available_families()`, `gbb.data_dir()` | what is on disk, and where |
+
+`load()` applies the two conventions a hand-rolled `read_csv` gets wrong: it
+reads with `keep_default_na=False`, so the legitimately empty `gas` cell of a
+brine-only row stays an empty string, and then coerces the numeric columns, so
+the genuinely blank cells (`P_bar` on the `psat_ratio` rows, `uncertainty`
+where the source stated none) become `NaN` rather than `''`.
+
+**`load()` excludes the 144 `lle-regime` rows by default.** Those propane
+points are liquid–liquid mutual solubilities, not gas solubilities
+(`data/QUALITY.md` Sec. 7); scoring them as the latter is a category error.
+Pass `exclude_tags=None` for all 5,846 rows.
+
+The data directory is found beside the package, or from the working directory
+upward, or from `$GASBRINEBENCH_DATA`.
+
+### Filtering
+
+`gbb.select(df, ...)` — every argument optional, all of them ANDed.
+`gbb.load()` forwards the same keywords, so one call usually does.
+
+| argument | selects |
+|---|---|
+| `gas=` | `'co2'`, `['ch4', 'h2']`, …; `''` for the brine-only rows |
+| `family=`, `property=` | property family, or specific `property` values |
+| `source=`, `dataset_id=` | a named source or dataset block |
+| `quality=` | `'R'` / `'T'` / `'U'` |
+| `tag=`, `exclude_tags=` | the fit/test partition |
+| `T=(lo, hi)`, `P=(lo, hi)` | inclusive windows [K], [bar]; `None` leaves a side open |
+| `ionic_strength=`, `total_molality=` | inclusive windows [mol/kg water] |
+| `salt_system=` | `'water'` / `'single-salt'` / `'mixed-salt'`, or a label like `'Na-Cl'` |
+| `ions=`, `ions_exactly=` | rows containing these ions, or exactly these |
+| `salt_free=` | `True` for the binaries, `False` for the brines |
+
+A value outside the vocabulary **raises**, naming the valid set, rather than
+returning an empty frame.
+
+### Derived quantities
+
+Not stored in the CSVs, because they follow from what is:
+
+| call | returns |
+|---|---|
+| `gbb.ionic_strength(df)` | ½ Σ mᵢzᵢ² [mol/kg water] |
+| `gbb.total_molality(df)` | Σ mᵢ [mol/kg water] |
+| `gbb.charge_imbalance(df)` | Σ mᵢzᵢ [eq/kg]; ≤ 2 × 10⁻³ across the database, from rounded printed molalities |
+| `gbb.salt_system(df)`, `gbb.salt_system_kind(df)`, `gbb.ions_present(df)` | ion-set label, single/mixed classification, ion tuple |
+| `gbb.with_derived(df)` | all of the above as columns (`load()` does this for you) |
+| `gbb.solubility_pairs(df)` | one row per solubility point with both mole-fraction siblings |
+
+`solubility_pairs()` is the one worth knowing about. `data/solubility.csv`
+stores a solubility twice where the source reported both conventions —
+`solubility_molality` and `xc_saltfree` as separate rows at the same state.
+It joins them, recomputes the salt-free fraction so the gaps are filled, and
+adds the **salt-inclusive** fraction with the ions counted as species. That
+last one is derived and not measured: nobody reports it, many models expect
+it, and doing the conversion here makes the convention explicit.
+
+### Inventory
+
+`gbb.inventory(df, by=...)`, `gbb.coverage(df)`, `gbb.sources(df)` — rows,
+distinct sources, gases, T/P range and R/T/U mix for any selection; the
+(gas × salt system) rectangle, holes included; and one row per contributing
+source.
+
+### Export
+
+`gbb.write(df, path)` picks the format from the suffix — `.csv`,
+`.parquet`/`.pq`, `.h5`/`.hdf5`/`.hdf` — or pass `fmt=`. `gbb.to_pandas(df)`
+keeps it in memory.
+
+**CSV needs nothing beyond pandas. Parquet needs `pyarrow`, HDF5 needs
+`tables`, and if either is absent you get a `MissingDependencyError` naming
+that one package and the command that installs it** — checked before pandas
+is reached, so a missing backend never arrives disguised as an engine
+resolution failure or an `AttributeError` from inside `to_hdf`.
+`gbb.export.have('parquet')` asks in advance.
+
+### From the shell
+
+```
+python3 -m gasbrinebench                     # inventory by family
+python3 -m gasbrinebench --by gas            # inventory by gas
+python3 -m gasbrinebench --gas co2 --quality R -o co2.csv
+python3 -m gasbrinebench --family solubility -o solubility.parquet
+```
+
+### Speciation codes: PHREEQC, Geochemist's Workbench
+
+**No native exporter is provided, deliberately.** The brine half of a row maps
+onto a PHREEQC `SOLUTION` block cleanly, and `gasbrinebench/interop.py`
+tabulates that mapping — `m_Na → Na`, `m_SO4 → S(6)`, `temp = T_K − 273.15`
+(°C), `pressure = P_bar / 1.01325` (atm), `units mol/kgw`, `-water 1.0`.
+
+The other half does not map. Reproducing one of these measurements requires
+the gas-phase boundary condition — a fugacity — and the database stores the
+**total** pressure, as the sources report it. Converting one to the other
+needs a water-content model and an equation of state, which are exactly the
+modelling steps a gas-solubility benchmark exists to test. An exporter would
+have to choose both, bake the choice into the file, and hand you a number that
+looks like data; any later disagreement between the code and the measurement
+would be partly an artefact of the converter's own assumptions, with nothing
+in the file to say so. Two smaller obstacles point the same way: PHREEQC needs
+a pH that these experiments do not report, and the databases covering this
+pressure range have stated validity limits well inside 0.1–3,500 bar.
+
+For Geochemist's Workbench not even the mapping is asserted: its input-script
+specification was not consulted, and writing a file format down from memory is
+the same mistake in a different costume.
+
+### Tests
+
+```
+python3 -m pytest tests -q                       # the package
+python3 -m pytest --doctest-modules gasbrinebench -q   # the examples above
+```
+
+Both run in CI on two dependency sets — pandas alone, and pandas with both
+export backends — so the missing-backend path is exercised rather than
+skipped.
+
 ## The provenance chain
 
 Every number in this repository can be walked back to the page it was printed
@@ -99,8 +244,8 @@ exactly which rows were skipped and why. Read them; don't expect to run them.
 The same is true of `tools/extract_transcriptions.py`, which selected
 `transcriptions/` out of a private trove.
 
-What *does* run against this repository alone is `tools/validate.py` and
-`tools/make_sources.py`.
+What *does* run against this repository alone is the `gasbrinebench` package,
+`tools/validate.py` and `tools/make_sources.py`.
 
 ## Reproducing the generated files
 

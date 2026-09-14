@@ -16,6 +16,7 @@ message: >-
   this repository for the compilation. Pre-release: a Zenodo version DOI and
   a data-descriptor reference will be added at v1.0.
 type: dataset
+version: 0.9.0-pre
 authors:
   - family-names: Moortgat
     given-names: Joachim

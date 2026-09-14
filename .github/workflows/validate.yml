@@ -23,3 +23,34 @@ jobs:
 
       - name: nothing outside the allowlist is tracked
         run: python3 tools/check_tracked.py
+
+  package:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 'minimal' is the honest floor: pandas alone, no export backends.
+        # The export tests assert that Parquet and HDF5 then fail by naming
+        # the missing package, so that path is covered rather than skipped.
+        deps: [minimal, full]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+
+      - name: install (pandas only)
+        if: matrix.deps == 'minimal'
+        run: pip install pandas pytest
+
+      - name: install (with optional export backends)
+        if: matrix.deps == 'full'
+        run: pip install pandas pytest pyarrow tables
+
+      - name: package tests
+        run: python3 -m pytest tests -q
+
+      - name: package doctests
+        run: python3 -m pytest --doctest-modules gasbrinebench -q
+
+      - name: command-line front end runs
+        run: python3 -m gasbrinebench --by gas

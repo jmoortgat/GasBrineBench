@@ -36,6 +36,7 @@ BANNED_DIRS = {
 #: directories whose contents are enumerated exactly
 ALLOWED_TOP = {
     "data", "bib", "tools", "transcriptions", ".github",
+    "gasbrinebench", "tests", "notebooks",
 }
 
 #: files permitted at the repository root

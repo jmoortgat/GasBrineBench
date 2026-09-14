@@ -1,6 +1,42 @@
 # Changelog
 
-## Unreleased (pre-v1.0)
+## Unreleased (pre-v1.0), version `0.9.0-pre`
+
+### A Python package and a tour notebook
+
+The repository shipped CSVs and provenance and no way to use them
+programmatically. It now ships both.
+
+- **`gasbrinebench/`** — importable from the repository root, pandas the only
+  requirement. A loader that reads any family or all of them with the
+  `keep_default_na=False` convention applied and the numeric columns coerced
+  back to floats; `select()` filtering by gas, family, property, source,
+  quality code, tag, salt system (single/mixed, or by ions present), and
+  windows on T, P, ionic strength and total molality; derived ionic strength,
+  total molality, charge imbalance and salt-system labels; `solubility_pairs()`
+  joining the molality and mole-fraction sibling rows and adding the
+  salt-inclusive basis; inventory tables; and export to pandas, CSV, Parquet
+  and HDF5. **The default loader excludes the 144 `lle-regime` rows**, for the
+  reason `data/QUALITY.md` Sec. 7 gives.
+- **Optional dependencies fail by name.** Parquet needs `pyarrow` and HDF5
+  needs `tables`; if either is absent the package raises a
+  `MissingDependencyError` naming the package and the install command, before
+  pandas is reached. CSV never needs anything.
+- **`python3 -m gasbrinebench`** — inventory of the database, or a filtered
+  export, from the shell.
+- **`notebooks/gasbrinebench_tour.ipynb`** — executed, outputs committed, runs
+  from a fresh clone. Coverage, salting-out trends, isotherms, water content,
+  brine density, the quality-code mix, and the inter-laboratory spread shown
+  as shaded envelopes.
+- **`tests/`** — pytest suite over the package and the vocabularies, plus the
+  package doctests. Wired into `.github/workflows/validate.yml`.
+- **No PHREEQC or Geochemist's Workbench exporter**, deliberately: the brine
+  composition maps cleanly but the gas-phase boundary condition does not,
+  because the database stores total pressure and a speciation code needs a
+  fugacity. `gasbrinebench/interop.py` documents the column mapping and the
+  reasoning.
+- `CITATION.cff` gained a `version:` field, which `gasbrinebench.__version__`
+  and `tests/test_version.py` hold it to.
 
 ### The database is now in the repository
 

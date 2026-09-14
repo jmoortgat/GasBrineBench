@@ -62,6 +62,17 @@
 !/transcriptions/**/EXP*.txt
 
 # ---------------------------------------------------------------------------
+# The reader package, its tests, and the tour notebook. The notebook is
+# committed with its outputs, so it carries base64 figures inside the .ipynb;
+# that is the one place image bytes are allowed, and only there -- loose
+# image files stay blocked by the extension rules below.
+# ---------------------------------------------------------------------------
+!/gasbrinebench/*.py
+!/tests/*.py
+!/notebooks/*.ipynb
+!/notebooks/README.md
+
+# ---------------------------------------------------------------------------
 # Belt and braces. These come last, so they override every re-admission above:
 # no rule added later can let one of them in by accident.
 # ---------------------------------------------------------------------------

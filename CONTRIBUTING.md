@@ -27,6 +27,16 @@ csvs under `data/` (or a new family csv following `SCHEMA.md`).
    gas/gas-free column convention, sibling-row consistency, same-source
    duplicate collisions against existing rows, the quality and tag
    vocabularies, and that every `source` cell resolves to a real record.
+7. A passing package run: `python3 -m pytest tests -q` and
+   `python3 -m pytest --doctest-modules gasbrinebench -q`, both also in CI.
+   The tests assert the row inventory and several per-family counts, so a PR
+   that adds rows will need those expectations updated in the same commit —
+   that is deliberate, it makes a silent row change impossible.
+
+If your contribution is to the `gasbrinebench` package rather than to the
+data, keep the vocabularies in `gasbrinebench/vocab.py` in step with
+`SCHEMA.md` and `tools/validate.py`, and add a test. Docstring examples are
+run as doctests, so they have to be true.
 
 ## What maintainers do
 
