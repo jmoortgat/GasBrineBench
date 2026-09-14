@@ -26,6 +26,15 @@ of the .bib files it was given is reported, by name, in a "needs citation"
 section. A record that is itself marked as a placeholder is reported in a
 "placeholder citation" section. Neither is quietly filled in.
 
+It does carry one small table of hand-checked corrections, SOURCE_KEY_FIXES,
+for raw `source` cells that demonstrably do not name the paper the rows came
+from -- a misspelt or truncated surname, a missing year, a year belonging to a
+thesis rather than to the published article. Every one of those was settled by
+reading the primary paper and checking the rows' own T, P, salt and composition
+grid against its tables, and every one is printed with its evidence in a
+"Source-key corrections" section so it can be audited. A defect that could not
+be settled that way is left alone and stays in "needs citation".
+
 USAGE
 -----
     python3 tools/make_sources.py                       # write SOURCES.md + SOURCES.bib
@@ -109,6 +118,125 @@ _YEAR_RE = re.compile(r"(?P<name>[A-Za-z][A-Za-z'\- ]*)"
                       r"(?P<post>[a-z]{1,3})?")
 
 
+# --------------------------------------------------------------------------
+# demonstrably defective raw `source` values
+# --------------------------------------------------------------------------
+#
+# A handful of raw `source` cells do not name the paper the rows were
+# transcribed from: a surname is misspelt or truncated, a year is missing, or
+# the year belongs to a thesis/preprint rather than to the published article
+# the numbers were read out of. Left alone they either resolve to nothing or,
+# worse, look ambiguous between two real papers by the same author.
+#
+# These are NOT normalisation rules and NOT guesses. Each entry was settled by
+# reading the primary PDF held locally and checking the rows' own temperature,
+# pressure, salt and composition grid against the paper's tables; the evidence
+# is reproduced verbatim in the "Source-key corrections" section of SOURCES.md
+# so a reader can audit every one of them. A defect that could not be settled
+# this way is deliberately absent here and stays in "Needs citation" instead.
+#
+# The corrections live here rather than in the CSVs because the CSVs are
+# themselves generated -- their `source` column is copied from upstream
+# Multi_Salt curation artefacts -- so an edit applied to the CSV would be
+# silently undone by the next rebuild, and two of the raw strings are asserted
+# verbatim by the benchmark's own test suite.
+
+SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
+    "TAKENOUCHI": ("TAKENOUCHI(1964)",
+                   "no year in the key. The 108 rows are y_H2O for CO2 + pure "
+                   "water over 383-623 K and 100-1500 bar, which is the range "
+                   "of Takenouchi & Kennedy's *binary* H2O-CO2 paper (110-350 "
+                   "degC, to 1600 bar); the 1965 paper of the same authors is "
+                   "NaCl brine, and no row here carries salt."),
+    "TAKENOUSHI(1965)": ("TAKENOUCHI(1965)",
+                         "surname misspelt. The 36 rows are CO2 in NaCl at 423 "
+                         "K, 100-1200 bar, at total ion molalities 2.18 and "
+                         "8.54 -- i.e. 1.09 and 4.27 mol/kg NaCl, exactly the "
+                         "6 and 20 wt% solutions of Takenouchi & Kennedy "
+                         "(1965)."),
+    "TODHEIDE": ("TODHEIDE(1963)",
+                 "no year in the key. The 103 rows are y_H2O for CO2 + pure "
+                 "water to 3500 bar, which is the title range of Toedheide & "
+                 "Franck (1963); it is the only Toedheide paper in the trove."),
+    "HOU": ("HOU(2013)",
+            "no year in the key, and two Hou 2013 papers are on record. The 32 "
+            "rows are y_H2O for CO2 + *pure water* over 298-448 K, which is "
+            "the title range of the binary CO2+H2O paper (Hou2013); the other "
+            "(Hou2013b) is NaCl and KCl brine, already keyed separately in the "
+            "same file as HOU(2013b)."),
+    "BAMBERGE": ("BAMBERGER(2000)",
+                 "surname truncated and no year. The 29 rows are y_H2O for CO2 "
+                 "+ pure water over 323-353 K and 41-141 bar; Bamberger, "
+                 "Sieder & Maurer (2000) report CO2 + water from 313 to 353 K "
+                 "and 1 to 14 MPa."),
+    "POULANI_2019": ("POULAIN(2019)",
+                     "surname misspelt (Poulani for Poulain). The 96 rows are "
+                     "CO2 in Na-Ca-K-Cl mixed brines, 323-423 K, to 199 bar, "
+                     "which is Poulain et al. (2019) -- 48 new solubility "
+                     "points in two synthetic Na-Ca-K-Cl brines to 20 MPa."),
+    "KAMP(2007)": ("KAMPS(2007)",
+                   "surname truncated (the author is Perez-Salado Kamps). The "
+                   "26 rows are CO2 in KCl at 373 K and 6-90 bar, at 2 and 4 "
+                   "mol/kg KCl, from the KCl series of Perez-Salado Kamps, "
+                   "Meyer, Rumpf & Maurer (2007)."),
+    "OSULLIVAN(1969)": ("OSULLIVAN(1970)",
+                        "wrong year: these 32 CH4-in-NaCl rows and the 102 "
+                        "rows already keyed OSULLIVAN(1970) are the *same* "
+                        "paper. O'Sullivan & Smith (1970) measured nitrogen "
+                        "AND methane in water and in aqueous NaCl from 50 to "
+                        "125 degC and 100 to 600 atm; the rows under both keys "
+                        "sit inside that single grid."),
+    "PRAY(1957)": ("PRAY(1952)",
+                   "wrong year. The 18 rows sit on the exact pressure grid of "
+                   "Pray, Schweickert & Minnich (1952) Table II -- 100/200/300 "
+                   "psi at 500 and 600 degF and 200/300/350 psi at 125 degF -- "
+                   "and the transcribed mole fractions reproduce that table's "
+                   "cm3(STP)/g values to three figures (0.39 cm3/g at 500 degF "
+                   "and 100 psi -> x = 3.1e-4, transcribed 3.09e-4)."),
+    "JUNG(1968)": ("JUNG(1971)",
+                   "the published article is 1971. The 76 rows are H2 in pure "
+                   "water over 373-573 K and 21-100 bar, which is exactly the "
+                   "range of Jung, Knacke & Neuschuetz (1971) (to 300 degC and "
+                   "100 atm); 1968 is the Aachen dissertation year, and no "
+                   "1968 document exists in the trove."),
+    "DOHRN": ("DOHRN(1993)",
+              "no year in the key, and two Dohrn papers are on record. The "
+              "curated transcription these 3 rows came from carries the header "
+              "`#DOHRN (1993) -> Experimental measurements of phase equilibria "
+              "for ternary and quaternary systems of glucose, water, CO2 and "
+              "ethanol with a novel apparatus`, and the rows are y_H2O for CO2 "
+              "+ water at 323 K; Dohrn1986 is a hydrogen/water/hydrocarbon "
+              "paper and is keyed separately as DOHRN(1986) in solubility.csv."),
+    "GUO(2015)": ("GUO(2016)",
+                  "the key carries the ASAP year. Guo, Huang, Chen & Zhou's "
+                  "Raman CO2-in-NaCl paper went online in December 2015 but "
+                  "was assigned to J. Chem. Eng. Data 61(1), 466-474 (2016); "
+                  "the 24 rows -- 373 K, 100-400 bar, 1/3/5 mol/kg NaCl -- are "
+                  "on its 10/20/30/40 MPa grid."),
+    "FROST(2013)": ("FROST(2014)",
+                    "the key carries the ASAP year. Frost, Karakatsani, von "
+                    "Solms, Richon & Kontogeorgis appeared online in December "
+                    "2013 but was assigned to J. Chem. Eng. Data 59(4), "
+                    "961-967 (2014); the 21 rows span 283-323 K and 47.8-194.9 "
+                    "bar, inside that paper's 5-20 MPa methane + water set."),
+    "BLANCO(1977)": ("BLANCO(1978)",
+                     "wrong year. Blanco & Smith's high-pressure methane in "
+                     "aqueous CaCl2 paper is J. Phys. Chem. 82(2), 186-191 "
+                     "(1978); the 30 rows are CH4 in 1 mol/kg CaCl2 over "
+                     "298-398 K and 101-608 bar, which is that paper's grid."),
+    "TORIN(2022)": ("TORIN(2021)",
+                    "wrong year. The paper -- Torin-Ollarves & Trusler, H2 in "
+                    "NaCl brine, 323-423 K to 40 MPa at 2.5 mol/kg, matching "
+                    "these 20 rows -- is Fluid Phase Equilibria 539 (2021) "
+                    "113025; its own PDF metadata carries the 2021 volume."),
+}
+
+
+def apply_source_key_fix(raw: str) -> str:
+    """Rewrite a demonstrably defective raw `source` value; else return it."""
+    return SOURCE_KEY_FIXES.get(raw, (raw, ""))[0]
+
+
 def _split_trailing_suffix(name: str) -> tuple[str, str]:
     """Split `ZHAOb` into ('ZHAO', 'b') but leave `Hou`, `Chabab`, `dosSantos` alone.
 
@@ -148,7 +276,12 @@ def display_key(surname: str, year: str | None, suffix: str) -> str:
 # bibtex
 # --------------------------------------------------------------------------
 
-_BIB_KEY_RE = re.compile(r"^([A-Za-z][A-Za-z'\-]*?)(\d{4})([a-z]?)$")
+# A bibtex key's trailing lowercase run is its disambiguating variant. It is
+# not always a single letter -- `Mohammadi2004eth` distinguishes the ethane
+# paper from `Mohammadi2004` -- and while this only allowed one letter, such
+# keys fell out of the exact index entirely and had to be rescued by the
+# looser (surname, year) lookup below, which cannot tell the two apart.
+_BIB_KEY_RE = re.compile(r"^([A-Za-z][A-Za-z'\-]*?)(\d{4})([a-z]{0,3})$")
 
 
 def parse_bib(path: str) -> list[dict]:
@@ -283,10 +416,22 @@ def index_bib(entries: list[dict]) -> dict:
     return {"exact": by_exact, "name_year": by_name_year, "name": by_name}
 
 
-def _same_variant(entry: dict, cid: str, year: str) -> bool:
-    """True if the bib key carries no letter-variant the source key lacks."""
+def _same_variant(entry: dict, cid: str, year: str, suffix: str) -> bool:
+    """True if the bib record carries exactly the letter-variant the source does.
+
+    The test has to run both ways. `bk.endswith(year)` alone said yes whenever
+    the *record* had no variant, so source key MOHAMMADI(2004eth) happily
+    claimed the plain `Mohammadi2004` record -- a different paper by the same
+    authors in the same year. A variant on either side that the other lacks is
+    a mismatch, and a mismatch is reported rather than asserted.
+    """
     bk = re.sub(r"[^A-Za-z0-9]", "", entry["key"]).upper()
-    return bk == cid or bk.endswith(year)
+    if bk == cid:
+        return True
+    m = re.match(r"^([A-Z]+)(\d{4})([A-Z]*)$", bk)
+    if not m:
+        return False
+    return m.group(2) == year and m.group(3) == suffix.upper()
 
 
 def match_bib(surname, year, suffix, idx) -> tuple[dict | None, str, list[str]]:
@@ -298,7 +443,7 @@ def match_bib(surname, year, suffix, idx) -> tuple[dict | None, str, list[str]]:
     if year:
         e = idx["name_year"].get((surname, year))
         if e:
-            if _same_variant(e, cid, year):
+            if _same_variant(e, cid, year, suffix):
                 return e, "key", []
             # The only record for this surname and year is a *variant* of it --
             # e.g. source MOHAMMADI(2004) against bib key Mohammadi2004eth.
@@ -309,7 +454,7 @@ def match_bib(surname, year, suffix, idx) -> tuple[dict | None, str, list[str]]:
         for cut in range(len(surname) - 2, 2, -1):
             e = idx["name_year"].get((surname[:cut], year))
             if e:
-                if _same_variant(e, cid, year):
+                if _same_variant(e, cid, year, suffix):
                     return e, "first author", []
                 return None, "variant mismatch", [e["key"]]
     else:
@@ -358,9 +503,12 @@ def format_reference(entry: dict) -> str:
 
 
 def _detex(s: str) -> str:
-    # accents first: {\"o} -> o, \'{e} -> e, {\v s} -> s
+    # \ce{...} must go before the accent pass, which would otherwise read the
+    # \c of \ce as a cedilla and leave a stray "e" glued to the formula --
+    # that is where the manifest's old "eCO2" and "eSrCl2" came from.
+    s = re.sub(r"\\ce\{([^{}]*)\}", r"\1", s)
+    # accents: {\"o} -> o, \'{e} -> e, {\v s} -> s
     s = re.sub(r"\{?\\[`'\"^~=.vHruc]\s*\{?([A-Za-z])\}?\}?", r"\1", s)
-    s = re.sub(r"\\ce\{([^}]*)\}", r"\1", s)
     s = re.sub(r"\\[a-zA-Z]+\{([^}]*)\}", r"\1", s)
     s = s.replace("{", "").replace("}", "").replace("\\&", "&").replace("\\", "")
     s = s.replace("~", " ")
@@ -411,8 +559,9 @@ def _num(s):
         return None
 
 
-def collect(data_dir: str) -> tuple[dict, list[str]]:
+def collect(data_dir: str) -> tuple[dict, list[str], Counter]:
     stats: dict[str, SourceStats] = {}
+    fixes_used: Counter = Counter()
     files = []
     for path in sorted(glob.glob(os.path.join(data_dir, "*.csv"))):
         if any(path.endswith(sfx) for sfx in SKIP_CSV_SUFFIXES):
@@ -426,7 +575,10 @@ def collect(data_dir: str) -> tuple[dict, list[str]]:
                 raw = (row.get("source") or "").strip()
                 if not raw:
                     continue
-                surname, year, suffix = parse_source_key(raw)
+                if raw in SOURCE_KEY_FIXES:
+                    fixes_used[raw] += 1
+                surname, year, suffix = parse_source_key(
+                    apply_source_key_fix(raw))
                 cid = canonical_id(surname, year, suffix)
                 st = stats.get(cid)
                 if st is None:
@@ -451,7 +603,7 @@ def collect(data_dir: str) -> tuple[dict, list[str]]:
                         total += v
                 st.m.append(total)
                 st.salts.add(salt_label(present))
-    return stats, files
+    return stats, files, fixes_used
 
 
 def salt_label(present: set) -> str:
@@ -486,7 +638,8 @@ def _show(path: str) -> str:
     return rel if not rel.startswith(os.sep) else path
 
 
-def render(stats, files, data_dir, bib_paths, missing_bibs, idx) -> tuple[str, list[dict]]:
+def render(stats, files, data_dir, bib_paths, missing_bibs, idx,
+           fixes_used=None) -> tuple[str, list[dict]]:
     documented, no_doi, placeholder, needs = [], [], [], []
     matched_entries = []
 
@@ -571,6 +724,15 @@ def render(stats, files, data_dir, bib_paths, missing_bibs, idx) -> tuple[str, l
       f"{rows_ph:,} placeholder, {rows_need:,} undocumented "
       f"({100.0 * (rows_ok + rows_nodoi) / total_rows:.1f} % of rows carry a real reference).")
     w("")
+    if no_doi:
+        w("The reference-only entries are shown below with *none on record* in")
+        w("the DOI column. That is not a lookup we skipped: each was searched")
+        w("for and no DOI exists. They are doctoral theses, association and")
+        w("agency research reports, and papers in journals that were never")
+        w("retrospectively registered. Where a stable locator exists instead --")
+        w("a repository handle, a report archive -- it is given in the URL")
+        w("column.")
+        w("")
     w("Bibliographic records were read from:")
     for p in bib_paths:
         w(f"- `{_show(p)}`")
@@ -614,6 +776,29 @@ def render(stats, files, data_dir, bib_paths, missing_bibs, idx) -> tuple[str, l
         w(f"| `{key}` | {fams} | {gases} | {salts} | {rng(st.T)} | "
           f"{rng(st.P)} | {rng(st.m)} | {q} |")
     w("")
+
+    # ---- source-key corrections -------------------------------------------
+    if fixes_used:
+        w("## Source-key corrections")
+        w("")
+        w("The `source` cell of these rows does not name the paper they were")
+        w("transcribed from: a surname is misspelt or truncated, a year is")
+        w("missing, or the year belongs to a thesis rather than to the")
+        w("published article the numbers were read out of. The generator")
+        w("rewrites them to the identity given below before matching against")
+        w("the bibliography. Nothing here was inferred from the name alone --")
+        w("each was settled by reading the primary paper held locally and")
+        w("checking it against the rows' own T, P, salt and composition grid,")
+        w("and the reasoning is given in full so it can be audited. The raw")
+        w("cell is left untouched in the CSVs and is still what you would grep")
+        w("for; it is reproduced verbatim in the first column.")
+        w("")
+        w("| Raw `source` in the data | Rows | Read as | Why |")
+        w("|---|---:|---|---|")
+        for raw, n in sorted(fixes_used.items(), key=lambda t: (-t[1], t[0])):
+            fixed, why = SOURCE_KEY_FIXES[raw]
+            w(f"| `{raw}` | {n} | `{fixed}` | {why} |")
+        w("")
 
     # ---- placeholders -----------------------------------------------------
     if placeholder:
@@ -714,12 +899,13 @@ def main() -> int:
     entries = dedupe_bib(entries)
     idx = index_bib(entries)
 
-    stats, files = collect(args.data_dir)
+    stats, files, fixes_used = collect(args.data_dir)
     if not stats:
         print(f"error: no source-bearing CSVs in {args.data_dir}", file=sys.stderr)
         return 2
 
-    md, matched = render(stats, files, args.data_dir, found, missing, idx)
+    md, matched = render(stats, files, args.data_dir, found, missing, idx,
+                         fixes_used)
 
     if args.stdout:
         sys.stdout.write(md)

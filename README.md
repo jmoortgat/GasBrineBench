@@ -60,6 +60,15 @@ directly — so the coverage figures cannot drift away from the data. Re-run it
 after any change and commit the diff. It never invents a citation: sources
 without a bibliographic record are listed by name under *Needs citation*.
 
+All 5,846 rows now resolve to a real published source. Six of those works
+have no DOI because none was ever issued — two doctoral theses, two research
+reports, and two papers in journals that were never retrospectively
+registered — and the manifest says so rather than supplying a plausible
+substitute. A short *Source-key corrections* table records the handful of
+`source` cells that name their paper wrongly (a misspelt surname, a missing
+year, an online-first year) together with the evidence that settled each one,
+so every rewrite can be checked against the primary paper.
+
 ## Contributing
 
 Contributions of additional experimental data — new sources for
