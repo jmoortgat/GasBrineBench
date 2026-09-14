@@ -42,7 +42,7 @@ Both mole-fraction siblings of a solubility, joined onto one row:
 
 What a selection contains:
 
->>> gbb.inventory(df, by='gas').loc['h2', 'rows']
+>>> int(gbb.inventory(df, by='gas').loc['h2', 'rows'])
 437
 
 Export. CSV always works; Parquet and HDF5 raise

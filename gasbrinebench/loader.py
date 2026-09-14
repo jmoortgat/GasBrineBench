@@ -182,7 +182,7 @@ def load(
     --------
     >>> import gasbrinebench as gbb
     >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
-    >>> co2['source'].nunique()
+    >>> int(co2['source'].nunique())
     32
     >>> everything = gbb.load(exclude_tags=None)
     >>> len(everything)
