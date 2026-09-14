@@ -1,0 +1,4 @@
+#TONG(2013)
+P [bar]    ms [mol/kg]    xc_W [SALTfree]    Na    Cl    K    Ca    Mg    SO4
+10.7	MIX	0.0032	0.910	1.053	0.143	0   0	0
+43.5	MIX	0.0106	0.910	1.053	0.143	0   0	0

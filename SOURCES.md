@@ -13,7 +13,7 @@ redistributing a single copyrighted page.
 > script and commit the diff. It is generated precisely so that the
 > coverage figures below cannot drift away from what the CSVs say.
 
-Generated 2026-09-13 from `../EoS_Benchmark/code/bench/data`
+Generated 2026-09-14 from `data`
 
 - data files read: 7 (`dh_sol.csv`, `eps_r.csv`, `phi_osm.csv`, `psat_ratio.csv`, `rho.csv`, `solubility.csv`, `y_h2o.csv`)
 - rows: 5,846
@@ -34,10 +34,7 @@ a repository handle, a report archive -- it is given in the URL
 column.
 
 Bibliographic records were read from:
-- `../EoS_Benchmark/paper/references.bib`
-- `../Multi_Salt/papers/multisalt/refs.bib`
-- `../Multi_Salt/papers/multisalt/paper_IV/refs.bib`
-- `../Multi_Salt/papers/multisalt/two_papers/part_II_threephase/refs.bib`
+- `bib/references.bib`
 
 The manifest is split into two tables keyed on the same citation key:
 a bibliography, and a coverage table. Eleven columns in one table is not

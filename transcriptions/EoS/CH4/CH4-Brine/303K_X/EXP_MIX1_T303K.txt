@@ -1,0 +1,4 @@
+#DUFFY(1961)
+P [bar]    ms [mol/kg]    xc_W [SALTincl]    Na    Cl    K    Ca    Mg    SO4
+25.4	MIX	0.000116	1.5	8.3	3.4	0	0	0
+51.9	MIX	0.000232	1.5	8.3	3.4	0	0	0

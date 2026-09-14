@@ -1,29 +1,143 @@
-# Keep this list narrow: the dataset csvs under data/ MUST stay tracked.
-# Only editor/OS/interpreter junk and local scratch belongs here.
+# GasBrineBench -- DENY BY DEFAULT.
+#
+# This repository is public, and it is developed inside a working tree that
+# also holds 884 MB of publisher PDFs, unpublished collaborator manuscripts,
+# reviewer correspondence and .tex sources. None of that may ever be
+# committed. A conventional ignore list cannot guarantee that: it enumerates
+# what to exclude, so anything nobody thought of gets committed by the next
+# `git add -A`.
+#
+# So nothing here is trackable unless it is named below. Adding a new kind of
+# file to this repository is a deliberate act that has to be written into this
+# file first.
+#
+# To check the allowlist after editing:
+#     git add -A --dry-run          # must list only intended files
+#     git status --short            # must be clean after a commit
+#     git check-ignore -v <path>    # shows which rule decided a given path
 
-# Python
+*
+
+# Let git descend into directories at all; the rules below decide the files.
+!*/
+
+# ---------------------------------------------------------------------------
+# Documentation and repository metadata (root only)
+# ---------------------------------------------------------------------------
+!/README.md
+!/SCHEMA.md
+!/LEDGER.md
+!/CHANGELOG.md
+!/CONTRIBUTING.md
+!/LICENSE
+!/CITATION.cff
+!/SOURCES.md
+!/SOURCES.bib
+!/.gitignore
+!/.github/workflows/*.yml
+
+# ---------------------------------------------------------------------------
+# The database and its documentation
+# ---------------------------------------------------------------------------
+!/data/*.csv
+!/data/README.md
+!/data/QUALITY.md
+
+# The hand-maintained bibliographic library that SOURCES.* is generated from.
+!/bib/references.bib
+
+# ---------------------------------------------------------------------------
+# Code: the validator, the manifest generator, and the build scripts kept as
+# provenance documentation.
+# ---------------------------------------------------------------------------
+!/tools/*.py
+!/tools/builders/*.py
+!/tools/builders/README.md
+
+# ---------------------------------------------------------------------------
+# The raw hand transcriptions. Only files named EXP*.txt, only under
+# transcriptions/.
+# ---------------------------------------------------------------------------
+!/transcriptions/README.md
+!/transcriptions/MANIFEST.tsv
+!/transcriptions/**/EXP*.txt
+
+# ---------------------------------------------------------------------------
+# Belt and braces. These come last, so they override every re-admission above:
+# no rule added later can let one of them in by accident.
+# ---------------------------------------------------------------------------
+
+# Directory names that only ever appear in the non-redistributable trove.
+source_materials/
+source_data/
+papers/
+paper/
+manuscript*/
+drafts/
+reviews/
+correspondence/
+emails/
+
+# Solver-output trees in the source trove. Their files are named EXP*.txt too,
+# so the transcriptions allowlist above would otherwise admit them; the
+# extraction rule excludes them for the same reason (see
+# tools/extract_transcriptions.py).
+OPT*/
+TXT/
+
+# Publisher content, manuscripts, and private correspondence.
+*.pdf
+*.ps
+*.eps
+*.djvu
+*.tex
+*.bbl
+*.doc
+*.docx
+*.odt
+*.rtf
+*.pptx
+*.eml
+*.mbox
+
+# Bulk and binary artefacts: regenerable, and nothing here should be large.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.parquet
+*.dat
+*.npz
+*.npy
+*.mat
+*.sav
+*.h5
+*.zip
+*.tar
+*.gz
+*.7z
+*.so
+*.dylib
+*.dll
+*.a
+*.exe
+*.whl
+*.pyc
+
+# Interpreter, editor and OS droppings.
 __pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
-build/
-dist/
-
-# Environments
 .venv/
 venv/
 env/
 .env
-
-# OS / editors
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
 .DS_Store
 *.swp
 *~
 *.bak
-
-# Local scratch (never the curated data/ csvs)
-scratch/
-tmp/
 *.log

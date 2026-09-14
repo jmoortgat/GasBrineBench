@@ -10,5 +10,16 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: pip install pandas numpy
-      - run: python tools/validate.py
+      - run: pip install pandas
+
+      - name: schema, ranges, citations
+        run: python3 tools/validate.py
+
+      - name: SOURCES.md and SOURCES.bib are current
+        run: python3 tools/make_sources.py --check
+
+      - name: transcriptions match their manifest hashes
+        run: python3 tools/check_transcriptions.py
+
+      - name: nothing outside the allowlist is tracked
+        run: python3 tools/check_tracked.py

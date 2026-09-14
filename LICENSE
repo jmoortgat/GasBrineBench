@@ -1,10 +1,47 @@
-GasBrineBench dual license (pre-release placeholder; finalized at v1.0):
+GasBrineBench dual license (pre-release; finalized at v1.0):
 
-- Data files under data/ and the quality ledger: Creative Commons
-  Attribution 4.0 International (CC-BY-4.0).
-- Code under tools/: MIT License.
+- Data and documentation (data/, transcriptions/, bib/, SOURCES.*, and the
+  ledgers): Creative Commons Attribution 4.0 International (CC-BY-4.0).
+- Code (tools/): MIT License.
 
-Data points are experimental facts from the cited literature; the
-compilation, curation, quality coding, and formatting constitute
-this work. Users must cite the original experimental sources
-(SOURCES.bib) alongside the dataset.
+WHAT IS BEING LICENSED, AND WHAT IS NOT
+
+The numerical values in this repository are experimental measurements made
+and published by the authors cited in SOURCES.md. They are facts about the
+physical world, redistributed here as transcribed data with full attribution
+to those authors. We do not claim ownership of anyone's measurements, and
+users must cite the original experimental sources (SOURCES.bib) alongside
+this dataset.
+
+What the CC-BY-4.0 grant covers is the compilation: the transcription of the
+printed tables, the unit conversions, the uniform schema, the quality coding,
+the deduplication, and the provenance apparatus that ties each row to its
+source.
+
+No publisher PDF, and no part of the text or typography of any cited paper,
+is included in this repository or is redistributable by us. SOURCES.md exists
+so that it does not need to be: it gives a full reference, a DOI and a
+resolvable URL for every source, so that any row can be checked against the
+original obtained through the reader's own library.
+
+MIT License (applies to the code under tools/)
+
+Copyright (c) 2026 Joachim Moortgat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
