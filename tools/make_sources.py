@@ -141,6 +141,19 @@ _YEAR_RE = re.compile(r"(?P<name>[A-Za-z][A-Za-z'\- ]*)"
 # silently undone by the next rebuild, and two of the raw strings are asserted
 # verbatim by the benchmark's own test suite.
 
+# Shared by the two Hou brine tables, which are the same defect twice.
+_HOU_JSCF78 = (
+    "the key names the volume and then resolves to the wrong paper. "
+    "`JSCF78` is J. Supercrit. Fluids volume 78, which is Hou, Maitland & "
+    "Trusler's *brine* paper (Hou2013b); volume 73 is the same group's "
+    "CO2 + H2O binary (Hou2013), and without the `b` these rows were being "
+    "cited as the binary. They are CO2 in 2.5 and 4 mol/kg NaCl and KCl at "
+    "323.15/373.15/423.15 K and 2.6-18.2 MPa -- Tables 2 and 3 of the brine "
+    "paper, the same tables whose gas-phase water content is already keyed "
+    "HOU(2013b) in y_h2o.csv, and the transcription module that carries them "
+    "says as much in its own docstring."
+)
+
 SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
     "TAKENOUCHI": ("TAKENOUCHI(1964)",
                    "no year in the key. The 108 rows are y_H2O for CO2 + pure "
@@ -164,6 +177,8 @@ SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
             "the title range of the binary CO2+H2O paper (Hou2013); the other "
             "(Hou2013b) is NaCl and KCl brine, already keyed separately in the "
             "same file as HOU(2013b)."),
+    "Hou2013_JSCF78_T2": ("HOU(2013b)", _HOU_JSCF78),
+    "Hou2013_JSCF78_T3": ("HOU(2013b)", _HOU_JSCF78),
     "BAMBERGE": ("BAMBERGER(2000)",
                  "surname truncated and no year. The 29 rows are y_H2O for CO2 "
                  "+ pure water over 323-353 K and 41-141 bar; Bamberger, "

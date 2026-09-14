@@ -19,7 +19,7 @@ asserts about where 2,489 rows came from.
   pressure, salt and composition grid. Every DOI was then confirmed
   against a Crossref record whose title, journal, volume and year match
   the paper identified. Nothing was recalled from memory.
-- **Fifteen `source` cells name their paper wrongly** — a misspelt or
+- **Seventeen `source` cells name their paper wrongly** — a misspelt or
   truncated surname, a missing year, an online-first year, or a thesis
   year in place of the published article's. These are rewritten by
   `tools/make_sources.py` before matching, and each rewrite is printed
@@ -28,6 +28,16 @@ asserts about where 2,489 rows came from.
   is copied from upstream curation artefacts and would be restored by the
   next rebuild, and two of the strings are asserted verbatim by the
   benchmark's test suite.
+- **144 CO2-in-brine rows were cited as the wrong Hou paper.** The keys
+  `Hou2013_JSCF78_T2` and `Hou2013_JSCF78_T3` name J. Supercrit. Fluids
+  volume **78** — Hou, Maitland & Trusler's (CO2 + H2O + NaCl/KCl)
+  study — but without the `b` they resolved to the same group's
+  (CO2 + H2O) binary in volume 73. The rows are 2.5 and 4 mol/kg NaCl
+  and KCl at 323.15/373.15/423.15 K: Tables 2 and 3 of the brine paper,
+  whose gas-phase water content was already keyed `HOU(2013b)` in
+  `y_h2o.csv`, and whose transcription module says as much in its own
+  docstring. All 216 rows of that paper now share one citation, and the
+  32 genuinely-binary y_H2O rows keyed `HOU` now point at volume 73.
 - **`OSULLIVAN(1969)` and `OSULLIVAN(1970)` were the same paper** entered
   twice. O'Sullivan & Smith (1970) measured both nitrogen and methane in
   water and in aqueous NaCl over one grid; the 32 methane rows and the
