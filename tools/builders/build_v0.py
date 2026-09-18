@@ -175,6 +175,13 @@ def build_co2_part1():
 
 FIT_T_MIN, FIT_T_MAX = 284.0, 532.0     # phase4_cofit.load_ch4 T_MIN/T_MAX
 
+# Duffy (1961) is inside the fit temperature window but was never a fit
+# target: its 48 rows had the cation molality one column to the left, so the
+# parser rejected every one on charge balance and they reached no parquet
+# until the vectors were corrected on 2026-09-18. Temperature alone would
+# therefore mislabel them fit-eligible.
+NEVER_FITTED_CH4 = "DUFFY(1961)"
+
 
 def build_ch4_part1():
     """533-pt Part-1 CH4 single-salt DB (mh_W is molality already).
@@ -191,15 +198,17 @@ def build_ch4_part1():
     in this database.
     """
     df = pd.read_parquet(MS_CODE / "data" / "ch4_brines.parquet")
-    assert len(df) == 533, len(df)
-    in_fit = df.T_K.between(FIT_T_MIN, FIT_T_MAX)
-    assert int(in_fit.sum()) == 469, int(in_fit.sum())
+    assert len(df) >= 533, len(df)
+    fitted = df.T_K.between(FIT_T_MIN, FIT_T_MAX) & (df.author != NEVER_FITTED_CH4)
+    assert int(fitted.sum()) == 469, int(fitted.sum())
     return [row("ch4_part1", r.author, "ch4", "solubility_molality",
                 r.T_K, r.P_bar,
                 [r.m_Na, r.m_Cl, r.m_K, r.m_Ca, r.m_Mg, r.m_SO4],
                 r.mh_W, quality="T",
                 tag=("fit-eligible"
-                     if FIT_T_MIN <= r.T_K <= FIT_T_MAX else "test-only"))
+                     if (FIT_T_MIN <= r.T_K <= FIT_T_MAX
+                         and r.author != NEVER_FITTED_CH4)
+                     else "test-only"))
             for r in df.itertuples()]
 
 

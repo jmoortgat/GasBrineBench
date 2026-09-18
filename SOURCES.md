@@ -16,14 +16,14 @@ redistributing a single copyrighted page.
 Generated 2026-09-18 from `data`
 
 - data files read: 7 (`dh_sol.csv`, `eps_r.csv`, `phi_osm.csv`, `psat_ratio.csv`, `rho.csv`, `solubility.csv`, `y_h2o.csv`)
-- rows: 11,385
+- rows: 11,433
 - distinct sources: 109
 - fully documented (reference + DOI): **102**
 - reference known, DOI missing: **7**
 - placeholder citation, needs replacing: **0**
 - no bibliographic record at all: **0**
 
-By row count: 10,227 fully documented, 1,158 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
+By row count: 10,275 fully documented, 1,158 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
 
 The reference-only entries are shown below with *none on record* in
 the DOI column. That is not a lookup we skipped: each was searched
@@ -80,6 +80,7 @@ readable; two joined on the key is.
 | `Bamberger2000` | Bamberger et al., High-pressure (vapor+liquid) equilibrium in binary mixtures of (carbon dioxide+water or acetic acid) at temperatures from 313 to 353 K, J. Supercrit. Fluid., **17**(2), 97-110, 2000 | `10.1016/S0896-8446(99)00054-6` | [link](https://doi.org/10.1016/S0896-8446(99)00054-6) |
 | `Carroll1998` | Carroll, John J. et al., The Solubility of Methane in Aqueous Solutions of Monoethanolamine, Diethanolamine and Triethanolamine, The Canadian Journal of Chemical Engineering, **76**(5), 945-951, 1998 | `10.1002/cjce.5450760512` | [link](https://doi.org/10.1002/cjce.5450760512) |
 | `Chabab2020` | Chabab et al., Measurements and predictive models of high-pressure H2 solubility in brine (H2O+NaCl) for underground hydrogen storage application, International Journal of Hydrogen Energy, **45**(56), 32206-32220, 2020 | `10.1016/j.ijhydene.2020.08.192` | [link](https://doi.org/10.1016/j.ijhydene.2020.08.192) |
+| `Duffy1961` | Duffy, J. Regis et al., Solubility of natural gases in aqueous salt solutions I: Liquidus surfaces in the system CH$_4$--H$_2$O--NaCl--CaCl$_2$ at room temperatures and at pressures below 1000 psia, Geochimica et Cosmochimica Acta, **24**, 23-31, 1961 | `10.1016/0016-7037(61)90004-7` | [link](https://doi.org/10.1016/0016-7037(61)90004-7) |
 | `Mohammadi2004eth` | Mohammadi, Amir H. et al., Measurements and Thermodynamic Modeling of Vapor-Liquid Equilibria in Ethane-Water Systems from 274.26 to 343.08 K, Ind. Eng. Chem. Res., **43**(17), 5418-5424, 2004 | `10.1021/ie049747e` | [link](https://doi.org/10.1021/ie049747e) |
 | `Wiebe1934` | Wiebe, R. et al., The Solubility of Hydrogen in Water at 0, 50, 75 and 100 °C from 25 to 1000 Atmospheres, Journal of the American Chemical Society, **56**(1), 76-79, 1934 | `10.1021/ja01316a022` | [link](https://doi.org/10.1021/ja01316a022) |
 | `Jung1971` | Jung, J. et al., Löslichkeit von Kohlenmonoxid und Wasserstoff in Wasser bis 300°C, Chemie Ingenieur Technik, **43**(3), 112-116, 1971 | `10.1002/cite.330430304` | [link](https://doi.org/10.1002/cite.330430304) |
@@ -110,7 +111,6 @@ readable; two joined on the key is.
 | `Yarrison2006` | Yarrison, Matt et al., Measurement and Modeling of the Solubility of Water in Supercritical Methane and Ethane from 310 to 477 K and Pressures from 3.4 to 110 MPa, Industrial & Engineering Chemistry Research, **45**(20), 6770-6777, 2006 | `10.1021/ie0513752` | [link](https://doi.org/10.1021/ie0513752) |
 | `Zhao2015` | Zhao et al., Carbon dioxide solubility in aqueous solutions of sodium chloride at geological conditions: Experimental results at 323.15, 373.15, and 423.15K and 150bar and modeling up to 573.15K and 2000bar, Geochim. Cosmochim. Ac., **149**, 165-189, 2015 | `10.1016/j.gca.2014.11.004` | [link](https://doi.org/10.1016/j.gca.2014.11.004) |
 | `Mohammadi2005` | Mohammadi, Amir H. et al., Water Content Measurement and Modeling in the Nitrogen + Water System, Journal of Chemical & Engineering Data, **50**(2), 541-545, 2005 | `10.1021/je049676q` | [link](https://doi.org/10.1021/je049676q) |
-| `Duffy1961` | Duffy, J. Regis et al., Solubility of natural gases in aqueous salt solutions I: Liquidus surfaces in the system CH$_4$--H$_2$O--NaCl--CaCl$_2$ at room temperatures and at pressures below 1000 psia, Geochimica et Cosmochimica Acta, **24**, 23-31, 1961 | `10.1016/0016-7037(61)90004-7` | [link](https://doi.org/10.1016/0016-7037(61)90004-7) |
 | `Wang2003` | Wang, Lu-Kun et al., Experimental study on the solubility of natural gas components in water with or without hydrate inhibitor, Fluid Phase Equilibria, **207**, 143-154, 2003 | `10.1016/S0378-3812(03)00009-8` | [link](https://doi.org/10.1016/S0378-3812(03)00009-8) |
 | `Blanco1978` | Blanco C., Luis H. et al., The high pressure solubility of methane in aqueous calcium chloride and aqueous tetraethylammonium bromide. Partial molar properties of dissolved methane and nitrogen in relation to water structure, The Journal of Physical Chemistry, **82**(2), 186-191, 1978 | `10.1021/j100491a012` | [link](https://doi.org/10.1021/j100491a012) |
 | `Campos2010` | Campos, C. Eduardo Pereira Siqueira et al., Experimental Measurement and Thermodynamic Modeling for the Solubility of Methane in Water and Hexadecane, Journal of Chemical & Engineering Data, **55**, 2576-2580, 2010 | `10.1021/je9007958` | [link](https://doi.org/10.1021/je9007958) |
@@ -202,6 +202,7 @@ U (uncertain).
 | `Bamberger2000` | xc_saltfree (29), solubility_molality (29), y_h2o (29) | co2 | pure water | 323-353 | 41-141 | 0 | 9/78/0 |
 | `Carroll1998` | xc_saltfree (43), solubility_molality (43) | ch4 | pure water | 298-398 | 1-179.6 | 0 | 12/74/0 |
 | `Chabab2020` | xc_saltfree (42), solubility_molality (42) | co2, h2 | NaCl, pure water | 303-372.78 | 19.884-360.2 | 0-12 | 12/72/0 |
+| `Duffy1961` | solubility_molality (65), xc_saltfree (17) | ch4 | CaCl2, NaCl, pure water | 298-303 | 3.2-74.8 | 0-16.8 | 0/82/0 |
 | `Mohammadi2004eth` | solubility_molality (41), xc_saltfree (41) | c2h6 | pure water | 283.1-343.08 | 3.73-49.52 | 0 | 0/82/0 |
 | `Wiebe1934` | solubility_molality (40), xc_saltfree (40) | h2 | pure water | 273-373 | 25.3-1013.3 | 0 | 8/72/0 |
 | `Jung1971` | solubility_molality (38), xc_saltfree (38) | h2 | pure water | 373-573 | 21-100 | 0 | 2/74/0 |
@@ -233,7 +234,6 @@ U (uncertain).
 | `Yarrison2006` | y_h2o (37) | ch4 | pure water | 311-478 | 34.5-1103.2 | 0 | 5/32/0 |
 | `Zhao2015` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 323-423 | 150 | 2-12 | 20/16/0 |
 | `Mohammadi2005` | y_h2o (35) | n2 | pure water | 282.86-363.08 | 4.25-49.62 | 0 | 0/35/0 |
-| `Duffy1961` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 298-303 | 3.2-51.7 | 0 | 0/34/0 |
 | `Wang2003` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 283-303 | 20-400.3 | 0 | 0/34/0 |
 | `Gillespie1980` | solubility_molality (16), xc_saltfree (16) | h2 | pure water | 311-589 | 3.4-137.9 | 0 | 0/32/0 |
 | `Blanco1978` | solubility_molality (30) | ch4 | CaCl2 | 298-398 | 101.3-607.8 | 3 | 0/30/0 |

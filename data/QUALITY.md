@@ -10,14 +10,14 @@ single-provenance sets it audits but does not touch.
 If `build_v0.py` is rerun, rerun this pass afterwards.
 
 <!-- LEDGER-COUNTS
-solubility_rows_before: 9337
-solubility_rows_after: 9319
+solubility_rows_before: 9385
+solubility_rows_after: 9367
 rows_removed: 18
 rows_ion_fixed: 2
 rows_retagged_fit_eligible: 18
 rows_upgraded_R: 607
 rows_downgraded_U: 12
-combined_parquet_rows: 10381
+combined_parquet_rows: 10429
 -->
 
 ## 1. TONG(2013) ion-vector fix (flagged suspect resolved)
@@ -389,7 +389,7 @@ clusters, so it stays T per the conservative rule.
 
 ## 5. Rebuild
 
-benchmark_v0.parquet rebuilt from the six csvs: 10381
+benchmark_v0.parquet rebuilt from the six csvs: 10429
 rows (pre-quality build: 3411).
 
 ## 6. Water-content family (y_h2o.csv): review-based codes (v0.3)
