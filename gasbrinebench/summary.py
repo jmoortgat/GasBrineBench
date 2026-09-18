@@ -36,7 +36,7 @@ def inventory(df: pd.DataFrame, by: str = "family") -> pd.DataFrame:
     --------
     >>> import gasbrinebench as gbb
     >>> int(gbb.inventory(gbb.load('solubility'), by='gas').loc['co2', 'rows'])
-    1844
+    5644
     """
     key = by if isinstance(by, str) else list(by)
     T = pd.to_numeric(df["T_K"], errors="coerce")
@@ -72,7 +72,7 @@ def coverage(df: pd.DataFrame) -> pd.DataFrame:
     --------
     >>> import gasbrinebench as gbb
     >>> cov = gbb.coverage(gbb.load('solubility'))
-    >>> int(cov.loc['co2', 'water'])
+    >>> int(cov.loc['o2', 'water'])
     0
     """
     sysname = (

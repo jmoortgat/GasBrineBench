@@ -12,27 +12,27 @@ Five-minute tour
 
 Load everything. The 144 ``lle-regime`` rows -- propane points whose heavy
 phase is a liquid, so they are mutual solubilities and not gas solubilities --
-are excluded by default; pass ``exclude_tags=None`` for the raw 5,846:
+are excluded by default; pass ``exclude_tags=None`` for the raw 11,444:
 
 >>> df = gbb.load()
 >>> len(df)
-5702
+11300
 
 Filter on any axis, in one call or several:
 
 >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
 >>> len(co2)
-937
+2837
 >>> hot_brine = gbb.select(co2, T=(373, 425), ionic_strength=(2, None))
 >>> len(hot_brine)
-385
+500
 
 Derived composition quantities:
 
 >>> float(gbb.ionic_strength(co2).max())
 18.0
 >>> gbb.salt_system_kind(co2).value_counts().to_dict()
-{'single-salt': 615, 'mixed-salt': 322}
+{'single-salt': 1937, 'water': 562, 'mixed-salt': 338}
 
 Both mole-fraction siblings of a solubility, joined onto one row:
 

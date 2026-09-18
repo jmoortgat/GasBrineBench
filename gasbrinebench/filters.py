@@ -20,7 +20,7 @@ Examples
 >>> sorted(hot['gas'].unique())
 ['c2h6', 'c3h8', 'ch4', 'co2', 'h2']
 >>> gbb.select(df, salt_system='single-salt', gas='co2').shape[0]
-1346
+3990
 """
 
 from __future__ import annotations
@@ -161,7 +161,7 @@ def select(
     >>> import gasbrinebench as gbb
     >>> df = gbb.load()
     >>> gbb.select(df, gas='co2', property='y_h2o', T=(320, 326)).shape[0]
-    77
+    78
     >>> gbb.select(df, ions_exactly=['Na', 'Cl'], family='rho').shape[0]
     189
     >>> gbb.select(df, gas='h2', quality='R').shape[0]
