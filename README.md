@@ -13,10 +13,11 @@ depending on who curated which data.
 **11,444 rows · 109 published sources · 7 gases · 6 ions · 273–633 K ·
 0.1–3,500 bar.**
 
-**Status: the database is complete and in the repository; the v1.0 release is
-in preparation.** Until it is tagged and archived there is no version DOI to
-cite, so cite the original experimental sources (see *Citation* below) and
-expect the schema to be stable but the row set to grow.
+**Status: released.** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22834146.svg)](https://doi.org/10.5281/zenodo.22834146)
+v1.0.0, archived on Zenodo. Cite the original experimental sources for the
+numbers (see *Citation* below) and the version DOI above for the compilation.
+The schema is stable; the row set will grow, and each release gets its own
+version DOI so a result always names the snapshot it used.
 
 ## What is here
 
@@ -337,8 +338,16 @@ data points are handled via GitHub issues.
 
 Cite **the original experimental sources** for the numbers you use —
 `SOURCES.md` and `SOURCES.bib` give the full reference and DOI for each — and
-cite this repository for the compilation. Zenodo DOI and data-descriptor
-paper to be added at the v1.0 release; see `CITATION.cff`.
+cite this repository for the compilation:
+
+> Moortgat, J. (2026). *GasBrineBench: a benchmark dataset of experimental
+> gas–brine thermodynamic data* (v1.0.0) [Data set]. Zenodo.
+> https://doi.org/10.5281/zenodo.22834146
+
+Use the **version** DOI above, not the concept DOI
+(`10.5281/zenodo.22834145`), which always resolves to the newest release. A
+benchmark number is only reproducible if the citation names the snapshot it
+was computed against. Machine-readable metadata is in `CITATION.cff`.
 
 ## Licensing, and what is deliberately absent
 

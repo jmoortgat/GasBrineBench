@@ -2,6 +2,11 @@
 
 ## v1.0.0 — 2026-09-18
 
+Archived on Zenodo: [10.5281/zenodo.22834146](https://doi.org/10.5281/zenodo.22834146)
+(version DOI, pinned to this row set). The concept DOI
+`10.5281/zenodo.22834145` always resolves to the newest release; cite the
+version DOI, so a result names the snapshot it was computed against.
+
 ### Data corrections
 
 The database arrived at 5,846 rows from 82 sources and is released at 11,444

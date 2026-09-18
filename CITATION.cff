@@ -13,10 +13,26 @@ abstract: >-
 message: >-
   The numerical values are measurements published by the authors cited in
   SOURCES.md; please cite those primary sources for the data you use, and
-  this repository for the compilation. A Zenodo version DOI and a
-  data-descriptor reference will be added here once deposited.
+  this repository for the compilation. Cite the version DOI below, not the
+  concept DOI: a benchmark result is only reproducible if it names the
+  snapshot it was computed against. A data-descriptor reference will be
+  added here if one is published.
 type: dataset
 version: 1.0.0
+date-released: 2026-09-18
+doi: 10.5281/zenodo.22834146
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22834146
+    description: >-
+      Version DOI for v1.0.0. Cite this one; it is pinned to the 11,444-row
+      snapshot and will not move.
+  - type: doi
+    value: 10.5281/zenodo.22834145
+    description: >-
+      Concept DOI. Always resolves to the newest version, so it names the
+      project rather than any particular row set.
+repository-code: https://github.com/jmoortgat/GasBrineBench
 authors:
   - family-names: Moortgat
     given-names: Joachim
