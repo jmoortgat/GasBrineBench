@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import math
+import re
+from pathlib import Path
 
 import pandas as pd
 import pytest
@@ -45,18 +47,35 @@ def test_numeric_columns_are_numeric(all_rows):
         assert pd.api.types.is_numeric_dtype(all_rows[col]), col
 
 
+def _readme_row_counts():
+    """Per-family and total row counts as the README's table states them.
+
+    Read rather than hard-coded. The counts here were frozen literals until
+    2026-09-18, which meant they stopped describing the database the moment
+    it grew and the test failed for the rest of its life without anyone
+    learning anything from it. The invariant worth holding is the one the
+    test is named for -- README and data agree -- and that one survives the
+    database changing size.
+    """
+    row = re.compile(r"^\|\s*`data/(\w+)\.csv`\s*\|\s*([\d,]+)\s*\|")
+    total = re.compile(r"^\|\s*\*\*total\*\*\s*\|\s*\*\*([\d,]+)\*\*\s*\|")
+    per_family, grand = {}, None
+    for line in (Path(__file__).resolve().parents[1] / "README.md").read_text().splitlines():
+        m = row.match(line)
+        if m:
+            per_family[m.group(1)] = int(m.group(2).replace(",", ""))
+        m = total.match(line)
+        if m:
+            grand = int(m.group(1).replace(",", ""))
+    assert per_family and grand is not None, "README row-count table not found"
+    return per_family, grand
+
+
 def test_row_totals_match_the_repository_readme(all_rows):
-    assert len(all_rows) == 5846
-    per_family = all_rows["family"].value_counts().to_dict()
-    assert per_family == {
-        "solubility": 3783,
-        "y_h2o": 1001,
-        "rho": 905,
-        "phi_osm": 101,
-        "dh_sol": 22,
-        "psat_ratio": 21,
-        "eps_r": 13,
-    }
+    per_family, grand = _readme_row_counts()
+    assert len(all_rows) == grand
+    assert all_rows["family"].value_counts().to_dict() == per_family
+    assert sum(per_family.values()) == grand
 
 
 def test_lle_regime_excluded_by_default(default_rows, all_rows):
@@ -68,8 +87,9 @@ def test_lle_regime_excluded_by_default(default_rows, all_rows):
 
 
 def test_exclude_tags_none_keeps_everything():
-    assert len(gbb.load(exclude_tags=None)) == 5846
-    assert len(gbb.load(exclude_tags=())) == 5846
+    _, grand = _readme_row_counts()
+    assert len(gbb.load(exclude_tags=None)) == grand
+    assert len(gbb.load(exclude_tags=())) == grand
 
 
 def test_derived_columns_attached_by_default(default_rows):

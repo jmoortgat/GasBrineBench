@@ -127,7 +127,7 @@ def test_solubility_pairs_shape_and_columns():
         "xc_saltfree_derived",
         "xc_saltinclusive",
     ]
-    assert len(pairs) == 937
+    assert len(pairs) == 2837
     assert "value" not in pairs.columns
 
 
