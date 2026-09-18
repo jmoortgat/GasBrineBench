@@ -26,9 +26,8 @@ Tests: `code/tests/test_data.py`.
 ## Files and schema
 
 One csv per property family plus a combined parquet
-(`benchmark_v0.parquet`, 4845 rows after the quality pass, the
-Hou-2013b addition and the v0.4 transfer-gas solubility block).
-Identical columns everywhere:
+(`benchmark_v0.parquet`, 11,444 rows: every published family, in the
+order of the table above). Identical columns everywhere:
 
 ```
 dataset_id, source, gas, property, T_K, P_bar,
@@ -57,8 +56,8 @@ value, uncertainty, quality, tag
 - Ion molalities are mol/kg-water in the frozen
   `bench.core.base.IONS` order.
 - `property` vocabulary: `solubility_molality`, `xc_saltfree`,
-  `y_h2o` (v0.1 addition, `y_h2o.csv` built by `build_y_h2o.py`,
-  not part of `benchmark_v0.parquet`), `rho`, `phi_osm`,
+  `y_h2o` (v0.1 addition, `y_h2o.csv` built by `build_y_h2o.py`),
+  `rho`, `phi_osm`,
   `psat_ratio`, `dh_sol`, plus the extension `eps_r` (static permittivity target
   set; kept because it is one of the Multi_Salt harness blocks even
   though it was not in the assigned enum).

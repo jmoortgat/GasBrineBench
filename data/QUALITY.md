@@ -17,7 +17,7 @@ rows_ion_fixed: 2
 rows_retagged_fit_eligible: 18
 rows_upgraded_R: 591
 rows_downgraded_U: 12
-combined_parquet_rows: 10429
+combined_parquet_rows: 11444
 -->
 
 ## 1. TONG(2013) ion-vector fix (flagged suspect resolved)
@@ -384,8 +384,9 @@ clusters, so it stays T per the conservative rule.
 
 ## 5. Rebuild
 
-benchmark_v0.parquet rebuilt from the six csvs: 10429
-rows (pre-quality build: 3411).
+benchmark_v0.parquet rebuilt from the seven csvs: 11444
+rows (pre-quality build: 11462; this
+pass removes rows from solubility.csv only).
 
 ## 6. Water-content family (y_h2o.csv): review-based codes (v0.3)
 

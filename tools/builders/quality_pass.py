@@ -3,13 +3,22 @@
 
 Rewrites ``solubility.csv`` in place (backup ``solubility_pre_quality
 .csv``), regenerates ``QUALITY.md`` (the ledger) and rebuilds
-``benchmark_v0.parquet`` from the edited csvs.  The other five csvs
+``benchmark_v0.parquet`` from all seven published csvs.
+
+``solubility.csv`` is the only one this pass edits.  Five of the others
 (rho, phi_osm, psat_ratio, dh_sol, eps_r) are single-provenance
 harness/extraction sets with no cross-source overlap; the pass audits
 but does not modify them, so no backups are made for them.
+``y_h2o.csv`` does carry cross-source codes, but they are assigned by
+``build_y_h2o.py`` at build time (see Sec. 6 of the ledger), not here.
+All seven are read for the parquet rebuild regardless.
 
-Run:
-    cd EoS_Benchmark/code && PYTHONPATH=. python3 bench/data/quality_pass.py
+Run (third and last, after build_v0.py and build_y_h2o.py; running
+build_v0.py without finishing the chain leaves solubility.csv stripped
+of every R code):
+    export ECPA_MS_CODE=<...>/Multi_Salt/code
+    export PYTHONPATH=<...>/EoS_Benchmark/code
+    python3 tools/builders/quality_pass.py
 
 Idempotency contract
 --------------------
@@ -86,9 +95,9 @@ Interventions (each carries a ledger entry in QUALITY.md)
    molality-drift block is exactly 10 U rows (5 points x 2 property
    rows) and that no other U rows exist before this pass.
 
-5. Rebuild ``benchmark_v0.parquet`` by concatenating the six csvs in
-   the build_v0.py order (solubility, rho, phi_osm, psat_ratio,
-   dh_sol, eps_r).
+5. Rebuild ``benchmark_v0.parquet`` by concatenating all seven
+   published csvs in the README's table order (solubility, y_h2o, rho,
+   phi_osm, psat_ratio, dh_sol, eps_r).
 
 QUALITY.md is regenerated on every run and embeds a machine-readable
 LEDGER-COUNTS block that tests/test_data_quality.py checks against
@@ -116,7 +125,14 @@ COLUMNS = ["dataset_id", "source", "gas", "property", "T_K", "P_bar",
 ION_COLS = ["m_Na", "m_Cl", "m_K", "m_Ca", "m_Mg", "m_SO4"]
 NUM_COLS = ["T_K", "P_bar", "value", "uncertainty"] + ION_COLS
 
-CSV_ORDER = ["solubility.csv", "rho.csv", "phi_osm.csv",
+# Every published family, in the README's table order. y_h2o.csv was absent
+# until 2026-09-18, so benchmark_v0.parquet carried six of the seven families
+# and 10,429 of 11,444 rows -- anyone reading the parquet as "the combined
+# benchmark" silently lost the entire gas-phase water-content family. Nothing
+# published was affected (the parquet is gitignored, and the reader package
+# loads the csvs), but the artifact was wrong. It is included here even though
+# this pass does not edit it: the pass owns the rebuild, not the contents.
+CSV_ORDER = ["solubility.csv", "y_h2o.csv", "rho.csv", "phi_osm.csv",
              "psat_ratio.csv", "dh_sol.csv", "eps_r.csv"]
 
 SOL = DATA_DIR / "solubility.csv"
@@ -566,8 +582,9 @@ def write_ledger(log, n_before, n_after, n_parquet):
     a("")
     a("## 5. Rebuild")
     a("")
-    a(f"benchmark_v0.parquet rebuilt from the six csvs: {n_parquet}")
-    a("rows (pre-quality build: 3411).")
+    a(f"benchmark_v0.parquet rebuilt from the seven csvs: {n_parquet}")
+    a(f"rows (pre-quality build: {n_parquet + n_before - n_after}; this")
+    a("pass removes rows from solubility.csv only).")
     a(YH2O_REVIEW_SECTION)
     a(regime_section(log["sol_final"]))
     LEDGER.write_text("\n".join(lines) + "\n")
