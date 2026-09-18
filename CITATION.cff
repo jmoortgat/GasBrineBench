@@ -5,18 +5,18 @@ abstract: >-
   gas-brine systems: gas solubility, brine density, osmotic coefficients,
   vapor-pressure lowering, gas-phase water content, enthalpy of dissolution
   and brine permittivity, in single- and mixed-salt aqueous electrolyte
-  solutions. 5,846 rows from 82 published sources, covering seven gases
+  solutions. 11,444 rows from 109 published sources, covering seven gases
   (CO2, CH4, H2, N2, O2, C2H6, C3H8) and six ions (Na+, K+, Ca2+, Mg2+, Cl-,
-  SO4 2-) over 273-623 K and 0.1-3,500 bar. Every row carries its source, an
+  SO4 2-) over 273-633 K and 0.1-3,500 bar. Every row carries its source, an
   R/T/U quality code with a documented justification, and a fit/test tag; the
   raw hand transcriptions the values were typed from are included.
 message: >-
   The numerical values are measurements published by the authors cited in
   SOURCES.md; please cite those primary sources for the data you use, and
-  this repository for the compilation. Pre-release: a Zenodo version DOI and
-  a data-descriptor reference will be added at v1.0.
+  this repository for the compilation. A Zenodo version DOI and a
+  data-descriptor reference will be added here once deposited.
 type: dataset
-version: 0.9.0-pre
+version: 1.0.0
 authors:
   - family-names: Moortgat
     given-names: Joachim

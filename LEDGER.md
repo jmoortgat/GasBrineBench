@@ -8,6 +8,72 @@ The per-row justification record that this ledger summarises lives in
 `data/QUALITY.md`, which is reproduced verbatim from the pass that assigned
 the codes.
 
+## 2026-09-18 — corrections carried into v1.0
+
+Data values changed in this entry, which the 2026-09-14 entry could not say.
+Every change was checked against the primary paper before it was applied; the
+per-row record is in `data/QUALITY.md` and the narrative is in `CHANGELOG.md`
+under v1.0.0. Row counts moved 5,846 -> 11,444 and sources 82 -> 109.
+
+- **Duffy (1961), 48 rows: divalent molality in the wrong column.** The files
+  carried the cation molality one column to the left, so `EXP_CaCl1_T303K.txt`
+  read Na=0, Cl=2.8, K=1.4 for a 1.4 m CaCl2 brine — a composition that fails
+  charge balance at 1.4 against 2.8 and lands exactly if the 1.4 is moved to
+  Ca. Duffy's system is CH4–H2O–NaCl–CaCl2 and contains no potassium, which
+  settles it. Moved to `m_Ca`; the directory was renamed `303K_X` -> `303K`.
+  The superseded copies were removed from `transcriptions/` on 2026-09-18
+  after the diff confirmed they differed from the corrected files in exactly
+  the misplaced column and nothing else.
+
+- **Nine isotherms at the wrong temperature.** Temperature was taken from the
+  integer-kelvin directory name. That cannot represent a non-integer isotherm,
+  and it maps two different measured temperatures onto one label whenever a
+  Fahrenheit-grid source shares a directory with a Celsius-grid one. Files may
+  now declare their own temperature on the source line with a free-text
+  justification, so the claim is auditable. Applied only where the paper was
+  read: Portier & Rochelle (2005) Table 2 at 18 and 37 degC; Jacob & Saylor
+  (2016); Bastami (2014) figure legends; Culberson & McKetta (1951) Table I
+  and Olds et al. (1942) at 160 and 340 degF; O'Sullivan & Smith (1970) at
+  51.5, 102.5 and 125 degC.
+
+  O'Sullivan was found from the data rather than from a paper: the same work
+  supplies N2 rows through the PDF-extraction path, which had preserved
+  324.65/375.65/398.15, while its CH4 rows came through the directory path and
+  had been snapped to 323/375/398. The paper then confirmed the three values.
+
+- **16 quality codes downgraded R -> T, as a consequence of the above.**
+  O'Sullivan (6 rows) and Gao (1997) (6 rows) had been credited as
+  corroborating each other at 323 K; O'Sullivan measured at 324.65 K.
+  Culberson (2 rows) and Amirijafari (1972) (2 rows) likewise at 343 K;
+  Culberson measured at 344.26 K. No row's value changed; what changed is that
+  four groups stopped being counted as independent agreement, because they
+  never were.
+
+- **11 rows recovered that no build had ever read.** `443K/EXP2_T444K.txt`
+  (Olds 1942, 340 degF) is filed in a directory named `443K`, and every
+  builder globbed `EXP*_T{directory}K.txt`. The file therefore matched nothing.
+  Its water-content rows appear in no other source.
+
+- **One file excluded rather than read.** `CO2/CPA/PR/T478K/EXP1_T473K.txt` is
+  byte-identical to `T473K/EXP1_T473K.txt` (Todheide & Franck 1963, 200 degC),
+  a stray copy in the wrong directory. Reading it would have duplicated eight
+  rows at a temperature nobody measured.
+
+- **The superseded `CO2/CPA/SRK` tree is no longer extracted.** It and
+  `CO2/CPA/PR` hold the same compilation filed under two cubic backbones. They
+  were compared path by path: 10 of 89 shared paths differ, and in every case
+  PR carries data SRK lacks — SRK has `X` where Hou (2013) Table 2 records
+  y_CO2 = 0.97189 at 323.15 K / 1.089 MPa, and SRK's 538 K file stops at
+  2500 bar where Todheide & Franck run to 3500. PR is canonical; SRK would
+  have silently lost three y_h2o points. Transcriptions 819 -> 710.
+
+- **Promotions, not corrections.** The salt-free CO2–H2O and CH4–H2O binaries
+  (~1,400 rows), the Susak (1980) block above 573 K (64 rows), every isotherm
+  directory rather than a hard-coded three (1,209 rows), and the `_X<author>`
+  files, which had been skipped as duplicates of the canonical file at the same
+  slot and are in fact a second author at a taken slot (115 rows). No value was
+  altered; these had been transcribed and left unread.
+
 ## 2026-09-14 — the data brought into the repository
 
 No data value changed. The seven family CSVs, their two provenance documents,

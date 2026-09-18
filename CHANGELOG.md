@@ -1,6 +1,70 @@
 # Changelog
 
-## Unreleased (pre-v1.0), version `0.9.0-pre`
+## v1.0.0 — 2026-09-18
+
+### Data corrections
+
+The database arrived at 5,846 rows from 82 sources and is released at 11,444
+from 109. Almost none of that is new transcription: it is data that had been
+typed, checked and sitting in the source tree, which the builders were not
+reading. Each item below was verified against the primary paper before it was
+applied, and `LEDGER.md` carries the per-item justification.
+
+- **Salt-free binaries and the Susak high-temperature block promoted.** The
+  binary CO2–H2O and CH4–H2O solubilities anchor every salting-out comparison
+  in the database but were not themselves in it. About 1,400 rows, plus 64
+  Susak (1980) points above 573 K.
+- **Every isotherm directory is now read.** The builders walked a hard-coded
+  list of three temperatures; the tree holds far more. 1,209 rows.
+- **The `_X<author>` files are read.** They were skipped as duplicates of the
+  canonical file at the same slot. They are not duplicates — they are a second
+  author at a slot whose number was taken. 115 rows at readable isotherms.
+- **Duffy (1961) ion vectors corrected.** The divalent cation molality sat in
+  the `m_K` column, so a 1.4 m CaCl2 brine was recorded as 1.4 m KCl with no
+  calcium and a charge imbalance. Duffy studied CH4–H2O–NaCl–CaCl2 and used no
+  potassium at all. 48 rows.
+- **Nine isotherms carried the wrong temperature.** Temperature came from the
+  name of the directory holding a file, which is an integer kelvin: it cannot
+  represent 351.65 K, and it collapses a Fahrenheit-grid source onto its
+  Celsius-grid neighbour. A file may now declare its own temperature on the
+  source line, audited against the paper. Corrected: Portier (291.15, 310.15),
+  Jacob (297), Bastami (351.65, 375.15), Culberson and Olds (344.26, 444.26),
+  O'Sullivan (324.65, 375.65, 398.15).
+- **16 quality codes fell from R to T as a direct result.** `R` is awarded by
+  cross-source corroboration, and four groups corroborated only because the
+  rounding had put two different isotherms on one integer — O'Sullivan with
+  Gao at 323 K, Culberson with Amirijafari at 343 K. Neither pair had measured
+  at the same temperature. Removing false corroboration from the
+  highest-confidence tier is the point of the exercise, not a regression.
+- **A file that had never been read.** `443K/EXP2_T444K.txt` (Olds 1942,
+  340 degF) sits in a directory named `443K`, and the builder matched
+  `EXP*_T443K.txt`. Its 11 water-content rows appear in no other source and
+  had never entered any build. Its counterpart, a stray copy of a Todheide
+  isotherm filed under the wrong directory, is excluded by name.
+- **Bibliography.** Records without a DOI went from 30 to 7, each of the seven
+  documented as having none issued rather than none found. 27 new records.
+- **`benchmark_v0.parquet` was missing a family.** It concatenated six of the
+  seven csvs, omitting `y_h2o` — 10,429 rows where the csvs hold 11,444.
+  Nothing published was affected (the parquet is gitignored and the reader
+  loads csvs), but the local artifact was wrong.
+- **Transcriptions 819 -> 710.** The superseded `CO2/CPA/SRK` tree, the
+  `(copy)` artifacts and one misfiled file are no longer extracted. SRK is a
+  lossy duplicate of the `PR` tree: it carries `X` where Hou (2013) records
+  y_CO2 = 0.97189, and stops at 2500 bar where Todheide & Franck (1963) runs
+  to 3500. Both trees were compared path by path before either was dropped.
+
+### Documentation held to the data
+
+- `tests/test_loader.py` asserted a row total and a per-family breakdown frozen
+  when the reader package was written, so it had been failing since the first
+  expansion without telling anyone anything. It is named for the invariant that
+  matters — README and data agree — and now reads the counts out of the README
+  table, which survives the database changing size.
+- Twelve package doctests carried counts from the same era. Two of them were
+  not counts growing but statements becoming untrue: `salt_system_kind()` now
+  reports a third category, and `coverage()` illustrated "zeros mark the gaps"
+  with a cell that had since filled, so it now uses one that is still a gap.
+
 
 ### A Python package and a tour notebook
 
@@ -44,21 +108,23 @@ Until this point the repository was scaffolding: schema, validator, CI and a
 source manifest generated from data held elsewhere. `data/` held a `.gitkeep`.
 It now holds the database.
 
-- **Seven family CSVs, 5,846 rows, 82 published sources** — `solubility.csv`
-  (3,783), `y_h2o.csv` (1,001), `rho.csv` (905), `phi_osm.csv` (101),
+- **Seven family CSVs, 11,444 rows, 109 published sources** — `solubility.csv`
+  (9,367), `y_h2o.csv` (1,015), `rho.csv` (905), `phi_osm.csv` (101),
   `dh_sol.csv` (22), `psat_ratio.csv` (21), `eps_r.csv` (13). Seven gases, six
-  ions, 273–623 K, 0.1–3,500 bar. 5,689 of those rows are gas–brine
+  ions, 273–633 K, 0.1–3,500 bar. 11,287 of those rows are gas–brine
   equilibrium targets; the other 157 (144 `lle-regime` propane rows, 13
-  `eps_r` rows) are kept but sit outside that scope.
+  `eps_r` rows) are kept but sit outside that scope. The database landed at
+  5,846 rows from 82 sources; *Data corrections* above is how it grew.
 - **The provenance documents** — `data/README.md` (per-`dataset_id`
   provenance: paper, table, page, unit convention, deliberate omissions) and
   `data/QUALITY.md` (the R/T/U justification record). Both are reproduced
   verbatim from the harness that produced the data, with a header explaining
   which of the paths they mention are outside this repository.
-- **819 raw hand transcriptions** under `transcriptions/` — 251 KB, 8,565 data
-  rows, 124 source headers, with `MANIFEST.tsv` carrying each file's size, row
-  count, source header and SHA-256. All 819 verified against those hashes on
-  arrival. This closes the provenance chain: typed source table -> built CSV
+- **710 raw hand transcriptions** under `transcriptions/` — 230 KB, 7,637 data
+  rows, 122 source headers, with `MANIFEST.tsv` carrying each file's size, row
+  count, source header and SHA-256. All 710 verified against those hashes.
+  (819 on arrival, before the superseded SRK tree and the `(copy)` artifacts
+  were excluded; see *Data corrections*.) This closes the provenance chain: typed source table -> built CSV
   -> source manifest.
 - **The builder scripts** under `tools/builders/` (`build_v0.py`,
   `build_y_h2o.py`, `hou2013.py`, `yh2o_sources_2026.py`, `quality_pass.py`)
@@ -78,9 +144,8 @@ It now holds the database.
   from the external bibliographies.
 - Regeneration is idempotent: a second run reproduces both files byte for
   byte.
-- Source coverage is unchanged at **100 %** — all 5,846 rows resolve to a real
-  published source, 76 of the 82 works with a DOI and 6 recorded as having
-  none.
+- Source coverage is **100 %** — all 11,444 rows resolve to a real published
+  source, 102 of the 109 works with a DOI and 7 recorded as having none.
 
 ### Validator and schema corrected against the real data
 

@@ -37,6 +37,22 @@ def test_version_appears_in_the_changelog(repo_root):
     assert gbb.__version__ in text
 
 
+def test_module_docstring_example_matches(repo_root):
+    """The package docstring shows the version; that is a fourth place to drift.
+
+    It is a doctest, so it does fail on release -- but it fails as an opaque
+    expected/got diff in a doctest run, which is not where someone bumping a
+    version is looking. Holding it here means the version test names it.
+    """
+    doc = gbb.__doc__ or ""
+    shown = re.findall(r">>> gbb\.__version__\n'([^']+)'", doc)
+    assert shown, "the package docstring no longer shows gbb.__version__"
+    assert shown == [gbb.__version__], (
+        f"package docstring shows {shown} but __version__ is "
+        f"{gbb.__version__!r}; update the doctest in gasbrinebench/__init__.py"
+    )
+
+
 def test_cli_reports_the_same_version(capsys):
     import pytest
 

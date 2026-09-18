@@ -7,9 +7,11 @@ read. The string is therefore kept identical to the ``version:`` field of
 ``CITATION.cff`` and to the heading of the current ``CHANGELOG.md`` section,
 and ``tests/test_version.py`` fails if the three ever drift apart.
 
-``0.9.0-pre`` is the pre-release state described in ``CHANGELOG.md``: the
-database is complete and in the repository, the v1.0 release (and with it the
-Zenodo version DOI) is still in preparation.
+``1.0.0`` is the first released snapshot: 11,444 rows over 109 published
+sources, every row resolving to a real reference and every transcription
+matching its manifest hash. The Zenodo version DOI is minted on deposit and
+added to ``CITATION.cff`` when it exists; it is not a precondition for the
+tag, and the tag is what a reader needs in order to name their snapshot.
 """
 
-__version__ = "0.9.0-pre"
+__version__ = "1.0.0"

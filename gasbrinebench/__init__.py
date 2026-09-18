@@ -8,7 +8,7 @@ Five-minute tour
 ----------------
 >>> import gasbrinebench as gbb
 >>> gbb.__version__
-'0.9.0-pre'
+'1.0.0'
 
 Load everything. The 144 ``lle-regime`` rows -- propane points whose heavy
 phase is a liquid, so they are mutual solubilities and not gas solubilities --

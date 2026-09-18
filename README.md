@@ -196,7 +196,7 @@ Every number in this repository can be walked back to the page it was printed
 on, and the chain is inspectable at each link:
 
 ```
-transcriptions/EoS/.../EXP*.txt      hand-typed source tables, 819 files,
+transcriptions/EoS/.../EXP*.txt      hand-typed source tables, 710 files,
         |                            each headed #AUTHOR(YEAR)
         |   tools/builders/*.py      unit conversion, ion vectors, tagging
         v
@@ -214,7 +214,7 @@ transcriptions; those intermediates are not in this repository, but the
 transcriptions they came from are, and `data/README.md` names the route for
 each block.
 
-- **`transcriptions/`** — 819 hand transcriptions, 8,565 data rows, 124 source
+- **`transcriptions/`** — 710 hand transcriptions, 7,637 data rows, 122 source
   headers, with a `MANIFEST.tsv` giving each file's size, row count, source
   header and SHA-256. This is the bottom of the chain: it cannot be
   regenerated from anything, because it is somebody's typing checked against
