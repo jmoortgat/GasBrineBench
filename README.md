@@ -302,15 +302,14 @@ so the coverage figures cannot drift away from the data. Re-run it after any
 change and commit the diff. It never invents a citation: sources without a
 bibliographic record are listed by name under *Needs citation*.
 
-All 11,385 rows resolve to a real published source. Twenty-five of those works
-carry no DOI in the manifest, for two different reasons, and it distinguishes
-them rather than supplying a plausible substitute. For six, none was ever
-issued — two doctoral theses, two research reports, and two papers in journals
-that were never retrospectively registered. The other nineteen are the
-salt-free binary sources added on 2026-09-18, whose records were read off each
-paper's own front matter rather than resolved through Crossref; most of those
-works do have a DOI, and adding it is a pending improvement rather than a gap
-in provenance. A short
+All 11,385 rows resolve to a real published source, and all but seven of
+those works carry a DOI. Six have none because none was ever issued — two
+doctoral theses, two research reports, and two papers in journals that were
+never retrospectively registered. The seventh is Sultanov et al. 1972, a
+two-page article in a Soviet trade journal that Crossref does not index; its
+record is reconstructed from two independent citing bibliographies and says
+so. The manifest states these cases rather than supplying a plausible
+substitute. A short
 *Source-key corrections* table records the handful of `source` cells that name
 their paper wrongly (a misspelt surname, a missing year, an online-first year)
 together with the evidence that settled each one, so every rewrite can be
