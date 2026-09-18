@@ -103,6 +103,9 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent            # .../code/bench/data
+# Moved into tools/builders/, where `HERE` is no longer the data directory;
+# the pass would otherwise read and rewrite a copy beside the script.
+DATA_DIR = HERE.parents[1] / "data"               # .../GasBrineBench/data
 CODE = HERE.parents[1]
 if str(CODE) not in sys.path:
     sys.path.insert(0, str(CODE))
@@ -116,9 +119,12 @@ NUM_COLS = ["T_K", "P_bar", "value", "uncertainty"] + ION_COLS
 CSV_ORDER = ["solubility.csv", "rho.csv", "phi_osm.csv",
              "psat_ratio.csv", "dh_sol.csv", "eps_r.csv"]
 
-SOL = HERE / "solubility.csv"
+SOL = DATA_DIR / "solubility.csv"
+# The pre-quality backup is an internal working artifact, not a
+# published family: keep it beside the script so validate.py and
+# make_sources.py do not scan it as an eighth csv.
 SOL_BAK = HERE / "solubility_pre_quality.csv"
-LEDGER = HERE / "QUALITY.md"
+LEDGER = DATA_DIR / "QUALITY.md"
 
 # duplicate detector tolerances (assignment spec)
 DUP_T_K = 0.05
@@ -408,9 +414,9 @@ def verify_author_flags(sol_pre):
 # ------------------------------------------------------------ output
 
 def rebuild_parquet():
-    frames = [load_csv(HERE / n)[COLUMNS] for n in CSV_ORDER]
+    frames = [load_csv(DATA_DIR / n)[COLUMNS] for n in CSV_ORDER]
     combined = pd.concat(frames, ignore_index=True)
-    combined.to_parquet(HERE / "benchmark_v0.parquet", index=False)
+    combined.to_parquet(DATA_DIR / "benchmark_v0.parquet", index=False)
     return len(combined)
 
 

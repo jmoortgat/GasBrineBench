@@ -10,7 +10,7 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**5,846 rows · 82 published sources · 7 gases · 6 ions · 273–623 K ·
+**8,709 rows · 105 published sources · 7 gases · 6 ions · 273–633 K ·
 0.1–3,500 bar.**
 
 **Status: the database is complete and in the repository; the v1.0 release is
@@ -22,23 +22,23 @@ expect the schema to be stable but the row set to grow.
 
 | family | rows | sources | gases | T [K] | P [bar] | R/T/U |
 |---|---:|---:|---|---|---|---|
-| `data/solubility.csv` | 3,783 | 57 | CO2, CH4, H2, N2, O2, C2H6, C3H8 | 273–589 | 0.10–1379 | 173 / 3590 / 20 |
-| `data/y_h2o.csv` | 1,001 | 26 | CO2, CH4, H2, N2, C2H6, C3H8 | 273–623 | 4.3–3500 | 105 / 870 / 26 |
+| `data/solubility.csv` | 6,643 | 94 | CO2, CH4, H2, N2, O2, C2H6, C3H8 | 273–633 | 0.10–3500 | 479 / 6132 / 32 |
+| `data/y_h2o.csv` | 1,004 | 26 | CO2, CH4, H2, N2, C2H6, C3H8 | 273–623 | 4.3–3500 | 105 / 873 / 26 |
 | `data/rho.csv` | 905 | 42 | — | 283–473 | 9–686 | 0 / 905 / 0 |
 | `data/phi_osm.csv` | 101 | 2 | — | 298–373 | 1–1.5 | 75 / 26 / 0 |
 | `data/dh_sol.csv` | 22 | 1 | CO2 | 323–373 | 21–202 | 0 / 22 / 0 |
 | `data/psat_ratio.csv` | 21 | 1 | — | 373–523 | n/a | 21 / 0 / 0 |
 | `data/eps_r.csv` | 13 | 1 | — | 298 | 1 | 0 / 13 / 0 |
-| **total** | **5,846** | **82** | | **273–623** | **0.10–3500** | **374 / 5426 / 46** |
+| **total** | **8,709** | **105** | | **273–633** | **0.10–3500** | **680 / 7971 / 58** |
 
-`sources` counts distinct `source` cells per family; the 82 total is the
+`sources` counts distinct `source` cells per family; the 105 total is the
 number of distinct *published works*, after the several curation spellings
 of one paper collapse onto one citation (`SOURCES.md`).
 
-3,950 rows carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 12 mol/kg of a
-single ion); 1,896 are the salt-free binaries that anchor them.
+2,961 rows carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 12 mol/kg of a
+single ion); 4,686 are the salt-free binaries that anchor them.
 
-**5,689 of the 5,846 rows are scored** as gas–brine equilibrium targets. The
+**8,552 of the 8,709 rows are scored** as gas–brine equilibrium targets. The
 other 157 are kept but sit outside that scope: 144 `lle-regime` propane rows
 whose heavy phase is a liquid (mutual solubility, not gas solubility) and the
 13 `eps_r` permittivity rows, which are a model-internal extension family
@@ -80,7 +80,7 @@ where the source stated none) become `NaN` rather than `''`.
 **`load()` excludes the 144 `lle-regime` rows by default.** Those propane
 points are liquid–liquid mutual solubilities, not gas solubilities
 (`data/QUALITY.md` Sec. 7); scoring them as the latter is a category error.
-Pass `exclude_tags=None` for all 5,846 rows.
+Pass `exclude_tags=None` for all 8,709 rows.
 
 The data directory is found beside the package, or from the working directory
 upward, or from `$GASBRINEBENCH_DATA`.
@@ -225,7 +225,7 @@ each block.
 - **`data/QUALITY.md`** — the R/T/U justification record: what was checked
   against what, which rows were removed, and which apparent defects turned out
   to be in our own pipeline rather than in the source.
-- **`SOURCES.md`** — the source manifest. **All 5,846 rows resolve to a real
+- **`SOURCES.md`** — the source manifest. **All 8,709 rows resolve to a real
   published source (100 %).**
 - **`LEDGER.md`** — every correction, deduplication and quality-code decision,
   with its reason.
@@ -302,10 +302,15 @@ so the coverage figures cannot drift away from the data. Re-run it after any
 change and commit the diff. It never invents a citation: sources without a
 bibliographic record are listed by name under *Needs citation*.
 
-All 5,846 rows resolve to a real published source. Six of those works have no
-DOI because none was ever issued — two doctoral theses, two research reports,
-and two papers in journals that were never retrospectively registered — and
-the manifest says so rather than supplying a plausible substitute. A short
+All 8,709 rows resolve to a real published source. Twenty-five of those works
+carry no DOI in the manifest, for two different reasons, and it distinguishes
+them rather than supplying a plausible substitute. For six, none was ever
+issued — two doctoral theses, two research reports, and two papers in journals
+that were never retrospectively registered. The other nineteen are the
+salt-free binary sources added on 2026-09-18, whose records were read off each
+paper's own front matter rather than resolved through Crossref; most of those
+works do have a DOI, and adding it is a pending improvement rather than a gap
+in provenance. A short
 *Source-key corrections* table records the handful of `source` cells that name
 their paper wrongly (a misspelt surname, a missing year, an online-first year)
 together with the evidence that settled each one, so every rewrite can be

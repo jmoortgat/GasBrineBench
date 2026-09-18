@@ -16,14 +16,14 @@ redistributing a single copyrighted page.
 Generated 2026-09-18 from `data`
 
 - data files read: 7 (`dh_sol.csv`, `eps_r.csv`, `phi_osm.csv`, `psat_ratio.csv`, `rho.csv`, `solubility.csv`, `y_h2o.csv`)
-- rows: 8,727
+- rows: 8,709
 - distinct sources: 105
 - fully documented (reference + DOI): **80**
 - reference known, DOI missing: **25**
 - placeholder citation, needs replacing: **0**
 - no bibliographic record at all: **0**
 
-By row count: 6,549 fully documented, 2,178 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
+By row count: 6,531 fully documented, 2,178 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
 
 The reference-only entries are shown below with *none on record* in
 the DOI column. That is not a lookup we skipped: each was searched
@@ -64,7 +64,6 @@ readable; two joined on the key is.
 | `Hou2013` | Hou et al., Measurement and modeling of the phase behavior of the (carbon dioxide+water) mixture at temperatures from 298.15K to 448.15K, J. Supercrit. Fluid., **73**, 87-96, 2013 | `10.1016/j.supflu.2012.11.011` | [link](https://doi.org/10.1016/j.supflu.2012.11.011) |
 | `Tong2013` | Tong, Danlu et al., Solubility of CO2 in Aqueous Solutions of CaCl2 or MgCl2 and in a Synthetic Formation Brine at Temperatures up to 423 K and Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **58**(7), 2116-2124, 2013 | `10.1021/je400396s` | [link](https://doi.org/10.1021/je400396s) |
 | `Poulain2019` | Poulain, Marie et al., Experimental Measurements of Carbon Dioxide Solubility in Na–Ca–K–Cl Solutions at High Temperatures and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **64**(6), 2497-2503, 2019 | `10.1021/acs.jced.9b00023` | [link](https://doi.org/10.1021/acs.jced.9b00023) |
-| `Chabab2020` | Chabab et al., Measurements and predictive models of high-pressure H2 solubility in brine (H2O+NaCl) for underground hydrogen storage application, International Journal of Hydrogen Energy, **45**(56), 32206-32220, 2020 | `10.1016/j.ijhydene.2020.08.192` | [link](https://doi.org/10.1016/j.ijhydene.2020.08.192) |
 | `CulbersonMcKetta1950` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon-Water Systems II: The Solubility of Ethane in Water at Pressures to 10,000 psi, Trans. AIME (J. Pet. Technol.), **189**, 319-322, 1950 | `10.2118/950319-G` | [link](https://doi.org/10.2118/950319-G) |
 | `Jooss2026` | Jooss, Yannick et al., Vapor--liquid equilibrium measurements of the carbon dioxide + water (CO2 + H2O) system and carbon dioxide + water + sodium chloride (CO2 + H2O + NaCl) system, Fluid Phase Equilibria, **599**, 114516, 2026 | `10.1016/j.fluid.2025.114516` | [link](https://doi.org/10.1016/j.fluid.2025.114516) |
 | `Bamberger2000` | Bamberger et al., High-pressure (vapor+liquid) equilibrium in binary mixtures of (carbon dioxide+water or acetic acid) at temperatures from 313 to 353 K, J. Supercrit. Fluid., **17**(2), 97-110, 2000 | `10.1016/S0896-8446(99)00054-6` | [link](https://doi.org/10.1016/S0896-8446(99)00054-6) |
@@ -73,6 +72,7 @@ readable; two joined on the key is.
 | `Wiebe1934` | Wiebe, R. et al., The Solubility of Hydrogen in Water at 0, 50, 75 and 100 °C from 25 to 1000 Atmospheres, Journal of the American Chemical Society, **56**(1), 76-79, 1934 | `10.1021/ja01316a022` | [link](https://doi.org/10.1021/ja01316a022) |
 | `Jung1971` | Jung, J. et al., Löslichkeit von Kohlenmonoxid und Wasserstoff in Wasser bis 300°C, Chemie Ingenieur Technik, **43**(3), 112-116, 1971 | `10.1002/cite.330430304` | [link](https://doi.org/10.1002/cite.330430304) |
 | `PitzerMayorga1973` | Pitzer et al., Thermodynamics of electrolytes. II. Activity and osmotic coefficients for strong electrolytes with one or both ions univalent, The Journal of Physical Chemistry, **77**(19), 2300-2308, 1973 | `10.1021/j100638a009` | [link](https://doi.org/10.1021/j100638a009) |
+| `Chabab2020` | Chabab et al., Measurements and predictive models of high-pressure H2 solubility in brine (H2O+NaCl) for underground hydrogen storage application, International Journal of Hydrogen Energy, **45**(56), 32206-32220, 2020 | `10.1016/j.ijhydene.2020.08.192` | [link](https://doi.org/10.1016/j.ijhydene.2020.08.192) |
 | `Messabeb2016` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous NaCl Solution at Temperature from 323.15 to 423.15 K and Pressure of up to 20 MPa, J. Chem. Eng. Data, **61**(10), 3573-3584, 2016 | `10.1021/acs.jced.6b00505` | [link](https://doi.org/10.1021/acs.jced.6b00505) |
 | `Messabeb2017` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous CaCl2 Solution at Temperature from 323.15 to 423.15 K and Pressure up to 20 MPa Using the Conductometric Titration, Journal of Chemical & Engineering Data, **62**(12), 4228-4234, 2017 | `10.1021/acs.jced.7b00591` | [link](https://doi.org/10.1021/acs.jced.7b00591) |
 | `Santos2020` | dos Santos, Pedro F. et al., Experimental Measurement of CO2 Solubility in Aqueous Na2SO4 Solution at Temperatures between 303.15 and 423.15 K and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **65**(6), 3230-3239, 2020 | `10.1021/acs.jced.0c00230` | [link](https://doi.org/10.1021/acs.jced.0c00230) |
@@ -159,106 +159,106 @@ U (uncertain).
 | Citation key | Property families (rows) | Gas | Salt system | T [K] | P [bar] | m [mol/kg] | R/T/U |
 |---|---|---|---|---|---|---|---|
 | `AlGhafri2012` | rho (779) | - | CaCl2, KCl, MgCl2, NaCl | 283-473 | 9-686 | 2.12-18 | 0/779/0 |
-| `Susak1980` | solubility_molality (415), xc_saltfree (87) | ch4 | NaCl, pure water | 298-623 | 68.9-1379 | 0-8.54 | 0/502/0 |
-| `Ou2015` | xc_saltfree (204), solubility_molality (204) | ch4 | pure water | 275-603 | 50-1400 | 0 | 0/408/0 |
-| `Takenouchi1964` | xc_saltfree (108), solubility_molality (108), y_h2o (108) | co2 | pure water | 383-623 | 100-1500 | 0 | 11/313/0 |
-| `Todheide1963` | xc_saltfree (105), solubility_molality (105), y_h2o (105) | co2 | pure water | 323-623 | 200-3500 | 0 | 11/304/0 |
+| `Susak1980` | solubility_molality (415), xc_saltfree (87) | ch4 | NaCl, pure water | 298-623 | 68.9-1379 | 0-8.54 | 10/492/0 |
+| `Ou2015` | xc_saltfree (204), solubility_molality (204) | ch4 | pure water | 275-603 | 50-1400 | 0 | 32/376/0 |
+| `Takenouchi1964` | xc_saltfree (108), solubility_molality (108), y_h2o (108) | co2 | pure water | 383-623 | 100-1500 | 0 | 57/267/0 |
+| `Todheide1963` | xc_saltfree (105), solubility_molality (105), y_h2o (105) | co2 | pure water | 323-623 | 200-3500 | 0 | 45/264/6 |
 | `Teymouri2017` | xc_saltfree (144), solubility_molality (144) | co2 | CaCl2, KCl, MgCl2, Na++Cl-+K++Ca2++Mg2+, NaCl | 323-423 | 27.86-595.86 | 2.19-12.9 | 0/288/0 |
 | `Kobayashi1951` | solubility_molality (136), xc_saltfree (136) | c3h8 | pure water | 288.71-427.59 | 6.895-206.843 | 0 | 0/272/0 |
 | `Umano1958` | solubility_molality (135), xc_saltfree (135) | c3h8 | NaCl, pure water | 273.2-298.2 | 0.0974746-1.02521 | 0-10.63 | 0/260/10 |
-| `Guo2016` | xc_saltfree (131), solubility_molality (131) | co2 | pure water | 273-573 | 100-1200 | 0 | 0/262/0 |
+| `Guo2016` | xc_saltfree (131), solubility_molality (131) | co2 | pure water | 273-573 | 100-1200 | 0 | 40/222/0 |
 | `Hou2013b` | xc_saltfree (72), solubility_molality (72), y_h2o (72) | co2 | KCl, NaCl | 323.15-423.15 | 26.13-182.15 | 5-8 | 0/204/12 |
 | `Liu2011` | xc_saltfree (99), solubility_molality (99) | co2 | Cl-+K++Ca2+, Na++Cl-+Ca2+, Na++Cl-+K+, Na++Cl-+K++Ca2+ | 308-328 | 13.4-160.2 | 1.544-4.899 | 0/198/0 |
-| `OSullivan1970` | solubility_molality (101), xc_saltfree (69) | ch4, n2 | NaCl, pure water | 323-398.15 | 101.3-616.056 | 0-8 | 0/170/0 |
-| `Culberson1951` | xc_saltfree (72), solubility_molality (72) | ch4 | pure water | 298-443 | 22.3-689.1 | 0 | 0/144/0 |
-| `Price1979` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 427-627 | 35.4-1972.6 | 0 | 0/142/0 |
-| `Sultanov1972` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 423-633 | 49-1078.7 | 0 | 0/142/0 |
+| `OSullivan1970` | solubility_molality (101), xc_saltfree (69) | ch4, n2 | NaCl, pure water | 323-398.15 | 101.3-616.056 | 0-8 | 10/160/0 |
+| `Culberson1951` | xc_saltfree (72), solubility_molality (72) | ch4 | pure water | 298-443 | 22.3-689.1 | 0 | 6/138/0 |
+| `Price1979` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 427-627 | 35.4-1972.6 | 0 | 6/136/0 |
+| `Sultanov1972` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 423-633 | 49-1078.7 | 0 | 12/130/0 |
 | `Kiepe2003` | solubility_molality (112), xc_saltfree (26) | ch4 | KCl, pure water | 313-373 | 3.4-97.9 | 0-8 | 0/138/0 |
 | `Wang2014` | xc_saltfree (64), solubility_molality (64) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 318-348 | 80-110 | 0.54-1.789 | 0/128/0 |
 | `Ghafri2013` | rho (126) | - | Na2SO4 | 298-473 | 11-686 | 2.34-4.5 | 0/126/0 |
-| `Muller1988` | xc_saltfree (41), solubility_molality (41), y_h2o (41) | co2 | pure water | 373-473 | 6-78 | 0 | 0/123/0 |
+| `Muller1988` | xc_saltfree (41), solubility_molality (41), y_h2o (41) | co2 | pure water | 373-473 | 6-78 | 0 | 2/121/0 |
 | `Valtz2004` | xc_saltfree (44), solubility_molality (44), y_h2o (33) | co2 | pure water | 278-318 | 4.65-204 | 0 | 2/119/0 |
 | `Tabasinejad2011` | y_h2o (117) | ch4, co2, n2 | pure water | 422.44-483.15 | 36.7-1349 | 0 | 0/117/0 |
-| `Chabab2021` | xc_saltfree (58), solubility_molality (58) | co2, o2 | NaCl | 303.26-373.39 | 30.516-394.477 | 1-12 | 0/106/10 |
-| `CHAPOY2004` | xc_saltfree (55), solubility_molality (55) | c3h8, ch4 | pure water | 275-368.16 | 3.9-179.98 | 0 | 0/110/0 |
-| `Zhao2015b` | xc_saltfree (54), solubility_molality (54) | co2 | CaCl2, KCl, MgCl2, Na2SO4 | 323-423 | 150 | 1-9 | 0/108/0 |
-| `Hou2013` | xc_saltfree (36), solubility_molality (36), y_h2o (33) | co2 | pure water | 298-448 | 10.9-175.5 | 0 | 0/93/12 |
-| `Tong2013` | xc_saltfree (51), solubility_molality (51) | co2 | CaCl2, MgCl2, Na++Cl-+K+, pure water | 308-423 | 10.7-379.9 | 0-15 | 0/102/0 |
+| `Chabab2021` | xc_saltfree (58), solubility_molality (58) | co2, o2 | NaCl | 303.26-373.39 | 30.516-394.477 | 1-12 | 2/104/10 |
+| `CHAPOY2004` | xc_saltfree (55), solubility_molality (55) | c3h8, ch4 | pure water | 275-368.16 | 3.9-179.98 | 0 | 10/100/0 |
+| `Zhao2015b` | xc_saltfree (54), solubility_molality (54) | co2 | CaCl2, KCl, MgCl2, Na2SO4 | 323-423 | 150 | 1-9 | 24/84/0 |
+| `Hou2013` | xc_saltfree (36), solubility_molality (36), y_h2o (33) | co2 | pure water | 298-448 | 10.9-175.5 | 0 | 10/83/12 |
+| `Tong2013` | xc_saltfree (51), solubility_molality (51) | co2 | CaCl2, MgCl2, Na++Cl-+K+ | 308-423 | 10.7-379.9 | 2.106-15 | 6/96/0 |
 | `Poulain2019` | xc_saltfree (48), solubility_molality (48) | co2 | Na++Cl-+Ca2+, Na++Cl-+K++Ca2+ | 323-423 | 10.1-199.3 | 3-3.2 | 0/96/0 |
-| `Chabab2020` | xc_saltfree (46), solubility_molality (46) | co2, h2 | NaCl, pure water | 323-373 | 19.884-394.5 | 0-12 | 0/92/0 |
 | `CulbersonMcKetta1950` | solubility_molality (45), xc_saltfree (45) | c2h6 | pure water | 310.93-444.26 | 50.7-685 | 0 | 0/90/0 |
 | `Jooss2026` | y_h2o (90) | co2 | NaCl, pure water | 308.13-393.22 | 10-700 | 0-5.3146 | 0/90/0 |
-| `Bamberger2000` | xc_saltfree (29), solubility_molality (29), y_h2o (29) | co2 | pure water | 323-353 | 41-141 | 0 | 3/84/0 |
-| `Carroll1998` | xc_saltfree (43), solubility_molality (43) | ch4 | pure water | 298-398 | 1-179.6 | 0 | 0/86/0 |
+| `Bamberger2000` | xc_saltfree (29), solubility_molality (29), y_h2o (29) | co2 | pure water | 323-353 | 41-141 | 0 | 9/78/0 |
+| `Carroll1998` | xc_saltfree (43), solubility_molality (43) | ch4 | pure water | 298-398 | 1-179.6 | 0 | 12/74/0 |
 | `Mohammadi2004eth` | solubility_molality (41), xc_saltfree (41) | c2h6 | pure water | 283.1-343.08 | 3.73-49.52 | 0 | 0/82/0 |
-| `Wiebe1934` | solubility_molality (40), xc_saltfree (40) | h2 | pure water | 273-373 | 25.3-1013.3 | 0 | 0/80/0 |
-| `Jung1971` | solubility_molality (38), xc_saltfree (38) | h2 | pure water | 373-573 | 21-100 | 0 | 0/76/0 |
+| `Wiebe1934` | solubility_molality (40), xc_saltfree (40) | h2 | pure water | 273-373 | 25.3-1013.3 | 0 | 8/72/0 |
+| `Jung1971` | solubility_molality (38), xc_saltfree (38) | h2 | pure water | 373-573 | 21-100 | 0 | 2/74/0 |
 | `PitzerMayorga1973` | phi_osm (75) | - | CaCl2, KCl, MgCl2, Na2SO4, NaCl | 298.15 | 1 | 0.02-13.5 | 75/0/0 |
-| `Messabeb2016` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323-423 | 49.9-202.3 | 2-12 | 0/72/0 |
-| `Messabeb2017` | xc_saltfree (36), solubility_molality (36) | co2 | CaCl2 | 323-423 | 50.4-200.4 | 3-18 | 0/72/0 |
-| `Santos2020` | xc_saltfree (36), solubility_molality (36) | co2 | Na2SO4 | 323-423 | 16-201.7 | 3-6 | 0/72/0 |
-| `Santos2021` | xc_saltfree (33), solubility_molality (33) | co2 | MgCl2 | 323-423 | 16-202.9 | 3-15 | 0/66/0 |
+| `Chabab2020` | xc_saltfree (37), solubility_molality (37) | h2 | NaCl, pure water | 323.18-372.78 | 19.884-229.72 | 0-10 | 2/72/0 |
+| `Messabeb2016` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323-423 | 49.9-202.3 | 2-12 | 26/46/0 |
+| `Messabeb2017` | xc_saltfree (36), solubility_molality (36) | co2 | CaCl2 | 323-423 | 50.4-200.4 | 3-18 | 6/66/0 |
+| `Santos2020` | xc_saltfree (36), solubility_molality (36) | co2 | Na2SO4 | 323-423 | 16-201.7 | 3-6 | 14/58/0 |
+| `Santos2021` | xc_saltfree (33), solubility_molality (33) | co2 | MgCl2 | 323-423 | 16-202.9 | 3-15 | 12/54/0 |
 | `Olds1942` | y_h2o (65) | ch4 | pure water | 311-511 | 26.7-688.6 | 0 | 5/60/0 |
 | `Frost2014` | xc_saltfree (21), solubility_molality (21), y_h2o (21) | ch4 | pure water | 283-323 | 47.8-194.9 | 0 | 2/61/0 |
 | `STOESSELL1982` | solubility_molality (60), xc_saltfree (3) | ch4 | CaCl2, KCl, MgCl2, MgSO4, Na2SO4, NaCl, pure water | 298 | 24.1-51.7 | 0-8 | 0/63/0 |
-| `King1992` | y_h2o (26), xc_saltfree (18), solubility_molality (18) | co2 | pure water | 288-313 | 51.7-243.2 | 0 | 0/62/0 |
+| `King1992` | y_h2o (26), xc_saltfree (18), solubility_molality (18) | co2 | pure water | 288-313 | 51.7-243.2 | 0 | 10/52/0 |
 | `Culberson1950` | solubility_molality (30), xc_saltfree (30) | c2h6 | pure water | 310.93-444.26 | 4.1-83.8 | 0 | 0/60/0 |
-| `Michels1936` | xc_saltfree (30), solubility_molality (30) | ch4 | pure water | 298-398 | 40.6-212.2 | 0 | 0/60/0 |
+| `Michels1936` | xc_saltfree (30), solubility_molality (30) | ch4 | pure water | 298-398 | 40.6-212.2 | 0 | 2/52/6 |
 | `Meyer2015` | y_h2o (58) | co2 | pure water | 283-353 | 5-50 | 0 | 58/0/0 |
-| `Koschel2006` | dh_sol (22), xc_saltfree (14), solubility_molality (14) | co2 | NaCl, pure water | 323-373.1 | 20.6-202.4 | 0-6 | 0/50/0 |
+| `Koschel2006` | dh_sol (22), xc_saltfree (14), solubility_molality (14) | co2 | NaCl, pure water | 323-373.1 | 20.6-202.4 | 0-6 | 6/44/0 |
 | `Prutton1945` | xc_saltfree (25), solubility_molality (25) | co2 | CaCl2 | 373 | 17-648 | 3-11.7 | 0/50/0 |
-| `Chabab2024` | solubility_molality (39), xc_saltfree (9) | h2 | NaCl, pure water | 298-373 | 100-200.5 | 0-8 | 0/48/0 |
-| `Yan2011` | xc_saltfree (24), solubility_molality (24) | co2 | NaCl | 323-373 | 50-400 | 2-10 | 0/48/0 |
+| `Chabab2024` | solubility_molality (39), xc_saltfree (9) | h2 | NaCl, pure water | 298-373 | 100-200.5 | 0-8 | 8/40/0 |
+| `Yan2011` | xc_saltfree (24), solubility_molality (24) | co2 | NaCl | 323-373 | 50-400 | 2-10 | 20/28/0 |
 | `Zhao2015c` | xc_saltfree (24), solubility_molality (24) | co2 | Na++Cl-+K++Ca2++Mg2+, Na++Cl-+K++Ca2++Mg2++SO4 2- | 323-423 | 100-175 | 2.798-8.009 | 0/48/0 |
 | `Chabab2019` | xc_saltfree (21), solubility_molality (21) | co2 | NaCl | 322.97-373.41 | 16.983-229.817 | 2-6.02 | 0/42/0 |
-| `Ipatev1934` | solubility_molality (21), xc_saltfree (21) | h2 | pure water | 373-498 | 31-118 | 0 | 0/42/0 |
-| `Wang1995` | xc_saltfree (21), solubility_molality (21) | ch4 | pure water | 283-298 | 11.3-51.8 | 0 | 0/42/0 |
+| `Ipatev1934` | solubility_molality (21), xc_saltfree (21) | h2 | pure water | 373-498 | 31-118 | 0 | 2/40/0 |
+| `Wang1995` | xc_saltfree (21), solubility_molality (21) | ch4 | pure water | 283-298 | 11.3-51.8 | 0 | 2/40/0 |
 | `CHAPOY2003` | y_h2o (39) | ch4 | pure water | 283-318 | 9.92-346.1 | 0 | 2/35/2 |
-| `Nighswander` | xc_saltfree (19), solubility_molality (19) | co2 | pure water | 353-473 | 20.4-102 | 0 | 0/38/0 |
+| `Nighswander` | xc_saltfree (19), solubility_molality (19) | co2 | pure water | 353-473 | 20.4-102 | 0 | 6/32/0 |
 | `Portier2005` | xc_saltfree (19), solubility_molality (19) | co2 | Na++Cl-+K++Ca2++Mg2+ | 293-353 | 80-120 | 1.019 | 0/38/0 |
 | `Yarrison2006` | y_h2o (37) | ch4 | pure water | 311-478 | 34.5-1103.2 | 0 | 5/32/0 |
 | `Takenouchi1965` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 423 | 100-1200 | 2.18-8.54 | 0/36/0 |
-| `Zhao2015` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 323-423 | 150 | 2-12 | 0/36/0 |
+| `Zhao2015` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 323-423 | 150 | 2-12 | 20/16/0 |
 | `Mohammadi2005` | y_h2o (35) | n2 | pure water | 282.86-363.08 | 4.25-49.62 | 0 | 0/35/0 |
 | `Duffy1961` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 298-303 | 3.2-51.7 | 0 | 0/34/0 |
 | `Wang2003` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 283-303 | 20-400.3 | 0 | 0/34/0 |
 | `Gillespie1980` | solubility_molality (16), xc_saltfree (16) | h2 | pure water | 311-589 | 3.4-137.9 | 0 | 0/32/0 |
 | `Blanco1978` | solubility_molality (30) | ch4 | CaCl2 | 298-398 | 101.3-607.8 | 3 | 0/30/0 |
 | `Campos2010` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 303-323 | 1.824-6.383 | 0 | 0/30/0 |
-| `dosSantos2021` | solubility_molality (30) | co2 | Na++Cl-+SO4 2-, NaCl | 303.15-423.15 | 15.3-201.8 | 9-12 | 0/30/0 |
+| `dosSantos2021` | solubility_molality (30) | co2 | Na++Cl-+SO4 2-, NaCl | 303.15-423.15 | 15.3-201.8 | 9-12 | 1/29/0 |
 | `Lekvam1997` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 275-286 | 5.67-90.82 | 0 | 0/30/0 |
 | `Botger2016` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 283-298 | 11.51-103.6 | 0 | 0/28/0 |
-| `Gao1997` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 323-375 | 56-580 | 0 | 0/28/0 |
+| `Gao1997` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 323-375 | 56-580 | 0 | 10/18/0 |
 | `Kamps2007` | xc_saltfree (13), solubility_molality (13) | co2 | KCl | 373 | 6.019-90.31 | 4-8 | 0/26/0 |
 | `Schlaikjer2018` | phi_osm (26) | - | Na2SO4 | 373.15 | 1.5 | 0.462-6.51 | 0/26/0 |
-| `Guo2016 (variant)` | xc_saltfree (12), solubility_molality (12) | co2 | NaCl | 373 | 100-400 | 2-10 | 0/24/0 |
+| `Guo2016 (variant)` | xc_saltfree (12), solubility_molality (12) | co2 | NaCl | 373 | 100-400 | 2-10 | 10/14/0 |
 | `Mohammadi2004` | y_h2o (22) | c2h6, ch4 | pure water | 282.93-313.12 | 5.06-29.9 | 0 | 0/22/0 |
-| `Sachs1995` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 4.4-468.5 | 0 | 0/22/0 |
-| `Sako1991` | y_h2o (8), xc_saltfree (7), solubility_molality (7) | co2 | pure water | 348-423 | 101.8-209.4 | 0 | 0/22/0 |
-| `Yang2001` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 23.3-126.8 | 0 | 0/22/0 |
-| `Briones1987` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | co2 | pure water | 323 | 68.2-176.8 | 0 | 2/19/0 |
+| `Sachs1995` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 4.4-468.5 | 0 | 4/18/0 |
+| `Sako1991` | y_h2o (8), xc_saltfree (7), solubility_molality (7) | co2 | pure water | 348-423 | 101.8-209.4 | 0 | 4/18/0 |
+| `Yang2001` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 23.3-126.8 | 0 | 2/20/0 |
+| `Briones1987` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | co2 | pure water | 323 | 68.2-176.8 | 0 | 8/13/0 |
 | `Chapoy2005` | y_h2o (21) | ch4 | pure water | 278-298 | 4.91-43.74 | 0 | 2/19/0 |
 | `Haas1976` | psat_ratio (21) | - | NaCl | 373.15-523.15 | - | 2-12 | 21/0/0 |
-| `Qin2008` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | ch4 | pure water | 323-375 | 109-499 | 0 | 0/21/0 |
+| `Qin2008` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | ch4 | pure water | 323-375 | 109-499 | 0 | 4/17/0 |
 | `Torin2021` | solubility_molality (15), xc_saltfree (5) | h2 | NaCl, pure water | 323-423 | 112.4-458.1 | 0-5 | 0/20/0 |
 | `Devaney1978` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 366-589 | 13.8-110.3 | 0 | 0/18/0 |
-| `Kling1991` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323-423 | 31.8-153.7 | 0 | 0/18/0 |
+| `Kling1991` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323-423 | 31.8-153.7 | 0 | 2/16/0 |
 | `Pray1952` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323-589 | 6.9-24.1 | 0 | 0/18/0 |
 | `Yokoyama1988` | xc_saltfree (6), solubility_molality (6), y_h2o (6) | ch4 | pure water | 298-323 | 30-80 | 0 | 0/18/0 |
-| `Amirijafari1972` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 311-343 | 41.4-344.7 | 0 | 0/16/0 |
-| `Awan2010` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 298-313 | 9.93-99.81 | 0 | 0/16/0 |
-| `Rumpf1993b (b)` | xc_saltfree (7), solubility_molality (7) | co2 | Na2SO4 | 323 | 5.13-83.17 | 3 | 0/14/0 |
+| `Amirijafari1972` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 311-343 | 41.4-344.7 | 0 | 4/12/0 |
+| `Awan2010` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 298-313 | 9.93-99.81 | 0 | 8/8/0 |
+| `Rumpf1993b (b)` | xc_saltfree (7), solubility_molality (7) | co2 | Na2SO4 | 323 | 5.13-83.17 | 3 | 2/12/0 |
 | `Maribo2013` | eps_r (13) | - | NaCl, pure water | 298.15 | 1 | 0-11 | 0/13/0 |
-| `Dsouza1988` | xc_saltfree (4), solubility_molality (4), y_h2o (4) | co2 | pure water | 323-348 | 101.3-152 | 0 | 1/11/0 |
+| `Dsouza1988` | xc_saltfree (4), solubility_molality (4), y_h2o (4) | co2 | pure water | 323-348 | 101.3-152 | 0 | 3/9/0 |
 | `Elmaghraby2012` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K+ | 306-343 | 3.4-90 | 1.98 | 0/12/0 |
 | `Kim2003` | xc_saltfree (6), solubility_molality (6) | ch4 | pure water | 298 | 23-166 | 0 | 0/12/0 |
 | `Li2004` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 333 | 17.6-208.7 | 3.012 | 0/12/0 |
 | `Savary2012` | xc_saltfree (6), solubility_molality (6) | co2 | NaCl | 423 | 125-305 | 4 | 0/12/0 |
 | `Rumpf1993b` | xc_saltfree (5), solubility_molality (5) | co2 | pure water | 323 | 10.6-58 | 0 | 0/10/0 |
-| `Tong2013 (variant)` | xc_saltfree (5), solubility_molality (5) | co2 | pure water | 373 | 72.1-272.6 | 0 | 0/10/0 |
-| `Dohrn1993` | xc_saltfree (3), solubility_molality (3), y_h2o (3) | co2 | pure water | 323 | 101-301 | 0 | 1/8/0 |
+| `Tong2013 (variant)` | xc_saltfree (5), solubility_molality (5) | co2 | pure water | 373 | 72.1-272.6 | 0 | 2/8/0 |
+| `Dohrn1993` | xc_saltfree (3), solubility_molality (3), y_h2o (3) | co2 | pure water | 323 | 101-301 | 0 | 3/6/0 |
 | `Torres2026` | y_h2o (9) | h2 | pure water | 273.15-283.15 | 8.8-249.5 | 0 | 0/9/0 |
-| `Addicks2002` | xc_saltfree (4), solubility_molality (4) | ch4 | pure water | 298 | 73.6-178.2 | 0 | 0/8/0 |
+| `Addicks2002` | xc_saltfree (4), solubility_molality (4) | ch4 | pure water | 298 | 73.6-178.2 | 0 | 2/6/0 |
 | `Corti1990` | xc_saltfree (4), solubility_molality (4) | co2 | Na2SO4 | 323 | 76.6-145.1 | 6-8.1 | 0/8/0 |
 | `Song1994` | y_h2o (8) | c2h6, c3h8 | pure water | 281.95-303.75 | 6.21-47.14 | 0 | 0/8/0 |
 | `Bastami2014` | xc_saltfree (3), solubility_molality (3) | co2 | CaCl2 | 373 | 68.9-206.9 | 5.7-14.4 | 0/6/0 |
