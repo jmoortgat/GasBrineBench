@@ -1,4 +1,4 @@
-#OLDS(1942)
+#OLDS(1942) | T=444.26 | 340 degF, Olds et al. 1942; the filename already said 444
 P [bar]    xc_W    yw_C
 34.4	X	0.25334
 87.4	X	0.10935

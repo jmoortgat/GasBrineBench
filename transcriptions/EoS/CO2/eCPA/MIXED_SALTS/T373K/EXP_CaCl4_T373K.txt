@@ -1,4 +1,4 @@
-#BASTAMI(2014)
+#BASTAMI(2014) | T=375.15 | Bastami et al. 2014: '328.15 to 375.15 K'
 P [bar]    ms [mol/kg]    xc_W [SALTfree]    Na    Cl    K    Ca    Mg    SO4
 68.9	1.9	0.0058		0	3.8	0	1.9	0	0
 206.9	1.9	0.0096		0	3.8	0	1.9	0	0

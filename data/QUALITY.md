@@ -15,7 +15,7 @@ solubility_rows_after: 9367
 rows_removed: 18
 rows_ion_fixed: 2
 rows_retagged_fit_eligible: 18
-rows_upgraded_R: 607
+rows_upgraded_R: 591
 rows_downgraded_U: 12
 combined_parquet_rows: 10429
 -->
@@ -86,7 +86,7 @@ siblings) upgraded R.  Downgrade to U requires >= 3 clusters
 (each with >= 3 sources) in which the source deviates from
 the cluster median by > max(3 x cluster spread, 5%).
 
-265 clusters (143 upgraded to R, 607 rows incl. siblings; 12 rows downgraded).
+260 clusters (139 upgraded to R, 591 rows incl. siblings; 12 rows downgraded).
 
 | # | gas | T [K] | P [bar] | system | sources: values [mol/kg] | span | quality |
 |---|---|---|---|---|---|---|---|
@@ -279,90 +279,85 @@ the cluster median by > max(3 x cluster spread, 5%).
 | 186 | ch4 | 313.0 | 100 | pure water | AWAN(2010): 0.0890; OU(2015): 0.0851 | 4.5% | R |
 | 187 | ch4 | 323.0 | 113-115 | pure water | FROST(2013): 0.0940; MICHELS(1936): 0.0789 | 17.4% | T (span > 5%) |
 | 188 | ch4 | 323.0 | 174-176 | pure water | CARROLL(1998): 0.1157; MICHELS(1936): 0.1057 | 9.1% | T (span > 5%) |
-| 189 | ch4 | 323.0 | 101-102 | pure water | GAO(1997): 0.0841; OSULLIVAN(1969): 0.0793 | 5.9% | T (span > 5%) |
-| 190 | ch4 | 323.0 | 203 | pure water | GAO(1997): 0.1214; OSULLIVAN(1969): 0.1268 | 4.4% | R |
-| 191 | ch4 | 323.0 | 405 | pure water | GAO(1997): 0.1803; OSULLIVAN(1969): 0.1860 | 3.1% | R |
-| 192 | ch4 | 323.0 | 506 | pure water | GAO(1997): 0.2064; OSULLIVAN(1969): 0.2078 | 0.7% | R |
-| 193 | ch4 | 323.0 | 301-304 | pure water | GAO(1997): 0.1564; OSULLIVAN(1969): 0.1598; QIN(2008): 0.1670 | 6.6% | T (span > 5%) |
-| 194 | ch4 | 323.0 | 50 | pure water | FROST(2013): 0.0335; MICHELS(1936): 0.0400; YOKOYAMA(1988): 0.0439 | 26.0% | T (span > 5%) |
-| 195 | ch4 | 333.0 | 690-700 | pure water | SUSAK(1980): 0.2347; OU(2015): 0.2560 | 8.7% | T (span > 5%) |
-| 196 | ch4 | 333.0 | 1379-1400 | pure water | SUSAK(1980): 0.3216; OU(2015): 0.3829 | 17.4% | T (span > 5%) |
-| 197 | ch4 | 343.0 | 340-345 | pure water | CULBERSON(1951): 0.1542; AMIRIJAFARI(1972): 0.1559 | 1.1% | R |
-| 198 | ch4 | 348.0 | 68-69 | pure water | CARROLL(1998): 0.0537; SUSAK(1980): 0.0494 | 8.3% | T (span > 5%) |
-| 199 | ch4 | 348.0 | 172-176 | pure water | CARROLL(1998): 0.1079; MICHELS(1936): 0.0968; SUSAK(1980): 0.1007 | 11.1% | T (span > 5%) |
-| 200 | ch4 | 373.0 | 171-172 | pure water | SUSAK(1980): 0.1051; CARROLL(1998): 0.1090 | 3.6% | R |
-| 201 | ch4 | 373.0 | 49-50 | pure water | MICHELS(1936): 0.0367; OU(2015): 0.0361 | 1.5% | R |
-| 202 | ch4 | 373.0 | 98-100 | pure water | CARROLL(1998): 0.0700; OU(2015): 0.0700 | 0.0% | R |
-| 203 | ch4 | 373.0 | 690-700 | pure water | SUSAK(1980): 0.2560; OU(2015): 0.2750 | 7.2% | T (span > 5%) |
-| 204 | ch4 | 373.0 | 1379-1400 | pure water | SUSAK(1980): 0.3609; OU(2015): 0.4127 | 13.4% | T (span > 5%) |
-| 205 | ch4 | 375.0 | 204-206 | pure water | GAO(1997): 0.1281; OSULLIVAN(1969): 0.1227; QIN(2008): 0.1280 | 4.3% | R |
-| 206 | ch4 | 375.0 | 302-306 | pure water | GAO(1997): 0.1605; OSULLIVAN(1969): 0.1598; QIN(2008): 0.1670 | 4.5% | R |
-| 207 | ch4 | 375.0 | 400-402-408 | pure water | GAO(1997): 0.1883; OSULLIVAN(1969): 0.1855; QIN(2008): 0.1950 | 5.0% | T (span > 5%) |
-| 208 | ch4 | 375.0 | 499-500-510 | pure water | GAO(1997): 0.2118; OSULLIVAN(1969): 0.2145; QIN(2008): 0.2285 | 7.8% | T (span > 5%) |
-| 209 | ch4 | 398.0 | 68-69 | pure water | CARROLL(1998): 0.0537; SUSAK(1980): 0.0550 | 2.4% | R |
-| 210 | ch4 | 473.0 | 49-50 | pure water | SULTANOV(1972): 0.0556; OU(2015): 0.0528 | 5.1% | T (span > 5%) |
-| 211 | ch4 | 473.0 | 98-100 | pure water | SULTANOV(1972): 0.1224; OU(2015): 0.1207 | 1.4% | R |
-| 212 | ch4 | 473.0 | 196-200 | pure water | SULTANOV(1972): 0.2571; OU(2015): 0.2487 | 3.3% | R |
-| 213 | ch4 | 473.0 | 294-300 | pure water | SULTANOV(1972): 0.3649; OU(2015): 0.3367 | 8.0% | T (span > 5%) |
-| 214 | ch4 | 473.0 | 392-400 | pure water | SULTANOV(1972): 0.4505; OU(2015): 0.4426 | 1.8% | R |
-| 215 | ch4 | 473.0 | 490-500 | pure water | SULTANOV(1972): 0.5013; OU(2015): 0.4985 | 0.6% | R |
-| 216 | ch4 | 473.0 | 690-700 | pure water | SUSAK(1980): 0.6180; OU(2015): 0.6066 | 1.9% | R |
-| 217 | ch4 | 473.0 | 1379-1400 | pure water | SUSAK(1980): 0.9054; OU(2015): 0.8390 | 7.6% | T (span > 5%) |
-| 218 | ch4 | 494.0 | 1400-1416 | pure water | PRICE(1979): 1.0333; OU(2015): 1.0399 | 0.6% | R |
-| 219 | ch4 | 553.0 | 198-200 | pure water | PRICE(1979): 0.4771; OU(2015): 0.4996 | 4.6% | R |
-| 220 | ch4 | 553.0 | 700-701 | pure water | PRICE(1979): 1.5430; OU(2015): 1.5368 | 0.4% | R |
-| 221 | ch4 | 573.0 | 98-100 | pure water | SULTANOV(1972): 0.0667; OU(2015): 0.0839 | 22.9% | T (span > 5%) |
-| 222 | ch4 | 573.0 | 196-200 | pure water | SULTANOV(1972): 0.5879; OU(2015): 0.5658 | 3.8% | R |
-| 223 | ch4 | 573.0 | 294-300 | pure water | SULTANOV(1972): 1.0514; OU(2015): 0.9410 | 11.1% | T (span > 5%) |
-| 224 | ch4 | 573.0 | 392-400 | pure water | SULTANOV(1972): 1.4449; OU(2015): 1.3527 | 6.6% | T (span > 5%) |
-| 225 | ch4 | 573.0 | 490-500 | pure water | SULTANOV(1972): 1.7545; OU(2015): 1.5849 | 10.2% | T (span > 5%) |
-| 226 | ch4 | 573.0 | 690-700 | pure water | SUSAK(1980): 2.4142; OU(2015): 2.0073 | 18.4% | T (span > 5%) |
-| 227 | ch4 | 573.0 | 1379-1400 | pure water | SUSAK(1980): 3.9002; OU(2015): 2.6375 | 38.6% | T (span > 5%) |
-| 228 | ch4 | 603.0 | 196-200 | pure water | SULTANOV(1972): 0.5075; OU(2015): 0.5868 | 14.5% | T (span > 5%) |
-| 229 | ch4 | 603.0 | 294-300 | pure water | SULTANOV(1972): 1.2562; OU(2015): 1.2278 | 2.3% | R |
-| 230 | ch4 | 603.0 | 392-400 | pure water | SULTANOV(1972): 2.0329; OU(2015): 1.7097 | 17.3% | T (span > 5%) |
-| 231 | ch4 | 603.0 | 490-500 | pure water | SULTANOV(1972): 2.6655; OU(2015): 2.1549 | 21.2% | T (span > 5%) |
-| 232 | h2 | 323.0/323.2 | 119-122 | pure water | Chabab2020_IJHE45_T4: 0.0858; KLING(1991): 0.0841 | 2.0% | R |
-| 233 | h2 | 323.0/323.2 | 100-101 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0540; CHABAB(2024): 0.0570 | 5.3% | T (span > 5%) |
-| 234 | h2 | 323.0/323.2 | 150 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0789; CHABAB(2024): 0.0842 | 6.6% | T (span > 5%) |
-| 235 | h2 | 323.0/323.2 | 200 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.1032; CHABAB(2024): 0.1138 | 9.8% | T (span > 5%) |
-| 236 | co2 | 303.0/303.6 | 37 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.3193; Chabab2021_JCED66_T2: 0.3193 | 0.0% | R |
-| 237 | co2 | 303.0/303.6 | 71 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.4985; Chabab2021_JCED66_T2: 0.4985 | 0.0% | R |
-| 238 | co2 | 303.0/303.1/303.6 | 151-152 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.5245; Chabab2021_JCED66_T2: 0.5245; dosSantos2021_ChemGeol582_T7: 0.5250 | 0.1% | R |
-| 239 | co2 | 303.0/303.6 | 247 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.5675; Chabab2021_JCED66_T2: 0.5675 | 0.0% | R |
-| 240 | co2 | 303.0/303.6 | 360 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.6043; Chabab2021_JCED66_T2: 0.6043 | 0.0% | R |
-| 241 | co2 | 323.0/323.1 | 150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.6225; Hou2013_JSCF78_T2: 0.5590 | 10.7% | T (span > 5%) |
-| 242 | co2 | 373.0/373.1 | 149-150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.5266; Hou2013_JSCF78_T2: 0.4798 | 9.3% | T (span > 5%) |
-| 243 | co2 | 423.0/423.1 | 150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.4976; Hou2013_JSCF78_T2: 0.4725 | 5.2% | T (span > 5%) |
-| 244 | co2 | 323.0/323.1 | 150 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.8793; Hou2013_JSCF78_T3: 0.7380 | 17.5% | T (span > 5%) |
-| 245 | co2 | 373.0/373.1 | 90 | m_Cl=4+m_K=4 | KAMP(2007): 0.5066; Hou2013_JSCF78_T3: 0.4234 | 17.9% | T (span > 5%) |
-| 246 | co2 | 373.0/373.1 | 150-151 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.6824; Hou2013_JSCF78_T3: 0.5839 | 15.6% | T (span > 5%) |
-| 247 | co2 | 423.0/423.1 | 150 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.5925; Hou2013_JSCF78_T3: 0.5279 | 11.5% | T (span > 5%) |
-| 248 | c2h6 | 444.3 | 51 | pure water | CULBERSONHORN(1950): 0.0373; CULBERSONMCKETTA(1950): 0.0428 | 13.8% | T (span > 5%) |
-| 249 | c3h8 | 288.1/288.7 | 7 | pure water | KOBAYASHI(1951): 0.0143; CHAPOY(2004): 0.0130 | 9.2% | T (span > 5%) |
-| 250 | h2 | 372.8/373.0 | 100-101 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0595; CHABAB(2024): 0.0666 | 11.2% | T (span > 5%) |
-| 251 | h2 | 372.8/373.0 | 150-154 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0887; CHABAB(2024): 0.0988 | 10.8% | T (span > 5%) |
-| 252 | h2 | 298.0 | 100-101 | pure water | CHABAB(2024): 0.0756; WIEBE(1934): 0.0759 | 0.4% | R |
-| 253 | h2 | 298.0 | 200-203 | pure water | CHABAB(2024): 0.1472; WIEBE(1934): 0.1490 | 1.2% | R |
-| 254 | h2 | 323.0 | 101 | pure water | CHABAB(2024): 0.0689; WIEBE(1934): 0.0709 | 2.9% | R |
-| 255 | h2 | 323.0 | 200-203 | pure water | CHABAB(2024): 0.1366; WIEBE(1934): 0.1392 | 1.9% | R |
-| 256 | h2 | 366.0 | 14 | pure water | GILLESPIE(1980): 0.0100; DEVANEY(1978): 0.0111 | 10.5% | T (span > 5%) |
-| 257 | h2 | 373.0 | 42 | pure water | JUNG(1968): 0.0330; IPATEV(1934): 0.0287 | 13.9% | T (span > 5%) |
-| 258 | h2 | 373.0 | 62 | pure water | JUNG(1968): 0.0487; IPATEV(1934): 0.0423 | 14.2% | T (span > 5%) |
-| 259 | h2 | 373.0 | 82 | pure water | JUNG(1968): 0.0639; IPATEV(1934): 0.0567 | 12.0% | T (span > 5%) |
-| 260 | h2 | 373.0 | 100-101-102 | pure water | CHABAB(2024): 0.0783; WIEBE(1934): 0.0794; IPATEV(1934): 0.0734 | 7.7% | T (span > 5%) |
-| 261 | h2 | 398.0 | 82-83 | pure water | JUNG(1968): 0.0672; IPATEV(1934): 0.0628 | 6.8% | T (span > 5%) |
-| 262 | h2 | 423.0 | 76 | pure water | KLING(1991): 0.0752; JUNG(1968): 0.0639 | 16.2% | T (span > 5%) |
-| 263 | h2 | 423.0 | 52 | pure water | KLING(1991): 0.0500; IPATEV(1934): 0.0433 | 14.4% | T (span > 5%) |
-| 264 | h2 | 473.0 | 36 | pure water | JUNG(1968): 0.0319; IPATEV(1934): 0.0319 | 0.0% | R |
+| 189 | ch4 | 323.0 | 301-304 | pure water | GAO(1997): 0.1564; QIN(2008): 0.1670 | 6.6% | T (span > 5%) |
+| 190 | ch4 | 323.0 | 50 | pure water | FROST(2013): 0.0335; MICHELS(1936): 0.0400; YOKOYAMA(1988): 0.0439 | 26.0% | T (span > 5%) |
+| 191 | ch4 | 333.0 | 690-700 | pure water | SUSAK(1980): 0.2347; OU(2015): 0.2560 | 8.7% | T (span > 5%) |
+| 192 | ch4 | 333.0 | 1379-1400 | pure water | SUSAK(1980): 0.3216; OU(2015): 0.3829 | 17.4% | T (span > 5%) |
+| 193 | ch4 | 348.0 | 68-69 | pure water | CARROLL(1998): 0.0537; SUSAK(1980): 0.0494 | 8.3% | T (span > 5%) |
+| 194 | ch4 | 348.0 | 172-176 | pure water | CARROLL(1998): 0.1079; MICHELS(1936): 0.0968; SUSAK(1980): 0.1007 | 11.1% | T (span > 5%) |
+| 195 | ch4 | 373.0 | 171-172 | pure water | SUSAK(1980): 0.1051; CARROLL(1998): 0.1090 | 3.6% | R |
+| 196 | ch4 | 373.0 | 49-50 | pure water | MICHELS(1936): 0.0367; OU(2015): 0.0361 | 1.5% | R |
+| 197 | ch4 | 373.0 | 98-100 | pure water | CARROLL(1998): 0.0700; OU(2015): 0.0700 | 0.0% | R |
+| 198 | ch4 | 373.0 | 690-700 | pure water | SUSAK(1980): 0.2560; OU(2015): 0.2750 | 7.2% | T (span > 5%) |
+| 199 | ch4 | 373.0 | 1379-1400 | pure water | SUSAK(1980): 0.3609; OU(2015): 0.4127 | 13.4% | T (span > 5%) |
+| 200 | ch4 | 375.0/375.6 | 204-206 | pure water | GAO(1997): 0.1281; OSULLIVAN(1969): 0.1227; QIN(2008): 0.1280 | 4.3% | R |
+| 201 | ch4 | 375.0/375.6 | 302-306 | pure water | GAO(1997): 0.1605; OSULLIVAN(1969): 0.1598; QIN(2008): 0.1670 | 4.5% | R |
+| 202 | ch4 | 375.0/375.6 | 400-402-408 | pure water | GAO(1997): 0.1883; OSULLIVAN(1969): 0.1855; QIN(2008): 0.1950 | 5.0% | T (span > 5%) |
+| 203 | ch4 | 375.0/375.6 | 499-500-510 | pure water | GAO(1997): 0.2118; OSULLIVAN(1969): 0.2145; QIN(2008): 0.2285 | 7.8% | T (span > 5%) |
+| 204 | ch4 | 398.0 | 68-69 | pure water | CARROLL(1998): 0.0537; SUSAK(1980): 0.0550 | 2.4% | R |
+| 205 | ch4 | 473.0 | 49-50 | pure water | SULTANOV(1972): 0.0556; OU(2015): 0.0528 | 5.1% | T (span > 5%) |
+| 206 | ch4 | 473.0 | 98-100 | pure water | SULTANOV(1972): 0.1224; OU(2015): 0.1207 | 1.4% | R |
+| 207 | ch4 | 473.0 | 196-200 | pure water | SULTANOV(1972): 0.2571; OU(2015): 0.2487 | 3.3% | R |
+| 208 | ch4 | 473.0 | 294-300 | pure water | SULTANOV(1972): 0.3649; OU(2015): 0.3367 | 8.0% | T (span > 5%) |
+| 209 | ch4 | 473.0 | 392-400 | pure water | SULTANOV(1972): 0.4505; OU(2015): 0.4426 | 1.8% | R |
+| 210 | ch4 | 473.0 | 490-500 | pure water | SULTANOV(1972): 0.5013; OU(2015): 0.4985 | 0.6% | R |
+| 211 | ch4 | 473.0 | 690-700 | pure water | SUSAK(1980): 0.6180; OU(2015): 0.6066 | 1.9% | R |
+| 212 | ch4 | 473.0 | 1379-1400 | pure water | SUSAK(1980): 0.9054; OU(2015): 0.8390 | 7.6% | T (span > 5%) |
+| 213 | ch4 | 494.0 | 1400-1416 | pure water | PRICE(1979): 1.0333; OU(2015): 1.0399 | 0.6% | R |
+| 214 | ch4 | 553.0 | 198-200 | pure water | PRICE(1979): 0.4771; OU(2015): 0.4996 | 4.6% | R |
+| 215 | ch4 | 553.0 | 700-701 | pure water | PRICE(1979): 1.5430; OU(2015): 1.5368 | 0.4% | R |
+| 216 | ch4 | 573.0 | 98-100 | pure water | SULTANOV(1972): 0.0667; OU(2015): 0.0839 | 22.9% | T (span > 5%) |
+| 217 | ch4 | 573.0 | 196-200 | pure water | SULTANOV(1972): 0.5879; OU(2015): 0.5658 | 3.8% | R |
+| 218 | ch4 | 573.0 | 294-300 | pure water | SULTANOV(1972): 1.0514; OU(2015): 0.9410 | 11.1% | T (span > 5%) |
+| 219 | ch4 | 573.0 | 392-400 | pure water | SULTANOV(1972): 1.4449; OU(2015): 1.3527 | 6.6% | T (span > 5%) |
+| 220 | ch4 | 573.0 | 490-500 | pure water | SULTANOV(1972): 1.7545; OU(2015): 1.5849 | 10.2% | T (span > 5%) |
+| 221 | ch4 | 573.0 | 690-700 | pure water | SUSAK(1980): 2.4142; OU(2015): 2.0073 | 18.4% | T (span > 5%) |
+| 222 | ch4 | 573.0 | 1379-1400 | pure water | SUSAK(1980): 3.9002; OU(2015): 2.6375 | 38.6% | T (span > 5%) |
+| 223 | ch4 | 603.0 | 196-200 | pure water | SULTANOV(1972): 0.5075; OU(2015): 0.5868 | 14.5% | T (span > 5%) |
+| 224 | ch4 | 603.0 | 294-300 | pure water | SULTANOV(1972): 1.2562; OU(2015): 1.2278 | 2.3% | R |
+| 225 | ch4 | 603.0 | 392-400 | pure water | SULTANOV(1972): 2.0329; OU(2015): 1.7097 | 17.3% | T (span > 5%) |
+| 226 | ch4 | 603.0 | 490-500 | pure water | SULTANOV(1972): 2.6655; OU(2015): 2.1549 | 21.2% | T (span > 5%) |
+| 227 | h2 | 323.0/323.2 | 119-122 | pure water | Chabab2020_IJHE45_T4: 0.0858; KLING(1991): 0.0841 | 2.0% | R |
+| 228 | h2 | 323.0/323.2 | 100-101 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0540; CHABAB(2024): 0.0570 | 5.3% | T (span > 5%) |
+| 229 | h2 | 323.0/323.2 | 150 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0789; CHABAB(2024): 0.0842 | 6.6% | T (span > 5%) |
+| 230 | h2 | 323.0/323.2 | 200 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.1032; CHABAB(2024): 0.1138 | 9.8% | T (span > 5%) |
+| 231 | co2 | 303.0/303.6 | 37 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.3193; Chabab2021_JCED66_T2: 0.3193 | 0.0% | R |
+| 232 | co2 | 303.0/303.6 | 71 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.4985; Chabab2021_JCED66_T2: 0.4985 | 0.0% | R |
+| 233 | co2 | 303.0/303.1/303.6 | 151-152 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.5245; Chabab2021_JCED66_T2: 0.5245; dosSantos2021_ChemGeol582_T7: 0.5250 | 0.1% | R |
+| 234 | co2 | 303.0/303.6 | 247 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.5675; Chabab2021_JCED66_T2: 0.5675 | 0.0% | R |
+| 235 | co2 | 303.0/303.6 | 360 | m_Na=6+m_Cl=6 | CHABAB(2020): 0.6043; Chabab2021_JCED66_T2: 0.6043 | 0.0% | R |
+| 236 | co2 | 323.0/323.1 | 150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.6225; Hou2013_JSCF78_T2: 0.5590 | 10.7% | T (span > 5%) |
+| 237 | co2 | 373.0/373.1 | 149-150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.5266; Hou2013_JSCF78_T2: 0.4798 | 9.3% | T (span > 5%) |
+| 238 | co2 | 423.0/423.1 | 150 | m_Na=4+m_Cl=4 | ZHAO(2015): 0.4976; Hou2013_JSCF78_T2: 0.4725 | 5.2% | T (span > 5%) |
+| 239 | co2 | 323.0/323.1 | 150 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.8793; Hou2013_JSCF78_T3: 0.7380 | 17.5% | T (span > 5%) |
+| 240 | co2 | 373.0/373.1 | 90 | m_Cl=4+m_K=4 | KAMP(2007): 0.5066; Hou2013_JSCF78_T3: 0.4234 | 17.9% | T (span > 5%) |
+| 241 | co2 | 373.0/373.1 | 150-151 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.6824; Hou2013_JSCF78_T3: 0.5839 | 15.6% | T (span > 5%) |
+| 242 | co2 | 423.0/423.1 | 150 | m_Cl=4+m_K=4 | ZHAOb(2015): 0.5925; Hou2013_JSCF78_T3: 0.5279 | 11.5% | T (span > 5%) |
+| 243 | c2h6 | 444.3 | 51 | pure water | CULBERSONHORN(1950): 0.0373; CULBERSONMCKETTA(1950): 0.0428 | 13.8% | T (span > 5%) |
+| 244 | c3h8 | 288.1/288.7 | 7 | pure water | KOBAYASHI(1951): 0.0143; CHAPOY(2004): 0.0130 | 9.2% | T (span > 5%) |
+| 245 | h2 | 372.8/373.0 | 100-101 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0595; CHABAB(2024): 0.0666 | 11.2% | T (span > 5%) |
+| 246 | h2 | 372.8/373.0 | 150-154 | m_Na=1+m_Cl=1 | Chabab2020_IJHE45_T4: 0.0887; CHABAB(2024): 0.0988 | 10.8% | T (span > 5%) |
+| 247 | h2 | 298.0 | 100-101 | pure water | CHABAB(2024): 0.0756; WIEBE(1934): 0.0759 | 0.4% | R |
+| 248 | h2 | 298.0 | 200-203 | pure water | CHABAB(2024): 0.1472; WIEBE(1934): 0.1490 | 1.2% | R |
+| 249 | h2 | 323.0 | 101 | pure water | CHABAB(2024): 0.0689; WIEBE(1934): 0.0709 | 2.9% | R |
+| 250 | h2 | 323.0 | 200-203 | pure water | CHABAB(2024): 0.1366; WIEBE(1934): 0.1392 | 1.9% | R |
+| 251 | h2 | 366.0 | 14 | pure water | GILLESPIE(1980): 0.0100; DEVANEY(1978): 0.0111 | 10.5% | T (span > 5%) |
+| 252 | h2 | 373.0 | 42 | pure water | JUNG(1968): 0.0330; IPATEV(1934): 0.0287 | 13.9% | T (span > 5%) |
+| 253 | h2 | 373.0 | 62 | pure water | JUNG(1968): 0.0487; IPATEV(1934): 0.0423 | 14.2% | T (span > 5%) |
+| 254 | h2 | 373.0 | 82 | pure water | JUNG(1968): 0.0639; IPATEV(1934): 0.0567 | 12.0% | T (span > 5%) |
+| 255 | h2 | 373.0 | 100-101-102 | pure water | CHABAB(2024): 0.0783; WIEBE(1934): 0.0794; IPATEV(1934): 0.0734 | 7.7% | T (span > 5%) |
+| 256 | h2 | 398.0 | 82-83 | pure water | JUNG(1968): 0.0672; IPATEV(1934): 0.0628 | 6.8% | T (span > 5%) |
+| 257 | h2 | 423.0 | 76 | pure water | KLING(1991): 0.0752; JUNG(1968): 0.0639 | 16.2% | T (span > 5%) |
+| 258 | h2 | 423.0 | 52 | pure water | KLING(1991): 0.0500; IPATEV(1934): 0.0433 | 14.4% | T (span > 5%) |
+| 259 | h2 | 473.0 | 36 | pure water | JUNG(1968): 0.0319; IPATEV(1934): 0.0319 | 0.0% | R |
 
 Downgraded sources: MICHELS(1936), TODHEIDE.
 Sources flagged in fewer than 3 attributable clusters
 (reported, NOT downgraded):
 * GUO(2015): cluster 40: dev 5.1% vs spread 0.0%
-* IPATEV(1934): cluster 260: dev 6.3% vs spread 1.4%
+* IPATEV(1934): cluster 255: dev 6.3% vs spread 1.4%
 * KIEPE(2003): cluster 185: dev 11.1% vs spread 0.4%
-* QIN(2008): cluster 208: dev 6.5% vs spread 1.3%
+* QIN(2008): cluster 203: dev 6.5% vs spread 1.3%
 * SACHS(1995): cluster 166: dev 7.0% vs spread 1.0%
 * SAKO: cluster 91: dev 20.3% vs spread 2.1%
 * TAKENOUCHI: cluster 110: dev 8.6% vs spread 0.9%

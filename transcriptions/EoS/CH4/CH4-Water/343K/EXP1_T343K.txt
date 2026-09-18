@@ -1,4 +1,4 @@
-#CULBERSON(1951)
+#CULBERSON(1951) | T=344.26 | 160 degF, Culberson & McKetta 1951 Table I
 P [bar]    xc_W    yw_C
 22.8	0.000340	X
 32.2	0.000470	X

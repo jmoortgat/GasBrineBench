@@ -79,13 +79,14 @@ STATE = ["property", "gas", "T_K", "P_bar", *ION_COLS]
 #   x_CH4 = 1.062e-3. They are distinct experiments: the table's *calculated*
 #   column differs between them (1.089e-3 and 1.096e-3). Checked against the
 #   paper 2026-09-18.
-#   PORTIER_2005 CO2 308 K / 80 bar -- Portier & Rochelle, Chem. Geol. 217
-#   (2005) 187-199, Table 2 lists five runs in synthetic Utsira pore-water at
-#   37 C / 80 bar (1.005, 1.020, 1.000, 1.000, 0.954 mol/kg), two of them
-#   reading 1.000. Checked against the paper 2026-09-18.
+#   PORTIER_2005 CO2 310.15 K / 80 bar -- Portier & Rochelle, Chem. Geol.
+#   217 (2005) 187-199, Table 2 lists five runs in synthetic Utsira
+#   pore-water at 37 degC / 80 bar (1.005, 1.020, 1.000, 1.000, 0.954
+#   mol/kg), two of them reading 1.000. Checked against the paper
+#   2026-09-18. The state is 310.15 K, not the 308 K of its directory.
 DOCUMENTED_REPLICATES = {
     ("KIM(2003)", "ch4", 298.0, 49.0),
-    ("PORTIER_2005", "co2", 308.0, 80.0),
+    ("PORTIER_2005", "co2", 310.15, 80.0),
 }
 
 

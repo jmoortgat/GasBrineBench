@@ -159,7 +159,11 @@ def describe(path: str) -> tuple[str, int]:
     """Return (source header, number of non-blank data rows)."""
     with open(path, "r", errors="replace") as fh:
         lines = fh.read().splitlines()
-    header = lines[0].lstrip("#").strip() if lines else ""
+    # A file may declare its own temperature after a pipe:
+    #   "#CULBERSON(1951) | T=344.26 | 160 degF, Table I"
+    # The manifest records the source key only; the declaration is
+    # data for the parsers, not part of the source name.
+    header = lines[0].lstrip("#").split("|")[0].strip() if lines else ""
     # line 0 = source, line 1 = column names, rest = data
     data = [ln for ln in lines[2:] if ln.strip()]
     return header, len(data)

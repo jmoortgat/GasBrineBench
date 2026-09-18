@@ -1,4 +1,4 @@
-#JACOB(2016)
+#JACOB(2016) | T=297 | Jacob & Saylor 2016 title: 'at 297 K'
 P [bar]    ms [mol/kg]    mc [mol/kg]    Na    Cl    K    Ca    Mg    SO4
 26.2	1	0.67       1.00   1.00    0    0    0    0
 34.5	1	0.88       1.00   1.00    0    0    0    0
