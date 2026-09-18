@@ -309,6 +309,7 @@ yh2o_co2_binary,DSOUZA,co2,y_h2o,348,152,0,0,0,0,0,0,0.009,,T,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,298,16.6,0,0,0,0,0,0,0.00268,,U,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,298,32.6,0,0,0,0,0,0,0.0016,,U,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,298,63.9,0,0,0,0,0,0,0.00194,,U,fit-eligible
+yh2o_co2_binary,HOU,co2,y_h2o,323,10.9,0,0,0,0,0,0,0.02811,,T,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,323,29.8,0,0,0,0,0,0,0.00507,,U,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,323,74.1,0,0,0,0,0,0,0.0035,,U,fit-eligible
 yh2o_co2_binary,HOU,co2,y_h2o,323,100.2,0,0,0,0,0,0,0.00403,,U,fit-eligible
@@ -607,6 +608,8 @@ yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,1000,0,0,0,0,0,0,0.4,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,1500,0,0,0,0,0,0,0.454,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,2000,0,0,0,0,0,0,0.492,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,2500,0,0,0,0,0,0,0.507,,T,fit-eligible
+yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,3000,0,0,0,0,0,0,0.45,,T,fit-eligible
+yh2o_co2_binary,TODHEIDE,co2,y_h2o,538,3500,0,0,0,0,0,0,0.43,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,541,200,0,0,0,0,0,0,0.441,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,541,300,0,0,0,0,0,0,0.38,,T,fit-eligible
 yh2o_co2_binary,TODHEIDE,co2,y_h2o,541,400,0,0,0,0,0,0,0.356,,T,fit-eligible

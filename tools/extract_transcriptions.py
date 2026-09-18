@@ -67,6 +67,35 @@ OUTPUT_DIR_PREFIXES = ("OPT",)
 OUTPUT_DIR_EXACT = ("TXT",)
 SKIP_DIRS = {".git", "__pycache__", "venv", "site-packages", ".ipynb_checkpoints"}
 
+# Filesystem copy artifacts -- "EXP1_T383K (copy).txt", "T623K (copy)/".
+# Each is a byte-identical duplicate of a sibling, never a distinct
+# measurement; 24 of them had reached the published manifest.
+COPY_ARTIFACT = "(copy)"
+
+# Superseded transcription trees, skipped in favour of a canonical sibling.
+#
+# CO2/CPA/{PR,SRK} are the same experimental compilation, filed twice under
+# the two cubic backbones it was paired with. The EXP-slot numbering differs
+# between them (PR/EXP1 == SRK/EXP2 at 548/573/623 K, PR/EXP2 == SRK/EXP4 at
+# 473 K), but the data bodies are identical -- except in two files where SRK
+# is strictly lossy, both checked against the original papers on 2026-09-18:
+#   T323K/EXP2  Hou 2013 records y_CO2 = 0.97189 +/- 0.00050 at 323.15 K,
+#               1.089 MPa (paper Table 2); SRK carries "X" (missing).
+#   T538K/EXP1  Todheide & Franck 1963 Table 1b/1c, 265 C column, runs to
+#               3500 bar (3000: 55,0/29,2; 3500: 57,0/28,0 mol-%); SRK stops
+#               at 2500 bar.
+# PR reproduces both in full, so PR alone is published.
+SUPERSEDED_DIRS = (os.path.join("EoS", "CO2", "CPA", "SRK"),)
+
+# Individually misfiled transcriptions: the file is real, but the directory
+# assigns it the wrong temperature, so extracting it would create a phantom
+# isotherm. Each is a byte-identical duplicate of a correctly-filed sibling.
+#   PR/T478K/EXP1_T473K.txt -- the eight rows match Todheide 1963 Table 1a's
+#   200 C (= 473 K) column exactly (200 bar: 84,5/2,4 ... 3000 bar: 86,7/9,0),
+#   and the file is identical to PR/T473K/EXP1_T473K.txt. 478 K is not an
+#   isotherm Todheide reports. Verified 2026-09-18.
+MISFILED = (os.path.join("EoS", "CO2", "CPA", "PR", "T478K", "EXP1_T473K.txt"),)
+
 # A transcription is never anywhere near this big; the largest real one is ~4 KB.
 MAX_BYTES = 100_000
 
@@ -82,19 +111,31 @@ def is_output_path(rel_dir: str) -> bool:
     return False
 
 
+def is_excluded_path(rel_dir: str) -> bool:
+    """True for copy-artifact and superseded directories (see the constants)."""
+    if COPY_ARTIFACT in rel_dir:
+        return True
+    norm = os.path.normpath(rel_dir)
+    return any(norm == d or norm.startswith(d + os.sep) for d in SUPERSEDED_DIRS)
+
+
 def find_transcriptions(trove: str) -> list[str]:
     """Return trove-relative paths of the curated EXP*.txt transcriptions."""
     found = []
     for dirpath, dirnames, filenames in os.walk(trove):
         dirnames[:] = sorted(d for d in dirnames if d not in SKIP_DIRS)
         rel_dir = os.path.relpath(dirpath, trove)
-        if rel_dir != "." and is_output_path(rel_dir):
+        if rel_dir != "." and (is_output_path(rel_dir) or is_excluded_path(rel_dir)):
             dirnames[:] = []
             continue
         for fn in sorted(filenames):
             if not fn.upper().startswith("EXP"):
                 continue
             if not fn.lower().endswith(".txt"):
+                continue
+            if COPY_ARTIFACT in fn:
+                continue
+            if os.path.normpath(os.path.join(rel_dir, fn)) in MISFILED:
                 continue
             p = os.path.join(dirpath, fn)
             if os.path.getsize(p) > MAX_BYTES:

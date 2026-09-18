@@ -11,7 +11,7 @@ blocks of build_v0.py):
 
 Those parquets are built by Multi_Salt/code/scripts/build_binaries.py
 from the raw per-isotherm text tables
-    source_materials/EoS/CO2/CPA/SRK/T{T}K/EXP{k}_T{T}K.txt
+    source_materials/EoS/CO2/CPA/PR/T{T}K/EXP{k}_T{T}K.txt
     source_materials/EoS/CH4/CH4-Water/{T}K/EXP{k}_T{T}K.txt
 (one literature author per file, header ``P [bar]  xc_W  yw_C``).
 Spot-verified against the raw files: Valtz 278 K / 5.01 bar /
@@ -104,6 +104,10 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent          # .../code/bench/data
 CODE = HERE.parents[1]                          # .../code
+# The builder moved from the old bench tree into GasBrineBench/tools/builders/,
+# where `HERE` is no longer the data directory; writing the CSV beside the
+# script left data/y_h2o.csv stale. Target the repository's data/ explicitly.
+DATA_DIR = HERE.parents[1] / "data"             # .../GasBrineBench/data
 if str(CODE) not in sys.path:
     sys.path.insert(0, str(CODE))
 
@@ -269,7 +273,7 @@ def main():
     allrows = allrows.sort_values(
         ["dataset_id", "source", "T_K", "P_bar", "value"],
         kind="mergesort").reset_index(drop=True)
-    allrows.to_csv(HERE / "y_h2o.csv", index=False, float_format="%.10g")
+    allrows.to_csv(DATA_DIR / "y_h2o.csv", index=False, float_format="%.10g")
     print(f"y_h2o.csv        {len(allrows):5d} rows")
 
 

@@ -1,4 +1,4 @@
-#Todheide (1963)
+#TODHEIDE (1963)
 P [bar]    xc_W    yw_C
 200    0.023    0.648
 300    0.049    0.546

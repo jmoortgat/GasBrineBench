@@ -1,4 +1,4 @@
-#Takenoushi (1964)
+#TAKENOUCHI (1964)
 P [bar]    xc_W    yw_C
 200    0.015    0.910
 250    0.040    0.838
