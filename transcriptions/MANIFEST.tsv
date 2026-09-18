@@ -225,7 +225,6 @@ EoS/CO2/CPA/PR/T373K/EXP2_T373K.txt	165	6	HOU (2013)	eeadfc1b9e406b533360e7bfb5a
 EoS/CO2/CPA/PR/T373K/EXP3_T373K.txt	262	5	TONG (2013) -> Solubility of CO2 in Aqueous Solutions of CaCl2or MgCl2and in aSynthetic Formation Brine at Temperatures up to 423 K andPressures up to 40 MPa	18d66f7fe47f04a11f93676f74e4f659dda409f04557f98d0ea92b1362c2ac3f
 EoS/CO2/CPA/PR/T373K/EXP4_T373K.txt	191	8	TODHEIDE (1963)	ab7cb50f62f40ac9398400a72c69dc1c0b19568d9c305eb75fa281d491bbfcf1
 EoS/CO2/CPA/PR/T373K/EXP5_T373K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	d75ec5213d8f984e4877d0796464cca27b1b504210d9da5a22973b14ada61f82
-EoS/CO2/CPA/PR/T383K/EXP1_T383K (copy).txt	259	15	TAKENOUCHI (1964)	cbf09e0540c6fe94296de082e19bb5f6b639c64f1fc84c5d318899ff955d3f04
 EoS/CO2/CPA/PR/T383K/EXP1_T383K.txt	319	15	TAKENOUCHI (1964)	1a9bdc511ceb15516d868a545d9d072f9506b87a3ddcd13412b3d12ce29f1506
 EoS/CO2/CPA/PR/T393K/EXP1_T393K.txt	157	5	NIGHSWANDER (1989)	7b58eebe7714a261f2f0560cd2d43c78457fb22f2a40a6b412ad7353d5c51b40
 EoS/CO2/CPA/PR/T393K/EXP2_T393K.txt	177	7	MULLER (1988)	6acd13f4128b984d36073c7772ab839f25b1a4c96d39da259540d7f1b9671ab4
@@ -235,7 +234,6 @@ EoS/CO2/CPA/PR/T413K/EXP2_T413K.txt	374	7	Guo (2014) > Quantitative Raman spectr
 EoS/CO2/CPA/PR/T423K/EXP1_T423K.txt	191	8	TODHEIDE (1963)	a7b692c7ab9bae8e45c919859cbc489d99bb70dd98e30234d59eaee5302cda11
 EoS/CO2/CPA/PR/T423K/EXP2_T423K.txt	142	5	SAKO (1991)	0d9f4fd29d9a46c029f42f948218636aab3d1035557cbbb6ef3c733096445059
 EoS/CO2/CPA/PR/T423K/EXP3_T423K.txt	165	6	HOU (2013)	640802bc562cf306b9008dfdfea4152a8d86836772a474a14707fb4e56ff1fda
-EoS/CO2/CPA/PR/T423K/EXP4_T423K (copy).txt	259	15	TAKENOUCHI (1964)	baedcac1af87ad940f8b6c48d54a3b21a28e791024029b097939ad9e198da25b
 EoS/CO2/CPA/PR/T423K/EXP4_T423K.txt	319	15	TAKENOUCHI (1964)	7a8e9e7abe33f299e68577a33afeec5beccfab9ed8f5d025698837a7ac676c79
 EoS/CO2/CPA/PR/T433K/EXP1_T433K.txt	138	4	NIGHSWANDER (1989)	221a45a32cd9eea9b4dd5f561bda47bebaa8439d383fc3ab5de86a69e74798dd
 EoS/CO2/CPA/PR/T433K/EXP2_T433K.txt	178	7	MULLER (1988)	38b8cb3f5c14fe76f74ac7c473144630cc35786faae7bbaded00c7d6dbed7139
@@ -244,19 +242,15 @@ EoS/CO2/CPA/PR/T448K/EXP1_T448K.txt	165	6	HOU (2013)	0e0328a4874eecc89ffbcaf21bf
 EoS/CO2/CPA/PR/T453K/EXP1_T453K.txt	179	7	MULLER (1988)	79ff763b4d92d78be9f85165345d4f5bfea56d7185f157b32e968e1fe29919b1
 EoS/CO2/CPA/PR/T453K/EXP2_T453K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	1671a1e8d28a34c11f4bee567d63c8352c3269e7c198c44c0532a540dc2df557
 EoS/CO2/CPA/PR/T473K/EXP1_T473K.txt	191	8	TODHEIDE (1963)	73d7ddb4e7d32bb1a4ed912ad67b002c3d9b45d104cb8aaaf69497612a29c9ad
-EoS/CO2/CPA/PR/T473K/EXP2_T473K (copy).txt	244	15	TAKENOUCHI (1964)	6cecb34e102695a0f459098131e956699d29e7eaf3359c5a9204f8d55bda2194
 EoS/CO2/CPA/PR/T473K/EXP2_T473K.txt	304	15	TAKENOUCHI (1964)	f4a40a9dd8d704c11a3d0127c040dc64d92ff7700fdfcc65a1358b875fc00919
 EoS/CO2/CPA/PR/T473K/EXP3_T473K.txt	180	7	MULLER (1988)	9b0653221d4fe4c39340aec610b42723d3ba7dee108e963a64ed1310c8724c8a
 EoS/CO2/CPA/PR/T473K/EXP4_T473K.txt	158	5	NIGHSWANDER (1989)	d98dcd801849a1996bf44c0e1b0d0e92e76697c1eca38f4370971698dd40fbb9
 EoS/CO2/CPA/PR/T473K/EXP5_T473K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	edb3338a93cefd0c6bea8ba3b2f691f7644a30a20ad8834ca1e1e4748cfc173c
-EoS/CO2/CPA/PR/T478K/EXP1_T473K.txt	191	8	TODHEIDE (1963)	73d7ddb4e7d32bb1a4ed912ad67b002c3d9b45d104cb8aaaf69497612a29c9ad
 EoS/CO2/CPA/PR/T493K/EXP1_T493K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	bf9e363471bdd956e1ab458206d8eaa56c86678315ecf23dd7be0396880e6232
 EoS/CO2/CPA/PR/T513K/EXP1_T513K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	8cea5862f7039617617a9753af9ae08a7bfb6fed1385c82c8d898a29559ef3a8
 EoS/CO2/CPA/PR/T523K/EXP1_T523K.txt	183	8	TODHEIDE (1963)	b5e81bca254ff100baabf125bc16993420bab75259375d2fa4723205a6a64367
-EoS/CO2/CPA/PR/T523K/EXP2_T523K (copy).txt	244	15	TAKENOUCHI (1964)	e381a87d22d2f85c99a4cfde1170ffa9908ef6f84a4797ec184e307c6b78234a
 EoS/CO2/CPA/PR/T523K/EXP2_T523K.txt	304	15	TAKENOUCHI (1964)	4c9fafcbb85021b244b44d51a2854ecfd9e2984674d3ff5a3b8595b0e0c129f2
 EoS/CO2/CPA/PR/T533K/EXP1_T533K.txt	183	8	TODHEIDE (1963)	61fd2d12d54dde70d17af790c37ebe552bd806c26aaf8465c7cc762ab6b848d5
-EoS/CO2/CPA/PR/T533K/EXP2_T533K (copy).txt	244	15	TAKENOUCHI (2013)	b2217b2c304726a7b0e1628c4c1ccf0966aa247d5dc7e79fd1777b29c3b5fec3
 EoS/CO2/CPA/PR/T533K/EXP2_T533K.txt	304	15	TAKENOUCHI (2013)	be95a1a6fd90663319def46ae48bfab878d81f3655fdce4a52496383051fdaba
 EoS/CO2/CPA/PR/T533K/EXP3_T533K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	95f232a69529c42792a0d3fb916a1e5dd9edf503b4600f869d813f684c0abcd9
 EoS/CO2/CPA/PR/T538K/EXP1_T538K.txt	183	8	TODHEIDE (1963)	f46d6073a264dc9d5e247204ed5acb65afffd26aafd5b6e7dce3db45eafb6f41
@@ -265,104 +259,12 @@ EoS/CO2/CPA/PR/T543K/EXP1_T543K.txt	267	13	TODHEIDE (1963)	6a9fe7c5f9e9600e27f43
 EoS/CO2/CPA/PR/T548K/EXP1_T548K.txt	213	10	TODHEIDE (1963)	b9c9666a6331a80615c57d38a250674f196c9be89c92eadfc17d72b0069aeea7
 EoS/CO2/CPA/PR/T548K/EXP2_T548K.txt	230	11	TAKENOUCHI (2013)	42a59dee6dae19e3c5adaddfe3766bff4a22f214cb23f03050727837bee474b4
 EoS/CO2/CPA/PR/T553K/EXP1_T553K.txt	356	6	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	080a9736676cba97509d7c41997d59d7f047a00686736a1e6f627dd91324de9d
-EoS/CO2/CPA/PR/T573K/EXP1_T573K.txt	173	6	Todheide (1963)	da54e35f09ded606601134562b35c55f4797b1075e49175f79b678c89f631bc9
-EoS/CO2/CPA/PR/T573K/EXP2_T573K.txt	285	11	Takenoushi (1964)	0105138dd352896e14876e1048e6ae82b19e6778d8113632dfe01e844163e5a0
+EoS/CO2/CPA/PR/T573K/EXP1_T573K.txt	173	6	TODHEIDE (1963)	4acc350be989437ae8f3c927a56420ae224adb9b6ac24a98f97bc37a33bf35de
+EoS/CO2/CPA/PR/T573K/EXP2_T573K.txt	285	11	TAKENOUCHI (1964)	1212c0f95a3193c0e25d8e115ff2ea5acaf2bd609c7a99c265ad3e2d962808ad
 EoS/CO2/CPA/PR/T573K/EXP3_T573K.txt	339	5	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	236107c18266b26369ae6295387053d239c72fcee5932f0955c0e7a2feff5d68
 EoS/CO2/CPA/PR/T598K/EXP1_T598K.txt	162	7	TAKENOUCHI (2013)	3c226c0677f4ba4cabc60b24fc164fa25bf270bd3af8a58450e2b2b3f29c6651
-EoS/CO2/CPA/PR/T623K/EXP1_T623K.txt	151	5	Todheide (1963)	a15b03bcb64ac516608343262df238a5878162e6cf7530243b51eb269bbeb9e2
-EoS/CO2/CPA/PR/T623K/EXP2_T623K.txt	131	4	Takenoushi (1964)	84fb7fdf0a57b6fc56d76bad75a286b4ba4d14a57deb74db85aaeaae1d01bf4b
-EoS/CO2/CPA/SRK/T273K/EXP1_T273K.txt	339	5	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	7a066682afeb4b3b346704b07981859ac25295722a229d123fd4be77c273c278
-EoS/CO2/CPA/SRK/T278K/EXP1_T278K.txt	262	6	Valtz (2004) > Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2 K	d37475220c3a97576a470658caa798796fed5c3d3b090c04cc8c3a0885008cd1
-EoS/CO2/CPA/SRK/T278K/EXP2_T278K.txt	322	4	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	b327ba7d772866e6350c40bf180581c4b4d68b2dc874b0f4bc1d17528a0e6a8b
-EoS/CO2/CPA/SRK/T283K/EXP1_T283K.txt	339	5	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	647ee025decba12741fcd208f603222ddd32ab7a3490de3c6b6efaa27873aec2
-EoS/CO2/CPA/SRK/T283K/EXP2_T283K.txt	293	8	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	5066e4a4dd7b1195ae017d8c801208a4cee69e82d6f7259f742d94aa4713a34f
-EoS/CO2/CPA/SRK/T288K/EXP1_T288K.txt	279	7	Valtz (2004) > Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2 K	1e2b47fce8ef5d5a4f01669068a4c23fe5c7dd3a7a95e4ca4dbeb8a9967d2818
-EoS/CO2/CPA/SRK/T288K/EXP2_T288K.txt	287	10	king (1992)	49cc428fa85f62ad75e3c18a8a04984a3e61d1ddf64ea1fa979aad1fb69bbd36
-EoS/CO2/CPA/SRK/T288K/EXP3_T288K.txt	322	4	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	19853e8d330199c93205dd2e6203c59335b1e708f714f0f07ad5ea1b46158cb2
-EoS/CO2/CPA/SRK/T293K/EXP1_T293K.txt	203	6	king (1992)	f6108c55c548f5368349bea3bf2aea76da283d94af7806a5eecab510c758a0fd
-EoS/CO2/CPA/SRK/T293K/EXP2_T293K.txt	357	6	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	9ef445c9d01e26e01785f9cc37f76a754f346859b82f761041ba7e664cca778b
-EoS/CO2/CPA/SRK/T293K/EXP3_T293K.txt	341	10	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	c752dd5e7e70214c33b91c93a7a031d4b76f582b2327b62a6bed52e036aa19ea
-EoS/CO2/CPA/SRK/T298K/EXP1_T298K.txt	147	6	HOU (2013)	99856f22308977daaae7bab3eccb1b657a9c6d8621afae10f4fd7591c4e90315
-EoS/CO2/CPA/SRK/T298K/EXP2_T298K.txt	185	5	king (1992)	e26253c68c73122b658d5cfc64c2fef87b5ac793b6e991a4f25ad58168eb75ce
-EoS/CO2/CPA/SRK/T298K/EXP3_T298K.txt	289	7	Valtz (2004) > Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2 K	94c483dc88a58d5a6391d74e043b3a45bfa59636aadaac8b250f3a82841fa1ac
-EoS/CO2/CPA/SRK/T298K/EXP4_T298K.txt	339	5	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	c3e95183806cb5fc9c8addb01ac032a6bce8f48d7c10a3daab766d9f571e44fb
-EoS/CO2/CPA/SRK/T304K/EXP1_T304K.txt	167	5	Valtz (2004) and Li (2009)	43a8721fcaab73d9799474a810f6e6b2e11301e62560575e245fd64a96e0bc9f
-EoS/CO2/CPA/SRK/T304K/EXP2_T304K.txt	341	10	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	b6b98578b03b12c55a700efff4979cc7420e11032ff97b8b8733f2a0d1a7519a
-EoS/CO2/CPA/SRK/T308K/EXP1_T308K.txt	351	10	Valtz (2004) > Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2 K	ee225e7a7bc3fb8841b70111086737dcfaa388b0107ab336082168f13c81ca98
-EoS/CO2/CPA/SRK/T308K/EXP2_T308K.txt	105	4	king (1992)	40a8a24636d88540440be5379bb9ff9834bc935f7ffbf0a07d9b556c166f15ed
-EoS/CO2/CPA/SRK/T313K/EXP1_T313K.txt	105	4	king (1992)	0dbab0b5ce0906dad494c31b9650a94619bb3e366480a9f986e60ce1a4735ea8
-EoS/CO2/CPA/SRK/T313K/EXP2_T313K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	6ca0dc84e4d93b81327af4ebbebf050ded1a1b430e8189cb540c63e1dd38f1ea
-EoS/CO2/CPA/SRK/T313K/EXP3_T313K.txt	341	10	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	4949ced52367586fe17f071b696a56dee8bf154b79f6f385a5529dd11c4f9eba
-EoS/CO2/CPA/SRK/T318K/EXP1_T318K.txt	352	10	Valtz (2004) > Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2 K	e2d1ae9d88d078e98a2227b8d32e96aa3f99695574af057346583299ad005e0e
-EoS/CO2/CPA/SRK/T323K/EXP1_T323K.txt	284	7	Briones (1987) -> Ternary phase equilibria for acetic acid-water mixtures with supercritical carbon dioxide	a41cc05c4d20f282c5d07c9dc0d2cbc472fb0b2624bed617c3287b4b89fd1681
-EoS/CO2/CPA/SRK/T323K/EXP2_T323K.txt	159	6	HOU (2013)	5554f4700bd9a9b218155e88a588fa682e296dfcb9401311a3cb2b1aa05b517a
-EoS/CO2/CPA/SRK/T323K/EXP3_T323K.txt	225	10	BAMBERGE (2000)	18e8f3beb1244047fefbe0e45bc07438b405f4f00602b248bc91c074754c0e78
-EoS/CO2/CPA/SRK/T323K/EXP4_T323K.txt	113	5	RUMPF (1993)	f425d67fabc0d24abff565a8161f740383db1ee37a258b0b27fcb5a32765b3aa
-EoS/CO2/CPA/SRK/T323K/EXP5_T323K.txt	190	2	DSOUZA (1988) -> High Pressure Phase  Equilibria in the Carbon Dioxide - n-Hexadecane and Carbon Dioxide - Water  Systems	ac410780712ac0fce5e91823c72f0f2b5c266d35873420121a5eba32cb8fbfff
-EoS/CO2/CPA/SRK/T323K/EXP6_T323K.txt	240	3	DOHRN (1993) -> Experimental measurements of phase equilibria for ternary and quaternary systems of glucose, water, CO2 and ethanol with a novel apparatus	96cd673d0995b2445215686566a20506c1a77919de2130365be6a769932ece47
-EoS/CO2/CPA/SRK/T323K/EXP7_T323K.txt	168	8	TODHEIDE (1963)	0cc07f98d0721510ffd5cd33c52cd5f73a60c860743b4642bb725d0898ac56a0
-EoS/CO2/CPA/SRK/T333K/EXP1_T333K.txt	225	10	BAMBERGE (2000)	591ae86d5a7feb92855bcb58d6513444921ada847a49fb63113c7d787393db87
-EoS/CO2/CPA/SRK/T333K/EXP2_T333K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	5b6ac21739adf2cc08d493b45e47acee8a2e957dc7524bec3a7eefdf36ffe708
-EoS/CO2/CPA/SRK/T333K/EXP3_T333K.txt	337	10	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	7706b5beed94105538183249a6756a83345653ea425f62c9f2375c61ef4f0337
-EoS/CO2/CPA/SRK/T348K/EXP1_T348K.txt	165	6	HOU (2013)	fa33ff5cb888956fd97884cd61b2cf0bdef2957236f1ad72acfb9065e4370330
-EoS/CO2/CPA/SRK/T348K/EXP2_T348K.txt	190	2	DSOUZA (1988) -> High Pressure Phase  Equilibria in the Carbon Dioxide - n-Hexadecane and Carbon Dioxide - Water  Systems	08f089d06ecd263ec204bf769d95cff1a46caf7e38f580bb2405aa2cc67e9eb1
-EoS/CO2/CPA/SRK/T348K/EXP3_T348K.txt	95	3	SAKO (1991)	87aee8b324250d5359619b11aef1cd837b75027c31f1f69c98cfa3e9ff2d8090
-EoS/CO2/CPA/SRK/T353K/EXP1_T353K.txt	207	9	BAMBERGE (2000)	63b102c139ebc04502a4b611e5c3f144247c9c9351b1010d8b11ad40a6e3f469
-EoS/CO2/CPA/SRK/T353K/EXP2_T353K.txt	158	5	NIGHSWANDER (1989)	b5383f6dbadf0666008c0fab6ccad0cb78cf3d164fdfa0e013234fd5c5a597bb
-EoS/CO2/CPA/SRK/T353K/EXP3_T353K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	e548611ee922834c88dff0e2d018184fd0afe4c4cd5c56e20a55c30c44e3ae3b
-EoS/CO2/CPA/SRK/T353K/EXP4_T353K.txt	331	10	Meyer (2015) > Dew-Point Measurements for Water in Compressed Carbon Dioxide	b69283bd46943da6373a0436966ce33446d35767d20464541a9c4d83d44b11c4
-EoS/CO2/CPA/SRK/T373K/EXP1_T373K.txt	158	6	MULLER (1988)	fb33155c518cafc79b4d448dff33cee2446858f308b9a65c1912e50c9a3ead5d
-EoS/CO2/CPA/SRK/T373K/EXP2_T373K.txt	165	6	HOU (2013)	eeadfc1b9e406b533360e7bfb5a85c01566aa59df2137d81ecbe20a54ed469e5
-EoS/CO2/CPA/SRK/T373K/EXP3_T373K.txt	262	5	TONG (2013) -> Solubility of CO2 in Aqueous Solutions of CaCl2or MgCl2and in aSynthetic Formation Brine at Temperatures up to 423 K andPressures up to 40 MPa	18d66f7fe47f04a11f93676f74e4f659dda409f04557f98d0ea92b1362c2ac3f
-EoS/CO2/CPA/SRK/T373K/EXP4_T373K.txt	191	8	TODHEIDE (1963)	ab7cb50f62f40ac9398400a72c69dc1c0b19568d9c305eb75fa281d491bbfcf1
-EoS/CO2/CPA/SRK/T373K/EXP5_T373K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	d75ec5213d8f984e4877d0796464cca27b1b504210d9da5a22973b14ada61f82
-EoS/CO2/CPA/SRK/T383K/EXP1_T383K (copy).txt	259	15	TAKENOUCHI (1964)	cbf09e0540c6fe94296de082e19bb5f6b639c64f1fc84c5d318899ff955d3f04
-EoS/CO2/CPA/SRK/T383K/EXP1_T383K.txt	319	15	TAKENOUCHI (1964)	1a9bdc511ceb15516d868a545d9d072f9506b87a3ddcd13412b3d12ce29f1506
-EoS/CO2/CPA/SRK/T393K/EXP1_T393K.txt	157	5	NIGHSWANDER (1989)	7b58eebe7714a261f2f0560cd2d43c78457fb22f2a40a6b412ad7353d5c51b40
-EoS/CO2/CPA/SRK/T393K/EXP2_T393K.txt	177	7	MULLER (1988)	6acd13f4128b984d36073c7772ab839f25b1a4c96d39da259540d7f1b9671ab4
-EoS/CO2/CPA/SRK/T393K/EXP3_T393K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	a64c8a8ec16557ad8c241ed030bf151a2f0ac93d055d38406bd20605565ed1a9
-EoS/CO2/CPA/SRK/T413K/EXP1_T413K.txt	177	7	MULLER (1988)	72bd89503dda4a55adcbd58b58a3baafd7b77cc216b87936a3769255ee8d147f
-EoS/CO2/CPA/SRK/T413K/EXP2_T413K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	ae5af7cac3b8b0132667f5271437c6f7337815f1a86f582d753b5bffccf27531
-EoS/CO2/CPA/SRK/T423K/EXP1_T423K.txt	191	8	TODHEIDE (1963)	a7b692c7ab9bae8e45c919859cbc489d99bb70dd98e30234d59eaee5302cda11
-EoS/CO2/CPA/SRK/T423K/EXP2_T423K.txt	142	5	SAKO (1991)	0d9f4fd29d9a46c029f42f948218636aab3d1035557cbbb6ef3c733096445059
-EoS/CO2/CPA/SRK/T423K/EXP3_T423K.txt	165	6	HOU (2013)	640802bc562cf306b9008dfdfea4152a8d86836772a474a14707fb4e56ff1fda
-EoS/CO2/CPA/SRK/T423K/EXP4_T423K (copy).txt	259	15	TAKENOUCHI (1964)	baedcac1af87ad940f8b6c48d54a3b21a28e791024029b097939ad9e198da25b
-EoS/CO2/CPA/SRK/T423K/EXP4_T423K.txt	319	15	TAKENOUCHI (1964)	7a8e9e7abe33f299e68577a33afeec5beccfab9ed8f5d025698837a7ac676c79
-EoS/CO2/CPA/SRK/T433K/EXP1_T433K.txt	138	4	NIGHSWANDER (1989)	221a45a32cd9eea9b4dd5f561bda47bebaa8439d383fc3ab5de86a69e74798dd
-EoS/CO2/CPA/SRK/T433K/EXP2_T433K.txt	178	7	MULLER (1988)	38b8cb3f5c14fe76f74ac7c473144630cc35786faae7bbaded00c7d6dbed7139
-EoS/CO2/CPA/SRK/T433K/EXP3_T433K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	e4f058ded05d44f2ea5319008b6924bd65180254dc9c405c85994c277ab07bfb
-EoS/CO2/CPA/SRK/T448K/EXP1_T448K.txt	165	6	HOU (2013)	0e0328a4874eecc89ffbcaf21bfaa3650bf12f67eeb74cfac31893043e282169
-EoS/CO2/CPA/SRK/T453K/EXP1_T453K.txt	179	7	MULLER (1988)	79ff763b4d92d78be9f85165345d4f5bfea56d7185f157b32e968e1fe29919b1
-EoS/CO2/CPA/SRK/T453K/EXP2_T453K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	1671a1e8d28a34c11f4bee567d63c8352c3269e7c198c44c0532a540dc2df557
-EoS/CO2/CPA/SRK/T473K/EXP1_T473K.txt	191	8	TODHEIDE (1963)	73d7ddb4e7d32bb1a4ed912ad67b002c3d9b45d104cb8aaaf69497612a29c9ad
-EoS/CO2/CPA/SRK/T473K/EXP2_T473K.txt	158	5	NIGHSWANDER (1989)	d98dcd801849a1996bf44c0e1b0d0e92e76697c1eca38f4370971698dd40fbb9
-EoS/CO2/CPA/SRK/T473K/EXP3_T473K.txt	180	7	MULLER (1988)	9b0653221d4fe4c39340aec610b42723d3ba7dee108e963a64ed1310c8724c8a
-EoS/CO2/CPA/SRK/T473K/EXP4_T473K (copy).txt	244	15	TAKENOUCHI (1964)	6cecb34e102695a0f459098131e956699d29e7eaf3359c5a9204f8d55bda2194
-EoS/CO2/CPA/SRK/T473K/EXP4_T473K.txt	304	15	TAKENOUCHI (1964)	f4a40a9dd8d704c11a3d0127c040dc64d92ff7700fdfcc65a1358b875fc00919
-EoS/CO2/CPA/SRK/T473K/EXP5_T473K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	edb3338a93cefd0c6bea8ba3b2f691f7644a30a20ad8834ca1e1e4748cfc173c
-EoS/CO2/CPA/SRK/T493K/EXP1_T493K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	bf9e363471bdd956e1ab458206d8eaa56c86678315ecf23dd7be0396880e6232
-EoS/CO2/CPA/SRK/T513K/EXP1_T513K.txt	391	8	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	8cea5862f7039617617a9753af9ae08a7bfb6fed1385c82c8d898a29559ef3a8
-EoS/CO2/CPA/SRK/T523K/EXP1_T523K.txt	183	8	TODHEIDE (1963)	b5e81bca254ff100baabf125bc16993420bab75259375d2fa4723205a6a64367
-EoS/CO2/CPA/SRK/T523K/EXP2_T523K (copy).txt	244	15	TAKENOUCHI (1964)	e381a87d22d2f85c99a4cfde1170ffa9908ef6f84a4797ec184e307c6b78234a
-EoS/CO2/CPA/SRK/T523K/EXP2_T523K.txt	304	15	TAKENOUCHI (1964)	4c9fafcbb85021b244b44d51a2854ecfd9e2984674d3ff5a3b8595b0e0c129f2
-EoS/CO2/CPA/SRK/T533K/EXP1_T533K.txt	183	8	TODHEIDE (1963)	61fd2d12d54dde70d17af790c37ebe552bd806c26aaf8465c7cc762ab6b848d5
-EoS/CO2/CPA/SRK/T533K/EXP2_T533K (copy).txt	244	15	TAKENOUCHI (2013)	b2217b2c304726a7b0e1628c4c1ccf0966aa247d5dc7e79fd1777b29c3b5fec3
-EoS/CO2/CPA/SRK/T533K/EXP2_T533K.txt	304	15	TAKENOUCHI (2013)	be95a1a6fd90663319def46ae48bfab878d81f3655fdce4a52496383051fdaba
-EoS/CO2/CPA/SRK/T533K/EXP3_T533K.txt	374	7	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	95f232a69529c42792a0d3fb916a1e5dd9edf503b4600f869d813f684c0abcd9
-EoS/CO2/CPA/SRK/T538K/EXP1_T538K.txt	147	6	TODHEIDE (1963)	653250b2e92b3aceb9d6c7a42c6657473ac3a2c8bedddc321c902357bf0f92bf
-EoS/CO2/CPA/SRK/T541K/EXP1_T541K.txt	303	15	TODHEIDE (1963)	ecb2af9990684570b00db295943df9a27699446ee4c1b14daf8599ae9fd091c8
-EoS/CO2/CPA/SRK/T543K/EXP1_T543K.txt	267	13	TODHEIDE (1963)	6a9fe7c5f9e9600e27f4395435f02fae4e33a37d2266f6ef148d9841603f1b7e
-EoS/CO2/CPA/SRK/T548K/EXP1_T548K.txt	230	11	TAKENOUCHI (2013)	42a59dee6dae19e3c5adaddfe3766bff4a22f214cb23f03050727837bee474b4
-EoS/CO2/CPA/SRK/T548K/EXP2_T548K.txt	213	10	TODHEIDE (1963)	b9c9666a6331a80615c57d38a250674f196c9be89c92eadfc17d72b0069aeea7
-EoS/CO2/CPA/SRK/T553K/EXP1_T553K.txt	356	6	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	080a9736676cba97509d7c41997d59d7f047a00686736a1e6f627dd91324de9d
-EoS/CO2/CPA/SRK/T573K/EXP1_T573K.txt	285	11	TAKENOUCHI (1964)	1212c0f95a3193c0e25d8e115ff2ea5acaf2bd609c7a99c265ad3e2d962808ad
-EoS/CO2/CPA/SRK/T573K/EXP2_T573K.txt	173	6	TODHEIDE (1963)	4acc350be989437ae8f3c927a56420ae224adb9b6ac24a98f97bc37a33bf35de
-EoS/CO2/CPA/SRK/T573K/EXP3_T573K.txt	339	5	Guo (2014) > Quantitative Raman spectroscopic investigation of geo-ﬂuids high-pressure phase equilibria: Part I. Accurate calibration and determination of CO 2 solubility in water from 273.15 to 573.15 K and from 10 to 120 MPa	236107c18266b26369ae6295387053d239c72fcee5932f0955c0e7a2feff5d68
-EoS/CO2/CPA/SRK/T598K/EXP1_T598K.txt	162	7	TAKENOUCHI (2013)	3c226c0677f4ba4cabc60b24fc164fa25bf270bd3af8a58450e2b2b3f29c6651
-EoS/CO2/CPA/SRK/T623K (copy)/EXP1_T623K.txt	131	4	Takenoushi (1964)	84fb7fdf0a57b6fc56d76bad75a286b4ba4d14a57deb74db85aaeaae1d01bf4b
-EoS/CO2/CPA/SRK/T623K (copy)/EXP2_T623K.txt	151	5	Todheide (1963)	a15b03bcb64ac516608343262df238a5878162e6cf7530243b51eb269bbeb9e2
-EoS/CO2/CPA/SRK/T623K/EXP1_T623K.txt	131	4	TAKENOUCHI (1964)	d15f0af17f12e2b090ffe89a09f45892f29892715e95cc7c94c3c1949edb372d
-EoS/CO2/CPA/SRK/T623K/EXP2_T623K.txt	151	5	TODHEIDE (1963)	6afcdda95bc9b11c930f7dd54d54dc6113789700ff7eb0c022a168cd0939935c
+EoS/CO2/CPA/PR/T623K/EXP1_T623K.txt	151	5	TODHEIDE (1963)	6afcdda95bc9b11c930f7dd54d54dc6113789700ff7eb0c022a168cd0939935c
+EoS/CO2/CPA/PR/T623K/EXP2_T623K.txt	131	4	TAKENOUCHI (1964)	d15f0af17f12e2b090ffe89a09f45892f29892715e95cc7c94c3c1949edb372d
 EoS/CO2/eCPA/MIXED_SALTS/DENSITY/EXP/EXP_CaCl_T283K.txt	150	9	ALGHAFRI(2012)	eba6802f088b15e5197317a7de4e9f04e3a19a583f252364242b3af227bb810d
 EoS/CO2/eCPA/MIXED_SALTS/DENSITY/EXP/EXP_CaCl_T298K.txt	413	29	ALGHAFRI(2012)	2e5afca466833df4e327238f9d2b353675122b414d8000a56c200befa8f552a5
 EoS/CO2/eCPA/MIXED_SALTS/DENSITY/EXP/EXP_CaCl_T323K.txt	417	29	ALGHAFRI(2012)	9fba7d86110a031843f3c62b305ea999bb276939b52d3d18020e29941039cd4f
@@ -620,14 +522,6 @@ EoS/CO2/eCPA/SINGLE_SALT/SET1/T353K/EXP3_T353K.txt	440	20	KIEPE (2002)	4185b00dd
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T353K/EXP4_T353K.txt	219	12	RUMPH (1993)	6965a4bbc9f20201b039e1a3153039fbbc50b7c1ff81f79f3d6a19c88a3faa9d
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T353K/EXP4_T353K_X.txt	242	13	MOHAMMADIAN (2015)	2c924bd7c741aa1f9d33178ec04d2792b52597e18d56b56834f99c7aef82396c
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T353K/EXP5_T353K.txt	122	4	NIGHSWANDER (1989)	b6fd682d8e84980e1af25885764405ac5c4985e3efe9721bbc25f78329042d95
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP1_T373K.txt	128	4	CHABAB (2020)	2471dd5d4a2bc61f38fe2af80a017db76b85749ccf62a1543f06396eb59836f8
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP2_T373K.txt	192	12	GUO (2015)	d73d131bc8af7e823e3c0c8f41acf065b8518a66fa7348e31658c02672204597
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP3_T373K.txt	367	12	HOU (2013)	5d293b88cef88577700358e932725c2744d5e9fc644425d7f178d64868866136
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP4_T373K.txt	152	6	KOSCHEL (2006)	8432db3daca084d578d6590eda353f809294387b1d7e8142299aae452bd4095b
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP5_T373K.txt	361	19	LIU (2021)	f2da872edf047eb0abab5eee0834a7c9c7c995a0687645dec57d1f80a2bcf23e
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP6_T373K.txt	219	12	MESSABEB (2016)	2d30d06bb997f61908925dd9ebdcfdc015216a4c89b50663b37de6b607ad75f1
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP7_T373K.txt	192	12	YAN (2011)	ac92a1a99f1196e7bec8cbe5c3f75ddbcf99c2b180bb885b99855ee57f75dd46
-EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K (copy)/EXP8_T373K.txt	123	6	ZHAO (2015)	4e4e457c8b6fef2c0f4ed24be5e3f788cce6ee66a9d1cc21cacba53374576e5d
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K/EXP1_T373K.txt	128	4	CHABAB (2020)	2471dd5d4a2bc61f38fe2af80a017db76b85749ccf62a1543f06396eb59836f8
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K/EXP2_T373K.txt	192	12	GUO (2015)	d73d131bc8af7e823e3c0c8f41acf065b8518a66fa7348e31658c02672204597
 EoS/CO2/eCPA/SINGLE_SALT/SET1/T373K/EXP3_T373K.txt	367	12	HOU (2013)	5d293b88cef88577700358e932725c2744d5e9fc644425d7f178d64868866136
@@ -810,12 +704,8 @@ EoS/H2/H2-Water/589K/EXP1_T589K.txt	63	1	GILLESPIE(1980)	4229e87b1f9d7c9f65ff5e5
 EoS/H2/H2-Water/589K/EXP2_T589K.txt	59	1	DEVANEY(1978)	0a1963ffd8f72c36f673bbcd6c4d52da2764fe2898bebf7e8c1e2db38e7175ef
 EoS/H2/H2-Water/589K/EXP3_T589K_X.txt	83	3	PRAY(1957)	cf1b979f96f2b7c019fa1b05319eaa4d926177cf19baef58b467b5268ca0c231
 EoS/H2/H2-Water/P/103bar/EXP1_P103bar.txt	153	7	ZOSS(1952)	24fab284e93eab9aec693602ec9b0f17322b3d04f79b2d628700f9559397ec71
-EoS/H2/H2-Water/P/138bar/EXP1_P138bar (copy).txt	85	3	ZOSS(1952)	f037f2c49ca0f3aea974c8910fcbeffcdf1b334a8a30bf25ef5af236a5621bcf
 EoS/H2/H2-Water/P/138bar/EXP1_P138bar.txt	68	2	ZOSS(1952)	15b6ad5daa31282984feed4dcd630a83f5b6e51e7ab2f29e4b6c49410be931bc
 EoS/H2/H2-Water/P/1bar/EXP1_P1bar.txt	267	12	MORRISON(1952)	ba03c8a2d38dd82a7fc74ab7e72f82dbc017659391c41a61effc60daa3e814f0
-EoS/H2/H2-Water/P/207bar/EXP1_P207bar (copy).txt	255	13	ZOSS(1952)	3045da2cc60dfb5e01d83b9b9d5ade04da2725fb399491d64009b29af2222c98
 EoS/H2/H2-Water/P/207bar/EXP1_P207bar.txt	238	12	ZOSS(1952)	d587344d73c7b2a7b5fb6ed1fe7711cf011e78152104d6a4971de84866447925
-EoS/H2/H2-Water/P/69bar/EXP1_P69bar (copy).txt	119	5	ZOSS(1952)	cb4491ea0d3d94eaac9895663ad0fc5ab61b161a804eeef139bd413b78ba4ccd
 EoS/H2/H2-Water/P/69bar/EXP1_P69bar.txt	102	4	ZOSS(1952)	8979224a217c13a5de22d0623a9afc8bf8a69da8043501fe053190adc52f225c
-EoS/H2/H2-Water/P/EXP1_PT (copy).txt	658	26	ALVAREZ(1988)	06c3fa6cf3230b8667402c884e6d8f870352eff86d00819fddd73af1dcf17133
 EoS/H2/H2-Water/P/EXP1_PT.txt	541	21	ALVAREZ(1988)	cf4e022b3bb3eb8ad5de53fae4e8bf1fe029b364e07c7151c7a950bdf3da1499
