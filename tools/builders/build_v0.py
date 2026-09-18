@@ -149,11 +149,18 @@ def u_molality_from_u_xc(u_xc, xc):
 # --------------------------------------------------------------------
 
 def build_co2_part1():
-    """511-pt Part-1 CO2 single-salt DB (xc_W = salt-free mole
-    fraction). Emits BOTH an xc_saltfree and a converted
-    solubility_molality row per point."""
+    """Part-1 CO2 single-salt DB (xc_W = salt-free mole fraction). Emits
+    BOTH an xc_saltfree and a converted solubility_molality row per point.
+
+    1,833 points as of 2026-09-18, up from the 511 Papers II and III were
+    fitted against. Two changes upstream, both additive -- every one of the
+    original 511 rows is still present and unaltered:
+      * build_experimental_parquets.py now reads all 22 isotherms in the
+        tree (283-473 K) rather than only 323/373/423 K;
+      * "_X<author>" files are read rather than skipped as duplicates.
+    """
     df = pd.read_parquet(MS_CODE / "data" / "co2_brines.parquet")
-    assert len(df) == 511, len(df)
+    assert len(df) >= 511, len(df)
     out = []
     for r in df.itertuples():
         mi = [r.m_Na, r.m_Cl, r.m_K, r.m_Ca, r.m_Mg, r.m_SO4]
@@ -243,10 +250,12 @@ def build_ch4_water_binary():
 
 
 def build_co2_mixed():
-    """298-pt mixed-brine CO2 compilation (phase3b_shyd stage b3
-    prediction set; xc_W salt-free basis)."""
+    """Mixed-brine CO2 compilation (phase3b_shyd stage b3 prediction set;
+    xc_W salt-free basis)."""
     df = pd.read_parquet(MS_CODE / "data" / "co2_mixed_brines.parquet")
-    assert len(df) == 298, len(df)
+    # 314 as of 2026-09-18: the 298 of Papers II/IV plus the 16 Portier &
+    # Rochelle 2005 points at 35 and 37 C that the "_X" skip had hidden.
+    assert len(df) >= 298, len(df)
     out = []
     for r in df.itertuples():
         mi = [r.m_Na, r.m_Cl, r.m_K, r.m_Ca, r.m_Mg, r.m_SO4]

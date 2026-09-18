@@ -160,6 +160,24 @@ _HOU_JSCF78 = (
 )
 
 SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
+    "RUMPF": ("RUMPF(1993)",
+              "the transcription header reads '#RUMPF (1993)' with a space "
+              "before the parenthesis, so the year does not parse and the "
+              "cell arrives bare. The 10 rows are CO2 in PURE WATER at "
+              "323 K, 10.6-58.0 bar, from the CO2-water binary tree. Coelho "
+              "et al. (2025), whose compilation that tree derives from, "
+              "cites exactly one Rumpf paper for it -- ref. 54: Rumpf, "
+              "Nicolaisen, Ocal & Maurer, J. Sol. Chem. 1994, 23, 431-448, "
+              "whose 40-160 degC range covers 323 K. Distinct from "
+              "RUMPFb(1993), the Na2SO4 study."),
+    "NIGHSWANDER": ("NIGHSWANDER(1989)",
+                    "no year in the key. Both spellings occur: 38 rows as "
+                    "'NIGHSWANDER' and 36 as 'NIGHSWANDER(1989)', all CO2 in "
+                    "water and 1 wt% NaCl over 353-473 K, which is the range "
+                    "of Nighswander, Kalogerakis & Mehrotra (J. Chem. Eng. "
+                    "Data 1989, 34, 355-360: 80-200 degC, to 10 MPa, water "
+                    "and 1 wt% NaCl). There is no second Nighswander paper "
+                    "these rows could belong to."),
     "TAKENOUCHI": ("TAKENOUCHI(1964)",
                    "no year in the key. The 108 rows are y_H2O for CO2 + pure "
                    "water over 383-623 K and 100-1500 bar, which is the range "
