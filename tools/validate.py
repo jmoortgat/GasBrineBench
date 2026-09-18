@@ -70,6 +70,19 @@ REQUIRED = ["dataset_id", "source", "gas", "property", "T_K",
 #: state columns that identify one measured point
 STATE = ["property", "gas", "T_K", "P_bar", *ION_COLS]
 
+# (source, gas, T_K, P_bar) states where a source legitimately prints the same
+# value twice, verified against the source table. Each entry is a replicate
+# measurement, not a transcription slip, so both rows are kept.
+#
+#   KIM(2003) CH4 298.15 K / 4.9 MPa -- Kim, Ryu, Yang & Lee, Ind. Eng. Chem.
+#   Res. 42 (2003) 2409-2414, Table 1 lists two 4.9 MPa runs, both measuring
+#   x_CH4 = 1.062e-3. They are distinct experiments: the table's *calculated*
+#   column differs between them (1.089e-3 and 1.096e-3). Checked against the
+#   paper 2026-09-18.
+DOCUMENTED_REPLICATES = {
+    ("KIM(2003)", "ch4", 298.0, 49.0),
+}
+
 
 def load_make_sources():
     """Import tools/make_sources.py for its source-key normalisation."""
@@ -184,13 +197,27 @@ def check_family(fpath, resolve, msgs, notes):
 
     # --- duplicates ---------------------------------------------------
     # Fatal: the same source contributing the identical point twice, which is
-    # the double-count SCHEMA.md rule 4 exists to prevent.
+    # the double-count SCHEMA.md rule 4 exists to prevent -- unless the
+    # repetition is in the source table itself and has been checked against
+    # it, in which case it is replicate data and dropping either row would
+    # discard a measurement (see DOCUMENTED_REPLICATES).
     same_src = ["source", *STATE, "value"]
     d = df[df.duplicated(same_src, keep=False)]
     if len(d):
-        n = len(d) - d.groupby(same_src).ngroups
-        msgs.append(f"{name}: {n} rows duplicate another row from the SAME "
-                    "source at the same state and value")
+        exempt = d.apply(
+            lambda r: (r["source"], r["gas"], round(float(r["T_K"]), 2),
+                       round(float(r["P_bar"]), 3)) in DOCUMENTED_REPLICATES,
+            axis=1)
+        ok, bad = d[exempt], d[~exempt]
+        if len(ok):
+            n = len(ok) - ok.groupby(same_src).ngroups
+            notes.append(f"{name}: {n} documented replicate row(s) "
+                         f"({', '.join(sorted(set(ok['source'])))}) -- kept: "
+                         "the repetition is in the source table")
+        if len(bad):
+            n = len(bad) - bad.groupby(same_src).ngroups
+            msgs.append(f"{name}: {n} rows duplicate another row from the SAME "
+                        "source at the same state and value")
     # Non-fatal: two different sources printing the same value at the same
     # state. That is independent corroboration, not an error.
     cross = df[df.duplicated(STATE + ["value"], keep=False)]

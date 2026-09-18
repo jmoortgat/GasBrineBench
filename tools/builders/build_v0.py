@@ -100,6 +100,10 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent          # .../code/bench/data
+# The builders moved from the old bench/data tree into tools/builders/,
+# where `HERE` is no longer the data directory; writing the CSVs beside the
+# script left data/*.csv stale. Target the repository's data/ explicitly.
+DATA_DIR = HERE.parents[1] / "data"             # .../GasBrineBench/data
 CODE = HERE.parents[1]                          # .../code
 if str(CODE) not in sys.path:
     sys.path.insert(0, str(CODE))
@@ -162,18 +166,80 @@ def build_co2_part1():
     return out
 
 
+FIT_T_MIN, FIT_T_MAX = 284.0, 532.0     # phase4_cofit.load_ch4 T_MIN/T_MAX
+
+
 def build_ch4_part1():
-    """469-pt Part-1 CH4 single-salt DB (mh_W is molality already);
-    T filter 284-532 K = phase4_cofit.load_ch4 (T_MIN/T_MAX, line
-    142 of phase4_cofit.py)."""
+    """533-pt Part-1 CH4 single-salt DB (mh_W is molality already).
+
+    The whole compilation is published; the fit window is carried in
+    `tag` rather than by dropping rows. Inside 284-532 K
+    (phase4_cofit.load_ch4, line 142) the 469 points are the set the
+    gas-ion energies were fitted against -> fit-eligible. Outside it,
+    the 64 Susak & McGee 1980 points on the 548/573/598 K isotherms
+    (16 per isotherm at m_NaCl = 0.9/1.9/3.0/4.3) were never in any
+    fit: the `solve_elv` guess table is only valid to 533 K, so they
+    are reachable only through the stability_flash path -> test-only.
+    They are the only gas-brine solubility data above 523 K anywhere
+    in this database.
+    """
     df = pd.read_parquet(MS_CODE / "data" / "ch4_brines.parquet")
-    df = df[(df.T_K >= 284) & (df.T_K <= 532)].reset_index(drop=True)
-    assert len(df) == 469, len(df)
+    assert len(df) == 533, len(df)
+    in_fit = df.T_K.between(FIT_T_MIN, FIT_T_MAX)
+    assert int(in_fit.sum()) == 469, int(in_fit.sum())
     return [row("ch4_part1", r.author, "ch4", "solubility_molality",
                 r.T_K, r.P_bar,
                 [r.m_Na, r.m_Cl, r.m_K, r.m_Ca, r.m_Mg, r.m_SO4],
-                r.mh_W, quality="T", tag="fit-eligible")
+                r.mh_W, quality="T",
+                tag=("fit-eligible"
+                     if FIT_T_MIN <= r.T_K <= FIT_T_MAX else "test-only"))
             for r in df.itertuples()]
+
+
+def _binary_water_rows(parquet, xcol, gas, dataset_id):
+    """Salt-free gas-water solubility from a Multi_Salt binaries parquet.
+
+    `xcol` is an aqueous mole fraction; with no salt present it is the
+    salt-free mole fraction by definition, so each point emits an
+    `xc_saltfree` row and its exact molality conversion, matching the
+    treatment of the brine compilations above. Rows carrying only a
+    gas-phase water content (y_H2O) are skipped -- those belong to
+    y_h2o.csv and are built by build_y_h2o.py.
+    """
+    df = pd.read_parquet(MS_CODE / "data" / parquet)
+    df = df[df[xcol].notna() & (df[xcol] > 0.0) & (df[xcol] < 1.0)]
+    mi = [0.0] * 6
+    out = []
+    for r in df.itertuples():
+        xc = float(getattr(r, xcol))
+        common = dict(dataset_id=dataset_id, source=r.author, gas=gas,
+                      T_K=r.T_K, P_bar=r.P_bar, mi=mi,
+                      quality="T", tag="fit-eligible")
+        out.append(row(prop="xc_saltfree", value=xc, **common))
+        out.append(row(prop="solubility_molality",
+                       value=xc_saltfree_to_molality(xc), **common))
+    return out
+
+
+def build_co2_water_binary():
+    """Salt-free CO2-H2O solubility (16 sources, 273-623 K, to 3500 bar).
+
+    Transcribed under CO2/CPA/PR; previously only its y_H2O column was
+    promoted, so the solubility axis of the CO2 binary was absent from
+    solubility.csv while y_h2o.csv carried the matching water contents.
+    """
+    return _binary_water_rows("binaries_co2_water.parquet",
+                              "x_CO2_aq_exp", "co2", "co2_water_binary")
+
+
+def build_ch4_water_binary():
+    """Salt-free CH4-H2O solubility (31 sources, 275-633 K, to 1973 bar).
+
+    Same asymmetry as the CO2 binary: transcribed under CH4/CH4-Water
+    and promoted to y_h2o.csv only.
+    """
+    return _binary_water_rows("binaries_ch4_water.parquet",
+                              "x_CH4_aq_exp", "ch4", "ch4_water_binary")
 
 
 def build_co2_mixed():
@@ -804,6 +870,7 @@ def build_transfer_gases():
 
 def main():
     sol = (build_co2_part1() + build_ch4_part1() + build_co2_mixed()
+           + build_co2_water_binary() + build_ch4_water_binary()
            + build_pdf_extractions() + build_transfer_gases())
     phi, eps, vps, rho = build_harness_targets()
     dh = build_koschel()
@@ -819,7 +886,7 @@ def main():
     all_rows = []
     for name, df in frames.items():
         df = df[COLUMNS]
-        df.to_csv(HERE / name, index=False, float_format="%.10g")
+        df.to_csv(DATA_DIR / name, index=False, float_format="%.10g")
         all_rows.append(df)
         print(f"{name:16s} {len(df):5d} rows")
         for did, g in df.groupby("dataset_id"):
@@ -827,7 +894,7 @@ def main():
                      g.property.value_counts().items()}
             print(f"    {did:22s} {props}")
     combined = pd.concat(all_rows, ignore_index=True)
-    combined.to_parquet(HERE / "benchmark_v0.parquet", index=False)
+    combined.to_parquet(DATA_DIR / "benchmark_v0.parquet", index=False)
     print(f"combined parquet: {len(combined)} rows")
 
 
