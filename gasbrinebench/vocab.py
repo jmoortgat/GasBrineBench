@@ -31,6 +31,10 @@ FAMILIES = (
     "dh_sol",
     "psat_ratio",
     "eps_r",
+    # CO2 + CH4 + water. Carries one extra column, `y_co2_dry`, because the
+    # gas-phase split is an independent state variable in a ternary and has
+    # nowhere to live in the single-gas schema. See data/README.md.
+    "ternary",
 )
 
 #: The ``property`` vocabulary. ``miac`` is declared in ``SCHEMA.md`` and has
@@ -57,7 +61,11 @@ GAS_FREE_PROPERTIES = frozenset(
 BLANK_PRESSURE_PROPERTIES = frozenset({"psat_ratio"})
 
 #: Gas codes used in the ``gas`` column.
-GASES = ("co2", "ch4", "h2", "n2", "o2", "c2h6", "c3h8")
+GASES = ("co2", "ch4", "h2", "n2", "o2", "c2h6", "c3h8",
+         # Mixed gas phase, used only by the ternary family and only
+         # for its water-content rows, where the measurement is a
+         # property of the mixture rather than of either component.
+         "co2-ch4")
 
 #: Ion molality columns, in the order the CSVs carry them. Units are
 #: mol per kg of water, fully dissociated basis.

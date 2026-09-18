@@ -1,5 +1,55 @@
 # Changelog
 
+## v1.1.0 — 2026-09-18
+
+### A ternary family: CO2 + CH4 + water
+
+93 rows from 34 measured states, three sources: Dhima (1999) at 344 K,
+Al Ghafri (2014) at 323 and 423 K, Qin (2008) at 376 K. Pressures 20 to
+1,000 bar.
+
+**Why it is a separate family rather than rows in `solubility.csv`.** Every
+other family describes a system with one gas, so the gas-phase composition
+is implied and needs no column. A ternary measurement does not work that
+way: the same water at the same (T, P) dissolves different amounts of CH4
+and CO2 depending on how the gas phase is split between them, and that split
+is an independent state variable. Rather than add a column that would be
+blank for the other 11,444 rows, `ternary.csv` carries the standard schema
+plus one column, `y_co2_dry` — the CO2 mole fraction of the gas phase on a
+water-free basis. `tools/validate.py` declares that in `EXTRA_COLS`; any
+other family still rejects a column outside the standard set.
+
+The row grammar is unchanged, one measurement per row: `gas=ch4` /
+`gas=co2` with `property=xc_saltfree` for the two dissolved species, and
+`gas=co2-ch4` with `property=y_h2o` for the water content of the mixed gas.
+`co2-ch4` is the only new gas code and appears only on those rows, where the
+measurement is a property of the mixture rather than of either component.
+
+**No ternary measurement in brine exists.** All ion columns are zero. The
+upstream CCB tree holds only solver output, and the upstream builder records
+that no experimental dataset is present there. The ion columns are carried
+so that such data would need no schema change.
+
+**Not a duplication of Qin's binary rows.** Qin (2008) already appears in
+`solubility.csv` and `y_h2o.csv` under `ch4_water_binary`. Those are his
+CH4-H2O binary measurements and are different data: at 375 K / 302 bar the
+binary gives x_CH4 = 0.0030, while the ternary at 376 K / 303 bar gives
+0.00104-0.00188 depending on the gas split, lower because CO2 displaces CH4.
+
+All 93 rows are `quality = T` and `tag = test-only`. The three sources sit at
+different temperatures, so no two describe the same state and the
+cross-source rule that awards `R` cannot fire; and the ternary set has only
+ever been used to validate the mixed-gas capability, never as a fit target.
+
+Two bibliography records added, both verified against Crossref rather than
+recalled: Dhima et al., *Ind. Eng. Chem. Res.* **38**, 3144-3161 (1999),
+doi:10.1021/ie980768g; Al Ghafri et al., *J. Phys. Chem. B* **118**,
+14461-14478 (2014), doi:10.1021/jp509678g.
+
+  rows      11,444 -> 11,537
+  sources      109 -> 111
+  families       7 -> 8
+
 ## v1.0.0 — 2026-09-18
 
 Archived on Zenodo: [10.5281/zenodo.22834146](https://doi.org/10.5281/zenodo.22834146)

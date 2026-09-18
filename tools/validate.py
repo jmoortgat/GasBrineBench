@@ -67,6 +67,14 @@ ION_COLS = ["m_Na", "m_Cl", "m_K", "m_Ca", "m_Mg", "m_SO4"]
 REQUIRED = ["dataset_id", "source", "gas", "property", "T_K",
             "P_bar", *ION_COLS, "value", "uncertainty", "quality", "tag"]
 
+#: Extra state columns a named family is allowed to carry beyond REQUIRED.
+#: A ternary measurement needs the gas-phase split as an independent state
+#: variable -- the same brine at the same (T, P) dissolves different amounts
+#: of CH4 and CO2 depending on it -- and there is nowhere for that in the
+#: single-gas schema. Rather than add a column that would be blank for every
+#: other family, it is declared here for ternary.csv alone.
+EXTRA_COLS = {"ternary.csv": ["y_co2_dry"]}
+
 #: state columns that identify one measured point
 STATE = ["property", "gas", "T_K", "P_bar", *ION_COLS]
 
@@ -103,13 +111,17 @@ def check_family(fpath, resolve, msgs, notes):
     df = pd.read_csv(fpath, keep_default_na=False)
     name = fpath.name
 
+    allowed = REQUIRED + EXTRA_COLS.get(name, [])
     missing = [c for c in REQUIRED if c not in df.columns]
     if missing:
         msgs.append(f"{name}: missing columns {missing}")
         return
-    extra = [c for c in df.columns if c not in REQUIRED]
+    extra = [c for c in df.columns if c not in allowed]
     if extra:
         msgs.append(f"{name}: undeclared columns {extra}")
+    for c in EXTRA_COLS.get(name, []):
+        if c not in df.columns:
+            msgs.append(f"{name}: declared extra column {c!r} is absent")
 
     bad_prop = sorted(set(df["property"]) - PROPS)
     if bad_prop:

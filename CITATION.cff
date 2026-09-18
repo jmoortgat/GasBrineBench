@@ -5,9 +5,10 @@ abstract: >-
   gas-brine systems: gas solubility, brine density, osmotic coefficients,
   vapor-pressure lowering, gas-phase water content, enthalpy of dissolution
   and brine permittivity, in single- and mixed-salt aqueous electrolyte
-  solutions. 11,444 rows from 109 published sources, covering seven gases
+  solutions. 11,537 rows from 111 published sources, covering seven gases
   (CO2, CH4, H2, N2, O2, C2H6, C3H8) and six ions (Na+, K+, Ca2+, Mg2+, Cl-,
-  SO4 2-) over 273-633 K and 0.1-3,500 bar. Every row carries its source, an
+  SO4 2-) over 273-633 K and 0.1-3,500 bar, including a CO2 + CH4 + water
+  ternary family carrying the gas-phase split as an explicit state variable. Every row carries its source, an
   R/T/U quality code with a documented justification, and a fit/test tag; the
   raw hand transcriptions the values were typed from are included.
 message: >-
@@ -18,7 +19,7 @@ message: >-
   snapshot it was computed against. A data-descriptor reference will be
   added here if one is published.
 type: dataset
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-09-18
 doi: 10.5281/zenodo.22834146
 identifiers:

@@ -8,15 +8,15 @@ Five-minute tour
 ----------------
 >>> import gasbrinebench as gbb
 >>> gbb.__version__
-'1.0.0'
+'1.1.0'
 
 Load everything. The 144 ``lle-regime`` rows -- propane points whose heavy
 phase is a liquid, so they are mutual solubilities and not gas solubilities --
-are excluded by default; pass ``exclude_tags=None`` for the raw 11,444:
+are excluded by default; pass ``exclude_tags=None`` for the raw 11,537:
 
 >>> df = gbb.load()
 >>> len(df)
-11300
+11393
 
 Filter on any axis, in one call or several:
 

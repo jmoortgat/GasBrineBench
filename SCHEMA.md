@@ -19,6 +19,42 @@ legitimately empty for brine-only properties and must not become `NaN`.
 | quality | str | yes | `R` (recommended: independently corroborated), `T` (tentative: plausible, single-source), `U` (uncertain: contradicted, author-flagged, or unverifiable) — justification in `data/QUALITY.md` |
 | tag | str | yes | fit/test partition: `fit-eligible`, `test-only`, or `lle-regime` (see below) |
 
+## One family carries an extra column: `ternary.csv`
+
+Every other family describes a system with one gas, so the gas-phase
+composition is implied and needs no column. A ternary measurement does not
+work that way: the same water at the same (T, P) dissolves different amounts
+of CH4 and CO2 depending on how the gas phase is split between them. That
+split is an independent state variable.
+
+Rather than add a column that would be blank for the other 11,444 rows,
+`data/ternary.csv` carries the schema above **plus one column**:
+
+| column | type | required | meaning |
+|---|---|---|---|
+| y_co2_dry | float | yes (this family only) | CO2 mole fraction of the gas phase, water-free basis |
+
+The row grammar is unchanged — one measurement per row, naming what it
+measured:
+
+| gas | property | what the row is |
+|---|---|---|
+| `ch4` | `xc_saltfree` | dissolved CH4 |
+| `co2` | `xc_saltfree` | dissolved CO2 |
+| `co2-ch4` | `y_h2o` | water content of the mixed gas phase |
+
+`co2-ch4` is the only gas code outside the seven single gases, and it appears
+only on the water-content rows, where the measurement is a property of the
+mixture rather than of either component.
+
+All ion columns are zero: **no ternary measurement in brine exists.** The CCB
+tree of the upstream source materials holds only solver output, and the
+upstream builder records that no experimental dataset is present. The ion
+columns are carried so that such data would need no schema change.
+
+`tools/validate.py` declares this in `EXTRA_COLS`; a family not named there
+still rejects any column outside the standard set.
+
 ## `tag`, and where per-row provenance actually lives
 
 `tag` records how a row may be used, not where it came from:
