@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — three corrected mixed-brine ion vectors
+## 1.1.1 — three corrected mixed-brine ion vectors
 
 Three recipes carried ion vectors that do not follow from their source
 tables. All three were found by re-deriving every one of the 19 mixed-brine

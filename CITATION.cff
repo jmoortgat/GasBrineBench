@@ -19,8 +19,8 @@ message: >-
   snapshot it was computed against. A data-descriptor reference will be
   added here if one is published.
 type: dataset
-version: 1.1.0
-date-released: 2026-09-18
+version: 1.1.1
+date-released: 2026-09-22
 doi: 10.5281/zenodo.22834146
 identifiers:
   - type: doi

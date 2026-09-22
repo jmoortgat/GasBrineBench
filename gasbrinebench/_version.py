@@ -7,6 +7,13 @@ read. The string is therefore kept identical to the ``version:`` field of
 ``CITATION.cff`` and to the heading of the current ``CHANGELOG.md`` section,
 and ``tests/test_version.py`` fails if the three ever drift apart.
 
+``1.1.1`` corrects three mixed-brine ion vectors (TEYMOURI_2017 magnesium,
+low by a factor 10.15; LI_2004, which mixed molarity and molality; and one
+further recipe, all recorded in ``CHANGELOG.md``). No rows are added or
+removed. None was catchable internally: every recipe charge-balances, because
+chloride was computed from the cations in each case, so the balance closes
+around whatever the cations say.
+
 ``1.1.0`` adds the CO2 + CH4 + water ternary family: 11,537 rows over 111
 published sources, every row resolving to a real reference and every transcription
 matching its manifest hash. The Zenodo version DOI is minted on deposit and
@@ -14,4 +21,4 @@ added to ``CITATION.cff`` when it exists; it is not a precondition for the
 tag, and the tag is what a reader needs in order to name their snapshot.
 """
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
