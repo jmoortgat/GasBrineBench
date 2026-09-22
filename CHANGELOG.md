@@ -1,5 +1,70 @@
 # Changelog
 
+## Unreleased — three corrected mixed-brine ion vectors
+
+Three recipes carried ion vectors that do not follow from their source
+tables. All three were found by re-deriving every one of the 19 mixed-brine
+compositions from the source papers, not by any internal check: each recipe
+CHARGE-BALANCES, because in every case chloride was computed from the
+cations, so the balance closes around whatever the cations say and cannot
+detect an error in them. Recipes are given as
+`m_Na m_Cl m_K m_Ca m_Mg m_SO4`, mol per kg of water.
+
+**TEYMOURI_2017 (mixed brine, 18 measurements).** Magnesium was low by a
+factor of 10.15.
+
+    was  3.983 4.737 0.0422 0.326 0.029 0.000
+    now  3.987 5.270 0.0421 0.326 0.294 0.000
+
+The source table (Mousavi Belfeh Teymouri 2017 thesis Table 3.29, reproduced
+identically as Mousavi et al. 2024 Table 5) gives NaCl 258.13, CaCl2 40.09,
+MgCl2 31.05 and KCl 3.48 g "in 1 lit of water" at a stated total salinity of
+23.1 wt%. Those two statements are not consistent with each other — taking
+"1 lit of water" as 1 kg gives 24.97 wt% — and the transcription resolved it
+by trusting the stated salinity, which puts 1.1077 kg of water behind the
+quoted masses. On that basis NaCl, CaCl2 and KCl reproduce the carried values
+to better than 0.5 % (factors 0.9018, 0.9025, 0.9040); MgCl2 gives 0.2944
+against the 0.029 carried. Ionic strength 5.091 -> 5.890 mol/kg, so this is
+no longer the set's most concentrated recipe by a small margin but by a
+large one. NOTE: because the source table is self-inconsistent, the whole
+recipe still carries an ~8 % basis ambiguity; the alternative reading (wt%
+per kg of solution) would give NaCl 4.3166 rather than 3.9873.
+
+**LI_2004 (6 measurements).** The entry mixed two bases: K, Ca, Mg and SO4
+were molalities, Na and Cl were left as molarities.
+
+    was  1.405 1.483 0.0120 0.049 0.023 0.040
+    now  1.453 1.532 0.0120 0.051 0.024 0.041
+
+Chloride is now the measured 52,640 mg/L on the molar mass 35.453 rather than
+a rounded 35.5, converted to molality with 1000/(1061.9 - 92.95) = 1.03204.
+Sodium remains a charge-balance value rather than the measured 29,140 mg/L:
+Table 1 of the source does not charge-balance (8.94 % cation deficit) and its
+reported ions sum to 88,570 mg/L against a stated TDS of 92,950. Sodium here
+is therefore a reconciled quantity, not a measured one.
+
+**WANG_2014 Liujiagou (16 measurements).** Chloride came from a typo in the
+source's mass column.
+
+    was  0.435 1.036 0.002 0.286 0.022 0.008
+    now  0.359 0.960 0.002 0.286 0.022 0.008
+
+Table 1 of the source gives Liujiagou chloride as 36,762.84 mg/L and
+960.08 mmol/L, which implies a molar mass of 38.291 g/mol; the other three
+samples in the same table all give exactly 35.500. Charge balance identifies
+the mass entry as the bad one (the molarity column leaves -5.85 %, the mass
+column -13.27 %). Sodium is re-derived by charge balance against the good
+chloride, which is the convention two of the other three samples in this
+cohort already follow.
+
+**Not changed, but recorded.** PORTIER_2005 is tabulated per litre of
+solution, so every ion in it is about 1.1 % below its true molality; its
+chloride additionally absorbs 386 mg/L of bicarbonate, which has no column in
+the six-ion schema. ELMAGHRABY_2012's source labels its brine both "5 wt%
+NaCl and 1 wt% KCl" and "0.856 mol NaCl ... per kilogram water", which cannot
+both hold; the carried values match the printed molalities. Neither is a
+transcription error, and both are uniform across their recipe.
+
 ## v1.1.0 — 2026-09-18
 
 ### A ternary family: CO2 + CH4 + water
