@@ -1,0 +1,51 @@
+{
+ "table": "Table I",
+ "page_journal": 64,
+ "title_as_printed": "Values of (dv/dP)_{T,x} in Cubic Centimeters per Gram per Atmosphere, Multiplied by -10^4",
+ "footnotes_as_printed": {
+  "x": "weight fraction of NaCl in the solution (text under the table); the derivative unit is cubic centimeters per gram atmosphere"
+ },
+ "property": "other",
+ "property_description": "isothermal pressure derivative of specific volume, (dv/dP) at constant T and NaCl weight fraction, measured with a calibrated positive-displacement pump on NaCl solutions; printed as -(dv/dP) x 10^4 cm3/(g atm); mean value over a small pressure change evaluated at the stated pressure",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure listed in atm (10, 100, 200, 300); the paper does not say whether gauge or absolute; pressure gauge read in psig ('raised to 5000 p.s.i.g.'), derivative evaluated at the stated pressure; accuracy of gauge +-3 psi",
+ "columns": {
+  "T": {
+   "col": "t, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure, Atm.",
+   "unit": "atm",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "-(dv/dP) x 10^4 cm3/g/atm",
+   "unit": "cm3_per_g_per_atm",
+   "scale": -0.0001,
+   "what": "(dv/dP) at T, x; printed value is -(dv/dP) x 10^4, so value = printed x (-1e-4)"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {
+   "NaCl": {
+    "col": "Salt, %",
+    "unit": "g NaCl per 100 g solution"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water at 0 percent"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "specific volume per gram of solution",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "value is a pressure derivative of specific volume, not a density"
+ ],
+ "notes": "Printed as two side-by-side blocks (0, 5, 10 percent left; 15, 20, 25 percent right) with four pressure columns; restacked to one row per measurement (salt-left block first, then right block; temperature order as printed within each salt). Salt percent is printed only on the first row of each 3-row group (and repeated for the 119.4-174.4 C group); filled down. 0.466 etc. printed with a leading zero."
+}

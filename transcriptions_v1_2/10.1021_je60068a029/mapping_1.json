@@ -1,0 +1,117 @@
+{
+ "table": "Table I",
+ "page_journal": 79,
+ "title_as_printed": "Experimental Bunsen Solubility Coefficients for Methane in Distilled Water and Seawater",
+ "footnotes_as_printed": "none (salinity in parts per thousand, Temp in deg C, beta Bunsen coefficient)",
+ "property": "bunsen",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bunsen coefficient defined at gas partial pressure of 760 mm Hg (1 atm); not a measured cell pressure",
+ "columns": {
+  "T": {
+   "col": "Temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "beta",
+   "unit": "bunsen",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "g_per_kg",
+  "per_row": {},
+  "constant": {},
+  "other_species": "seawater of salinity S (parts per thousand), composition not given in this paper; salinity 0.0 is distilled water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    36,
+    92,
+    105,
+    131,
+    169
+   ],
+   "reason": "salinity label rows (data columns empty); salinity is set via group_rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "0.0",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "27.738",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  },
+  {
+   "label_row": 92,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "33.461",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  },
+  {
+   "label_row": 105,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "33.515",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  },
+  {
+   "label_row": 131,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "33.629",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  },
+  {
+   "label_row": 169,
+   "sets": [
+    {
+     "path": "composition.salinity",
+     "value": "39.379",
+     "unit": "parts per thousand (per mil)"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Bunsen coefficient = volume of gas (STP) absorbed per unit volume of water at measurement temperature at 760 mm partial pressure; conversion to mole fraction needs water density and molar volume",
+  "salinity (ppt) is seawater, composition not that of NaCl: salt-ion set not directly mappable"
+ ],
+ "notes": "Block layout: each salinity block lists three column groups (Temp, beta); stacked in printed column-group order, group 1 first then 2 then 3. Salinity values 27.738, 33.461, 33.515, 33.629, 39.379 are measured sample salinities. Values already corrected by authors for dissolved gas volume (partial molal volume 37 cm3, about +0.16%).",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "Yamamoto et al. 1976: \"the volume of gas (corrected to STP) absorbed in a unit volume of water at the measurement temperature when the partial pressure of the gas is 760 mm\"; also corrected for the dissolved-gas volume of the aqueous phase. Whether \"water\" means seawater (solution) is not stated."
+}

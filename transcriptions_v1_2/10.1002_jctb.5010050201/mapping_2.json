@@ -1,0 +1,60 @@
+{
+ "table": "Table II",
+ "page_journal": 58,
+ "title_as_printed": "Comparison of observed solubilities with values given by equation (3)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "other",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "air at 760 mm Hg barometric pressure (corrected to 760 mm by Henry's law with water vapour pressure), air saturated with water vapour and CO2-free; oxygen about 20.93 % by volume in air; text: 'at a pressure of 760 mm'",
+ "columns": {
+  "T": {
+   "col": "Temp., T C",
+   "unit": "C"
+  },
+  "P": {
+   "constant": "760",
+   "col": "",
+   "unit": "torr",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Observed solubility, C_s p.p.m.",
+   "unit": "ppm_O2_mass_per_mass_water",
+   "what": "parts of oxygen per million parts of water, equilibrium with wet CO2-free air at 760 mm; the paper's Table I heading uses 'per million'"
+  },
+  "value2": {
+   "col": "Calculated solubility, C'_s p.p.m.",
+   "unit": "ppm",
+   "what": "calculated from authors' equation (3)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {
+   "salinity": {
+    "col": "Salinity, S parts per thousand",
+    "unit": "salinity_permil"
+   }
+  },
+  "constant": {},
+  "other_species": "sea-water from the Thames estuary (Knock John Buoy), filtered, sterilised, diluted with distilled water; composition not given beyond salinity"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "expressed as parts per million of oxygen per parts of water (mass basis); Table I of the paper says 'parts of oxygen per million' while text says 'parts of oxygen per million parts of water'",
+ "gas_basis": "not_stated",
+ "gas_basis_evidence": "no gas mole fraction",
+ "skip_rows": [],
+ "group_rows": [],
+ "row_from_literature": [],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "Difference C_s - C'_s (derived)"
+ ],
+ "conversion_needs": [
+  "ppm of oxygen per ppm of water: confirm mass basis; at 760 mm with wet air (O2 partial pressure not given directly)"
+ ],
+ "notes": "Three measured points at salinity about 15 per mille are the only tabulated measured data. The solubility of the many other measurements (29 pure water, 16 sea water at 30 per mille) is given only in Fig. 4 and via equations (1)-(3), not numerically."
+}

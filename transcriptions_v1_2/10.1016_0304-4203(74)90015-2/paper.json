@@ -1,0 +1,40 @@
+{
+ "doi": "10.1016/0304-4203(74)90015-2",
+ "first_author": "Weiss",
+ "year": 1974,
+ "journal": "Marine Chemistry 2, 203-215",
+ "source_key": "WEISS(1974)",
+ "experimental_method": "Microgasometric technique: degassed water (distilled or seawater) equilibrated with pure CO2 gas in a chamber, gas volume change measured (6-10 min equilibration); corrected for non-ideality and dissociation.",
+ "uncertainties_stated": "Overall accuracy of the microgasometric CO2 solubility measurements estimated +-0.2 percent; average deviation 1.5e-5 and rms deviation 1.2e-4 mol/L atm from the fitted Murray and Riley curve; salinity +-0.004 permil.",
+ "quality_remarks": "CO2 purity >99.99 percent (0.01 percent air). Author's own measurements confirm Murray and Riley (1971) and show Li and Tsui (1971) seawater data in error by up to ~4 percent. Printed table header K0 x 10^2 (text layer said 10^5).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   9
+  ],
+  "journal_pages": [
+   211
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (page 208): fitted constants of eq. 12 - model parameters.",
+  "Table II (page 209): K0 (mol/L atm) vs T and salinity, calculated from the fit to corrected Murray and Riley data - derived/fitted.",
+  "Table III (page 210): K0 (mol/kg atm) vs T and salinity, calculated from the fit - derived/fitted.",
+  "Murray and Riley, Bohr, Krogh, Li and Tsui data are only referenced, not tabulated."
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 15,
+   "written": 15
+  }
+ },
+ "changes_after_image_check": [
+  "table_1 header: K0 * 10^5 -> K0 * 10^2 (text layer error)"
+ ],
+ "extraction_notes": "Rows are replicate determinations at 0.0 permil/20.6 C (5), 35.330 permil/6.6 C (4) and 35.330 permil/20.6 C (6). Sanity check: values compatible with Table II (e.g. 3.91e-2 at 20 C, S=0). Header text-layer correction counted.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "One header correction was needed after the image check (rule: any correction counts); cell values themselves all matched.",
+ "pass2_diff": "Table IV: 15 rows identical (first three columns)."
+}

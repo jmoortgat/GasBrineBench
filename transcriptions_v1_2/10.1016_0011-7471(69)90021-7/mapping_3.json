@@ -1,0 +1,75 @@
+{
+ "table": "Table 3",
+ "page_journal": 316,
+ "title_as_printed": "Comparison of physical measurements of oxygen solubility with chemical determination (ml/l. from an atmosphere of 20.94 % O2, 100 % relative humidity).",
+ "footnotes_as_printed": "none",
+ "property": "gas_volume_solubility",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibration with pure oxygen at atmospheric pressure (physical gasometric method of Part I, Bunsen coefficient basis, 760 Torr gas pressure), values then expressed as ml/l from air of 20.94 % O2 and 100 % RH",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Physical measurements",
+   "unit": "ml_O2_per_litre_water_from_air_20.94pct_O2_100pct_RH",
+   "derived_by_authors": true,
+   "what": "converted by authors from the measured Bunsen coefficient of pure O2 to air-saturation basis"
+  },
+  "value2": {
+   "col": "Chemical measurements: Present work smooth curve",
+   "unit": "same",
+   "what": "smoothed Table 2 value of this paper (derived)",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "Chemical measurements: CARPENTER (1966) smooth curve",
+   "unit": "same",
+   "what": "Carpenter smoothed table",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {
+   "salinity_chlorinity": {
+    "col": "Chlorinity (permil)",
+    "unit": "permil_chlorinity"
+   }
+  },
+  "constant": {},
+  "other_species": "sea water identified by chlorinity (permil), 0.000 = distilled water; use chlorinity x 1.80655 for salinity (stated in the text)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Present work smooth curve (derived)",
+  "CARPENTER (1966) smooth curve (literature)"
+ ],
+ "conversion_needs": [
+  "chlorinity to salinity: S = Cl x 1.80655 (paper's own relation)",
+  "ml/l to mole fraction needs STP molar volume and water density"
+ ],
+ "notes": "Physical (pure-O2 gasometric) determinations of Part I converted to the air basis; the 0.000 chlorinity rows are distilled water. The chlorinity-based composition basis has no builder code yet; salinity may be computed as chlorinity x 1.80655. Rows are in the printed order (not temperature-sorted).",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "Murray and Riley 1969 (O2): solubility in ml/l; the paper does not say whether the litre is of seawater or of water.",
+ "row_duplicate_of": [
+  {
+   "rows": [
+    2,
+    6,
+    8
+   ],
+   "reason": "pure-water rows at 13.60, 25.72 and 28.31 C are the same measurements as Table 2 of Murray and Riley 1969 (N2/O2 Bunsen, doi 10.1016/0011-7471(69)90020-5) in other units (audit, 2026-10-02)"
+  }
+ ]
+}

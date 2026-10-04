@@ -1,0 +1,52 @@
+{
+ "table": "Table 1",
+ "page_journal": 132,
+ "title_as_printed": "Mole fraction of CO2 in water at given pressures and temperatures",
+ "footnotes_as_printed": {
+  "a": "H, Lw, and V are the solid hydrate, liquid water, and vapor, respectively."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Header 'Pressure (bar)'; text: constant experimental pressure maintained by supplying CO2; not stated whether total or CO2 partial. In H-Lw rows (above three-phase line) the gas was displaced by water, so the pressure is that of the liquid-hydrate system. Experiments 'conducted at the three-phase equilibrium and in the hydrate formation region'.",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "quantity is a mole fraction, no per-volume definition",
+ "columns": {
+  "T": {
+   "col": "Temperature (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "Pressure (bar)",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xeq (mole fraction)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure CO2 in distilled deionized water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Phases present (H solid hydrate, Lw liquid water, V vapour)"
+ ],
+ "conversion_needs": [],
+ "notes": "xeq derived by the authors' analytic flash method from gas volume released in a gasometer plus Henry-law correction at room T (eq 2, uses literature CO2 solubility at room conditions); authors give relative error 3-5 percent of the calculated solubility. Treated as the measured result. Rows 15-20 (Lw-V, no hydrate) are labelled 'below the three-phase equilibrium' in the text. Rows with T < 273.15 K: none.",
+ "regime_per_row": {
+  "col": "Phases present",
+  "map": {
+   "H-Lw-V": "hydrate",
+   "H-Lw": "hydrate",
+   "Lw-V": ""
+  }
+ }
+}

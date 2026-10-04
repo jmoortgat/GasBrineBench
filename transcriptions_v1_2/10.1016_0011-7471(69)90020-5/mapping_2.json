@@ -1,0 +1,66 @@
+{
+ "table": "Table 2",
+ "page_journal": 304,
+ "title_as_printed": "Bunsen coefficients (x 10^3) for solubility of oxygen in pure water.",
+ "footnotes_as_printed": "none",
+ "property": "bunsen",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bunsen coefficient at 760 Torr gas pressure (gas partial pressure)",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "constant": "760",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "alpha x 10^3",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "scale": 0.001
+  },
+  "uncertainty": {
+   "col": "uncertainty",
+   "unit": "bunsen x 10^3 (as printed after +/-; replicate-based, 6 replicates per temperature)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure (distilled) water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "reason": "literature values (Carpenter 1966, Douglas 1964, Montgomery et al. 1964, Klots and Benson 1963, Green and Carritt 1967), from_literature; rows 14 has a dash (not reported)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Bunsen to mole fraction needs water density and STP molar volume"
+ ],
+ "notes": "Printed table is transposed (temperatures as columns, sources as rows); rewritten in long format, one row per source and temperature. Rows 0-2 are this work (mean of 6 replicates at 13.60, 25.72, 28.31 C per the text); remaining rows are literature comparison values."
+}

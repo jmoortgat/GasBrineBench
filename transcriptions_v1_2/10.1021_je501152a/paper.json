@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je501152a",
+ "first_author": "Zezin",
+ "year": 2015,
+ "journal": "J. Chem. Eng. Data 60 (4), 1181-1192",
+ "source_key": "ZEZIN(2015)",
+ "title": "Volumetric Properties of Na2SO4-H2O and Na2SO4-NaCl-H2O Solutions to 523.15 K, 70 MPa",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "Two vibrating-tube densimeters (custom DMA HP, Anton Paar DMA HP 4100); density difference relative to pure water with water and NaCl reference solutions.",
+ "uncertainties_stated": "u(T)=0.01 K, u(p)=0.0005*p, u(mi)=0.005*mi; U(Delta rho)=2.8e-5, 2.9e-5, 3.7e-5, 6.1e-5, 1.03e-4 g/cm3 at 298.15, 373.15, 423.15, 473.15, 523.15 K",
+ "tables_written": {
+  "table_2_group1.csv": "98 rows (Na2SO4-H2O)",
+  "table_2_group2.csv": "299 rows (Na2SO4-NaCl-H2O)"
+ },
+ "row_counts": {
+  "Table 2 binary": "printed 98; written 98",
+  "Table 2 ternary": "printed 299; written 299"
+ },
+ "not_extracted_tables": {
+  "Table 1": "sample information",
+  "Table 3": "fitted Pitzer parameters (captured twice)",
+  "Table 4": "literature data summary for fitting (captured twice)",
+  "Table 5": "fitted mixing parameters (captured twice)",
+  "Table 6": "literature data summary for fit (captured twice)"
+ },
+ "quality_remarks": "The capture page notes that a correction to this paper has been published ('Corrections to ...'); the correction content is not in the capture, so the values may differ from the corrected version. Row counts equal the 'this study' counts of the paper's Tables 4 and 6 (98, 299). Abstract: up to 1.2 mol/kg Na2SO4 and 5 mol/kg NaCl; binary max m(Na2SO4) 1.21083, ternary max 1.00075 and m(NaCl) max 5.00004, consistent. Pressure and temperature scale not stated.",
+ "extraction_notes": "Table 2 printed as two blocks with different columns, written as group1 and group2. Left and right halves of each printed line stacked (left first); spacer cells dropped (some lines had none).",
+ "needs_pass2": false,
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

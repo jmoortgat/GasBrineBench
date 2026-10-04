@@ -1,0 +1,81 @@
+{
+ "table": "Table 5",
+ "page_journal": 1404,
+ "title_as_printed": "Experimental Densities of CO2 + H2O at Different Compositions",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties u are u(x1) = 0.0002 mol/mol, u(T) = 0.01 K, u(P) = 0.001 MPa, and the combined expand uncertainty is U(rho) = 0.29 kg m-3."
+ },
+ "property": "rho_gas_loaded",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the compressed liquid in the densimeter (10-18 MPa); the paper gives no further definition",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho g.cm-3",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "CO2 + H2O only, no salt; block label x1 = overall mole fraction of CO2 in the homogeneous liquid (x1 = mole fraction of CO2, x2 = H2O per the paper); uncertainty u(x1) = 0.0002 mol/mol; whether x1 is the prepared overall composition or the saturation value is not stated beyond the fluid being a single compressed liquid"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    154,
+    308
+   ],
+   "reason": "block label rows x1 = ..."
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas_loading.x_CO2",
+     "value": "0.0042",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 154,
+   "sets": [
+    {
+     "path": "gas_loading.x_CO2",
+     "value": "0.0084",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 308,
+   "sets": [
+    {
+     "path": "gas_loading.x_CO2",
+     "value": "0.0124",
+     "unit": "mole_fraction"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "unit g/cm3 to kg/m3 is x1000"
+ ],
+ "notes": "Printed as side-by-side blocks (left triple then right triple, continued over journal pages 1404-1406 with the block label repeated at each column top); each x1 block is stacked left triple first then right triple (77 + 76 = 153 rows per block), so T increases through the block. Rows 0-based over all data rows after the header, label rows included: label rows at 0, 154, 308; data rows 1-153, 155-307, 309-461. gas_basis: not_applicable (CO2 + H2O binary, no salt)."
+}

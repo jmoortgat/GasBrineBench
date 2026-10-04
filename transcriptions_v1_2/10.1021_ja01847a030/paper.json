@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/ja01847a030",
+ "first_author": "Wiebe",
+ "year": 1941,
+ "journal": "J. Am. Chem. Soc. 63, 475-477",
+ "source_key": "WIEBE(1941)_GAS",
+ "experimental_method": "CO2 saturated with water in a high-pressure bomb (glass beads and spray catcher); gas from the CO2-rich phase passed continuously through the bomb, expanded, and its water collected in an absorption train and weighed per litre of expanded gas at S.T.P.",
+ "uncertainties_stated": "not stated",
+ "quality_remarks": "Authors report a sudden jump in water content at about 1000 atm at 75 C that was not quantified (possible critical mixing or soap contamination); that region is not tabulated. Temperature scale and pressure gauge not stated. Table II ratios are derived.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   475
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (ratio of mole fractions of water in the CO2-rich and water-rich phases): derived by authors from Table I and earlier solubility data"
+ ],
+ "row_counts": {
+  "Table I": "printed 39 filled cells (19 pressure rows incl. empty 300 atm row, 4 temperature columns); written 39 data rows + 4 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the 300 dpi image in every cell; matrix restacked by script. Sanity: water content at fixed T has a minimum near 50 to 100 atm then rises; increases with T at fixed P above 25 atm.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched image, but the layout restack is a manual transform",
+ "pass2_diff": "Table I: 39 (P, T, value) tuples identical between pass 1 (long) and pass 2 (matrix); the empty 300 atm row agrees."
+}

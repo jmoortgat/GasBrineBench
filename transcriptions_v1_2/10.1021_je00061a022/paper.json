@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je00061a022",
+ "first_author": "Oakes",
+ "year": 1990,
+ "title": "The System NaCl-CaCl2-H2O. 2. Densities for Ionic Strengths of 0.1-19.2 mol/kg at 298.15 and 308.15 K and at 0.1 MPa",
+ "authors": "Charles S. Oakes, John M. Simonson, Robert J. Bodnar",
+ "journal": "J. Chem. Eng. Data 35(3), 304-309",
+ "source_key": "OAKES(1990)",
+ "experimental_method": "Relative densities of NaCl-CaCl2-H2O solutions (and the binaries) measured with a Paar DMA60/602HP vibrating-tube densimeter, calibrated with water and 5.552 mol/kg NaCl(aq), at nominal 298 and 308 K, 0.1 MPa.",
+ "uncertainties_stated": "Pt resistance thermometers accurate within 0.01 K; temperature deviations from 298.15 K (up to 0.09 K) cause errors in V_phi generally below 0.04 cm3/mol and in rho at most 129 ppm; most results within 0.05 cm3/mol of the fit, corresponding to a maximum density uncertainty of about 400 ppm; fits for I < 1.0 mol/kg deviate more (>0.10 cm3/mol).",
+ "quality_remarks": "Measurements are not strictly isothermal: tube temperature ranged 298.15-298.24 K and 308.12-308.15 K; the printed T column gives the actual value per sample. Low-I samples have poorer precision. One 308 K V_phi (25.035) was excluded from the authors' fit. The PDF is this paper only (pages 304-309, 6 pdf pages). Header of the PDF reads NaCl-CaCl2-H2O part 2.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   306,
+   307
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: fitting parameters of the Pitzer model (model parameters, derived)"
+ ],
+ "row_counts": {
+  "table_1": "printed 171 data rows (116 at 298 K, 55 at 308 K) plus 14 block label rows; written 171 data rows plus 14 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Parsed from pdftotext -layout by script (side-by-side blocks split by known per-block row counts from the page image), then every row compared with the page images; no cell needed correction. Replicates kept (I = 0.2095/0.2082 at 298 K yB=0.5199 are separate samples). Sanity: rho increases monotonically with I within each yB block.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image",
+ "pass2_diff": "Table I: 171 rows, 684/684 numbers identical."
+}

@@ -1,0 +1,47 @@
+{
+ "table": "Table 1",
+ "page_journal": "796 (continued on 796; table starts 796)",
+ "title_as_printed": "Experimental values of water mole fraction, x(H2O), temperature T, pressure P and molar volume V on the liquid-gas phase equilibrium surface of the binary water-nitrogen system. Data up to x(H2O) = 0.900 obtained with the \"synthetic\" method. Data for x(H2O) = 0.930 and more obtained with the \"analytic\" method",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure at the liquid-gas phase boundary (PTx surface); basis not otherwise stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "x(H2O)",
+   "unit": "mole_fraction_water",
+   "scale": 1,
+   "what": "water mole fraction: overall filling composition (synthetic rows, corrected for dead volume) or measured liquid-phase composition (analytic rows)"
+  },
+  "value2": {
+   "col": "V/10^-6 m3 mol-1",
+   "unit": "m3/mol",
+   "scale": 1e-06,
+   "what": "molar volume of the mixture at the phase boundary point (synthetic rows only; - for analytic rows)"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none; binary water-nitrogen"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "V given as m3/mol after scale 1e-6; printed '-' means not determined"
+ ],
+ "notes": "No label rows. CSV rows 0-54 (55 rows, x(H2O) 0.134-0.900) are synthetic-method break points (isochoric P-T curve kink = bubble or dew point, overall composition, phase not specified in the table); rows 55-97 (43 rows, x(H2O) 0.930-0.990) are analytic-method liquid-phase samples at the stated T and P, so x(N2 in liquid) = 1 - x(H2O) (a solubility). Rows with printed '-' have no molar volume. Printed value 31 .O on 0.970/633 read as 31.0."
+}

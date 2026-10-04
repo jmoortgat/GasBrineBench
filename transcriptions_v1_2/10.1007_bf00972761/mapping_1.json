@@ -1,0 +1,189 @@
+{
+ "table": "Table I",
+ "page_journal": "86-89",
+ "title_as_printed": "Experimental Isopiestic Molalities Calculated Water Activities and Actual Temperatures",
+ "footnotes_as_printed": {
+  "a": "Reference MgCl2."
+ },
+ "property": "isopiestic_molality",
+ "reference_salt": "MgCl2",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "isopiestic equilibrium at the vapour pressure of the solutions (saturation); no pressure column",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "value": {
+   "col": "m (Total)",
+   "unit": "mol_per_kg_water",
+   "what": "total molality of the KCl + MgCl2 mixture at isopiestic equilibrium (sum of both solutes, mol per kg H2O; the paper says 'total equilibrium molalities')"
+  },
+  "value2": {
+   "col": "m (Reference)",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference electrolyte MgCl2 in the isopiestic equilibrium"
+  },
+  "aw": {
+   "col": "a_w",
+   "unit": "dimensionless",
+   "what": "water activity calculated from the MgCl2 reference molality with the equation of Valyashko et al.",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salt mole fraction y_KCl = n_KCl/(n_MgCl2 + n_KCl) (Eq. 1), given in block label rows; mixtures prepared at constant MgCl2:KCl ratio; individual molalities are not printed"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    31,
+    43,
+    70,
+    76,
+    87,
+    107,
+    113,
+    124,
+    127,
+    135
+   ],
+   "reason": "y_KCl block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.05",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.10",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.15",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.20",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 70,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.25",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 76,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.30",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 87,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.40",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 107,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.50",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 113,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.60",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 124,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.70",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 127,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.80",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 135,
+   "sets": [
+    {
+     "path": "composition.constant.y_KCl",
+     "value": "0.90",
+     "unit": "salt_mole_fraction"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "m_KCl = y_KCl * m(Total), m_MgCl2 = (1 - y_KCl) * m(Total) if m(Total) is the sum of the two solute molalities (to be confirmed from paper text 'Total equilibrium molalities')",
+  "temperature is printed per row (actual temperature of each isopiestic run, about 428.1-428.7 K, nominal 155.5 C)"
+ ],
+ "notes": "Label rows printed as 'y_KCl = 0.05' etc. (text layer gives YKCl). Replicate rows (same reference molality, slightly different total) are kept. Carried values: none."
+}

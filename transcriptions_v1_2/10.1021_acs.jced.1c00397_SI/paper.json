@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/acs.jced.1c00397",
+ "first_author": "Luo",
+ "year": 2021,
+ "journal": "J. Chem. Eng. Data (Supporting Information)",
+ "source_key": "LUO(2021)",
+ "experimental_method": "Static vapour-pressure cell with pressure transducer; 150 g solutions of known mass fraction measured from about 323 to 373 K in steps of about 5 K.",
+ "uncertainties_stated": "u_w = 0.0001; per-point u_t (K) and u_p (kPa) printed; solute purity 0.99; transducer accuracy 0.08 kPa; leakage up to 1.016e-3 kPa/h over about 35 h.",
+ "quality_remarks": "Authors state 121 data points; table holds 121. Their e-NRTL model deviates up to about 6 percent at w=0.3 and 0.5 CaCl2.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   "S2",
+   "S3",
+   "S4",
+   "S5"
+  ]
+ },
+ "not_extracted_tables": [
+  "Sections 2-3 of the SI: uncertainty equations and solution-enthalpy derivation (no measured table)"
+ ],
+ "row_counts": {
+  "Table S1": "printed 121 data rows + 2 block label rows; written 121 + 2"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Only the SI is covered; the main paper is not in the PDF. Calculated columns (gamma_w, e-NRTL, Antoine) kept in the CSV, mapped as unmapped extras.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the page images",
+ "pass2_diff": "Table S1: 121 rows, 1210 numbers; one disagreement (u_T 0.01 vs 0.02, CaCl2 w 0.4005 at 348.23 K): the digital text layer of the SI reads 0.01, pass 1 right."
+}

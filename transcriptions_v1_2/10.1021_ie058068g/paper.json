@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/ie058068g",
+ "first_author": "Gil",
+ "year": 2006,
+ "journal": "Ind. Eng. Chem. Res. 45, 3974-3980",
+ "source_key": "GIL(2006)",
+ "experimental_method": "Dry CO2-rich mixtures (5% propane or 1% n-butane in CO2, prepared by weight) saturated with water or water+methanol vapour at laboratory temperature, then condensed at a lower set temperature; water content by Karl Fischer titration and methanol by GC; dew points of the resulting gas measured with a chilled-mirror instrument and a pressure transmitter.",
+ "uncertainties_stated": "Water content 0.2% accuracy (Karl Fischer / wet gas meter); pressure transmitter max error 0.1%; supplier composition +-1% (absolute); validation on ethane and propane VLE: pressure 0.3-0.6%, temperature 0.1-0.2 K; test on methane+water+methanol: water content 9.3%, methanol 3.1%, dew pressure 4.2%, dew temperature 0.4 K average deviations.",
+ "quality_remarks": "Authors note dew points inside solid-vapor conditions would be metastable. Table 2 gas 2 has T=207.9 K with P=2.5 (lower than the preceding 2.8 at 202.6 K), apparently a printing or measurement oddity; Table 2 not extracted. Water mole fraction is an 'experimental mean value' per dew-point curve, not per point.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   3976
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (supplier composition of Gas 1, Gas 2): composition only",
+  "Table 2 (dry dew points of propane/n-butane + CO2 gases, no water): no in-scope water component; hydrocarbon dew points of dry CO2 mixture",
+  "Table 5 (summary of ranges and model AAD values): derived/model comparison"
+ ],
+ "row_counts": {
+  "Table 3": "printed 39 data rows in 4 blocks; written 39 data rows + 4 label rows",
+  "Table 4": "printed 99 data rows in 9 blocks; written 99 data rows + 9 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer was column-interleaved; numbers were read from the page image and cross-checked with the text layer, no discrepancies. Within each block T and P are monotonically increasing. CSVs have only T and P columns; the block's water (and methanol) mole fraction is set through group_rows. Methanol is out of the six-ion set but the tables are kept as mixed-species tables per the brief.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer (values re-read from the image); no cell corrections",
+ "pass2_diff": "Tables 3 and 4: 138 rows, 276/276 numbers identical."
+}

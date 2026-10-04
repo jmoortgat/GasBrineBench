@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je60068a029",
+ "first_author": "Yamamoto",
+ "year": 1976,
+ "journal": "J. Chem. Eng. Data 21(1), 78-80",
+ "source_key": "YAMAMOTO(1976)",
+ "experimental_method": "Scholander microgasometric technique as modified by Douglas: equilibrated water or seawater, measured volumes of absorbed gas and of water; Bunsen coefficients (beta, ml CH4 at STP per ml water at 760 mm partial pressure) corrected for dissolved-gas volume with a partial molal volume of 37 cm3.",
+ "uncertainties_stated": "Estimated accuracy 0.5% in Bunsen coefficients.",
+ "quality_remarks": "Seawater of salinity 27.738-39.379 per mil (composition not given, not an NaCl solution); salinity 0.0 is distilled water. Authors say their distilled-water values are 3-5% above Winkler and Morrison and Billet. Bunsen coefficients already corrected by authors for the dissolved-gas volume (about +0.16%). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   79
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (constants of the fitted equation 1, model parameters)",
+  "Table III (Bunsen coefficients calculated from the fitted equation over -2 to 30 C and 0-40 per mil, derived)"
+ ],
+ "row_counts": {
+  "Table 1": "printed data rows 201 (salinity 0.0: 35; 27.738: 55; 33.461: 12; 33.515: 25; 33.629: 37; 39.379: 37); written 201 data rows plus 6 label rows = 207 CSV rows"
+ },
+ "changes_after_image_check": [
+  "none. Earlier run left only an empty folder; table built fresh in this run. Parser fix (not a data change): lines holding two column pairs and the salinity-0.0 label were first mishandled and the row 10.90/0.04235 and 18.02/0.03607 initially dropped; after the fix every cell was compared with the page image and all matched."
+ ],
+ "extraction_notes": "Table I printed as three Temp/beta column pairs per salinity block; stacked with one label row per salinity, order col-pair 1 then 2 then 3. The last row of a column sometimes prints one line lower (aligned with the next block label); it is kept in its own column. A stray dot before 7.40 in the 33.515 block is a print speck. Pressure is the Bunsen definition (760 mm partial pressure), no cell pressure given. 6 salinity blocks.",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer; every cell matched the image",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: all pass-2 numbers found in pass 1 (pass 1 also has the six salinity label numbers)"
+}

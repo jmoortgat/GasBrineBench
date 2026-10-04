@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/ja01407a019",
+ "first_author": "Leopold, H. Geneva",
+ "authors": "H. Geneva Leopold, John Johnston",
+ "year": 1927,
+ "journal": "Journal of the American Chemical Society 49(8), 1974-1988",
+ "title": "The Vapor Pressure of the Saturated Aqueous Solutions of Certain Salts",
+ "source_key": "LEOPOLD(1927)",
+ "experimental_method": "Static direct manometric measurement of the vapour pressure of saturated salt solutions (air removed by repeated pumping) with a mercury manometer and a depth gauge, at 20 to 50 C, 24 h or more at each temperature.",
+ "uncertainties_stated": "Uncertainty in final results stated as not greater than 0.05 mm (Hg); readings uncertain by about 0.03-0.04 mm; temperature constant to +-0.01 C.",
+ "quality_remarks": "Molality of the saturated solutions is read from a smoothed solubility curve of literature data, not measured. Vapour pressure of water p0 is from the Reichsanstalt tables. Temperature scale not stated. Table I (Concluded) NaCl+KCl block has no molality. Some molality/Delta sequences look irregular (e.g. Na2SO4 3.473 at two temperatures; K2SO4 24.73 C Delta .04857) as printed.",
+ "how_extracted": "pdf_text_layer, then every cell compared with the 200 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   1975,
+   1976
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (relative molal vapour-pressure lowering of KCl derived from Rodebush's freezing-point data, derived)",
+  "Table III (values read off smoothed curves, derived)",
+  "Table IV (percentage composition/solubility values from curves, derived)",
+  "Table V (derived activities read from equations, derived)"
+ ],
+ "row_counts": {
+  "Table I": "printed 40 data rows (6 KCl, 6 NaCl, 6 NaCl+KCl, 7 Na2SO4, 9 K2SO4, 6 K2Cr2O7); written 40 data rows plus 6 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 row 4 (KCl 33.64 C) p: 32,46 in text layer -> 32.46",
+  "table_1: K2Cr2O7 block label was missing in the text layer -> added"
+ ],
+ "extraction_notes": "Mid-dot not present. Leading zeros omitted in the printed columns kept as printed (.03286). Sanity: p increases with T within every block; p0 matches across blocks at the same T; 27.60 C replicate in the mixed block (19.79, 19.72) kept.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "two corrections were made after the image check (comma in one cell, missing label)",
+ "pass2_diff": "Table I: 40 rows, 188/188 numbers identical."
+}

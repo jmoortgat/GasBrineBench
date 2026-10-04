@@ -1,0 +1,35 @@
+{
+ "doi": "10.1139/v82-240",
+ "first_author": "Bhatnagar",
+ "year": 1982,
+ "journal": "Can. J. Chem. 60, 1754-1758 (Bhatnagar and Campbell, Osmotic and activity coefficients of sodium sulphate in water from 150 to 250 C)",
+ "source_key": "BHATNAGAR(1982)",
+ "experimental_method": "Vapour pressure lowering of Na2SO4 solutions measured in a high-pressure cell with a precision pressure transducer, 150-250 C, 0.29 mol/kg to saturation; solution molality by gravimetric BaSO4 analysis.",
+ "uncertainties_stated": "Test with 1 m NaCl: osmotic coefficients within 1 % of literature.",
+ "quality_remarks": "Temperature by platinum resistance thermometer; scale not stated. Highest-molality point of each isotherm is at saturation (literature solubility).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   1756
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: Pitzer parameters (model parameters)",
+  "Table 3: smoothed values of phi and gamma (fitted)",
+  "Table 4: parameters of log Ksp fit",
+  "Table 5: Ksp and thermodynamic functions (derived)"
+ ],
+ "row_counts": {
+  "table_1": "printed 30; written 30"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 1 read from the 200 dpi page image (text layer is interleaved with Table 3 and was not usable for a cell-by-cell diff; spot comparison agreed, text layer reads 0.61 1 for 0.611). Row groups of 6 (5 for none) per temperature, 5 temperatures, no label rows.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "table typed from the image without a full text-layer diff; blind pass 2 advised",
+ "pass2_diff": "Table 1: 30 rows, 150/150 numbers identical."
+}

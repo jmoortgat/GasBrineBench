@@ -1,0 +1,41 @@
+{
+ "doi": "10.1016/j.fluid.2008.09.008",
+ "first_author": "Pereda, Selva",
+ "authors": "Selva Pereda, Javeed A. Awan, Amir H. Mohammadi, Alain Valtz, Christophe Coquelet, Esteban A. Brignole, Dominique Richon",
+ "year": 2009,
+ "journal": "Fluid Phase Equilibria 275, 52-59",
+ "title": "Solubility of hydrocarbons in water: Experimental measurements and modeling using a group contribution with association equation of state (GCA-EoS)",
+ "source_key": "PEREDA(2009)",
+ "experimental_method": "Static-analytic technique with a Rolsi capillary sampler; aqueous samples analysed by gas chromatography (TCD/FID), 298-353 K, up to 0.5 MPa.",
+ "uncertainties_stated": "Temperature +-0.01 K (Pt100 calibrated to ITS-90); pressure +-0.0001 MPa; TCD calibration max 2%, FID 1.8%; per-point 2 sigma x printed in tables.",
+ "quality_remarks": "Water-solubility of n-hexane, cyclohexane, iso-octane; none is among the seven standard gases but kept per convention. Authors report agreement with literature at 298 K (their n-hexane 2.08E-06 is near McAuliffe 1.99E-06). Journal year is 2009 (volume 275) although online 2008. Iso-octane at 343.16 K has P = 0.440 MPa, lower than the other rows (about 0.5), as printed.",
+ "how_extracted": "pdf_text_layer, every cell compared with 170 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   54,
+   55
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 4: n-hexane and cyclohexane solubility calculated from the Tsonopoulos correlation (derived)",
+  "Tables 5, 6, 7: comparison lists of literature values at 298 K (from other papers; this work's value is already in Tables 1-3)",
+  "Table 8, 9: GCA-EoS model parameters",
+  "Table 10, 11: model deviations; the x_exp values for ethane, propane, n-alkanes, iso-butane are literature data (Ref. 31 and others) shown against model results; cyclohexane/iso-octane rows repeat Tables 2-3 with model values"
+ ],
+ "row_counts": {
+  "Table 1": "printed 4, written 4",
+  "Table 2": "printed 4, written 4",
+  "Table 3": "printed 4, written 4"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Values written in E notation as printed. Text layer was clean and all cells matched the image.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all 12 data rows matched the page images; sharp scan",
+ "pass2_diff": "Tables 1-3: 20/20 numbers identical in each."
+}

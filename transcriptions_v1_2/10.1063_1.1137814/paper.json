@@ -1,0 +1,30 @@
+{
+ "doi": "10.1063/1.1137814",
+ "first_author": "Dec",
+ "year": 1984,
+ "journal": "Rev. Sci. Instrum. 55, 765-772",
+ "source_key": "DEC(1984)",
+ "experimental_method": "Steady-state flow microcalorimeter (heat conduction type): gas fed at constant rate from a syringe pump dissolves in deaerated water flowing through a cell via a flat gas bubble; power from thermopile voltage E times electrical calibration factor epsilon, converted to dH_sol with water-vapour and second-virial corrections.",
+ "uncertainties_stated": "Calorimeter calibrated electrically to 0.2% at 150-450 uW; temperature control +-0.001 K; per-trial E uncertainty is twice the uncertainty of the mean (in table); mean dH_sol -12.031 +- 0.036 kJ/mol (twice the std dev of the mean); one-sigma precision of method about 18 J/mol; the two calibration heaters differ by about 1.0%.",
+ "quality_remarks": "O2 used as a standard to test the instrument. Mean agrees to 0.1% with Benson-Krause (-12.02 kJ/mol) and 0.3% with Wilhelm et al. (-12.06 kJ/mol, derived from solubility data) and with batch calorimetry (12.056 +- 0.019 kJ/mol, ref 11). Only one gas (O2), one temperature (298.15 K), pure water. Recomputed mean of the 36 printed values 12.030 (printed 12.031, rounding).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8
+  ],
+  "journal_pages": [
+   771
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 36 data rows + 1 Mean row; written 36 data rows + Mean row (37 rows after header)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer parsed by script; the E value was split from its parenthesised uncertainty into a separate column (header added). Text layer showed '11. 981' (stray space) for trial 31 last column; image shows 11.981; space removed by script, not an image-driven correction. All 36 rows compared with the 200 dpi page image: every cell matched. Sanity: pg 85.81-87.70 kPa; -dH_sol 11.808-12.360 kJ/mol; epsilon values constant within runs of trials; recomputed mean 12.030. Replicate pressure rows (e.g. trials 7 and 8) are different trials, kept. The paper has no other measured table (Figs 7, 8 are calibrations). Pressure basis: header says 'pressure of gas'.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; every cell matched the page image (only whitespace artefact in trial 31).",
+ "pass2_diff": "Table I: 36 trials plus Mean row, 254/254 numbers identical."
+}

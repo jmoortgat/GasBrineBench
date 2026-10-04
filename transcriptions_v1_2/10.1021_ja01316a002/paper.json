@@ -1,0 +1,37 @@
+{
+ "doi": "10.1021/ja01316a002",
+ "first_author": "Gibson",
+ "year": 1934,
+ "journal": "J. Am. Chem. Soc. 56(1), 4-14; The Influence of Concentration on the Compressions of Aqueous Solutions of Certain Sulfates and a Note on the Representation of the Compressions of Aqueous Solutions as a Function of Pressure (R. E. Gibson, Geophysical Laboratory, Carnegie Institution)",
+ "source_key": "GIBSON(1934)",
+ "experimental_method": "Piston-free piezometer method: Pyrex piezometers in vanadium-steel bombs at 25 +- 0.02 deg, pressure from Tammann press measured by manganin resistance gage calibrated against dead-weight gage and benzene freezing curve; compressions from 1 to 1000 bars, specific volumes by pycnometer at 25 deg for some solutions, others from International Critical Tables.",
+ "uncertainties_stated": "Pressure gage zero error up to 2 bars; water compression at 1000 bars reproducible to 1 part in 400; ammonium sulfate replicate compressions within +-0.00005; interpolation in k never above 0.0003.",
+ "quality_remarks": "k for solutions rests on assumed k for water = 0.03935 for 1-1000 bar. Solutions were made up close to even weight fractions and interpolated to them. Some solutions (Ce2(SO4)3, H2SO4, BeSO4, (NH4)2SO4) are hydrolyzed. Many cells carry lowered final digits. The PDF starts with the end of another article (Stanford, charcoal sorption, p. 4 text) and ends with Fairhall & Akatsuka on lead chromate (p. 14); not used.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   6,
+   7
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (coefficients a, b of the fitted deviation function A, with deviations): fitted model parameters",
+  "Table III (percentage deviations between observed and calculated compressions, Tait-type equations, up to 10 kilobars): model comparison, literature data (NaCl, K2SO4 from Adams), derived"
+ ],
+ "row_counts": {
+  "Table I -> table_1": "printed 11 salt blocks (11 labels), 69 composition rows + 3 second-determination lines; written 83 CSV rows (72 data + 11 labels)"
+ },
+ "changes_after_image_check": [
+  "table_1 rows: text layer dropped decimal points and misread several lowered digits (e.g. 394.fi, 317-2, 349. i, 354.Q); whole table re-read from the 300 dpi image, text layer used only as a guide"
+ ],
+ "extraction_notes": "Table typed from the image at 300 dpi. Footnote letters: H2SO4 weight fractions flagged a (note column), specific volumes flagged * (note column). Wide vs stacked: single table, blocks stacked with salt label rows. Pure water row has v 1.0029 and k 393.5; the Ce2(SO4)3 x2=0.05 row has v printed '....' and no later columns; CuSO4 pure-water row has no v. No physics fixes applied.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer wrong in many cells; table re-read from image with lowered-digit notation (cells needed correction)",
+ "pass2_diff": "Table I: 72 rows, 507/507 numbers identical."
+}

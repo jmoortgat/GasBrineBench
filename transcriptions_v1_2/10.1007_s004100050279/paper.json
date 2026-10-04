@@ -1,0 +1,37 @@
+{
+ "doi": "10.1007/s004100050279",
+ "first_author": "Aranovich",
+ "year": 1997,
+ "journal": "Contributions to Mineralogy and Petrology",
+ "source_key": "ARANOVICH(1997)",
+ "experimental_method": "Reversed brucite-periclase equilibrium in KCl-H2O fluids at 1-15 kbar and 545-850 C in piston-cylinder runs; H2O activity from the fluid composition at equilibrium and thermodynamic data, KCl activity from sylvite saturation temperature.",
+ "uncertainties_stated": "Fitted formulas reproduce all measured activity data to +/- 0.014.",
+ "quality_remarks": "Activities are model-derived from phase-bracket data (authors call them measured). Table headers use Gamma for activity coefficient. Printed decimals have no leading zero.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   266
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: run conditions and stable phase of reversal experiments (T, P, initial/final xH2O, no activity values)",
+  "Table 3: reversal experiments in KCl-NaCl-H2O at 10 kbar (run conditions and stable phase only)",
+  "Table 4: model parameters"
+ ],
+ "row_counts": {
+  "Table 2": {
+   "printed": 33,
+   "written": 33
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Asterisks stripped from T and recorded in note column. Blank cells kept empty. All cells matched image. KCl-NaCl runs only in Table 3 (not extracted).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the page image",
+ "pass2_diff": "Table 2: 33 rows, 224/224 numbers identical."
+}

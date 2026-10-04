@@ -1,0 +1,60 @@
+{
+ "table": "Table I",
+ "page_journal": 663,
+ "title_as_printed": "Isopiestic Measurements with Reference Solutions of Sodium Chloride Approximately 4 M",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "isopiestic_molality",
+ "reference_salt": "NaCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable (isopiestic equilibrium of mixed KCl-NaCl solutions with NaCl reference solution at 25 C; no pressure stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "(mB + mC)",
+   "unit": "mol_per_kg_water",
+   "what": "total molality of the mixed KCl + NaCl solution in isopiestic equilibrium with NaCl reference of molality M"
+  },
+  "value2": {
+   "col": "M",
+   "unit": "mol_per_kg_water",
+   "what": "molality of reference NaCl solution having the same solvent vapour pressure (carried forward from first row of each M block; filled down)"
+  },
+  "iso_ratio": {
+   "col": "R",
+   "unit": "dimensionless",
+   "what": "isopiestic ratio R = M/m (m = total molality); NOT osmotic coefficient",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KCl": {
+    "col": "mB",
+    "unit": "mol/kg"
+   },
+   "NaCl": {
+    "col": "mC",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "B = KCl, C = NaCl; x = mB/(mB+mC) is the KCl fraction of total molality; empty mC in the x = 1.0 row means pure KCl (no NaCl)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "x (KCl fraction of total molality)",
+  "R (cor.) (isopiestic ratio corrected to exactly 4 M NaCl by authors)",
+  "R (calcd.) (from eq 6 fit)",
+  "% Delta (difference cor.-calcd.)"
+ ],
+ "conversion_needs": [],
+ "notes": "The M column is printed once per block and filled down. The x=1.0 row has mC printed as dots (not applicable, no NaCl). The R column 'R' is the measured isopiestic ratio of the original M; R(cor.) is the authors' correction to M = 4."
+}

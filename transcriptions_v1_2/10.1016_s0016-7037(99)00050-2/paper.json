@@ -1,0 +1,39 @@
+{
+ "doi": "10.1016/S0016-7037(99)00050-2",
+ "first_author": "Seitz, Jeffery C.",
+ "authors": "Jeffery C. Seitz, James G. Blencoe",
+ "year": 1999,
+ "journal": "Geochimica et Cosmochimica Acta 63(10), 1559-1569",
+ "title": "The CO2-H2O system. I. Experimental determination of volumetric properties at 400 C, 10-100 MPa",
+ "source_key": "SEITZ(1999)",
+ "experimental_method": "Flow-through vibrating-tube densimeter calibrated with He, Ar and H2O standards; densities of pure CO2 and CO2-H2O mixtures (0.1 mole-fraction steps) at 400 C and 9.94-99.93 MPa.",
+ "uncertainties_stated": "P +-0.02 MPa, T +-0.05 C, density +-0.0005 g/cm3 (low-density) to +-0.0010 g/cm3 (high-density mixtures); Vex uncertainties tabulated.",
+ "quality_remarks": "Authors find poor agreement with earlier published mixture densities and EoS-calculated Vex. Vex uncertainties exceed 4 cm3/mol at 9.94 MPa. Temperature scale not stated. 11 PDF pages; paper is complete (no foreign articles).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   1561,
+   1562
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 4: equations of state and P-T limits (not data)",
+  "Table 5: rms differences between measured and EoS-calculated densities (derived)"
+ ],
+ "row_counts": {
+  "Table 1": "11 printed / 11 written",
+  "Table 2": "99 cells (11 P x 9 X; 95 values, 4 blank) written as 99 long-form rows",
+  "Table 3": "same 99 cells (95 values, 4 blank)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer and image agreed in every cell (Table 3 is rotated on the page; read from image). Sanity: Table 1 density monotonic in P; Table 2 at X=0.10 density is non-monotonic in X as expected near critical isochore (physical). No exact duplicates. Minus signs in Table 1 delta column converted to ASCII '-'. Excess volumes are not sign-checked.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page images",
+ "pass2_diff": "Tables 1-3: all values identical; pass-1-only numbers are the composition and pressure keys of the restacked wide tables."
+}

@@ -1,0 +1,36 @@
+{
+ "doi": "10.1002/jctb.5010050201",
+ "first_author": "Truesdale",
+ "year": 1955,
+ "journal": "Journal of Applied Chemistry",
+ "source_key": "TRUESDALE(1955)",
+ "experimental_method": "Winkler titration (amperometric end point) of oxygen in water stirred slowly in contact with a steady stream of CO2-free wet air until a constant saturation value was reached (approached from above and below).",
+ "uncertainties_stated": "salinity +-0.1 per mille; temperature thermostat +-0.05 C; rms deviation of observed from eq. (1) 0.05 ppm (max 0.11); eq. (2) rms 0.04 ppm (max 0.08)",
+ "quality_remarks": "Residual oxygen demand of the sea-water 0.002 ppm/h; authors' pure water values up to 4 % lower than the accepted ones. Individual observations not tabulated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   58
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I: oxygen content of air-saturated water reported by various workers (literature compilation, not this paper's measurements)",
+  "Table III (a, b coefficients, ppm O2 vs temperature and salinity): derived from the authors' fitted equations, not measured values"
+ ],
+ "row_counts": {
+  "table_2": {
+   "printed": 3,
+   "written": 3
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image for Table II (cells '5.5\u00b0' written without degree sign; printed 'Temp.' column signs are plus/minus read from image).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned OCR text layer (journal scan); every cell matched, but a second read is recommended for 1955 scan; flagged conservatively since the text layer carried mid-dot hyphens and was OCR.",
+ "pass2_diff": "Table II: 3 rows, 15/15 numbers identical."
+}

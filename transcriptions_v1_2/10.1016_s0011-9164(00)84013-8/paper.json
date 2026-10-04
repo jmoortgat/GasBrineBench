@@ -1,0 +1,47 @@
+{
+ "doi": "10.1016/S0011-9164(00)84013-8",
+ "first_author": "Fabuss, B. M.",
+ "authors": "B. M. Fabuss, A. Korosi",
+ "year": 1966,
+ "journal": "Desalination 1, 139-148",
+ "title": "Vapor pressures of binary aqueous solutions of NaCl, KCl, Na2SO4 and MgSO4 at concentrations and temperatures of interest in desalination processes",
+ "source_key": "FABUSS(1966)",
+ "experimental_method": "Differential vapour pressure of solution against pure water in glass isoteniscopes (Smith-Menzies type) in an oil thermostat at 75, 100, 125, 150 C, read on a two-metre mercury manometer with a cathetometer; solutions degassed by freeze-thaw cycles.",
+ "uncertainties_stated": "Precision of the measurements 0.1 per cent of the measured vapour pressure (summary); thermostat control +/-0.005 C; standard deviation of experiment versus the authors' correlation: NaCl 0.08%, KCl 0.15%, Na2SO4 0.11%, MgSO4 0.03% (in aw).",
+ "quality_remarks": "Only the water activity aw = p/p0 is tabulated (vapour pressures themselves are not). Concentrations corrected by the authors for water evaporated in the isoteniscope; aw corrected for water-vapour non-ideality at high T. Misprints in the printed tables, kept as printed: Table II 150 C first m 0.95083 (probably 0.05083); Table IV 150 C last (aw)calc. 0.8988 (probably 0.9988). The Table III 75 C first row aw exp 0.9976 is higher than aw calc 0.9956 and than the 100 C value; kept. Molality unit not printed in the table headers (inferred from the symbol list). The 'S. D.' lines printed under the 150 C block are not data rows.",
+ "how_extracted": "pdf_text_layer (pdftotext -layout; side-by-side blocks scrambled) cross-checked and then transcribed from the 200 dpi page images with zoomed crops",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   7,
+   8
+  ],
+  "journal_pages": [
+   145,
+   146
+  ]
+ },
+ "verification_note": "Earlier interrupted run left no files in the slug folder; this extraction was done from scratch.",
+ "not_extracted_tables": [
+  "Table V: constants of the authors' correlation (model parameters)",
+  "Table VI: comparison of calculated and literature deviations (derived)"
+ ],
+ "row_counts": {
+  "Table I": "printed 20 data rows (5 per T x 4), written 20 (+4 label rows)",
+  "Table II": "printed 16 data rows (4 x 4), written 16 (+4 label rows)",
+  "Table III": "printed 20, written 20 (+4 label rows)",
+  "Table IV": "printed 20, written 20 (+4 label rows)"
+ },
+ "changes_after_image_check": [
+  "Table 3 125 C row 1 (aw)exp.: 0.5946 -> 0.9946 (text layer error)",
+  "Table 4 125 C row 2 (aw)exp.: 0.5968 (text layer 'O.S968') -> 0.9968",
+  "Table 4 125 C row 4 (aw)calc.: 0.5942 -> 0.9942",
+  "Table 2 150 C row 1 (aw)calc. column placement in text layer displaced; image value 0.9983 used",
+  "Table 1 125 C row 4 values in text layer displaced vertically; image values used (no digit change)"
+ ],
+ "needs_pass2": false,
+ "needs_pass2_reason": "The page scan is clean; text layer needed only a few single-digit corrections, all resolved at high zoom; small tables (72 data rows, 3 columns).",
+ "status": "verified_pass2",
+ "extraction_notes": "Side-by-side T blocks stacked, one label row per T ('75 C' etc.), T set via group_rows T.constant (unit C). Table headers: m (mol/kg), (aw)exp., (aw)calc. MgSO4 is within the six-ion set (Mg2+, SO4 2-) though not in the brief's salt list; extracted. Sanity: aw falls with m in every block; aw exp within 0.003 of calc except KCl 3.54 m at 75 C (0.8730 vs 0.8809, 0.9% off, kept).",
+ "pass2_diff": "token diff: 4 tables, 228 numbers per pass, identical"
+}

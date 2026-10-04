@@ -1,0 +1,76 @@
+{
+ "table": "Table VI",
+ "page_journal": 333,
+ "title_as_printed": "Apparent Molal Heat Capacity of Sodium Chloride",
+ "footnotes_as_printed": {
+  "a": "Similar data for the other salts worked with may be found in a manuscript thesis by the Junior Author, filed in the University of California Library, May, 1928."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (open flasks; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25",
+   "what": "heat capacity at 25 deg (Table VII caption); runs between 24.75 and 25.25 deg"
+  },
+  "value": {
+   "col": "Phi",
+   "unit": "J/(mol K)",
+   "derived_by_authors": true,
+   "what": "apparent molal heat capacity Phi = dCp(true) / m, calculated by the authors from the measured temperature differences",
+   "scale": 4.182
+  },
+  "value2": {
+   "col": "dt2o - dt2",
+   "unit": "microvolts per 1000 microvolt rise in Unit 1 (thermel)",
+   "what": "mean difference of the measured temperature rise of Unit 2 (raw measurement); dt2(I), dt2(II) are the duplicate raw readings"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (conductivity water); salt c.p. Kahlbaum sodium chloride dried at 105 deg",
+  "volume_basis": "not_applicable",
+  "volume_basis_evidence": "m, the molality, the number of moles of solute per 1000 g (or 55.508 moles) of water in vacuo."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    19
+   ],
+   "reason": "block label rows giving the mass of water and Cp of Unit 2"
+  },
+  {
+   "rows": [
+    1,
+    20
+   ],
+   "reason": "m = 0 reference runs with pure water (no solute; Phi undefined; second block prints 0.0)"
+  }
+ ],
+ "group_rows": [],
+ "row_from_literature": [],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "Moles (moles of NaCl added to the water mass in the block label)",
+  "dt2(I), dt2(II) (duplicate raw readings; '..' = no second run)",
+  "(dCp) uncorrected heat capacity change (derived)",
+  "dCp true heat capacity change, cal (derived)"
+ ],
+ "conversion_needs": [
+  "Phi in calories; the paper assumes 1 cal = 4.182 J (pages: unit calorie assumed equivalent to 4.182 joules)"
+ ],
+ "notes": "Two blocks as printed: 1238.25 g water (17 solutions plus m = 0) and 1192.96 g water (2 solutions plus m = 0). Printed minus signs separated by a space from the number (e.g. '- 1.10') written as -1.10. Printed '..' (no second duplicate) kept as '..'. Table VII (rounded smoothed Phi values for NaCl and nine other salts) is derived and not extracted. Water masses of the two blocks (apparatus information, not composition): block 1 = 1238.25 g water (Cp of Unit 2 = 1275.8 cal), block 2 = 1192.96 g water (Cp of Unit 2 = 1230.6 cal). Phi is printed in calories per mol per K; converted with the paper's own 1 cal = 4.182 J (p.332).",
+ "quality_remarks": "Phi at small molality is amplified (error about 23 times that in dCp at m = 0.043, as the authors state). The paper states the unit calorie is assumed equivalent to 4.182 joules."
+}

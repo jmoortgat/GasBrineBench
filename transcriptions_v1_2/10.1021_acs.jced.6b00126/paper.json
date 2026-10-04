@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/acs.jced.6b00126",
+ "first_author": "Uusi-Kyyny",
+ "year": 2016,
+ "source_key": "UUSI-KYYNY(2016)",
+ "title": "Design of Equilibrium Cells for Phase Equilibria and PVT Measurements in Large Ranges of Temperatures and Pressures. I. Vapor\u2013Liquid\u2013Liquid Equilibria",
+ "journal": "J. Chem. Eng. Data 61(8), 2700",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "Rotating high-T/high-P equilibrium cell (70 cm3) with high-pressure samplers and GC analysis of both phases; propane-water used as validation system.",
+ "uncertainties_stated": "u(T)=0.02 K, u(p)=10 kPa; u(x1) = 2*standard deviation per row",
+ "tables": {
+  "Table 2": 4
+ },
+ "row_counts": {
+  "Table 2": {
+   "printed": 4,
+   "written": 4
+  }
+ },
+ "not_extracted_tables": {
+  "Table 1": "list of chemicals",
+  "Table 3": "cyclohexane in water: no in-scope component",
+  "Table 4": "water in cyclohexane: no in-scope component (organic solvent)",
+  "Table 5": "2-methylfuran in water: out of scope",
+  "Table 6": "model parameters",
+  "Table 7": "vapour-pressure correlation parameters",
+  "Table 8": "NRTL parameters",
+  "Table 9": "UNIQUAC parameters"
+ },
+ "quality_remarks": "Only one temperature (about 323.15 K) for propane, intended as apparatus validation. Footnote of Table 4 defines x1exp although table is x2 (copy error in paper, irrelevant to extracted table). Abstract says 'up to 498.8 K' for hydrocarbon/cyclohexane, not propane; propane table consistent with text (one temperature, four pressures).",
+ "extraction_notes": "Table 2 header was two rows; joined to ASCII. Footnote letter a belongs to caption only.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

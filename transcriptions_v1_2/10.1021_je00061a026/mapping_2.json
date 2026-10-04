@@ -1,0 +1,44 @@
+{
+ "table": "Table II",
+ "page_journal": 321,
+ "title_as_printed": "Isobaric Water Content of a CO2-CH4 Mixture Containing 5.31 mol % CH4 in CO2 in Equilibrium with a H2O(l)-Rich Phase in the Two-Phase Region",
+ "footnotes_as_printed": {},
+ "property": "y_h2o",
+ "gas": "co2-ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "printed as 'pressure, psia/MPa'; isobars of 6.21, 7.59, 10.34 and 13.79 MPa (900, 1100, 1500, 2000 psia); system pressure from a pressure transducer",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water; water mole fraction of the CO2-CH4-rich fluid phase",
+ "columns": {
+  "T": {
+   "col": "temp C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pressure MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "10^3 x mole fracn of water",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Gas phase is a certified CO2-CH4 mixture containing 5.31 mol % CH4; the water-rich liquid is pure water (triply distilled)"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "temp F",
+  "pressure psia"
+ ],
+ "conversion_needs": [
+  "x scale 1e-3"
+ ],
+ "notes": "Measured above the initial hydrate formation conditions (abstract), so no hydrate regime. Phase is the nonaqueous CO2/methane-rich fluid (gas or supercritical). Rows are printed in experiment order, not sorted."
+}

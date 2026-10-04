@@ -1,0 +1,55 @@
+{
+ "table": "Table II",
+ "page_journal": 342,
+ "title_as_printed": "Experimental Henry Coefficients for Nitrogen in Liquid Water at Various Temperatures",
+ "footnotes_as_printed": {
+  "a": "Delta is the percent deviation [see Eq. (16)] either from smoothing function Eq. (17) (CG) or Eq. (18) (BK). Average percent deviations [see Eq. (19)] are: <Delta>_CG = 0.038, and <Delta>_BK = 0.042."
+ },
+ "property": "henry",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "P = total equilibrium pressure (water vapour + N2), determined by an iterative procedure (Ref. 6 of the paper) from the measurements; printed as 10^-3 P (Pa), i.e. kPa. Henry coefficient refers to the saturation pressure of water at T.",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "10^-3 P (Pa)",
+   "unit": "Pa",
+   "scale": 1000.0,
+   "basis": "total"
+  },
+  "value": {
+   "col": "10^-9 H_2,1 (Pa)",
+   "unit": "Pa",
+   "scale": 1000000000.0,
+   "what": "Henry coefficient H_2,1(T,Ps,1) = lim (f2/x2) at saturation pressure of water, fugacity-based (f2 = H x2 as x2->0), includes vapour-phase compressibility Z and fugacity coefficient phi_2 corrections and Poynting-corrected form H = h Z phi_2 / P_2, Eq. (12)"
+  },
+  "value2": {
+   "col": "10^-9 h_2,1 (Pa)",
+   "unit": "Pa",
+   "scale": 1000000000.0,
+   "what": "'uncorrected' Henry coefficient h_2,1 from measured amounts of N2 in vapour and liquid samples, Eq. (10)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, gas-free; N2 dilute (x2 < 2e-5)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Z phi_2 (vapour-phase compressibility times fugacity coefficient, calculated)",
+  "P_2 (Poynting correction, calculated)",
+  "Delta_CG, Delta_BK (percent deviations from smoothing equations)"
+ ],
+ "conversion_needs": [
+  "pressure printed as 10^-3 P (Pa); Henry printed as 10^-9 H (Pa)"
+ ],
+ "notes": "Rows are individual experiments. Four rows at 298.14-298.16 K at different pressures (45.9 to 100.4 kPa) show pressure independence. Experimental H_2,1 is itself derived from measured moles of gas in each phase (value is the authors' processed Henry coefficient). Page is printed rotated 90 degrees."
+}

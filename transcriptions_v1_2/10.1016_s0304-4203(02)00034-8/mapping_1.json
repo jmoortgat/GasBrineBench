@@ -1,0 +1,77 @@
+{
+ "table": "Table 1",
+ "page_journal": 218,
+ "title_as_printed": "The solubility of O2 in water and seawater (S=35.77) as a function of temperature",
+ "footnotes_as_printed": {
+  "a": "Calculated from Eq. (7). All the solubilities of O2 are in umol (kg solution)^-1."
+ },
+ "property": "solubility_molality",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "corrected to a standard atmosphere (equilibration with atmosphere); see text; basis not stated",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Measured",
+   "unit": "mol_per_kg_solution",
+   "scale": 1e-06,
+   "what": "O2 solubility in umol per kg of SOLUTION (not per kg H2O; identical for the water rows)"
+  },
+  "value2": {
+   "col": "Garcia and Gordon",
+   "unit": "mol_per_kg_solution",
+   "scale": 1e-06,
+   "what": "Garcia and Gordon (1992) fit of Benson and Krause data, evaluated from Eq. (7) by the authors",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Seawater rows: practical salinity S=35.77 (Practical Salinity Scale), basis salinity_permil; major-ion composition of seawater not given."
+ },
+ "skip_rows": [],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "none"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "salinity_permil"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "35.77",
+     "unit": "practical salinity (S)"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Delta (measured minus Garcia and Gordon, printed difference; sign as printed)"
+ ],
+ "conversion_needs": [
+  "Table 1 values are per kg solution; conversion to per kg H2O needs salinity-based composition"
+ ],
+ "notes": "Rows 0 and 12 are label rows (Water, Seawater) printed in the first column beside the first data row; written as separate label rows. Footnote letter a on the header 'Garcia and Gordon' recorded in the note column of the first data row. Seawater temperatures printed with three decimals. Check: Table 1 water value at 0.57 C is 449.4 while Table 2 NaCl m=0 at 0.57 C is 444.7 (printed as is)."
+}

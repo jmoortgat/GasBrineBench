@@ -1,0 +1,183 @@
+{
+ "table": "Table II",
+ "page_journal": 34,
+ "title_as_printed": "Comparison of Calorimetric and van't Hoff Heats of Solution of Hydrocarbon Gases in Water at 25 C",
+ "footnotes_as_printed": {
+  "a": "Standard partial molar enthalpy of solution, ideal gas standard state (kJ-mol^-1).",
+  "b": "Error is twice the standard error of the mean.",
+  "c": "Error is twice the standard error estimation based on equal distribution of points over interval dT_R.",
+  "d": "Standard relative error of data fit to van't Hoff equation.",
+  "e": "Temperature range of solubility data (K).",
+  "f": "Number of data points.",
+  "g": "Mean temperature of temperature range (K).",
+  "h": "Ref. 8.",
+  "i": "Ref. 5.",
+  "j": "Added in proof from reviewer's information (R. Battino et al.); unpublished van't Hoff results: C3H8, -23.14; C2H4, -16.29; n-C4H10, -25.34."
+ },
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "ideal-gas standard state (1 atm per Discussion text); no pressure column",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "dH0 calorimetric kJ/mol",
+   "unit": "kJ/mol",
+   "scale": 1,
+   "what": "standard partial molar enthalpy of solution, calorimetric (this work), printed negative"
+  },
+  "uncertainty": {
+   "col": "+- calorimetric",
+   "unit": "kJ/mol",
+   "what": "twice the standard error of the mean"
+  },
+  "value2": {
+   "col": "dH0 van't Hoff kJ/mol",
+   "unit": "kJ/mol",
+   "scale": 1,
+   "what": "enthalpy of solution derived by van't Hoff analysis of literature solubility data (Refs 8, 5)",
+   "from_literature": true,
+   "derived_by_authors": true
+  },
+  "uncertainty2": {
+   "col": "+- van't Hoff",
+   "unit": "kJ/mol"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+   ],
+   "reason": "gas label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 2,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "i-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "neo-c5h12"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c-c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h4"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "1-c4h8"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "ln s (standard relative error of van't Hoff fit)",
+  "dT_R, N, T_m (solubility data range, count, mean T of literature data)"
+ ],
+ "conversion_needs": [],
+ "notes": "Each gas printed with value line and uncertainty line below; written as one row. Ethene van't Hoff value printed as 15.33 without a minus sign (as printed; sign probably lost, others negative). 1-butene van't Hoff blank (25 C outside solubility data range). Neopentane printed C(CH3)4."
+}

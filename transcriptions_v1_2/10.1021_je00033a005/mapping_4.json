@@ -1,0 +1,129 @@
+{
+ "table": "Table V",
+ "page_journal": 301,
+ "title_as_printed": "Experimentally Determined CaCl2 Densities Compared with Those Calculated from Regression Equations",
+ "footnotes_as_printed": "none printed",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "abstract: densities measured at 1 atm (no pressure value in tables)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho expt g/cm3",
+   "unit": "g/cm3",
+   "what": "measured density of the aqueous solution (average of several determinations)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (deionized, distilled); m = 0.00 rows are measured salt-free reference densities (Kell water densities were used by the authors only to calibrate the oscillating-tube densimeter)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    15,
+    30,
+    45,
+    60
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "30",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "40",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "rho calc g/cm3 (from the authors' polynomial regression, derived)",
+  "diff (x10-5) (expt minus calc, derived)"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed as side-by-side blocks 25/30/35 C then 40/45 C; stacked in order 25,30,35,40,45 with one label row per temperature. m is molality (mol solute per kg H2O) per the text under eq 2.",
+ "row_held": [
+  {
+   "rows": [
+    48
+   ],
+   "reason": "printed rho expt 1.17175 (40 C, m = 0.93) is a misprint: rho calc 1.07187, diff -12 and neighbours imply 1.07175"
+  },
+  {
+   "rows": [
+    1,
+    16,
+    31,
+    46,
+    61
+   ],
+   "reason": "salt-free row: the paper states 'the densities of pure water were taken from Kell', a calculated reference, not a measurement (found by the inter-source consensus: identical values in two sources, 2026-10-03)"
+  }
+ ],
+ "quality_remarks": "40 C, m = 0.93: printed rho expt 1.17175 is clearly a misprint (rho calc 1.07187, diff -12, neighbours imply 1.07175); cell kept as printed in the CSV, row held."
+}

@@ -1,0 +1,65 @@
+{
+ "table": "Table I (group 1: KBr vs NaCl)",
+ "page_journal": 328,
+ "title_as_printed": "Average Isopiestic Molalities at 60 C.",
+ "footnotes_as_printed": {
+  "a": "Numbers refer to series (common salt samples) and letters to individual equilibration.",
+  "b": "Standard deviations expressed as relative values, to average them for the three salts. sigma = [sum d_i^2/(N-1)]^(1/2), sigma' = sigma/m. Column 6 is average of sigma' values calculated for each set of salt samples.",
+  "c": "Saturation."
+ },
+ "property": "isopiestic_molality",
+ "reference_salt": "NaCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; samples equilibrated in a sealed evacuated desiccator (evacuated to the vapour pressure of water at room temperature), i.e. at the water vapour pressure of the solutions",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "59.98",
+   "what": "bath temperature 59.98 +- 0.01 C as indicated on a calibrated thermometer (p.328); title says 60 C"
+  },
+  "value": {
+   "col": "m test salt mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the test salt (KBr, KCl or Na2SO4) in isopiestic equilibrium with NaCl at the same row"
+  },
+  "value2": {
+   "col": "m NaCl, Ref. mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference salt NaCl"
+  },
+  "uncertainty": {
+   "col": "Av. sigma'",
+   "unit": "relative standard deviation of the molality (sigma/m), averaged over the three salts of the run",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KBr": {
+    "col": "m test salt mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "KBr is a test salt outside the six-ion set; its rows are kept (KCl and Na2SO4 are in scope)"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "molalities",
+ "skip_rows": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "block label row (test salt vs NaCl)"
+  }
+ ],
+ "extra_unmapped": [
+  "Run Number (series number, equilibration letter)"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed layout is wide (NaCl, KBr, KCl, Na2SO4 columns, one row per run); restacked here to three blocks (KBr, KCl, Na2SO4) each with the NaCl molality of the same run. Bath temperature 59.98 +- 0.01 C in the text; table title says 60 C. Run 6,C: NaCl 6.2301 marked c (saturation) and KCl cell printed as c. Run 6,H: Na2SO4 cell printed as c. Blank Na2SO4 cells for runs 6,G to 6,C are blank in the print (Na2SO4 beyond saturation or not run). Printed '...' means no value. Osmotic coefficients are not tabulated; only isopiestic ratios R as polynomials. Split from the original table_1.csv into three group files (one per test salt) so the test salt is a per_row composition key; cells unchanged. This is group 1 (KBr)."
+}

@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/ja01861a033",
+ "first_author": "Wiebe",
+ "year": 1940,
+ "journal": "J. Am. Chem. Soc. 62, 815-817",
+ "source_key": "WIEBE(1940)",
+ "experimental_method": "Static equilibrium: CO2 saturated with water in a high-pressure bomb at constant temperature; liquid sample expanded and CO2 volume measured at S.T.P. per gram of water (apparatus as in Wiebe and Gaddy 1939).",
+ "uncertainties_stated": "not stated",
+ "quality_remarks": "Authors note hydrate formation at 10 C and at 12 C above 300 atm, and complete miscibility (identical phases) near 500 atm at 12 C and similar at 18 C. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   815
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (temperatures at constant composition): interpolated/derived from the solubility isotherms (and not measured values per se)",
+  "Table III (mole fraction of CO2 in water, experimental and calculated): derived by authors, includes thermodynamic calculation"
+ ],
+ "row_counts": {
+  "Table I": "printed 42 filled cells (10 pressure rows x 6 temperature columns); written 42 data rows + 6 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 all rows: text layer had stray doubled/spaced decimals (19..51, 35, 54, 36. 33, 00 .71 and others) -> re-read from 300 dpi image; 125 atm 40 C: text layer '00 .71' -> 28.71"
+ ],
+ "extraction_notes": "Sanity: at fixed T solubility increases with P; at fixed P decreases with T from 12 to 40 C (no minimum in this range).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer was garbled in Table I and cells were corrected from the image",
+ "pass2_diff": "Table I: 42 (P, T, value) tuples identical (structured comparison)."
+}

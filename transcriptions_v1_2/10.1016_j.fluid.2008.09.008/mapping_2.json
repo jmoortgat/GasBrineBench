@@ -1,0 +1,47 @@
+{
+ "table": "Table 2",
+ "page_journal": 55,
+ "title_as_printed": "Experimental solubility of cyclo-hexane in pure water (mole fraction), this work.",
+ "footnotes_as_printed": {
+  "general": "n = number of samples analyzed, x = mole fraction in aqueous phase, sigma_x = ((n x sum x^2 - (sum x)^2)/n x (n-1))^1/2."
+ },
+ "property": "solubility_x",
+ "gas": "c-c6h12",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "pressure_note": "P printed per row (about 0.5 MPa); paper does not say whether it is total pressure or what gas (a methane cylinder 'for pressurizing system' and pressurized nitrogen appear in the Fig. 1 legend) sets it; not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xcy-C6",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "what": "mole fraction of cyclo-hexane in the aqueous phase, pure water (salt-free by construction)"
+  },
+  "uncertainty": {
+   "col": "2 sigma x",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "what": "two standard deviations of the n replicate samples"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (degassed); no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "n (number of samples analyzed)"
+ ],
+ "conversion_needs": [],
+ "notes": "cyclo-hexane is a liquid hydrocarbon (not one of the seven standard gases); static-analytic method with Rolsi sampler. Whether a hydrocarbon-rich liquid phase is present is not stated explicitly, so regime left empty."
+}

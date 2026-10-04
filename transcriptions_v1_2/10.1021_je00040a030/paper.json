@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/je00040a030",
+ "first_author": "Sako, Takeshi",
+ "authors": "Takeshi Sako, Toshikatsu Hakuta, Hiroshi Yoshitome",
+ "year": 1985,
+ "journal": "J. Chem. Eng. Data 30(2), 224-228",
+ "title": "Vapor Pressures of Binary (H2O-HCl, -MgCl2, and -CaCl2) and Ternary (H2O-MgCl2-CaCl2) Aqueous Solutions",
+ "source_key": "SAKO(1985)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean for all tables (two-column layout scrambled a few lines in text order only); every cell was compared against the 200 dpi page images; no cell needed correction.",
+ "experimental_method": "All-glass Bourdon gauge (glass spiral with pointer read by cathetometer, nitrogen back-pressure measured with a mercury manometer); solution degassed under vacuum; 320-400 K; sample molality analysed after the run (EDTA titration for Mg and Ca, density at 293.2 K for HCl).",
+ "uncertainties_stated": "Precision of measurement +-0.1 K or +-70 Pa, whichever is larger (abstract); gauge sensitivity 40 Pa; composition analysis within 0.3 %; pure-water check: max deviation 213 Pa, mean 67 Pa.",
+ "quality_remarks": "Paper states the discrepancy of MgCl2 osmotic coefficients with literature (especially at 1 mol/kg). Ternary solution measured vapor pressures are 0.6-3.6 kPa above both the authors' Antoine-type calc and Teruya-method values, mean dev 2.00 kPa. Temperature scale not stated. The PDF starts with the last page (224) of another article (end of an excess-enthalpy paper, glossary/references) which precedes the Sako title on the same page, and its last page (228) holds only the Sako references and the start of another article; neither contributes data.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   225,
+   226,
+   227
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (HCl aqueous solutions, p. 225): HCl is outside the in-scope salt set, no in-scope component other than water.",
+  "Table IV (parameters of the Antoine-type equation): model parameters, fitted.",
+  "Figures 2-5 (log p vs 1/T, boiling points of HCl, osmotic coefficients of MgCl2 and CaCl2 vs T): derived/plotted, no tables."
+ ],
+ "row_counts": {
+  "table_2": "printed 30 data rows, written 30 (+4 label rows, +4 mean-dev rows)",
+  "table_3": "printed 38, written 38 (+5 label, +5 mean-dev)",
+  "table_5": "printed 8, written 8 (+1 mean-dev row)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "p(calcd) and dev columns are the authors' fit (Antoine-type) and are kept in the CSV, unmapped. Label rows give the molality of each block ('x mol/kg'); the printed 'mean dev' rows are kept as summary rows and listed in skip_rows. Table V has a constant composition (1.057 mol/kg MgCl2 and 2.905 mol/kg CaCl2) given in its title, mapped as composition.constant. Sanity: p rises monotonically with T in every block; highest p about 160-163 kPa; at equal T, p decreases with molality in Tables II and III. Table II data lie in 322.6-397.8 K, Table III 322.7-402.7 K, Table V 322.5-398.2 K. The paper has no calibrated T scale and no pressure basis other than vapor pressure of the solution.",
+ "pass2_diff": "Tables 2, 3, 5: every pass-1 number occurs in pass 2; the extra pass-2 numbers are the printed mean-dev rows and the Table 5 label, which pass 1 skipped."
+}

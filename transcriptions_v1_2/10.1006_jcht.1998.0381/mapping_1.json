@@ -1,0 +1,70 @@
+{
+ "table": "Table 1",
+ "page_journal": 1192,
+ "title_as_printed": "Vapour pressures p of ordinary water at temperatures T",
+ "footnotes_as_printed": {
+  "a": "Dp = p(H2O,T) - p(H2O + KCl, m_sat, T) measured by the differential isoteniscopic method.",
+  "b": "Vapour pressure of water at T, calculated from the Saul and Wagner equation.(14)"
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "vapour pressure of pure ordinary water (H2 16O), saturation pressure; direct isoteniscopic measurement",
+ "columns": {
+  "T": {
+   "col": "(T/K) - 273.15",
+   "unit": "C"
+  },
+  "P": {
+   "col": "p/Pa",
+   "unit": "Pa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "p/Pa",
+   "unit": "Pa"
+  },
+  "value2": {
+   "col": "p/Pa (Saul-Wagner)",
+   "unit": "Pa",
+   "what": "vapour pressure calculated from Saul and Wagner equation",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, natural isotopic abundance"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "reason": "literature values at 298.15 K (refs 6-14), not measured here; T printed only on first row"
+  },
+  {
+   "rows": [
+    9
+   ],
+   "reason": "label row 'This work' (printed beside first data row)"
+  }
+ ],
+ "extra_unmapped": [
+  "Dp/Pa (differential measurement vs saturated KCl solution; 5 rows)"
+ ],
+ "conversion_needs": [
+  "T given as (T/K) - 273.15, i.e. degrees C"
+ ],
+ "notes": "Last column is a calculated comparison, not data. Dp column: differential isoteniscopic reading, pure water minus saturated KCl solution."
+}

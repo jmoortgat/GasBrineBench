@@ -1,0 +1,52 @@
+{
+ "table": "Table (unnumbered)",
+ "page_journal": 52,
+ "title_as_printed": "Solubility y x 10^2 (in mole fractions) of carbon dioxide in water",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the equilibrium vessel held constant during sampling by admitting gas from the mercury-seal head space (deadweight gauge MP-2500); total/gas partial pressure not distinguished in the paper",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction",
+ "columns": {
+  "T": {
+   "col": "t, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "p, MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "y x 10^2 (mole fraction CO2 in water)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.01
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (no salt)"
+ },
+ "skip_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "regime": "lle",
+   "reason": "25 C is below the CO2 critical temperature and p >= 10 MPa exceeds CO2 vapour pressure, so a CO2-rich liquid phase coexists with the water-rich phase (inferred from T, p, not stated by authors)"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "The printed table is a matrix (rows t = 25, 50, 100, 150 C; columns p = 10, 20, 40, 60, 80 MPa). Written in long form, one row per (t, p) cell, rows in order of t then p. Cells blank in the print (25 C at 60 and 80 MPa, 50 C at 80 MPa) are written as rows with empty value; the text says sampling there was difficult because CO2 was denser than water. Columns the authors call y: mole fraction of CO2 in water; salt-free (pure water). 'note' column holds no footnote letters (empty)."
+}

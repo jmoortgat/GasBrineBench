@@ -1,0 +1,33 @@
+{
+ "doi": "10.1627/jpi.57.125",
+ "first_author": "Hayashi",
+ "year": 2014,
+ "journal": "Journal of the Japan Petroleum Institute 57(3), 125-132 (in Japanese)",
+ "source_key": "HAYASHI(2014)",
+ "experimental_method": "Equilibrated gas-water mixture in a cell at 60 C with stirring (3 h); 1 microlitre samples of gas phase and of water phase taken through a sampling valve and analysed by gas chromatography (Porapak-N, TCD) for CH4, CO2 and water, calibrated against standards.",
+ "uncertainties_stated": "Coefficients of variation of 3 repeats are tabulated (CH4 0.7-4.9 %, CO2 0.1-1.2 % per text; table lists 0.8-4.9 and 0.1-1.3); agreement with literature within 4 % (CH4) and 2 % (CO2); temperature and pressure uncertainties not stated.",
+ "quality_remarks": "Paper is in Japanese; table captions are English. Method-development paper; Table 3 is the only table of measured solubility. Gas-phase water content is not reported. T in table varies 59.8-60.6 C around nominal 60 C.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   7
+  ],
+  "journal_pages": [
+   131
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (GC analytical conditions): instrument settings",
+  "Table 2 (check valve effect, GC peak areas of CO2 and water): raw detector peak areas, not solubility data"
+ ],
+ "row_counts": {
+  "Table 3": "printed 19 data rows, written 19"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table typed from the text layer and compared cell by cell with the 200 dpi page image; all 19 rows matched. Sanity: CO2 solubility rises with P along the pure-CO2 series; pure-CH4 series rises with P.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the page image",
+ "pass2_diff": "token diff: 134 numbers, identical"
+}

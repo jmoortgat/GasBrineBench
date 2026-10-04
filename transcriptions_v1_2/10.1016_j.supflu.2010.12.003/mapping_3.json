@@ -1,0 +1,199 @@
+{
+ "table": "Table 3",
+ "page_journal": 127,
+ "title_as_printed": "The solubility (S) of CO2 in aqueous solutions of NaCl, KCl, CaCl2, NaCl+KCl (weight ratio=1:1), NaCl+CaCl2 (weight ratio=1:1) and KCl+CaCl2 (weight ratio=1:1) of 10.0 wt% salt and the Setschenow constants KS at 45.0 C and different pressures.",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the system at equilibrium (view cell, pressure transducer +-0.025 MPa); total system pressure, not stated whether water/salt vapour corrected",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "45.0"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "S/wt%",
+   "unit": "mass_percent_gas_in_liquid_sample",
+   "scale": 1.0
+  },
+  "Ks": {
+   "col": "K_S",
+   "unit": "1/(mass fraction), ln basis",
+   "derived_by_authors": true,
+   "what": "Setschenow constant from this paper's own S and Table 1 S0 at 45.0 C"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {
+   "salinity": "10.0 wt% total salt in every block"
+  },
+  "other_species": "Single-salt blocks: NaCl, KCl, CaCl2 each 10.0 wt%; binary mixtures: 1:1 weight ratio of the two salts, 10.0 wt% total (5.0 wt% each)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45
+   ],
+   "reason": "block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "10.0",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "10.0",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "10.0",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "5.0",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "5.0",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "5.0",
+     "unit": "wt%"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "K_S (derived by authors)"
+ ],
+ "conversion_needs": [
+  "S is wt% CO2 in the liquid sample (mass of CO2 / mass of sample x 100, assumed): needs conversion to mole fraction/molality"
+ ],
+ "notes": "Original layout: two rows of three side-by-side blocks (NaCl, KCl, CaCl2; then NaCl+KCl, NaCl+CaCl2, KCl+CaCl2), each P, S, KS with 8 rows. Stacked in that order (6 label rows). The label row text is the printed block heading. For mixtures the per-salt amounts are not set in group_rows; see other_species (1:1 by weight)."
+}

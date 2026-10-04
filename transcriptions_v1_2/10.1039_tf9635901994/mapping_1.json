@@ -1,0 +1,26 @@
+{
+  "table": "Table 1", "page_journal": 1997,
+  "title_as_printed": "Experimental observations and osmotic coefficients",
+  "footnotes_as_printed": {"*": "calculated from steam tables."},
+  "property": "phi_osm",
+  "gas": "", "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "p0 = vapour pressure of pure solvent (water) at the temperature, measured with a dead-weight piston gauge on nitrogen; the printed phi refers to a pressure equal to the solvent vapour pressure (p = p0), not 1 atm; two p0 values marked * were calculated from steam tables",
+  "columns": {
+    "T": {"col": "temp., t C", "unit": "C"},
+    "P": {"col": "solvent vapour pressure, p0, atm", "unit": "atm", "basis": "saturation"},
+    "value": {"col": "phi at p = p0", "unit": "dimensionless", "derived_by_authors": true, "what": "molal osmotic coefficient computed by the authors from the measured vapour-pressure difference, with non-ideal steam volumes and a compression term"},
+    "value2": {"col": "Delta p, atm", "unit": "atm", "what": "measured pressure difference p0 - p (solvent minus solution vapour pressure)"}
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {"NaCl": {"col": "molality at t C", "unit": "mol/kg"}},
+    "constant": {},
+    "other_species": "none"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": [],
+  "conversion_needs": [],
+  "notes": "Molality is the molality at the measurement temperature (it drifts from nominal 1, 2, 3 because solvent evaporates into the vapour space; the authors correct it from cell volume). Each point is the mean of 5-8 measurements."
+}

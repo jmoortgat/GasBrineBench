@@ -1,0 +1,63 @@
+{
+ "table": "Table 1",
+ "page_journal": 1450,
+ "title_as_printed": "Mole Fraction of Propane in Water, x1, at Given Temperatures and Pressures",
+ "footnotes_as_printed": {
+  "a": "H, Lw, and V refer to solid hydrate, liquid water, and vapor, respectively."
+ },
+ "property": "solubility_x",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "crystallizer pressure held constant during the experiment (kPa); the paper does not say gauge or absolute, or total or propane partial pressure",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/kPa",
+   "unit": "kPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^4 x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "what": "mole fraction of propane in the liquid water phase; mean of replicate experiments at each T, P condition; V-Lw rows are hydrate-free, H-Lw rows are liquid water in equilibrium with propane hydrate"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    6,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "regime": "hydrate",
+   "reason": "region column H-Lw: liquid water in equilibrium with solid propane hydrate (above the three-phase line)"
+  }
+ ],
+ "extra_unmapped": [
+  "region (V-Lw vapour + liquid water, H-Lw hydrate + liquid water)"
+ ],
+ "conversion_needs": [
+  "value printed as 10^4 x1: multiply by 1e-4"
+ ],
+ "notes": "Temperatures 274.16 to 276.21 K. Row order as printed. Rows at 275.20 K with 302 and 352 kPa carry the same x1 (1.572), as printed."
+}

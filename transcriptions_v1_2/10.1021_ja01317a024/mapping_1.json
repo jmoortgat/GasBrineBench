@@ -1,0 +1,45 @@
+{
+ "table": "Table I",
+ "page_journal": 356,
+ "title_as_printed": "The Solubility of Nitrogen in Liquid Water",
+ "footnotes_as_printed": {},
+ "property": "gas_volume_solubility",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Pressure, atm.' total pressure measured by dead-weight piston gage; paper does not say whether nitrogen partial pressure or total; gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "Temp. C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "X cc.(N.T.P.)/g",
+   "unit": "cm3STP_per_g_water",
+   "what": "X = cubic centimeters of nitrogen at standard temperature and pressure required to saturate 1 g of water (text); y-axis of Fig. 2 reads 'per g. H2O'"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "X defined per gram of water, a mass basis (text: 'required to saturate 1 g. of water')",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "No. of expts.",
+  "Av. dev. from mean %"
+ ],
+ "conversion_needs": [
+  "cm3 N2 (N.T.P.) per g water to mole fraction: N.T.P. molar volume (0 C, 1 atm assumed, not stated for X)"
+ ],
+ "notes": "Printed values like .977 kept without leading zero. Row 3 (100 atm, 180 C) has a single experiment so no deviation printed (empty). Averages of replicate experiments."
+}

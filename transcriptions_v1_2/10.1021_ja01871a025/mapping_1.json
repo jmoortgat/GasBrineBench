@@ -1,0 +1,81 @@
+{
+ "table": "Table II",
+ "page_journal": 316,
+ "title_as_printed": "Solubility of carbon dioxide in water, cc. gas S. T. P. per g. of water (columns 50, 75, 100 deg)",
+ "footnotes_as_printed": "none",
+ "property": "gas_volume_solubility",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Total pressure, atm.' (column header); the authors state in the text that partial pressures of CO2 differ slightly (Table III) because of water vapour",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "per label row"
+  },
+  "P": {
+   "col": "Total pressure, atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Solubility of carbon dioxide in water, cc. gas S. T. P. per g. of water",
+   "unit": "cm3STP_per_g_water",
+   "what": "cc of CO2 (S.T.P.) per 1 g of liquid water; reference state: liquid water in the saturated sample; correction of 0.734 cc/g (Bunsen 0.758 x (760-pH2O)/(760 d)) added for gas left in the sample after expansion"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; trace dissolved iron (Table I, 7e-6 to 3.5e-5 g Fe per cc), assumed not to matter"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    12,
+    24
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "100",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "cc STP per g water to mole fraction / molality: STP definition not stated (0 C, 1 atm assumed by convention, not by the paper)"
+ ],
+ "notes": "Three side-by-side temperature columns (50, 75, 100 C) stacked, one label row each. Printed blanks (75 and 100 C at 125 and 600 atm) are written as empty cells; rows kept with empty value."
+}

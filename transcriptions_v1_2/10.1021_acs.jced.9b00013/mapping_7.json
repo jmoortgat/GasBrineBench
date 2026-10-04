@@ -1,0 +1,53 @@
+{
+ "table": "Table 7",
+ "page_journal": 2491,
+ "title_as_printed": "Table 7. Determined CO2 Solubility in the NaCl Solution (b = 2 mol kg-1) at Temperatures from 303.15 to 353.15 K and Pressures from 3.0 to 30.0 MPa (printed with 'a' footnote; units mol.kg-1 as mol kg-1)",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties u are u(T) = 0.01 K, u(P) = 0.039 MPa, and u(b) = 0.0005 b, and the uncertainties of CO2 solubility are estimated based on the average deviation of five measurements of Raman peak height ratio for each measurement at the T and P condition."
+ },
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure of the CO2-water system in the equilibrium vessel/capillary (P/MPa, u(P) = 0.039 MPa); the paper does not say whether it is total pressure or CO2 partial pressure, and gives no water-vapour correction",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "CO2 solubility/mol kg-1",
+   "unit": "mol_per_kg_water",
+   "what": "CO2 solubility determined from the Raman nu(CO2)/nu(H2O) peak height ratio via a calibration curve (CO2 concentration vs ratio)"
+  },
+  "uncertainty": {
+   "col": "uncertainty/mol kg-1",
+   "unit": "mol/kg",
+   "what": "estimated from the average deviation of five Raman peak-height-ratio measurements at each T,P"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "2",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": ""
+ },
+ "mol_basis_note": "Header says CO2 solubility/mol kg-1; basis per kg of what is not explicitly stated (taken to mean kg of solvent/water by the paper's use of molality for NaCl); volume basis not applicable",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "kg basis (water vs solution) of the CO2 solubility not explicitly stated"
+ ],
+ "notes": "Wide layout (six temperature columns, each cell 'value +- uncertainty') restacked to long form by script: temperature blocks 303.15 to 353.15 K in order, pressures in printed order within each block. Printed rows 17 x 6 temperatures = 102 CSV rows. Printed pressure steps are irregular above 13.5 MPa. In Table 7 one printed uncertainty has four decimals (0.0077, 313.15 K, 4.0 MPa); kept as printed. No standard conditions for gas volumes: not used."
+}

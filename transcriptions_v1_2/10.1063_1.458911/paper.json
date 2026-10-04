@@ -1,0 +1,34 @@
+{
+ "doi": "10.1063/1.458911",
+ "first_author": "Kennan",
+ "year": 1990,
+ "journal": "J. Chem. Phys. 93, 2724-2735",
+ "source_key": "KENNAN(1990)",
+ "experimental_method": "Modified Van Slyke method: 100 cm3 stainless-steel cell with degassed twice-distilled water pressurised with gas at 25.0 C for 2-3 days (stirred), then liquid isolated, depressurised in a calibrated gas system and the outgassed solute measured (pressure and volume) to give mole fraction, Ostwald solubility and partial molar volume.",
+ "uncertainties_stated": "Temperature 25.0 +-0.1 C; conservative fractional solubility uncertainty about 1-1.5%; pressure detection +-2.0 psi (high) / +-0.5 Torr (low); volume reproducibility +-0.1%; microbubble formation is the main error source.",
+ "quality_remarks": "The Xe rows at 23.33-47.89 atm were measured with xenon clathrate present (glassy state, equilibration doubtful per the authors); the 23.33 atm point is called anomalous in the Ostwald solubility. Gas purities N2 99.99%, Ar 99.998%, Kr 99.997%, Xe 99.996%. Solubilities are in pure water at partial pressures of 4.8-116 atm.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   2727
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (Kirkwood-Buff analysis results): derived/model-analysis table, not measured data."
+ ],
+ "row_counts": {
+  "table_1": "printed 37 data rows (N2 7, Ar 10, Kr 8, Xe 8 + 4 clathrate Xe), written 37; no label or summary rows"
+ },
+ "changes_after_image_check": [
+  "Text layer contained OCR-type glitches (0.0\\485, 0.D287, 25.0\\ etc.) so the table was transcribed from the 200 dpi image and the script-parsed text layer (after normalising glitch characters and thin spaces) was diffed against it: all 37 x 6 numeric cells agree; no cell corrected after comparison. Text-layer glitches counted as corrections: table 1 rows N2 1 (0.0\\485 -> 0.01485), N2 1 (0.0\\501 -> 0.01501), Ar 2 (25.0\\ -> 25.01), Ar 8 and 9 (0.D287, 0.D282 -> 0.0287, 0.0282)"
+ ],
+ "extraction_notes": "Thin-space digit groups in L and gamma columns written without space. Solute label blank on continuation rows as printed. Authors' average partial molar volume is printed once per block, left in its printed row. Sanity: P and f increase monotonically within each block; x2 increases with P; L decreases with P within blocks; f<P for all rows.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer had OCR-type glitches (backslash for 1, D for 0) that required replacing, so table was image-read; second pass advised.",
+ "pass2_diff": "Table I: 37 rows, 235/235 numbers identical."
+}

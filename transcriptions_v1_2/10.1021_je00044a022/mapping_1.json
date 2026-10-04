@@ -1,0 +1,28 @@
+{
+ "table": "Table I",
+ "page_journal": 213,
+ "title_as_printed": "Isopiestic Data at 50 C",
+ "footnotes_as_printed": {"a": "m = average isopiestic molalities.", "b": "n = number of replicate samples comprising average.", "c": "cv = coefficient of variation (relative standard deviation) of replicate set."},
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at the water vapour pressure of the solutions)",
+ "reference_salt": "LiCl",
+ "columns": {
+  "T": {"col": "", "unit": "C", "constant": "50"},
+  "value": {"col": "CaCl2 m", "unit": "mol_per_kg_water", "scale": 1, "what": "average isopiestic molality of the CaCl2 test solution (molality, mol per kg water not explicitly worded)"},
+  "value2": {"col": "LiCl m", "unit": "mol_per_kg_water", "scale": 1, "what": "average isopiestic molality of the LiCl reference solution", "reference_salt": "LiCl"}
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {"CaCl2": {"col": "CaCl2 m", "unit": "mol/kg"}},
+  "constant": {},
+  "other_species": "LiCl reference solution (out-of-scope salt) in isopiestic equilibrium; the CaCl2 test solution is the in-scope datum"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": ["LiCl n and CaCl2 n (number of replicate samples)", "LiCl cv % and CaCl2 cv % (coefficient of variation of replicate set)"],
+ "conversion_needs": ["osmotic coefficient of CaCl2 not tabulated in Table I; the authors derive it from Gibbard and Scatchard LiCl osmotic coefficients (literature)"],
+ "notes": "One row per equilibration (printed side by side LiCl | CaCl2). The text states 27 equilibrations but 27 rows are printed; no discrepancy."
+}

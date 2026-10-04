@@ -1,0 +1,54 @@
+{
+ "table": "Table I",
+ "page_journal": 344,
+ "title_as_printed": "Experimental Results of Vapor Pressure Lowering Measurements for Sodium Chloride Solutions",
+ "footnotes_as_printed": {
+  "a": "Average value of three experimental results.",
+  "b": "Average value of two experimental results."
+ },
+ "property": "phi_osm",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "no pressure column; the authors state the osmotic coefficients are applicable to the solution under a total pressure equal to the vapor pressure of pure water p0 at each temperature (phi at p = p0). The measured quantity is the vapor pressure lowering dp = p0 - p in mm (mercury), corrected to density of Hg at 0 C",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "saturation",
+   "what": "pure-water saturation pressure p0 at T; not printed"
+  },
+  "value": {
+   "col": "Osmotic coefficient phi at p = p0",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "dp = p0 - p mm",
+   "unit": "mmHg",
+   "what": "measured vapour pressure lowering of the solution relative to pure water (raw measurement)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "Molality",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (triply distilled, degassed); NaCl only"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "dp in mm of mercury (density of Hg at 0 C); T in C"
+ ],
+ "notes": "Molality is the value at each temperature recalculated by the authors from the initial weight-basis molality, the cell volume, initial liquid volume and steam density. Rows marked a/b are averages of 3 or 2 runs. 'value' follows the osmotic coefficient as the paper's reported result (per task convention) with dp as value2; the primary measurement is dp."
+}

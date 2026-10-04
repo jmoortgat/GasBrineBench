@@ -1,0 +1,78 @@
+{
+ "table": "Table 1",
+ "page_journal": 4,
+ "title_as_printed": "Values of the critical pressure, temperature and volume for hydrogen-water mixtures: critical data for pure water are from VDI-Wasserdampftafeln [33]",
+ "footnotes_as_printed": {
+  "*": "Extrapolated."
+ },
+ "property": "other",
+ "gas": "h2",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "critical pressure of the mixture, bar (text: 'pressure in bar'); absolute/gauge not stated; transducers calibrated with dead-weight gauge, uncertainty 1 bar",
+ "columns": {
+  "T": {
+   "col": "T_c C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "p_c bar",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "p_c bar",
+   "unit": "bar",
+   "what": "critical pressure of H2-H2O mixture of given composition (property: critical locus, not solubility)"
+  },
+  "value2": {
+   "col": "T_c C",
+   "unit": "C",
+   "what": "critical temperature"
+  },
+  "value3": {
+   "col": "V_c cm3 mol-1",
+   "unit": "cm3/mol",
+   "what": "critical molar volume"
+  },
+  "uncertainty": {
+   "col": "p_c uncertainty bar",
+   "unit": "bar"
+  },
+  "uncertainty2": {
+   "col": "V_c uncertainty cm3 mol-1",
+   "unit": "cm3/mol"
+  },
+  "x_gas": {
+   "col": "x_H2 mol-%",
+   "unit": "mole_percent_H2_overall",
+   "scale": 0.01,
+   "what": "overall H2 composition of the isopleth (independent variable)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "overall composition x_H2 in mol-% (column 'x_H2 mol-%') of the H2-H2O mixture; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_from_literature": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "pure water critical data taken from VDI-Wasserdampftafeln, not measured here"
+  }
+ ],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "T_c uncertainty +-0.5 C given in the header for all rows"
+ ],
+ "conversion_needs": [
+  "x_H2 mol-% to mole fraction (divide by 100)"
+ ],
+ "notes": "Printed '+-' entries split into value and uncertainty columns (p_c and V_c). Row 13 (40 mol-%) is extrapolated per footnote and V_c is a printed dash (not measured, empty cell). Row 0 pure water from literature. T_c column has no stated uncertainty per row other than header +-0.5 C. Only Table 1 of the paper holds numeric data; the pVT/excess-volume results are in figures. 1981 IPTS 1968 stated for the thermometer.",
+ "quality_remarks": "audit 2026-10-02: CSV data row 12 (40 mol-% H2) is marked * (extrapolated by the authors) and is not measured: text p.4 'By extrapolation, T_c and p_c for the 40 mol-% H2 isopleth are estimated to be 383.3 C and 3000 bar'. The paper does not state saturation or absolute/gauge for the pressures (only 'The uncertainty in pressure measurements over the entire range was 1 bar'), so P.basis is unspecified."
+}

@@ -21,7 +21,7 @@ def test_gas_filter_is_case_insensitive(default_rows):
 
 def test_empty_gas_selects_the_brine_only_rows(default_rows):
     brine = gbb.select(default_rows, gas="")
-    assert set(brine["property"]) <= {"rho", "phi_osm", "psat_ratio", "eps_r"}
+    assert set(brine["property"]) <= {"rho", "phi_osm", "psat_ratio", "eps_r", "visc", "Cp_app"}
 
 
 def test_gas_typo_raises_and_names_the_vocabulary(default_rows):

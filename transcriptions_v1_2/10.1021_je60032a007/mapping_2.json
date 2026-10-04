@@ -1,0 +1,44 @@
+{
+ "table": "Table III",
+ "page_journal": 25,
+ "title_as_printed": "New Vapor Phase Data for Ethane-Water Binary",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "y_h2o",
+ "gas": "c2h6",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed 'Pressure, p.s.i.a.' (absolute); treated as total pressure of the two-phase cell (p.21 phase-rule statement)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure psia",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Mole Fraction Water 10^3 x",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt; binary ethane-water"
+ },
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water, no salt",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psia to kPa",
+  "F to K",
+  "temperature is printed only on the first row of each block and must be filled down (blank cells in the CSV): rows 0-8 100.1/99.9 block (row 0 100.1, rows 1-8 99.9 as printed on row 1 and carried), rows 9-15 160 F block (printed 160.1, 160.0, 160.1, [blank], 160.2, 160.1, [blank]), rows 16-19 220 F block (220.0, 220.1, [blank], 220.2)"
+ ],
+ "notes": "Temperature fill-down: a blank T takes the last printed T above it (row 0 100.1; rows 1-8 99.9; row 9 160.1, row 10 160.0, row 11 160.1, row 12 160.1, row 13 160.2, row 14 160.1, row 15 160.1; row 16 220.0, row 17 220.1, row 18 220.1, row 19 220.2). Text says binary data taken at 100, 160 and 220 F. No standard-conditions definition needed."
+}

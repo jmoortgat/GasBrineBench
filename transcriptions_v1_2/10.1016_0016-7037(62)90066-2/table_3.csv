@@ -1,0 +1,21 @@
+Pressure (psia),Mole fraction of nitrogen ( x 10^4),note
+1.00 N NaCl,,
+180,0.94,
+345,1.74,
+510,2.56,
+665,3.70,
+798,4.68,
+945,5.50,
+2.70 N NaCl,,
+205,0.57,
+395,1.29,
+555,2.02,
+750,2.81,
+890,3.46,
+1053,4.14,
+5.47 N NaCl*,,
+245,0.32,solution saturated with NaCl (printed footnote *)
+457,0.88,solution saturated with NaCl (printed footnote *)
+640,1.39,solution saturated with NaCl (printed footnote *)
+820,1.86,solution saturated with NaCl (printed footnote *)
+1033,2.72,solution saturated with NaCl (printed footnote *)

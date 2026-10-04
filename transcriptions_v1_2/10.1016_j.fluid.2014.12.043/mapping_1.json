@@ -1,0 +1,45 @@
+{
+ "table": "Table 1",
+ "page_journal": 101,
+ "title_as_printed": "Bubble point data of the system CO2 + H2O.",
+ "footnotes_as_printed": {
+  "u": "Standard uncertainties u are u(T) = 0.15 K, u(x) = 0.0002 and u(p) = 0.004 MPa."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "bubble-point pressure (synthetic method: pressure at which the last CO2 bubble disappears at fixed T and fixed overall composition); transducer in cell; absolute/gauge not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "x_CO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "mole_fraction",
+   "constant": "0.0002"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "x_CO2 is the prepared overall CO2 mole fraction of the known-composition mixture, equal to the liquid composition at the bubble point. Printed as four side-by-side blocks (x = 0.003-0.010 and 0.012-0.020) with x printed once per block; stacked here with x repeated on every row. Isotherms 283-363 K. No hydrate region stated."
+}

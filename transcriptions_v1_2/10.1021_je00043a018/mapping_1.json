@@ -1,0 +1,47 @@
+{
+ "table": "Table I",
+ "page_journal": 54,
+ "title_as_printed": "Experimental Isopiestic Molalities at 50 °C",
+ "footnotes_as_printed": "none",
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium in vacuum-type isopiestic system at 50 C; no pressure given)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "50"
+  },
+  "value": {
+   "col": "m_CaCl2",
+   "unit": "mol_per_kg_water",
+   "what": "molality of CaCl2 test solution in isopiestic equilibrium with NaCl"
+  },
+  "value2": {
+   "col": "m_NaCl",
+   "unit": "mol_per_kg_water",
+   "what": "molality of NaCl reference solution at the same water activity"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m_CaCl2",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "LiCl (column m_LiCl) is a second test salt equilibrated simultaneously with the same NaCl reference solution; outside the in-scope salt set; the NaCl and LiCl solutions are separate isopiestic cups, not part of the CaCl2 solution"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "m_LiCl (LiCl test molality, out-of-scope salt)"
+ ],
+ "conversion_needs": [],
+ "notes": "The printed table has two side-by-side blocks of 10 rows each (left block rows 0-9, right block rows 10-19); stacked left block first. Each row is the molality of each salt in isopiestic equilibrium (equal water activity) at 50 C; each is the average of two or three replicate samples per salt. The paper does not state per-kg-water explicitly beyond 'molality'. Authors' osmotic coefficients (Table II, smoothed) are not in this table.",
+ "quality_remarks": "audit 2026-10-02: each row is three separate solutions (NaCl reference, LiCl, CaCl2) equilibrated through the vapour phase at equal water activity, not a mixture; composition.per_row therefore lists the CaCl2 test solution only, the NaCl reference molality is value2."
+}

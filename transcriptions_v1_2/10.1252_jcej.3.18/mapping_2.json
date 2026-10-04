@@ -1,0 +1,116 @@
+{
+ "table": "Table 2",
+ "page_journal": 19,
+ "title_as_printed": "Observed results for ethylene in aqueous salt solution at 1 atm. and 25 C",
+ "footnotes_as_printed": "none printed",
+ "property": "bunsen",
+ "gas": "c2h4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Title says 'at 1 atm. and 25 C'; text: Bunsen coefficient is 'the volume of gas dissolved, at 0 C and 760 mm Hg partial gas pressure' (i.e. referred to 1 atm gas partial pressure); total/partial pressure of the experiment not otherwise stated (about 1 atm)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "constant": "1"
+  },
+  "value": {
+   "col": "alpha",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salt identity is given by block label rows (group_rows set composition.per_row.<salt>); Cs [mol/l] = concentration of electrolyte in mol per litre; salts outside the six-ion set in this table (kept, marked): NH4NO3, Na2SO3"
+ },
+ "volume_basis": "solution",
+ "volume_basis_evidence": "Cs in [mol/l] (Nomenclature: 'concentration of electrolyte [mol/l]'); Bunsen alpha defined in nomenclature as 'Bunsen absorption coefficient [cm3 of gas/cm3 of solution]'; text: 'volume of gas dissolved, at 0 C and 760 mm Hg partial gas pressure'. Tabulated Cs is per litre of solution (solutions made by weighing, concentration verified by density).",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    18,
+    24,
+    30
+   ],
+   "reason": "salt (system) label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.per_row.NaCl",
+     "value": {
+      "col": "Cs [mol/l]",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "composition.per_row.BaCl2",
+     "value": {
+      "col": "Cs [mol/l]",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "composition.per_row.NH4NO3",
+     "value": {
+      "col": "Cs [mol/l]",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.per_row.Na2SO4",
+     "value": {
+      "col": "Cs [mol/l]",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "composition.per_row.Na2SO3",
+     "value": {
+      "col": "Cs [mol/l]",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "mol/L (solution) to molality needs solution density, not given in the paper",
+  "Bunsen coefficient is per cm3 of solution (salt solution), referred to 0 C, 760 mmHg and 1 atm gas partial pressure"
+ ],
+ "notes": "Side-by-side blocks stacked, left block first (systems in printed order, then right block). System name printed beside first data row of each block is written as its own label row. Pure-water reference runs reported only in text (six runs, mean alpha 0.7595 for CO2, 0.1111 for C2H4 at 25 C), not as table rows."
+}

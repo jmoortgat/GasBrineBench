@@ -1,0 +1,253 @@
+{
+ "table": "Table II",
+ "page_journal": 13,
+ "title_as_printed": "Experimental Data for the Solubility of CO2 in Aqueous Salt Solutions at 760 mmHg",
+ "footnotes_as_printed": "none",
+ "property": "ostwald",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "table title: 'at 760 mmHg'; abstract and text: 'at 1 atm'; vapour pressures of the electrolyte solutions were used to evaluate L (so 760 mmHg is presumably total pressure, but the paper does not say whether it is total or CO2 partial pressure)",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'the ratio of the volume of gas absorbed at the observed temperature and pressure, VG, to the volume of the absorbing liquid, VL' and glossary 'VL volume of aqueous salt solution, cm3'; a small liquid-volume increase from gas absorption was corrected for using a dilatation coefficient 0.0016",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "Ostwald coefficient only; no gas mole fractions given",
+ "columns": {
+  "T": {
+   "col": "t, C",
+   "unit": "C",
+   "filled_down": true
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "constant": "760",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "L",
+   "unit": "ostwald_cm3_per_cm3",
+   "what": "Ostwald coefficient L = VG/VL of CO2 at the observed T and pressure, VL = volume of the absorbing (salt) solution"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salts outside the six-ion set kept in this table and marked: NaNO3, KNO3, NH4Cl, (NH4)2SO4, Mg(NO3)2, Ca(NO3)2, BaCl2, AlCl3, Al2(SO4)3; in-set: NaCl, KCl, Na2SO4, K2SO4, MgCl2, CaCl2, MgSO4. Salt identity from block label rows; concentration column Cs is molar concentration of electrolyte (glossary)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    28,
+    45,
+    57,
+    78,
+    108,
+    148,
+    154,
+    166,
+    196,
+    213,
+    223,
+    245,
+    250,
+    267,
+    276,
+    288,
+    294
+   ],
+   "reason": "salt label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.per_row.NaCl",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.per_row.KCl",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "composition.per_row.KNO3",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "composition.per_row.(NH4)2SO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 78,
+   "sets": [
+    {
+     "path": "composition.per_row.NaNO3",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 108,
+   "sets": [
+    {
+     "path": "composition.per_row.NH4Cl",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 148,
+   "sets": [
+    {
+     "path": "composition.per_row.Na2SO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 154,
+   "sets": [
+    {
+     "path": "composition.per_row.(NH4)2SO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 166,
+   "sets": [
+    {
+     "path": "composition.per_row.MgCl2",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 196,
+   "sets": [
+    {
+     "path": "composition.per_row.CaCl2",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 213,
+   "sets": [
+    {
+     "path": "composition.per_row.Ca(NO3)2",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 223,
+   "sets": [
+    {
+     "path": "composition.per_row.Na2SO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 245,
+   "sets": [
+    {
+     "path": "composition.per_row.K2SO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 250,
+   "sets": [
+    {
+     "path": "composition.per_row.Mg(NO3)2",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 267,
+   "sets": [
+    {
+     "path": "composition.per_row.MgSO4",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 276,
+   "sets": [
+    {
+     "path": "composition.per_row.BaCl2",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 288,
+   "sets": [
+    {
+     "path": "composition.per_row.AlCl3",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  },
+  {
+   "label_row": 294,
+   "sets": [
+    {
+     "path": "composition.per_row.Al2(SO4)3",
+     "value": "Cs, mol/L",
+     "unit": "mol/L"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molarity (mol/L of solution) to molality needs solution density",
+  "temperature printed only on the first row of each temperature sub-block: filled down",
+  "pressure 760 mmHg = 1 atm, constant for the table"
+ ],
+ "notes": "Four printed column panels (left to right), each with salt sub-blocks; stacked in printed order (panel 1 top to bottom, then panel 2, 3, 4). A salt appearing in two panels (Na2SO4: panel 2 at 15 C and panel 4 at 25 and 35 C; (NH4)2SO4: panel 1 at 15 and 25 C, panel 3 at 35 C) gives two label rows. Within a block, the printed order is by temperature then concentration ."
+}

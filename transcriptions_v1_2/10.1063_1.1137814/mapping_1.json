@@ -1,0 +1,30 @@
+{
+  "table": "Table I", "page_journal": 771,
+  "title_as_printed": "Results of steady-state solution measurements with O2 at 298.15 K: pg is pressure of gas; (dV/dt) is the gas flow rate; epsilon is the electrical calibration factor; E is the calorimeter voltage output under steady-state conditions. Water flow rate is 2.7 x 10^-8 m3 s-1. Uncertainty given at twice the uncertainty of the means.",
+  "footnotes_as_printed": {},
+  "property": "dh_sol",
+  "gas": "o2",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "Table header: 'pg is pressure of gas'; text (eq. 5): pw and pg are the water vapor and gas pressures, so pg is the gas partial pressure in the bubble. System pressure = atmospheric (mercury barometer) + water head on the bubble (water manometer).",
+  "columns": {
+    "T": {"col": "", "unit": "K", "constant": "298.15"},
+    "P": {"col": "pg /(kPa)", "unit": "kPa", "basis": "gas_partial"},
+    "value": {"col": "- dH_sol /(kJ mol-1)", "unit": "kJ/mol", "scale": -1, "derived_by_authors": true, "what": "enthalpy of solution of O2 in water (printed as -dH_sol, so value = -printed), computed by authors from E, epsilon, dV/dt, pg, pw, virial coefficients and dH_cond"},
+    "value2": {"col": "E /(uV)", "unit": "uV", "what": "raw calorimeter voltage output at steady state"},
+    "uncertainty2": {"col": "E uncertainty (+-) /(uV)", "unit": "uV", "what": "twice the uncertainty of the mean (per table title), printed in parentheses after E; split into own column"},
+    "gas_flow": {"col": "(dV/dt) x 10^10 /(m3 s-1)", "unit": "m3/s", "scale": 1e-10},
+    "calibration": {"col": "epsilon /(J V-1 s-1)", "unit": "J V-1 s-1"}
+  },
+  "composition": {
+    "basis": "none",
+    "per_row": {},
+    "constant": {},
+    "other_species": "pure water (deaerated), no salt; water flow rate 2.7e-8 m3/s"
+  },
+  "skip_rows": [{"rows": [36], "reason": "Mean row: 12.031 +- 0.036 kJ/mol (authors' summary of the 36 trials)"}],
+  "group_rows": [],
+  "extra_unmapped": ["Trial (index)"],
+  "conversion_needs": [],
+  "notes": "The mean dH_sol is -12.031 kJ/mol; uncertainty printed as 'twice the uncertainty of the means' / 'twice the standard deviation of the mean of 0.036 kJ/mol'. The calorimeter measures enthalpy per mole of gas dissolved in flowing water at very low gas mole fraction, so this is effectively the infinite-dilution enthalpy of solution (not stated by this wording; the paper compares with Benson-Krause dH_sol = -12.02 kJ/mol). volume_basis not applicable (no per-volume quantity)."
+}

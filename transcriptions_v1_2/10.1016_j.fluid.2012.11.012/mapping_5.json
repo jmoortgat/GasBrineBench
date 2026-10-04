@@ -1,0 +1,10 @@
+{"table":"Table 5","page_journal":160,"title_as_printed":"Water solubility for CaCl2 solutions at different concentrations in scCO2 at 90 atm and 50 C determined from NIR absorption spectroscopic measurements.",
+"footnotes_as_printed":{"a":"Corresponding to CaCl2 saturation at 25 C and 1 atm.","b":"Based on triplicate measurements; the error of the data is +/-10%.","c":"2.16 g CaCl2.2H2O."},
+"property":"y_h2o","gas":"co2","regime":"","temperature_scale":"not stated",
+"pressure_note":"90 atm stated in title; total vs partial not stated",
+"columns":{"T":{"col":"","unit":"C","constant":"50"},"P":{"col":"","unit":"atm","constant":"90","basis":"unspecified"},
+"value":{"col":"H2O solubility mol%","unit":"mole_fraction_water_in_gas_phase","scale":0.01}},
+"composition":{"basis":"molarity","per_row":{"CaCl2":{"col":"[CaCl2] M","unit":"mol/L"}},"constant":{},"other_species":"last two rows: saturated at 25 C (and with extra solid); concentration printed as words, no number"},
+"skip_rows":[],"group_rows":[],"extra_unmapped":[],
+"conversion_needs":["atm to kPa","mol% to mole fraction","molarity to molality needs solution density; text of Fig. 6 labels the same concentrations as molal, so unit (M vs m) is ambiguous in the source"],
+"notes":"Rows 4 and 5 (Sat., Sat. + extra solid) have no numeric concentration; builder should take them from Table 4 context or skip. Error +/-10% relative."}

@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je60038a008",
+ "first_author": "Humphries",
+ "year": 1968,
+ "journal": "J. Chem. Eng. Data 13(3), 327-330",
+ "title": "Osmotic Properties of Some Aqueous Electrolytes at 60 C (W. T. Humphries, C. F. Kohrt, C. S. Patterson)",
+ "source_key": "HUMPHRIES(1968)",
+ "experimental_method": "Isopiestic method: KCl, KBr and Na2SO4 solutions equilibrated with NaCl reference solutions in a rotating, evacuated desiccator at 59.98 C (ethylene glycol bath), molalities by weighing.",
+ "uncertainties_stated": "Bath 59.98 +- 0.01 C; over-all average deviation of replicates 0.05 percent; relative sigma' tabulated per run; ratios reproducible within 0.001 in R above 1 molal.",
+ "quality_remarks": "PDF begins with the end of another article (list of symbols and references on adsorption) on page 1; this paper starts on PDF page 1 lower part. Tables II and III are comparisons with Smith and Robinson (derived). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   328
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (comparison with Smith's KBr R values; derived, literature comparison)",
+  "Table III (comparison with Robinson's KCl R values; derived, literature comparison)",
+  "polynomial equations of R vs m (fitted)"
+ ],
+ "row_counts": {
+  "table_1": "printed 24 runs (wide); written 72 long rows (24 per test salt: KBr, KCl, Na2SO4) plus 3 block labels"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer misplaced the c (saturation) markers; placement taken from the image: NaCl 6.2301 (run 6,C), KCl cell of run 6,C, Na2SO4 cell of run 6,H. Text layer values otherwise matched the image. Restacked from wide to long form by script. Table I split into table_1_group1/2/3 (KBr, KCl, Na2SO4 vs NaCl) after mapping audit; cells identical to the original stacked table.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every value matched the image (c-marker positions fixed from image, not a numeric correction)",
+ "pass2_diff": "Table I: every pass-2 number occurs in pass 1 and counts reconcile (pass-1-only numbers are the run keys repeated per salt)."
+}

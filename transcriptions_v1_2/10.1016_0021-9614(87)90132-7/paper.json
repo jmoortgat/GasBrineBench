@@ -1,0 +1,57 @@
+{
+ "doi": "10.1016/0021-9614(87)90132-7",
+ "first_author": "White",
+ "year": 1987,
+ "journal": "J. Chem. Thermodynamics 19, 251-259",
+ "source_key": "WHITE(1987)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "The text layer is a poor OCR scan: 9 cells needed correction after the image check (dropped digits, 0/1 and 3/5 confusions, 'l'/'I' for 1, minus signs), so a blind second pass is required.",
+ "title": "Heat capacity of aqueous CaCl2 from 306 to 603 K at 17.5 MPa",
+ "authors": "Dorothy E. White, Anne L. Doberstein, Jeffrey A. Gates, David M. Tillett, Robert H. Wood",
+ "experimental_method": "Differential flow heat-capacity calorimeter: electric power needed for equal temperature rise with sample solution and pure water flowing, calibrated with 3.0 mol/kg NaCl; apparent molar heat capacities of CaCl2(aq) at m 0.05 to 3.0 mol/kg, 306 to 603 K, 17.5 MPa.",
+ "uncertainties_stated": "Per-point accuracy delta printed in the table (footnote b); fit standard error 16.9 J/K/mol over 216 points.",
+ "quality_remarks": "Of the 221 points of the main run the authors eliminated 5 as not in reasonable agreement (marked e in the Delta column: 403.95 K, 451.18 K, 577.89 K x2, 602.68 K); the 11 rows at 2.12, 4.81 and 10.09 MPa near 306 K are also marked e (not used in the spline fit). All 232 printed rows are kept. Large replicate scatter at m=0.0507 and high T (e.g. -1156 to -1320 J/K/mol at 577.89 K). Temperature scale not stated.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6
+  ],
+  "journal_pages": [
+   254,
+   255,
+   256
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "knot positions and knot values of the cubic-spline surface, Debye-Hueckel slopes (fitted / model-generated)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 232,
+   "written": 232,
+   "note": "data rows; plus 16 block label rows"
+  }
+ },
+ "changes_after_image_check": [
+  "T=306.55 L block m=3.0284: -15.81 -> -75.81",
+  "T=349.86 L block m=0.0507: 5.9s -> 5.98",
+  "T=350.06 L block m=0.5017: 0.9120 -> 0.9720",
+  "T=400.99 R block m=0.2509: 4.19 -> 5.19",
+  "T=451.18 L block m=0.2509: 0.9514 -> 0.9574",
+  "T=451.18 R block m=1.0049: l!.lO -> 2.10",
+  "T=500.92 L block m=0.2509: -Il.67 -> -11.67",
+  "T=602.68 L block m=0.2509: -1837.51 -> -1837.57",
+  "T=602.68 R block m=2.0040: -727.19 -> -727.79",
+  "306.82/306.55/306.36 K blocks: Delta cells printed as footnote letter e: written as empty with note Delta:e (OCR gave junk letters)",
+  "403.95 K L 0.0507 first row, 451.18 K L 0.0507 second row, 577.89 K L rows 1 and 5, 602.68 K L row 1: OCR gave quote/e junk in Delta column -> empty + note Delta:e"
+ ],
+ "extraction_notes": "CSV from a script over the OCR text, then every row compared with the 200 dpi page images; corrections listed. Check: Cp,phi becomes more negative with T and less negative with m; Ps/Pw and cp/cp* decrease with m. 232 rows = 221 + 11 low-pressure rows.",
+ "pass2_diff": "Table 1: every pass-2 data number occurs in pass 1; pass-1-only numbers are block-label values (T, p, f) that pass 1 repeats in its rows; printed duplicate rows agree in both passes."
+}

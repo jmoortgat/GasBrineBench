@@ -1,0 +1,105 @@
+{
+ "table": "Table I",
+ "page_journal": 1859,
+ "title_as_printed": "Vapor Composition in Binary Systems Containing Water",
+ "footnotes_as_printed": "not captured (none printed on the table)",
+ "property": "y_h2o",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed 'Total pressure, atm'; read on a 1000 lb/in.2 range Bourdon gauge calibrated against an Aminco dead-weight tester; gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "Temp C",
+   "unit": "C",
+   "note": "printed only on first row of each temperature sub-block; filled down"
+  },
+  "P": {
+   "col": "Total pressure atm",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Mole fraction of water Y2",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1,
+   "what": "Y2 = mole fraction of water in the compressed-gas (CO2, N2O, C2H6) vapour phase"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "section label (gas name, printed beside first data row, written as its own label row)"
+  },
+  {
+   "rows": [
+    23
+   ],
+   "reason": "section label (gas name, printed beside first data row, written as its own label row)"
+  },
+  {
+   "rows": [
+    38
+   ],
+   "reason": "section label (gas name, printed beside first data row, written as its own label row)"
+  },
+  {
+   "rows": [
+    63
+   ],
+   "reason": "section label (gas name, printed beside first data row, written as its own label row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2o"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2o"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "atm to Pa",
+  "T carried forward from first row of each sub-block"
+ ],
+ "notes": "Table is printed as two side-by-side panels; stacked left panel first (CO2, N2O at 25 and 50 C), then right panel (N2O at 75 and 100 C, C2H6). N2O therefore has two label rows (rows 23 and 38). Label rows 0-based over all CSV rows: [0, 23, 38, 63]. Exact replicate-like rows kept (e.g. C2H6 50 C, 29.3 atm 0.00432 twice; N2O 100 C 29.4 atm two different values)."
+}

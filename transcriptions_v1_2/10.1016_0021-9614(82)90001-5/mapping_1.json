@@ -1,0 +1,52 @@
+{
+ "table": "Table I",
+ "page_journal": 918,
+ "title_as_printed": "Results of solution measurements with O2 at 298.15 K using the batch method: p is the pressure in the calorimeter system; c is the calibration constant; the electrical energy input was 0.2 J. I is the integrated calorimetric curve from the solution experiment. The uncertainty is given as 2 sigma(<x>)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "dh_sol",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure in the calorimeter system (printed once per group of runs from one syringe charge); not stated whether it includes water vapour",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298.15"
+  },
+  "P": {
+   "col": "p/kPa",
+   "unit": "kPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "-DeltaH_soln/(kJ mol^-1)",
+   "unit": "kJ/mol",
+   "scale": -1,
+   "what": "enthalpy of solution of O2 in water; printed value is the NEGATIVE of DeltaH (i.e. -DeltaH), so value = printed x -1"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, gas-free"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    17
+   ],
+   "reason": "summary row (Mean)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "10^4 c/(J V^-1 s^-1) calibration constant (printed between rows, attached here to the row above it)",
+  "I/(V s) integrated calorimetric curve"
+ ],
+ "conversion_needs": [
+  "p is printed only on the first row of each group of runs from one syringe charge: fill down within group (rows 0-1 -> 99.11, 2-4 -> 99.04, 5-8 -> 98.23, 9-12 -> 102.36, 13-16 -> 102.70)"
+ ],
+ "notes": "Calibration constants sit vertically between data rows in the print; they are placed here on the row printed just above them and their association with individual runs is not exact. The row with p blank belongs to the same group. Mean row: 12.056 +- 0.019 kJ/mol (2 sigma of the mean); authors' final value with systematic errors included is -(12.06 +- 0.04) kJ/mol, text only."
+}

@@ -1,0 +1,126 @@
+{
+ "table": "Table 7",
+ "title_as_printed": "Experimental Carbon Dioxide Solubility in Synthetic Brines Reproducing the Upper Rhine Graben Salt Molality Conditions at 333.15 and 453.15 K",
+ "footnotes_as_printed": {
+  "a": "Relative standard uncertainties ur are ur(gas solubility) = 0.028 and ur(salt molality) = 0.001.",
+  "b": "Standard uncertainties u are u(temperature) = 0.50 K and u(pressure) = 0.06 MPa.",
+  "c": "PHREEQC deviation = 100*|m_CO2,experimental - m_CO2,PHREEQC|/m_CO2,PHREEQC"
+ },
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (no statement whether absolute or gauge, or total vs CO2 partial) in the table or footnotes; reactor pressure of the gas-liquid equilibrium cell",
+ "columns": {
+  "T": {
+   "col": "temperature K",
+   "unit": "K",
+   "fill_down": true
+  },
+  "P": {
+   "col": "pressure MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "gas solubility mol CO2/kg H2O",
+   "unit": "mol_per_kg_water"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "relative",
+   "constant": "0.028",
+   "what": "ur(gas solubility) = 0.028 (footnote a)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salt molality is per kg H2O; composition set per block in group_rows (printed in the first row(s) of each block, carried forward); NaOH/HCl only used for titration, not present in the equilibrium phase"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12,
+    18
+   ],
+   "reason": "block label row (system name)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.2",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.2",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.2",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.2",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.2",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.2",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "PHREEQC deviation/% (deviation computed by the authors from literature/PHREEQC)"
+ ],
+ "volume_basis": "not_applicable",
+ "notes": "Printed blank cells in system, salt molality and temperature columns are carried forward within each block; the system name printed beside the first data row is written as its own label row. Temperature fill_down applies within block (printed once per block). Salt molality cells were left as printed in the data rows (CSV) and also set per block in group_rows. Mixed-salt blocks print '1.2 (NaCl)' on the first data row and '0.2 (CaCl2)' on the second; both set as constants in group_rows. Blocks 3 and 4 are the same mixed brine at 333.15 and 453.15 K."
+}

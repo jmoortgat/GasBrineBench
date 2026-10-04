@@ -1,0 +1,101 @@
+{
+ "table": "Table 5",
+ "page_journal": 224,
+ "title_as_printed": "Results for the system CO2-H2O",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "bubble-point pressure of a liquid of known overall composition (synthetic Cailletet method); total pressure, hydraulic pressure balance; not stated whether corrected for water vapour (it is the total system pressure)",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "note": "set per block by label row: xCO2 = overall liquid composition at the bubble point (stated whether salt-free basis: not stated; computed by authors from weighed amounts, salt apparently counted as undissociated component or on water basis not stated)"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "note": "set per block by label row"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "",
+  "note": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    20
+   ],
+   "reason": "block label rows (composition of the rows below)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "value",
+     "value": "0.00764",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    },
+    {
+     "path": "uncertainty",
+     "value": "0.00003",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "value",
+     "value": "0.01000",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    },
+    {
+     "path": "uncertainty",
+     "value": "0.00003",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "value",
+     "value": "0.01258",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    },
+    {
+     "path": "uncertainty",
+     "value": "0.00004",
+     "unit": "mole_fraction_gas_in_aqueous_phase"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Each row is one bubble point at fixed overall composition: x is the block constant, P and T are the measured pair. Not an isotherm."
+ ],
+ "notes": "Side-by-side blocks stacked, one label row per block."
+}

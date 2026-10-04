@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je5009125",
+ "first_author": "McBride-Wright",
+ "year": 2015,
+ "journal": "J. Chem. Eng. Data 60 (1), 171-180",
+ "source_key": "MCBRIDE-WRIGHT(2015)",
+ "title": "Viscosity and Density of Aqueous Solutions of Carbon Dioxide at Temperatures from (274 to 449) K and at Pressures up to 100 MPa",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source, cells copied by script"
+ },
+ "experimental_method": "Vibrating U-tube densimeter (density) and vibrating-wire viscometer (viscosity), separate experiments, single-phase compressed liquid CO2-water solutions at x = 0.0086, 0.0168, 0.0271.",
+ "uncertainties_stated": "u(T)=0.025 K, u(p)=0.1 MPa, u(rho)=0.00033*rho (expanded 0.07 %, k=2); u(eta)=0.007*eta (expanded 1.4 %, k=2)",
+ "tables_written": {
+  "table_5.csv": "98 data rows + 27 label rows",
+  "table_7.csv": "70 data rows + 21 label rows"
+ },
+ "row_counts": {
+  "Table 5": "printed 98 (p, rho) pairs; written 98 data + 27 label rows",
+  "Table 7": "printed 70 (p, eta) pairs; written 70 data + 21 label rows"
+ },
+ "not_extracted_tables": {
+  "Table 1": "literature compilation of available data (captured twice)",
+  "Table 2": "chemical sample description",
+  "Table 3": "density uncertainty budget",
+  "Table 4": "viscosity uncertainty budget",
+  "Table 6": "fitted coefficients of eq 16",
+  "Table 8": "fitted parameters of eq 19"
+ },
+ "quality_remarks": "Ranges match abstract: density T 274-449 K, p 15-100.8 MPa; viscosity T 294-449 K, p 15-96.5 MPa. Pressure reported without an absolute/gauge statement. Temperatures of a printed T block differ slightly between x blocks (e.g. 274.73 K vs 274.77 K), as printed. Not every T,p combination measured at each x (single-phase requirement). Table 7 pressures have one decimal, Table 5 two; some viscosities have 4 decimals (0.2932 etc.) as printed. Temperature scale: PRTs calibrated against a standard PRT calibrated on ITS-90.",
+ "extraction_notes": "Side-by-side (p, value) column pairs stacked with a label row per x block and per T sub-block; empty ragged cells not written. Headers transliterated: 'rho kg m-3', 'eta mPa s'.",
+ "needs_pass2": false,
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

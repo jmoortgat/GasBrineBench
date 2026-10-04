@@ -1,0 +1,143 @@
+{
+ "table": "Table 2",
+ "page_journal": 3821,
+ "title_as_printed": "Solubilities of gases (in c.c. at N.T.P.) per 1000 g. of water at a total gas pressure of 1 atm. (s0).",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "gas_volume_solubility",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'at a total gas pressure of 1 atm.' (table title); whether this includes water vapour is not stated",
+ "columns": {
+  "T": {
+   "col": "Temp. C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "total"
+  },
+  "value": {
+   "col": "s0 cc NTP per 1000 g water",
+   "unit": "cm3_STP_per_g_water",
+   "what": "cc of gas (at N.T.P.) dissolved per 1000 g of water at 1 atm total gas pressure; reference state N.T.P. not defined in the paper; printed per 1000 g water, scale 0.001 gives cm3 per g water",
+   "scale": 0.001
+  }
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "quantity is gas volume per 1000 g of water (mass basis of solvent), not per volume of solution",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    25,
+    40,
+    53,
+    68,
+    83,
+    96,
+    108
+   ],
+   "reason": "gas label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "h2"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 53,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h4"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    }
+   ]
+  },
+  {
+   "label_row": 96,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    }
+   ]
+  },
+  {
+   "label_row": 108,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "N.T.P. not defined ('standard conditions' not stated; 273.15 K and 1 atm presumably but unstated)",
+  "gas pressure 1 atm total; water vapour correction not stated"
+ ],
+ "notes": "Nine gas blocks stacked in printed order: H2, CH4, C2H6, C3H8, n-C4H10, C2H4, N2, O2, CO2 (CO2 has two printed column pairs, left pair first then right pair, rows in increasing T). Gas is a label row per block. Printed mid-dot decimals written with full stop. Printed solubility of CO2 near 12-75 C ranges 1059 to 300.6. Ethylene, propane and n-butane are outside the seven gases; kept. Text says water determinations were made at about ten points between 12 and 75 C.",
+ "quality_remarks": "audit 2026-10-02: N.T.P. is not defined anywhere in the paper (the builder applies its 0 C, 1 atm convention, tagged stp-assumed). Possible misprint as printed: ethane 12.3 C 53.46 followed by 12.6 C 52.60 (slope about 2.9 per K against about 1.3 per K for the following rows); cells kept as printed."
+}

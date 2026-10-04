@@ -1,0 +1,80 @@
+{
+ "table": "Table 4",
+ "page_journal": 353,
+ "title_as_printed": "Densities rho for the near-saturated CO2-rich phase of (CO2 + H2O) measured using the upper VTD at temperature T_VTD and pressure p when the phase was saturated at the same pressure but at temperature T_sat. Also listed is the combined standard uncertainty of each density measurement u_c(rho), which combines in quadrature the propagated uncertainties associated with T, p, sampling, and the measured resonance period.",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties in temperature and pressure are u(T) = 0.2 K and u(p) = 0.05 MPa."
+ },
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "regime": "lle",
+   "reason": "Rows with T_sat < 304 K and rho > 600 kg/m3: the CO2-rich phase is a liquid (density 748-1023 kg/m3, jump from vapour-like densities at lower pressure at the same T_sat)."
+  }
+ ],
+ "temperature_scale": "ITS-90",
+ "pressure_note": "'pressure p' as measured by strain-gauge transducers on the syringe pumps, standard uncertainty 0.05 MPa; system pressure of the saturated two-phase cell (total pressure, not a gas partial pressure)",
+ "columns": {
+  "T": {
+   "col": "T_VTD/K",
+   "unit": "K",
+   "what": "temperature of the density measurement (upper VTD, about 1-2 K above the saturation temperature to avoid water condensation)"
+  },
+  "T_sat": {
+   "col": "T_sat/K",
+   "unit": "K",
+   "what": "temperature at which the CO2-rich phase was saturated with water at pressure p"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "rho/kg m^-3",
+   "unit": "kg/m3",
+   "what": "density of the near-saturated, water-bearing CO2-rich phase (water content not measured)"
+  },
+  "uncertainty": {
+   "col": "u_c(rho)/kg m^-3",
+   "unit": "kg/m3"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "CO2-rich phase (CO2 purity 0.9995 mole fraction) near-saturated with water vapour; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed in two side-by-side panels (left first, then right), stacked in that order: 128 rows. The measured density is of a phase saturated at T_sat but measured at T_VTD (1-2 K higher), so it is a near-saturated, not exactly saturated, density; the paper's own T for the measurement is T_VTD, mapped to T. Water content of this phase is not reported in the table. Property 'other': density of the water-bearing CO2-rich gas/liquid phase; the builder decides."
+}

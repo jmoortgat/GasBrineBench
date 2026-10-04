@@ -1,0 +1,38 @@
+{
+ "table": "Table 2",
+ "page_journal": 214,
+ "title_as_printed": "Measured bubble points of CO2 + water system at 313.2 K, 333.2 K and 343.2 K.",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "bubble-point pressure of the loaded mixture, 'Pressure (MPa)' read from the cell transducer; not further defined",
+ "columns": {
+  "T": {
+   "col": "Temperature (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "Pressure (MPa)",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "Mole fraction of liquid phase",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Mole fraction of liquid phase is assumed to be CO2 (water + CO2 system; nomenclature: x = mole fraction of liquid phase; Fig. 3-4 axes 'mole fraction of CO2'). Blank lines between isotherms are not rows. Table 1 (CO2 + ethanol) not extracted."
+}

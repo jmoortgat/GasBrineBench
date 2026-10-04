@@ -1,0 +1,54 @@
+{
+ "doi": "10.1021/je00033a005",
+ "first_author": "Romankiw",
+ "year": 1983,
+ "journal": "J. Chem. Eng. Data 28 (3), 300-305 (article begins at foot of p. 300; tables on p. 301)",
+ "source_key": "ROMANKIW(1983)",
+ "title": "Densities of aqueous NaCl, KCl, MgCl2, and CaCl2 binary solutions in the concentration range 0.5-6.1 m at 25, 30, 35, 40, and 45 C",
+ "authors": "Lisa A. Romankiw, I-Ming Chou",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer is a noisy OCR (spaced decimal points); CSVs were written entirely from 300-dpi image crops, every cell read against the image, no correction needed after reading; scan quality good.",
+ "how_extracted": "image_read",
+ "experimental_method": "Mettler/Paar DMA 55 oscillating-tube densitometer, calibrated with air and distilled-deionized water; sample temperature controlled to +/-0.03 C; NaCl, KCl, CaCl2 solutions by weight from oven-dried salts, MgCl2 and CaCl2 concentrations checked by gravimetric chloride (AgCl) analysis; measured at 1 atm",
+ "uncertainties_stated": "instrumental error +/-1.4e-5 g/cm3; standard deviation 5.515e-5 g/cm3 for NaCl and KCl; 2.329e-4 to 2.334e-4 (MgCl2) and 2.796e-4 to 2.839e-4 g/cm3 (CaCl2); concentration error +/-3.6e-3 m (MgCl2), +/-3.9e-3 m (CaCl2)",
+ "quality_remarks": [
+  "PDF begins with the end of another article (dioxane azo-cresol compounds, p. 300) and ends with another article (p. 305).",
+  "Table V, 40 C, m = 0.93: rho expt printed 1.17175 but rho calc 1.07187 and the neighbouring rows imply about 1.07175; the printed value is a likely misprint. Kept as printed (diff column printed -12, consistent with 1.07175).",
+  "Pure-water (m = 0.00) rows differ slightly among tables at 25 C (0.99700, 0.99702) and 30 C (0.99565, 0.99566); kept as printed.",
+  "MgCl2 and CaCl2 concentration uncertain because of hygroscopic salts (authors); Table I analyses give the molalities of the stock solutions only.",
+  "Temperature scale not stated."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   301
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table I",
+   "reason": "gravimetric chloride analyses of stock solutions (composition check, not a property measurement)"
+  },
+  {
+   "table": "Table VI",
+   "reason": "regression coefficients (model parameters)"
+  },
+  {
+   "table": "Figure 1",
+   "reason": "residual plots"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 45 data rows (NaCl); written 45 plus 5 label rows",
+  "table_2": "printed 50 (KCl); written 50 plus 5 label rows",
+  "table_3": "printed 35 (MgCl2); written 35 plus 5 label rows",
+  "table_4": "printed 70 (CaCl2); written 70 plus 5 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table numbers in files: table_1 = paper Table II (NaCl), table_2 = Table III (KCl), table_3 = Table IV (MgCl2), table_4 = Table V (CaCl2). Each stacked as 25,30,35,40,45 C blocks.",
+ "pass2_diff": "Tables II-V (pass 1 numbered 1-4): 180/180, 200/200, 140/140 and 280/280 numbers identical; the 1.17175 misprint reads the same in both passes."
+}

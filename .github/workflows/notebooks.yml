@@ -1,0 +1,23 @@
+name: notebooks
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  execute:
+    # The notebooks must run from a fresh clone, the way a Colab user meets them.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: install
+        run: pip install pandas numpy matplotlib nbformat nbconvert ipykernel
+      - name: execute every notebook (written outside the tree)
+        run: python3 tools/make_notebooks.py --out "$RUNNER_TEMP/notebooks"
+      - name: the committed notebooks carry a Colab badge and the bootstrap cell
+        run: |
+          for f in notebooks/0*.ipynb; do
+            grep -q "colab-badge.svg" "$f" || { echo "no Colab badge in $f"; exit 1; }
+            grep -q "GBB_REPO_URL" "$f" || { echo "no bootstrap cell in $f"; exit 1; }
+          done

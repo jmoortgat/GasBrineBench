@@ -1,0 +1,66 @@
+{
+ "table": "Table 3",
+ "page_journal": 44,
+ "title_as_printed": "The dissolution enthalpy of Na2SO4 in water at 44.3 C: n1/k = n1/(nw Mw), Mw = 0.0180153 kg mol-1 and dH^ = dHexp/k = dHexp/(nw Mw)",
+ "footnotes_as_printed": "none",
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (no pressure printed; calorimeter cells, presumably ambient)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "44.3"
+  },
+  "value": {
+   "col": "dHexp/n1 J (mol Na2SO4)-1",
+   "unit": "J/mol",
+   "derived_by_authors": true,
+   "what": "integral dissolution enthalpy per mole of Na2SO4 = dHexp/n1 (authors' Eq. 7); solid Na2SO4 dissolved in nw moles of water"
+  },
+  "value2": {
+   "col": "dHexp J",
+   "unit": "J",
+   "what": "measured enthalpy change of the cell contents (raw calorimeter result, whole sample)"
+  },
+  "value3": {
+   "col": "dH^ J (kg H2O)-1",
+   "unit": "J_per_kg_water",
+   "derived_by_authors": true,
+   "what": "dH^ = dHexp/(nw Mw), per kg of water"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "n1/k mol kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "solid Na2SO4 (anhydrous, Aldrich reagent grade, dried at 110 C) dissolved in twice distilled water; final molality n1/k (calculated by authors from n1 and nw)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    11,
+    12,
+    13
+   ],
+   "reason": "n1/k above the solubility limit at 44.3 C (Fig. 4 plateau, p.47): the final state is a saturated solution plus solid phase (p.44), so n1/k is not the solution molality; printed row kept in the CSV"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "nw mol (moles of water)",
+  "n1 x 10^3 mol (moles of Na2SO4; scale 1e-3)"
+ ],
+ "conversion_needs": [
+  "molality n1/k is the molality of the final solution only if all salt dissolved (n1/k <= saturation, ~3.64 at 24.4 C, ~3.57 at 27.5 C); above that the final state is saturated solution plus solid"
+ ],
+ "notes": "Dissolution of solid salt into water, i.e. integral enthalpy of solution of Na2SO4 (not a gas). Rows with n1/k above the solubility limit give a plateau and are kept. Authors state nominal temperatures 24.4, 27.5, 44.3 C in text, title of paper says 25, 27.5, 45 C; Table 4 uses 297.55, 300.35, 317.45 K.",
+ "quality_remarks": "Rows above the solubility limit are skipped (see skip_rows). Row 10 (n1/k 3.3422) lies at the knee of the plateau and is kept."
+}

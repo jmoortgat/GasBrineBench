@@ -1,0 +1,48 @@
+{
+ "table": "Table 4",
+ "page_journal": "Ind. Eng. Chem. Res. 43, 1794-1802",
+ "title_as_printed": "Experimental Solubility Data of Carbon Dioxide in Water Generated in This Work",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bubble-point pressure of a binary of known overall CO2 mole fraction (graphical pressure versus cell volume slope change in a variable-volume PVT cell); absolute pressure not stated explicitly.",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "xCO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1.0
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure degassed water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4,
+    20
+   ],
+   "reason": "label rows (temperature range blocks)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "volume_basis": "not_applicable",
+ "conversion_needs": [],
+ "notes": "Printed in two side-by-side T/P/x column groups within three temperature-range blocks; stacked as left group first, then right group, within each block. Block labels: 273.15 K < T <= 277.13 K (rows 1-3), 277.13 K < T <= Tc (rows 5-19), Tc < T <= 373.15 K (rows 21-29); Tc = 304.2 K (Table 5 of the paper). xCO2 is the overall CO2 mole fraction of the loaded mixture at its bubble point, which the authors report as the solubility. The CSV values were printed with a thin-space digit group (0.002 62); the thin space was removed (0.00262). The first block (274.14-276.74 K) lies in the temperature range where CO2 hydrate can form (hydrate phase presence is not stated for any row); row 274.14 K/0.190 MPa is below the hydrate pressure. Not marked regime=hydrate because the paper does not say. Pressure range up to 9.3 MPa; rows above 304.2 K (Tc) are listed separately by the authors."
+}

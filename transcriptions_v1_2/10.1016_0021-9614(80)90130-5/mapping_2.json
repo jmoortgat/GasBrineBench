@@ -1,0 +1,45 @@
+{
+ "table": "Table 2",
+ "page_journal": 201,
+ "title_as_printed": "(Gas + gas) equilibria for {(1 - x)C3H8 + xH2O} values of critical temperature Tc, critical pressure pc, and critical mole fraction xc",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "critical pressure, pressure balance",
+ "columns": {
+  "T": {
+   "col": "T_c/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p_c/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "T_c/K",
+   "unit": "K",
+   "what": "critical temperature of the propane + water mixture at critical mole fraction x_c of H2O"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "H2O": {
+    "col": "x_c",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "propane is the balance"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Method (visual = observed meniscus behaviour; from p, x = estimated from extrema of isothermal p,x sections)"
+ ],
+ "conversion_needs": [],
+ "notes": "Rows with Method 'from p, x' are authors' estimates from interpolated isothermal sections, kept as printed. Row order is as printed (x_c 0.873 precedes 0.882)."
+}

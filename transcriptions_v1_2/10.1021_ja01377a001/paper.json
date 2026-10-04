@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/ja01377a001",
+ "first_author": "Randall",
+ "year": 1929,
+ "journal": "J. Am. Chem. Soc. 51(2), 323-337 (Heat Capacities in Aqueous Salt Solutions, by Merle Randall and Frederick D. Rossini)",
+ "source_key": "RANDALL(1929)",
+ "experimental_method": "Differential adiabatic-type heat capacity calorimetry: two flasks (Unit 1 water, Unit 2 solution) heated with electrical energy, temperature rise compared with multi-junction thermels (galvanometer); salt added stepwise to Unit 2 to get change in heat capacity.",
+ "uncertainties_stated": "Average error in a given dCp measurement about 0.10 cal for all runs, 0.06 cal for sodium chloride; error in Phi at the smallest m (0.043) about 23 times that in dCp.",
+ "quality_remarks": "Only NaCl raw data are tabulated (Table VI); data for the other nine salts (including Na2SO4, KCl, K2SO4) exist only as plots and rounded values (Table VII) and a thesis. Phi is derived from measured dt2. Temperature scale and pressure not stated. PDF is 23 pages and extends beyond this article (an article ending Received August 8, 1928, Published February 5, 1929 follows); only Table VI on pdf page 11 used.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   11
+  ],
+  "journal_pages": [
+   333
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (galvanometer sensitivity): apparatus",
+  "Table II (thermel calibration): apparatus",
+  "Table III (condensed log of Run 19): calibration run of Unit 2",
+  "Table IV (change in heat capacity of Unit 2 with volume): apparatus",
+  "Table V (condensed log of Run 64): single raw run log",
+  "Table VII (rounded values of Phi, partial molal Cp of solute and water, specific heat for NaCl, NaBr, NaI, NaNO3, Na2SO4, KCl, KBr, KI, KNO3, K2SO4): smoothed/derived from plots",
+  "Table VIII, IX, X: limiting values and slopes, derived"
+ ],
+ "row_counts": {
+  "Table VI -> table_1": "printed 21 data rows + 2 label rows = 23; written 23"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the 300 dpi image in every cell; dt2(I)/dt2(II) split into two columns from 'a, b' pairs. Phi printed blank on the first m=0 row, '0.0' on the second.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer and every cell matched the page image",
+ "pass2_diff": "Table VI: 21 rows, 159/159 numbers identical."
+}

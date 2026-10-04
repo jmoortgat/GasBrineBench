@@ -1,0 +1,54 @@
+{
+ "table": "Table 3",
+ "page_journal": 305,
+ "title_as_printed": "Measured Bunsen coefficients alpha (x 10^3) for pure nitrogen in sea water together with computed values and differences.",
+ "footnotes_as_printed": "none",
+ "property": "bunsen",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bunsen coefficient defined at a gas pressure of 760 Torr (gas partial pressure, water-vapour-saturated gas used; total pressure in apparatus held constant at about atmospheric and not needed)",
+ "columns": {
+  "T": {
+   "col": "Temp. (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "constant": "760",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "alpha x 10^3",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {
+   "salinity": {
+    "col": "Salinity (permil)",
+    "unit": "permil"
+   }
+  },
+  "constant": {},
+  "other_species": "natural sea water (Irish Sea surface water S about 35 permil) diluted with distilled water or concentrated by distilling off about 10 percent; salinity by inductive salinometer; chlorinity column (permil) also given, Cl = S/1.8065 style relation from Knudsen tables; sea-water matrix, not a six-ion composition"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Chlorinity (permil) (derived from salinity, Knudsen Hydrographic Tables)",
+  "Smoothed curve value (alpha x 10^3 from the authors' fitted curve; model-generated)",
+  "Difference (measured minus smoothed curve value, x 10^3)"
+ ],
+ "conversion_needs": [
+  "Bunsen coefficient (cm3 STP per cm3 solvent at T under 760 Torr gas pressure) to mole fraction needs solvent density (computed by authors from salinity via Knudsen tables) and molar volume at STP",
+  "salinity per mil to molality needs sea-water composition assumption"
+ ],
+ "notes": "Temperature printed once per block of 5 (or 6) rows beside the middle row; filled down into the Temp. column for every row (carried-forward). Printed '00.00' salinity/chlorinity cells kept as printed. Row 9.15 C, salinity 10.01: smoothed curve value printed 18.82, which is out of sequence (alpha 17.84, difference -0.02 implies 17.82); kept as printed, probable misprint. Measured values are for pure N2 gas at 760 Torr total gas pressure.",
+ "volume_basis": "solution_inferred",
+ "mapping_fix": "2026-10-02: volume_basis solution (Weiss 1977 defines the Bunsen coefficient per cm3 of solution; Murray and Riley compute the sample volume from the seawater density, Knudsen tables)",
+ "volume_basis_evidence": "Not stated as such: the Bunsen coefficient is defined per unit volume of \"solvent\"; the seawater sample volume was computed from the salinity with the Knudsen Hydrographic Tables (seawater density), which implies solution. Inferred, not stated."
+}

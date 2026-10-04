@@ -1,0 +1,107 @@
+{
+ "page_journal": 69,
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column headed 'Pressure, Atm.'; CO2 admitted to the autoclave and pressure held manually (Bourdon gauges); text does not say whether gauge or absolute, total pressure or CO2 partial pressure (vessel evacuated to 10 microns before filling, so atmosphere is CO2 plus water vapour)",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "solubility reported as g CO2 per 100 g solvent, not as gas mole fraction",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mass per mass quantity",
+ "footnotes_as_printed": "The paper has no footnotes on this table.",
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "scale 0.2272237 = 10/44.0095 converts g CO2 per 100 g H2O to mol/kg water"
+ ],
+ "table": "Table II",
+ "title_as_printed": "Solubility of CO2 in Distilled H2O",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure Atm.",
+   "unit": "atm",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "G. CO2 per 100 G. H2O",
+   "unit": "mol_per_kg_water",
+   "what": "printed g CO2 per 100 g H2O (header 'G. CO2 per 100 G. H2O', p.69) x 10/44.0095 = mol CO2 per kg water; distilled water",
+   "scale": 0.2272237
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, de-aerated); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28
+   ],
+   "reason": "label rows (temperature headings)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "10",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "12.4",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "notes": "Printed as a matrix pressure x temperature (columns 0, 5, 10, 12.4, 25 C); written stacked by temperature, one label row per column, all pressure rows kept, printed dots (not measured) written as empty cells. Printed 'Atm.' pressure label. 6 pressures x 5 temperatures = 30 cells, 12 measured."
+}

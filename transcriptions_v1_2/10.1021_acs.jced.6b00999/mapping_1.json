@@ -1,0 +1,92 @@
+{
+ "table": "Table 1",
+ "page_journal": "1608-1614 (table page not captured)",
+ "title_as_printed": "Experimental Mole Percent CO2 Values for the Initially Dry Gas Mixtures Used in this Study as Determined Gravimetrically and by GC Analysis (x_Gr_CO2 and x_GC_CO2, Respectively), Calculated Densities of Initially Dry Gas Mixtures (rho), and Experimental Values for H2O Concentrations (C_H2O) and Mole Permil (x_H2O) at Saturation in these Mixtures at T = 323.2 K and P = 9.000 MPa",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties u are u(T) = 0.1 K and u(P) = 0.005 MPa.",
+  "b": "Measured by the gas vendor. These mole percents are the compositions of the initially dry gas mixtures and have standard uncertainties u(x_Gr_CO2) of 0.03.",
+  "c": "GC measurements were performed by Isotech Laboratories Inc. to verify the gravimetrically measured mole percent CO2 values. Up to 1% N2 + O2 at a ratio consistent with air was detected in some of these samples. We assume that this contamination occurred during the sample preparation or GC analysis. na = not analyzed. These mole percents are the compositions of the initially dry gas mixtures and have standard uncertainties u(x_GC_CO2) of 0.2.",
+  "d": "Densities were calculated using STOMP-COMP and have standard uncertainties u(rho) better than 0.001 g/mL.",
+  "e": "These concentrations are at equilibrium with liquid water. The expanded uncertainties u(C_H2O) and u(x_H2O) have a coverage factor k = 10 and are based on standard deviation of the mean for replicate titrations."
+ },
+ "property": "y_h2o",
+ "gas": "co2-ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "cell pressure 9.000 MPa (pressure transducer); the paper does not say whether this includes the water partial pressure: not stated. Water-saturated CO2-CH4 fluid in equilibrium with liquid water (footnote e).",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "C_H2O is printed in mmol.L-1; the paper does not state the volume basis (presumably litres of the water-bearing CO2-CH4 fluid at 323.2 K and 9.000 MPa): not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "323.2"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "9.000",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x_H2O (permil)",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001,
+   "what": "mole permil of H2O in the CO2-CH4 fluid at saturation with liquid water"
+  },
+  "value2": {
+   "col": "C_H2O (mmol.L-1)",
+   "unit": "mmol_per_L",
+   "what": "concentration of H2O in the CO2-CH4 fluid at saturation (measured quantity; x_H2O is derived from it by the authors with STOMP-COMP densities)",
+   "derived_by_authors": false
+  },
+  "uncertainty": {
+   "col": "u(x_H2O) (permil)",
+   "unit": "permil"
+  },
+  "uncertainty2": {
+   "col": "u(C_H2O) (mmol.L-1)",
+   "unit": "mmol_per_L"
+  }
+ },
+ "gas_composition": {
+  "basis": "mole_percent_CO2_in_initially_dry_gas",
+  "per_row": {
+   "CO2": {
+    "col": "x_CO2 Gr (%)",
+    "unit": "mole_percent"
+   }
+  },
+  "alternative": {
+   "CO2": {
+    "col": "x_CO2 GC (%)",
+    "unit": "mole_percent",
+    "note": "GC check, na = not analyzed"
+   }
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "water-saturated CO2-CH4 mixture; no salt. Gas mixture composition is given in gas_composition."
+ },
+ "gas_per_row": {
+  "col": "x_CO2 Gr (%)",
+  "map": {
+   "0.00": "ch4",
+   "100.00": "co2"
+  },
+  "default": "mixture"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "rho (g/mL): density of the initially dry gas mixture, calculated with STOMP-COMP (not measured)",
+  "x_CO2 GC (%): GC check of composition"
+ ],
+ "conversion_needs": [
+  "x_H2O (permil) -> mole fraction: scale 1e-3"
+ ],
+ "notes": "Footnote letters of the column headers (b,c,d,e) are repeated in the note column of every row as <column>:<letter>. Rows 0 (0.00 % CO2) and 5 (100.00 % CO2) are pure CH4 and pure CO2 respectively (binary CH4-H2O, CO2-H2O). 'na' kept as printed. The saved capture holds the same printed table twice (three times in the wrapper text); assembled once, the two records have identical cells."
+}

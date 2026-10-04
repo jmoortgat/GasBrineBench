@@ -1,0 +1,96 @@
+{
+ "table": "Table 1",
+ "page_journal": 1092,
+ "title_as_printed": "Solubility in water at room temperature of saturated and aromatic hydrocarbons",
+ "footnotes_as_printed": {
+  "*": "No. of determinations.",
+  "†": "Standard deviation of mean.",
+  "‡": "Refs."
+ },
+ "property": "other",
+ "property_description": "solubility as mass ratio: g hydrocarbon per 10^6 g water (ppm by mass), measured by direct water injection gas chromatography",
+ "gas": "",
+ "gas_by_row": {
+  "Methane": "ch4",
+  "Ethane": "c2h6",
+  "Propane": "c3h8",
+  "n-Butane": "n-c4h10",
+  "Isobutane": "i-c4h10",
+  "other rows": "liquid hydrocarbons at 25 C, not in the seven-gas set"
+ },
+ "regime": "",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ],
+   "regime": "lle",
+   "reason": "authors state 20-50 ml of the individual liquid hydrocarbon was added to water; the hydrocarbon-rich phase is liquid (n-pentane and heavier)"
+  }
+ ],
+ "temperature_scale": "not stated",
+ "pressure_note": "'One atmosphere of the gaseous hydrocarbons was maintained over water during equilibration' (methane to butanes); for liquid hydrocarbons the pressure is not stated (presumably atmospheric)",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "solubility is expressed per mass of water: 'g hydrocarbon in 10^6 g water'",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Solubility This work (g hydrocarbon in 10^6 g water)",
+   "unit": "g_per_1e6_g_water"
+  },
+  "uncertainty": {
+   "col": "+- (standard deviation of mean)",
+   "unit": "g_per_1e6_g_water"
+  },
+  "value2": {
+   "col": "Solubility Previously reported (g hydrocarbon in 10^6 g water) (ref.)",
+   "unit": "g_per_1e6_g_water",
+   "from_literature": true,
+   "what": "values from other workers with the paper's reference numbers in parentheses; several values per cell"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; hydrocarbon identity in first column"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "No. of determinations (number of replicate determinations, column 2)"
+ ],
+ "conversion_needs": [
+  "thousands separator in 1,780 etc. is a comma: values 1,780; 538 etc. in same units",
+  "several comma-separated values with refs in the literature column"
+ ],
+ "notes": "Temperature: title says 'room temperature'; text says 'No attempt was made to maintain the temperature closer than the 25 +- 1.5 C maintained by the air-conditioning system' so T = 25 C with +-1.5 C is recorded in paper.json. Blank gaps between hydrocarbon classes in the print are not rows. Previously-reported cells empty where nothing printed. The +- sign is partly smudged in the scan for some rows (toluene, o-xylene, isopropylbenzene) but is read as +-. Methane, ethane, propane are the in-scope gases; other rows kept."
+}

@@ -1,0 +1,43 @@
+{
+ "doi": "10.1002/bbpc.19850890714",
+ "first_author": "Japas",
+ "year": 1985,
+ "journal": "Ber. Bunsenges. Phys. Chem. 89, 793-800",
+ "source_key": "JAPAS(1985)_N2",
+ "experimental_method": "Synthetic (isochoric P-T kink points in a sapphire-window autoclave, with molar volumes) and analytic (liquid-phase sampling, gas by volumetry at 77.3 K, water by weighing) methods.",
+ "uncertainties_stated": "T 0.5 K (agreement of break points +-1 K and +-0.5% of P); P +-0.1 MPa; total volume 0.2%; molar volume +-0.3% at 673 K; analytic liquid N2 amount 1-2%, water by weighing better than 1%; synthetic-method compositions corrected for dead volume assumed filled with water.",
+ "quality_remarks": "Synthetic compositions are overall fillings corrected for dead volume; analytic rows for x(H2O)>=0.93 interpolated isopleths are described as having larger uncertainty. Possible hydrate near 25 C and 200 MPa noted by authors (not in the tables, all data >=480 K). Two isopleth Tsiklis points are plotted only.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   796,
+   797
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean and every cell matched the 200 dpi page images (only column ordering of the text layer was scrambled and 'x .O' glitches such as '31 .O' and '61 1' were typed from the image as 31.0 and 611; these are OCR-style glitches in the text layer that I resolved while transcribing, no cell value needed to be changed from the image).",
+ "not_extracted_tables": [
+  "Table 2: critical-curve points, graphically compiled envelope values rather than direct measurements",
+  "Table 4: Redlich-Kister excess Gibbs energy constants (derived/model parameters)",
+  "Henry constants, solubility isobars, excess volumes: figures only (derived)"
+ ],
+ "row_counts": {
+  "Table 1": {
+   "printed": 98,
+   "written": 98
+  },
+  "Table 3": {
+   "printed": 56,
+   "written": 56
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Rows typed from text layer into a script and checked row by row against the page images. Tables 1 and 3 were extracted although the property is a phase-boundary composition/PTx and molar volume (property 'other'). Temperature scale not stated. Table 1 x(H2O) in the synthetic block is overall composition, not necessarily the composition of a single phase.",
+ "pass2_diff": "token diff: 517 numbers per pass, identical multisets"
+}

@@ -1,0 +1,121 @@
+{
+ "table": "Table 1",
+ "page_journal": 502,
+ "title_as_printed": "TABLE 1-EXPERIMENTAL WATER CONTENT IN CO2-RICH PHASE",
+ "footnotes_as_printed": {
+  "*": "10^5 x mol fraction/2.11 = lbm/MMcf at 1 atm and 60 F.",
+  "**": "From Ref. 4."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Table gives 'Pressure' in psia and MPa with no further wording; the text refers to pressures from 100 to 2,000 psia; whether total cell pressure is not stated (it is the pressure of the CO2-rich fluid in equilibrium with water or hydrate; total pressure of the CO2/water system is used in the enhancement definition, Eq. A-10)",
+ "columns": {
+  "T": {
+   "col": "Temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Mole Fraction f_L x 10^3",
+   "unit": "mole_fraction_water_in_gas_rich_phase",
+   "scale": 0.001
+  },
+  "T_alt": {
+   "col": "Temperature F",
+   "unit": "F"
+  },
+  "P_alt": {
+   "col": "Pressure psia",
+   "unit": "psia"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure CO2 + water; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    25,
+    26,
+    27,
+    34,
+    35,
+    36,
+    42,
+    43,
+    44,
+    47,
+    48,
+    49,
+    51,
+    52,
+    53,
+    54
+   ],
+   "regime": "hydrate",
+   "reason": "equilibrium phases column shows H2O(H), hydrate present (rows with CO2(l)/H2O(H) are also liquid-CO2 rich; hydrate recorded)"
+  },
+  {
+   "rows": [
+    31,
+    33,
+    38,
+    40,
+    45,
+    46,
+    50,
+    55
+   ],
+   "regime": "lle",
+   "reason": "CO2(l)/H2O(l): CO2-rich phase is liquid, three-phase line or liquid CO2 with liquid water"
+  }
+ ],
+ "row_from_literature": [
+  {
+   "rows": [
+    9,
+    10,
+    11
+   ],
+   "source": "Ref. 4 (Kobayashi et al., final revised report to Arco Oil and Gas Co., 1979), marked ** in table"
+  }
+ ],
+ "extra_unmapped": [
+  "Equilibrium Phases column (phase identity, used for regime)"
+ ],
+ "conversion_needs": [
+  "psia to MPa not needed (MPa printed); F redundant with C",
+  "the water mole fraction column is f_L x 10^3 (mole fraction of water in the CO2-rich phase, per Nomenclature)"
+ ],
+ "notes": "Pressure and the 'Pressure' cell is printed once per isobar block; filled down to every row (carried forward). Temperature and pressure printed once for the two-row blocks with a second CO2(l)/H2O(l) phase (760, 840, 970, 1040 psia): T filled down. Row 2 (CO2(g)/ice, -8.0 C) has no liquid water or hydrate: below 273 K, regime empty, note below_273K. Hydrate rows are mostly below 273 K as well, and row 9-10 (0.0 and 2.5 C) in hydrate region. Row 41 is the three-phase critical end point (CO2(l)=CO2(g)); gas set to co2, regime empty. The 3-phase critical endpoint label printed as '3-phi critical endpoint' in the Equilibrium Phases column. Header footnote * (lbm/MMcf conversion) not a letter; recorded here, not in note column. Water content is of the CO2-rich phase (gas or liquid). Ref. 4 rows are from the same group's earlier report, not new measurements of this paper."
+}

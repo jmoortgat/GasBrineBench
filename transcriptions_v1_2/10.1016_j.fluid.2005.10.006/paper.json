@@ -1,0 +1,40 @@
+{
+ "doi": "10.1016/j.fluid.2005.10.006",
+ "first_author": "Bermejo",
+ "year": 2005,
+ "journal": "Fluid Phase Equilibria 238, 220-228",
+ "source_key": "BERMEJO(2005)",
+ "experimental_method": "Synthetic (bubble-point) method in a Cailletet apparatus: a sample of known overall composition is pressurised at fixed temperature until the vapour phase just disappears.",
+ "uncertainties_stated": "Pressure balance accuracy 0.005 MPa; Pt100 thermometer accuracy 0.01 K; weighing 0.0001 g; CO2 dosing pressure error 0.01 cm Hg, temperature error 0.1 K; composition uncertainties printed per block (x +- 0.00003 to 0.00005; molality +- 0.000016 to 0.000018).",
+ "quality_remarks": "Authors report a systematic overpressure of about 1 MPa for the 1 mol/kg Na2SO4 bubble points relative to some literature data (Rumpf and Maurer 1993) with relative average deviation 13.6%; CO2-water agrees with literature (3.4%). Text says Tables 1-5 but 'Table 2 approx. 1 mol/kg' has two slightly different molalities (0.996313, 0.995676). Temperatures range 286.97-369.65 K. Na2SO4 prepared from Na2SO4.10H2O.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   222,
+   223,
+   224
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 6 (CO2 EOS coefficients), Table 7, Table 8 (binary parameter coefficients): model parameters"
+ ],
+ "row_counts": {
+  "Table 1": "printed 33 data rows, written 33 (+4 label rows)",
+  "Table 2": "printed 21, written 21 (+3 labels)",
+  "Table 3": "printed 35, written 35 (+3 labels)",
+  "Table 4": "printed 24, written 24 (+3)",
+  "Table 5": "printed 26, written 26 (+3)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer parsed by script using column positions of the 'P (MPa)' headers; every table page read against the 200 dpi image, all cells matched. Printed xCO2 and molality with their uncertainties are in the label rows; mapping group_rows set value, uncertainty and Na2SO4 molality for the rows below each label. Temperature scale not stated. Composition basis of xCO2 (whether salt counted) not stated. Table 3 block 2 has two extra rows out of order. Sanity: within each block P increases with T except where noted by the Table 3 out-of-order rows (3.08/299.05, 4.50/309.67), which are consistent with the block when sorted by T. Re-verification after an interrupted earlier run: the existing files were treated as unverified and every cell of Tables 1-5 was re-compared to the 200 dpi page images (PDF pp. 3-5); no differences found, files kept.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page images",
+ "pass2_diff": "token diff: 5 tables, 278 numbers per pass, identical"
+}

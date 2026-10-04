@@ -1,0 +1,39 @@
+{
+ "doi": "10.1021/ja01849a019",
+ "first_author": "Wallace, W. E.",
+ "authors": "W. E. Wallace, A. L. Robinson",
+ "year": 1941,
+ "journal": "Journal of the American Chemical Society 63(4), 958-963",
+ "title": "Heats of Dilution, Relative Molal Heat Contents and Heat Capacities of Aqueous Sodium Sulfate Solutions",
+ "source_key": "WALLACE(1941)",
+ "experimental_method": "Twin-cell differential calorimeter with thermels measuring heat of mixing on dilution (about 148-fold) of Na2SO4 solutions with water, at 15, 20 and 25 C.",
+ "uncertainties_stated": "Probable errors given per row; systematic errors estimated to be less than 1 percent.",
+ "quality_remarks": "PDF page 1 (journal p. 958) holds the end of another article (rare-earth chemistry) and the start of this one. Table I text layer is scrambled (signs and error columns split); read from the image. One printed q error '.000' (15 C, 0.4014 to .005366 row) looks like a possible misprint but is kept.",
+ "how_extracted": "image_read (text layer unusable for signs and columns)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   959
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (derived intermediate heats of dilution from smoothed chords, derived)",
+  "Table III (data used in the evaluation of apparent relative heat contents, derived)",
+  "Table IV (apparent molal heat capacities from equations, derived)",
+  "Table V, VI, VII, VIII (derived or literature comparison, parameters)"
+ ],
+ "row_counts": {
+  "Table I": "printed 28 data rows (10 at 15 C, 12 at 20 C, 6 at 25 C); written 28 data rows plus 3 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1: whole table retyped from the image because the text layer lost minus signs and split columns (no cell of a clean text-layer parse was altered)"
+ ],
+ "extraction_notes": "Printed plus-minus signs removed into separate error columns; leading plus/minus kept as sign on values. Sanity: m2 < m1 in all rows; q sign agrees with dH sign.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer was scrambled and the table was transcribed from the image",
+ "pass2_diff": "Table I: 218/218 numbers identical."
+}

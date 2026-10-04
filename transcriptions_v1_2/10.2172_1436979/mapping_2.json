@@ -1,0 +1,50 @@
+{
+ "table": "Table 2",
+ "page_journal": 23,
+ "title_as_printed": "Osmotic Coefficients for Concentrated NaCl Solutions at High Temperatures",
+ "footnotes_as_printed": {
+  "Note 1": "Osmotic coefficients for pressures equal to vapor pressure of pure water at each temperature."
+ },
+ "property": "phi_osm",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Not stated as total or partial in the table. Osmotic coefficients are 'at p = p0' i.e. 'Osmotic coefficients for pressures equal to vapor pressure of pure water at each temperature' (Table 2 Note 1). Solution vapor pressure = p0 - delta p (delta p measured 'corrected to 0 C' for mercury column, per text).",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Osmotic Coefficient",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "basis": "saturation",
+   "note": "p = vapor pressure of pure water at T (builder: IAPWS-95 psat); Table 2 Note 1: osmotic coefficients are for pressures equal to the vapor pressure of pure water at each temperature"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "Concentration (mols/kg H2O)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "saturation flag column: '(sat.)' printed beside the concentration marks the saturated solution (concentration at saturation derived by the authors from their own extrapolation, section 5.1.4)"
+ ],
+ "conversion_needs": [],
+ "notes": "Osmotic coefficients are calculated by the authors from the measured vapor pressure lowering (the raw delta p are NOT tabulated for these concentrations). Printed as two side-by-side column blocks (75-175 C left, 200-300 C right); stacked left block first, then right. Temperature printed once per block; filled down. Hand-written annotations on the scanned page ignored. Concentration at saturation is the authors' derived solubility, not a literature value.",
+ "quality_remarks": "audit 2026-10-02: Pressure is the pure-water vapor pressure at T (Note 1 under Table 2), not the solution vapor pressure p0 - dp. The 10 rows printed '(sat.)' (CSV rows 3, 8, 13, 20, 25, 32, 38, 44, 50, 56) carry a concentration that is the authors' derived saturation molality: Saturation molalities are the authors' own derived solubilities (section 5.1.4: obtained by extrapolation of phi to the intersection with the line phi*m = constant), model-dependent and not measured.",
+ "caution": "Rows flagged '(sat.)' (CSV rows 3, 8, 13, 20, 25, 32, 38, 44, 50, 56) have a saturation molality extrapolated by the authors (section 5.1.4), not a measured molality."
+}

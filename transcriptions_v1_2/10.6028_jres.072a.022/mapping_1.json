@@ -1,0 +1,60 @@
+{
+ "table": "Table 1",
+ "page_journal": 240,
+ "title_as_printed": "Isopiestic data for the system: potassium chloride (B) - calcium chloride (C)",
+ "footnotes_as_printed": {
+  "*": "Not used in computing values of beta_0 in eq (26)."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable (isopiestic equilibrium at 25 C)",
+ "reference_salt": "KCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "m_C",
+   "unit": "mol_per_kg_water",
+   "what": "molality of CaCl2 in the mixed KCl-CaCl2 solution in isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "M_B",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the KCl reference solution; printed once per block, filled down",
+   "reference": true
+  },
+  "phi": {
+   "col": "phi(obs.)",
+   "unit": "dimensionless",
+   "what": "osmotic coefficient of the mixed solution, computed by the authors from the reference molality",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KCl": {
+    "col": "m_B",
+    "unit": "mol/kg"
+   },
+   "CaCl2": {
+    "col": "m_C",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none; rows with empty m_B are pure CaCl2 solutions (dotted line printed in the m_B column)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "phi(calc.) (osmotic coefficient from the authors' fitted equations; empty where printed as dotted line)"
+ ],
+ "conversion_needs": [],
+ "notes": "The printed table has two column groups side by side (sets 1-6 left, sets 6-10 right); the right group is stacked after the left. Set 6 continues across the two groups: M_B 2.9689 block has rows 2.4640 and 1.5330 (left) followed by 0.6726 and the pure CaCl2 row (right). Set and M_B are printed once per block and filled down. Rows with a * on m_B (footnote) are flagged in the note column as m_B:*. Dotted entries in phi(calc.) mean no calculated value and are written empty; the dotted m_B means no KCl (pure CaCl2) and is written empty. Blocks with no pure CaCl2 row printed: set 1 M_B 0.7577, set 3 M_B 1.5240, sets 4 (2.0809), 5, 6 (2.9694), 7 (3.4262), 8 (3.7176), 9 (4.3543), 10 (4.6201)."
+}

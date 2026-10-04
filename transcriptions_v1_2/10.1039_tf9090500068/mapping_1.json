@@ -1,0 +1,61 @@
+{
+ "table": "Experiment I (unnumbered table)",
+ "page_journal": 71,
+ "title_as_printed": "Experiment I. Atmospheric nitrogen in distilled water",
+ "footnotes_as_printed": {
+  "dagger": "This observation was rejected; it is affected by some exceptional error.",
+  "*": "The cubical temperature coefficient of expansion of the glass used for the apparatus was found by experiment to be 0.0000239 between 0 and 50 deg."
+ },
+ "property": "bunsen",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Gas (moist, saturated with water vapour) in equilibrium with the water at the corrected mercury pressure p (cm Hg, printed in the table, varies 56.95-83.99 cm); the printed coefficient 1,000 a is reduced to a gas pressure of 760 mm (the heading reads: volume absorbed by 1,000 c.c. at t deg and 760 mm). Whether 760 mm is total or dry-gas pressure is not stated.",
+ "columns": {
+  "T": {
+   "col": "t",
+   "unit": "C"
+  },
+  "P": {
+   "constant": "101.325",
+   "unit": "kPa",
+   "basis": "gas_partial",
+   "col": ""
+  },
+  "value": {
+   "col": "1,000 a = volume absorbed by 1,000 c.c. at t 760 (c.c. at 0 760)",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "scale": 0.001,
+   "what": "absorption coefficient a: c.c. of gas reduced to 0 deg C and 760 mm absorbed by 1 c.c. of water at t deg under 760 mm gas pressure (Bunsen type); printed as 1,000 a"
+  }
+ },
+ "volume_basis": "solvent",
+ "volume_basis_evidence": "1,000 c.c. of water (distilled water); heading: 'Volume Absorbed by 1,000 c.c. at t 760 (c.c. at 0 760)'",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, air-free); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    3
+   ],
+   "reason": "observation rejected by the author (dagger footnote p.71: 'This observation was rejected; it is affected by some exceptional error'); CSV row kept"
+  }
+ ],
+ "extra_unmapped": [
+  "w_t, v_t (volumes of water and bulb at t)",
+  "burette readings and intermediate volumes",
+  "p corrected mercury pressure in cm Hg (experimental pressure of the run)",
+  "volume of gas taken, volume absorbed (raw measurements entering 1,000 a)"
+ ],
+ "conversion_needs": [
+  "value = printed x 1e-3",
+  "760 mm Hg = 1 atm"
+ ],
+ "notes": "Gas is atmospheric nitrogen (contains 1.185 per cent argon by volume); values are NOT yet corrected to pure nitrogen (the author's correction to pure N2 is applied later and tabulated in the derived Table I, which is not extracted). Row 3 (15.72 C, 17.37) carries the dagger: rejected by the author as affected by an exceptional error; kept. Row 6 (29.88 C): printed volume absorbed 1.578 but gas taken - unabsorbed = 1.778; printed as is. Water 123.498 c.c. at 0 C; gas taken 19.2124 c.c. at 0 C, 760 mm.",
+ "caution": "gas is atmospheric nitrogen containing 1.185 % argon (p.70), not corrected to pure N2 in this table; argon is 2.3-2.5 times as soluble as N2, so the printed coefficients are up to about 3 % high versus the author's own corrected N2 values",
+ "quality_remarks": "Row 3 (15.72 C, 17.37) skipped: rejected by the author (dagger footnote). Raw values are for atmospheric nitrogen (1.185 % Ar), uncorrected."
+}

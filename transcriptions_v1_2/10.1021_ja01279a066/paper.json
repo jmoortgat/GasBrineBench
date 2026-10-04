@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/ja01279a066",
+ "first_author": "Scatchard, George",
+ "authors": "George Scatchard, W. J. Hamer, S. E. Wood",
+ "year": 1938,
+ "journal": "Journal of the American Chemical Society 60, 3061-3070",
+ "title": "Isotonic Solutions. I. The Chemical Potential of Water in Aqueous Solutions of Sodium Chloride, Potassium Chloride, Sulfuric Acid, Sucrose, Urea and Glycerol at 25 deg",
+ "source_key": "SCATCHARD(1938)",
+ "experimental_method": "Isopiestic comparison at 25 C of six solutions in platinum cups (platinum gauze lining, nickel ring) in a gold-plated copper block inside an evacuated stainless-steel vessel in an oil thermostat.",
+ "uncertainties_stated": "authors believe the error is not greater than a stated small fraction (see text); uncertainty in the smoothed standard curve not more than 0.2 percent.",
+ "quality_remarks": "PDF pages 9-10 include the end of the paper (p.3070) and the start of a different article (Longsworth and MacInnes, p.3070); not extracted. About 100 further runs were made but not tabulated. Pairs of values on adjacent lines are duplicate cups of the same run. Some printed lines are saturated solutions (flagged).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   3064
+  ]
+ },
+ "not_extracted_tables": [
+  "Table IIa, IIb (pages 3069): smoothed osmotic coefficients and activity coefficients at rounded molalities, derived/smoothed",
+  "Other tables (if any) in pages 5-8 are derived solubility/standard-curve quantities"
+ ],
+ "row_counts": {
+  "Table I": "printed 39 lines (32 runs plus duplicate-cup lines) / written 39"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer was clean; superscript a/b marks were garbled in the layer and taken from the image. Sanity: within each column molalities decrease monotonically down the table; ordering NaCl < KCl < urea etc consistent at all runs.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer digits matched the image in every cell",
+ "pass2_diff": "Table I: 39 rows, 212/212 numbers identical."
+}

@@ -1,0 +1,39 @@
+{
+ "doi": "10.1002/bbpc.19810850103",
+ "first_author": "Seward",
+ "year": 1981,
+ "journal": "Berichte der Bunsengesellschaft fuer Physikalische Chemie",
+ "source_key": "SEWARD(1981)",
+ "experimental_method": "Isochoric pVT and visual phase-transition (nick-point) measurements of H2-H2O mixtures in an autoclave with two sapphire windows up to 440 C and 2500 bar.",
+ "uncertainties_stated": "pressure 1 bar; molar volume 0.10 %; T_c +-0.5 C; p_c and V_c individually as printed",
+ "quality_remarks": "Hydrogen loss by diffusion into the autoclave wall was checked; 40 mol-% row is extrapolated; critical-point data are not gas solubilities. The mixtures' phase-boundary p-T data are only shown in Figs 2-3 (no numeric tables).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   4
+  ]
+ },
+ "not_extracted_tables": [
+  "Figures 2-7 (isopleths, phase boundary, molar volumes, excess volumes): no numeric tables in the paper"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 13,
+   "written": 13
+  }
+ },
+ "changes_after_image_check": [
+  "table 1 row 7: text layer '6902 5' -> p_c 690, unc 5",
+  "table 1 row 8: text layer '1 .o' style OCR errors fixed (1.0, 3.0, 6.0, 9.0 read from image)",
+  "table 1 row 8-9: '1010 f 5' -> 1010, 5; '1410 _t 10' -> 1410, 10"
+ ],
+ "extraction_notes": "Text layer was garbled (OCR errors), so Table 1 was read from the 130 dpi page image; the table was extracted as a borderline in-scope critical-curve table for H2-H2O (property other).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed corrections after the image check",
+ "pass2_diff": "Table 1: 13 rows, 74/74 numbers identical (pooled comparison)."
+}

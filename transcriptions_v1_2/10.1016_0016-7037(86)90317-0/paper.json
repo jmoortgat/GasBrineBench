@@ -1,0 +1,45 @@
+{
+ "doi": "10.1016/0016-7037(86)90317-0",
+ "first_author": "Bischoff, James L.",
+ "authors": "James L. Bischoff, Robert J. Rosenbauer, Kenneth S. Pitzer",
+ "year": 1986,
+ "journal": "Geochimica et Cosmochimica Acta 50, 1437-1444",
+ "title": "The system NaCl-H2O: Relations of vapor-liquid near the critical temperature of water and of vapor-liquid-halite from 300 to 500 C",
+ "source_key": "BISCHOFF(1986)",
+ "experimental_method": "Titanium vessel of 26 ml in a fluidized particle bath; vapor sampled sequentially from the top and liquid from the bottom while pressure fell along the phase boundary (T near Tc), or three samples of vapor from the vapor-liquid-halite assemblage; chloride analysed by ion chromatography with conductivity detector.",
+ "uncertainties_stated": "T = 373.0 and 375.5 C (+-0.1 C) for the isotherms; background contamination about 0.5 ppm Cl, lowest reported value 4 ppm Cl (0.00071 % NaCl); no other uncertainties.",
+ "quality_remarks": "Authors report vapor NaCl contents of the three-phase assemblage far above those of Sourirajan and Kennedy (1962) above 410 C. Table 3 values were read from figures. Tables concern the NaCl-H2O vapor-liquid(-halite) equilibrium, which sits at the edge of the project's scope (vapor-side salt content, no gas component); extracted for the builder to decide.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   5,
+   6
+  ],
+  "journal_pages": [
+   1439,
+   1441,
+   1442
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 3",
+   "reason": "boiling pressure and vapor NaCl for 3.2% NaCl 'as taken from Figs. 1 and 2' (read off the smoothed diagrams), not a direct measurement table; page 1442 image checked"
+  }
+ ],
+ "row_counts": {
+  "Table 1": "printed 84 data rows (16+24+23+21), written 84 plus 4 label rows",
+  "Table 2": "printed 13, written 13"
+ },
+ "changes_after_image_check": [
+  "table_2 row 1: text-layer pressure 78.0 -> 78.8 (image)",
+  "table_1: text layer dropped or garbled several NaCl values and the asterisk rows; whole table transcribed from 300 dpi image"
+ ],
+ "extraction_notes": "Column 'note' holds the asterisk footnote (%NaCl:*) for liquid-composition rows. Temperature column printed in C and pressure in bars. NaCl percent basis not stated. Sanity check: in each block pressure decreases monotonically down the block; vapor NaCl rises with P up to a maximum near the beak then falls; Table 2 P increases with T. Table 1 contains exact replicate rows (373.0 135.0 0.0029 twice; 372.9 217.9 0.0048 twice; 375.4 137.4 pair differs).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer garbled in Table 1 (values and asterisks) and one cell corrected after image check; scan is a modest-quality reproduction",
+ "pass2_diff": "Tables 1 and 2: 97 rows, 290/290 numbers identical."
+}

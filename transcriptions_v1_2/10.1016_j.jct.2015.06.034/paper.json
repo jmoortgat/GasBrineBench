@@ -1,0 +1,41 @@
+{
+ "doi": "10.1016/j.jct.2015.06.034",
+ "first_author": "Efika",
+ "title": "Saturated phase densities of (CO2 + H2O) at temperatures from (293 to 450) K and pressures up to 64 MPa (E.C. Efika, R. Hoballah, X. Li, E.F. May, M. Nania, Y. Sanchez-Vicente, J.P.M. Trusler)",
+ "year": 2016,
+ "journal": "J. Chem. Thermodynamics 93, 347-359",
+ "source_key": "EFIKA(2016)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "the table bodies are not in the PDF text layer (only captions), so the cells came from tesseract OCR of 300 dpi renders; 91 cells (mostly the one-digit uncertainty column, missing decimal points, plus a few T/rho cells) needed correction after the image check",
+ "experimental_method": "Equilibrium cell with two syringe pumps and two vibrating tube densimeters in one thermostat; saturated aqueous (bottom) and CO2-rich (top) phases displaced sequentially at constant pressure into the densimeters, calibrated in situ with water, CO2 and helium.",
+ "uncertainties_stated": "Average standard uncertainties 1.5 kg/m3 (CO2-rich phase) and 1.0 kg/m3 (aqueous phase); u(T) = 0.2 K, u(p) = 0.05 MPa; per-row combined u_c(rho) is tabulated.",
+ "quality_remarks": "Table 3 row 322.7 K 8.44 MPa 1001.9 followed by 322.8 K 8.55 MPa 1001.3 breaks monotonic rho(p) by 0.6 kg/m3 (as printed, within u_c; also 8.57 -> 1002.0 follows). CO2-rich phase density is for a phase near-saturated at T_sat but measured 1-2 K higher in T_VTD (heated to avoid water condensation). Leaky PTFE seal replaced periodically; authors state all reported data are from leak-free operation. Authors compare with Gernert-Span EOS which under-predicts aqueous density by up to 13 kg/m3.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7
+  ],
+  "journal_pages": [
+   352,
+   353
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (material purities): not data",
+  "Table 2 (densimeter calibration parameters): model/calibration parameters",
+  "Compositions of the saturated phases are not measured; the paper calculates them with empirical models (derived, no table)."
+ ],
+ "row_counts": {
+  "Table 3": "printed 145 (73 left panel + 72 right), written 145",
+  "Table 4": "printed 128 (64 + 64), written 128"
+ },
+ "changes_after_image_check": [
+  "table_3 rows (OCR output corrected to the image): u_c 11 -> 1.1 in 5 rows (307.7/307.8 K at 8.07, 8.62, 8.84, 11.10 MPa; 322.7 K 63.44 MPa); p 414 -> 4.14 (322.8 K); p 417 -> 4.17 (423.3 K)",
+  "table_4: 56 uncertainty cells with dropped decimal (e.g. 11 -> 1.1, 25 -> 2.5, 42 -> 4.2); rho 42 -> 4.2 (307.7 K 0.25 MPa), 46 -> 4.6 (373.0 K 0.30 MPa and 322.8 K 11.05 MPa u_c 46 -> 4.6), 471 -> 47.1 (448.5 K 4.18 MPa); T_VTD 3741 -> 374.1 in 6 rows (373.0 K block)"
+ ],
+ "extraction_notes": "Panels stacked left then right. The 3.5 x 5 char OCR was read with tesseract --psm 6 on column crops, and every row was compared to the 150 dpi page image; a sanity script found p monotonic within each isotherm in both tables, rho monotonic with p in Table 3 apart from the one printed reversal noted above. Gas-phase regime flags (lle) for liquid CO2 are inferred from tabulated densities; see mapping. No standard-conditions gas volumes are involved (not applicable).",
+ "pass2_diff": "Tables 3 and 4: Table 3 580/580 identical; Table 4 had two single-cell disagreements (374.4 vs 374.1, and 1.1 vs 1.0 at 448.5 K) arbitrated with an independent OCR of the page: pass 1 correct on both."
+}

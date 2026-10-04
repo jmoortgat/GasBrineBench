@@ -1,0 +1,65 @@
+{
+ "table": "Table 3",
+ "page_journal": 103,
+ "title_as_printed": "Experimental dissolved gas concentrations in the aqueous phase in equilibrium with gas hydrates at temperature T/K and pressure p/MPa. Xc1, Xc2, Xc3: mole fractions of methane (C1), ethane (C2) and propane (C3) in the aqueous phase. The feed composition is estimated to be in mole fractions: methane 3.455 x 10^-2, ethane 6.98 x 10^-3, propane 3.47 x 10^-3 and water 9.55 x 10^-1.",
+ "footnotes_as_printed": {
+  "a": "Estimated uncertainties: u(T/K) = 0.03, u(p/MPa) = 0.01, u(Xc1) = 0.1 x 10^-3, u(Xc2) = 0.012 x 10^-3 and u(Xc3) = 0.007 x 10^-3.",
+  "b": "Three phase equilibrium between the hydrate, the aqueous and the vapor phase.",
+  "c": "Two phase equilibrium between the aqueous and the vapor phase."
+ },
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "reactor pressure p/MPa (transducer, u=0.01 MPa); total vs gas partial not stated; reactor holds hydrate + aqueous phase (water injected to set pressure), vapour-unsaturated, so no free gas phase except rows flagged b/c",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Xc1 * 10^3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "ch4"
+  },
+  "value2": {
+   "col": "Xc2 * 10^3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "c2h6"
+  },
+  "value3": {
+   "col": "Xc3 * 10^3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "c3h8"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure deionised water; solute is a ternary CH4/C2H6/C3H8 gas mixture (mixture A 76.77/15.51/7.72 mol%, mixture B 75.31/16.16/8.53 mol%; which mixture was used per row not stated). Table gives mole fractions of each gas in the aqueous phase; no salt."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Three solute gases per row, each its own mole fraction (value, value2, value3). Mole fractions are on a total-aqueous-phase basis (water + dissolved gases); salt-free. Note column holds footnote letters attached to T values. Row 293.15 carries footnote letter a (printed), which refers to the uncertainty footnote; kept as printed. Rows flagged b (294.07, 295.14, 296.10, 297.17) are three-phase hydrate-aqueous-vapour equilibria; the row flagged c (299.13) is two-phase aqueous-vapour equilibrium with NO hydrate (regime should be blank for that row). Other rows are aqueous-hydrate equilibria in the absence of a vapour phase (hydrate-aqueous, vapour unsaturated). Pressure varies 6.22-20.10 MPa; T 274.55-299.13 K.",
+ "gas_mixture": true,
+ "row_regime_overrides": [
+  {
+   "rows": [
+    20
+   ],
+   "regime": "none",
+   "reason": "299.13 K row (footnote c): no hydrate, two-phase aqueous-vapour (audit 2026-10-02)"
+  }
+ ]
+}

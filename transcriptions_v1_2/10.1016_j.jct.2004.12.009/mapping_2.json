@@ -1,0 +1,153 @@
+{
+ "table": "Table 2 and Table 2 (continued)",
+ "page_journal": "915-916",
+ "title_as_printed": "Vapor pressures, molalities, and corresponding osmotic coefficients of CaCl2 and CaBr2",
+ "footnotes_as_printed": {
+  "a": "Pressures corresponding to the NaCl molalities from table 1 at the same temperature."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "directly measured water vapor pressure over the solution (Digiquartz pressure transmitters), absolute pressure in MPa",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_group_rows": true
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "p/MPa",
+   "unit": "MPa"
+  },
+  "phi_CaCl2": {
+   "col": "phi CaCl2",
+   "unit": "1",
+   "derived_by_authors": true,
+   "what": "osmotic coefficient from the measured vapor pressure, molality, water fugacity and Poynting correction (eq. 9)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m CaCl2 (mol/kg)",
+    "unit": "mol/kg",
+    "role": "separate solution in own cup"
+   }
+  },
+  "constant": {},
+  "other_species": "CaCl2 solution; the CaBr2 solution (outside the six-ion set, not mapped) is a separate binary solution in a separate cup at the same printed pressure; there is no mixed solution"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    18,
+    20,
+    38,
+    41,
+    57,
+    82,
+    107
+   ],
+   "reason": "temperature label row 'T = ... K' (T set via group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "433.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "443.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 41,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "453.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "473.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 82,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 107,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "523.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "m CaBr2 (mol/kg) (separate solution, out of scope)",
+  "phi CaBr2 (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "Left and right column blocks stacked: left block rows first, then right block rows, per T block. The 498.15 K and 523.15 K blocks continue onto the next printed page (journal 916); rows concatenated.",
+  "Rows with footnote a (note column 'p/MPa:a') have pressures that correspond to the NaCl molalities of Table 1 at the same T (473.15, 498.15, 523.15 K); the molalities in those rows equal the Table 1 CaCl2 and CaBr2 molalities."
+ ],
+ "notes": "The T = 498.15 K block of the second printed page is the continuation of the block begun on page 915 (three rows per column with no repeated label). Number of decimals varies as printed (e.g. phi CaBr2 1.677 and 1.788 at 453.15 K have three decimals; pressures at 498.15-523.15 K printed to five decimals)."
+}

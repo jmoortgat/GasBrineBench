@@ -1,0 +1,104 @@
+{
+ "table": "Table I",
+ "page_journal": 243,
+ "title_as_printed": "Experimental Bunsen Solubility Coefficients for Hydrogen in Water and Seawater (beta in ml H2 (STP)/ml H2O)",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "bunsen",
+ "gas": "h2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bunsen coefficient defined as the volume of gas (corrected to STP) absorbed in a unit volume of water at the measurement temperature when the partial pressure of the gas is 760 mm; measured pressure not tabulated",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "beta in ml H2 (STP)/ml H2O; 'absorbed in a unit volume of water at the measurement temperature'; Table I heading 'ml H2 (STP)/ml H2O'",
+ "columns": {
+  "T": {
+   "col": "Temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "beta",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm"
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Salinity 0.0 = distilled water; 27.665, 33.680, 39.927 permil = seawater (diluted or boiled, salinity by induction salinometer); salinity unit printed as parts per thousand"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    43,
+    104,
+    114,
+    166
+   ],
+   "reason": "salinity label rows (salinity printed beside first printed row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "0.0",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "27.665",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 104,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "33.680",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 114,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "33.680",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 166,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "39.927",
+     "unit": "permil"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "partial pressure of 760 mm Hg = 1.01325 bar; salinity in permil of seawater needs ionic composition (sea salt), not NaCl"
+ ],
+ "notes": "Printed layout: two side-by-side halves (left: 0.0, 27.665, start of 33.680; right: rest of 33.680, 39.927), each printed row holding three (Temp, beta) pairs. Written as one row per (Temp, beta) pair: for each salinity block, printed rows in order, left pair to right pair; left half first, then right half. Salinity 33.680 therefore appears as two label rows (left then right half). Salinity 0.0 data are gas-in-distilled-water (composition none)."
+}

@@ -1,0 +1,148 @@
+{
+ "page_journal": 70,
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column headed 'Pressure, Atm.'; CO2 admitted to the autoclave and pressure held manually (Bourdon gauges); text does not say whether gauge or absolute, total pressure or CO2 partial pressure (vessel evacuated to 10 microns before filling, so atmosphere is CO2 plus water vapour)",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "solubility reported as g CO2 per 100 g solvent, not as gas mole fraction",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mass per mass quantity",
+ "footnotes_as_printed": "The paper has no footnotes on this table.",
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "g CO2 per 100 g solvent to molality or mole fraction needs CO2 and H2O molar masses (and for sea water, which 'solvent' is meant)"
+ ],
+ "table": "Table IV",
+ "title_as_printed": "Solubility of Carbon Dioxide in Synthetic Sea Water Concentrate",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure Atm.",
+   "unit": "atm",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "G. CO2/100 G. Solvent",
+   "unit": "g_CO2_per_100_g_solvent",
+   "what": "g CO2 per 100 g solvent; for sea water the paper says the CO2 from the 0.202 g/kg NaHCO3 is included in the reported values"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "synthetic sea water with 3 or 5 times the normal salts content (normal composition in Table I of this paper: 34.420 g salts/kg); exact concentrate composition not tabulated"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25
+   ],
+   "reason": "label rows (salts-content block and temperature headings)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "3",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  },
+  {
+   "label_row": 5,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "12.4",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "3",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "3",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "12.4",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5",
+     "unit": "times_normal_salts_content"
+    }
+   ]
+  }
+ ],
+ "notes": "Two blocks (3X and 5X salts content), each with columns 0, 12.4, 25 C; written stacked as one label row per (block, temperature); dots written as empty cells. The 5X block has no 25 C column entries (printed blank/absent) but the label row is kept with empty values. 12 cells per block, 3X: 9 measured, 5X: 6 measured.",
+ "quality_remarks": "audit 2026-10-02: basis of 'Solvent' is not stated (as Table III) and the composition of the 3X and 5X concentrates is not tabulated; kept held."
+}

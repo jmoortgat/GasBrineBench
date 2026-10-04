@@ -155,3 +155,14 @@ value, uncertainty, quality, tag
   the mixed-salt subset (both included, distinguishable by m_SO4).
 - `eps_r` added as a property beyond the assigned enum (harness
   block; drop the file if unwanted).
+
+
+## v1.2 additions
+
+The 146 papers added in v1.2 are not described row by row here: their
+provenance is `provenance/provenance_v1_2.csv`, one line per `dataset_id` (paper,
+DOI, table, row count, verification status, experimental method, caution) and
+`../transcriptions_v1_2/<doi>/` (the transcribed table, the mapping that converts
+it, the paper's metadata). `provenance/citation_counts.csv` holds the OpenAlex
+citation count of every cited paper. Families `rho_gas`, `visc` and
+`thermo_brine` are new; `SCHEMA.md` documents their columns and the `flags` column.

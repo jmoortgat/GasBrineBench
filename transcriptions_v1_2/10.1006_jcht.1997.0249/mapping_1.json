@@ -1,0 +1,112 @@
+{
+ "table": "Table 1",
+ "page_journal": 1305,
+ "title_as_printed": "Measured and predicted solubilities of liquid CO2 in water x_w(CO2)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "system pressure set with a mercury-column/piston-pump control, 'p/MPa'; the paper does not say total/partial/gauge/absolute; CO2 is a liquid phase in contact with the water column (p > 6 MPa)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "per block"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Measured x_w(CO2)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "what": "measured value, one column per temperature block in the print; blocks stacked"
+  },
+  "extra_unmapped": [
+   "Predicted x_w(CO2) (predicted by the authors' Henry-law correlation / density relation, model-generated)"
+  ]
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21
+   ],
+   "reason": "temperature block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "278",
+     "unit": "K"
+    },
+    {
+     "path": "regime",
+     "value": "hydrate"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "283",
+     "unit": "K"
+    },
+    {
+     "path": "regime",
+     "value": "hydrate"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "288",
+     "unit": "K"
+    },
+    {
+     "path": "regime",
+     "value": "lle"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "293",
+     "unit": "K"
+    },
+    {
+     "path": "regime",
+     "value": "lle"
+    }
+   ]
+  }
+ ],
+ "conversion_needs": [],
+ "notes": "Four side-by-side T blocks (Measured, Predicted) stacked in order 278, 283, 288, 293 K. Column 'Predicted' is model output, kept as printed but not a datum. Hydrate film at the CO2-water interface at T <= 283 K per authors (regime kept lle; authors say its effect on the solubility is negligible). x_w(CO2) = Cs/[(Cs+rho(H2O))/M(H2O)] with Cs = n(CO2)/V(H2O) (Eq. 2), i.e. CO2 mole fraction in the aqueous phase.",
+ "gas_basis": "not_applicable",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction, no volume basis",
+ "quality_remarks": "audit 2026-10-02: Regime per temperature block from the paper (p.1303-1304): hydrate present at the interface for T <= 283 K ('the hydrate CO2.5.75H2O forms only at the interface', 'a thin hydrate phase ... remained at the interface'), only a quasi-crystalline interfacial structure above 283 K, so those blocks stay lle."
+}

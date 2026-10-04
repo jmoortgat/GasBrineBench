@@ -1,0 +1,35 @@
+{
+ "doi": "10.1016/j.jct.2011.10.026",
+ "first_author": "Chapoy",
+ "year": 2012,
+ "journal": "J. Chem. Thermodynamics 47, 6-12",
+ "source_key": "CHAPOY(2012)",
+ "experimental_method": "Water content of CO2 in equilibrium with hydrate measured with a chilled-mirror hygrometer on gas flowed from a 300 cm3 piston cell (T cycled over at least 20 h, N2 injected to hold pressure).",
+ "uncertainties_stated": "Hygrometer dew/frost point resolution 0.1 K, accuracy +-0.2 K; circulator control +-0.1 K; no uncertainty stated for y_w.",
+ "quality_remarks": "Authors question Song and Kobayashi data, which are about 1000e-6 higher than this work. Source file year 2011 (online); volume year 2012 used for source_key. Pressure transducer checked vs dead-weight tester.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   11
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 1": "critical properties/model constants",
+  "Table 2": "model parameters",
+  "Table 3": "model parameters",
+  "Table 4": "hydrate reference properties"
+ },
+ "row_counts": {
+  "table_1": "printed 13 data rows + AAD summary row; written 13"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Minus signs of deviation columns were absent from the text layer; taken from the image (they are in unmapped columns). Text layer values otherwise matched image.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean, all cells matched the image (minus signs were restored in non-mapped deviation columns by reading the image, counted as not a data correction).",
+ "pass2_diff": "Table 5: 13 data rows identical; the only extra numbers in pass 2 are in the AAD summary row, which pass 1 omitted by design."
+}

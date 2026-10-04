@@ -1,0 +1,53 @@
+{
+ "table": "Table 2 (incl. 'Table 2 (continued)')",
+ "page_journal": "205-206",
+ "title_as_printed": "Experimental data on the reaction Br=Per+H2O in the presence of H2O-NaCl solutions (n/r small change in water content in the course of the run, Sat runs under NaCl-saturated conditions)",
+ "footnotes_as_printed": {
+  "n/r": "small change in water content in the course of the run",
+  "Sat": "runs under NaCl-saturated conditions"
+ },
+ "property": "other",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "nominal sample pressure in kbar (internally heated Ar apparatus 2 and 4.2 kbar; piston-cylinder 4.2-15 kbar); uncertainty about +-200 bar, 4.2 kbar piston-cylinder runs possibly 220 bar high",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P kbar",
+   "unit": "kbar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "X(H2O) fin.",
+   "unit": "mole_fraction",
+   "what": "H2O mole fraction of the NaCl-H2O fluid at the end of the run, after reaction toward brucite (Br) or periclase (Per); brackets of the brucite-periclase univariant equilibrium"
+  },
+  "value2": {
+   "col": "X(H2O) st.",
+   "unit": "mole_fraction",
+   "what": "starting H2O mole fraction of the fluid"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary NaCl-H2O fluid in equilibrium with brucite Mg(OH)2 and periclase MgO, X_NaCl = 1 - X_H2O (MgO solubility negligible); X(H2O) fin. is a reversal end point, not an equilibrium composition: the equilibrium fluid lies between the final compositions of opposite-direction runs (Fig. 3 caption: 'Opposing arrows show reversed equilibrated fluid compositions in equilibrium with brucite and periclase')"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Run #",
+  "Duration h",
+  "Phase grown (Br/Per direction of reaction; 'sat.' = NaCl-saturated)"
+ ],
+ "conversion_needs": [
+  "water activity is NOT tabulated here; it is derived by the authors from the brucite-periclase equilibrium via Eq. 3 (RT ln aH2O = dG0 - RT ln fH2O - P dVs); the bracketing directions give the equilibrium composition at each T and P"
+ ],
+ "notes": "Not a direct water-activity measurement: reversal brackets (starting and final fluid compositions, weight change after drying of punctured Pt capsules). Conditions far outside the usual database range (590-850 C, 2-15 kbar). Printed '0.30' for PB-112 X(H2O) st. kept. Entries are cross-over brackets: 'Per' means periclase grew (fluid too water-rich in the final state, aH2O above equilibrium), 'Br' brucite grew. Run PB-66 is printed at 765 C within a 735 C pair (PB-65 at 735 C); kept as printed. Extraction judged in scope because it is the only measured NaCl-H2O composition data underlying the H2O activities; the builder/PI may drop it.",
+ "quality_remarks": "audit 2026-10-02: X(H2O) fin. is not offered as a point value of the equilibrium fluid; the table holds reversal brackets of a mineral equilibrium (p.205 Fig. 3 caption)."
+}

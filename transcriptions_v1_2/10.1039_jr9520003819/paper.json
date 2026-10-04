@@ -1,0 +1,39 @@
+{
+ "doi": "10.1039/jr9520003819",
+ "first_author": "Morrison",
+ "year": 1952,
+ "journal": "J. Chem. Soc. 1952, 3819-3822",
+ "source_key": "MORRISON(1952)",
+ "title": "730. The Salting-out of Non-electrolytes. Part II. The Effect of Variation in Non-electrolyte (T. J. Morrison and F. Billett)",
+ "experimental_method": "Flow-film gas-solubility apparatus (Part I) with separate gas burette and absorption spiral; solvents degassed by a vapour-pump principle; gas volume against solvent volume slope.",
+ "uncertainties_stated": "not stated for gas solubilities (liquid solubilities of aromatics: ~0.5 % benzene/toluene, 1-2 % ethylbenzene).",
+ "quality_remarks": "Water solubilities (Table 2) are measured; the salt solutions were only reported through derived Setschenow-type salting-out constants (Table 3), not as individual solubilities. Concentrations of salt solutions were 'about 1 g.-equiv. per 1000 g of water' with small corrections via the Setschenow equation. Gas preparations from several sources gave identical results within error (N2, O2, H2).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   3821
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (intercepts I and hydration numbers, derived)",
+  "Table 3 (salting-out constants k = (log s0/s)/c for salts NaCl, LiCl, KI, KCl, HCl, BaCl2, LaCl3 at four values of 1/T, derived by the authors; the underlying solubilities in salt solutions are not tabulated)",
+  "Table 3 lower block (benzene, toluene, ethylbenzene at 25 C in NaCl solution: liquid hydrocarbons, out of scope, and k derived)"
+ ],
+ "row_counts": {
+  "table_2": "printed 12+11+14+12+14+14+12+11+19 = 119 data rows; written 119 plus 9 gas label rows"
+ },
+ "changes_after_image_check": [
+  "table_2 Methane row T 51.8: text layer 81.38 -> 21.38",
+  "table_2 n-Butane row T 30.1: text layer 32.18 -> 22.18",
+  "table_2 Hydrogen row T 65.5: text layer T 65.6 -> 65.5"
+ ],
+ "extraction_notes": "Text layer partly scrambled (digits like 81-38). CSV typed from the page image (220 dpi crops), compared to the text layer; three disagreements settled by the image. The n-butane value 22.18 at 30.1 C fits the monotonic trend (25.0: 25.88, 35.0: 19.41). Sanity checks: s0 decreases monotonically with T within each block, except the CO2 and H2 minimum behaviour (H2 shows a flat/slightly rising 16.14 at 65.5-71.7 C, as printed). Page 1 (journal 3819) begins this paper; no foreign article at either end.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "three cells corrected after the image check; text layer unreliable",
+ "pass2_diff": "Table 2: 119 rows, 238/238 numbers identical."
+}

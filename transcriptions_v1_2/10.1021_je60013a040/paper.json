@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/je60013a040",
+ "first_author": "Anderson",
+ "year": 1962,
+ "title": "Solubility of Krypton and Oxygen in Water and Aqueous Uranyl Sulfate Solutions at Elevated Temperatures",
+ "authors": "C. J. Anderson, R. A. Keeler, S. J. Klach",
+ "journal": "J. Chem. Eng. Data 7(2), 290-293",
+ "source_key": "ANDERSON(1962)",
+ "experimental_method": "Stainless-steel 550 ml vessel with 275 ml solvent, Kr-85-tagged krypton at tracer level plus oxygen overpressure, heated to 100-300 C; simultaneous vapor and liquid samples withdrawn, Kr determined by radioactivity, dissolved gas by gas law and sample volume.",
+ "uncertainties_stated": "Temperature of the liquid measured to +-0.1 C (Chromel-Alumel with potentiometer); pressure gage 0-2000 p.s.i.; no uncertainty on solubility values in Table II (text gives a regression for K(T) with standard deviation 0.218e5 for water).",
+ "quality_remarks": "Scan exponents partly blurred: K exponent glyphs of 5.93 (Kr-14 s2), 2.03 (Kr-15 s3), 1.75 (Kr-17 s4 oxygen) look like 6 and 8.74 (Kr-17 s2 oxygen) like 9 in the image; all entered as 10^5, consistent with neighbouring rows and the text layer is also unreliable here. Run '13' printed without 'Kr-'. Kr-8, Kr-9, Kr-12 have no oxygen solubility measurement. Mole fraction of Kr in liquid is not tabulated, only K. Uranyl sulfate solutions are out of the six-ion set; Table I composition used for them.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   292
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (experimental conditions summary: composition, ranges; not data rows; composition values used in mapping)"
+ ],
+ "row_counts": {
+  "table_2_group1": "printed 15, written 15",
+  "table_2_group2": "printed 23, written 23",
+  "table_2_group3": "printed 14, written 14"
+ },
+ "changes_after_image_check": [
+  "text layer unusable for this table (exponents garbled, mantissas split from exponents); all cells read from the 200 dpi image and zoomed crops: no old->new comparison made"
+ ],
+ "extraction_notes": "Table typed from the image; exponent identical in each column inside a group file. Sanity: K(Kr) decreases with T within each run (100->300 C: 6.6e5 to 1.2e5), O2 K similar; T 100-305 C; pressures 110-2015 psia as in Table I of the paper.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "image-only read of a scan with blurred exponent glyphs",
+ "pass2_diff": "Table II: all 52 rows, every mantissa identical in all columns; exponents per solvent group agree with pass 2 (Kr partial pressure 1e-4, 1e-3, 1e-4; K values 1e5). The blurred exponent glyphs were read from neighbouring rows in both passes."
+}

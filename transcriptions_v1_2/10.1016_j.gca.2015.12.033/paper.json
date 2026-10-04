@@ -1,0 +1,43 @@
+{
+ "doi": "10.1016/j.gca.2015.12.033",
+ "title": "Direct measurement of CO2 solubility and pH in NaCl hydrothermal solutions by combining in-situ potentiometry and Raman spectroscopy up to 280 C and 150 bar",
+ "authors": "Laurent Truche, Elena F. Bazarkina, Gilles Berger, Marie-Camille Caumon, Gilles Bessaque, Jean Dubessy",
+ "first_author": "Truche",
+ "year": 2016,
+ "journal": "Geochimica et Cosmochimica Acta 177, 238-253",
+ "source_key": "TRUCHE(2016)",
+ "experimental_method": "450 mL titanium hydrothermal cell with in-situ Raman spectroscopy and a Cu/Cu2O/ZrO2(Y2O3) potentiometric pH probe; dissolved inorganic carbon of sampled aliquots determined gravimetrically as BaCO3 (CO2 molality), Raman peak area ratio CO2/H2O calibrated against it.",
+ "uncertainties_stated": "Temperature held within +-1 C; pH uncertainty +-0.05 (acidic) and +-0.10 (alkaline); Raman wavenumber accuracy +-0.4 cm-1; gravimetric data mostly within +-2 sigma of the Duan and Sun (2003) model; pressure uncertainty not stated.",
+ "quality_remarks": "Only 12 of 21 state points have a gravimetric mCO2 (column c): 7 of 14 in pure water, 5 of 7 in 1.4 m NaCl; the others are 'nd' and the table gives only calculated molalities (Duan-Sun, Pitzer model of this paper) plus measured pH and Raman ratio. Authors say probe drift at 280 C is larger (about 0.10 pH/24 h) and the Pitzer model is confirmed at least to 250 C. 1.4 m NaCl pH fit rests on two control points.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   7
+  ],
+  "journal_pages": [
+   244
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was clean (rotated table) and every cell matched the page image",
+ "not_extracted_tables": {
+  "Table 1": "pH values of calibration buffer solutions (literature values), not CO2/brine data",
+  "Table 3": "fit parameters for pH vs mole fraction (model parameters)",
+  "Table 4": "model parameters",
+  "Table 5": "Pitzer parameters (model parameters)",
+  "Table 6": "Pitzer neutral-ion parameters (model parameters)",
+  "Supplementary data": "not available in PDF"
+ },
+ "row_counts": {
+  "table_1": {
+   "printed": 21,
+   "written": 21,
+   "label_rows": 2
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table printed rotated by 90 degrees on the page. Sanity: within each system and temperature mCO2 rises with pressure; Duan-Sun and Pitzer calculated molalities agree with the gravimetric values to within a few percent where available. Footnote letters kept as separate words in the CSV headers for column disambiguation (see mapping). Row 'nd' cells written as empty.",
+ "pass2_diff": "Table 2: 21 rows, 201/201 numbers identical (pass 2 named it by its printed number)."
+}

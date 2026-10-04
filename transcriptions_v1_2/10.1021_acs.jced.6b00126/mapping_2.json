@@ -1,0 +1,51 @@
+{
+ "table": "Table 2",
+ "title_as_printed": "Solubility (VLE) of Propane (1) in Water (2)",
+ "footnotes_as_printed": {
+  "a": "T is temperature, p is system pressure, x1exp is the experimental solubility in mole fraction, n is number of GC-analysis, u(x1) is the 2*standard deviation based on all samples, dx % is the relative deviation in percent of the measured values compared to the polynomial regression presented in Figure 13; u(T) = 0.02 K, u(p) = 10 kPa."
+ },
+ "property": "solubility_x",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p is system pressure (paper's words); whether it includes water vapour not stated",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p kPa",
+   "unit": "kPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x1exp 10^-4",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  },
+  "uncertainty": {
+   "col": "u(x1) 10^-6",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1e-06,
+   "what": "2*standard deviation of all samples"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "n (number of GC analyses)",
+  "dx(1) % (deviation from polynomial fitted by the authors to Chapoy et al. data)"
+ ],
+ "conversion_needs": [
+  "pressure kPa to MPa"
+ ],
+ "volume_basis": "not_applicable",
+ "notes": "Header was two printed rows (K/T, p/kPa, x1exp/x10-4, n, u(x1)/x10-6, dx(1)/%) joined. Salt-free (pure water). Four temperatures scatter 323.13-323.41 K (nominal 323.15 K, Figure 13)."
+}

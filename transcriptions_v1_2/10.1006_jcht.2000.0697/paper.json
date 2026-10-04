@@ -1,0 +1,60 @@
+{
+ "doi": "10.1006/jcht.2000.0697",
+ "first_author": "Call",
+ "year": 2000,
+ "journal": "J. Chem. Thermodynamics 32, 1525-1538",
+ "source_key": "CALL(2000)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; every cell of Tables 1 and 4 agrees with the 200 dpi page images (checked visually row by row); no corrections.",
+ "title": "Apparent molar volumes and heat capacities of aqueous magnesium chloride and cadmium chloride at temperatures from 278.15 K to 393.15 K at the pressure 0.35 MPa: a comparison of ion-ion interactions",
+ "authors": "T. G. Call, K. Ballerat-Busserolles, M. L. Origlia, T. D. Ford, E. M. Woolley",
+ "experimental_method": "Vibrating-tube densimeter (Anton Paar DMA 512) for densities and a twin fixed-cell power-compensation temperature-scanning calorimeter (NanoDSC 6100) for heat capacities, giving V_phi and Cp_phi of MgCl2(aq) at 0.35 MPa, calibrated with 1 mol/kg NaCl(aq) and water.",
+ "uncertainties_stated": "+/- values per cell in the tables (standard deviations of repeated readings / scans); authors estimate maximum total random uncertainty as 4 x the printed +/-; density reproducibility within 18 ug/cm3; T controlled within 0.005 K; p = 0.35 +/- 0.015 MPa for the calorimeter.",
+ "quality_remarks": "Uncertainties at m = 0.008 mol/kg are large (V_phi up to +/-0.7 cm3/mol; Cp_phi up to +/-22 J/(K mol)), scatter in V_phi at the lowest molalities is visible. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   6
+  ],
+  "journal_pages": [
+   1528,
+   1530
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "V_phi of CdCl2(aq): CdCl2 outside the in-scope salt set"
+  },
+  {
+   "table": "Table 3",
+   "reason": "regression parameters (model parameters)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "Cp_phi of CdCl2(aq): CdCl2 outside the in-scope salt set"
+  },
+  {
+   "table": "Table 6",
+   "reason": "regression parameters (model parameters)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 90,
+   "written": 90,
+   "note": "9 molalities x 10 temperatures"
+  },
+  "table_4": {
+   "printed": 216,
+   "written": 216,
+   "note": "9 molalities x 24 temperatures"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Restacked from side-by-side T blocks to long form by script; no unit conversion. Sanity: Cp_phi and V_phi values within plausible ranges; no monotonic requirement.",
+ "pass2_diff": "Tables 1 and 4: all measured values identical to pass 2 (pass-1-only numbers are the block temperatures repeated in every row)."
+}

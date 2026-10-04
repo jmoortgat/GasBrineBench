@@ -1,0 +1,248 @@
+{
+ "table": "Table I",
+ "page_journal": "6-7",
+ "title_as_printed": "The Bulk and Specific Compressions and Specific Volumes of Aqueous Solutions of Sulfates. Experimental Results over a Pressure Range from 1 to 1000 Bars",
+ "footnotes_as_printed": {
+  "a": "Concentrations computed from density determinations.",
+  "*": "Determined experimentally by Gibson."
+ },
+ "property": "other",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Compression k is the volume decrease of 1 cc of solution for a pressure rise from atmospheric (1 bar) to 1000 bars (title: pressure range from 1 to 1000 bars); bars; thermostat 25 +- 0.02 deg.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "1000",
+   "basis": "unspecified",
+   "what": "upper pressure of the 1 to 1000 bar interval"
+  },
+  "value": {
+   "col": "Bulk compression k x 10^4",
+   "unit": "cm3_per_cm3 (relative volume decrease, 1 to 1000 bar)",
+   "scale": 0.0001,
+   "what": "bulk compression k = decrease in volume of 1 cc of solution; for water k assumed 0.03935 (393.5 x 10^-4) as basis for all solutions"
+  },
+  "value2": {
+   "col": "Sp. vol. v",
+   "unit": "cm3/g (specific volume of solution at 1 bar, 25 C; unit not printed)",
+   "what": "specific volume; asterisked values determined by pycnometer by Gibson, the others from International Critical Tables",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "Molality m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "Table mixes sulfates: Li2SO4, Na2SO4, Cs2SO4, MgSO4, ZnSO4, CdSO4, BeSO4, (NH4)2SO4, CuSO4, Ce2(SO4)3, H2SO4; only Na2SO4 and MgSO4 are in the six-ion set, others kept as rows. Weight fraction of salt x2 also printed.",
+  "volume_basis": "not_applicable",
+  "volume_basis_evidence": "molality; solutions made up directly from weighed amounts of anhydrous salt and water."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    15,
+    23,
+    30,
+    37,
+    44,
+    51,
+    64,
+    68,
+    72
+   ],
+   "reason": "block label row (salt formula)"
+  },
+  {
+   "rows": [
+    22,
+    57,
+    61
+   ],
+   "reason": "second determination line printed below a row: only k (and sometimes specific compression, dPv/x1) given, composition cells blank as printed; values kept in CSV"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Li2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Cs2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "ZnSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CdSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "BeSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "(NH4)2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CuSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Ce2(SO4)3"
+    }
+   ]
+  },
+  {
+   "label_row": 72,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "H2SO4"
+    }
+   ]
+  }
+ ],
+ "row_from_literature": [
+  {
+   "rows": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    38,
+    39,
+    40,
+    42,
+    43,
+    45,
+    52,
+    53,
+    54,
+    55,
+    56,
+    58,
+    59,
+    60,
+    62,
+    63,
+    66,
+    69,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+   ],
+   "reason": "specific volume v taken from International Critical Tables (no asterisk); includes pure-water rows"
+  }
+ ],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "m^1/2 (calculated)",
+  "Sp. compr. dPv x 10^4 (derived)",
+  "dPv/x1 x 10^4 (derived)",
+  "psi_2 (derived, effective volume of the solute from Tammann hypothesis)"
+ ],
+ "conversion_needs": [
+  "value printed x 10^4: multiply by 1e-4",
+  "H2SO4 concentrations flagged a were computed from density determinations; molality up to 130.8"
+ ],
+ "notes": "Stacked blocks as printed; label rows are salt formulas. Last digit of many numbers is printed as a lowered subscript digit; written with a full stop. Pure-water row (x2 = 0) repeated in each block. Where a second line of values is printed below a row (Cs2SO4 k 228.6; (NH4)2SO4 at x2 .15 and .30) it is a separate CSV row with blank composition, and is listed in skip_rows. Printed '....' / '...' kept as '...'."
+}

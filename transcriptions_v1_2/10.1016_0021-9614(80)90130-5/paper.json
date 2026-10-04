@@ -1,0 +1,47 @@
+{
+ "doi": "10.1016/0021-9614(80)90130-5",
+ "first_author": "de Loos",
+ "year": 1980,
+ "journal": "Journal of Chemical Thermodynamics",
+ "source_key": "DELOOS(1980)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one text-layer cell needed correction after image check (Table 1 x=0.873: 21.65 -> 27.65; Table 2 text artefact 623 .O -> 623.0)",
+ "experimental_method": "Synthetic visual method in an optical high-pressure autoclave with sapphire windows: temperature of appearance/disappearance of a second fluid phase at constant overall composition and pressure.",
+ "uncertainties_stated": "T +/- 0.02 K (kept constant within 0.1 K); p +/- 0.02 MPa up to 40 MPa, +/- 0.05 MPa above; x error at most 0.002; T difference between appearance and disappearance of second phase 0.2 K.",
+ "quality_remarks": "Water-rich fluid-fluid phase boundaries near the critical region of propane+water, not a gas-phase water content. Printed values in x=0.900 block not monotonic (41.19 before 40.31; 33.53 before 33.50), probably misprints but kept. Figure 6 caption temperatures (349.5 K etc.) are inconsistent with the 620 K region (likely misprint); not extracted. Propane purity 99.97 mol%.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7,
+   9
+  ],
+  "journal_pages": [
+   198,
+   199,
+   201
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3: critical-curve temperature minima for several n-alkane + water systems, mostly literature values (comparison)"
+ ],
+ "row_counts": {
+  "Table 1": {
+   "printed": "273 data pairs plus 10 block labels",
+   "written": 283
+  },
+  "Table 2": {
+   "printed": 16,
+   "written": 16
+  }
+ },
+ "changes_after_image_check": [
+  "table_1 x=0.873 column 2 row 8: p 21.65 -> 27.65",
+  "table_1 x=0.844 p=32.08: 623..5 -> 623.5 (text artefact)",
+  "table_2 row 0.890/623.0: text '623 .O' -> 623.0 (text-layer artefact)"
+ ],
+ "extraction_notes": "Table 1: 273 (p,T) pairs in 10 blocks; written rows include 10 label rows (283). Text-layer glitch 623..5 -> 623.5 (x=0.844, p=32.08). Blocks stacked column-pair by column-pair.",
+ "pass2_diff": "Tables 1 and 2: 273 pairs (546/546) and 16 critical points (48/48) identical; printed non-monotonic pairs at x=0.900 kept as printed."
+}

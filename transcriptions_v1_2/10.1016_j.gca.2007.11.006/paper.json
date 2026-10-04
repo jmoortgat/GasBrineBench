@@ -1,0 +1,35 @@
+{
+ "doi": "10.1016/j.gca.2007.11.006",
+ "first_author": "Lu",
+ "year": 2007,
+ "journal": "Geochimica et Cosmochimica Acta 72, 412-422",
+ "source_key": "LU(2008)",
+ "experimental_method": "In situ Raman spectroscopy in a high-pressure optical cell; CH4 mole fraction in liquid water in equilibrium with sI methane hydrate (no vapour phase) from the CH4/water Raman peak-area ratio, calibrated on CH4-water liquid-vapour solutions whose solubility came from the Duan and Mao equation of state.",
+ "uncertainties_stated": "Not stated as a single figure; mean absolute deviation of Eq. (7) from the data 2.17%",
+ "quality_remarks": "X(CH4) in Table 2 is derived from PAR through a calibration based on EOS-computed solubilities, so it is not a direct gravimetric or volumetric measurement. Text states sixty measurements but Table 2 and Table A-1 print 44 rows. Journal year 2008 (vol. 72); source_key uses the volume year. Table A-1 (appendix) is internally inconsistent in the text layer (X exp column misaligned in lower rows), not extracted anyway. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   417
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (calibration: PAR plus EOS-calculated X(CH4) and calibration-fit X(CH4); liquid-vapour solubility values are model-generated, not measured)",
+  "Table 3 (calculated molar volume changes and hydration numbers; derived)",
+  "Table 4 (calculated enthalpy and entropy of hydrate dissolution; derived)",
+  "Table A-1 (model Eq. 7 versus experiment, DG, DS; derived)"
+ ],
+ "row_counts": {
+  "Table 2": "printed 44 data rows (2 blocks of 22), written 44"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Every cell of Table 2 compared with the page image; no differences.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the image",
+ "pass2_diff": "Table 2: 44 rows, 176/176 numbers identical."
+}

@@ -1,0 +1,37 @@
+{
+ "doi": "10.1016/j.fluid.2010.02.042",
+ "title": "Solubility measurements for the CH4 + CO2 + H2O system under hydrate-liquid-vapor equilibrium",
+ "authors": "Hallvard Bruusgaard, Juan G. Beltran, Phillip Servio",
+ "first_author": "Bruusgaard",
+ "year": 2010,
+ "journal": "Fluid Phase Equilibria 296, 106-109",
+ "source_key": "BRUUSGAARD(2010)",
+ "experimental_method": "Isothermal-isobaric hydrate-liquid-vapour equilibrium in a stirred crystallizer; hydrate-free liquid sample flashed at room conditions, gas volume measured in a gasometer and analysed by GC to give liquid mole fractions of CH4 and CO2; vapour composition by GC.",
+ "uncertainties_stated": "Standard (k=1): u(T)=0.1 K, u(p)=0.015 MPa, u(yCO2)=0.02, u(xCH4)=0.000040, u(xCO2)=0.00027. Expanded (k=2): 0.2 K, 0.03 MPa, 0.04, 0.000080, 0.00054.",
+ "quality_remarks": "Text abstract/conclusion says temperatures 274 to 288 K (conclusion) vs 274-280 K in the results section and table; table only reaches 280.12 K. Rows 274.13/276.19 etc. are listed at slightly different T for the same nominal isotherm. Temperature scale not stated. Hydrate present in all rows (regime hydrate).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   108
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was clean and every cell matched the page image",
+ "not_extracted_tables": {
+  "Figures 2-4": "same data and literature comparisons shown graphically"
+ },
+ "row_counts": {
+  "table_1": {
+   "printed": 12,
+   "written": 12
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "En-dash in phase labels (H-Lw-V) written as hyphen. Sanity: T 274.02-280.12, p 1.66-4.03 MPa; within each isotherm pressure rises, xCH4 rises and xCO2 falls (consistent with text); yCO2 falls with p. Slight non-monotonic T within a nominal isotherm (278.20 then 278.16) as printed.",
+ "pass2_diff": "Table 1: 12 rows, 60/60 numbers identical."
+}

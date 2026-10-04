@@ -1,0 +1,54 @@
+{
+ "gas": "c2h6",
+ "regime": "",
+ "temperature_scale": "not stated (printed as thermodynamic temperature T/K)",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "conversion_needs": [
+  "atm to Pa if the atm columns are used (1 atm = 101325 Pa); GPa column needs none"
+ ],
+ "page_journal": 3235,
+ "table": "Table III",
+ "title_as_printed": "Henry's Constant H2,1(Psigma,1,T) for Ethane Dissolved in Water as a Function of the Thermodynamic Temperature T a",
+ "footnotes_as_printed": {
+  "a": "delta is the percent deviation from either smoothing eq 22 (CGW) or 23 (BK). Average percent deviation, eq 25: alpha_CGW = alpha_BK = +-0.078"
+ },
+ "property": "henry",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/atm",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "H21(Psigma,T)/GPa",
+   "unit": "GPa",
+   "what": "Henry's constant H_2,1 = lim (f2/x2), fugacity over mole fraction of dissolved gas (mole-fraction basis), as defined in the paper's eq 1-2 (equation text not captured in detail), evaluated at the saturation (vapour) pressure of water at T, including Poynting correction"
+  },
+  "value2": {
+   "col": "H21(Psigma,T)/atm",
+   "unit": "atm",
+   "what": "same quantity in atm (1.01325e5 Pa per atm)"
+  }
+ },
+ "extra_unmapped": [
+  "h21/atm (uncorrected Henry's constant at the experimental total pressure P)",
+  "phi_2 (fugacity coefficient of the gas in the vapour phase, calculated)",
+  "Z (vapour-phase compressibility factor, calculated)",
+  "H21(P,T)/atm (Henry's constant at the experimental pressure P after fugacity correction)",
+  "Poynting cor (calculated)",
+  "delta BK, delta CGW (percent deviations from the authors' smoothing equations, calculated)"
+ ],
+ "notes": "Each row is one experiment (one filled apparatus run). Digit groups printed with a thin space (e.g. 23 099.2) are written without the space. Several rows are derived by the authors from the measured solubility (the apparatus measures gas amounts, pressure and volume); Henry's constants are the authors' direct reported result.",
+ "pressure_note": "P = total equilibrium pressure at the experimental temperature (gas + water vapour), atm"
+}

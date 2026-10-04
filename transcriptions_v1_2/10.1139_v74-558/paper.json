@@ -1,0 +1,30 @@
+{
+ "doi": "10.1139/v74-558",
+ "first_author": "Perron",
+ "year": 1974,
+ "journal": "Can. J. Chem. 52, 3738-3741 (title as printed: Apparent Molal Volumes and Heat Capacities of Alkaline Earth Chlorides in Water at 25 C; authors G. Perron, J. E. Desnoyers, F. J. Millero)",
+ "source_key": "PERRON(1974)",
+ "experimental_method": "Densities with a flow densimeter and relative volumetric specific heats with a flow microcalorimeter, 0.01 to 0.4 M, 25 C; solutions prepared by weight dilution of AgNO3-titrated stock solutions.",
+ "uncertainties_stated": "Relative change in specific heat to +-0.3 % (down to sensitivity limit 1.7e-? J/K/cm3, as printed, text layer garbled); density differences to +-3e-6 g/cm3.",
+ "quality_remarks": "Reagent grade Fisher salts without further purification; agreement with Dunn and Wirth-Bangert densities to about 0.1 cm3/mol except dilute MgCl2 (present phi_V lower). Temperature scale not stated. Only MgCl2 and CaCl2 are in the six-ion salt set; SrCl2 and BaCl2 rows kept.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   3739
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 35 data rows + 4 salt label rows; written 35 + 4"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer dropped the phi_V, sigma-ratio, phi_C and c_p columns, so the whole table was transcribed from the 200 dpi page image (m, c, d-d0 also cross-checked against the text layer: identical). Pressure units not applicable. phi_V and phi_C derived by authors; d-d0 and sigma ratio raw. Sanity: m, d-d0 monotonic within blocks; phi_C and c_p vary smoothly.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer lacked most columns; table read from the image (pass-2 blind re-read advised)",
+ "pass2_diff": "Table 1: 35 rows, 233/233 numbers identical."
+}

@@ -1,0 +1,207 @@
+{
+ "table": "Table 1",
+ "page_journal": 186,
+ "title_as_printed": "Experimental data for the solubility of O2 in aqueous electrolyte solutions at 760 mmHg",
+ "footnotes_as_printed": "none",
+ "property": "ostwald",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "oxygen partial pressure 1 atm (text: 酸素分圧1気圧); table title 'at 760 mmHg'; Ostwald coefficient referred to 1 atm; electrolyte-solution saturated water vapour pressure taken from literature to obtain the gas partial pressure",
+ "columns": {
+  "T": {
+   "col": "Temp C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "L (Ostwald)",
+   "unit": "ostwald_cm3_per_cm3",
+   "what": "Ostwald coefficient L = VG/VL, VG volume of absorbed gas at the measurement temperature and pressure, VL volume of absorbing liquid; corrected for liquid swelling on absorption (expansion coefficient 0.0014 from partial molar volume of O2 31 cm3/mol)"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {},
+  "other_species": "salt set per block by group_rows from the label row; Cs in mol/l of electrolyte solution. NaOH, Na2CO3, NaNO3, KCl, MgCl2, MgSO4, CaCl2, Ca(NO3)2, BaCl2, AlCl3, Al2(SO4)3 (NaNO3, Ca(NO3)2, BaCl2, AlCl3, Al2(SO4)3, NaOH, Na2CO3 and KCl are as printed; those outside the six-ion set are kept)"
+ },
+ "volume_basis": "solution",
+ "volume_basis_evidence": "L = VG/VL with VL '吸収液体積' (absorbing liquid volume), liquid being the electrolyte solution; Cs in mol/l",
+ "gas_basis": "not_applicable",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    24,
+    55,
+    79,
+    88,
+    96,
+    110,
+    118,
+    148,
+    159,
+    172,
+    184
+   ],
+   "reason": "electrolyte label rows (block headings)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.per_row.NaOH",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.per_row.KCl",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "composition.per_row.Na2CO3",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 79,
+   "sets": [
+    {
+     "path": "composition.per_row.NaNO3",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 88,
+   "sets": [
+    {
+     "path": "composition.per_row.BaCl2",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 96,
+   "sets": [
+    {
+     "path": "composition.per_row.CaCl2",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 110,
+   "sets": [
+    {
+     "path": "composition.per_row.Ca(NO3)2",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 118,
+   "sets": [
+    {
+     "path": "composition.per_row.MgSO4",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 148,
+   "sets": [
+    {
+     "path": "composition.per_row.MgCl2",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 159,
+   "sets": [
+    {
+     "path": "composition.per_row.AlCl3",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 172,
+   "sets": [
+    {
+     "path": "composition.per_row.MgSO4",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 184,
+   "sets": [
+    {
+     "path": "composition.per_row.Al2(SO4)3",
+     "value": {
+      "col": "Cs mol/l",
+      "unit": "mol/L"
+     }
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molarity (mol per litre of solution) to molality needs solution density",
+  "Temp is printed only on the first row of each temperature sub-block; filled down in the CSV"
+ ],
+ "notes": "Four printed column blocks (two upper, two lower per page layout) were stacked in reading order: left column (NaOH, KCl), second (Na2CO3, NaNO3, BaCl2), third (CaCl2, Ca(NO3)2, MgSO4 15 and 25 C), fourth (MgCl2, AlCl3, MgSO4 35 C, Al2(SO4)3). Blank spacer lines between temperature sub-blocks are not rows. For NaOH, concentration is the total sodium expressed as NaOH; 1-2% of the Na2CO3 present was ignored by the authors (text). Printed '0.008C0' in the scan (NaOH 25 C, 3.613) read as 0.00800."
+}

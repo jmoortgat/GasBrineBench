@@ -1,0 +1,67 @@
+{
+ "table": "Table I",
+ "page_journal": 321,
+ "title_as_printed": "Water Content of a CO2-CH4 Mixture Containing 5.31 mol % CH4 in CO2 in Equilibrium with a H2O(l)-Rich Phase along the Three-Phase Locus",
+ "footnotes_as_printed": {
+  "a": "Experimental 3-phase critical end point condition.",
+  "b": "Initial hydrate formation and quadruple point, estimated."
+ },
+ "property": "y_h2o",
+ "gas": "co2-ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "printed as 'pressure, psia/MPa'; system pressure measured by a transducer; the paper does not say whether it is total or partial, it is the cell pressure of the three-phase locus (total)",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water (no salt); water mole fraction is of the sampled CO2-CH4-rich phase, water included",
+ "columns": {
+  "T": {
+   "col": "temp F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "pressure MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "10^3 x mole fracn of water",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Gas phase is a certified CO2-CH4 mixture containing 5.31 mol % CH4; the water-rich liquid is pure water (triply distilled)"
+ },
+ "skip_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    1,
+    3,
+    5
+   ],
+   "regime": "lle",
+   "reason": "phase sampled is the CO2-rich liquid (L2) of the three-phase locus, not the vapor"
+  },
+  {
+   "rows": [
+    7
+   ],
+   "regime": "hydrate",
+   "reason": "estimated initial hydrate formation and quadruple point; no experimental value"
+  }
+ ],
+ "extra_unmapped": [
+  "temp F (same temperature in Fahrenheit)",
+  "pressure psia (same pressure in psia)"
+ ],
+ "conversion_needs": [
+  "x scale 1e-3",
+  "temp C and pressure psia columns are redundant with temp F / MPa"
+ ],
+ "notes": "Each row gives the water content of one sampled phase (vapor or liquid) of the CO2-CH4 mixture in equilibrium with a water-rich liquid. Row 1 temperature printed 60/15.66 although 60 F = 15.56 C (same T as row 0); kept as printed, likely misprint. Row 6 (83.1 F, 28.39 C) and row 7 (53.0 F, 11.67 C) have no water content; row 7 is an estimated point. The column printed 'phase sampled' of rows 6-7 reads '3-phase critical end point' over two lines; written once on row 6.",
+ "quality_remarks": "audit 2026-10-02: row 1 prints temperature 60 F / 15.66 C, but 60 F = 15.56 C (same isotherm as row 0; Table III lists both at 15.6 C / 60 F); the F column is internally consistent for all rows, so T is read from the temp F column."
+}

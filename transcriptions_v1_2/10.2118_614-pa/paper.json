@@ -1,0 +1,36 @@
+{
+ "doi": "10.2118/614-PA",
+ "first_author": "Lukacs",
+ "year": 1963,
+ "journal": "Society of Petroleum Engineers Journal 3(4), 293-297",
+ "source_key": "LUKACS(1963)",
+ "experimental_method": "Gas chromatographic determination of water in a vapour phase equilibrated with water in a rocking, windowed 316 stainless-steel cell at 160 F; vapour sample expanded through heated lines into a chromatograph (Carbowax 400 on Teflon column, helium carrier), calibrated by saturating methane/helium/CH4-H2S mixtures with water at atmospheric pressure at fixed temperatures.",
+ "uncertainties_stated": "Per-point maximum-minimum deviation of individual samples is printed in the table (column); chromatograph response linear from 0 to about 43,000 ppm water.",
+ "quality_remarks": "Pure-methane check measurements (to 1,495 psia at 160 F) agreed with Olds, Sage and Lacey (shown only in Fig. 4, not tabulated). Authors note the effect of H2S on water content is smaller than expected from theory. Water used as confining fluid for CH4-H2S runs, so H2S and CH4 dissolved in the water; vapour composition varied with pressure. Basis of the ppm unit and of 'per cent' H2S is not stated in the table or text; Fig. 4 caption says mole percent H2S and plots mole fraction of water. Only 6 data points, system is outside the plain gas list (CH4 + H2S).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   297
+  ]
+ },
+ "not_extracted_tables": [
+  "Fig. 4 (methane and CH4-H2S water content at 160 F, including the pure-methane verification points): a figure, no tabulated values; Fig. 1 literature comparison: figure."
+ ],
+ "row_counts": {
+  "table_1": "printed 6 data rows, written 6; no label or summary rows"
+ },
+ "changes_after_image_check": [
+  "table 1 row 5 (1392), column H2S Content: 27,5 -> 27.5 (text layer comma, image shows decimal point)",
+  "table 1 row 3 (611), column Max-Min Deviation: - 0,26; + 1 -> - 0.26; + 1",
+  "table 1 header 'Chart Unite' printed typo for Units; written as 'Units'"
+ ],
+ "extraction_notes": "Header 'Chart Unite' as printed is a typo of 'Units'. The Max-Min Deviation column is kept as printed text. Sanity: at a given H2S content water content falls with pressure (rows 1395/1010/611/358 psia: 4750 to 15000 ppm as pressure falls, with H2S rising 16 to 21%); rows 1392 and 925 psia at 27.5 and 29% H2S. No replicates.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer used decimal commas (27,5 and 0,26) that were corrected after the image check; table is small but the corrections count under convention 14.",
+ "pass2_diff": "Table 1: 6 rows; all measured values identical; the deviation column differs only in printed signs (pass 2 kept '-2.6; +1.7', pass 1 dropped signs): deviation is not a measured quantity and is not mapped."
+}

@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/ie50403a012",
+ "first_author": "Reamer",
+ "authors": "H. H. Reamer, R. H. Olds, B. H. Sage, W. N. Lacey",
+ "title": "Phase Equilibria in Hydrocarbon Systems. Composition of Dew-Point Gas in Ethane-Water System",
+ "year": 1943,
+ "journal": "Industrial and Engineering Chemistry 35(7), 790-793",
+ "source_key": "REAMER(1943)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "3 cells needed correction after image check (garbled OCR in the text layer)",
+ "experimental_method": "Gas phase of a heterogeneous ethane-water mixture over mercury sampled isobarically; water removed in a -140 F partial condenser, ethane quantity from pressure change in an isochoric chamber.",
+ "uncertainties_stated": "mole fraction of water within 3 percent of reported value, perhaps worse at lower temperatures",
+ "quality_remarks": "Pressure in psia, temperatures in F (scale not stated). Table II (smoothed values at even P and T) is not extracted. Ethane purified by fractionation; water redistilled and degassed. Suspected misprint in the original, cell kept: 220 F, 536.6 psia, y_H2O x10^3 = 3.362. Water vapour pressure at 220 F is about 17.2 psia, so y is about 0.032 at that pressure; the printed value is about a factor 10 too low and probably should read 33.62 (compare 160 F, 320.8 psia: 15.57 against Psat/P = 14.8). Rows at 400 F are printed in non-monotonic pressure order.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   792
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II (p. 793)",
+   "reason": "smoothed values from graphical interpolation, not measured"
+  }
+ ],
+ "row_counts": {
+  "Table I": "printed 41 data rows; written 41 data rows plus 7 label rows"
+ },
+ "changes_after_image_check": [
+  "Table I 160F row 1 pressure: 8992.(f\" -> 8992.0",
+  "Table I 160F row 1 water: *1.960 -> 1.960",
+  "Table I 340F row 1 water: *27.96 -> 27.96 (also 460F row 1 '1*10.79' -> 110.79)"
+ ],
+ "extraction_notes": "Sanity: y_h2o decreases with pressure at fixed T except at 100 F minimum near 6000-7000 psia and low-P rows; 400 F rows printed in non-monotonic pressure order (4945.8, 3989.2, then 9843.6 ...) as in print.",
+ "pass2_diff": "Table I: 82/82 numbers identical."
+}

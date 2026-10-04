@@ -1,0 +1,58 @@
+{
+ "table": "Table I",
+ "page_journal": 3064,
+ "title_as_printed": "Isotonic Concentrations at 25 deg",
+ "footnotes_as_printed": {
+  "a": "Saturated solution.",
+  "b": "Compared with the standard through urea."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium through the vapour phase at the solutions' own vapour pressure)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "NaCl",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "NaCl molality (reference); empty where no NaCl cup was in the run"
+  },
+  "value2": {
+   "col": "KCl",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "KCl molality in isopiestic equilibrium with the other solutes of the same run line"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "NaCl",
+    "unit": "mol/kg"
+   },
+   "KCl": {
+    "col": "KCl",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water solutions, one solute per cup (NaCl or KCl is the salt; H2SO4, sucrose, urea, glycerol are separate cups, not co-dissolved). All values of one run (the printed line plus its blank-Run duplicate line) are isopiestic with each other; duplicate-cup lines carry second final values for cups that had two cups with the same initial solution (p.3064)."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Table IIa, IIb (smoothed osmotic coefficients) not extracted",
+  "H2SO4, Sucrose, Urea, Glycerol columns (separate-cup solutes in the same runs; molality per kg water)"
+ ],
+ "conversion_needs": [],
+ "notes": "Layout kept as printed: one CSV row per printed line, six solute columns; a line with only some columns filled is a cup set lacking the others. Blank Run cell = second final value for the same run (duplicate cup). Superscript a/b recorded in note column. Molality is per kg water (text: moles per kg of water). H2SO4 has a molality column here but is out of the six-ion set. The value/value2 convention is a pair for the builder; the other solutes are listed in extra_unmapped. Pairing of a second-line value with its partners is by run, not by line (row 15 KCl 4.8051 has partners NaCl 4.1983 and urea 11.750 on the previous line).",
+ "quality_remarks": "Saturation flags (note column): NaCl in runs 1 and 2, urea in run 4, KCl in run 3, sucrose in run 5 are saturated cups. Run 5 (footnote b) was compared with the standard through urea (no NaCl cup). Printed osmotic coefficients appear only in the smoothed Tables IIa/IIb (not extracted)."
+}

@@ -26,8 +26,8 @@ def repo_root() -> Path:
 
 @pytest.fixture(scope="session")
 def all_rows():
-    """Every row in the database, including the lle-regime ones."""
-    return gbb.load(exclude_tags=None)
+    """Every row in the database, including the lle-regime ones and every flagged row."""
+    return gbb.load(exclude_tags=None, exclude_flags=None)
 
 
 @pytest.fixture(scope="session")

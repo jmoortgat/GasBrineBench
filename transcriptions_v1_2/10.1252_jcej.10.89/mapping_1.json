@@ -1,0 +1,68 @@
+{
+ "table": "Table 1",
+ "page_journal": 91,
+ "title_as_printed": "Comparison of experimental solubilities of oxygen and nitrogen in pure water with literature values (Ostwald coefficient)",
+ "footnotes_as_printed": {
+  "*": "Averaged value. (applies to Lit. (1) column; Lit. (1) = Battino and Clever, Chem. Rev. 66, 395 (1966))"
+ },
+ "property": "ostwald",
+ "gas": "per_row",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Abstract/text: 'oxygen (nitrogen) partial pressure of 1 atm'; total pressure in the vessel was recorded and the water vapour pressure of the solution (Timmermans table for Na2SO4; for Na2SO3 the Na2SO4 curve at same molarity was used) enters the evaluation of L, i.e. gas partial pressure 1 atm excluding water vapour",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'L = VG/VL' (Eq. 1): 'the ratio of the volume of gas absorbed to the volume of the absorbing liquid'; Nomenclature: 'VG volume of gas dissolved in aqueous salt solution at observed temperature and pressure [cm3]', 'VL volume of aqueous salt solution [cm3]'; Cs liquid-phase concentration of salt [mol/l]. A small liquid volume increase due to gas absorption was corrected with partial molal volumes (31 cm3/mol O2, 40 cm3/mol N2).",
+ "columns": {
+  "gas": {
+   "col": "Gas",
+   "note": "O2 rows 0-2, N2 row 3"
+  },
+  "T": {
+   "col": "Temp. [C]",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "constant": "1"
+  },
+  "value": {
+   "col": "Exptl. Average",
+   "unit": "ostwald_L_dimensionless"
+  },
+  "n_determinations": {
+   "col": "Exptl. Determ.",
+   "unit": "count"
+  },
+  "uncertainty": {
+   "col": "Exptl. Aver. dev. [%]",
+   "unit": "percent_average_deviation"
+  },
+  "value2": {
+   "col": "Lit. (1)",
+   "unit": "ostwald_L_dimensionless",
+   "what": "literature average (Battino and Clever 1966)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "conversion_needs": [
+  "Ostwald coefficient (per cm3 of liquid, at measurement T and gas partial pressure 1 atm) to mole fraction needs water molar volume"
+ ],
+ "notes": "Pure water validation measurements; value is the mean of n determinations (column Determ.).",
+ "gas_per_row": {
+  "col": "Gas",
+  "map": {
+   "O2": "o2",
+   "N2": "n2"
+  }
+ }
+}

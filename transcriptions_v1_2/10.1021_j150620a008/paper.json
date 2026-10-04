@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/j150620a008",
+ "first_author": "Rogers",
+ "year": 1981,
+ "journal": "J. Phys. Chem. 85(20), 2886-2895 (Rogers and Pitzer; PDF page 1 begins with another article's end)",
+ "source_key": "ROGERS(1981)",
+ "experimental_method": "Flow calorimeter (differential, reference vs working side) measuring heat capacity of aqueous Na2SO4 from 30 to 200 C at 1 bar/saturation pressure and at 200 bar; solutions made by weight.",
+ "uncertainties_stated": "Maximum precision of a specific heat capacity measurement roughly +-0.002 J g-1 K-1; ratio uncertainty +-0.0005 (1.7% in (ps*pw... ) ratio); pressure monitored to +-1 bar; temperature stable to 0.01 K.",
+ "quality_remarks": "Authors caution the few data points above 1.5 m (supersaturated at room temperature, saturation 1.56 m at 22 C) should be used with caution. Densities at 25 C used in analysis are from literature or estimated from compressibilities (200 bar, >0.33 m). The 474.68 K block is printed with only 4 rows (to 0.2491 m); the block looks truncated in the print.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   2890,
+   2891
+  ]
+ },
+ "not_extracted_tables": "Table II (Pitzer equations), Table III (fit parameters), Table IV (mean activity coefficients, calculated) are model/derived; Tables V-VII are supplementary material not in the PDF.",
+ "row_counts": {
+  "table_1": "printed 71 data rows in 8 T/P blocks; written 71 data rows plus 8 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in all cells. phiCp is derived by authors from the ratio; ratio is value2. Pressure printed differs between the ratio column and the other columns (see pressure_note). Temperature scale not stated.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the image",
+ "pass2_diff": "Table I: every pass-1 number occurs in pass 2; the pass-2-only numbers are the printed pressure sub-header strings; the 474.68 K block prints 4 rows only in both passes."
+}

@@ -74,6 +74,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_DATA_DIR = os.path.join(HERE, "data")
 DEFAULT_BIBS = [
     os.path.join(HERE, "bib", "references.bib"),
+    os.path.join(HERE, "bib", "references_v1_2.bib"),
 ]
 
 # Superseded intermediates that must not be counted twice.
@@ -160,6 +161,13 @@ _HOU_JSCF78 = (
 )
 
 SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
+    "king": ("KING(1992)",
+             "no year and a lower-case surname in the key. The 62 rows (36 in solubility.csv, 26 in y_h2o.csv) are the King, Mubarak, Kim & Bott (1992) "
+             "binary named in data/README.md (yh2o_co2_binary lists 'King 1992'); the v1.2 bibliography added further King records, "
+             "so the bare surname no longer resolves uniquely and is pinned to the 1992 paper here."),
+    "SAKO": ("SAKO(1991)",
+             "no year in the key. The 22 rows (14 in solubility.csv, 8 in y_h2o.csv) are the Sako et al. (1991) binary named in data/README.md "
+             "(yh2o_co2_binary lists 'Sako 1991'); pinned to that paper for the same reason as `king`."),
     "RUMPF": ("RUMPF(1993)",
               "the transcription header reads '#RUMPF (1993)' with a space "
               "before the parenthesis, so the year does not parse and the "
@@ -676,6 +684,18 @@ def _show(path: str) -> str:
     return rel if not rel.startswith(os.sep) else path
 
 
+def load_citation_counts(data_dir: str) -> dict:
+    """doi (lower case) -> OpenAlex citation count, from data/provenance/citation_counts.csv if present."""
+    path = os.path.join(data_dir, "provenance", "citation_counts.csv")
+    out = {}
+    if os.path.exists(path):
+        with open(path, newline="") as fh:
+            for r in csv.DictReader(fh):
+                if r.get("cited_by_openalex", "") != "":
+                    out[r["doi"].strip().lower()] = r["cited_by_openalex"]
+    return out
+
+
 def render(stats, files, data_dir, bib_paths, missing_bibs, idx,
            fixes_used=None) -> tuple[str, list[dict]]:
     documented, no_doi, placeholder, needs = [], [], [], []
@@ -785,15 +805,23 @@ def render(stats, files, data_dir, bib_paths, missing_bibs, idx,
     # ---- bibliography -----------------------------------------------------
     w("## Bibliography")
     w("")
-    w("| Citation key | Reference | DOI | URL |")
-    w("|---|---|---|---|")
+    counts = load_citation_counts(data_dir)
+    if counts:
+        w("*Cited by* is the OpenAlex citation count of the paper on the date")
+        w("given in `data/provenance/citation_counts.csv`. It depends on the")
+        w("field, the age and the indexing of the paper and is **not** a")
+        w("measure of the quality of its data; it is recorded as metadata only.")
+        w("")
+    w("| Citation key | Reference | DOI | Cited by | URL |")
+    w("|---|---|---|---:|---|")
     for st, entry, how, doi, url in documented + no_doi:
         key = label[st.cid]
         ref = format_reference(entry)
         note = "" if how == "key" else f" <sup>({how})</sup>"
         doi_cell = f"`{doi}`" if doi else "*none on record*"
         url_cell = f"[link]({url})" if url else "-"
-        w(f"| `{key}` | {ref}{note} | {doi_cell} | {url_cell} |")
+        cb = counts.get((doi or "").lower(), "")
+        w(f"| `{key}` | {ref}{note} | {doi_cell} | {cb} | {url_cell} |")
     w("")
 
     # ---- coverage ---------------------------------------------------------

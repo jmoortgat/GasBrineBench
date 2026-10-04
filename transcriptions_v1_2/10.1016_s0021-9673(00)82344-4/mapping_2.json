@@ -1,0 +1,79 @@
+{
+ "table": "Table II",
+ "page_journal": 166,
+ "title_as_printed": "MOLE FRACTION SOLUBILITY, x2, OF N2/O2 DISSOLVED IN H2O AT 298 K",
+ "footnotes_as_printed": "No table footnotes printed. Text footnote: 1 atm = 101.325 kPa; Torr = atm/760.",
+ "property": "solubility_x",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column P_x2 (atm) is the partial pressure of the gas in the N2/O2 mixture (header as printed; atm = 101.325 kPa); total pressure of the mixture not stated in the table",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298"
+  },
+  "P": {
+   "col": "P_x2 (atm)",
+   "unit": "atm",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "x 10^4 Obs.",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  },
+  "value2": {
+   "col": "x 10^4 Calc. (Table I)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "what": "Henry's-law value at the partial pressure, calculated by the authors from the Table I solubility of the pure gas",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt; N2/O2 gas mixture (partial pressures 0.486 and 0.514 atm)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2
+   ],
+   "reason": "gas label rows (N2, O2); the gas is set through group_rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    }
+   ]
+  },
+  {
+   "label_row": 2,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    }
+   ]
+  }
+ ],
+ "gas_basis": "not_applicable",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction solubility; no per-volume unit",
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "atm to Pa",
+  "mole fraction printed x 1e-4"
+ ],
+ "notes": "Two measurements, one per gas, from a single N2/O2 mixture equilibrated with water at 298 (printed as 298 K). Gas label printed beside the data row; written as its own label row."
+}

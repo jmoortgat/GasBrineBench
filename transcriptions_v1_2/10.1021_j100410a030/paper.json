@@ -1,0 +1,39 @@
+{
+ "doi": "10.1021/j100410a030",
+ "first_author": "Naghibi",
+ "year": 1986,
+ "journal": "J. Phys. Chem. 90, 4621-4623",
+ "source_key": "NAGHIBI(1986)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell of Table I matched the 200 dpi page image; no corrections",
+ "experimental_method": "Direct microcalorimetric measurement of the heat of solution of methane (99.99%) in water, 0 to 50 C.",
+ "uncertainties_stated": "Table I: twice the standard error per temperature and number of determinations.",
+ "quality_remarks": "Nonreproducible results above 50 C attributed to water vapour condensation in lines. Two rows (288.15, 298.15 K) are from the authors' earlier work (refs 11, 27). Authors compare favourably with Rettich et al. van't Hoff values.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   4622
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "values of dH0 at round temperatures are from the authors' least-squares Taylor fit (eq 1) and literature van't Hoff/calorimetric values: derived/fitted"
+  },
+  {
+   "table": "Table III",
+   "reason": "heat-capacity change and its derivative derived from fit and from van't Hoff analysis: derived"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 13, written 13"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: dH0 monotonic increasing with T (less negative); temperatures 273.24-323.17 K; no replicates. Value and +/- split into two columns. Journal page 4621 begins with another article.",
+ "pass2_diff": "Table I: 13 rows, 52/52 numbers identical."
+}

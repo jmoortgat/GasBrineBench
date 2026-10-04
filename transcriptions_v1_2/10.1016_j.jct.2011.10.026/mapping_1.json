@@ -1,0 +1,45 @@
+{
+ "table": "Table 5",
+ "page_journal": 11,
+ "title_as_printed": "Water content for CO2 in equilibrium with hydrates at 13.79 MPa.",
+ "footnotes_as_printed": {
+  "a": "Deviation = 100 x (x_exp - x_pred)/x_exp.",
+  "b": "AAD = (100/N) sum |x_i,exp - x_i,cal / x_i,exp|."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "13.79 MPa stated in the table title (abstract misprints 13.9 MPa); total cell pressure held constant by N2 injection during sampling (sect. 2.3), basis not otherwise stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "13.79",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^6 y_w/mol Exp",
+   "unit": "mole_fraction_water_in_gas_rich_phase",
+   "scale": 1e-06
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure CO2 with deionised water; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "VPT + NDD, CPA, SRK + HV model predictions",
+  "100 Deviation columns (calculated by authors from models)"
+ ],
+ "conversion_needs": [],
+ "notes": "Water content of CO2 in equilibrium with CO2 hydrate (13.79 MPa); the CO2-rich phase is liquid at these T. Unit printed as 10^6 y_w/mol, taken as mole fraction. The printed AAD summary row is not in the CSV. Table covers 253.15-277.15 K; rows at T < 273.15 K are below 273 K."
+}

@@ -1,0 +1,60 @@
+{
+ "table": "Table 1",
+ "page_journal": 89,
+ "title_as_printed": "Mole Fraction of CH4 in Water at Given Pressures and Temperatures",
+ "footnotes_as_printed": {
+  "a": "H, Lw, and V are the solid hydrate, liquid water, and vapor, respectively"
+ },
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P/bar given as the experimental pressure of the cell, kept constant by CH4 addition; the paper does not say whether it is total, gauge or absolute; for H-Lw rows the authors note the relevant fugacity is at the three-phase equilibrium pressure not the experimental pressure",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/bar",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xeq",
+   "unit": "mole_fraction_gas_in_aqueous_phase"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "gas_basis": "not_applicable",
+ "volume_basis": "not_applicable",
+ "skip_rows": [],
+ "group_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12
+   ],
+   "regime": "hydrate",
+   "reason": "phases present column contains H (solid hydrate)"
+  }
+ ],
+ "extra_unmapped": [
+  "phases present (H, Lw, V code; used for row_regime_overrides)"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed values use a thin space as digit-group separator (0.001 170); written without the space (0.001170). Rows 3,4,8,9,13,14 (phases Lw-V) are hydrate-free. Solubility measured by flash of a filtered liquid sample in a Ruska gasometer and corrected with the room-temperature solubility of CH4 from tables."
+}

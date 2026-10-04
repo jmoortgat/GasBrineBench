@@ -1,0 +1,74 @@
+{
+ "doi": "10.1007/bf00973444",
+ "first_author": "Oakes",
+ "authors": "Charles S. Oakes, John M. Simonson, Robert J. Bodnar",
+ "year": 1995,
+ "journal": "Journal of Solution Chemistry 24(9), 897-916",
+ "title": "Apparent Molar Volumes of Aqueous Calcium Chloride to 250 C, 400 bars, and from Molalities of 0.242 to 6.150",
+ "source_key": "OAKES(1995)",
+ "experimental_method": "Relative densities of CaCl2(aq) (0.242 to 6.150 mol/kg) measured against water with two high-pressure vibrating-tube densimeters at 25 to 250 C and near 70 and 400 bar; tubes calibrated with H2O-D2O, H2O-NaCl(aq) and H2O-Ar pairs; stock solutions made from CaCl2.2H2O, the 6.150 m stock analysed by desiccation and by 25 C density.",
+ "uncertainties_stated": "Table V gives upper limits on the statistical error of the density difference (10^6 d_rho_err: 170, 200, 200, 250, 300, 400 at 25, 50, 100, 150, 200, 250 C; exceptions 300 at 2.7917 m (50 C), 1200 at 3.8402 m and 650 at 4.9573 m (100 C)) and of V_phi (0.1, 0.3, 0.4, 0.4, 0.4, 0.6 cm3/mol at the lowest molality); the authors say errors in calibrating-fluid densities were ignored so d_rho errors are understated. Stock-solution molality 6.150+-0.005.",
+ "quality_remarks": "The printed pressure of a nominal 70 or 400 bar block varies from row to row (e.g. 70.3-73.8 bar at 25 C, 405-411 bar at 200-250 C); each row's own printed pressure is used. Apparent molar volume V_phi is the authors' calculation; the measured density difference is in the last column. Printed values that look inconsistent, kept as printed: 249.76 C, 71.4 bar, 1.4990 m has rho0 = 0.803081 (six decimals) and 10^3 d_rho = 52.72 (neighbouring molalities 106.31 at 0.9867 m and 152.53 at 1.4990 m, 71.3 bar, suggest 152.72 was intended); 149.82 C, 71.0 bar, m printed as 0.242 (three decimals) with V_phi = 18.29, far above the trend (10.57 at 0.4873 m, 12.68 at 0.7354 m); 249.80 C, 405.0 bar, 0.2416 m has 10^3 d_rho = 26.6 (one decimal). These are likely misprints in the paper, not extraction errors (confirmed on the page image). Highest-temperature low-molality V_phi values are strongly negative and error-sensitive. Header in the 1995 volume: J. Solution Chem. Vol. 24, No. 9, p. 897 on.",
+ "how_extracted": "pdf_text_layer (OCR layer; parsed with a script from pdftotext -layout), checked row by row against the page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   900,
+   901,
+   902,
+   903
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: fitting parameters of the Pitzer model (model parameters)",
+  "Table III: coefficients of the compressibility-type pressure terms (model parameters)",
+  "Table IV: calculated (smoothed) apparent molar volumes at round molalities and 0.1/200/400 bar (model-generated)",
+  "Table V: upper limits on statistical errors (derived, quoted in uncertainties_stated)"
+ ],
+ "row_counts": {
+  "table_1": "printed 132 data rows (12 blocks), written 132; no label rows"
+ },
+ "changes_after_image_check": [
+  "data row 39: 50.03 406.0 2.7827 30,31 -0.02 1.00493 207.60 -> 50.03 406.0 2.7827 30.31 -0.02 1.00493 207.60",
+  "data row 42: 50.04 407.0 0.9857 26.77 -0.05 1,00496 81.14 -> 50.04 407.0 0.9857 26.77 -0.05 1.00496 81.14",
+  "data row 44: 50.04 407.0 0.4863 25.53 0.31 1,00496 41.19 -> 50.04 407.0 0.4863 25.53 0.31 1.00496 41.19",
+  "data row 45: 50.03 406,0 0.2416 25.14 1.15 1,00493 20.69 -> 50.03 406.0 0.2416 25.14 1.15 1.00493 20.69",
+  "data row 46: 99.56 72.3 6,1500 33,39 -0.14 0.96202 389.64 -> 99.56 72.3 6.1500 33.39 -0.14 0.96202 389.64",
+  "data row 49: 99.55 71.7 2.7917 27.24 0,10 0.96200 212.18 -> 99.55 71.7 2.7917 27.24 0.10 0.96200 212.18",
+  "data row 51: 99.56 71.5 0.8767 22,02 0.15 0.96199 74.36 -> 99.56 71.5 0.8767 22.02 0.15 0.96199 74.36",
+  "data row 54: 99.56 71.4 0.7354 21,37 0.08 0.96198 63.02 -> 99.56 71.4 0.7354 21.37 0.08 0.96198 63.02",
+  "data row 55: 99.56 72.2 0.4873 20,29 0,19 0.96202 42.48 -> 99.56 72.2 0.4873 20.29 0.19 0.96202 42.48",
+  "data row 56: 99.56 71.0 0.2421 18.25 -0,19 0.96196 21.67 -> 99.56 71.0 0.2421 18.25 -0.19 0.96196 21.67",
+  "data row 57: 99.55 411.0 6.1500 34,28 0.08 0.97688 386.10 -> 99.55 411.0 6.1500 34.28 0.08 0.97688 386.10",
+  "data row 62: 99.56 408.0 1.4990 25.79 -0.21 0,97675 121.05 -> 99.56 408.0 1.4990 25.79 -0.21 0.97675 121.05",
+  "data row 65: 99.56 408,0 0.4863 22.74 0.09 0.97675 41.72 -> 99.56 408.0 0.4863 22.74 0.09 0.97675 41.72",
+  "data row 67: 149.83 74.0 6.1500 30.85 -0.36 0,92110 398,18 -> 149.83 74.0 6.1500 30.85 -0.36 0.92110 398.18",
+  "data row 68: 149.83 73.6 4.9573 28.32 -0.07 0.92108 343,29 -> 149.83 73.6 4.9573 28.32 -0.07 0.92108 343.29",
+  "data row 71: 149.82 73.5 1.8057 18.03 -0.38 0,92108 152.41 -> 149.82 73.5 1.8057 18.03 -0.38 0.92108 152.41",
+  "data row 72: 149.83 71o0 1.4990 17.01 0.02 0.92094 128.58 -> 149.83 71.0 1.4990 17.01 0.02 0.92094 128.58",
+  "data row 73: 149.83 71.0 1.4990 16.80 -0.19 0,92094 128.87 -> 149.83 71.0 1.4990 16.80 -0.19 0.92094 128.87",
+  "data row 74: 149.83 71.0 0.9867 14.21 -0.04 0.92094 87,83 -> 149.83 71.0 0.9867 14.21 -0.04 0.92094 87.83",
+  "data row 89: 199.79 72.6 6.1500 25,88 0.20 0.86927 415.59 -> 199.79 72.6 6.1500 25.88 0.20 0.86927 415.59",
+  "data row 100: 199.80 411.0 6,1500 28.33 -0.06 0.89188 406.96 -> 199.80 411.0 6.1500 28.33 -0.06 0.89188 406.96",
+  "data row 106: 199.79 413.0 0.9857 6,46 -0.41 0.89202 92.00 -> 199.79 413.0 0.9857 6.46 -0.41 0.89202 92.00",
+  "data row 107: 199.80 411.0 0.8723 5,40 -0,44 0.89188 82.26 -> 199.80 411.0 0.8723 5.40 -0.44 0.89188 82.26",
+  "data row 117: 249.76 71.6 0.9867 -25.47 -0.07 0,80311 106.31 -> 249.76 71.6 0.9867 -25.47 -0.07 0.80311 106.31",
+  "data row 118: 249.79 71.3 0.7354 -30,33 0.67 0,80303 81.39 -> 249.79 71.3 0.7354 -30.33 0.67 0.80303 81.39",
+  "data row 120: 249,76 71.4 0.2421 -47,69 0.31 0.80308 29.30 -> 249.76 71.4 0.2421 -47.69 0.31 0.80308 29.30",
+  "data row 121: 249.78 407.0 6.1500 21.89 0.15 0,83530 428.10 -> 249.78 407.0 6.1500 21.89 0.15 0.83530 428.10",
+  "data row 122: 249,78 407,0 4.9516 17.63 -0.12 0.83530 371.09 -> 249.78 407.0 4.9516 17.63 -0.12 0.83530 371.09",
+  "data row 123: 249.78 407.0 3.8317 12.73 -0,08 0,83530 308.63 -> 249.78 407.0 3.8317 12.73 -0.08 0.83530 308.63",
+  "data row 124: 249.79 405,0 2,7827 6.97 0.40 0.83512 240.51 -> 249.79 405.0 2.7827 6.97 0.40 0.83512 240.51"
+ ],
+ "extraction_notes": "The text layer read most printed decimal points as commas in 30 rows; every such cell was corrected to a full stop after checking the image (listed above), plus '71o0' -> '71.0'. All other cells of the text layer matched the page images. Block sizes (printed = written): 13, 11, 12, 10, 11, 10, 12, 10, 11, 10, 11, 11. Sanity checks: 10^3 d_rho increases with m within every block except the 249.76 C row flagged above; replicate rows kept (24.96 C 0.7356 m; 50.0 C 2.7917 m; 149.8 C 1.4990 m; 199.8 C 2.7917 m; 249.8 C 1.4990 m, the last pair at 71.2/71.3 bar). Temperatures are the printed values (e.g. 24.97), pressures the printed bars.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "the text layer is an OCR layer and 30 rows needed correction (comma decimals, one 'o' for zero) after the image check",
+ "pass2_diff": "Table I: 132 rows, 924/924 numbers identical; printed oddities (249.76 C 1.4990 m, 149.82 C 0.242 m) kept and flagged."
+}

@@ -1,0 +1,52 @@
+{
+ "doi": "10.1016/0021-9614(84)90132-0",
+ "first_author": "Olofsson",
+ "year": 1984,
+ "journal": "J. Chem. Thermodynamics 16, 1041-1052",
+ "source_key": "OLOFSSON(1984)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one cell needed correction after the image check (text layer), and the text layer lacked the N column for the O2 block and had several broken digits that were repaired; second blind pass recommended",
+ "experimental_method": "Flow microcalorimetry (LKB twin-thermopile instrument): small gas volumes (water-saturated, from a syringe at 298.15 K) injected into a stream of de-aerated water at 288, 298 and 308 K; enthalpy of solution from the heat per mole of gas injected.",
+ "uncertainties_stated": "Temperatures correct within 0.03 K; delta T for heat capacity < 0.01 K; atmospheric pressure within 20 Pa; electrical calibration better than 0.02 per cent; column s is the estimated standard deviation of individual enthalpies in each series; Table 2 (not extracted) gives 2s of the means.",
+ "quality_remarks": "Authors state agreement with Benson and Krause for O2, Ar and rare gases, and with Dee and Gill for CH4, C2H6 etc. The He 298.09 K series 821222 prints 10^6 n_g = 17.182 whereas all other He series at 298 K print about 12.2 (kept as printed; possibly a misprint). Nominal T drifts (298.09 to 298.17 K, 308.13/308.15, 288.07/288.14), as printed. Pressure is the calorimeter total pressure (about 1.06e5 Pa), not a partial pressure.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6
+  ],
+  "journal_pages": [
+   1044,
+   1045,
+   1046
+  ]
+ },
+ "earlier_run_files": "No earlier files existed for this slug; the whole paper was done from scratch in this run.",
+ "not_extracted_tables": [
+  "Table 2 (p. 1047): averages of the Table 1 series adjusted to 288.15, 298.15, 308.15 K plus derived heat-capacity changes - derived/smoothed, not extracted",
+  "Table 3 (p. 1048): comparison of calorimetric and gas-solubility values - derived/literature comparison",
+  "Table 4 (p. 1050): heat-capacity changes and partial molar heat capacities of alkanes - derived"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 116,
+   "written_data_rows": 116,
+   "label_rows_added": 10,
+   "csv_rows_excluding_header": 126
+  }
+ },
+ "changes_after_image_check": [
+  "table_1 Ne 830620 row (288.08 K), 10^6 n_g: 12.251 -> 12.257",
+  "table_1 O2 block, N column (all 19 rows): missing in text layer -> 3,3,4,5,3,5,5,5,4,5,5,5,5,5,5,5,5,5,5 read from image",
+  "table_1 text-layer OCR slips repaired from image: LO847->1.0847, I.0691->1.0691, I .0862->1.0862, 1XI622->1.0622, 0.0743 1->0.07431, 0.29 1->0.291, 23.03 1->23.031, 8403 10->840310, '- 0.499' style minus spacing -> -0.499"
+ ],
+ "extraction_notes": "Temperature T is printed only at the first row of each sub-block; it is carried forward in the CSV to every row (documented in mapping). Printed enthalpy column is -<dH_sol,m>; mapping uses scale -1. Gas label rows kept; He, Ne, Ar, Kr, Xe and n-butane blocks are out-of-scope gases kept as rows with gas codes he, ne, ar, kr, xe, n-c4h10. Sanity: enthalpy grows (less negative) with T for every gas; He changes sign between 298 and 308 K, as printed; sum of series = 116.",
+ "changes_after_second_pass": [
+  "added missing He row 308.15 K, series 840321 (N=4, 1.0806, 8.755, 0.01706, -0.638, 0.153)",
+  "csv line 93: ethane series 830120 column 10^6 n_g mol: 17.136 -> 17.736"
+ ],
+ "pass2_diff": "808 cells compared (carried-forward temperatures aside), 2 disagreements, both settled from the page images in favour of pass 2"
+}

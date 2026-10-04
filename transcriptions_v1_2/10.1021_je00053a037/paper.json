@@ -1,0 +1,48 @@
+{
+ "doi": "10.1021/je00053a037",
+ "first_author": "Pabalan",
+ "year": 1988,
+ "journal": "J. Chem. Eng. Data 33 (3), 354-362",
+ "source_key": "PABALAN(1988)",
+ "title": "Apparent Molar Heat Capacity and Other Thermodynamic Properties of Aqueous KCl Solutions to High Temperatures and Pressures (R. T. Pabalan, K. S. Pitzer)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer garbled in Table I; table read completely from the page image, no cell contradicted a text-layer value that was legible; image clear",
+ "experimental_method": "Flow calorimeter (Rogers-Pitzer, Phutela-Pitzer modification) comparing solution and pure water at 200 bar, 413-573 K.",
+ "uncertainties_stated": "Per-row delta on phi_Cp; sensitivity limit +/-0.00015 in Ps/Pw, 1% in delta P/P and f.",
+ "quality_remarks": [
+  "PDF page 1 (journal p.354) begins with the reference list of a preceding article, then this paper's title and start; the last PDF page(s) (p.362 onward) belong to a following article. Table I (p.355) belongs to this paper.",
+  "Printed 3.000 at 412.99 K (not 3.0000) and 3.0010/0.0501/0.1001 at 572.50 K kept as printed.",
+  "phi_Cp values are strongly negative and become more negative with T, as expected."
+ ],
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   355
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tables II, III, V, VII",
+   "reason": "equations / model parameters"
+  },
+  {
+   "table": "Tables IV, VI",
+   "reason": "literature source lists"
+  },
+  {
+   "table": "Tables VIII, IX, X, XI",
+   "reason": "calculated apparent molar heat capacity, enthalpy, osmotic and activity coefficients from the authors' fitted equations (derived)"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 40 data rows + 5 block labels; written 45"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table written from the page image; Ps/Pw values etc. typed from reading the 200 dpi image.",
+ "pass2_diff": "Table I: 40 rows, 200/200 numbers identical."
+}

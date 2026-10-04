@@ -1,0 +1,40 @@
+{
+ "table": "Table 4",
+ "page_journal": 1404,
+ "title_as_printed": "Experimental Densities of Pure Water",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties u are u(T) = 0.01 K, u(P) = 0.001 MPa, and the combined expand uncertainty is U(rho) = 0.29 kg m-3."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the compressed liquid in the densimeter (10-18 MPa); the paper gives no further definition",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho g.cm-3",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (deionized, gas-free); no salt"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "unit g/cm3 to kg/m3 is x1000"
+ ],
+ "notes": "Printed as two side-by-side blocks of three columns (T, P, rho) in the order of increasing T; stacked here left block first (43 rows), then right block (42 rows). Overall order of T is increasing. Standard conditions for gas volumes not applicable. Authors compared with NIST, ARD 0.03 %."
+}

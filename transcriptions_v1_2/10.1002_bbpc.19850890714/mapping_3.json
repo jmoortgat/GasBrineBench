@@ -1,0 +1,51 @@
+{
+ "table": "Table 3",
+ "page_journal": 797,
+ "title_as_printed": "Experimental values of molar volumes V of supercritical, homogeneous water-nitrogen mixtures at 673 K at specified water mole fractions x(H2O) and pressures P",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of the single homogeneous supercritical phase, isochoric method; accuracy 0.1-0.2%",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "673"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "V/10^-6 m3 mol-1",
+   "unit": "m3/mol",
+   "scale": 1e-06,
+   "what": "molar volume of homogeneous water-nitrogen mixture"
+  },
+  "value2": {
+   "col": "x(H2O)",
+   "unit": "mole_fraction_water",
+   "what": "composition of the mixture",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "water": {
+    "col": "x(H2O)",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Property is volumetric (molar volume of a gas-water mixture, mostly gas-rich, at 673 K); average uncertainty +-0.3% in V. No label rows."
+}

@@ -1,0 +1,35 @@
+{
+ "doi": "10.1016/j.fluid.2012.11.012",
+ "first_author": "Wang",
+ "year": 2012,
+ "journal": "Fluid Phase Equilibria 338, 155-163",
+ "source_key": "WANG(2012)",
+ "experimental_method": "In situ near-infrared absorption (7100-7500 cm-1 band) of water dissolved in scCO2 above liquid water or CaCl2 solution; solubility from the intersection of linear fits of absorbance versus added water volume (spectral titration).",
+ "uncertainties_stated": "+/-10% of the value (triplicate measurements); T and P sensor accuracies not stated",
+ "quality_remarks": "Authors note 100 C literature value of 2.7 mol% (Greenwood and Barnes) is disproportionately high. Saturated CaCl2 solutions were prepared at 25 C; higher-T concentrations undefined. Table 5 concentrations labelled M but Fig. 6 labels them molal. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   160
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (materials purities)",
+  "Table 2 (NIR band assignments)"
+ ],
+ "row_counts": {
+  "Table 3": "printed 4 data rows, written 4 (literature values joined in one cell)",
+  "Table 4": "4/4",
+  "Table 5": "6/6"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image for all cells. Table 3 literature and calculated columns kept and marked from_literature.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the image; small tables",
+ "pass2_diff": "Tables 3-5: all numbers identical (50/50, 16/16, 10/10); layout differs only in carried-forward cells."
+}

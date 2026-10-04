@@ -1,0 +1,85 @@
+{
+ "table": "Table I",
+ "page_journal": 451,
+ "title_as_printed": "Solubility of Carbon Dioxide and Nitrous Oxide in Water",
+ "footnotes_as_printed": "none printed",
+ "property": "gas_volume_solubility",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "gas partial pressure 760 mm of mercury (alpha defined at partial pressure of 760 mm)",
+ "columns": {
+  "T": {
+   "col": "Temp., C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "basis": "gas_partial",
+   "constant": "760"
+  },
+  "value": {
+   "col": "S",
+   "unit": "mL_gas_STP_per_g_water_at_760mmHg",
+   "derived_by_authors": true,
+   "what": "S = alpha / (weight fraction of water x density); for pure water mL gas STP per g water"
+  },
+  "value2": {
+   "col": "alpha",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "what": "Bunsen coefficient: volume of gas reduced to 0 C and 760 mm Hg dissolved per volume of water at 760 mm partial pressure"
+  },
+  "uncertainty": {
+   "col": "Av. dev., +/- x 1000",
+   "unit": "printed average deviation x 1000, quantity not named (probably alpha); symbol illegible in the scan"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "'one volume of solvent' (definition of alpha); pure water so solvent = solution",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water; no gas mole fractions reported",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4
+   ],
+   "reason": "label rows 'Carbon Dioxide', 'Nitrous Oxide'"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2o"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Detns. = number of determinations"
+ ],
+ "conversion_needs": [
+  "alpha or S to molality: S/22414*1000 (ideal-gas), see Table II note on non-ideality"
+ ],
+ "notes": "6 data rows plus 2 label rows printed and written.",
+ "quality_remarks": "audit 2026-10-02: p.451: the authors quote apparent molecular weights of CO2 of 44.295, 44.216 and 44.182 at 0, 25 and 40 C (0.65, 0.47, 0.39 % above 44.01); an ideal-gas conversion of S (mL STP per g water) to moles therefore underestimates real CO2 moles by up to about 0.6 %."
+}

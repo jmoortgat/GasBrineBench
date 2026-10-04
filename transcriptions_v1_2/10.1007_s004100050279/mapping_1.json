@@ -1,0 +1,59 @@
+{
+ "table": "Table 2",
+ "page_journal": 266,
+ "title_as_printed": "Measured H2O activity from brucite-periclase reversals and KCl activity from sylvite saturation temperatures",
+ "footnotes_as_printed": {
+  "a": "Asterisk signifies sylvite saturation point. Gamma_H2O/KCl signifies the ratio of activity to mole fraction of H2O and KCl (conventional activity coefficient). xbar_H2O is the mean H2O mole fraction of a brucite-periclase bracket. f_H2O is the fugacity of H2O at a bracket T and P (Burnham et al. 1969, with logarithmic extrapolation to 15 kbar)."
+ },
+ "property": "aw",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P of the experiment (piston-cylinder, kbar); no gas; activity of H2O in KCl-H2O fluid at P and T",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P kbar",
+   "unit": "kbar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "a_H2O",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "what": "H2O activity (fluid standard state: pure H2O at same P,T) derived by authors from brucite-periclase reversal brackets with thermodynamic data; blank on sylvite-saturation rows"
+  },
+  "value2": {
+   "col": "a_KCl",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "what": "KCl activity from sylvite saturation temperature (blank on non-saturation rows); standard state as in paper"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "H2O": {
+    "col": "xbar_H2O",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "KCl-H2O binary fluid; KCl mole fraction = 1 - xbar_H2O; brucite/periclase/sylvite solids present"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "f_H2O bar (from Burnham et al. 1969)",
+  "rho_H2O g/cm3 (pure-water density at P,T, from literature)",
+  "Gamma_H2O/KCl (calculated: a/x)"
+ ],
+ "conversion_needs": [
+  "1 kbar = 100 MPa",
+  "xbar_H2O is the bracket mean fluid composition"
+ ],
+ "notes": "Rows with asterisk are sylvite-saturation points (fluid KCl-saturated); a_H2O blank there and a_KCl given. Activities are derived from reversal brackets by thermodynamic analysis, not directly measured; included because the table is titled 'Measured' and gives water activity of KCl brines at high P,T."
+}

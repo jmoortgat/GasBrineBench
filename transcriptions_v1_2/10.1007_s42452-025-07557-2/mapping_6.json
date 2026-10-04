@@ -1,0 +1,168 @@
+{
+ "table": "Table 6",
+ "page_journal": 18,
+ "title_as_printed": "Densities of CO2-saturated and non-CO2 NaCl + CaCl2 (NaCl 2.42 mol kg-1 and CaCl2 0.23 mol kg-1) solutions at 303 K and 333 K",
+ "footnotes_as_printed": "none",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure held at the stated value by a syringe pump during CO2 saturation; transducer uncertainty 0.25% full scale. For the CO2-free brine the system was pressurised with a hand pump. Whether the pressure is CO2 partial or total is not stated (pure CO2 over brine, so total).",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density reported in g/cm3 of the solution",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K"
+  },
+  "P": {
+   "col": "Pressure, MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Density, g/cm3",
+   "unit": "g/cm3"
+  },
+  "uncertainty": {
+   "col": "Uncertainty g/cm3",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "",
+  "note": "set per block by label rows; molalities from the paper's Table 4"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    11,
+    19
+   ],
+   "reason": "block label row (solution code and temperature)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "property",
+     "value": "rho"
+    },
+    {
+     "path": "gas",
+     "value": ""
+    },
+    {
+     "path": "T.constant",
+     "value": "303",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "property",
+     "value": "rho_gas_loaded"
+    },
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "T.constant",
+     "value": "303",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "property",
+     "value": "rho"
+    },
+    {
+     "path": "gas",
+     "value": ""
+    },
+    {
+     "path": "T.constant",
+     "value": "333",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "property",
+     "value": "rho_gas_loaded"
+    },
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "T.constant",
+     "value": "333",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Four side-by-side blocks printed in landscape; stacked left to right, one label row per block. Blocks S2/S4 (CO2-saturated) are property rho_gas_loaded with gas co2; S1/S3 CO2-free. Block-set property, gas, T and composition override the table-level defaults. Blank uncertainty cells are empty."
+}

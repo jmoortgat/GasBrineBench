@@ -1,0 +1,99 @@
+{
+ "table": "Table I",
+ "page_journal": 2727,
+ "title_as_printed": "Results of solubility experiments for N2, Ar, Kr, and Xe in water at 25.0 C.",
+ "footnotes_as_printed": {
+  "a": "The solutes.",
+  "b": "The solute partial pressure at equilibrium.",
+  "c": "The corresponding fugacity.",
+  "d": "10^4 times the mole fraction of the solute in solution.",
+  "e": "The Ostwald solubility.",
+  "f": "The solubility in terms of a new dimensionless parameter gamma.",
+  "g": "The excess chemical potential of the solute in the liquid mu_2^(*l), in cal/mol, based on the number density scale; it is given by mu_2^(*l) = - R T ln(gamma).",
+  "h": "The experimental average value of the partial molar volume v_2, in cm3/mol."
+ },
+ "property": "solubility_x",
+ "gas": "",
+ "gas_from_column": {
+  "col": "Solute",
+  "map": {
+   "N2": "n2",
+   "Ar": "ar",
+   "Kr": "kr",
+   "Xe": "xe"
+  },
+  "fill_down": true
+ },
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Footnote b: 'The solute partial pressure at equilibrium' (P_eq of the solute gas; the water vapour pressure is not part of it). Text: gas pressure measured with a capacitive transducer, equilibrium pressure P_eq recorded at steady state.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.0"
+  },
+  "P": {
+   "col": "Pressure P(atm)",
+   "unit": "atm",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "Mole fraction solubility x2(10^4)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "derived_by_authors": true,
+   "what": "x2 = n2 / (n1 + n2) computed by the authors from the measured amount of dissolved solute (modified Van Slyke method) and water mass; not salt-free-relevant (pure water)"
+  },
+  "value2": {
+   "col": "Ostwald solubility L",
+   "unit": "ostwald_dimensionless",
+   "derived_by_authors": true,
+   "what": "L = rho_2^l / rho_2^g (number density in liquid over number density in the gas phase at P_eq, real-gas density from virial expansions)"
+  },
+  "fugacity": {
+   "col": "Fugacity f2(atm)",
+   "unit": "atm",
+   "what": "calculated by authors from virial expansions (eq. 8)"
+  },
+  "value3": {
+   "col": "Solubility parameter gamma",
+   "unit": "dimensionless",
+   "what": "authors' derived parameter, gamma, see footnote f",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure twice-distilled, degassed water"
+ },
+ "volume_basis": "solution",
+ "volume_basis_evidence": "Ostwald L = ratio of 'the concentration (rho_2^l, in molecules/unit volume) of dissolved gas molecules in the liquid solvent to their concentration (rho_2^g) in the gas phase'; 'the number density of solute molecules in the liquid is rho_2^l = n_2^T/Vcell' with the liquid volume fixed at the cell volume at P_eq (liquid volume under the high equilibrium pressure, not 1 atm solvent volume).",
+ "skip_rows": [],
+ "group_rows": [],
+ "row_overrides": [
+  {
+   "rows": [
+    33,
+    34,
+    35,
+    36
+   ],
+   "set": {
+    "regime": "hydrate"
+   },
+   "reason": "Last four Xe rows (23.33-47.89 atm) were measured with xenon clathrate (ice-like crystals) present, per text: 'solubility measured during the clathrate phase'; authors doubt reliability (glassy state, long equilibration)."
+  }
+ ],
+ "extra_unmapped": [
+  "Excess chemical potential - RT ln(gamma) (cal/mol) (calculated by authors)",
+  "Partial molar volume v2 (cm3/mol): authors' average over the solute series, printed once on one row per solute block (N2 31+-2 on row 3, Ar 33+-1 on row 11, Kr 30+-2 on row 20, Xe 47+-2 on row 28; values 44, 117, 125, 131 on the four clathrate-phase Xe rows are per-row estimates). Not tied to the single row it is printed on."
+ ],
+ "conversion_needs": [
+  "atm to Pa",
+  "T = 25.0 C to K"
+ ],
+ "notes": "Solute label is printed only on the first row of each block (and again on the first row of the second Xe block); the CSV carries the label only where printed and the builder fills down per gas_from_column. Row indices are 0-based over data rows: N2 0-6, Ar 7-16, Kr 17-24, Xe 25-32, Xe (clathrate phase) 33-36. Thin-space digit groups printed in the original (e.g. 0.014 85) are written without the space (0.01485). The authors flag the 23 atm Xe point as anomalous in the text. No summary rows."
+}

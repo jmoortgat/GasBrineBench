@@ -1,0 +1,305 @@
+{
+  "table": "Table 1",
+  "page_journal": null,
+  "title_as_printed": "Vapor Pressures Pexp, and Activities of Water, aw, in {NaCl (1) + Na2SO4 (2) + H2O (3)} with m1/m2 = 1/10 and m1/m2 = 1",
+  "footnotes_as_printed": "none captured",
+  "property": "psat_brine",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "Equilibrium pressure above the liquid solution measured with an absolute manometer (MKS Baratron, 0-1000 Torr) in a nonisothermal static device; non-volatile salts, so the pressure is the solution vapour pressure. Absolute pressure in Pa (basis: saturation).",
+  "columns": {
+    "T": {
+      "col": "T K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "Pexp Pa",
+      "unit": "Pa",
+      "basis": "saturation"
+    },
+    "value2": {
+      "col": "aw",
+      "unit": "dimensionless",
+      "what": "activity of water",
+      "derived_by_authors": true
+    },
+    "value3": {
+      "col": "aw Appelblat",
+      "unit": "dimensionless",
+      "what": "aw calculated from the authors' Appelblat fit of P(T) at fixed composition",
+      "derived_by_authors": true,
+      "calculated_not_measured": true
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {},
+    "constant": {
+      "NaCl": {
+        "value": "set by group_rows",
+        "unit": "mol/kg"
+      },
+      "Na2SO4": {
+        "value": "set by group_rows",
+        "unit": "mol/kg"
+      }
+    },
+    "other_species": "molality of both salts is printed in the block label; composition determined with a vibrating-tube densimeter (+-0.001 mol/kg)"
+  },
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        75,
+        90,
+        105,
+        120,
+        135,
+        150,
+        165,
+        180,
+        195,
+        210
+      ],
+      "reason": "block label rows 'm1 = ..., m2 = ... m1/m2 = ...'"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.13596",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "1.3596",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 15,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.12715",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "1.2715",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 30,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.08849",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.8849",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 45,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.08081",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.8081",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 60,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.05524",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.5524",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 75,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.04046",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.4046",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 90,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.02484",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.2484",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 105,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1.0495",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "1.0495",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 120,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.9775",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.9775",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 135,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.9617",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.9617",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 150,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.7901",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.7901",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 165,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.6651",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.6651",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 180,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.5204",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.5204",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 195,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.4073",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.4073",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 210,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.2625",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.Na2SO4",
+          "value": "0.2625",
+          "unit": "mol/kg"
+        }
+      ]
+    }
+  ],
+  "volume_basis": "not_applicable",
+  "extra_unmapped": [
+    "aw Appelblat (calculated from fit)"
+  ],
+  "conversion_needs": [],
+  "notes": "The publisher table has four side-by-side column groups (T, Pexp, aw, aw Appelblat) per composition block, with the temperatures increasing down group 1, then continuing in group 2, 3, 4 (group 4 has only 2 rows). Stacked left to right, group 1 first, within each block (14 data rows per block, 15 blocks = 210 data rows). Padding cells in group 4 (empty in the print) are not written. The definition of aw (p/p0 of pure water) is not given in the captured text beyond the caption. The captured table was split in 31 fragments; they were concatenated in order."
+}

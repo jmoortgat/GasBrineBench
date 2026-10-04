@@ -1,0 +1,55 @@
+{
+ "table": "Table VIII",
+ "page_journal": 288,
+ "title_as_printed": "Mean solubility values and corresponding absorption coefficients",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "other",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "each result expressed at 760 mm Hg (corrected to 0 C, sea level and 45 degrees latitude) in equilibrium with air saturated with water vapour (total pressure 760 mm Hg)",
+ "columns": {
+  "T": {
+   "col": "Mean temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "constant": "760",
+   "col": "",
+   "unit": "torr",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Solubility mg/l",
+   "unit": "mg_O2_per_L",
+   "what": "mean of 207 results at 18 temperatures, mg oxygen per litre of solution measured at room temperature (about 20 C), air-saturated at 760 mm"
+  },
+  "value2": {
+   "col": "Absorption coefficient",
+   "unit": "bunsen_like_beta",
+   "what": "absorption coefficient beta = C_s/(0.39390 (760-p)) from authors' eq. (1), p = vapour pressure of water",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "distilled water (pure water)"
+ },
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'the absorption coefficients are calculated for solutions measured at room temperature'; solubility in 'mg./l.'; titrations at room temperature (about 20 C) with no thermal-expansion correction",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water",
+ "skip_rows": [],
+ "group_rows": [],
+ "row_from_literature": [],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "absorption coefficient is calculated, not measured"
+ ],
+ "conversion_needs": [
+  "mg/l solution measured at about 20 C to a mole fraction needs solution density at 20 C; air composition 20.95 % O2 used in eq. (1) (0.2095)"
+ ],
+ "notes": "Printed as two side-by-side blocks (left 0.38-20.00, right 22.50-37.00); stacked left block first, then right. Printed decimal points were mid-dots; written with full stops. Text layer wrote some thousand separators as commas (13,397; 12,422): fixed from image."
+}

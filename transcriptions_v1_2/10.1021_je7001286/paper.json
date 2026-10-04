@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/je7001286",
+ "first_author": "Gaudette",
+ "year": 2007,
+ "journal": "J. Chem. Eng. Data 52(4), 1449-1451",
+ "source_key": "GAUDETTE(2007)",
+ "experimental_method": "Analytical flash technique: liquid (hydrate-free) samples withdrawn from a high-pressure crystallizer at constant pressure into an evacuated sample bomb, gas evolved into a gasometer, propane moles from the gasometer volume with Z from the Trebble-Bishnoi equation, and x1 by mass balance with the room-temperature solubility.",
+ "uncertainties_stated": "Maximum absolute average deviation from the mean of replicate experiments 4.6 %; pressure transducer reference accuracy less than 0.065 % of span (0 to 13789 kPa); gasometer accuracy 0.2 % of reading. No temperature uncertainty stated.",
+ "quality_remarks": "Authors compare the hydrate-free points with the Carroll and Chapoy correlations (Table 2): deviations -8 to +11 % (Carroll), -5.7 to +12.9 % (Chapoy). Table 1 gives mean values of replicates; individual replicates not tabulated. Experimental method uses the room-temperature solubility literature value for the mass balance.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   1450
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (journal p. 1451): comparison of the six hydrate-free x1 (repeat of Table 1 values) with calculated values and percent deviations from the Carroll and Chapoy correlations: derived/model comparison, measured x1 already in Table 1"
+ ],
+ "row_counts": {
+  "Table 1": "printed 13 data rows; written 13"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in every cell. Hydrate regime assigned per row from the printed region column (H-Lw) via row_regime_overrides. Sanity: T 274.16-276.21 K, P 150-358 kPa, x1 1.118e-4 to 1.702e-4; no printed column dropped.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Table 1: 13 rows, 39/39 numbers identical."
+}

@@ -1,0 +1,85 @@
+{
+ "table": "Table S1",
+ "page_journal": "SI pages S2-S5",
+ "title_as_printed": "Experimental data and calculated vapor pressures of CaCl2-H2O and MgCl2-H2O with fitting models (experimental VLE data at temperature T, solute mass fraction w and Pressure P, gamma_w represents activity coefficient of water)",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainty of mass fraction u_w=0.0001. The standard uncertainties for temperature and pressure are given in the table."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium vapour pressure of the solution measured with a pressure transducer (full scale 200 kPa); 'vapor pressure', absolute/gauge not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/kPa",
+   "unit": "kPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "P/kPa",
+   "unit": "kPa",
+   "what": "experimental vapour pressure of the aqueous salt solution"
+  },
+  "uncertainty": {
+   "col": "up/kPa",
+   "unit": "kPa"
+  },
+  "uncertainty_T": {
+   "col": "ut/K",
+   "unit": "K"
+  }
+ },
+ "composition": {
+  "basis": "mass_fraction",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "w",
+    "unit": "mass_fraction",
+    "scale": 1.0
+   }
+  },
+  "constant": {},
+  "other_species": "salt per block label: CaCl2 or MgCl2; w is the solute mass fraction, standard uncertainty 0.0001"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    56
+   ],
+   "reason": "block labels CaCl2-H2O, MgCl2-H2O"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "gamma_w (activity coefficient of water, derived by authors from the measurement)",
+  "P_eNRTL/kPa and RD_eNRTL (e-NRTL model results)",
+  "P_Antoine/kPa and RD_Antoine (modified Antoine fit results)"
+ ],
+ "conversion_needs": [],
+ "notes": "Minus sign printed as en dash converted to '-'. Percent sign kept in RD columns. Rows 1-55 CaCl2 (55 points), rows 57-122 MgCl2 (66 points) in 0-based data-row indices; the P column serves as both P and value."
+}

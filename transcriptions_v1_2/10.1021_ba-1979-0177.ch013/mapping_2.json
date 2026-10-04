@@ -1,0 +1,160 @@
+{
+ "table": "Table II",
+ "page_journal": 193,
+ "title_as_printed": "Experimental Results of Carbon Dioxide Solubility in Aqueous Solution of Sodium Chloride (1)-Sodium Sulfate (2)-Ammonium Chloride (3) Mixed Salt at 25 C and 1 atm",
+ "footnotes_as_printed": "none printed",
+ "property": "ostwald",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'measured at 25 C and 1 atm partial pressure of carbon dioxide' (text, p. 190); title: 'at 25 C and 1 atm'; saturation method with correction for vapour pressure of the solution (estimated by the Robinson-Bower method from single-salt data)",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "'Ostwald absorption coefficient, L, which is defined as the ratio of the volume of absorbed gas to the volume of absorbing liquid at the temperature and pressure of the measurement'; 'absorbing liquid' is the (gas-free) salt solution but the paper does not say solution vs solvent explicitly. Salt concentration Cs is 'total concentration of mixed salt (kmol m-3)' ('The molarity is used here as the salt concentration variable'), per volume of solution presumably, basis not spelled out.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "L",
+   "unit": "ostwald_absorption_coefficient"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "total_salt": {
+    "col": "Cs kmol/m3",
+    "unit": "kmol/m3 (= mol/L)"
+   }
+  },
+  "other_species": "Total salt concentration Cs (kmol/m3 = mol/L) per row; salt shares are mole fractions in the salt mixture per block. Salts: NaCl, Na2SO4, NH4Cl (ternary mixed salt). NH4Cl is outside the six-ion set."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12,
+    19,
+    26
+   ],
+   "reason": "block label rows (x1;x2;x3 mole fractions)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.375",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.125",
+     "unit": "mole_fraction_of_salt_mixture"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.125",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.375",
+     "unit": "mole_fraction_of_salt_mixture"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Cs is a molarity (per volume of solution, presumably): conversion to molality needs solution density",
+  "Ostwald coefficient: converting to mole fraction needs CO2 molar volume and solution density"
+ ],
+ "notes": "Five (Table II) or three side-by-side blocks stacked left to right, one block label row each. The label row lists x1; x2; x3 (mole fractions of the three salts in the mixed salt). Blocks 1, 5 repeat Table I NaCl+Na2SO4 x1=0.50 and NaCl+NH4Cl x1=0.50 data (exact replicates kept)."
+}

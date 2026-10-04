@@ -1,0 +1,40 @@
+{
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "all PDF tables get a blind second pass; text layer garbled 'n/r' as 'nyr' (corrected from image)",
+ "doi": "10.1007/s004100050216",
+ "first_author": "Aranovich",
+ "year": 1996,
+ "journal": "Contributions to Mineralogy and Petrology 125, 200-212",
+ "source_key": "ARANOVICH(1996)",
+ "experimental_method": "Brucite-periclase dehydration equilibrium reversals in H2O-NaCl fluid in Pt capsules (internally heated Ar apparatus at 2 and 4.2 kbar, piston-cylinder at 4.2-15 kbar); fluid composition change measured by weight loss on drying of punctured capsules; H2O activity derived thermodynamically.",
+ "uncertainties_stated": "Pressure +-200 bar piston-cylinder (+-7 bar gas vessels); temperature about +-5 C (4.2 kbar bracket +-5 C stated as error); fluid composition closure under 2 mol percent.",
+ "quality_remarks": "Authors note possible pressure uncertainty at 4.2 kbar piston-cylinder (about 220 bar high). Cl detected in brucite up to 0.17 wt percent, judged negligible. Water activities are derived, not measured directly.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7
+  ],
+  "journal_pages": [
+   205,
+   206
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: brucite-periclase brackets in pure water (no salt, T-P only)",
+  "Table 3: NaCl activity and activity coefficient (derived)",
+  "Table 4: comparison of measured and model H2O activities at 2.0 kbar (model comparison/derived)"
+ ],
+ "row_counts": {
+  "table_2": "printed 67 (63 on p.205, 4 on p.206); written 67"
+ },
+ "changes_after_image_check": [
+  "table_2 PB-44 phase: Br-nyr -> Br-n/r",
+  "table_2 PB-48 phase: nyr -> n/r",
+  "table_2 PB-77 phase: Per-nyr -> Per-n/r"
+ ],
+ "extraction_notes": "Table 2 only partly in scope (see mapping notes).",
+ "pass2_diff": "67 rows, 469 cells, 0 disagreements; token multiset identical (402/402). Printed oddities (PB-66 T=765, duplicate X_fin values) copied as printed."
+}

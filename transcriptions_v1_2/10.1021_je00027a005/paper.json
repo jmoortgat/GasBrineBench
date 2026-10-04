@@ -1,0 +1,30 @@
+{
+ "doi": "10.1021/je00027a005",
+ "first_author": "Moore",
+ "year": 1982,
+ "journal": "J. Chem. Eng. Data 27, 22-24",
+ "source_key": "MOORE(1982)",
+ "experimental_method": "Vibrating-tube densimetry under flow: density difference between gas-free water and water saturated with the gas at about 100 kPa and 298.15 K gives the partial molar volume at infinite dilution, using Henry's-law mole fraction from the literature.",
+ "uncertainties_stated": "Maximum imprecision about +-1.5 cm3/mol (1.5-4 %); per-solute average deviation of replicates in the table; temperature +-0.002 K, pressure +-15 Pa, density precision a few ppm.",
+ "quality_remarks": "Title printed with 'Gases' in quotes; PDF has 3 pages, all this paper. Partial molar volume at x2 < 1e-4 taken as infinite dilution value. Solute mole fraction x2 used in eq 4 was computed from literature Henry constants, so the result depends partly on literature data.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   23
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 20, written 20"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table I typed from the page image (text layer was scrambled by the two-column layout); plus-minus values split into value and uncertainty columns; blank literature cells for 9 solutes are empty. Sanity: all values 26-101 cm3/mol, plausible and increasing with molecular size.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "table was read from the image because the text layer is scrambled; no independent second reading yet",
+ "pass2_diff": "Table I: 20 rows, 83/83 numbers identical."
+}

@@ -1,0 +1,33 @@
+{
+ "doi": "10.1021/es404618y",
+ "first_author": "Song",
+ "year": 2014,
+ "journal": "Environ. Sci. Technol. 48, 3567-3574",
+ "source_key": "SONG(2014)",
+ "experimental_method": "Dew points of water in CO2 and in a CO2+2.5% N2+5.8% O2 mixture observed visually in a glass microfluidic channel: single-phase wet sample prepared at 75 C by injecting a known water volume into a CO2 cylinder, chip held isothermal while pressure is lowered until droplets appear, then pressure tuned until droplet size is constant (P = P_dew).",
+ "uncertainties_stated": "Dead volume of preparation system accurate to 0.4%; pressure drop across chip at fill about 0.04 MPa; condensed-water effect on P_dew estimated up to 0.86 MPa underestimate at y=0.00489, 13.2 MPa, 40 C (SI); std deviation of P_dew from theory 4.84% for the pure CO2-water validation. Temperature and pressure transducer uncertainties not tabulated in the main text.",
+ "quality_remarks": "Paper text says pure-CO2 data are in Table SI 1 (Supporting Information, not available); main-text Table 1 gives prepared water contents with dew pressures. Y_H2O set by pump pressure so concentration is computed afterwards from injected water volume and final P,T. Compared with theory for pure CO2 only. Table headers print T as C with no scale stated. Rows with N/A have no measured dew point.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   3570
+  ]
+ },
+ "not_extracted_tables": [
+  "Table SI 1 (pure CO2-water dew-point data) is in the Supporting Information, not in the PDF",
+  "Figures 4-7 data only in figures"
+ ],
+ "row_counts": {
+  "Table 1": "printed 20 data rows; written 20 (in each of two group CSVs)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in every cell (read at 200 dpi). Footnote asterisk on first N/A moved to the note column. Replicate rows 8 and 9 (T 35 C, y 3.39) kept; row 7 has the same y but P_mix 9.48 vs 9.72. Sanity: dew pressure increases with T at fixed y, and with y at fixed T; mixture P exceeds pure-CO2 P in all rows with both. Column '% change' calculated by authors.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Table 1: 20 rows; pass 1 wrote the table twice (two group files), the numbers are exactly double those of pass 2's single file."
+}

@@ -18,9 +18,9 @@ Examples
 >>> df = gbb.load()
 >>> hot = gbb.select(df, property='solubility_molality', T=(400, None))
 >>> sorted(hot['gas'].unique())
-['c2h6', 'c3h8', 'ch4', 'co2', 'h2']
+['c2h6', 'c3h8', 'ch4', 'co2', 'h2', 'n2', 'o2']
 >>> gbb.select(df, salt_system='single-salt', gas='co2').shape[0]
-3990
+4044
 """
 
 from __future__ import annotations
@@ -30,7 +30,7 @@ from typing import Iterable, Sequence
 import pandas as pd
 
 from .derived import ionic_strength, salt_system, salt_system_kind, total_molality
-from .vocab import GASES, IONS, PROPERTIES, QUALITY_CODES, TAGS
+from .vocab import ALL_GASES, FLAGS, IONS, PROPERTIES, QUALITY_CODES, TAGS
 
 __all__ = ["select"]
 
@@ -93,6 +93,10 @@ def select(
     quality=None,
     tag=None,
     exclude_tags=None,
+    flags=None,
+    exclude_flags=None,
+    data_origin=None,
+    audit_status=None,
     T=None,
     P=None,
     ionic_strength=None,
@@ -107,7 +111,8 @@ def select(
     Parameters
     ----------
     gas : str or sequence of str, optional
-        One or more of ``co2, ch4, h2, n2, o2, c2h6, c3h8``. Case-insensitive.
+        One or more of ``co2, ch4, h2, n2, o2, c2h6, c3h8`` (or, in v1.2, one of the
+        other single gases in ``vocab.OTHER_GASES``). Case-insensitive.
         Pass ``''`` to select the brine-only rows, whose ``gas`` cell is empty.
     family : str or sequence of str, optional
         Property family (``'solubility'``, ``'rho'``, ...). Only meaningful on
@@ -123,6 +128,15 @@ def select(
         Keep only these tags.
     exclude_tags : sequence of str, optional
         Drop these tags. Applied after ``tag``.
+    data_origin : str or sequence of str, optional
+        ``table``, ``figure`` and/or ``calculated``: where the number comes from (``SCHEMA.md``).
+    audit_status : str or sequence of str, optional
+        ``verified``, ``corrected``, ``not-verifiable`` and/or ``residual-difference``: the result of the row-by-row audit
+        (needs the ``audit_status`` column that :func:`gasbrinebench.load` attaches).
+    flags : str or sequence of str, optional
+        Keep only rows carrying at least one of these modifier flags.
+    exclude_flags : sequence of str, optional
+        Drop rows carrying any of these modifier flags.
     T, P : (low, high), optional
         Inclusive window on ``T_K`` [K] and ``P_bar`` [bar]. ``None`` on
         either side leaves it open. Rows with a blank ``P_bar`` (the
@@ -161,11 +175,11 @@ def select(
     >>> import gasbrinebench as gbb
     >>> df = gbb.load()
     >>> gbb.select(df, gas='co2', property='y_h2o', T=(320, 326)).shape[0]
-    78
+    106
     >>> gbb.select(df, ions_exactly=['Na', 'Cl'], family='rho').shape[0]
-    189
+    1175
     >>> gbb.select(df, gas='h2', quality='R').shape[0]
-    24
+    76
     """
     mask = pd.Series(True, index=df.index)
 
@@ -173,7 +187,7 @@ def select(
         wanted = _as_list(gas)
         blank = [g for g in wanted if str(g).strip() == ""]
         named = _normalise(
-            [g for g in wanted if str(g).strip() != ""], GASES, "gas"
+            [g for g in wanted if str(g).strip() != ""], ALL_GASES, "gas"
         )
         col = df["gas"].astype(str).str.strip()
         m = col.isin(named)
@@ -210,6 +224,29 @@ def select(
     if exclude_tags:
         vals = _normalise(_as_list(exclude_tags), TAGS, "tag")
         mask &= ~df["tag"].isin(vals)
+
+    if data_origin is not None:
+        from .vocab import DATA_ORIGINS
+        vals = _normalise(_as_list(data_origin), DATA_ORIGINS, "data_origin")
+        col = df["data_origin"] if "data_origin" in df.columns else pd.Series("table", index=df.index)
+        mask &= col.isin(vals)
+
+    if audit_status is not None:
+        from .vocab import AUDIT_STATUSES
+        if "audit_status" not in df.columns:
+            raise ValueError("this frame has no audit_status column; load it with gasbrinebench.load and keep data/provenance/audit_status.csv")
+        vals = _normalise(_as_list(audit_status), AUDIT_STATUSES, "audit_status")
+        mask &= df["audit_status"].isin(vals)
+
+    if flags is not None or exclude_flags:
+        fl = (df["flags"].fillna("") if "flags" in df.columns
+              else pd.Series("", index=df.index)).map(lambda f: set(f.split(";")))
+        if flags is not None:
+            want = set(_normalise(_as_list(flags), FLAGS, "flag"))
+            mask &= fl.map(lambda f: bool(f & want))
+        if exclude_flags:
+            drop = set(_normalise(_as_list(exclude_flags), FLAGS, "flag"))
+            mask &= ~fl.map(lambda f: bool(f & drop))
 
     if T is not None:
         mask &= _window(pd.to_numeric(df["T_K"], errors="coerce"), T, "T")

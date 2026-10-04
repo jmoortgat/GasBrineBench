@@ -1,0 +1,34 @@
+{
+ "doi": "10.1023/A:1022256927236",
+ "first_author": "Sabirzyanov",
+ "year": 2003,
+ "journal": "Theor. Found. Chem. Eng. 37(1), 51-53 (translated from Teor. Osn. Khim. Tekhnol. 37(1), 54-57)",
+ "source_key": "SABIRZYANOV(2003)",
+ "title_authors": "Water Solubility of Carbon Dioxide under Supercritical and Subcritical Conditions; A. N. Sabirzyanov, R. A. Shagiakhmetov, F. R. Gabitov, A. A. Tarzimanov, F. M. Gumerov",
+ "experimental_method": "Static method in a 96 cm3 constant-volume rocking autoclave; liquid sampled through a capillary at constant pressure into weighed ampoules, dissolved gas throttled off and its volume measured at 20 C, 760 mm Hg.",
+ "uncertainties_stated": "overall relative error 3% in solubility; gas volume to 1 cm3; deadweight gauge accuracy class 0.02; agrees within 7% with King et al. at 25 C, 10 and 20 MPa",
+ "quality_remarks": "Temperature scale and thermocouple accuracy not stated. Liquid sampling at 25 C 60 and 80 MPa and 50 C 80 MPa was difficult (CO2 denser than water) and no values are printed there. Single table; Fig. 2 and Eq. 2 are a correlation (not extracted).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   52
+  ]
+ },
+ "not_extracted_tables": [
+  "Fig. 2 / Eq. (2): similarity-theory correlation with fitted coefficients a0..a3 (model, derived)"
+ ],
+ "row_counts": {
+  "Table": "printed 4 rows x 5 pressure columns, 17 values (3 cells blank); written 20 rows, 17 with value"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched image in all 17 values. Matrix flattened to long form.",
+ "gas_basis": "not_applicable",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, all 17 cells matched image",
+ "pass2_diff": "Table: 20 (T,P) cells identical to the pass-2 matrix, 3 blank cells agree."
+}

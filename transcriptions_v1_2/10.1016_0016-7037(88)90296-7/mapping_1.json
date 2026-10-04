@@ -1,0 +1,127 @@
+{
+ "table": "Table 1",
+ "page_journal": 2394,
+ "title_as_printed": "Experimental heat capacities of aqueous Na2SO4 solutions at P = 200 bars.",
+ "footnotes_as_printed": {
+  "a": "Densities of Na2SO4 solutions at 25 C and 200 bars.",
+  "b": "The estimated uncertainty of each phi_Cp value was calculated assuming absolute errors of +-0.00015 in P_s/P_w and relative errors of +-1% in (P_s-P_w)/P_w and in the correction factor, f."
+ },
+ "footnote_letter_note": "Footnote a belongs to header rho_s, footnote b to header Unc; stripped from the header names, the note column is empty because no letters are attached to numbers",
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "200 bar (constant, in title), flowing-calorimeter pressure; not a saturation pressure",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "per label row"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "200",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "phi_Cp J.mol-1.K-1",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of Na2SO4 at 200 bar, per mole of Na2SO4"
+  },
+  "value2": {
+   "col": "c_p,s J.g-1.K-1",
+   "unit": "J/(g K)",
+   "what": "specific heat capacity of the solution (measured via power ratio)"
+  },
+  "uncertainty": {
+   "col": "Unc",
+   "unit": "J/(mol K)",
+   "what": "estimated uncertainty of each phi_Cp, footnote b"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none (m header has no unit printed; text speaks of molality, so mol per kg water assumed from the text)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    34,
+    50,
+    59
+   ],
+   "reason": "temperature label rows 'T(K) = ..., f = ...' (f = heat-loss correction factor)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.53",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.67",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "472.63",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "522.47",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 59,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "572.74",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "rho_s g.cm-3 (density of the solution at 25 C and 200 bar, taken from literature (Chen 1977, Gibson 1934) not measured here)",
+  "P_s/P_w (ratio of electrical powers solution/water, raw measured quantity)",
+  "f (heat-loss correction factor printed in label row)"
+ ],
+ "conversion_needs": [
+  "none"
+ ],
+ "notes": "Replicate measurements at the same molality are separate printed rows and are kept. Water properties from Haar et al. (1984) equation of state."
+}

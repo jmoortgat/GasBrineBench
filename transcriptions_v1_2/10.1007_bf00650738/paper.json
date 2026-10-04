@@ -1,0 +1,39 @@
+{
+ "doi": "10.1007/BF00650738",
+ "first_author": "Grant-Taylor",
+ "year": 1981,
+ "journal": "Journal of Solution Chemistry 10(9), 621-630",
+ "title_as_printed": "Partial Molar Volumes of Sodium Chloride Solutions at 200 bar, and Temperatures from 175 to 350 C",
+ "source_key": "GRANT-TAYLOR(1981)",
+ "experimental_method": "Mercury displacement technique: solution in a stainless-steel vessel in a molten-salt bath, expansion at constant 200 bar measured by weighing mercury bled off, converted to density.",
+ "uncertainties_stated": "Temperature accurate to 0.01 C; volume calibration 0.01 cm3 (~10 ppm); uncertainty of apparent molar volume tabulated in Table II (5.6 to 57.0 cm3/mol at m=0.1, 0.14 to 1.5 at m=4.0); density uncertainty from 0.01 C temperature error 6e-5; reference densities about 30 ppm above Vaslow-based values.",
+ "quality_remarks": "Possible hydrogen from corrosion of unlined vessel judged negligible by authors (no pressure drift). The m=2.0 isopleth consists of three runs; apparent molar volume smooth within 1.0 cm3/mol. Agreement with Hilbert 0.1%.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   624
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: uncertainties of apparent molar volume (derived)",
+  "Table III: standard partial molar volumes (derived by extrapolation, includes literature rows)"
+ ],
+ "row_counts": {
+  "Table I": "printed 68 data rows + 6 label rows; written 68 + 6"
+ },
+ "changes_after_image_check": [
+  "table_1 row 'm=0.200' T col: 200,94 -> 200.94 (text layer comma)",
+  "m=0.500 block rho 0,8773 -> 0.8773; 201,10 -> 201.10; 0,8992 etc. decimal commas -> full stops",
+  "m=1.000 rho 0,9033 -> 0.9033",
+  "m=4.000 rho 0.98t8 -> 0.9818; 0,9981 -> 0.9981 (text layer misreads)"
+ ],
+ "extraction_notes": "Text layer had a few decimal-comma/letter OCR errors, all corrected against the 220 dpi image; every cell then read against the image. Sanity: rho decreases with T within each block (apart from the printed order of the m=1.000 and m=2.00 blocks), increases with m at fixed T.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer (scan OCR) contained digit errors that needed correction after the image check.",
+ "pass2_diff": "Table I: 68 rows, 136/136 numbers identical."
+}

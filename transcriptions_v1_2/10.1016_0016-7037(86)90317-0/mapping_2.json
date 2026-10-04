@@ -1,0 +1,40 @@
+{
+ "table": "Table 2",
+ "page_journal": 1441,
+ "title_as_printed": "Temperature, pressure and NaCl content of vapor in equilibrium with liquid and with solid NaCl.",
+ "footnotes_as_printed": "none printed",
+ "property": "other",
+ "property_description": "NaCl content (printed NaCl %, basis not stated, presumably weight percent) of the vapor of the three-phase assemblage vapor + liquid + halite; the pressure column is the three-phase pressure (vapor pressure of the halite-saturated solution)",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated whether gauge or absolute; three-phase univariant pressure, measured by transducer",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P/bars",
+   "unit": "bar",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "NaCl %",
+   "unit": "percent_NaCl_in_vapor_basis_not_stated"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary NaCl-H2O, halite-saturated liquid"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "%NaCl basis to mole fraction"
+ ],
+ "notes": "First row (300.3 C) has no printed NaCl value in the table; kept with value empty. Text says vapor composition data start at 300 C."
+}

@@ -1,0 +1,18 @@
+Hydrocarbon,Solubility this work g of hydrocarbon/10^6 g of water,Std dev,Calculated solubility of liquid hydrocarbon at 25 C (this work column),Lit. solubility g/10^6 g water [ref],Molar vol ml/mole at 20 C,note
+Methane,24.4,1.0,,21.7 [11]; 22.8 [12]; 21.5 [9],39,Std dev:a
+Ethane,60.4,1.3,,56.6 [11]; 58.3 [12]; 51.6 [9],55,
+Propane,62.4,2.1,,67.0 [12]; 65.6 [9],88.1,
+n-Butane,61.4,2.6,136,72.7 [12]; 67.2 [9],100.4,Calculated solubility of liquid hydrocarbon at 25 C:b
+Isobutane,48.9,2.1,165,,104.3,
+n-Pentane,38.5,2.0,,360 [6],115.2,
+Isopentane,47.8,1.6,,,116.4,
+"2,2-Dimethylpropane",33.2,1.0,54,,122.1,
+n-Hexane,9.5,1.3,,140 [6]; 36 [10],130.7,
+2-Methylpentane,13.8,0.9,,,131.9,
+3-Methylpentane,12.8,0.6,,,129.7,
+"2,2-Dimethylbutane",18.4,1.3,,,132.7,
+n-Heptane,2.93,0.20,,50 [6]; 10 [10],146.5,
+"2,4-Dimethylpentane",4.06,0.29,,,148.9,
+n-Octane,0.66,0.06,,14 [6],162.6,
+"2,2,4-Trimethylpentane",2.44,0.12,,,165.1,
+"2,2,5-Trimethylhexane",1.15,0.08,,,181.3,

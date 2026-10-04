@@ -1,0 +1,60 @@
+{
+ "doi": "",
+ "first_author": "Yarrison",
+ "year": 2006,
+ "journal": "PhD thesis, Rice University, Houston, May 2006 (UMI 3256766, copyright 2007): Measurement and Modeling of the Water Content of High Pressure Sweet and Acid Natural Gas Systems",
+ "source_key": "YARRISON(2006)",
+ "experimental_method": "Flow method: gas flows from a water-saturated 1.3 L cell (with pre-saturation column) at cell pressure through heated tubing into an analysis train; water is captured on magnesium perchlorate desiccant tubes (gravimetric) and/or an electrical resistance sensor (used at 311 and 314 K), gas volume by wet test meter; each point is the average of three runs (two for the highest-pressure points of Table 14).",
+ "uncertainties_stated": "Relative percent per point printed in each table (3-7 percent; 14 percent where only two runs were made, doubled from the calculated value). Pressure transducers 0.1-0.5 percent of full scale. Mixture compositions: 5% ethane + 95% CO2 within 0.05 mole (as stated); 10/90 mixture composition tolerance stated in the text near 0.01 moles (unit as written).",
+ "quality_remarks": "Table 11, 422.04 K, 96.53 MPa: printed 1.25E-01 equals the 3.45 MPa value (1.25E-01) and breaks the monotonic fall with pressure (neighbours 1.37E-02 and, at 466 K, 3.53E-02); probably a misprint for about 1.25E-02, kept as printed. Resistance and gravimetric values at 311/314 K were weighted 0.25/0.75. Methane at 310.93 K and above 80 MPa is near the hydrate boundary (about 312.15 K); the 313.87 K isotherm was used for pressures of 62 MPa and higher to stay outside it. Temperature scale not stated. Table 11 (310.93 K, 41.37 MPa) and similar points are not flagged by the author as hydrate. The CO2-rich mixture shows a solubility minimum with pressure.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   103,
+   107,
+   110,
+   114
+  ],
+  "journal_pages": [
+   93,
+   97,
+   100,
+   104
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tables 1-6 (SAFT schematics, methanol and alkane parameters, kij)",
+   "reason": "organic solvent / model parameters"
+  },
+  {
+   "table": "Tables 7, 8, 9a, 9b, 10",
+   "reason": "apparatus calibration data (GC areas, desiccant mass change, meter calibration, flow-rate checks), not in-scope property data"
+  },
+  {
+   "table": "Tables 15, 16, 18, 19a, 19b",
+   "reason": "model parameters / critical constants"
+  },
+  {
+   "table": "Table 17 (partial molar volume of H2S at infinite dilution)",
+   "reason": "H2S is outside the gas set; also appears to be compiled/derived for modelling"
+  },
+  {
+   "table": "Literature comparison data in Figures 25-35",
+   "reason": "figures only; no tabulated values"
+  }
+ ],
+ "row_counts": {
+  "table_11": "printed 40 data cells (6 temperature columns x 9 pressures, 5 empty combos), written 40",
+  "table_12": "printed 37, written 37",
+  "table_13": "printed 36, written 36",
+  "table_14": "printed 21 values (plus '-' placeholders), written 21"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Scan had no text layer (OCR of 159 pages at 100 dpi only for locating tables); all values typed from 200 dpi page images and cross-read against the image after writing. All four tables are printed as matrices (pressure rows, temperature columns); restacked into temperature blocks with label rows, T set via group_rows. Empty cells and '-' mean no measurement and were not written. Table 12 has an extra pressure row 3.59 MPa containing only the 314.82 K value. Pressure steps in Table 13 differ slightly (96.55, 103.47 MPa) from Tables 11/12 (96.53, 110.32). Gas mixture compositions: 10% CO2 + 90% CH4 and 5% C2H6 + 95% CO2; the mixtures are mole basis per the Table 14 title; Table 13 basis is not stated explicitly. gas for mixtures written co2-ch4 and c2h6-co2. Water phase is deionised, degassed water (no salt). Pressure labelled 'MPa' only; thesis gives no total/partial statement. Table values are y_H2O (mole fraction of water in the gas phase). The doi field is empty because the thesis has none.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "PDF has no text layer; every value was image-read (no corrections were needed, but scans require a blind second pass per SPEC rule 4).",
+ "pass2_diff": "Tables 11-14: (P, T, value) tuples identical (40, 37, 36, 21) in a structured comparison; Table 11 1.25E-01 at 422.04 K and 96.53 MPa is probably a printed misprint, kept."
+}

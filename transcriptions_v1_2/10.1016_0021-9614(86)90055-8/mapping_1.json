@@ -1,0 +1,123 @@
+{
+ "table": "Table 1",
+ "page_journal": "264-265",
+ "title_as_printed": "Isopiestic molalities m/(mol kg-1)",
+ "footnotes_as_printed": "none printed on the table; text: values are averages of duplicate samples, last digit not significant above 1.0 mol/kg, blank spaces for Li2SO4 and K2SO4 mean solubility limit exceeded",
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium, no pressure measured or reported)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_label_rows": true
+  },
+  "value": {
+   "col": "Na2SO4",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of the Na2SO4(aq) test solution in equilibrium (common vapour phase, separate cup) with the NaCl(aq) reference solution of the same printed row"
+  },
+  "value2": {
+   "col": "NaCl",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of the NaCl(aq) reference solution of the same printed row"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "Na2SO4",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "each column is a separate solution in isopiestic equilibrium through the common vapour phase, not a mixture. Test salt Na2SO4 (value); reference NaCl(aq) (value2). Li2SO4, K2SO4, Cs2SO4 columns are outside the six-ion set and are not mapped"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    31,
+    50,
+    65,
+    91
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T",
+     "value": "383.14",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "T",
+     "value": "413.23",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "T",
+     "value": "443.16",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 65,
+   "sets": [
+    {
+     "path": "T",
+     "value": "473.17",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "T",
+     "value": "498.19",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Li2SO4 column (isopiestic molality, separate solution)",
+  "K2SO4 column (separate solution)",
+  "Cs2SO4 column (separate solution)"
+ ],
+ "conversion_needs": [
+  "isopiestic molality of Na2SO4 relates to osmotic coefficient via phi_x = phi_NaCl * m_NaCl / (nu * m_x) style isopiestic ratio; needs reference phi of NaCl (not converted here)",
+  "blank cells = not measured (solubility limit exceeded)"
+ ],
+ "notes": "Printed as two side-by-side blocks of 5 columns (NaCl, Li2SO4, Na2SO4, K2SO4, Cs2SO4) per row. Stacked here: within each temperature, all left-block rows in printed order, then all right-block rows. Each row is one isopiestic equilibrium (NaCl and the sulfates in the same row are mutually in equilibrium). The printed left/right halves are not guaranteed to be duplicate pairs (e.g. 383.14 K row 3 right half is a different molality level than its left half). Blank cells are empty strings. Misprint-looking printed values kept as printed: see paper.json quality_remarks.",
+ "reference_salt": "NaCl",
+ "row_held": [
+  {
+   "rows": [
+    7,
+    22
+   ],
+   "reason": "Na2SO4 cell blank in the printed table (383.14 K, 7th row of each half); no test-salt value to attach"
+  }
+ ]
+}

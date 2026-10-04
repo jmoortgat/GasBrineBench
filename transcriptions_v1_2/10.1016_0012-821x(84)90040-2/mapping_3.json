@@ -1,0 +1,53 @@
+{
+ "table": "Table 3",
+ "page_journal": 83,
+ "title_as_printed": "Equilibrium C_H2 data of and Y values from the MHW system",
+ "footnotes_as_printed": "none printed",
+ "property": "other",
+ "gas": "h2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P(bar) printed without further definition; text: 'Fugacities and pressures are given in bar'; it is the total pressure imposed on the vessel (hydrothermal reaction vessel containing water, H2 and the solid buffer), no H2 partial pressure given. H2 fugacity is fixed by the solid buffer and is far below the total pressure (about 4-6 bar in PdHx runs, 1e-3 to 1e-2 bar in MH runs, fH2 = Y x C_H2, derived by the authors); rows are total-pressure points, not gas-partial-pressure solubilities",
+ "columns": {
+  "T": {
+   "col": "T(C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P(bar)",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "C_H2 x 10^4",
+   "unit": "cm3_STP_per_g_water",
+   "scale": 0.0001,
+   "what": "C_H2 = cm3 of H2 at STP (0 C, 760 mm Hg) dissolved in 1 g of water, equilibrium concentration measured in the buffered system; measured at an H2 FUGACITY fixed by a solid buffer (value2: Y = fH2/C_H2, bar per cm3 STP/g, so fH2 = Y x C_H2), under the TOTAL pressure P of the vessel; P is not the H2 partial pressure and C_H2 is not a gas solubility at P",
+   "stp_defined_by_paper": true
+  },
+  "value2": {
+   "col": "Y",
+   "unit": "bar per (cm3 STP/g water)",
+   "what": "Y = fH2/C_H2, fugacity-to-concentration ratio calculated by the authors from the buffer-fixed fH2",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (practically pure water; no salt), in contact with a solid buffer"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "'CH2 is given in cm3 at STP (0 C, 760 mm Hg) of H2 dissolved in 1 g of water' (per mass of water, not per volume of solution)",
+ "gas_basis": "not_applicable",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "C_H2 in cm3 STP per g water to mole fraction needs 22414 cm3/mol and 18.016 g/mol as in the paper: C = (22414/18.016) x/(1-x)"
+ ],
+ "notes": "MHW = magnetite-hematite-water system (MH buffer fixes fO2 hence fH2, via the authors' own fO2-T scale, eq. 9). The table spans two columns of journal page 83 (pdf page 5) and continues to the foot of that page. Y here depends on the authors' MH fO2 scale and on literature Kw and fH2O.",
+ "stp_defined_by_paper": true,
+ "quality_remarks": "The paper defines STP itself (p.79: C_H2 in cm3 at STP, 0 C, 760 mm Hg, of H2 dissolved in 1 g of water; C_H2 = (22414/18.016) x/(1-x)), so no STP assumption is needed. P is the total vessel pressure while the H2 fugacity is buffer-fixed and small (about 4-6 bar PdHx, 1e-3 to 1e-2 bar MH buffer): rows are not H2 solubilities at gas pressure equal to P. Moved out of the benchmark families (2026-10-03): a model-comparison study found the stored rows 10-1000 times below every model and falling with pressure. The cause is that C_H2 is the H2 concentration at an H2 fugacity of about 1e-3 to 5 bar fixed by the buffer, under hundreds of bars of total pressure; the benchmark schema carries total pressure and the gas partial pressure is not P. The rows are in the supplementary tier with their fugacity ratio."
+}

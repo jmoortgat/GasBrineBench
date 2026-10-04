@@ -1,0 +1,39 @@
+{
+ "doi": "10.1021/je00023a013",
+ "title": "Isopiestic Determination of the Osmotic Coefficients of Aqueous Na2SO4, MgSO4, and Na2SO4-MgSO4 at 25 C",
+ "first_author": "Rard",
+ "authors": "Joseph A. Rard and Donald G. Miller",
+ "year": 1981,
+ "journal": "J. Chem. Eng. Data 26 (1), 33-38 (PDF first page, p. 33, is the end of an unrelated article on group surface areas and solubility; this paper begins lower on p. 33)",
+ "source_key": "RARD(1981)",
+ "experimental_method": "Isopiestic method at 25.00 C with KCl and H2SO4 reference standards; molalities are the average of two samples; saturated-solution molalities also determined by equilibration.",
+ "uncertainties_stated": "Temperature 25.00 +/- 0.005 C (IPTS-68); isopiestic molalities known to at least +/-0.1 % (usually +/-0.05 % or better); KCl solubility 4.8088 +/- 0.0020, Na2SO4.10H2O 1.9526 +/- 0.0013, MgSO4.7H2O 3.0211 +/- 0.0022 mol/kg.",
+ "quality_remarks": "Text layer clean; Table I read via word coordinates and compared against the page image. Four MgCl2 points are low concentration with up to 8 week equilibration. Rows at supersaturated concentrations are flagged by the authors only by text. Reference-standard osmotic coefficients are computed from literature equations, not measured.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   34
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III: freezing-point-depression and vapor-pressure data for Na2SO4 (literature data recalculated by the authors, derived)",
+  "Table IV: freezing-point-depression data for MgSO4 (literature, recalculated)",
+  "Table V: polynomial coefficients (model parameters)",
+  "Table VI: smoothed osmotic and activity coefficients (smoothed, derived)",
+  "Table VII: Pitzer parameters (model parameters)"
+ ],
+ "row_counts": {
+  "Table I": "62 printed, 62 written",
+  "Table II": "4 printed, 4 written"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table I columns assigned by x-coordinate of the words; row-by-row blank pattern checked against the image (all 62 rows). Footnote letters were glued to three numbers (4.8088a, 3.0211b, 1.9526c) and moved to the note column. Sanity: KCl molality and Phi KCl fall monotonically down the table until the minimum near 0.8968; Phi minimum is expected for KCl. Whole-page image read matched all cells I checked; Table II digits read from image.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the page image",
+ "pass2_diff": "Tables I and II: 291/291 and 24/24 numbers identical."
+}

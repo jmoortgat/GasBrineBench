@@ -1,0 +1,274 @@
+{
+ "table": "Table II",
+ "page_journal": 75,
+ "title_as_printed": "Apparent Molar Volumes, phiV, and Densities, d, of MgCl2, CaCl2, and SrCl2 in Aqueous Solutions as a Function of Temperature, at 0.6 MPa",
+ "footnotes_as_printed": {
+  "a": "Values in parentheses are densities (d0_1) and volumes (V0_1) for pure water, calculated from equations of Fine and Millero (22)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "title: 'at 0.6 MPa'; not stated whether absolute or gauge; flow densimeter",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from": "label rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "0.6",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "d (g cm-3)",
+   "unit": "g/cm3",
+   "what": "density of the solution (measured)"
+  },
+  "value2": {
+   "col": "phiV (cm3 mol-1)",
+   "unit": "cm3/mol",
+   "what": "apparent molar volume (calculated by authors from d and m)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "molality, m (mol kg-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "SrCl2 blocks are outside the six-ion set; water is the solvent, solution otherwise salt only"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density in g/cm3 of the solution; molality per kg water (mol/kg)",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    38,
+    48,
+    56,
+    66,
+    71,
+    78,
+    85,
+    92
+   ],
+   "reason": "label rows (salt, temperature)"
+  },
+  {
+   "rows": [
+    1,
+    8,
+    15,
+    22,
+    29,
+    39,
+    49,
+    57,
+    67,
+    72,
+    79,
+    86,
+    93
+   ],
+   "reason": "pure-water reference d0 and V0 from Fine and Millero equations, not measured here"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.19",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "321.9",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "346.92",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "371.82",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.19",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "321.90",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "348.15",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "371.82",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 66,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "371.96",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 71,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.19",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 78,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "321.90",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 85,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "346.92",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 92,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "371.96",
+     "unit": "K"
+    },
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Three side-by-side column groups on the printed page are restacked in reading order (left, middle, right) into one long table; the CaCl2 297.19 K and CaCl2 321.90 K etc. blocks that run across a column break are kept contiguous. Spaces inside printed digit groups (e.g. 1.005 990) removed. Temperatures are written exactly as printed in the label rows (297.19, 321.9 / 321.90, 346.92, 371.82, 371.96, 348.15 K); the two CaCl2 label rows 348.15 K differ from the other 346.92 K labels. Molality 'mol/kg' (per kg of water presumably, not stated)."
+}

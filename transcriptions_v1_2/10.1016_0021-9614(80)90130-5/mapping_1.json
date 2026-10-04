@@ -1,0 +1,155 @@
+{
+ "table": "Table 1",
+ "page_journal": 198,
+ "title_as_printed": "(Gas + gas) equilibria for {(1 - x)C3H8 + xH2O}: upper solution temperatures T as a function of pressure p for a given mole fraction x",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure from pressure balance; total pressure of the homogeneous/two-fluid-phase boundary (isopleth)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "T/K",
+   "unit": "K",
+   "what": "upper solution temperature: fluid-phase boundary (dew/bubble/critical region) at fixed overall composition x(H2O) and pressure; second fluid phase appears below this T"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "set per block via label rows: x = mole fraction H2O in {(1-x)C3H8 + xH2O}"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    21,
+    60,
+    103,
+    140,
+    178,
+    209,
+    226,
+    241,
+    259
+   ],
+   "reason": "block label rows x = ..."
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.969",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.952",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.916",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 103,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.900",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 140,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.873",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 178,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.844",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 209,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.835",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 226,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.807",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 241,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.790",
+     "unit": "mole_fraction"
+    }
+   ]
+  },
+  {
+   "label_row": 259,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "0.735",
+     "unit": "mole_fraction"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Fluid-fluid (gas+gas type) phase boundary isopleths at water-rich overall compositions, 585-660 K; the composition is overall mole fraction, not the water content of a coexisting gas phase. Pairs (p,T) printed in four column-pairs per row; stacked column by column (first printed column pair top to bottom, then second, ...). Printed order retained, including non-monotonic entries (x=0.900: 41.19 then 40.31; 33.53 then 33.50) and the repeated 623.0-region values."
+}

@@ -1,0 +1,78 @@
+{
+ "property": "other",
+ "property_description": "specific isobaric heat capacity (J/(kg K)) of the fluid, flow calorimeter",
+ "temperature_scale": "not stated",
+ "volume_basis": "not_applicable",
+ "pressure_note": "P1 = pressure ahead of the calorimeter, held by a pressure retention valve; stated absolute ('p = 2.6 MPa (abs)', p.207; abstract 'absolute pressures (0.2-2.6 MPa)')",
+ "table": "Table 4",
+ "page_journal": 210,
+ "title_as_printed": "Heat capacities of aqueous NaCl solutions. Reference data are taken from Smith-Magowan and Wood (1981), Hnedkovsky et al. (2002), VDI-Waermeatlas (2002), Sharqawy et al. (2010) and OLI Systems Inc. (2012) simulation data.",
+ "footnotes_as_printed": "none printed",
+ "gas": "",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "T1 C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P1 MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "cp_mean measured values J/kgK",
+   "unit": "J_per_kg_K",
+   "what": "measured specific heat capacity of the NaCl solution"
+  },
+  "value2": {
+   "col": "cp_reference J/kgK",
+   "unit": "J_per_kg_K",
+   "what": "reference value from the literature source named in the block label (Sharqawy and OLI are correlation/simulation outputs)",
+   "from_literature": true
+  },
+  "error": {
+   "col": "Error %",
+   "unit": "percent",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "mass_ratio",
+  "per_row": {
+   "NaCl": {
+    "col": "mNaCl/mwater -",
+    "unit": "g_NaCl_per_g_water"
+   }
+  },
+  "constant": {},
+  "other_species": "degassed demineralized water + NaCl; 'mNaCl/mwater' read as mass ratio salt to water (m = mass; not explicitly defined in the text); ratio reading inferred: 0.0589 -> 1.006 mol/kg, 0.1753 -> 3.00 mol/kg match the literature molality grid (0.5, 1, 3 mol/kg), a mass-fraction reading would give 0.51, 1.07, 3.64 mol/kg"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4,
+    8,
+    15,
+    26
+   ],
+   "reason": "block label rows naming the reference source"
+  },
+  {
+   "rows": [
+    10,
+    12
+   ],
+   "reason": "VDI block rows with a reference value only and no measured value (0.0753 and first 0.1574)"
+  }
+ ],
+ "extra_unmapped": [
+  "Error % (calculated)"
+ ],
+ "conversion_needs": [
+  "mass ratio to molality: m = ratio x 1000 / 58.44 mol/kg"
+ ],
+ "notes": "Label rows are the Reference column entries printed beside each block's first row. The measured values repeat across blocks (the same measurements compared against several references): 0.0289, 0.0588, 0.1753 at 47.4 C; 0.0564, 0.1714 at 100 C, 0.1714 at 150 C appear in 3 or 4 blocks; the builder should deduplicate. VDI block: row with 0.0700 has measured value only; 0.0753 has reference value only (value empty); 0.1360 measured only; 0.1574 first occurrence reference only; 0.1574 last row has measured 3605 and reference 3609 and error -0.13, while the same composition in the Sharqawy and OLI blocks is printed with measured 3604 (printed so).",
+ "quality_remarks": "cp is per kg of solution (not per kg water). Only 10 distinct measurements exist, repeated across five reference blocks (47.4 C/1 MPa x3, 100 C/2.1 x2, 150 C/2.1 x1, 20 C/0.1 MPa x4 compositions). The 20 C, ratio 0.1574 measurement is printed 3605 in the VDI block (row 14) and 3604 in the Sharqawy and OLI blocks; 3604 (printed twice) is preferred. The 0.1 MPa rows lie below the abstract's stated absolute-pressure range 0.2-2.6 MPa (internal inconsistency; keep)."
+}

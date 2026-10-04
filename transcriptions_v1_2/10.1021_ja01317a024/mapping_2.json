@@ -1,0 +1,53 @@
+{
+ "table": "Table II",
+ "page_journal": 357,
+ "title_as_printed": "Vapor Phase Composition of Nitrogen-Water System",
+ "footnotes_as_printed": {},
+ "property": "water_content_mass",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Press., atm.' total pressure of the nitrogen-water system, piston gage; gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "Temp. C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Press. atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "H2O per g. of gas phase g.",
+   "unit": "g_water_per_g_gas_phase",
+   "what": "grams of water per gram of (saturated) gas phase; N2 column is the complement"
+  },
+  "value2": {
+   "col": "Wc in g. per l. of comp. gas",
+   "unit": "g_water_per_L_compressed_gas",
+   "what": "grams of water in 1 liter of compressed gas; derived by authors from expanded-gas volume and compressibility or density",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "Wc defined as 'grams of water contained in 1 liter of compressed gas' (gas-phase volume, not solution or solvent)",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "N2 per g. of gas phase (complement of H2O column)",
+  "No. of expts.",
+  "Av. dev. %"
+ ],
+ "conversion_needs": [
+  "mass fraction to mole fraction of water needs molar masses (18.015, 28.013)"
+ ],
+ "notes": "Printed rows 18. Last row's Wc digits (16.400) blurry; consistent with .0933 x Dv(176.4 g/l, Table III).",
+ "quality_remarks": "audit 2026-10-02: row 15 (145.0 C, 300 atm): printed H2O per g gas phase .0155 but the printed N2 complement .9835 implies .0165 (the sum rule holds for every other row); the trend with T and Wc/w favours .0155; the digit is blurred in the scan. Printed value kept; treat that row with caution."
+}

@@ -1,0 +1,36 @@
+{
+ "doi": "10.1016/s0378-3812(01)00598-2",
+ "first_author": "Servio",
+ "year": 2001,
+ "journal": "Fluid Phase Equilibria 190, 127-134",
+ "source_key": "SERVIO(2001)",
+ "experimental_method": "CO2 solubility in water (273-284 K, 20-60 bar) in a stirred crystallizer with or without hydrate; filtered liquid sample into an evacuated bomb, analysed by flashing to a Ruska gasometer.",
+ "uncertainties_stated": "Relative error about 3-5 percent of the calculated solubility",
+ "quality_remarks": "Mole fraction is calculated from the gasometer volume with a correction using literature CO2 solubility at room T; pressure basis (total vs partial) not stated. Hydrate-region rows kept with regime hydrate.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   132
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; all 21 rows matched the page image; only the en dash in phase labels converted to hyphen.",
+ "not_extracted_tables": [
+  "Table 2: re-listing of three rows of Table 1 plus literature (Yang et al.) values, selected for comparison",
+  "Table 3: model-predicted xeq and percent differences (derived)"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 21,
+   "written": 21
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Phase string en dash written as hyphen.",
+ "pass2_diff": "Table 1: 21 rows, 63/63 numbers identical."
+}

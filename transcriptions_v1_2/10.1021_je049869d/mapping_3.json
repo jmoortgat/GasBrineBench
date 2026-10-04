@@ -1,0 +1,50 @@
+{
+  "table": "Table 3",
+  "page_journal": 1113,
+  "title_as_printed": "Experimental and Calculated Nitrogen Mol Fraction in the Aqueous Phase in the Nitrogen (1) + Water (2) System",
+  "footnotes_as_printed": {
+    "a": "With AAD (exp) = (1/N) sum_N |(x1,exp - <x1,exp>)/<x1,exp>| and absolute deviation (AD) = |(x1,exp - x1,cal)/x1,exp| (formula partly garbled in the captured HTML)."
+  },
+  "property": "solubility_x",
+  "gas": "n2",
+  "regime": "",
+  "temperature_scale": "ITS-90",
+  "temperature_scale_evidence": "The 25-ohm reference platinum-resistance thermometer was calibrated ... based on the 1990 International Temperature Scale.",
+  "pressure_note": "Pexp: measured equilibrium cell pressure (Druck transducer); whether it is total pressure including water vapour is not stated",
+  "columns": {
+    "T": {
+      "col": "T K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "Pexp MPa",
+      "unit": "MPa",
+      "basis": "unspecified"
+    },
+    "value": {
+      "col": "10^3 x1 (exp)",
+      "unit": "mole_fraction_gas_in_aqueous_phase",
+      "scale": 0.001
+    },
+    "uncertainty": {
+      "col": "AAD % (exp)",
+      "unit": "percent",
+      "what": "average absolute relative deviation of the >=10 liquid samples withdrawn at each equilibrium condition (repeatability)"
+    }
+  },
+  "composition": {
+    "basis": "none",
+    "per_row": {},
+    "constant": {},
+    "other_species": "pure degassed deionised water; no salt"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "volume_basis": "not_applicable",
+  "extra_unmapped": [
+    "10^3 x1 (cal): VPT-EoS correlation, not measured",
+    "AD %: deviation of the EoS calculation from experiment"
+  ],
+  "conversion_needs": [],
+  "notes": "Within each nominal isotherm the measured T differs slightly between points (e.g. 274.18-274.26 K); kept as printed. Footnote letter a belongs to the header 'AAD % (exp)'; recorded in the note column on every row. Liquid-phase x1 is the nitrogen mole fraction in the aqueous phase in equilibrium with a nitrogen-rich vapour (water + nitrogen, 2 components). Sub-273 K: none (min 274.18 K); hydrate not mentioned in the captured text."
+}

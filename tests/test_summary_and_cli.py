@@ -28,13 +28,14 @@ def test_vocabularies_cover_the_data(all_rows):
 def test_gas_free_properties_carry_no_gas(all_rows):
     gas_free = all_rows[all_rows["property"].isin(GAS_FREE_PROPERTIES)]
     assert (gas_free["gas"] == "").all()
-    gas_props = all_rows[~all_rows["property"].isin(GAS_FREE_PROPERTIES)]
+    # viscosity is a brine property when the gas is blank and a gas-loaded one otherwise
+    gas_props = all_rows[~all_rows["property"].isin(GAS_FREE_PROPERTIES | {"visc"})]
     assert (gas_props["gas"] != "").all()
 
 
 def test_columns_match_the_csv_header(repo_root):
     header = (repo_root / "data" / "solubility.csv").read_text().splitlines()[0]
-    assert header.split(",") == COLUMNS
+    assert header.split(",") == COLUMNS + ["flags", "data_origin"]
 
 
 # --- inventory -----------------------------------------------------------

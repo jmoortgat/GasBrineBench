@@ -1,0 +1,71 @@
+{
+ "table": "Table IV",
+ "page_journal": 244,
+ "title_as_printed": "Experimental Bunsen Solubility Coefficients for Hydrogen in NaCl Solutions",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "bunsen",
+ "gas": "h2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Bunsen coefficient defined as the volume of gas (corrected to STP) absorbed in a unit volume of water at the measurement temperature when the partial pressure of the gas is 760 mm; measured pressure not tabulated",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "beta in ml H2 (STP)/ml H2O per text: Bunsen coefficient 'absorbed in a unit volume of water'; Table IV itself gives no unit",
+ "columns": {
+  "T": {
+   "col": "Temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "beta",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm"
+  }
+ },
+ "composition": {
+  "basis": "g_per_kg",
+  "per_row": {},
+  "constant": {},
+  "other_species": "NaCl concentration printed as permil (parts per thousand); whether per kg solution or per kg water is not stated; compared with seawater of equivalent salt concentration in permil"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6
+   ],
+   "reason": "label rows (concentration printed beside first row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "10.950",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "27.376",
+     "unit": "permil"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "partial pressure of 760 mm Hg = 1.01325 bar; salinity in permil of seawater needs ionic composition (sea salt), not NaCl"
+ ],
+ "notes": "Printed: 10 data points in two NaCl blocks; the concentration printed beside first row is written as a label row. Basis of permil (solution vs water) not stated."
+}

@@ -1,0 +1,36 @@
+{
+ "doi": "10.1007/BF00645706",
+ "first_author": "Rettich",
+ "year": 1984,
+ "journal": "J. Solution Chem. 13(5), 335-348",
+ "source_key": "RETTICH(1984)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer is OCR-quality with corrupted decimal points and digits in Table II; table was re-read from the rotated page image; all PDF-derived tables get a blind second pass",
+ "experimental_method": "Degassed water equilibrated with N2 in a sealed thermostatted equilibrator for 16-48 h; vapour and liquid samples of known volume taken, N2 extracted and amounts determined by PVT measurement (Ruska quartz Bourdon manometer); Benson-Krause technique.",
+ "uncertainties_stated": "Random error of H_2,1 less than +/-0.04 %; maximum systematic error about +/-0.03 %; average deviation from smoothing equations 0.038 % (CG), 0.042 % (BK). Temperature drift +/-0.003 K.",
+ "quality_remarks": "N2 99.999 mol%; residual dissolved air in degassed water < 0.001 % of saturation. O2 control runs agreed with Benson et al. to 0.04 %. Authors say earlier literature values (Murray-Riley-Wilson) are 1.1-1.5 % higher. Temperature IPTS-68.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8
+  ],
+  "journal_pages": [
+   342
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I: second virial coefficients (literature/calculated)",
+  "Table III: fitted smoothing-equation coefficients (model parameters)",
+  "Table IV: smoothed Henry and Ostwald coefficients, enthalpies and heat capacities of solution at rounded temperatures (derived from the CG fit)"
+ ],
+ "row_counts": {
+  "Table II": "printed 17; written 17"
+ },
+ "changes_after_image_check": [
+  "table_2 header/all rows: text-layer decimal commas (e.g. '7,32677', '-0,087', '8,62309') -> full stops; row 298.163 P_2 '11001334' -> 1.001334; row 308.142 stray text 'W' and row 323.147/323.150 stray characters removed; header '109hLl' -> 10^-9 h_2,1 (Pa)"
+ ],
+ "extraction_notes": "All 8 columns x 17 rows compared against the image; values identical apart from the text-layer artefacts listed. Sanity: H rises monotonically with T; four 298.1 K rows agree within 0.1 %.",
+ "pass2_diff": "token diff: 136 numbers, identical"
+}

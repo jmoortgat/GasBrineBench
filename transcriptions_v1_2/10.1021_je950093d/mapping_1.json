@@ -1,0 +1,23 @@
+{
+  "table": "Table 1", "page_journal": 176,
+  "title_as_printed": "Experimental Values for the Vapor-Pressure (or Mole-Fraction) Enhancement Factor fw for Water in Oxygen",
+  "footnotes_as_printed": {"a": "Each value is the mean of, on the average, five results."},
+  "property": "other",
+  "gas": "o2",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "p is the total pressure in the saturator (water vapour plus oxygen); text: 'the partial pressure pw of the vapor is the product of the vapor mole fraction xw and the total pressure', f_w = p_w/p_w^o and x_w = f_w p_w^o(T)/p, with p_w^o the saturation vapor pressure of pure water (Wexler 1976)",
+  "columns": {
+    "T": {"col": "t C", "unit": "C"},
+    "P": {"col": "p MPa", "unit": "MPa", "basis": "total"},
+    "value": {"col": "f_w", "unit": "enhancement_factor_dimensionless", "what": "vapor-pressure (mole-fraction) enhancement factor of water in oxygen, f_w = p_w/p_w^o = x_w p / p_w^o (Eq 2-3); water mole fraction in the oxygen-rich gas x_w = f_w p_w^o(T)/p"}
+  },
+  "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": "pure water (liquid, saturated with oxygen); no salt; gas phase is oxygen with an estimated 0.4 vol% argon impurity"},
+  "gas_basis": "not_applicable",
+  "gas_basis_evidence": "pure water, no salt",
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": [],
+  "conversion_needs": ["x_w = f_w * p_w^o(T) / p requires the saturation vapor pressure of water at T (the paper cites Wexler 1976 but does not tabulate it)", "MPa to kPa", "not defined: 'standard conditions' for gas volumes (no gas volumes in this paper)"],
+  "notes": "Restacked from the printed wide layout (columns t = 25, 50, 75 C, rows by pressure) to long form, one row per (T, p) measurement; the printed table has 5 pressure rows by 3 temperature columns with one empty cell (75 C at 2.1580 MPa, no measurement), 14 values. Each value is the mean of on average five runs, each individually adjusted to the nominal T and p. T and p are nominal values. Nominal T given in C as header 't = 25 C'."
+}

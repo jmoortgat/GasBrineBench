@@ -1,0 +1,52 @@
+{
+ "table": "Table 6",
+ "page_journal": "Ind. Eng. Chem. Res. 46, 9257-9262",
+ "title_as_printed": "Propane Solubility Data in Water",
+ "footnotes_as_printed": {
+  "a": "Repeatability of sequential analyses of the aqueous phase."
+ },
+ "property": "solubility_x",
+ "gas": "c3h8",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pexp = experimental total pressure of the VLLE system (Pt-Druck transducer, 0-0.3 MPa transducer calibrated against dead-weight balance); the hydrocarbon partial pressure is computed afterwards as P - Pw (paper, eq 3-4). Equal to three-phase vapour pressure P3 (Tables 2/3).",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "Pexp/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "xexp C3 x 10^4",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "salt_free": true
+  },
+  "repeatability": {
+   "col": "delta_x x 10^7",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1e-07,
+   "what": "repeatability of sequential analyses of the aqueous phase (not the total uncertainty)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure degassed deionized water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "xcal C3 x 10^4 (calculated by authors, eq 10, derived_by_authors)",
+  "rel dev/% (calculated)"
+ ],
+ "volume_basis": "not_applicable",
+ "conversion_needs": [],
+ "notes": "Solubility of the hydrocarbon in the water-rich liquid phase under three-phase (vapour-liquid-liquid) conditions, static-analytic method with Rolsi sampler, GC (TCD for water, FID for hydrocarbon). Pexp is the total system pressure. xcal and rel dev are calculated by the authors from their Henry-law correlation (eq 10) and are kept in the CSV unmapped. Salt-free (pure water); mole fraction in the aqueous phase, basis (water-free or total) not stated explicitly. Header-level footnote letters are repeated in the note column on every row; a letter glued to a number is recorded on that row only.",
+ "mapping_fix": "uncertainty column (delta_x) is the repeatability of sequential analyses, not the uncertainty (paper: 1-2.5 % on mole numbers); not stored (audit 2026-10-02)"
+}

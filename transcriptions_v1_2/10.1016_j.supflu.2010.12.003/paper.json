@@ -1,0 +1,34 @@
+{
+ "doi": "10.1016/j.supflu.2010.12.003",
+ "first_author": "Liu",
+ "year": 2011,
+ "journal": "J. Supercritical Fluids 56, 125-129",
+ "source_key": "LIU(2011)",
+ "experimental_method": "Isobaric-isochoric sampling: equilibrated (pressure constant for 5 h) in a variable-volume view cell with stirring; liquid sample withdrawn into a sample bomb at constant pressure, mass by balance, CO2 released into a calibrated vessel and quantified by p-V-T.",
+ "uncertainties_stated": "Solubility uncertainty estimated 1.5%; pressure +-0.025 MPa (0-20 MPa gauge); temperature (mercury thermometers) < +-0.05 K; balance resolution 0.001 g.",
+ "quality_remarks": "Text and abstract state temperatures 35.0, 45.0, 55.0 C but Table 1 and Fig. 1 contain a 50.0 C block (extracted as printed). Table 1 gives water at 35, 45, 50, 55 C only; Table 2/3 K_S values are authors' derived values with unstated C_S unit (check: ln(1.81/1.21)/0.10 = 4.0, i.e. consistent with Cs as mass fraction). Text cites a 55.0 C 0.0 wt% curve in figures from Table 1. CO2 purity 99.99%.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   126,
+   127
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; page images read, all printed cells matched the parsed values; no corrections",
+ "not_extracted_tables": {},
+ "row_counts": {
+  "Table 1": "printed 8+8+7+8=31 data rows (4 blocks), written 31",
+  "Table 2": "printed 8x3 + 8x3 + (11+8+8) = 75 data rows, written 75",
+  "Table 3": "printed 6x8=48 data rows, written 48"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "No prior files in folder. Wide side-by-side blocks stacked with label rows (T and total salt wt% set via group_rows). Property recorded as 'other' = CO2 wt% in liquid (no native unit); builder needs mass_percent_gas_in_liquid_sample -> mole fraction conversion. K_S columns are authors' derived values kept in CSV, unmapped.",
+ "pass2_diff": "token diff: 431 numbers per pass, identical"
+}

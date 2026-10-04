@@ -1,0 +1,215 @@
+{
+ "table": "Table 4",
+ "page_journal": 35,
+ "title_as_printed": "Experimental values of density, viscosity, and speed of sound as a function of temperature for geothermal fluids at atmospheric pressure.",
+ "footnotes_as_printed": {
+  "a": "DMA4500.",
+  "b": "SVM3000.",
+  "c": "DSA 5000M; Standard uncertainties u are: (DMA4500) u(T) = 0.01 K; u(rho) = 0.00025%; (SVM3000) u(T) = 0.005 K; u(rho) = 0.01%; u(eta) = 0.17%; (DSA 5000M) u(rho) = 0.005% (or 0.002 kg m-3); u(W) = 0.005% (or 0.05 m s-1)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "atmospheric pressure (value not given numerically)",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho (kg m-3) [DMA4500]",
+   "unit": "kg/m3"
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {},
+  "constant": {},
+  "other_species": "natural geothermal brines (Izberbash No. 68/129, Ternair No. 27T/38T); composition from Table 2 in mg/L, given as element mass concentration for Na, K, Ca, Mg, and as ion for chloride and sulfate (SO4); set per block in group_rows; also B, Ba, Li, S, Se, Si, Sr, nitrate (38T 59.3 mg/L) etc. in Table 2 of the paper. Mass concentration basis (mg/l) per the paper; mineralization total 1662.7/1830.0/15345.9/15808.0 mg/L."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21
+   ],
+   "reason": "sample label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.Na",
+     "value": "396",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.K",
+     "value": "10.2",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Ca",
+     "value": "49.2",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Mg",
+     "value": "32.9",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "152",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.SO4",
+     "value": "749",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.total_dissolved_salt",
+     "value": "1662.7",
+     "unit": "mg/L"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.constant.Na",
+     "value": "590",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.K",
+     "value": "4.7",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Ca",
+     "value": "2.8",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Mg",
+     "value": "1.3",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "176",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.SO4",
+     "value": "616",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.total_dissolved_salt",
+     "value": "1830.0",
+     "unit": "mg/L"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.Na",
+     "value": "7540",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.K",
+     "value": "145",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Ca",
+     "value": "73.6",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Mg",
+     "value": "28.5",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "7387",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.SO4",
+     "value": "30.7",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.total_dissolved_salt",
+     "value": "15345.9",
+     "unit": "mg/L"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.constant.Na",
+     "value": "7660",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.K",
+     "value": "138",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Ca",
+     "value": "72.6",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Mg",
+     "value": "29.6",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "7689",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.SO4",
+     "value": "24.6",
+     "unit": "mg/L"
+    },
+    {
+     "path": "composition.constant.total_dissolved_salt",
+     "value": "15808.0",
+     "unit": "mg/L"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "mg/L to molality needs solution density"
+ ],
+ "notes": "Table 4 printed as three side-by-side column groups with different T grids and instruments (DMA4500, SVM3000, DSA 5000M); written as table_4_group1..3. Group2 value2 is viscosity. Row 353.15 K of No. 27T block in group2 is printed above the 277 K row, it belongs to the Ternair No. 27T block (kept in printed order; temperature not monotonic there). Dashes in No. 38T trailing rows omitted (empty cells)."
+}

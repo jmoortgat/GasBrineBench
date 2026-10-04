@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je00023a014",
+ "first_author": "Rard, Joseph A.",
+ "authors": "Joseph A. Rard, Donald G. Miller",
+ "year": 1981,
+ "journal": "J. Chem. Eng. Data 26(1), 38-43",
+ "title": "Isopiestic Determination of the Osmotic and Activity Coefficients of Aqueous MgCl2 Solutions at 25 C",
+ "source_key": "RARD(1981)",
+ "experimental_method": "Isopiestic equilibration at 25.00 C of duplicate MgCl2 (and CaCl2, NaCl, KCl, H2SO4 reference) solutions in an isopiestic apparatus, molalities from masses.",
+ "uncertainties_stated": "Temperature +-0.005 C; molalities of duplicate cups within 0.1 % of the average (usually better than 0.05 %); independent isopiestic measurements should agree to 0.1-0.2 %.",
+ "quality_remarks": "The PDF begins with the end of another article's reference list (page 38 top). MgCl2 stock no. 3 is contaminated with about 0.2% Na (Table VI). Reference-salt osmotic coefficients are not printed; they must come from the cited standards.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   39,
+   40
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (concentrations of stock solutions by analysis, not an in-scope property table)",
+  "Table VII (osmotic coefficients from freezing-point depression of Menzel and Gibbard & Gossmann, converted to 25 C: literature, derived)",
+  "Tables VIII-X (fit powers/coefficients, calculated osmotic/water activity/activity coefficients, Pitzer parameters: model/derived)"
+ ],
+ "row_counts": {
+  "Table II": "printed 37 (19+18); written 37",
+  "Table III": "printed 23 rows; written 62 pair rows",
+  "Table IV": "printed 11 rows; written 22",
+  "Table V": "printed 4 rows; written 6",
+  "Table VI": "printed 6 (3+3); written 6"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer was read in full against the 200 dpi page images of pages 39 and 40 (every cell matched). Tables III, IV and V restacked to long form (one row per test/reference pair). Footnote letters moved to the note column. Page 4 onward (Tables VIII-X, discussion) not extracted. Sanity: reference molality increases with MgCl2 molality within each block.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every extracted cell matched the image; Table III/IV/V restacked by hand-listed script, no corrections",
+ "pass2_diff": "Tables II-VI: every pass-2 value occurs in pass 1 (pass 1 restacked per test/reference pair so test molalities repeat; counts reconcile)."
+}

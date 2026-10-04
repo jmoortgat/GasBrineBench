@@ -1,0 +1,42 @@
+{
+ "doi": "10.1002/jctb.5010140704",
+ "first_author": "Montgomery",
+ "year": 1964,
+ "journal": "Journal of Applied Chemistry",
+ "source_key": "MONTGOMERY(1964)",
+ "experimental_method": "Winkler titration (Pomeroy-Kirschman reagent) of dissolved oxygen in water stirred in a bath under a stream of air at constant temperature; equilibrium approached from above and below; 207 results averaged at 18 temperatures.",
+ "uncertainties_stated": "temperatures to about 0.02 C; rms deviation of 207 results from calculated values 0.021 mg/l (max +0.7/-0.6 %); sea-water rms 0.060 mg/l",
+ "quality_remarks": "Absorption coefficients are for solutions measured at room temperature so not exactly Bunsen; no thermal-expansion correction (about 0.2 % at low T, 0.5 % at 37 C). Sea-water (35.7 per mille) data are only given through the fitted equation (4) and Table IX/X (smoothed).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   9
+  ],
+  "journal_pages": [
+   288
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I-VII, XI: Winkler-method interference and error tests (iodine loss, nitrite, azide etc.), not gas solubility",
+  "Table IX: solubility in pure and sea water, smoothed values from the authors' fitted equations (and Klots & Benson literature column)",
+  "Table X: comparison with Fox: derived from the fitted equation / literature",
+  "Table XI: hypothetical example"
+ ],
+ "row_counts": {
+  "table_8": {
+   "printed": 18,
+   "written": 18
+  }
+ },
+ "changes_after_image_check": [
+  "table 8 rows 1,5: thousand-comma decimals '13,397' -> 13.397, '12,422' -> 12.422",
+  "table 8 row 14: '8.011.' trailing period removed -> 8.011",
+  "table 8 rows 4: '9-50' hyphen decimal -> 9.50, '36-40' -> 36.40"
+ ],
+ "extraction_notes": "Text layer was an OCR with punctuation errors; Table VIII was read from the 200 dpi image. Table IX not extracted as smoothed.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "cells needed correction after the image check (OCR punctuation)",
+ "pass2_diff": "Table VIII: 18 rows, 54/54 numbers identical."
+}

@@ -1,0 +1,116 @@
+{
+ "table": "Table 1",
+ "page_journal": 3739,
+ "title_as_printed": "Apparent molal volumes and heat capacities of alkaline earth chlorides in water at 25 C",
+ "footnotes_as_printed": "none printed",
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (atmospheric flow densimeter / flow microcalorimeter; pressure not given)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "phi_C J/K/mol",
+   "unit": "J/(mol K)",
+   "derived_by_authors": true,
+   "what": "apparent molal heat capacity of the salt, derived from the measured relative volumetric specific heat and phi_V"
+  },
+  "value2": {
+   "col": "(d - d0) x 10^3 g/cm3",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "measured density difference of solution minus water (d0 = 0.997047 g/cm3); primary measurement",
+   "gas": ""
+  },
+  "value3": {
+   "col": "phi_V cm3/mol",
+   "unit": "cm3/mol",
+   "derived_by_authors": true,
+   "what": "apparent molal volume of the salt, derived from densities"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salt per block given by label row: MgCl2, CaCl2, SrCl2 (out of scope, rows kept), BaCl2 (out of scope, rows kept); molarity c also printed"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    19,
+    29
+   ],
+   "reason": "salt label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.per_row.MgCl2",
+     "value": {
+      "col": "m mol/kg",
+      "unit": "mol/kg"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "composition.per_row.CaCl2",
+     "value": {
+      "col": "m mol/kg",
+      "unit": "mol/kg"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "composition.per_row.SrCl2",
+     "value": {
+      "col": "m mol/kg",
+      "unit": "mol/kg"
+     }
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.per_row.BaCl2",
+     "value": {
+      "col": "m mol/kg",
+      "unit": "mol/kg"
+     }
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "c mol/L (molarity, converted by authors from molality with measured densities)",
+  "[(sigma - sigma0)/sigma0] x 10^3 (measured relative volumetric specific heat difference, dimensionless; sigma0 = 4.1793 J/K/cm3)",
+  "c_p J/K/g (derived specific heat)"
+ ],
+ "conversion_needs": [
+  "the salt of each block is set by the label row: the m column belongs to MgCl2, CaCl2, SrCl2 or BaCl2 for that block",
+  "d - d0 is printed x10^3 g/cm3: multiply by 1e-3",
+  "sigma ratio printed x10^3"
+ ],
+ "notes": "Blank cells: the first one or two (BaCl2) dilute rows of a block have only m, c, d-d0 and phi_V printed; heat-capacity columns were not obtained there. Rows 0-based over all data rows incl. label rows: Mg 1-9, Ca 11-18, Sr 20-28, Ba 30-38. Primary measured results are d-d0 and the sigma ratio; phi_V and phi_C are derived by the authors.",
+ "quality_remarks": " The block label rows set the salt of each block (MgCl2, CaCl2, SrCl2, BaCl2); a base per-row MgCl2 mapping had overridden them, storing CaCl2, SrCl2 and BaCl2 rows as MgCl2 (found by the random audit, 2026-10-04). SrCl2 and BaCl2 are outside the six-ion set and are held."
+}

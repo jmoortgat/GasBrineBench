@@ -1,0 +1,43 @@
+{
+ "doi": "10.1039/tf9635901994",
+ "first_author": "Gardner",
+ "authors": "E. R. Gardner, P. J. Jones, H. J. de Nordwall",
+ "title": "Osmotic coefficients of some aqueous sodium chloride solutions at high temperature",
+ "year": 1963,
+ "journal": "Trans. Faraday Soc. 59, 1994-2000",
+ "source_key": "GARDNER(1963)",
+ "experimental_method": "Vapour pressures of NaCl solution and of pure water in two platinum-iridium cells with capacitance diaphragm transducers as null indicators, balanced by nitrogen pressure compared with a mercury manometer; solvent vapour pressure by dead-weight piston gauge.",
+ "uncertainties_stated": "Random error in pressure difference 0.7% up to 150 C, about 0.3% above; standard deviation of points from smooth curves 5e-3 in phi; piston gauge 0.05%; possible systematic errors at m=1 of 0.025%, 1.9% and 0.13% in dp at 150, 200, 250 C (water-in-both-cells test).",
+ "quality_remarks": "phi values refer to p = p0 (not 1 atm); the authors estimate the conversion to 1 atm would raise phi by ca. 0.3% at 250 C and ignore it. Molality varies from nominal because of solvent evaporation; the resulting correction to phi never exceeds 0.001 and was neglected. Text layer of Table 1 had several broken cells (corrected from image).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   1997
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "osmotic coefficients read from smooth curves (Fig. 3) at round temperatures; derived/smoothed, with extrapolated entries"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 22 data rows, written 22"
+ },
+ "changes_after_image_check": [
+  "table 1 row 6 (2.003): Delta p 0.33 14 (text layer) -> 0.3314",
+  "table 1 row 3 (1.011, 238.7): phi 0.8 14 (text layer) -> 0.814",
+  "table 1 row 19 (3.012): p0 184368 (text layer) -> 18.868",
+  "table 1 row 21 (3.025): p0 520968 -> 52.968, Delta p 5566 -> 5.566",
+  "table 1 row 16 (3.000): phi 1-021 (text layer) -> 1.021; row 17 and others: mid-dots and dashes normalised to full stops"
+ ],
+ "extraction_notes": "The PDF is one article (7 pages); the PDF title line lists authors Gardner, Jones and de Nordwall. Printed mid-dot decimals written as full stops. Sanity: phi decreases with T at each molality; p0 increases with T; Delta p increases with T and m; two replicate-like rows at 1.011 (different T) and 2.006/2.010 (different T) are not duplicates. Concentrations 1.0 to 3.0 mol/kg NaCl, 122 to 270 C.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer needed corrections after the image check (several cells).",
+ "pass2_diff": "Table 1: 22 rows, 110/110 numbers identical."
+}

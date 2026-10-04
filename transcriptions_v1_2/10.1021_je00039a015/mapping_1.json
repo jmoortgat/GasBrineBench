@@ -1,0 +1,120 @@
+{
+ "table": "Table I",
+ "page_journal": 46,
+ "title_as_printed": "Experimental Data (continued on p. 47)",
+ "footnotes_as_printed": {
+  "a": "n is the number of duplicate runs.",
+  "b": "Delta = (Delta rho - Delta rho(calcd)) x 10^6/g (cm-3).",
+  "c": "The phi_v's were calculated by using the equation of state of Harr, Gallagher, and Kell for rho_0."
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P per row in MPa, 0.1013 MPa = 1 atm; pressure maintained with a back-pressure regulator and measured with an in-line McDaniel test gauge, accuracy approximately 0.3 MPa; nominal set pressures 0.1013, 10.38, 17.13, ~31, ~40 MPa with actual values printed",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298.15"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^3 (Delta rho) (g cm-3)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density difference of solution minus pure water, Delta rho = rho - rho_0, directly measured (reference: degassed distilled deionized water at the same T and P, density rho_0 from the Haar-Gallagher-Kell equation of state)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m (mol kg-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "degassed distilled deionized water; one salt per block (NaCl, MgCl2, KCl, NaBr, LiCl, CaCl2), no other species. Concentrations determined volumetrically to 0.1 %."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    41,
+    76,
+    112,
+    153,
+    194
+   ],
+   "reason": "salt label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 41,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 76,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 112,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 153,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "LiCl"
+    }
+   ]
+  },
+  {
+   "label_row": 194,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "n (number of duplicate runs)",
+  "Delta/ppm (residual of measured Delta rho minus the fitted Delta rho, derived from authors' fit)",
+  "phi_v (cm3 mol-1) (apparent molar volume calculated by the authors; moved from value2 because the builder reads value2 as absolute density)"
+ ],
+ "conversion_needs": [],
+ "notes": "Table printed as two column groups on each of two pages (p. 46 and 47); stacked in reading order, left column then right column per page, so block D (NaBr) continues at the top of p. 47 and block B (MgCl2) ends at the top of the right column of p. 46. Blocks E (LiCl) and F (CaCl2) are on p. 47; the right column of p. 47 first finishes LiCl (two rows) then gives CaCl2. LiCl is outside the six-ion set and NaBr as well; rows kept (builder decides)."
+}

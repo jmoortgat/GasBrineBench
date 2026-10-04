@@ -1,0 +1,119 @@
+{
+ "table": "Table 2",
+ "page_journal": 137,
+ "title_as_printed": "Solubility of methane, ethane and their mixtures in pure water at 71C (160F)",
+ "footnotes_as_printed": {},
+ "property": "solubility_x",
+ "gas": "ch4-c2h6",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of the equilibrium cell (block label 'Total pressure (MPa)'), held constant within +-1%; whether it includes water vapour not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "71"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total",
+   "from_group_rows": true
+  },
+  "value": {
+   "col": "C1+C2 solubility % mol",
+   "unit": "mole_percent_total_hydrocarbon_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "total hydrocarbon (both gases) in the water-rich phase, mol% printed, x = printed*0.01; pure water, salt-free; gas-phase composition in first column"
+  },
+  "value2": {
+   "col": "C1 solubility % mol",
+   "unit": "mole_percent_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "methane component in the water-rich phase"
+  },
+  "value3": {
+   "col": "C2 solubility % mol",
+   "unit": "mole_percent_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "ethane component in the water-rich phase"
+  },
+  "gas_phase_composition": {
+   "col": "HC phase water-free methane content % mol",
+   "unit": "mole_percent_methane_in_water_free_hydrocarbon_phase"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (pure water, Milli-Q)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21
+   ],
+   "reason": "pressure block label"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "P",
+     "value": "100",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "P",
+     "value": "75",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "P",
+     "value": "50",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "P",
+     "value": "20",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "printed values are mol% (multiply by 0.01 for mole fraction); the sign '-' means no measurement (printed dash), not a value; empty cells are cells left blank in the print; the value column header 'Solubility (% mol) of' is read as mole percent of the component in the water-rich phase (consistent with x~0.005 for methane at 100 MPa)",
+  "gas = mixture of methane with the second hydrocarbon; builder must use column 'HC phase water-free methane content' as the gas-phase composition (y_CH4 = printed/100 on water-free basis)"
+ ],
+ "notes": "Block label rows are the stacked side-by-side pressure blocks. Dash cells are kept as '-'. Row 100.0 at 20 MPa total cell carries a printed arrow marker before 0.2183 (C1+C2); value kept 0.2183; meaning of marker not explained. Pure-ethane row (00.0) and pure-methane row (100.0) are the binary systems. Lower-pressure rows (72.5 and 75.5 % methane) show only the total because individual compositions were not given.",
+ "gas_per_row": {
+  "col": "HC phase water-free methane content % mol",
+  "map": {
+   "00.0": "c2h6",
+   "100.0": "ch4"
+  },
+  "default": "mixture"
+ }
+}

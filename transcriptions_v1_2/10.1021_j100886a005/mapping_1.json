@@ -1,0 +1,184 @@
+{
+ "table": "Table I",
+ "page_journal": 390,
+ "title_as_printed": "Table I (equilibrium gas pressures of dissolved gases at hydrostatic pressures P = 102, 68, 34 and 0 atm.)",
+ "footnotes_as_printed": {
+  "a": "P = Hydrostatic pressure; p = gas equilibrium pressure.",
+  "b": "P = 102.7 atm."
+ },
+ "property": "pmv",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p = gas equilibrium pressure (mm Hg, read on a mercury manometer) measured by a null-point method in a Teflon tube immersed in the pressure chamber; 'the vapor pressure corresponding to the water temperatures was subtracted from all gas pressure values', i.e. gas partial pressure. P (capital) is the hydrostatic pressure on the water (1500 p.s.i.g. = 102 atm.), a separate variable. The P column mapped below is the equilibrium gas pressure at zero gauge hydrostatic pressure. The printed partial molal volume is an average over hydrostatic pressures 0-102 atm (straight lines of ln p vs P) and is not a value at the mapped gas pressure.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "p in mm. at P = 0 atm.",
+   "unit": "torr",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "v cm.3/mole",
+   "unit": "cm3/mol",
+   "what": "average partial molal volume of the dissolved gas calculated by the authors from the slope of ln p against hydrostatic pressure (their eq. 3)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "ln (p102/p0)",
+   "unit": "dimensionless",
+   "what": "natural log of ratio of equilibrium pressures at hydrostatic 102 atm and 0 atm, read from fitted straight lines in each run",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "distilled water (gas-extracted) except rows set by group_rows: 'O2 in sea water' (sea water, composition not given) and 'N2 in detergent' (detergent solution, surface tension 30% of water's)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    5,
+    7,
+    9,
+    13,
+    15,
+    18,
+    21
+   ],
+   "reason": "gas / condition label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    }
+   ]
+  },
+  {
+   "label_row": 5,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    },
+    {
+     "path": "T.constant",
+     "value": "0.5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.other_species",
+     "value": "sea water (composition not stated)"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    },
+    {
+     "path": "composition.other_species",
+     "value": "pure water (distilled, gas-free); no salt"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    },
+    {
+     "path": "composition.other_species",
+     "value": "detergent solution, surface tension 30% of water"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ar"
+    },
+    {
+     "path": "composition.other_species",
+     "value": "pure water (distilled, gas-free); no salt"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "he"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "p in mm. at P = 102 atm.",
+  "p in mm. at P = 68 atm.",
+  "p in mm. at P = 34 atm. (raw equilibrium pressures at elevated hydrostatic pressure P; the measured raw data, not representable as value/P)"
+ ],
+ "conversion_needs": [
+  "mm Hg treated as torr",
+  "temperature 25 C stated in text ('In all experiments except one, the water temperature was 25 C'); the 0.5 C row is printed as 'O2 at 0.5 degrees'"
+ ],
+ "notes": "Rows are 0-based over all CSV rows after the header, label rows included: 0 label O2, 1-4 O2 data, 5 label O2 at 0.5 C, 6 data, 7 label O2 in sea water, 8 data, 9 label N2, 10-12 data, 13 label N2 in detergent, 14 data, 15 label Ar, 16-17 data, 18 label He, 19-20 data, 21 label CO2, 22-23 data. Gas labels are printed beside the first data row; written as separate label rows. The gas pressure at P = 0 is the equilibrium pressure of a solution made at nominally atmospheric gas pressure; dissolved concentrations are not given in the paper. Paper does not define standard conditions (no gas volumes reported).",
+ "row_held": [
+  {
+   "rows": [
+    8
+   ],
+   "reason": "O2 in sea water: composition not stated"
+  },
+  {
+   "rows": [
+    14
+   ],
+   "reason": "N2 in detergent solution (surface tension 30% of water): not a pure-water or six-ion brine"
+  }
+ ],
+ "quality_remarks": "The partial molal volume is an average over hydrostatic pressure 0-102 atm ('average values based on straight lines'), derived by the authors from their equilibrium pressures; all gases except helium give slightly curved plots. Rows 8 (sea water, composition not stated) and 14 (detergent solution) are held."
+}

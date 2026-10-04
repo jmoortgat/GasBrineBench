@@ -1,0 +1,94 @@
+{
+ "table": "Table I",
+ "page_journal": 4055,
+ "title_as_printed": "Isopiestic Compositions for the Ternary System H2O-NaCl-MgCl2",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "isopiestic_molality",
+ "property_description": "17 sets of mutually isopiestic solutions at 25 C (seven solutions per run). The first row of each set (yB = 0) is the pure NaCl solution, the last (yB = 1.0) usually pure MgCl2. 'I' is the ionic strength of each solution (molality scale implied: I = mNaCl + 3 mMgCl2), yB = 3 mMgCl2 / I (ionic-strength fraction of MgCl2, yA = mA/I = 1 - yB per the paper's Symbols list). R = M_A/(mA + 1.5 mB), the isopiestic ratio defined with M_A the molality of the pure NaCl solution in the same set (derived by the authors).",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at vapour pressure of the solutions; no pressure printed)",
+ "reference_salt": "NaCl (first row of each set, yB = 0)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "I",
+   "unit": "ionic_strength_molal",
+   "what": "ionic strength of the solution in isopiestic equilibrium with the other solutions of its set"
+  },
+  "R": {
+   "col": "R",
+   "unit": "dimensionless",
+   "what": "isopiestic ratio M_A/(mA + 1.5 mB)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "ionic_strength": {
+    "col": "I",
+    "unit": "mol/kg"
+   },
+   "yB_MgCl2_ionic_strength_fraction": {
+    "col": "yB",
+    "unit": "fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl(A)-MgCl2(B) only; ionic strength unit not printed (molality implied)",
+  "ionic_strength_rule": {
+   "I": "ionic_strength",
+   "y": "yB_MgCl2_ionic_strength_fraction",
+   "salt_y": "MgCl2",
+   "salt_other": "NaCl"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    15,
+    23,
+    30,
+    38,
+    46,
+    54,
+    62,
+    68,
+    76,
+    84,
+    92,
+    100,
+    108,
+    116,
+    124
+   ],
+   "reason": "set label rows ('Set N')"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "R (derived by authors)"
+ ],
+ "conversion_needs": [
+  "mNaCl = I(1 - yB); mMgCl2 = I yB / 3",
+  "isopiestic molality of reference NaCl is the I of the yB = 0 row in the same set"
+ ],
+ "notes": "Printed as three column groups side by side (sets 1-6, 7-12, 13-17); stacked here in set order. Misprint-like cells kept as printed and confirmed on the image: set 7 R 0.1062 in row yB 0.4612 (neighbours 1.0057 and 1.0223), set 17 I 0.7676 in row yB 0.8260 (neighbours 7.7090 and 7.8892, probably 7.7676). Added ionic_strength_rule: I is molal, yB = 3 mMgCl2 / I (Symbols list, p.4057), so mMgCl2 = I yB / 3 and mNaCl = I (1 - yB).",
+ "row_held": [
+  {
+   "rows": [
+    133
+   ],
+   "reason": "printed ionic strength 0.7676 (set 17, yB 0.8260) is inconsistent with its neighbours 7.7090 and 7.8892 and with the printed R = 1.3476 (needs I about 7.7676); composition would be wrong"
+  }
+ ],
+ "quality_remarks": "Printed misprints, cells kept: set 7 row yB 0.4612 prints R 0.1062 (recomputes to about 1.016; neighbours 1.0057 and 1.0223); set 8 row I 1.8380, yB 0.8179 prints R 1.0150 (isopiestic definition gives about 1.051; neighbours 1.0391, 1.0655); set 17 row yB 0.8260 prints I 0.7676, probably 7.7676 (this row is held). R is derived by the authors and is not the datum. 118 of 121 rows reproduce the printed R from I and yB within 0.003."
+}

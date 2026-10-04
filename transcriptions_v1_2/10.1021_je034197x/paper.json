@@ -1,0 +1,51 @@
+{
+ "doi": "10.1021/je034197x",
+ "first_author": "Nasirzadeh",
+ "year": 2004,
+ "journal": "J. Chem. Eng. Data 49 (3), 607-612",
+ "source_key": "NASIRZADEH(2004)",
+ "title": "Vapor-Pressure Measurements of Liquid Solutions at Different Temperatures: Apparatus for Use over an Extended Temperature Range and Some New Data",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "Static vapour-pressure apparatus with differential and absolute Baratron manometers; thermostated glass flasks with stirring, degassed samples; 5 K steps from 298.15 K.",
+ "uncertainties_stated": "T uncertainty sigma(T)=10 mK, fluctuations <0.003 K; concentration error by evaporation of solvent <= +-0.002%; (pressure uncertainty not captured in the text used).",
+ "tables": {
+  "table_10.csv": 45
+ },
+ "row_counts": {
+  "Table 10": {
+   "printed": "42 data points (3 molalities x 14) + 3 label rows",
+   "written": "45 rows incl. 3 label rows"
+  }
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tables 1-6",
+   "reason": "vapour pressures of pure alcohols (methanol, ethanol, 1-propanol, 2-propanol, 1-butanol, 2-butanol) - organic solvents, out of scope"
+  },
+  {
+   "table": "Table 7",
+   "reason": "Antoine constants for alcohols (fit)"
+  },
+  {
+   "table": "Table 8",
+   "reason": "enthalpies of vaporization of alcohols"
+  },
+  {
+   "table": "Table 9",
+   "reason": "second virial coefficient and molar volume of pure water, literature values (Poling; Keenan) used in the correction"
+  },
+  {
+   "table": "Table 11",
+   "reason": "comparison of authors' osmotic coefficients with Gibbard et al. values (derived comparison)"
+  }
+ ],
+ "quality_remarks": "Text says three compositions 'between 1 and 4 mol/kg'; table molalities are 1.0684, 2.1950, 3.5714. T range 298.15-363.15 K as in abstract. Pure-water vapour pressure test results appear only in Figure 2 (not tabulated). Duplicate popup copies of Tables 10 and 11 were in the capture; used once. Table 10 phi values scatter by up to about 0.05 between neighbouring temperatures at 1.0684 mol/kg (e.g. 0.9996 at 308.15 K vs 0.9370 at 298.15 K), as printed.",
+ "changes_after_image_check": [],
+ "extraction_notes": "Fragments (header, 3 label rows, 3 data fragments) concatenated by script; left group then right group within each molality block. No cell modified (no minus signs in Table 10).",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

@@ -1,0 +1,50 @@
+{
+ "table": "Table I",
+ "page_journal": 18,
+ "title_as_printed": "Pressure-Temperature-Composition Data in the Vapor-Liquid Equilibrium Region in the NaCl-H2O System",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "saturation pressure of the two-phase NaCl-H2O system at the stated temperature, read on a digital pressure gauge (0.1 % full scale, +-0.7 kg/cm2); unit printed as kg/cm2 (kgf/cm2 assumed technical atmosphere; builder: 1 kg/cm2 = 0.980665 bar); pressure recorded immediately after sampling",
+ "columns": {
+  "T": {
+   "col": "Temperature [C]",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure [kg/cm2]",
+   "unit": "bar",
+   "scale": 0.980665,
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "Pressure [kg/cm2]",
+   "unit": "bar",
+   "scale": 0.980665,
+   "what": "saturation pressure of the two-phase NaCl-H2O system at T and the measured liquid composition (1 kg/cm2 = 0.980665 bar)"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {
+   "NaCl": {
+    "col": "[NaCl]_l [%]",
+    "unit": "percent"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water solvent; binary NaCl-H2O liquid phase; percent basis (mass percent assumed) is not stated explicitly in the paper"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "[NaCl]_v [%] (NaCl content of the steam phase, printed as mantissa and power of ten; basis not stated)",
+  "K_D (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "liquid-phase [%] presumed mass percent; not stated (almost certainly mass percent: sample weighed and analysed for salt)"
+ ],
+ "notes": "Temperature printed only at first row of each isotherm block (ditto marks below); filled down in the CSV. Liquid composition is the measured quantity for each isotherm at the recorded saturation pressure. Last row of 380 C block: liquid printed as '42.' (truncated in print), vapour and K_D '-'. Rows 300-360 C: vapour not measured. Rows printed as '-' for 400 C 231.6 and 440 C 266.5 are rows with no vapour value."
+}

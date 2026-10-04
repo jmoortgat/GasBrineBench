@@ -1,0 +1,67 @@
+{
+ "table": "Table 2",
+ "page_journal": 256,
+ "title_as_printed": "Comparison of the experimental solubility (in mole fraction) of ethane gas in water with predictions from Henry's Law correlation at 0.66 MPa",
+ "footnotes_as_printed": "none",
+ "property": "solubility_x",
+ "gas": "c2h6",
+ "regime": "",
+ "regime_by_row": {
+  "rows": [
+   9
+  ],
+  "regime": "hydrate",
+  "reason": "0 C is below the catastrophic temperature Tc given in the text (1.8 C); 2 C row is also near/below Tc but hydrate presence not stated for it"
+ },
+ "temperature_scale": "not stated",
+ "pressure_note": "Title: 'at 0.66 MPa'; text: 'The pressure used during the experiments for pure ethane is 0.66 MPa (95 psia)', constant-pressure runs (gas volume followed at fixed pressure while the liquid is cooled/heated); total vs gas partial pressure not stated.",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction, no per-volume definition",
+ "columns": {
+  "T": {
+   "col": "Temperature/C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "0.66",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Mole fraction x (1000) Experiment (this work)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001
+  },
+  "value2": {
+   "col": "Mole fraction x (1000) Henry's Law prediction",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "what": "Henry's law correlation prediction at the same T and P (literature extrapolation, background for the measurements)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (liquid water phase)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "reason": "no experimental value printed ('-'); only Henry's law prediction"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Experimental 'solubility' is derived from the volume-vs-temperature curve of a constant-pressure cooling run (values at 5-15 C are in the clear liquid before hydrate becomes visible; authors call the excess over Henry's law 'sorption'). Rows with '-' have no experimental value. Temperature is liquid temperature (PRT in the water). Experimental ramp, not static equilibrium points. Caution: the paper says Tc for ethane is 1.8 C (286.2 K), K value inconsistent.",
+ "caution": "The authors call the excess over Henry law sorption: the 5-15 C values are ramped (non-equilibrium) uptake, 2-4 times the Henry baseline; the 0 C values are below the catastrophic temperature (hydrate). Not equilibrium solubilities.",
+ "quality": "U",
+ "quality_reason": "The authors call the excess over Henry law sorption: the 5-15 C values are ramped (non-equilibrium) uptake, 2-4 times the Henry baseline; the 0 C values are bel"
+}

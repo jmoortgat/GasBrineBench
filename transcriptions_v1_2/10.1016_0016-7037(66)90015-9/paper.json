@@ -1,0 +1,38 @@
+{
+ "doi": "10.1016/0016-7037(66)90015-9",
+ "first_author": "O'Sullivan, Thomas D.",
+ "authors": "Thomas D. O'Sullivan, Norman O. Smith, Bartholomew Nagy",
+ "year": 1966,
+ "journal": "Geochimica et Cosmochimica Acta 30, 617-619",
+ "title": "Solubility of natural gases in aqueous salt solutions-III. Nitrogen in aqueous NaCl at high pressures",
+ "source_key": "O'SULLIVAN(1966)",
+ "experimental_method": "One-gallon stirred stainless-steel autoclave equilibrated about 8 h under N2 (pumped with water); liquid samples of 20-25 ml withdrawn into a calibrated gas burette (Wiebe-type) and gas volume and residual liquid measured.",
+ "uncertainties_stated": "Temperature held to +-0.5 C (brief excursions +-2 C); pressure +-0.5 atm at 100 atm and +-1 atm at 600 atm (Heise gauge); successive samples deviated on average about 0.5 per cent.",
+ "quality_remarks": "Preliminary measurements. Pressures in Table 2 are total pressures with no water-vapour correction; the authors say the Wiebe et al. partial-pressure corrections at 102.5 C were probably underestimated. Table 1 agreement with Wiebe et al. (1933) is stated as good. Text layer of the PDF is badly garbled (e.g. '6X@', '2&B', '1s.0'); all values read from the page image. Salt-free vs total basis of mole fraction not stated. The 102.5 C Wiebe values quoted in the text (not in a table) are not extracted.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   618
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "6 printed, 6 written",
+  "table_2": "12 data rows printed (6+6), 12 written (+2 label rows)"
+ },
+ "changes_after_image_check": [
+  "table_1 Wiebe column row 100: 8.087 -> 8.067",
+  "table_1 Wiebe column row 200: 14.06 -> 14.65",
+  "table_2 51.5 C block: 6X@ -> 6.00; 10-Q -> 10.9; 16.2 -> 15.2; 1s.0 -> 19.0; 226 -> 22.6; 2&B -> 25.9",
+  "table_2 102.5 C block: 19-5 -> 19.5; 26-6 -> 26.6 (mid-dot read as hyphen only; no value change)"
+ ],
+ "extraction_notes": "Table 1 'This study' text matched; the literature column and the whole 51.5 C block of Table 2 needed correction from the image. Table 1 is listed as water control (composition none).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer garbled and cells corrected after the image check; scan",
+ "pass2_diff": "Tables 1 and 2: 18 rows, 42/42 numbers identical."
+}

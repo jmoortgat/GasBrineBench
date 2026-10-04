@@ -1,0 +1,123 @@
+{
+ "table": "Table 2",
+ "page_journal": 260,
+ "title_as_printed": "VLE and VLLE data of the water(1) + n-hexadecane(2) + CO2(3) system",
+ "footnotes_as_printed": "none printed. Column groups printed as: Hydrocarbon Phase x1(I), x2(I); Aqueous Phase x1(II), x2(II); Vapor Phase y1, y2 (components: water(1), n-hexadecane(2), CO2(3)). A printed dash means that phase was not reported for that row.",
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "column heading 'P (MPa)' only; paper does not say whether total, partial, gauge or absolute (equilibrium autoclave pressure, gauge uncertainty < 50 kPa); not stated",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K",
+   "carried_forward": true
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "carried_forward": true
+  },
+  "value": {
+   "col": "y1 vapor phase",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "what": "mole fraction of water(1) in the vapor phase of the water + n-hexadecane + CO2 mixture; gas = CO2; the vapor also contains n-hexadecane (y2), CO2 by difference"
+  },
+  "value2": {
+   "col": "x1 II aqueous phase",
+   "unit": "mole_fraction_water_in_aqueous_phase",
+   "what": "mole fraction of water(1) in the aqueous phase; with x2 II (n-hexadecane) the CO2 mole fraction is 1 - x1 - x2 by difference (not printed)"
+  },
+  "value3": {
+   "col": "x1 I hydrocarbon phase",
+   "unit": "mole_fraction_water_in_hydrocarbon_phase",
+   "what": "mole fraction of water(1) in the phase printed under 'Hydrocarbon Phase'"
+  },
+  "other_columns": [
+   "x2 I hydrocarbon phase (n-hexadecane in hydrocarbon phase)",
+   "x2 II aqueous phase (n-hexadecane in aqueous phase)",
+   "y2 vapor phase (n-hexadecane in vapor phase)"
+  ]
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "n-hexadecane (organic, out of scope) is a third component in every row; CO2 mole fraction in each phase is by difference (1 - x1 - x2, or 1 - y1 - y2), not printed. The paper states composition accuracy about 1 mol%."
+ },
+ "gas_basis": "total",
+ "gas_basis_evidence": "not applicable: no salt in the system; the printed y1, y2 are mole fractions in the vapor phase with CO2 by difference (water + n-hexadecane + CO2 ternary)",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    3,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "regime": "",
+   "reason": "rows 3, 12, 14-21 contain no hydrocarbon-rich phase column entry (dash) or are water + CO2 only; the hydrocarbon-rich liquid phase is absent. Row 12 (573.15 K, 10.1 MPa, x1 0.996) is a water-rich point printed under the 'Hydrocarbon Phase' heading with x2 = 0.0, y2 = 0.0; kept as printed."
+  }
+ ],
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    13
+   ],
+   "reason": "CO2 + n-hexadecane binary points: x1 I = 0.0 and y1 = 0.0 mean water is absent, not that the vapour water content is zero (p.260)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "x2 I, x2 II, y2 (n-hexadecane mole fractions)"
+ ],
+ "conversion_needs": [
+  "CO2 mole fraction in each phase = 1 - x1 - x2 (or 1 - y1 - y2), by difference",
+  "P and T are printed once per block and carried forward to following rows in the CSV (filled down by the extractor; the printed table shows blank cells below the first row of each block)"
+ ],
+ "notes": "22 data rows in 4 blocks: 20.1 MPa/473.15 K (6 rows), 10.1 MPa/573.15 K (7), 20.1 MPa/573.15 K (5), 30.1 MPa/573.15 K (4). Each row lists the compositions of the phases reported for one sampled equilibrium; not every row is a tie line of all three phases (dash = phase not reported or absent). Rows with y1 = 0.0 and x1 = 0.0 are CO2 + n-hexadecane binary points (no water). The text says a three-phase (VLLE) region was observed at 473.15 K and 20.1 MPa (last row of that block: hydrocarbon, aqueous and vapor phase compositions). Row with y1 only and aqueous x1 0.970: water + CO2 binary at 20.1 MPa, 473.15 K.",
+ "row_held": [
+  {
+   "rows": [
+    1,
+    2,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "reason": "no aqueous phase printed (dashes in Aqueous Phase columns): hydrocarbon + vapour ternary VLE, vapour not shown to be water-saturated (p.260)"
+  },
+  {
+   "rows": [
+    1,
+    2,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21
+   ],
+   "reason": "ternary water + n-hexadecane + CO2 point: the vapour also contains n-hexadecane (y2 > 0) and is in equilibrium with a hydrocarbon-rich liquid, so y1 is not the water content of CO2 in the binary water-CO2 system (only the rows with y2 = 0.0 are binary: 3, 12, 14, 18); found because the 573 K values read 0.54-0.58 against 0.61 for the binary (inter-source consensus, 2026-10-03)"
+  }
+ ],
+ "caution": "rows 15,16,17,19,20,21 carry 13-43 mol% n-hexadecane in the vapour phase (y2 = 0.136, 0.158, 0.375, 0.133, 0.187, 0.428): not a CO2 gas phase; organic third component present in every row"
+}

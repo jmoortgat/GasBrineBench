@@ -1,0 +1,62 @@
+{
+ "doi": "10.1016/0021-9614(94)90005-1",
+ "first_author": "Holmes",
+ "year": 1994,
+ "journal": "J. Chem. Thermodynamics 26, 271-298",
+ "source_key": "HOLMES(1994)",
+ "experimental_method": "Isopiestic molalities of CaCl2(aq) against NaCl(aq) reference at 444-524 K in the ORNL high-temperature isopiestic facility (solutions weighed with an internal balance); molar enthalpies of dilution of CaCl2(aq) in the ORNL high-temperature, high-pressure flow calorimeter (thermopile, electrical calibration), 298-527 K, about 7-43 MPa.",
+ "uncertainties_stated": "Isopiestic molalities accurate to better than 2e-3 times m (from duplicates and experience); mean temperature and pressure of each calorimetric set vary typically +-0.1 K and +-0.1 MPa; for the least-squares fit enthalpies of dilution were assigned a standard error of 2e-2 times Delta_dil H_m or 20 J/mol, whichever is greater.",
+ "quality_remarks": "Table 1 phi is the CaCl2 osmotic coefficient computed by the authors from the NaCl osmotic coefficient (Pitzer et al.) assuming complete dissociation; printed m CaCl2 = 0.2759 at 473.61 K (phi 0.9531, m NaCl 3.4532) is probably a misprint for 2.2759 (kept as printed). Table 2 printed column is -Delta_dil H_m (positive numbers). The authors state results above 526 K are not treated in this paper (calorimetric data exist to 674 K). A small fraction of the enthalpies appeared earlier in a letter. Temperature scale not stated. Some mi/mf values are repeated replicates.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   274,
+   275,
+   276,
+   277
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 3",
+   "reason": "compilation of literature thermodynamic results (property, method, T, p, m ranges, references) used in the least-squares fit; no data values of this paper"
+  },
+  {
+   "table": "Table 4",
+   "reason": "model constants (ion-interaction parameters), fitted parameters"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 183,
+   "written_data_rows": 183,
+   "label_rows": 6
+  },
+  "table_2": {
+   "printed_data_rows": 155,
+   "written_data_rows": 155,
+   "label_rows": 13
+  }
+ },
+ "changes_after_image_check": [
+  "table_1: none; text layer and an independent tesseract reading agreed on all 183 rows, and the page images were read for both pages",
+  "table_2 (m_i, 323.23 K, 7.2 MPa) rows with -dH 764 and 1573: text 1.13000 / 1.00130 -> 1.0000",
+  "table_2 (323.23 K) row -dH 1081: m_i text 0.20130 -> 0.2000",
+  "table_2 (423.42 K, 43.5 MPa) row -dH 9275: m_i text 1.13000 -> 1.0000",
+  "table_2 (473.35 K, 7.3 MPa) row -dH 2509: m_i text 1.13000 -> 1.0000; row -dH 11166: text '11166,' -> 11166",
+  "table_2 (525.76 K, 7.2 MPa) rows -dH 13369, 19262, 15971: m_i text 1.00t30 / 1.00130 / 1.00(30 -> 1.0000; row -dH 13029: m_f text '.0.4940' -> 0.4940 (stray dot in the printed image)",
+  "table_2 (526.25 K, 20.4 MPa) rows -dH 12345 and 27075: m_i text 1.(3000 / 1.0003 -> 1.0000"
+ ],
+ "extraction_notes": "ASCII headers; side-by-side column groups stacked per temperature (Table 1) or per T,p heading (Table 2). Label rows kept (Table 1 index 0,37,74,105,131,165; Table 2 index 0,11,22,25,38,51,56,68,73,117,126,154,160). Table 2 printed values are -Delta_dil H_m; mapping uses scale -1. Table 2: 6-token lines in the text layer were assigned to the left+middle groups, which was confirmed on the page images.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Table 2 text layer had 12 mis-read cells corrected from the page image (Table 1 text layer was clean); a blind second reading of Table 2 is advisable",
+ "pass2_diff": "1014 cells, 0 disagreements"
+}

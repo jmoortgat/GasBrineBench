@@ -1,0 +1,198 @@
+{
+ "table": "Table I",
+ "page_journal": 57,
+ "title_as_printed": "Enthalpies of Dilution, Delta_dil H, of Aqueous Salt Solutions at Various Temperatures",
+ "footnotes_as_printed": {
+  "a": "N is the number of duplicate experiments.",
+  "b": "Delta_dil H is the average experimental enthalpy of dilution.",
+  "c": "sigma_e is the error of Delta_dil H estimated from the scatter of the N points and the calorimetric behavior.",
+  "d": "Delta is Delta_dil H(calcd by eq 1) minus Delta_dil H(exptl).",
+  "e": "These experiments were not included in the least-squares fit because deviations from the fit were greater than 2 sigma."
+ },
+ "property": "dh_dilution",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "The pressures were kept constant at 0.1-0.3 MPa greater than the water vapor pressure at the experimental temperature (Experimental Section); no pressure printed per row",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": ""
+  },
+  "value": {
+   "col": "-dil H (J mol-1)",
+   "unit": "J/mol",
+   "scale": -1,
+   "what": "printed column is -Delta_dil H (average enthalpy of dilution per mole of salt, from initial molality m_i to final molality m_f); value = printed x -1 gives Delta_dil H"
+  },
+  "uncertainty": {
+   "col": "sigma_e (J mol-1)",
+   "unit": "J/mol"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m_i (mol kg-1)",
+    "unit": "mol/kg",
+    "what": "initial molality; final molality is column m_f (mol kg-1)"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water; one salt per block (MgCl2, Na2SO4, K2SO4 or MgSO4), no other species"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    12,
+    27,
+    40,
+    50,
+    67,
+    76,
+    88,
+    100
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.65",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "472.95",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.65",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 67,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 76,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.65",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 88,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 100,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.65",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "m_f (mol kg-1) (final molality after dilution)",
+  "N (number of duplicate experiments)",
+  "Delta (J mol-1) (difference calculated by eq 1 minus experimental, fit residual)"
+ ],
+ "conversion_needs": [],
+ "notes": "Block (E) Na2SO4 423.65 K is printed in two column groups (left then right); stacked as left then right without a second label row. Blocks F-I have no Delta column printed (cells empty). Salt of each block is in the label row. Row 0.00765e (block C) carries footnote e.",
+ "quality_remarks": "audit 2026-10-02: CSV data row 98 (MgSO4 block, 373.15 K) prints m_i = 0.00832 with m_f = 0.00191; m_f is m_i/2 in every other row and the neighbouring row ends 0.00382, so 0.00832 is probably a misprint for 0.00382. Kept as printed. The row at 0.00765 mol/kg MgCl2, 472.95 K carries footnote e (excluded from the authors' fit, deviation > 2 sigma)."
+}

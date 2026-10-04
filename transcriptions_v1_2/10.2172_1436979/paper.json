@@ -1,0 +1,87 @@
+{
+ "doi": "10.2172/1436979",
+ "first_author": "Liu",
+ "year": 1971,
+ "journal": "OSTI final report, Westinghouse Research Laboratories to Office of Saline Water, Contract 14-01-0001-2126 (Chia-Tsun Liu and W. T. Lindsay Jr.)",
+ "source_key": "LIU(1971)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned report with OCR text layer; Table 1 needed two corrections after image check (75 misread as 15; 0.28237 truncated), Table 2 text layer was noisy from hand-written annotations (values rewritten from image). Any correction counts as pass 2.",
+ "experimental_method": "Differential vapor-pressure-lowering cells (solution vs pure water) with pressure balancing at 75-300 C; boiling point elevations derived by the authors from the vapor pressure lowering using steam tables.",
+ "uncertainties_stated": "Solution vapor pressure readings reproducible within +-0.02% of total pressure; differential vapor pressure within +-0.04% (section 5.1.2). Accuracy lowest where delta p is small (low concentration, low T).",
+ "quality_remarks": "Table 7 row 115.396 / 6.9350 / 9.726: Tb + BPE = 125.122, not the 125 C isotherm of its block (others add to isotherm within 0.001): likely misprint, kept. Table 8 200 C row uses literature solubility (Robson) for the molality. Scan has hand-written annotations next to Table 2 (ignored). Temperature scale not stated. Pure-water p0 values are steam-table values, not measured. BPE tables 7 and 13 are reductions of the VPL data of Tables 2 and 12, not independent measurements.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   31,
+   36,
+   62,
+   66,
+   74,
+   82,
+   90
+  ],
+  "journal_pages": [
+   18,
+   23,
+   50,
+   54,
+   62,
+   70,
+   78
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 3": "model parameters (eq. 5)",
+  "Table 4": "smoothed osmotic coefficients (correlation)",
+  "Table 5": "derived solubility and activity coefficients",
+  "Table 6": "derived thermal quantities (heat of solution, entropy, heat capacity)",
+  "Table 10": "composition definition of simulated sea water (not data)",
+  "Table 11": "composition of the SSW used (used as composition in mappings 12 and 13, not a measured-property table)",
+  "Table 14": "fit parameters for BPE equation",
+  "Table 15": "comparison of observed and calculated BPE (fit residuals)",
+  "Table 16": "BPE calculated from equations (12)-(14)",
+  "Table 17": "comparison of estimates with measurements at 100 C (model comparison)",
+  "Table 18": "comparison of 1970 and 1966 BPE with literature estimates",
+  "Tables A1-A20 (appendix)": "derived thermodynamic functions of NaCl solutions (smoothed/calculated)"
+ },
+ "row_counts": {
+  "Table 1": {
+   "printed": 10,
+   "written": 10
+  },
+  "Table 2": {
+   "printed": 57,
+   "written": 57
+  },
+  "Table 7": {
+   "printed": 57,
+   "written": 57
+  },
+  "Table 8": {
+   "printed": 19,
+   "written": 19
+  },
+  "Table 9": {
+   "printed": 20,
+   "written": 20
+  },
+  "Table 12": {
+   "printed": 27,
+   "written": 27
+  },
+  "Table 13": {
+   "printed": 27,
+   "written": 27
+  }
+ },
+ "changes_after_image_check": [
+  "Table 1 row 0 (first row) T: 15 -> 75",
+  "Table 1 row 0 atm: 0.2823/ -> 0.28237",
+  "Table 2: all values re-read from image (text layer contained handwriting noise; printed values otherwise unchanged)"
+ ],
+ "extraction_notes": "Side-by-side blocks in Tables 2 and 7 stacked left then right. Temperature/p0 printed once per block were filled down in Tables 8, 9, 12, 13 (blank in print). Table 8 (MgSO4) extracted because Mg and SO4 belong to the six-ion set although MgSO4 is not in the brief's salt list. Tables 12-13 composition: multiple of Table 11 composition (see mapping). Measured primary data: Table 1 (vapor pressure of saturated NaCl solution) and delta p columns of Tables 8, 9, 12. Osmotic coefficients and BPE are authors' reductions. Page offset between printed and PDF pages is 13 up to Table 2 and 12 afterwards. Not run: second sanity of Table 9/12 phi against delta p.",
+ "sanity_checks": "Table 1: p0 - dp = p for all rows within 0.02 mm Hg; atm = mm Hg/760 within 2e-4. Table 13: Tsol - Tb = BPE within 0.002 for all rows. Table 7: Tb + BPE = isotherm except the noted row.",
+ "pass2_diff": "Tables 1, 2, 7, 8, 9, 12, 13: 217 rows; every pass-2 number occurs in pass 1; differences are the temperature and p0 keys filled down in pass 1."
+}

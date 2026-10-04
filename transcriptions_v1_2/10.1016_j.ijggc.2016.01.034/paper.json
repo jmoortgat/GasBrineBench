@@ -1,0 +1,39 @@
+{
+ "doi": "10.1016/j.ijggc.2016.01.034",
+ "first_author": "Caumon",
+ "year": 2016,
+ "journal": "International Journal of Greenhouse Gas Control 47, 63-70",
+ "source_key": "CAUMON(2016)",
+ "experimental_method": "In situ Raman spectroscopy with immersion probes in a 2 L autoclave (IMAGES device); Raman intensity ratio calibrated at 100 C against the Duan and Sun (2003) model, then applied at 65 C (CO2 solubility, aqueous phase) and at 100 C (water content of CO2-rich phase).",
+ "uncertainties_stated": "Pressure +-0.2 bar; temperature +-0.1 C; solubility u at 95% confidence per row; model uncertainty 7% (Duan and Sun).",
+ "quality_remarks": "Both tables are Raman-derived and rely on calibration to the Duan and Sun EOS, so they are not independent of that model; the authors call the Table 2 values 'calculated from the fit in Fig. 7a'. Table 2 scatter large (u up to 38 permil at 11.7 bar). Individual raw data points not tabulated, only means.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   6
+  ],
+  "journal_pages": [
+   66,
+   68
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "Table 1": {
+   "printed": 22,
+   "written": 22
+  },
+  "Table 2": {
+   "printed": 21,
+   "written": 21
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer clean; all cells compared to images with no corrections. Sanity: Table 1 m increases monotonically with P; Table 2 y_H2O falls with P, minimum ~21 permil near 105 bar. Lines in CSV: first header cell units kept; permil written as 'permil'.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched image",
+ "pass2_diff": "token diff: 212 numbers per pass, identical"
+}

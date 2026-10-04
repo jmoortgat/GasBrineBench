@@ -1,0 +1,134 @@
+{
+ "table": "Table I (H2O block)",
+ "page_journal": "164-166",
+ "title_as_printed": "MOLE FRACTION SOLUBILITY, x2, OF GASES DISSOLVED IN H2O AND 2H2O",
+ "footnotes_as_printed": "No table footnotes printed. Text footnote: 1 atm = 101.325 kPa; Torr = atm/760.",
+ "property": "solubility_x",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Text: 'The gas under study, at 1 atm pressure, is dispersed through the constantly stirred solution' and equilibrated for 1 h; whether this is total pressure or gas partial pressure, and any water-vapour correction, is not stated",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Present study",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  },
+  "value2": {
+   "col": "Ref. 8",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "what": "Wilhelm, Battino, Wilcock (1977) value, not measured by this paper",
+   "from_literature": true
+  },
+  "value3": {
+   "col": "Other literature",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "what": "another literature source named per row in column 'Other literature source' (per gas: Ar Ref. 9, Kr Ref. 9, N2 Ref. 10, O2 Ref. 11, CH4 and C2H6 Ref. 12, SF6 Ref. 13, CF4 Ref. 14); not measured by this paper",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ar"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "kr"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 53,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "sf6"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "cf4"
+    }
+   ]
+  }
+ ],
+ "gas_basis": "not_applicable",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction solubility; no per-volume unit",
+ "extra_unmapped": [
+  "Other literature source (text column naming the reference)"
+ ],
+ "conversion_needs": [
+  "mole fraction printed x 1e-4: value = printed x 1e-4",
+  "kPa constant 101.325 from 1 atm in the text"
+ ],
+ "notes": "Printed layout is separate side-by-side blocks per gas, each with H2O columns (literature ref. X, Ref. 8, Present study) and 2H2O columns (Present study, Ref. 8 or Ref. 14); restacked into two files: group1 = H2O, group2 = 2H2O, one label row per gas. A printed dash (not available/not measured) is an empty cell and the row is kept. In the CF4 block the printed H2O column order is Ref. 8, Ref. 14, Present study; in the CSV Ref. 8 is in 'Ref. 8' and Ref. 14 in 'Other literature'. In the 2H2O group the 'Ref. 8' column carries the Ref. 8 2H2O values (Ar, CH4, C2H6) and 'Other literature' carries Ref. 14 for CF4. Standard conditions for gas volumes: not defined (mole fractions only). Gas out of the seven (Ar, Kr, SF6, CF4) kept per convention."
+}

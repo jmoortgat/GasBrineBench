@@ -1,0 +1,49 @@
+{
+ "table": "Table 1",
+ "page_journal": 938,
+ "title_as_printed": "Our measured Bunsen coefficients (beta x 10^3) for hydrogen in distilled water and seawater.",
+ "footnotes_as_printed": "none",
+ "property": "bunsen",
+ "gas": "h2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total gas-phase pressure nominally 1 atm (hydrogen saturated with water vapour); Bunsen coefficient refers to hydrogen partial pressure of 1 atm; corrected for volume change on dissolution using a partial molal volume of H2 of 26 cm3/mol",
+ "columns": {
+  "T": {
+   "col": "Temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "constant": "1"
+  },
+  "value": {
+   "col": "beta x 10^3 cc/cc-atm",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {
+   "salinity": {
+    "col": "Salinity permil",
+    "unit": "permil"
+   }
+  },
+  "constant": {},
+  "other_species": "natural seawater (Oregon coast, filtered, acidified to pH<3.2 with 4N HCl, salinity adjusted by dilution or evaporation); column 'Salinity' in per mil, measured after the experiment with an inductive salinometer and corrected for the HCl addition; salinity 0.000 = twice-distilled water (gas-in-pure-water rows)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Bunsen definition: cm3 of H2 at STP absorbed per cm3 of solution at the measurement temperature at 1 atm H2 partial pressure; conversion to mole fraction/molality needs the solution density and STP molar volume",
+  "salinity (per mil, seawater) to NaCl-equivalent molality needs a seawater composition assumption; pressure unit atm (101.325 kPa)"
+ ],
+ "notes": "Printed in isotherm groups separated by rules (no label rows). Row at -0.35 C is below 273.15 K and the seawater rows are outside the six-ion set; all kept. Replicate-like rows (10.00/10.02 C at salinity 0.000; 10.02/10.04 C at salinity 19.694/19.736) are kept.",
+ "volume_basis": "solution",
+ "mapping_fix": "2026-10-02: volume_basis solution (Weiss 1977 defines the Bunsen coefficient per cm3 of solution; Murray and Riley compute the sample volume from the seawater density, Knudsen tables) ; salinity column added to composition.per_row"
+}

@@ -1,0 +1,100 @@
+{
+ "table": "Table I",
+ "page_journal": 332,
+ "title_as_printed": "Solubility of Water in Compressed Gases",
+ "footnotes_as_printed": "not captured (none printed on the table)",
+ "property": "y_h2o",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed 'Pressure, atm'; measured with an Aminco dead-weight gauge in the second equilibrium cell; total pressure of the gas-water vapour mixture (not stated explicitly as total); gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C",
+   "note": "printed only on first row of each temperature sub-block; filled down"
+  },
+  "P": {
+   "col": "Pressure atm",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "y1 exptl",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1,
+   "what": "y1 = mole fraction of water in the compressed gas; mean of two or more determinations"
+  },
+  "value2": {
+   "col": "y1 calcd",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "what": "calculated by authors with virial eq 5 and fitted B12",
+   "derived_by_authors": true,
+   "model_calculated": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "section label (gas name)"
+  },
+  {
+   "rows": [
+    14
+   ],
+   "reason": "section label (gas name)"
+  },
+  {
+   "rows": [
+    27
+   ],
+   "reason": "section label (gas name)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n2"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ar"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "B12 ml/mole (second virial cross coefficient fitted by the authors; printed as value +/- uncertainty on the first row of each temperature sub-block)",
+  "y1 calcd (model)"
+ ],
+ "conversion_needs": [
+  "atm to Pa",
+  "T carried forward from first row of each sub-block"
+ ],
+ "notes": "Row indices 0-based over all CSV rows incl. label rows: Nitrogen label row 0 (rows 1-13), Argon label row 14, Methane label row 27. Printed plus-minus sign written as +/-. Gas-phase solubility of water; dissolved gas in the liquid taken from literature in the calculation only."
+}

@@ -1,0 +1,43 @@
+{
+ "table": "Table I (vapor-phase block)",
+ "page_journal": 442,
+ "title_as_printed": "Experimental Data in Three-Phase Region - Concentration of Water in Vapor Phase",
+ "footnotes_as_printed": {
+  "a": "Critical region.",
+  "b": "Quadruple point by extrapolation."
+ },
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column 'Pressure, Lb./Sq. Inch Abs.' (absolute, total equilibrium cell pressure, as measured on gauges)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure lb/sq in abs",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Composition of vapor phase mole fraction water",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "what": "mole fraction water in the propane vapor phase, three phases coexisting (vapor, propane-rich liquid, water-rich liquid)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; propane stated as not less than 99 mole %"
+ },
+ "skip_rows": [],
+ "conversion_needs": [
+  "psia and F conversion; propane mole fraction is on a total basis (water-rich liquid: propane per total moles of liquid)"
+ ],
+ "notes": "Block 1 of 3 of Table I, written as its own group file. Pressure is the three-phase pressure, fixed by temperature. Rows at 201.6/201.7 F (612-613 psia) lie in the three-phase critical region (three-phase critical point 205.7 F, 637 psia, p.443 text). The last digit of 0.01208 (row 20) is obscured by a blot on the scan (second pass: 85 percent sure of 8).",
+ "regime_note": "a propane-rich liquid phase is present at three-phase conditions",
+ "quality_remarks": "Rows at 201.6/201.7 F are in the three-phase critical region; last digit of 0.01208 (row 20) obscured by a blot."
+}

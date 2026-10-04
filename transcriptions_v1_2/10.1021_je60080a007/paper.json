@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je60080a007",
+ "first_author": "Yasunishi",
+ "year": 1979,
+ "journal": "J. Chem. Eng. Data 24(1), 11-14",
+ "source_key": "YASUNISHI(1979)",
+ "experimental_method": "Gas volumetric absorption of CO2 at about 1 atm into aqueous electrolyte solutions in a 30 cm3 absorption chamber in an air bath held to 0.05 C (apparatus of Tokunaga); Ostwald coefficient evaluated with vapour pressure of the solution and a small volume-dilatation correction.",
+ "uncertainties_stated": "Air bath controlled within 0.05 C; average deviations of replicate pure-water determinations 0.06 to 0.24 % (Table I); CO2 99.96 % pure; solution concentration by chemical analysis or evaporation to dryness. No per-point uncertainty.",
+ "quality_remarks": "Pure-water results agree with Markham and Kobe within about 1.3 % at 15 C (1.0634 vs 1.075). Text: NH4Cl, (NH4)2SO4 and CaCl2 do not obey the Setschenow equation. Table II lists replicate or near-replicate Cs values (e.g. KCl 35 C 3.619/3.660) as printed; none dropped. Whether 760 mmHg is total or CO2 partial pressure is not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   12,
+   13
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III (salting-out coefficients K, observed from fits and calculated by the van Krevelen-Hoftijzer method): derived, fitted",
+  "Table IV (parameters A, B of eq 7): model parameters",
+  "Table V (max deviation of estimated Ostwald coefficient): derived"
+ ],
+ "row_counts": {
+  "Table I": "printed 3 data rows; written 3",
+  "Table II": "printed 281 data rows in 18 salt blocks; written 281 data rows plus 18 label rows (299 rows after header)"
+ },
+ "changes_after_image_check": [
+  "Table II row first row of (NH4)2SO4 15 C block: Cs 'O.322' (text layer garbled by underline) -> 0.322",
+  "Table II first row NH4Cl 15 C: Cs 'OH' -> 0.244",
+  "Table II first row (NH4)2SO4 35 C: Cs '-0.276' -> 0.276",
+  "Table II first row Ca(NO3)2 25 C: L 'O.7630' -> 0.7630"
+ ],
+ "extraction_notes": "Table II parsed from word coordinates (pdftotext -bbox) in four column panels by script; right-margin download banner words excluded; block labels (garbled sub/superscripts in the text layer) assigned by position and checked against the page image; every block compared against the image. PDF page 1 is the preceding article's last page plus this paper's title page (journal p. 11). Setschenow constants and fits not extracted.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "four cells needed correction after the image check (garbled by table rules in the text layer); page scan itself is clean",
+ "pass2_diff": "Tables I and II: 284 rows, 608/608 numbers identical."
+}

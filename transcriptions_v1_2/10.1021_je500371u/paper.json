@@ -1,0 +1,31 @@
+{
+ "doi": "10.1021/je500371u",
+ "first_author": "Zezin",
+ "year": 2014,
+ "journal": "J. Chem. Eng. Data 59 (8), 2570-2588",
+ "source_key": "ZEZIN(2014)",
+ "title": "Volumetric Properties of Mixed Electrolyte Aqueous Solutions at Elevated Temperatures and Pressures. The Systems CaCl2-NaCl-H2O and MgCl2-NaCl-H2O to 523.15 K, 70 MPa, and Ionic Strength from (0.1 to 18) mol/kg",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "Vibrating-tube densimeters; density difference of solution relative to pure water at T, p, calibrated with water and NaCl reference solutions (Hill EoS, Archer EoS).",
+ "uncertainties_stated": "u(T)=0.01 K, u(p)=0.0005*p, u(m2)=0.0065*m2 (CaCl2) or 0.0017*m2 (MgCl2), u(m1)=0.1*u(m2); U(Delta rho)=6.7e-5, 3e-5, 5.1e-5, 9.9e-5, 6.2e-5 g/cm3 at 298.15, 373.15, 423.15, 473.15, 523.15 K",
+ "tables_written": {
+  "table_2.csv": "1339 data rows + 2 label rows (CaCl2 block 769 rows, MgCl2 block 570 rows)"
+ },
+ "row_counts": {
+  "Table 2": "printed 1339 data rows in left+right blocks; written 1339 data + 2 label rows"
+ },
+ "not_extracted_tables": {
+  "Table 1": "sample information",
+  "Table 3": "fitted Pitzer mixing parameters (captured twice)",
+  "Table 4": "summary of data used for fitting (captured twice)"
+ },
+ "quality_remarks": "The 'this study' point counts of paper Table 4 sum to 1136 = 1339 minus 203 rows with m1 = 0 (consistent). Printed digit-grouping spaces inside numbers (0.500 03) removed. Replicate rows exist. T printed with small scatter (298.14-298.17, 523.15-523.17 K). Abstract ionic strengths 0.1-18 mol/kg consistent with max m2 6.004 (MgCl2), T 298-523 K, p to 70 MPa. Pressure and temperature scale not stated.",
+ "extraction_notes": "Left and right 5-column blocks stacked, left first, within each salt system. Two-line header joined. Last printed line has an empty right block.",
+ "needs_pass2": false,
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

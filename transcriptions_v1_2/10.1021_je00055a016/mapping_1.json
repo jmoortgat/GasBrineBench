@@ -1,0 +1,144 @@
+{
+ "table": "Table I",
+ "page_journal": 54,
+ "title_as_printed": "Values of the Difference in Density, Ad, for Aqueous CaCl2 at Various Temperatures, Pressures, and Molalities",
+ "footnotes_as_printed": {
+  "a": "delta is the Ad calculated by cubic spline interpolation of the knots and end conditions in Table II minus the experimental Ad."
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "System pressure maintained with a back-pressure regulator and monitored with an in-line test gauge, accuracy 0.3 MPa; measurements up to 40 MPa. Water vapour/saturation not discussed; the paper does not say whether the pressure is gauge or absolute (printed 0.101 MPa for the lowest pressure).",
+ "rho_diff_reference": "Ad = d - d0, density of CaCl2(aq) minus density of pure water at the same temperature and pressure (reference fluid pure degassed water)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": ""
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Ad/(kg m-3)",
+   "unit": "kg/m3",
+   "what": "density difference to pure water at same T and P"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m/(mol kg-1)",
+    "unit": "mol/kg"
+   }
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    35,
+    52,
+    98,
+    149,
+    176,
+    200,
+    249
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.16",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.05",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.16",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "399.85",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 149,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "450.13",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 176,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "449.75",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 200,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "548.05",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 249,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "597.45",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "delta/(kg m-3): spline-fit residual (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "Ad is a difference to pure water; absolute density requires a pure-water density at the same T,P"
+ ],
+ "notes": "Printed as two side-by-side column groups per temperature block; stacked left group first, then right group (each temperature block continues across the page break, left group continuing the left, right the right). Temperature labels differ slightly from block to block (323.16 and 323.05 K; 450.13 and 449.75 K), carried as printed. Duplicate rows are replicate measurements and kept."
+}

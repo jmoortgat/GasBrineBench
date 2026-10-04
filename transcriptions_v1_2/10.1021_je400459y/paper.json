@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je400459y",
+ "first_author": "Song",
+ "year": 2013,
+ "journal": "J. Chem. Eng. Data 58 (12), 3342-3350",
+ "source_key": "SONG(2013)",
+ "title": "Measurements of CO2-H2O-NaCl Solution Densities over a Wide Range of Temperatures, Pressures, and NaCl Concentrations",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "experimental_method": "magnetic suspension balance (Rubotherm MSB) density of CO2-loaded NaCl brine; temperature by Pt100, pressure by a 20 MPa sensor; CO2-loaded solutions prepared per Zhang et al. (ref 16)",
+ "uncertainties_stated": "u(T) = 0.01 C, u(P) = 0.005 MPa; combined expanded density uncertainty U(rho) = 2 x 0.22 kg/m3 (k = 2, 95 %); UCO2 = 0.00035 mol/kg and UNaCl = 0.00068 mol/kg as printed",
+ "tables_written": {
+  "table_2": "416 CSV rows = 400 data rows + 16 label rows"
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "analysis of experimental materials (purities), no measured data"
+  },
+  {
+   "table": "Table 3",
+   "reason": "coefficients of the authors' empirical eq 10, model parameters"
+  }
+ ],
+ "row_counts": {
+  "table_2": "printed 8 bands x 25 rows x 2 side-by-side blocks = 400 data rows; written 400 data + 16 label rows"
+ },
+ "quality_remarks": [
+  "Abstract: T 60-140 C, P 10-18 MPa, NaCl 1-4 mol/kg, w = 0, 0.01, 0.02, 0.03: table ranges match (T 59.11-141.21 C, P 9.945-18.026 MPa; actual w values 0.0098 to 0.0305 are as printed in block labels).",
+  "Several rows deviate from the nominal pressure grid (e.g. 14.050, 16.043, 9.995 MPa) and temperature scatter is larger for the 4 mol/kg blocks (e.g. 59.75-60.44 C at nominal 60 C; 78.96-79.04 C at nominal 80 C); printed as is.",
+  "Mixed decimal places in the printed densities (e.g. 1.0619 vs 1.06263) kept as printed; one T printed as 99.921.",
+  "The text says the CO2 solutions follow the method of Zhang et al.; dissolved CO2 mass fraction w basis is not stated.",
+  "Footnote a of Table 2 is cited in the caption but not captured.",
+  "Section 3 text says the CO2 and N2 purities are tabulated in Table 1 but no N2 data appear in Table 2."
+ ],
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only, no PDF page image"
+ },
+ "extraction_notes": "CSV written by script from the captured DOM cells. No thin or no-break spaces occur in the cells (digit grouping not present); en dash in label text normalised to ASCII '-'. Left and right blocks were stacked per SPEC convention 11.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

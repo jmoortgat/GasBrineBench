@@ -1,0 +1,124 @@
+{
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "cell pressure (Quartzdyne transducer); total vs CO2 partial basis not stated; Uc(P)=0.068 MPa",
+ "footnotes_as_printed": {
+  "**": "Uc(T) = 0.17 K; Deviation (%) = 100 x (xExp - xmodel)/xExp",
+  "a": "Uc(P) = 0.068 MPa"
+ },
+ "table": "Table 7",
+ "page_journal": 86,
+ "title_as_printed": "Measured CO2 solubility in the mixed salts aqueous phase at different isotherms.",
+ "property": "solubility_x",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "set by label rows via group_rows (T.constant)"
+  },
+  "P": {
+   "col": "Pressure MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x_CO2 (mole fraction)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "note": "basis (salt-inclusive total aqueous phase) per eq. 9, not stated explicitly"
+  },
+  "uncertainty": {
+   "col": "Expanded Uncertainty (k=2)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "note": "95% confidence, k=2"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "7.013",
+    "unit": "wt%"
+   },
+   "CaCl2": {
+    "value": "0.737",
+    "unit": "wt%"
+   },
+   "MgCl2": {
+    "value": "0.087",
+    "unit": "wt%"
+   },
+   "KCl": {
+    "value": "0.066",
+    "unit": "wt%"
+   }
+  },
+  "other_species": "SrCl2 0.059 wt% and BaCl2 0.036 wt% (Table 4 'wt% in Aqueous Phase'); synthetic formation water; water activity of fresh brine 0.953 +- 0.002 (text)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    7,
+    13,
+    14,
+    19,
+    20,
+    26
+   ],
+   "reason": "temperature label rows and %AAD summary rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "303.16",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.20",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.19",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Deviation columns (single-salt NaCl assumption and mixed-salts assumption, each vs sCPA-EoS and Duan model): calculated by authors"
+ ],
+ "conversion_needs": [],
+ "notes": "Composition from Table 4 (wt% in aqueous phase).",
+ "gas_basis": "salt_free",
+ "gas_basis_evidence": "paper: \"dividing the total number of CO2 moles by the total number of CO2 and water moles\"; Eq. 9 uses water moles only (audit 2026-10-02)"
+}

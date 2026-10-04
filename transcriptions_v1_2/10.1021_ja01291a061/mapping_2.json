@@ -1,0 +1,47 @@
+{
+ "table": "Table III",
+ "page_journal": 2689,
+ "title_as_printed": "Vapor Pressures and Activities of Aqueous Solutions of Potassium Sulfate at 25 deg",
+ "footnotes_as_printed": {
+  "a": "Saturated."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; vapor pressure of the solution at 25 C",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "p1 mm",
+   "unit": "torr",
+   "what": "vapor pressure p1 of the solution in mm (mm Hg; printed as 'mm.'); m = 0.0 row is pure water, 23.752"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "K2SO4": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "water (source of water not stated beyond 'distilled water' used for recrystallization); salt c.p. grade recrystallized",
+  "volume_basis": "not_applicable",
+  "volume_basis_evidence": "Solutions of the desired molality were made by adding the necessary weight of water to a known weight of anhydrous salt (molality per kg water)."
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "(p1o - p1)/p1o (calculated)",
+  "h/m^1/2 (calculated)",
+  "a1 (solvent activity p1/p1o, calculated, perfect-gas vapors)",
+  "gamma_pm (geometric-mean activity coefficient, calculated by graphical integration)"
+ ],
+ "conversion_needs": [],
+ "notes": "Last row m = 0.6889 is the saturated solution (footnote a). m = 0.0 row is pure water, kept."
+}

@@ -1,0 +1,40 @@
+{
+ "doi": "10.1139/v78-301",
+ "first_author": "Doan Thi An",
+ "authors": "Doan Thi An, Tjoon Tow Teng, James Malcolm Sangster",
+ "year": 1978,
+ "journal": "Canadian Journal of Chemistry 56, 1853-1856",
+ "title": "Vapour pressures of CaCl2-NaCl-H2O and MgCl2-NaCl-H2O at 25 C. Prediction of the water activity of supersaturated NaCl solutions",
+ "source_key": "DOANTHIAN(1978)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned page with OCR-quality text layer; all 59 cells were read from the 220 dpi image (text layer unusable for tables); one misprint-like glyph ('2:3501') resolved from the image",
+ "experimental_method": "Static vapour-pressure method at 25 C; salts weighed into the flask, water distilled in under vacuum, solution concentrated stepwise by evaporating solvent; water activity from vapour pressure.",
+ "uncertainties_stated": "not stated in the paper",
+ "quality_remarks": "No correction for vapour-phase non-ideality (stated). NaCl-only osmotic coefficients checked against Gibbard et al. in Fig. 1 (deviations of a few 1e-3 to 3e-3 in phi, graph only). Concentrations extend beyond NaCl saturation (supersaturated mixed solutions are not supersaturated in the strict sense because of the second salt).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   1854
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3 and Table 4 (reverse-calculated supersaturated NaCl water activities): not printed in the paper, available only from the CISTI depository",
+  "Table 5 (polynomial parameters A_i): model parameters",
+  "Table 6 (water activities and osmotic coefficients of supersaturated NaCl solutions at rounded molalities): derived by reverse RWR/ZSR calculation, not measured (page 3 image seen as scan; not transcribed)",
+  "Fig. 1 (NaCl osmotic coefficient test measurements): figure only, deviations plotted vs Robinson-Stokes, no table"
+ ],
+ "row_counts": {
+  "Table 1": "printed 23 / written 23",
+  "Table 2": "printed 36 / written 36"
+ },
+ "changes_after_image_check": [
+  "Table 2 row 15 m1: printed/OCR '2:3501' -> 2.3501"
+ ],
+ "extraction_notes": "Columns: m1 = first salt (MgCl2 in Table 1, CaCl2 in Table 2), m2 = NaCl, a_w, phi. Authors state phi is given to the fourth decimal only for rounding (Table 1 footnote). Sanity checks: a_w decreases monotonically with rising total molality only approximately (row order is by increasing a_w decrease); Table 1 a_w 0.8289 -> 0.4966, Table 2 0.9054 -> 0.5566; no duplicates. Molality unit mol/kg is not printed in the tables; the text uses molal and ionic strength I (I = 14 limit).",
+ "pass2_diff": "Tables 1 and 2: 59 rows, 236/236 numbers identical."
+}

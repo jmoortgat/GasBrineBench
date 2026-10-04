@@ -1,0 +1,36 @@
+{
+ "slug": "10.1007_bf00646293",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "All PDF-derived tables get a blind second pass; text layer was OCR-like (garbled spacing, +/- signs mangled), so tables were typed from the page images after cross-checking the text layer numbers.",
+ "doi": "10.1007/BF00646293",
+ "first_author": "Dec",
+ "year": 1985,
+ "journal": "Journal of Solution Chemistry 14(12), 827-836",
+ "source_key": "DEC(1985)",
+ "experimental_method": "Steady-state gas-dissolution microcalorimeter; heat of solution of hydrocarbon gases in water at 15 and 35 C, standard-state dH0 obtained using second virial coefficients.",
+ "uncertainties_stated": "Twice the standard deviation of the mean; accuracy of the method about 1 percent; up to ~2 percent systematic error possible at 35 C depending on gas-syringe temperature (controlled at 25 C to minimise).",
+ "quality_remarks": "Table I propene van't Hoff (Wilhelm) uncertainty printed +-29 on 27 (likely misprint, kept as printed). Table I i-C4H10 van't Hoff 21.1 has a smudge after it in the scan; read as 21.1. Footnote letter 'a' in header of col 1 has a stray mark in the scan.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   830,
+   831
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III (dCp at 25 C): derived by authors by fitting dH0 vs T (Eq. 1) and literature comparison, not a direct measurement"
+ ],
+ "row_counts": {
+  "table_1": "printed 11 gas rows (each with an uncertainty line); written 11 data rows + 11 label rows",
+  "table_2": "printed 11 gas rows; written 11 data rows + 11 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Gas label rows inserted before each data row (rule 10); -dH0 printed positive so mapping scale is -1. Text-layer garbles such as 'Calls' (C3H8), '21.1:' and '-+' signs were resolved from the image. Table 1 and 2 data cells matched text layer numbers. Columns c and d are literature van't Hoff values.",
+ "pass2_diff": "Both tables 11 rows, all data numbers identical; only token differences are gas-name digits kept in data rows by pass 2."
+}

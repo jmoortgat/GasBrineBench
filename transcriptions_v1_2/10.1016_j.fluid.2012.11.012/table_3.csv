@@ -1,0 +1,5 @@
+T C,ScCO2 density g/ml,H2O solubility mol%,Literature values mol%,Calculated value mol%,note
+40,0.5148,0.32,0.428 (101.3 atm)a,0.38 (100 atm),H2O solubility mol%:h; Literature values mol%:a; Calculated value mol%:i
+50,0.2948,0.49,0.41 +/- 0.05 (92.7 atm)b; 0.364 (86 atm)c; 0.429 (99 atm)c; 0.46 (100 atm)d; 0.45 (100 atm)e; 0.361 (100 atm)f,0.35 (100 atm),H2O solubility mol%:h; Calculated value mol%:i
+75,0.2020,0.85,0.82 (100 atm)f; 0.698 (80 C; 100 atm)d; 0.74 (100 atm)e; 0.92 (80 C; 89.7 atm)b; 0.93 (80 C; 99.6 atm)b,0.83 (100 atm),H2O solubility mol%:h; Calculated value mol%:i
+100,0.1670,1.61,2.7 (100 atm)g,1.86 (100 atm),H2O solubility mol%:h; Calculated value mol%:i

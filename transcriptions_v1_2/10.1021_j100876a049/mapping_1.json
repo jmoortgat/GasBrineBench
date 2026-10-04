@@ -1,0 +1,106 @@
+{
+ "table": "Table I",
+ "page_journal": 1270,
+ "title_as_printed": "Solubility in Water at Room Temperature of Paraffin and Branched-Chain Paraffin Hydrocarbons",
+ "footnotes_as_printed": {
+  "a": "Standard deviation from mean.",
+  "b": "Calculated solubility of liquid hydrocarbon at 25 deg."
+ },
+ "property": "other",
+ "property_description": "solubility as mass of hydrocarbon per 10^6 g of water (ppm by mass of water), gas chromatographic analysis of water saturated with the hydrocarbon",
+ "gas": "",
+ "regime": "",
+ "gas_per_row": {
+  "0": "ch4",
+  "1": "c2h6",
+  "2": "c3h8",
+  "3": "n-c4h10",
+  "4": "i-c4h10",
+  "5": "n-c5h12",
+  "6": "i-c5h12",
+  "7": "neo-c5h12",
+  "8": "n-c6h14",
+  "9": "2-methylpentane",
+  "10": "3-methylpentane",
+  "11": "2,2-dimethylbutane",
+  "12": "n-c7h16",
+  "13": "2,4-dimethylpentane",
+  "14": "n-c8h18",
+  "15": "2,2,4-trimethylpentane",
+  "16": "2,2,5-trimethylhexane"
+ },
+ "temperature_scale": "not stated",
+ "pressure_note": "'One atmosphere of the individual gaseous hydrocarbons was maintained over distilled water during equilibration' (gases); partial vs total pressure not stated; liquid hydrocarbon rows equilibrated as a separate liquid phase, pressure not stated",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mass ratio per 10^6 g water, no volume quantity",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water (distilled), pure hydrocarbon",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25",
+   "note": "'room temperature', 'temperature closer than 25 +- 1.5 deg maintained by air conditioning'"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified",
+   "applies_to": "gaseous hydrocarbons only (rows 0-4, 7); liquid hydrocarbon rows are at the hydrocarbon's own vapour pressure"
+  },
+  "value": {
+   "col": "Solubility this work g of hydrocarbon/10^6 g of water",
+   "unit": "g_hydrocarbon_per_1e6_g_water"
+  },
+  "uncertainty": {
+   "col": "Std dev",
+   "unit": "g_hydrocarbon_per_1e6_g_water",
+   "what": "standard deviation from mean (footnote a)"
+  },
+  "value2": {
+   "col": "Calculated solubility of liquid hydrocarbon at 25 C (this work column)",
+   "unit": "g_hydrocarbon_per_1e6_g_water",
+   "what": "calculated solubility the hydrocarbon would have as liquid, printed in parentheses (footnote b)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure distilled water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "regime": "lle",
+   "reason": "pure hydrocarbon is a liquid at room temperature; saturated aqueous solution in contact with the liquid hydrocarbon phase"
+  }
+ ],
+ "row_from_literature": [],
+ "extra_unmapped": [
+  "Lit. solubility column (values of other authors, bracketed numbers are the paper's reference numbers; several values per cell)",
+  "Molar vol ml/mole at 20 C (from API 44 / Doss)"
+ ],
+ "conversion_needs": [
+  "g hydrocarbon/10^6 g water to mole fraction or molality needs hydrocarbon molar mass",
+  "temperature given as room temperature 25 +- 1.5 C"
+ ],
+ "notes": "Only methane, ethane and propane are in the seven-gas scope; all other rows (n-butane to trimethylhexane) kept per SPEC. Parenthesised numbers in the printed 'This work' column (136, 165, 54) are calculated solubilities of the liquid hydrocarbon at 25 C, put in a separate column; row 3 n-butane has footnote b printed on the (136). Footnote a is printed on the first uncertainty (methane).",
+ "quality_remarks": "audit 2026-10-02: temperature printed as 'room temperature'; text p.1268: 25 +- 1.5 deg maintained by air conditioning, so the constant 25 C carries a +-1.5 K spread. The constant 1 atm applies to the gas rows (0-4, 7) only; liquid-hydrocarbon rows 5,6,8-16 carry no stated pressure."
+}

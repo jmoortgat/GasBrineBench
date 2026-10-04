@@ -1,0 +1,64 @@
+{
+ "table": "Table 3",
+ "page_journal": 39,
+ "title_as_printed": "Isopiestic Molalities of MgCl2 Stock No. 1 from Measurements with CaCl2 No. 1, H2SO4, and NaCl No. 1 Reference Solutions",
+ "footnotes_as_printed": {
+  "a": "Saturated solution in equilibrium with solid NaCl."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68 (25.00 +- 0.005 C stated in the text)",
+ "pressure_note": "not stated (isopiestic equilibration in a closed vacuum chamber at the vapour pressure of the solutions; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "[MgCl2] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of test salt MgCl2 at isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "[Reference salt] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference salt solution at isopiestic equilibrium",
+   "reference_salt": {
+    "col": "Reference salt"
+   }
+  }
+ },
+ "reference_salt": {
+  "col": "Reference salt"
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "[MgCl2] m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water; no other species"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    8,
+    9,
+    10
+   ],
+   "reason": "no MgCl2 molality printed in this row (blank test-salt cell; reference-reference only); the saturated NaCl 6.1580 (footnote a) is in this row"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molalities per kg of water (mol kg-1)"
+ ],
+ "notes": "Printed wide with three reference columns, restacked to one row per (MgCl2, reference) pair in the order CaCl2, H2SO4, NaCl; 23 printed rows -> 62 written rows. One printed row (CaCl2 2.9772, H2SO4 4.3555, NaCl 6.1580 saturated) has no MgCl2 molality: its rows have an empty [MgCl2] m.",
+ "quality_remarks": "The printed row CaCl2 2.9772 / H2SO4 4.3555 / NaCl 6.1580 has no MgCl2 molality and is skipped; the NaCl value carries footnote a (saturated)."
+}

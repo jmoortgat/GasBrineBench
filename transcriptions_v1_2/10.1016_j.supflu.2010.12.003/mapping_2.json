@@ -1,0 +1,337 @@
+{
+ "table": "Table 2",
+ "page_journal": 127,
+ "title_as_printed": "The solubility (S) of CO2 in aqueous solutions of NaCl+KCl+CaCl2 (weight ratio = 1:1:1) and the Setschenow constants KS at different temperatures and pressures.",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the system at equilibrium (view cell, pressure transducer +-0.025 MPa); total system pressure, not stated whether water/salt vapour corrected",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set per block by label row"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "S/wt%",
+   "unit": "mass_percent_gas_in_liquid_sample",
+   "scale": 1.0
+  },
+  "Ks": {
+   "col": "K_S",
+   "unit": "1/(mass fraction), ln basis (Cs = salt mass fraction; Eq. 1 p.128)",
+   "derived_by_authors": true,
+   "what": "Setschenow constant, ln(S0/S)=Ks*Cs (Eq. 1), from this paper's own S"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {
+   "salinity": "total salt wt% set per block by label row (5.0, 10.0, 14.3)"
+  },
+  "other_species": "NaCl + KCl + CaCl2, weight ratio 1:1:1 (each salt = one third of the total salt mass; basis of wt% presumably total solution mass, not stated)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45,
+    54,
+    66,
+    75
+   ],
+   "reason": "block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1.6667",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1.6667",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "5.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.6667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1.6667",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "3.3333",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "3.3333",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10.0",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "3.3333",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "3.3333",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 54,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "14.3",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "4.7667",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 66,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "14.3",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "4.7667",
+     "unit": "wt%"
+    }
+   ]
+  },
+  {
+   "label_row": 75,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55.0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "14.3",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "4.7667",
+     "unit": "wt%"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "4.7667",
+     "unit": "wt%"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "K_S (derived_by_authors; CS unit not stated)"
+ ],
+ "conversion_needs": [
+  "S is wt% CO2 in the liquid sample (mass of CO2 / mass of sample x 100, assumed): needs conversion to mole fraction/molality"
+ ],
+ "notes": "Original layout: three concentration groups (row-group label Con./wt% printed beside the middle row), each with three side-by-side temperature blocks (35.0, 45.0, 55.0 C) of P, S, KS. Stacked: per concentration, 35 then 45 then 55 C, one label row each (9 label rows). 14.3 wt% block has 11 rows at 35.0 C and 8 at 45.0 and 55.0 C. Con. printed as '5.0%', '10.0%', '14.3%'. 0.0 wt% reference is Table 1. Each salt = one third of the total (weight ratio 1:1:1, table title): composition.constant.NaCl/KCl/CaCl2 set per block (total/3, rounded to 4 decimals)."
+}

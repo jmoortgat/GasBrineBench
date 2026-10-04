@@ -1,0 +1,54 @@
+{
+ "doi": "10.1021/acs.jced.3c00096",
+ "first_author": "Sun",
+ "year": 2023,
+ "journal": "J. Chem. Eng. Data 68, 2345-2352",
+ "source_key": "SUN(2023)",
+ "experimental_method": "PVT cylinder (300 mL hastelloy) with water displacement: at constant gas pressure part of the equilibrated water is transferred out, flashed at ambient conditions and the released gas and water volumes are measured.",
+ "uncertainties_stated": "u(T) = 0.05 K, u(p) = 0.01 MPa; volume measurement accuracy 0.01 mL; no uncertainty on s stated; measurements repeated at least twice per point.",
+ "quality_remarks": "(1) Unit question: s x 10^3 is labelled 'mol %'; for CH4 at 293.2 K and 21 MPa the printed 3.289 matches the usual mole fraction x = 3.3e-3 (0.33 mol %), so the printed unit label may be wrong by a factor of 100 (value as printed read as mol % would be 3.3e-5 fraction). Resolved in the mapping: the label is judged a mislabel and the number is used as a mole fraction x 1e-3. (2) Table 5 block header 289.15 K versus 289.45 K elsewhere (probable misprint; mapping uses 289.45 K, supported by Table 3 and Table 6). (3) Only the gas mixture CH4/C2H6 95/5 feed composition is given; composition of dissolved gas not reported. (4) Average relative error versus literature CH4 is 4.10 % (authors).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   2349,
+   2350
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "specification of materials"
+  },
+  {
+   "table": "Table 2",
+   "reason": "model parameters"
+  },
+  {
+   "table": "Table 3",
+   "reason": "hydrate formation T-p conditions with feed composition only (no aqueous composition), plus calculated pressure and hydrate composition"
+  },
+  {
+   "table": "Table 6",
+   "reason": "calculated (model) solubility, not measured"
+  },
+  {
+   "table": "Figure 6",
+   "reason": "bubble/dew point data only in a figure, no table"
+  }
+ ],
+ "row_counts": {
+  "Table 4": "printed 6, written 6",
+  "Table 5": "printed 40 data rows in 4 blocks, written 40 plus 4 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image for every cell of Tables 4 and 5. Sanity: p increasing within each block; s rises with p up to hydrate onset then falls (288.15 K) or is flat, as the authors describe. Solubility at the hydrate pressure is the maximum in each block. 0.1 trailing zeros kept as printed (e.g. 2.3, 1.3).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Tables 4 and 5: 46 rows, 104/104 numbers identical."
+}

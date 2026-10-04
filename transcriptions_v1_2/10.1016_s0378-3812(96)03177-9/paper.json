@@ -1,0 +1,75 @@
+{
+ "doi": "10.1016/S0378-3812(96)03177-9",
+ "first_author": "Zheng",
+ "year": 1997,
+ "journal": "Fluid Phase Equilibria 129, 197-209",
+ "source_key": "ZHENG(1997)",
+ "experimental_method": "Static gas absorption: degassed water or NaCl solution in a glass cell, gas admitted from a calibrated flask, solubility from PVT balance of the gas introduced, at low pressure (<0.1 MPa); NaCl content checked by evaporation to dryness after the run.",
+ "uncertainties_stated": "Instrument table (Table 2) lists sensitivity/uncertainty of T (0.001/0.1 K), absolute pressure (0.1/1.7 mbar), differential pressure, balance; no uncertainty on x1 or H stated.",
+ "quality_remarks": "Conclusions text says 298.15 K but data are at about 278, 303/308, 333, 338 K (Table 3 pure water also has 303 and 333 K). NaCl block label 0.0291 in Table 3 vs 0.0295 in Tables 4-7 (abstract: 0.0291). Table 6, NaCl 0.0121, 278.17 K second row: P = 0.08557 MPa is much higher than neighbouring pair value 0.06753 (printed so; likely misprint, kept). CO2 in pure water checked by authors against Wilhelm et al. (1977), good agreement. Four of five gases are refrigerants outside the seven-gas list.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "journal_pages": [
+   201,
+   202,
+   203,
+   204,
+   205
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "purity and supplier of substances"
+  },
+  {
+   "table": "Table 2",
+   "reason": "instrument specifications"
+  },
+  {
+   "table": "Tables 8-10",
+   "reason": "model parameters and AAD of correlation"
+  }
+ ],
+ "row_counts": {
+  "table_3": {
+   "printed": 28,
+   "written": 28
+  },
+  "table_4": {
+   "printed": 24,
+   "written": 24
+  },
+  "table_5": {
+   "printed": 24,
+   "written": 24
+  },
+  "table_6": {
+   "printed": 24,
+   "written": 24
+  },
+  "table_7": {
+   "printed": 24,
+   "written": 24
+  }
+ },
+ "changes_after_image_check": [
+  "table_4 row 0 NaCl label: 0,00 -> 0.00 (text layer comma)",
+  "table_4 rows 18-22 x1: 0,000417 -> 0.000417; 0,000443 -> 0.000443; 0,000167 -> 0.000167; 0,000187 -> 0.000187; 0,0000709 -> 0.0000709 (text layer commas; the image shows full stops)",
+  "table_5 row 7 x1: 0.00026 ! -> 0.000261",
+  "table_6 row 14 H1_s: 639,5 -> 639.5"
+ ],
+ "extraction_notes": "Text layer otherwise clean; every page image compared with the parsed rows. NaCl composition printed only on the first row of each block and filled down. Tables 3-7 are one table per gas, so each has its own mapping. Extraction of the four refrigerant tables follows SPEC v2.1 convention 1 (keep any gas).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "seven text-layer cells needed correction after the image check (commas for full stops, a '!' glyph)",
+ "pass2_diff": "Tables 3-7: 28 + 4x24 rows; all measured numbers identical; differences are only NaCl block values that pass 1 filled down and pass 2 left blank. Table 6 P=0.08557 at 278.17 K likely a misprint, kept as printed."
+}

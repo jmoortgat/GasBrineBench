@@ -1,0 +1,51 @@
+{
+ "table": "Table 1",
+ "page_journal": 108,
+ "title_as_printed": "Hydrate-liquid-vapor equilibrium at temperature T, pressure p, liquid-phase mole fraction of methane xCH4 and carbon dioxide xCO2, and vapor-phase mole fraction of carbon dioxide yCO2 for the system methane + carbon dioxide + water.",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated beyond 'p /MPa' (equilibrium pressure of the crystallizer, controlled; the text says temperature and pressure were controlled and vapor composition measured to confirm equilibrium); whether it includes water vapour is not stated",
+ "columns": {
+  "T": {
+   "col": "T /K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p /MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "xCH4",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "gas": "ch4"
+  },
+  "value2": {
+   "col": "xCO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "gas": "co2",
+   "what": "CO2 mole fraction in liquid water-rich phase"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "yCO2 (equilibrium vapour-phase CO2 mole fraction, measured by GC; binary gas, water in vapour not reported)",
+  "Phases present (H-Lw-V for every row)"
+ ],
+ "conversion_needs": [],
+ "notes": "Mixed-gas system: each row gives both xCH4 and xCO2 in the same liquid sample (gas mixture CH4+CO2, vapour composition yCO2). Mole fractions are of each gas in the total liquid (water + dissolved gases); gas_basis not_applicable for pure water but the gas phase is a CH4+CO2 mixture. Ranges: T 274.02-280.12 K, p 1.66-4.03 MPa. Standard (k=1) uncertainties: u(T)=0.1 K, u(p)=0.015 MPa, u(yCO2)=0.02, u(xCH4)=0.000040, u(xCO2)=0.00027; expanded (k=2): U(T)=0.2 K, U(p)=0.03 MPa, U(yCO2)=0.04, U(xCH4)=0.000080, U(xCO2)=0.00054 (stated as constants in text).",
+ "gas_mixture": true,
+ "value2_gas_in_liquid": true
+}

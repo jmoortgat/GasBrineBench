@@ -1,0 +1,51 @@
+{
+ "table": "Table II",
+ "page_journal": 927,
+ "title_as_printed": "Absorption Coefficients of Nitrogen in Water at 25 C (Saturation obtained by shaking)",
+ "footnotes_as_printed": {
+  "a": "Cubic centimeters of gas at S. T. P. per gram of water."
+ },
+ "property": "gas_volume_solubility",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Nitrogen Pressure, Atmospheres'; abstract speaks of '1 atmosphere partial pressure'; gauge/absolute and partial/total not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "Nitrogen Pressure atm",
+   "unit": "atm",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Av. coefficient cc/g",
+   "unit": "cm3STP_gas_per_g_water",
+   "what": "absorption coefficient: cc of gas at S.T.P. per gram of water at the stated nitrogen pressure (not reduced to 1 atm)"
+  },
+  "uncertainty": {
+   "col": "+-",
+   "unit": "cm3STP_gas_per_g_water"
+  }
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "'Cubic centimeters of gas at S. T. P. per gram of water' (gas volume per mass of water)",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "Runs",
+  "Av. from Table I (copy of Table I final values)"
+ ],
+ "conversion_needs": [
+  "atm to Pa; STP gas volume per g water to mole fraction or molality needs molar volume at STP (STP definition not stated)"
+ ],
+ "notes": "Independent second method (shaking apparatus, Wiebe and Tremearne); 100, 200, 300 atm only."
+}

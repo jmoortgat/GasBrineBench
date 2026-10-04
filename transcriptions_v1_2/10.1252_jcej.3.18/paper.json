@@ -1,0 +1,37 @@
+{
+ "doi": "10.1252/jcej.3.18",
+ "first_author": "Onda, Kakusaburo",
+ "authors": "Kakusaburo Onda, Eizo Sada, Takeshi Kobayashi, Shigeharu Kito, Kunimitsu Ito",
+ "year": 1970,
+ "journal": "Journal of Chemical Engineering of Japan 3(1), 18-24",
+ "title": "Salting-out parameters of gas solubility in aqueous salt solutions",
+ "source_key": "ONDA(1970)_A",
+ "experimental_method": "Gas volumetric method: measured gas volume contacted with degassed salt solution in a thermostatted (+-0.01 C) apparatus with magnetic stirring; dissolved amount from the volume change, at about 1 atm and 25 C.",
+ "uncertainties_stated": "Pure-water check: mean Bunsen coefficient 0.7595 (range +-0.17%) for CO2 and 0.1111 (range +-1.44%) for ethylene, six runs each, 25 C. No uncertainties for the table rows.",
+ "quality_remarks": "Gas purity CO2 99.8%, C2H4 99.6%. Salt concentrations from weighing and checked by density or evaporation. Bunsen coefficient defined per cm3 of solution, gas volume reduced to 0 C, 760 mmHg with ideal gas law; 'at 0 C and 760 mmHg partial gas pressure'. Salt concentration is in mol/l (per litre of solution); Setschenow-type correlation uses ionic strength in mol/l. Table 3 (salting-out parameters) is fitted/derived, not extracted. Table 1 NH4NO3 rows 2.615 and 2.644 mol/l are near-replicates (alpha rises slightly, 0.6906 to 0.6917).",
+ "how_extracted": "image_read (text layer present and matched; every cell read from the 200 dpi page image)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   19
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3 (calculated salting-out parameters xg, xc, xa and standard deviations): fitted/derived model parameters",
+  "Table 4 (upper limits of ionic strength for Eq. 4): derived",
+  "Literature data from ICT and Landolt-Bornstein used for the correlation are not tabulated in the paper"
+ ],
+ "row_counts": {
+  "Table 1": "printed 45 data rows / written 45 (+10 label rows)",
+  "Table 2": "printed 31 data rows / written 31 (+5 label rows)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer inserted spaces inside numbers but digits matched the image in all 76 cells. Out-of-six-ion-set salts (LiCl, NH4NO3, HNO3, NaHSO3, KI, Ca(NO3)2, Na2SO3) kept and marked in mapping. Sanity: alpha decreases with Cs in every block. Each CSV has label rows per salt, listed in skip_rows and group_rows. PDF contains another article (Kunugita et al., bubble column) starting on its last page; not relevant. Temperature scale not stated.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean and every cell matched the page image.",
+ "pass2_diff": "Tables 1 and 2: 76 rows identical except one Cs in the NaCl block (3.005 in pass 1 and in the OCR text layer, 3.006 in pass 2, about 70 percent sure): the last glyph is damaged in a 500 dpi crop; pass-1 reading kept, Cs uncertainty 0.001 flagged."
+}

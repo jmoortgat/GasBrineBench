@@ -1,0 +1,40 @@
+{
+ "doi": "10.1016/S0021-9673(00)82344-4",
+ "first_author": "Cosgrove, Bruce A.",
+ "authors": "Bruce A. Cosgrove, John Walkley",
+ "year": 1981,
+ "journal": "Journal of Chromatography 216, 161-167",
+ "title": "Solubilities of gases in H2O and 2H2O",
+ "source_key": "COSGROVE(1981)",
+ "experimental_method": "Saturation of degassed solvent with gas at 1 atm in a thermostatted cell (+-0.01 K), then gas-chromatographic stripping of 0.5 ml samples with direct comparison with a pure-gas calibration curve; H2O and 2H2O analysed simultaneously.",
+ "uncertainties_stated": "Temperature +-0.01 C; syringe volume +-0.001 ml; response variation among four injections no more than +-0.5 %; no uncertainty on the tabulated solubilities.",
+ "quality_remarks": "The paper is a method demonstration: its Table I compares the present values with literature (Wilhelm et al. 1977 and others) and calls the agreement excellent. Some present values deviate visibly from Ref. 8, e.g. O2 and CH4 at 283.15 K, CH4 at 288.15 K (0.2940 vs 0.3086), C2H6 at 283.15 K. Whether mole fractions refer to 1 atm total or gas partial pressure is not stated. Temperature scale not stated. Table II (N2/O2 mixture) gives only two numbers. The text layer is the poor scan OCR; every value was read from the page images.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6
+  ],
+  "journal_pages": [
+   164,
+   165,
+   166
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "Table I (H2O file)": "59 data rows + 8 label rows printed / written",
+  "Table I (2H2O file)": "59 data rows + 8 label rows (same T grid)",
+  "Table II": "2 data rows + 2 label rows"
+ },
+ "changes_after_image_check": [
+  "Text layer was unreliable and was not used for digits; the following text-layer errors were found when comparing with the images: Ar present 278.15: 0.3185 -> 0.3785; Ar Ref. 9 293.15: 0.2647 -> 0.2697; Ar 2H2O 303.15: 0.24497 -> 0.2497; O2 and other values with spaces ('0.222 1' -> 0.2221, '0.208 1' -> 0.2081); SF6 T '233.15','188.15' -> 283.15, 288.15; SF6 2H2O 323.15: '0.033 Il.' -> 0.03311; Table II O2 Obs.: 0.1107 -> 0.1207"
+ ],
+ "extraction_notes": "All values typed from the 200 dpi page images. Printed dashes written as empty cells. Header column 'Other literature source' added by the extractor to say which reference the third column holds. Sanity (script not run on physics): solubility decreases with T within each present-study column as printed; no exact duplicates.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "the PDF text layer is a poor scan OCR and every cell was transcribed from the images (and the text layer had errors)",
+ "pass2_diff": "Tables I and II: every pass-2 number occurs in pass 1; pass-1-only numbers are temperature keys and block numbers."
+}

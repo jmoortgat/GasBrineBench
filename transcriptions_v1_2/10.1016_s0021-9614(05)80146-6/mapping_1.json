@@ -1,0 +1,73 @@
+{
+ "table": "Table 1",
+ "page_journal": "1141-1142",
+ "title_as_printed": "Experimental density differences Dp between H2O and {xCO2+(1-x)H2O} at different temperatures, pressures, and mole fractions x, together with calculated densities p, molar volumes Vm, apparent molar volumes Vphi of CO2, and excess molar volumes VmE: m0 = 1 mol/kg; p0 = 1 g/cm3; Vm0 = 1 cm3/mol",
+ "footnotes_as_printed": {
+  "a": "The values of 'm' reported in the previous table 1 (ref 1) were values of 'm' = m.(1-x)M(H2O)/{(1-x)M(H2O) + xM(CO2)} where M denotes molar mass, and not the molalities m reported here."
+ },
+ "property": "rho_gas_loaded",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p/MPa given per row (28, 33, 38 MPa sets with small deviations); the paper does not define it further (vibrating-tube densimeter, single-phase fluid)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho/rho0",
+   "unit": "g/cm3",
+   "derived_by_authors": true,
+   "what": "solution density printed by the authors (rho0 = 1 g/cm3) = density of pure water + Dp, calculated from the measured density difference; used as the datum so that the near-critical IAPWS cross-check does not hold rows"
+  },
+  "value2": {
+   "col": "10^3 Dp/p0",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "measured density difference {xCO2+(1-x)H2O} minus pure H2O at the same T and p; p0 = 1 g/cm3"
+  },
+  "value3": {
+   "col": "Vphi/Vm0",
+   "unit": "cm3/mol",
+   "what": "apparent molar volume of CO2, calculated by the authors",
+   "derived_by_authors": true
+  },
+  "m_gas": {
+   "col": "m/m0",
+   "unit": "mol/kg",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {
+   "x_CO2": {
+    "col": "x",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water, no salt; x is the CO2 mole fraction in {xCO2+(1-x)H2O}"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density differences; no per-volume concentration unit",
+ "gas_basis": "not_applicable",
+ "extra_unmapped": [
+  "Vm/Vm0 (molar volume of the solution, calculated)",
+  "VmE/Vm0 (excess molar volume, calculated)"
+ ],
+ "conversion_needs": [
+  "MPa to Pa",
+  "g/cm3 to kg/m3",
+  "m/m0 times 1 mol/kg"
+ ],
+ "notes": "Replicate rows (two or three runs at the same T, p, x) are kept as printed. Blocks are 28/33/38 MPa sets across T = 651-726 K (above the critical temperature of water). Standard conditions not applicable. Minus signs written as '-'."
+}

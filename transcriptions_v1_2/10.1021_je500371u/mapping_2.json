@@ -1,0 +1,79 @@
+{
+  "table": "Table 2",
+  "page_journal": "J. Chem. Eng. Data 59 (2014)",
+  "title_as_printed": "Results of Experimental Measurements of Density Difference Delta rho of CaCl2-NaCl-H2O and MgCl2-NaCl-H2O Systems with Respect to Pure Water at Temperature T, Pressure p, and Molalities of Components mi (footnote a)",
+  "footnotes_as_printed": {
+    "a": "mi is the molality of solute i; Delta rho represents the measured difference in density of a solution with respect to water. Standard uncertainties u are u(T) = 0.01 K, u(p) = 0.0005*p, u(m2) = 0.0065*m2 for CaCl2, u(m2) = 0.0017*m2 for MgCl2, and the uncertainty on the concentration of NaCl depends on the uncertainty on the concentration of second electrolyte as u(m1) = 0.1*u(m2). The combined uncertainty U(Delta rho) = (6.7e-5, 3e-5, 5.1e-5, 9.9e-5, and 6.2e-5) g cm-3 at T = (298.15, 373.15, 423.15, 473.15 and 523.15) K, respectively. The combined uncertainty is based on the standard deviation of the mean density difference of solutions evaluated from the repeated measurements of the solution at every temperature."
+  },
+  "property": "rho_diff",
+  "rho_diff_reference": "pure water at the same T and p (Hill equation of state for water, consistent Archer equation for aqueous NaCl as reference solutions in the calibration)",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "p printed in MPa; not stated whether absolute or gauge",
+  "volume_basis": "not_applicable",
+  "columns": {
+    "T": {
+      "col": "T K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "p MPa",
+      "unit": "MPa",
+      "basis": "unspecified"
+    },
+    "value": {
+      "col": "10^3 Delta rho g cm-3",
+      "unit": "g_per_cm3",
+      "scale": 0.001,
+      "what": "density of solution minus density of pure water at same T,p"
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {
+      "NaCl": {
+        "col": "m1 NaCl mol kg-1",
+        "unit": "mol/kg"
+      }
+    },
+    "constant": {},
+    "other_species": "second salt per block: CaCl2 (label row 'NaCl (1) + CaCl2(2)') or MgCl2 (label row 'NaCl (1) + MgCl2(2)'); its molality is column m2; m = mol per kg of water (molality of solute in the water solvent)"
+  },
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        770
+      ],
+      "reason": "block label rows (NaCl + CaCl2 / NaCl + MgCl2)"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": [
+        {
+          "path": "composition.per_row.CaCl2",
+          "value": {
+            "col": "m2 (CaCl2 or MgCl2, see label) mol kg-1",
+            "unit": "mol/kg"
+          }
+        }
+      ]
+    },
+    {
+      "label_row": 770,
+      "sets": [
+        {
+          "path": "composition.per_row.MgCl2",
+          "value": {
+            "col": "m2 (CaCl2 or MgCl2, see label) mol kg-1",
+            "unit": "mol/kg"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": "Printed table has a left and a right block of 5 columns side by side; stacked left block first, then right block, within each salt-system block. Printed two-line header (T / K etc.) joined. Spaces inside numbers (printed digit grouping such as 0.500 03) removed. Rows with m1 = 0.00000 (binary MgCl2 or CaCl2 solution) are kept; 203 of the 1339 data rows have m1 (NaCl) = 0.00000 (binary CaCl2 or MgCl2 solutions); no row has m2 = 0. Ionic strength 0.1 to 18 mol/kg; T 298.15 to 523.15 K (rounded), p up to 70 MPa."
+}

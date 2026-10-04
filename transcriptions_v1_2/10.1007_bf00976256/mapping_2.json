@@ -1,0 +1,62 @@
+{
+ "table": "Table II (incl. 'Table II. Continued')",
+ "page_journal": "1067-1068",
+ "title_as_printed": "Experimental Isopiestic Molalities",
+ "footnotes_as_printed": {
+  "a": "m, mol salt per kg H2O."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at vapour pressure of the solutions)",
+ "reference_salt": "MgCl2",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "value": {
+   "col": "m(CaCl2) mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of CaCl2 test solution (mean of at least two parallel cups)"
+  },
+  "value2": {
+   "col": "m(MgCl2) mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of the MgCl2 reference solution (mean of the triplicate reference cups)",
+   "reference_salt": "MgCl2"
+  },
+  "value3": {
+   "col": "m(LiCl) mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of LiCl test solution; out-of-scope salt, kept",
+   "salt": "LiCl"
+  },
+  "value4": {
+   "col": "m(CsCl) mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of CsCl test solution; out-of-scope salt, kept",
+   "salt": "CsCl"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m(CaCl2) mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "each column is a separate binary aqueous solution (not a mixture): MgCl2-H2O reference, CaCl2-H2O, LiCl-H2O, CsCl-H2O; LiCl and CsCl are outside the six-ion set"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "none: molalities are mol salt per kg H2O"
+ ],
+ "notes": "Wide table as printed: one row per equilibrium run position (several runs share a row; blank cell = that salt not measured in a cup at that reference molality). Table continues on the next journal page and is concatenated (37 + 6 = 43 rows; the repeated header of the continuation is not a data row). The osmotic coefficients of CaCl2 are not tabulated; they would follow from the reference molality via the Valyashko et al. compilation. 43 rows: 29 have a CaCl2 value (in-scope pair with MgCl2 reference), the rest have only MgCl2 with LiCl and/or CsCl. Non-monotonic order in printed row pair 6.2994 / 6.2988 (MgCl2 molality) kept as printed. Mean values; reproducibility: MgCl2 triplicates max 0.10 percent, mean 0.04 percent; CaCl2 duplicates 0.06 percent.",
+ "quality_remarks": "audit 2026-10-02: Each column is a separate binary solution equilibrated against a separate MgCl2 reference solution in a neighbouring cup (p.1066: '3 cups of reference solution and 9 cups containing test solution'); composition lists the test salt only, MgCl2 is the isopiestic reference (value2)."
+}

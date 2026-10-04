@@ -1,0 +1,87 @@
+{
+ "table": "Table 2",
+ "page_journal": 91,
+ "title_as_printed": "Experimental solubility data of oxygen in aqueous sodium sulfate solutions",
+ "footnotes_as_printed": {},
+ "property": "ostwald",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Abstract/text: 'oxygen (nitrogen) partial pressure of 1 atm'; total pressure in the vessel was recorded and the water vapour pressure of the solution (Timmermans table for Na2SO4; for Na2SO3 the Na2SO4 curve at same molarity was used) enters the evaluation of L, i.e. gas partial pressure 1 atm excluding water vapour",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'L = VG/VL' (Eq. 1): 'the ratio of the volume of gas absorbed to the volume of the absorbing liquid'; Nomenclature: 'VG volume of gas dissolved in aqueous salt solution at observed temperature and pressure [cm3]', 'VL volume of aqueous salt solution [cm3]'; Cs liquid-phase concentration of salt [mol/l]. A small liquid volume increase due to gas absorption was corrected with partial molal volumes (31 cm3/mol O2, 40 cm3/mol N2).",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "from_group_rows": true
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "constant": "1"
+  },
+  "value": {
+   "col": "L [-]",
+   "unit": "ostwald_L_dimensionless"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "Na2SO4": {
+    "col": "Cs [mol/l]",
+    "unit": "mol/L"
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    22
+   ],
+   "reason": "temperature block label rows (15C, 25C, 35C)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "conversion_needs": [
+  "mol/l of solution to molality needs solution density"
+ ],
+ "notes": "Three side-by-side blocks (15, 25, 35 C) printed next to each other, stacked in that order. Cs = 0.0 rows are pure-water values (same as Table 1 averages). Replicate-like rows kept (25 C: 0.510/0.513, 1.228/1.240)."
+}

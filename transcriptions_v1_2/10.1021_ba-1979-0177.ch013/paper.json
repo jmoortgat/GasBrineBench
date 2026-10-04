@@ -1,0 +1,59 @@
+{
+ "doi": "10.1021/ba-1979-0177.ch013",
+ "first_author": "Yasunishi",
+ "year": 1979,
+ "journal": "ACS Advances in Chemistry Series 177 (Thermodynamic Behavior of Electrolytes in Mixed Solvents II), chapter 13, pp. 189-203",
+ "source_key": "YASUNISHI(1979)",
+ "experimental_method": "Saturation method: known volume of CO2 contacted with a measured amount of gas-free salt solution at 25 C and 1 atm CO2 partial pressure, volume of remaining gas measured, corrected for solution vapour pressure; reported as Ostwald coefficient.",
+ "uncertainties_stated": "CO2 in pure water average L0 = 0.8264 agreed 'quite well' with literature; correlation of all data with the two-parameter equation within about 0.5 % deviation; no uncertainty on individual values.",
+ "quality_remarks": "Single-salt x1 = 0.00 and 1.00 blocks in Table I are from Ref. 8 (Yasunishi and Yoshida, in press), not new measurements here. Vapour pressure of mixed-salt solutions was estimated (Robinson-Bower), not measured. Salt concentration checked by chloride titration. Several blocks repeat between Table I and Tables II-IV.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   191,
+   192,
+   193
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tables V-VIII",
+   "reason": "fitted parameters A and B of the empirical equation"
+  },
+  {
+   "table": "Table IX",
+   "reason": "deviations of estimated values (model)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 205,
+   "written_rows": 247,
+   "note": "247 = 205 data + 7 system heading rows + 35 block label rows"
+  },
+  "table_2": {
+   "printed_data_rows": 27,
+   "written_rows": 32
+  },
+  "table_3": {
+   "printed_data_rows": 17,
+   "written_rows": 20
+  },
+  "table_4": {
+   "printed_data_rows": 17,
+   "written_rows": 20
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer has letter-spaced words but the numbers are clean; every number block was compared with the page images (pages 191-193) and matched. Column assignment of short columns (blocks with fewer rows) was set by hand from the image: Table I NH4Cl+(NH4)2SO4 last row has no x1 = 0.50 entry, NaCl+NH4Cl last row has no x1 = 0.75 entry, NaCl+KNO3 last row only x1 = 0.75 and 1.00; Table II last row only blocks 3 and 4; Table III last row only blocks 1 and 2; Table IV rows 6-7 only block 2. Pure-water Ostwald coefficient L0 = 0.8264 appears only in the text (an average, not tabulated) and is not in the CSVs. Cs unit kmol/m3 comes from the nomenclature and figure axes; table headers show only Cs and L. Cs and L printed with three and four decimals respectively.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean for all numbers, every cell matched the image; column placement of short columns was verified on the image",
+ "pass2_diff": "Tables I-IV: 205, 27, 17, 17 data rows; every data number identical; pass 2 additionally lists x1 label rows with numbers (layout). Repeated NaCl+NH4Cl x1=1.00 values differ from the same Cs in other systems in the print itself; copied as printed."
+}

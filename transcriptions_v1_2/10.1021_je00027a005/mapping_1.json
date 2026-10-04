@@ -1,0 +1,81 @@
+{
+ "table": "Table I",
+ "page_journal": 23,
+ "title_as_printed": "Partial Molar Volumes at Infinite Dilution in Water, V2inf, at 298.15 K",
+ "footnotes_as_printed": "none",
+ "property": "pmv",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of about 100 kPa (Fortin barometer, +-15 Pa), water saturated with the gas by bubbling at atmospheric pressure; V2 taken as equal to the infinite-dilution value because x2 < 1e-4",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "100",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "V2inf exptl cm3 mol-1",
+   "unit": "cm3/mol",
+   "what": "partial molar volume of the dissolved gas at infinite dilution in water, from vibrating-tube density difference (authors' eq 4); the gas mole fraction x2 in eq 4 was calculated from the literature by Henry's law (p.23)",
+   "derived_by_authors": true
+  },
+  "uncertainty": {
+   "col": "V2inf exptl uncertainty",
+   "unit": "cm3/mol",
+   "what": "average deviation of replicate runs as printed after the plus-minus sign"
+  },
+  "value2": {
+   "col": "V2inf lit. cm3 mol-1",
+   "unit": "cm3/mol",
+   "what": "selected literature value",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "no. of runs",
+  "ref (literature reference number for value2)"
+ ],
+ "conversion_needs": [
+  "paper does not define standard conditions for gas volumes (none used)"
+ ],
+ "notes": "Gases outside the seven (argon, krypton, CO, ethylene, acetylene, propylene, cyclopropane, n-butane, 2-methylpropane, 1-butene, 1,3-butadiene, neopentane, methyl chloride) are kept per SPEC. Printed 'value +- uncertainty' split into two columns.",
+ "gas_from_column": {
+  "col": "solute",
+  "map": {
+   "hydrogen": "h2",
+   "nitrogen": "n2",
+   "oxygen": "o2",
+   "argon": "ar",
+   "krypton": "kr",
+   "carbon monoxide": "co",
+   "carbon dioxide": "co2",
+   "methane": "ch4",
+   "ethane": "c2h6",
+   "ethylene": "c2h4",
+   "acetylene": "c2h2",
+   "propane": "c3h8",
+   "propylene": "c3h6",
+   "cyclopropane": "cyclo-c3h6",
+   "n-butane": "n-c4h10",
+   "2-methylpropane": "i-c4h10",
+   "1-butene": "1-c4h8",
+   "1,3-butadiene": "1,3-c4h6",
+   "neopentane": "neo-c5h12",
+   "methyl chloride": "ch3cl"
+  }
+ }
+}

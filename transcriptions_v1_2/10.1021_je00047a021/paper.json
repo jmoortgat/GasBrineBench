@@ -1,0 +1,45 @@
+{
+ "doi": "10.1021/je00047a021",
+ "first_author": "Saluja",
+ "authors": "Preet P. S. Saluja and Jacques C. LeBlanc",
+ "year": 1987,
+ "journal": "J. Chem. Eng. Data 32 (1), 72-76",
+ "source_key": "SALUJA(1987)",
+ "title": "Apparent Molar Heat Capacities and Volumes of Aqueous Solutions of MgCl2, CaCl2, and SrCl2 at Elevated Temperatures",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one text-layer glitch corrected after image check (CaCl2 298.15 K 0.21251 Cp subscript digit); tables are restacked from multi-column layouts",
+ "experimental_method": "Flow microcalorimeter (Cp) and flow vibrating-tube densimeter (d) at a constant pressure of 0.6 MPa, 297-373 K; apparent molar properties calculated by the authors.",
+ "uncertainties_stated": "Precision of Cp +/-0.1 mJ/(K g) and of d +/-5 ug/cm3 (relative to water).",
+ "quality_remarks": [
+  "PDF page 1 begins with the end of another article (Me4Si / HCl2- text, Claes et al.); this paper starts mid-page 72. PDF page 5 starts the next article (p. 76 Phutela et al.), whose tables are in slug 10.1021_je00047a022.",
+  "Table II temperatures: densities are at 297.19, 321.9/321.90, 346.92 (CaCl2: 348.15), 371.82 and 371.96 K, slightly different from the Cp temperatures of Table I (298.15, 323.15, 348.15, 373.15 K); written as printed.",
+  "Table II SrCl2 346.92 K, 0.02747 mol/kg: density printed 0.9799 524 (seven decimals, others six); an implied smooth trend suggests the true value may be 0.979524 or similar. Written as printed.",
+  "Table II: CaCl2 0.21251 etc. are replicate-like close molalities; kept.",
+  "SrCl2 is outside the six-ion set; rows kept and marked by salt in label rows.",
+  "Molality printed as mol/kg; basis (kg water) not stated explicitly."
+ ],
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4
+  ],
+  "journal_pages": [
+   73,
+   75
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 12 blocks (12 label rows) + 12 water rows + 71 data rows = 95 rows; written 95",
+  "table_2": "printed 13 blocks + 13 water rows + 73 data rows = 99 rows; written 99"
+ },
+ "changes_after_image_check": [
+  "table_1 row for CaCl2 298.15 K m=0.21251: 4.0375 (text-layer drop) -> 4.03705 (printed 4.0370 with subscript 5)"
+ ],
+ "extraction_notes": "Text layer parsed by script; Table I rows compared with the page image (pdf page 2); Table II compared with pdf page 4 (journal p. 75) and the SrCl2 346.92 K cell was zoomed. Water reference rows (in parentheses, footnote a) kept in the CSV and skipped in the mapping. Spaces within digit groups of Table II densities removed.",
+ "pass2_diff": "Tables I and II: 237/237 and 245/245 numbers identical."
+}

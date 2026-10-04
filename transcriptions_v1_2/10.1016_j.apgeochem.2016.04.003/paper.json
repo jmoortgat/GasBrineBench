@@ -1,0 +1,50 @@
+{
+ "doi": "10.1016/j.apgeochem.2016.04.003",
+ "first_author": "Abdulagatov",
+ "year": 2016,
+ "journal": "Applied Geochemistry 69, 28-41",
+ "source_key": "ABDULAGATOV(2016)",
+ "experimental_method": "Vibrating-tube densimeters (Anton Paar DMA4500, SVM3000, DSA 5000M) for density, SVM3000 for viscosity, DSA 5000M for speed of sound, at atmospheric pressure, 277-353 K, four natural geothermal brines from South Russia.",
+ "uncertainties_stated": "See footnote c of Table 4: u(T)=0.01 K (DMA4500), 0.005 K (SVM3000); u(rho)=0.00025% (DMA4500), 0.01% (SVM3000), 0.005% (DSA); u(eta)=0.17%; u(W)=0.005%. Composition accuracy 0.2-1.0%.",
+ "quality_remarks": "Brines are complex natural mixtures (sulfate-sodium for No. 68/129, sodium chloride for 27T/38T, ~1.7 and ~15.5 g/L). Instruments agree within 0.01-0.02%. Table 1 footnote misprint (Pwh described as wellhead temperature). Pressure only 'atmospheric'. Table 3 header last column printed 'Sample: No (%)'.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8,
+   5
+  ],
+  "journal_pages": [
+   35,
+   32
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: well characteristics, no property",
+  "Table 2: chemical composition, used as sample composition in mappings (mg/L), not a property table",
+  "Table 3: mass percent of ions, derived",
+  "Tables 5, 6: correlation parameters, model",
+  "Tables 7, 8: derived thermodynamic properties (calculated)"
+ ],
+ "row_counts": {
+  "table_4_group1": {
+   "data_rows": 23,
+   "written_incl_labels": 27
+  },
+  "table_4_group2": {
+   "data_rows": 30,
+   "written_incl_labels": 34
+  },
+  "table_4_group3": {
+   "data_rows": 29,
+   "written_incl_labels": 33
+  },
+  "printed_check": "printed data rows per image: group1 23, group2 30, group3 29; all written"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Mapping includes both rho and viscosity (group2). Composition in mg/L per block.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched page image (checked by reading the page image against the layer; I rebuilt the CSV by hand from the layer in block order)",
+ "pass2_diff": "Table 4: 82 value tuples compared by sample, instrument and T; one disagreement (353.15 K row placed under No. 27T in pass 1, under No. 129 in pass 2); resolved for pass 2 by the density/viscosity trend, pass 1 corrected."
+}

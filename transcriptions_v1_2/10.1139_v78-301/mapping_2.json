@@ -1,0 +1,52 @@
+{
+ "table": "Table 2",
+ "page_journal": 1854,
+ "title_as_printed": "Water activities and osmotic coefficients for the systems CaCl2(1) + NaCl(2) + H2O at 25 C",
+ "footnotes_as_printed": "not captured (no footnotes under Table 2)",
+ "property": "aw",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "vapour pressure measured by the static method; vapour-phase non-ideality not corrected (stated in text); water activity = p/p0 of pure water at 25 C",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "a_w",
+   "unit": "dimensionless"
+  },
+  "value2": {
+   "col": "phi",
+   "unit": "dimensionless",
+   "what": "osmotic coefficient of the mixed solution, calculated by the authors from the measured water activity",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m1 (mol/kg CaCl2)",
+    "unit": "mol/kg"
+   },
+   "NaCl": {
+    "col": "m2 (mol/kg NaCl)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "phi (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "molality is not stated with 'mol/kg' in the table; the text calls m molalities (concentrated solutions up to I = 14); unit mol/kg assumed from usage 'molal' in text"
+ ],
+ "notes": "Measurements on both sides of the NaCl saturation limit (a_w = 0.75, I = 6). Printed '2:3501' in the m1 column (row 15) read as 2.3501 from the image."
+}

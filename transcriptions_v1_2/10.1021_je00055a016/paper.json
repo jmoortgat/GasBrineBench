@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je00055a016",
+ "first_author": "Gates, Jeffrey A.",
+ "authors": "Jeffrey A. Gates, Robert H. Wood",
+ "year": 1989,
+ "journal": "J. Chem. Eng. Data 34(1), 53-56",
+ "title": "Density and Apparent Molar Volume of Aqueous CaCl2 at 323-600 K",
+ "source_key": "GATES(1989)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean (columns and signs intact); every one of the 273 rows was compared with the page images at 200 dpi in four strips per page; no corrections.",
+ "experimental_method": "Vibrating-tube densimeter measuring the density difference between CaCl2(aq) (6-mL injected sample plateau) and pure water at the same T and P; calibrated with water and nitrogen; 323-600 K, up to 40 MPa, 0.015-6.42 mol/kg.",
+ "uncertainties_stated": "Precision (duplicates) better than 0.050 kg/m3 at 450 K and below, worse at 550 K and much worse at 600 K; accuracy about 1.0 kg/m3 at 600 K and 38 MPa; temperature accuracy +-0.08 K at 300 K and +-0.3 K at 600 K; pressure gauge 0.3 MPa; stock solution known to 0.2 %.",
+ "quality_remarks": "Authors report a densimeter-block temperature perturbation and a small leak in the 600 K runs with concentrated solutions; at 550 K a linear pressure dependence of Ad gives errors of about 0.8 kg/m3 (spline residuals up to about 1 kg/m3 at 548 K and 597 K). Temperature scale not stated. Block label temperatures 323.05 K and 449.75 K as printed differ slightly from neighbours 323.16 K and 450.13 K (possibly separate runs or misprints; kept as printed). Molality 0.2714 vs 0.2722 printed in different blocks (399.85 K block uses 0.2714). The PDF has only this article; page 53 text and pages 54-55 data, page 56 Table II and discussion.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   54,
+   55
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (knot positions and values of the cubic-spline surface of Ad vs T, P, m, p. 56): fitted, model-generated."
+ ],
+ "row_counts": {
+  "table_1": "printed 273 data rows (8 temperature blocks, each two side-by-side column groups), written 273 plus 8 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Rows per block (left+right): 323.16 K 34; 323.05 K 16; 349.16 K 45; 399.85 K 50; 450.13 K 26; 449.75 K 23; 548.05 K 48; 597.45 K 31. Sanity: Ad rises with m at each T,P; duplicate rows agree within the stated precision, larger scatter at 548 and 597 K; the spline residual column (delta) is not mapped. Paper says the fit represents 350-353 data points (includes 298 K literature data of Gates and Wood), consistent with 273 new rows plus earlier data. Apparent molar volumes mentioned in the title are not tabulated.",
+ "pass2_diff": "Table 1: 273 rows, 1092/1092 numbers identical; printed oddities (m 0.2714 twice at 399.85 K, out-of-order rows at 548.05 K, delta -0.005 at 349.16 K) agree in both passes."
+}

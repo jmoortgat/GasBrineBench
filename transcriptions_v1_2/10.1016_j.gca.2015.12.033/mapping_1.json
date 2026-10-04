@@ -1,0 +1,34 @@
+{
+ "table": "Table 2", "page_journal": 244,
+ "title_as_printed": "Summary of experimental conditions and in situ measurement of pH and dissolved CO2.",
+ "footnotes_as_printed": {"nd": "nd means not determined.", "a": "Calculated after Duan and Sun (2003).", "b": "Calculated from the Pitzer ion-specific-interaction model developed in this study.", "c": "Measured gravimetrically as BaCO3.", "d": "Measured potentiometrically in this study.", "e": "Ratio between integrated intensity of the Raman stretching bands (v1 + 2v2) of CO2 and the OH vibration bending band at 1640 cm-1."},
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Ptot = total pressure in the cell at run temperature; PCO2 column is a CO2 partial pressure (PCO2 = Ptot minus water saturation pressure at run T, checked at 200, 220 and 280 C); cell charged with CO2 partial pressure set between 1 and 50 bar at room temperature then heated; 'vapor saturation pressure' used for the pH buffer calibration only",
+ "columns": {
+  "T": {"col": "T (C)", "unit": "C"},
+  "P": {"col": "Ptot (bar)", "unit": "bar", "basis": "total"},
+  "value": {"col": "mCO2 c (mol/kgw)", "unit": "mol_per_kg_water", "scale": 1, "what": "CO2 molality measured gravimetrically as BaCO3 (footnote c); empty where nd"},
+  "value2": {"col": "mCO2 a (mol/kgw)", "unit": "mol_per_kg_water", "what": "calculated from Duan and Sun (2003), not measured", "from_literature": true},
+  "value3": {"col": "mCO2 b (mol/kgw)", "unit": "mol_per_kg_water", "what": "calculated from the authors' Pitzer model fitted to their data", "derived_by_authors": true}
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "H2O-CO2 block: pure water (Milli-Q, CO2-flushed); no salt. NaCl block: 1.4 mol/kg NaCl (stated in text as 1.4 molal)"
+ },
+ "skip_rows": [{"rows": [0, 15], "reason": "block label rows"}],
+ "group_rows": [
+  {"label_row": 0, "sets": [{"path": "composition.constant.NaCl", "value": "0", "unit": "mol/kg"}]},
+  {"label_row": 15, "sets": [{"path": "composition.constant.NaCl", "value": "1.4", "unit": "mol/kg"}]}
+ ],
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "molality of CO2 per kg water (mol/kgw); no gas mole fractions",
+ "extra_unmapped": ["PCO2 (bar) (CO2 partial pressure, not defined)", "Density a (calculated after Duan and Sun 2003, g/cm3 presumably, unit not printed)", "pH d (measured potentiometrically at run T, in-situ)", "pH b (calculated from Pitzer model)", "A(CO2)/A(H2O) e (Raman peak-area ratio, measured)"],
+ "conversion_needs": [],
+ "standard_conditions": "not applicable (no gas volumes)",
+ "notes": "Column headers keep the footnote letters (as separate word, e.g. 'mCO2 a') only to keep the three mCO2 columns and two pH columns distinguishable in the CSV; the letters are footnote markers not part of the names. 'nd' (not determined) written as empty cells (rows without gravimetric mCO2 therefore have empty value; their other columns are still data, e.g. pH d). The authors' primary measured quantities are pH and the Raman ratio; the gravimetric molality is available for 12 of 21 rows. Temperature in C. The NaCl block constant 1.4 m is from the table label 'H2O-CO2-1.4 m NaCl'; the water block NaCl=0 is set by the label 'H2O-CO2'."
+}

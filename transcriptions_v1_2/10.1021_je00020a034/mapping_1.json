@@ -1,0 +1,155 @@
+{
+ "table": "Table 1",
+ "page_journal": 892,
+ "title_as_printed": "Measured Vapor Pressure of Water, P, at the Equilibrium Temperature, T, Calculated Values of the Activity of Water in the Liquid Phase, a_w, and the Osmotic Coefficient, phi, at Different Molalities m",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total measured pressure at equilibrium in a degassed cell; text: 'The salt is not volatile, so the total measured pressure at equilibrium P is the vapor pressure of water' (absolute, 0-1000 Torr manometer)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/Pa",
+   "unit": "Pa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "P/Pa",
+   "unit": "Pa"
+  },
+  "value2": {
+   "col": "a_w",
+   "unit": "dimensionless",
+   "what": "activity of water, P-based, calculated by authors with virial correction (eq 4)",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "phi",
+   "unit": "dimensionless",
+   "what": "osmotic coefficient, molality scale, calculated by authors from a_w",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary H2O + NaCl; molality in mol/kg of water, set per label row (constant NaCl)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    28,
+    45,
+    61,
+    74,
+    91,
+    108,
+    125
+   ],
+   "reason": "label rows 'm = ... mol kg-1'"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5.423",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.608",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.086",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.655",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 61,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.141",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 74,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.617",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.200",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 108,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.671",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 125,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.245",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed as two side-by-side column groups per molality block; stacked left group first, then right group (rows in increasing T within each group; the right group continues the temperature sequence). Composition from vibrating-tube density; accuracy +/-0.001 mol/kg. Printed 299.2 (m=2.200, first T of second row) kept as printed (likely 299.20)."
+}

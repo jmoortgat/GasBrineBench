@@ -1,0 +1,118 @@
+{
+ "table": "Table 1",
+ "page_journal": 661,
+ "title_as_printed": "Densities (g./c.c.) of salt solutions of molality m, at temperatures up to 200 deg, and at a constant total pressure of 20 atm. The fifth figure following the decimal point has relative significance only to the arbitrarily selected figure shown in this position for the results at 50 deg",
+ "footnotes_as_printed": "none printed",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "All densities and molal volume calculations are given for a total pressure of 20 atm (constant total pressure of 20 atm)",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density in g/c.c. of solution",
+ "columns": {
+  "T": {
+   "col": "Temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "20",
+   "basis": "total"
+  },
+  "value": {
+   "col": "density, g/cc",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "molality m, mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "Salt identity is given by the label row of each block (MgCl2, CaCl2, SrCl2, BaCl2); molality column applies to that salt; SrCl2 and BaCl2 are outside the six-ion set"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    29,
+    65,
+    94
+   ],
+   "reason": "salt label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 65,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 94,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "BaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality basis (per kg water assumed by convention) not stated explicitly"
+ ],
+ "notes": "Printed as a matrix (rows salt x molality, columns 50-200 C). Written in long form: one row per (salt, m, T), temperatures in increasing order, with a label row per salt. The 50 C column is not measured here: densities at 50 C are taken from International Critical Tables (four decimals) with an arbitrary zero appended as fifth decimal; the 75-200 C values are measured relative to that base. Whole 50 C column is therefore literature-based.",
+ "row_from_literature": [
+  {
+   "rows": [
+    1,
+    8,
+    15,
+    22,
+    30,
+    37,
+    44,
+    51,
+    58,
+    66,
+    73,
+    80,
+    87,
+    95,
+    102,
+    109,
+    116
+   ],
+   "source": "International Critical Tables 1928 vol. 3 (50 C densities, four decimals, arbitrary zero added)"
+  }
+ ]
+}

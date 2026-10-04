@@ -1,0 +1,136 @@
+{
+ "table": "Table 1",
+ "page_journal": "274-275",
+ "title_as_printed": "Isopiestic molalities m and the corresponding osmotic coefficients phi for CaCl2(aq)",
+ "footnotes_as_printed": {},
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated in the table; isopiestic equilibrium at the solution vapour pressure (saturation); no pressure value given",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "m NaCl mol/kg",
+   "unit": "mol/kg",
+   "scale": 1,
+   "what": "molality of the reference electrolyte NaCl(aq) in isopiestic equilibrium with the CaCl2(aq) solution of the same row"
+  },
+  "value2": {
+   "col": "phi (CaCl2)",
+   "unit": "osmotic coefficient (molal scale) of CaCl2(aq)",
+   "what": "calculated by the authors from phi_NaCl (Pitzer et al. equations) via phi_x = 2 phi_s m_s / (3 m_x)",
+   "from_literature": false
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m CaCl2 mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "reference electrolyte NaCl in the second solution (molality in 'm NaCl mol/kg'); the two solutions are separate, not mixed"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    37,
+    74,
+    105,
+    131,
+    165
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T",
+     "value": "443.92",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "T",
+     "value": "473.61",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 74,
+   "sets": [
+    {
+     "path": "T",
+     "value": "498.27",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 105,
+   "sets": [
+    {
+     "path": "T",
+     "value": "498.72",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 131,
+   "sets": [
+    {
+     "path": "T",
+     "value": "523.20",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 165,
+   "sets": [
+    {
+     "path": "T",
+     "value": "524.12",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "phi (CaCl2) is the CaCl2 osmotic coefficient derived by the authors from the NaCl reference, kept as value2"
+ ],
+ "conversion_needs": [
+  "T per label row; the CaCl2 osmotic coefficient depends on the NaCl osmotic coefficient model (Pitzer et al.) used by the authors"
+ ],
+ "notes": "Printed as three side-by-side column groups (phi, m CaCl2, m NaCl) under each temperature heading; stacked per temperature block as left group, middle group, right group (top to bottom). The 523.20 K block runs over the page break (journal p. 274 to 275). Isopiestic temperatures are mean temperatures of each equilibrium set. Printed value 0.2759 for m CaCl2 at 473.61 K (phi 0.9531, m NaCl 3.4532) is almost certainly a misprint for 2.2759 (neighbouring rows 2.2788 / 3.4560); kept as printed.",
+ "row_held": [
+  {
+   "rows": [
+    58
+   ],
+   "reason": "m CaCl2 printed 0.2759 at 473.61 K; back-calculation of the NaCl reference coefficient indicates 2.2759 (0.114 vs 0.943); likely misprint; held (mapping audit 2026-10-02)"
+  }
+ ]
+}

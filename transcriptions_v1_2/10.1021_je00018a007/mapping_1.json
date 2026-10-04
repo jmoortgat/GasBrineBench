@@ -1,0 +1,101 @@
+{
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "0.6 MPa (title: at 0.6 MPa); pressures accurate to +-50 kPa",
+ "property": "rho_diff",
+ "conversion_needs": [],
+ "extra_unmapped": [
+  "10^2 x [(cp rho/cp1* rho1*) - 1] (dimensionless, printed x 1e-2; measured volume heat capacity ratio minus 1 at T2; moved from value2 because the builder reads value2 as absolute density)"
+ ],
+ "table": "Table 1",
+ "page_journal": 399,
+ "title_as_printed": "Experimental Values of the Quantities [(cp rho/cp,1* rho1*) - 1], (rho - rho1*), Cp,2,phi, and V2,phi for the Binary Solutions NaCl(aq), MgCl2(aq), and CaCl2(aq) at 0.6 MPa",
+ "footnotes_as_printed": {
+  "a": "a is the ratio of the volume heat capacity of the solution to that of water; (rho - rho1*) is the difference between the density of the solution and that of water; Cp,2,phi is the apparent molar heat capacity; V2,phi is the apparent molar volume."
+ },
+ "columns": {
+  "T": {
+   "col": "T K (density)",
+   "unit": "K",
+   "note": "temperature of the density measurement (the vibrating-tube densimeter runs in series with the calorimeter, at a slightly different temperature)"
+  },
+  "T2": {
+   "col": "T K (heat capacity)",
+   "unit": "K",
+   "note": "temperature belonging to value2 and the heat capacity columns"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "0.6"
+  },
+  "value": {
+   "col": "(rho - rho1*) kg/m3",
+   "unit": "kg_per_m3",
+   "what": "density of solution minus density of pure water at the same T and P (water reference values from Haar et al. 1983)"
+  },
+  "phi_Cp": {
+   "col": "Cp2,phi J/K/mol",
+   "unit": "J/(K mol)",
+   "derived_by_authors": true
+  },
+  "pmv": {
+   "col": "V2,phi cm3/mol",
+   "unit": "cm3/mol",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water solvent; single salt per block"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    37,
+    66
+   ],
+   "reason": "salt label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 66,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "notes": "Printed as side-by-side blocks (two temperatures per row, left and right) with three salts. Restacked to long form: per salt, rows ordered 298.15 K, 323.15 K (left blocks), then 348.15 K, 373.15 K (right blocks). Temperature pairs printed as block headings, e.g. 298.15 K for heat capacity and 297.05 K for density, written into every row."
+}

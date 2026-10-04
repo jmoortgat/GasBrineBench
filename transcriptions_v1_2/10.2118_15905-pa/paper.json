@@ -1,0 +1,38 @@
+{
+ "doi": "10.2118/15905-PA",
+ "first_author": "Song",
+ "year": 1987,
+ "journal": "SPE Formation Evaluation, December 1987, 2(4), 500-508",
+ "source_key": "SONG(1987)",
+ "experimental_method": "Water content of CO2-rich gas or liquid sampled from a rotating autoclave (Galloway apparatus, tandem circulation pump, constant-temperature air bath), analysed with the Bloch and Lifland modified chromatographic technique; equilibrium with liquid water, ice or hydrate.",
+ "uncertainties_stated": "not stated in the paper text read (no table of uncertainties found)",
+ "quality_remarks": "Authors note sampling and analysis are difficult at low water concentration; up to 30 successive samples used to confirm elimination of metastable liquid water; later conditions chosen in the direction of increasing water concentration. Three rows (300 psia, 0.0, 2.5, 15.56 C) are taken from Ref. 4 (Kobayashi et al. 1979). Hydrate-region rows are measured in presence of hydrate (partly metastable-free). Table values are f_L x 10^3 mole fraction of water.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   502
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: smoothed water content and enhancement values for Fig. 6 (smoothed/derived)",
+  "Table 3: vapor pressures of water (reference values from handbooks)",
+  "Table 4: vapor pressure of water in hydrate phase (calculated)",
+  "Table 5: estimated values of phi_w of water (estimated)"
+ ],
+ "row_counts": {
+  "table_1": "printed 56 data rows; written 56 data rows"
+ },
+ "changes_after_image_check": [
+  "table_1 row 29 T F: '7.7.00' (text layer) -> 77.00",
+  "table_1 row 41 phase: '3- cf> critical endpoint' (text layer) -> 3-phase critical endpoint"
+ ],
+ "extraction_notes": "Text layer clean except the two glitches listed; every row compared against the 200 dpi page image. Column Temperature F and C both kept; P and T filled down where printed once per block. Sanity: within each isobar, T mostly increases with water content (rows listed out of order in 300 psia block: rows 12-16 after row 11, as printed). Multiple 'Pressure' blocks; no replicate rows. Pages 1-9 of the PDF all belong to this paper (journal pp. 500-508).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "two text-layer glitches corrected after image check (SPEC convention 14)",
+ "pass2_diff": "Table 1: 56 rows; all values, pressures and temperatures identical in a structured comparison with fill-down expanded (the phase label '3-phase critical endpoint' is written '3-phi ...' in pass 2)."
+}

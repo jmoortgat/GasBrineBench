@@ -1,0 +1,52 @@
+{
+ "table": "Table 4",
+ "page_journal": 4,
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total cell pressure ('The cell pressure was measured using a Druck 960 strain gauge pressure transducer'); absolute vs gauge not stated; Pressure of the equilibrated gas / flow tube ('P / MPa +-0.03 MPa'); the paper does not say whether absolute or gauge or total or partial. Water content is evaluated at atmospheric pressure from the measured frost-point temperature.",
+ "property": "y_h2o",
+ "volume_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "uncertainty_stated": "T +-0.1 K, P +-0.03 MPa, water content +-1 %",
+ "title_as_printed": "Experimental and predicted water contents, in ppmV, for nitrogen in equilibrium with free water at different P/T conditions.",
+ "footnotes_as_printed": {
+  "table note": "Uncertainty of temperature is +-0.1 K, pressure is +-0.03 MPa and water content is +-1% of the water content in ppmV."
+ },
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Water content ppmV Experimental",
+   "unit": "ppmV_water_in_gas",
+   "what": "water content of the gas in ppmV (volume ppm; mole/volume basis not stated, ideal-gas equivalence assumed by the method), measured via frost-point temperature at atmospheric pressure",
+   "scale": 1e-06
+  },
+  "value2": {
+   "col": "Water content ppmV predicted",
+   "unit": "ppmV_water_in_gas",
+   "what": "HWPVT (CPA) model prediction",
+   "derived_by_authors": true,
+   "scale": 1e-06
+  }
+ },
+ "skip_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "ppmV to mole fraction: x = ppmV x 1e-6 if mole basis (not stated)"
+ ],
+ "notes": "T printed only on the first row of each block; filled down in the CSV (SPEC v2.1 item 3). Printed T cells: 283.1 (row 1) and 274.1 (row 6). Free-liquid water present (table title). 274.1 K is above 273.15 K.",
+ "quality_remarks": "ppmV is taken as mole ppm (ideal gas at atmospheric pressure); the paper never states mole or volume basis but derives the water content from the frost-point temperature at atmospheric pressure. P is the equilibrium-cell pressure measured with a strain-gauge transducer (absolute vs gauge not stated). Transducer range quoted 0-41 MPa while Table 5 reaches 56.84 MPa."
+}

@@ -1,0 +1,45 @@
+{
+ "doi": "10.1016/0021-9614(75)90240-2",
+ "first_author": "Leung",
+ "year": 1975,
+ "journal": "J. Chem. Thermodynamics 7, 1067-1078",
+ "source_key": "LEUNG(1975)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer (OCR-quality but old scan text) agreed with the 200 dpi page image in every cell of Table 1; no corrections.",
+ "title": "The enthalpy of dilution of some 1-1 and 2-1 electrolytes in aqueous solution",
+ "authors": "Wing H. Leung, Frank J. Millero",
+ "experimental_method": "Microcalorimeter measurement of enthalpies of dilution of aqueous salt solutions from about 1 mol/kg to final molalities 0.1-1.0 mol/kg at 303.15 K; solutions prepared by mass with ion-exchanged water.",
+ "uncertainties_stated": "Fit standard deviation of +/-2 cal_th/mol for all salts; NaCl test at 298.15 K agreed with Parker's tabulation within +/-1 cal_th/mol; duplicate runs reproduce.",
+ "quality_remarks": "Molalities of CaCl2, SrCl2, BaCl2 solutions were determined by mass titration with AgNO3. Temperature scale and pressure not stated. SrCl2 row 0.74438: expt 77.87 vs calc 79.08, difference larger than for neighbours (as printed).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   1069
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "fitted B and C parameters of the extended Debye-Hueckel equation (model parameters)"
+  },
+  {
+   "table": "Table 3",
+   "reason": "sea salt L_phi: measured values taken from Millero, Hansen and Hoff (literature) compared with calculated values; derived/model table"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 68,
+   "written": 68,
+   "note": "data rows; plus 10 label rows"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 1 holds 10 salts; only CaCl2 is in the six-ion set but the whole table is kept per the mixed-table rule.",
+ "pass2_diff": "Table 1: 68 rows, 204/204 numbers identical."
+}

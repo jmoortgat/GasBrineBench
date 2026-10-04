@@ -1,0 +1,63 @@
+{
+ "table": "Table 8",
+ "page_journal": 54,
+ "title_as_printed": "Osmotic Coefficients for MgSO4",
+ "footnotes_as_printed": {
+  "*": "Values in parentheses make use of solubility data of Robson.(27)"
+ },
+ "property": "phi_osm",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Not stated as total or partial in the table. Osmotic coefficients are 'at p = p0' i.e. 'Osmotic coefficients for pressures equal to vapor pressure of pure water at each temperature' (Table 2 Note 1). Solution vapor pressure = p0 - delta p (delta p measured 'corrected to 0 C' for mercury column, per text).",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Osmotic Coefficient phi at p = p0",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Delta p = p0-p (mm Hg)",
+   "unit": "mmHg",
+   "what": "measured vapor pressure lowering"
+  },
+  "P": {
+   "col": "Solvent Vapor Pressure p0 (mm Hg)",
+   "unit": "mmHg",
+   "basis": "saturation"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgSO4": {
+    "col": "Molality at Temperature (moles/1000 g H2O)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "MgSO4 (salt outside the listed NaCl/KCl/CaCl2/MgCl2/Na2SO4 set but made of Mg2+ and SO4 2- ions); 200 C row printed 'Saturated (0.128)*': concentration NOT measured but interpolated from Robson solubility"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Solvent Vapor Pressure p0 (mm Hg) (steam tables, not measured here)",
+  "Delta p/(m p0) x 10^2 (calculated)"
+ ],
+ "conversion_needs": [],
+ "notes": "Row index 18 (200 C): parentheses removed in CSV, flagged by note column '*'; molality 0.128 is from literature solubility (Robson), solution was saturated with precipitated salt; delta p is measured, derived columns use the assumed concentration. Temperature and p0 filled down. Extracted because Mg and SO4 are in the six-ion set; the builder may drop it.",
+ "row_from_literature": [
+  {
+   "rows": [
+    18
+   ],
+   "reason": "molality 0.128 from Robson solubility (footnote *: 'Values in parentheses make use of solubility data of Robson.'); phi derived with it; dp = 22.97 mm Hg is measured"
+  }
+ ],
+ "quality_remarks": "audit 2026-10-02: CSV row 18 (200 C) prints 'Saturated (0.128)*'; the molality 0.128 is taken from Robson's solubility data, so the composition (and phi 0.384, dp/(m p0) 1.538) is literature-derived while dp is measured. Marked row_from_literature. P is the pure-water vapor pressure p0 printed in each row (phi is referred to p = p0).",
+ "caution": "Row 18 (200 C): molality 0.128 is literature solubility (Robson), not measured; the solution was saturated."
+}

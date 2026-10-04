@@ -1,0 +1,128 @@
+{
+ "table": "Table I",
+ "page_journal": 355,
+ "title_as_printed": "Experimental Heat Capacity of Aqueous KCl Solutions at 200 bar Pressure",
+ "footnotes_as_printed": {
+  "a": "The uncertainty of each phi_Cp value was estimated assuming absolute errors of +/-0.00015 in Ps/Pw and relative errors of 1% in delta P/P and in the correction factor, f. (letter a is attached to the column header delta)"
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "All of the present results are for 200 bar (table title: 'at 200 bar Pressure'); no statement whether total or gauge",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "200",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "phi_Cp J mol-1 K-1",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of KCl, calculated by the authors from the measured Ps/Pw (eq 12)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "C_p,s J g-1 K-1",
+   "unit": "J/(g K)",
+   "what": "specific heat capacity of the solution, calculated by the authors from the measured Ps/Pw and correction factor f",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "Ps/Pw",
+   "unit": "dimensionless",
+   "what": "raw measured ratio from the flow calorimeter (ratio of power with solution to power with water)"
+  },
+  "uncertainty": {
+   "col": "delta",
+   "unit": "J/(mol K)",
+   "what": "estimated uncertainty of phi_Cp, footnote a"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KCl": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none (KCl in water); molality printed mol kg-1, solutions made up by mass"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27,
+    36
+   ],
+   "reason": "temperature block labels (T and correction factor f)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "412.99",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.87",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "472.31",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "522.70",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "572.50",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "f (correction factor, in label rows)"
+ ],
+ "conversion_needs": [],
+ "notes": "Five temperature blocks stacked, label row first. delta column carries header footnote a (not repeated in note column). Table III-XI etc. not extracted (derived)."
+}

@@ -1,0 +1,47 @@
+{
+ "doi": "10.1021/je00045a018",
+ "first_author": "Phutela",
+ "year": 1986,
+ "journal": "J. Chem. Eng. Data 31, 320-327",
+ "title": "Densities and Apparent Molar Volumes of Aqueous Magnesium Sulfate and Sodium Sulfate to 473 K and 100 bar",
+ "source_key": "PHUTELA(1986)",
+ "experimental_method": "Dilatometric: the density follows from the change in mercury-column height as the temperature of the solution cell is raised and lowered, calibrated against pure water; pressurised with nitrogen via the mercury; temperature by 25-ohm Pt thermometer.",
+ "uncertainties_stated": "Temperature stable to +-0.01 K over 30 min; mercury heights to +-0.01 mm; pressure to +-0.1 bar (density uncertainty see paper text, not extracted).",
+ "quality_remarks": "PDF page 1 is the end of another article (Me2SO/LiCl, pp. 320 references) and was not used; PDF page 1 header page number 320 belongs to the preceding article. Table I right block row 475.32 K, 102.3 bar, m 0.2025: density printed as 0.894.62 (misplaced point), written 0.89462. Table I right block row 294.99 K, 20.3 bar: molality printed as 0.o303 (letter o, typo for 0.3303; neighbouring rows are 0.3303), written 0.3303. Each pressure series cycles the temperature up and then down, so replicate (T, P, m) states appear with slightly different T. Temperature scale not stated. Table IV/V are smoothed fit values.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   321,
+   322
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Two cells needed correction after the image check (printed typos 0.894.62 and 0.o303), and 0 other text-layer errors found, but the rule counts any correction.",
+ "not_extracted_tables": [
+  "Table III: parameters of the apparent molar volume equations (model parameters)",
+  "Table IV: apparent molar volumes of aqueous Na2SO4 at rounded t and m from the fitted equation (smoothed/derived)",
+  "Table V: apparent molar volumes of aqueous MgSO4 at rounded t and m from the fitted equation (smoothed/derived)"
+ ],
+ "row_counts": {
+  "Table I": {
+   "printed": "54 + 54 (two side-by-side blocks)",
+   "written": 108
+  },
+  "Table II": {
+   "printed": 61,
+   "written": 61
+  }
+ },
+ "changes_after_image_check": [
+  "table_1 row 0.2025 block, T 475.32 K: rho 0.894.62 -> 0.89462",
+  "table_1 row T 294.99 K P 20.3: m 0.o303 -> 0.3303"
+ ],
+ "extraction_notes": "Text layer was otherwise clean; all other cells spot-checked against the 200 dpi page images (rho, T, P, m, phiV for every row read against the image). Sanity: rho decreases with T at fixed P and m; rho increases with m; phiV sign pattern consistent (negative at high T for MgSO4).",
+ "pass2_diff": "Tables I and II: all numbers identical except one printed OCR-like cell (0.o303): pass 1 read 0.3303 after the image check, pass 2 copied the letter as printed and also read it as 0.3303; kept as 0.3303."
+}

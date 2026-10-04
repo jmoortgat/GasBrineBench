@@ -1,0 +1,45 @@
+{
+ "doi": "10.1016/0021-9614(82)90080-5",
+ "first_author": "Lo Surdo",
+ "year": 1982,
+ "journal": "J. Chem. Thermodynamics",
+ "source_key": "LOSURDO(1982)",
+ "experimental_method": "Vibrating-tube flow densimeter measuring density differences between solutions and pure water, 278.15-318.15 K, 0.1 mol/kg to saturation.",
+ "uncertainties_stated": "Densimeter relative precision 3e-6, relative accuracy 5e-6; bath set to 0.002 K (quartz thermometer calibrated vs Pt resistance thermometer, IPTS-68); fit standard errors < 25e-6 g/cm3.",
+ "quality_remarks": "Solution molalities of stocks by titration (AgNO3, BaCl2) or drying to dryness (NaCl); dilutions by mass with buoyancy corrections. Duplicated points printed in MgCl2 blocks.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   651,
+   652,
+   653
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: literature density sources list (no data)",
+  "Table 3: fit coefficients A_ij (model parameters)",
+  "Table 4: partial molar volumes at infinite dilution (derived)",
+  "Table 5, 6, 7: fit coefficients for apparent/partial molar volumes (model parameters)",
+  "Apparent molar volumes in the text/figures are derived, not tabulated as data"
+ ],
+ "row_counts": {
+  "Table 1": "printed 368 data rows in 19 blocks; written 368 + 19 label rows"
+ },
+ "changes_after_image_check": [
+  "Table 1 NaCl 308.15 K: 0.79150 -> 0.79750 (m/m0)",
+  "Table 1 MgSO4 308.15 K: 232.341 -> 232.347",
+  "Table 1 MgSO4 298.15 K: '1 Xi0166' -> 1.00166 (text-layer garble)",
+  "Table 1 text-layer garbles repaired (0.787 11, 29.25i, 11 .OOl, I .26034, I .42678, L.28366, L.31673, 1 x+0522) to 0.78711, 29.251, 11.001, 1.26034, 1.42678, 1.28366, 1.31673, 1.60522"
+ ],
+ "extraction_notes": "Paper is the first of a series; it measures density differences only; mapping property rho_diff with reference pure water (Kell) at same T. Tables mix in-scope salts (NaCl, MgCl2, Na2SO4) and MgSO4; all kept. Minus the Delta rho values scaled by 1e-3 in the column header 10^3 Delta rho.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed corrections after the image check (two numeric cells and several garbled tokens)",
+ "pass2_diff": "Table 1 (printed pp. 651-653): 368 data rows, 736/736 numbers identical between pass 1 and the two-part blind pass 2."
+}

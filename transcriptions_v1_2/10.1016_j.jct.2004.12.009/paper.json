@@ -1,0 +1,48 @@
+{
+ "doi": "10.1016/j.jct.2004.12.009",
+ "first_author": "Gruszkiewicz",
+ "year": 2005,
+ "journal": "J. Chem. Thermodynamics 37, 906-930",
+ "source_key": "GRUSZKIEWICZ(2005)",
+ "experimental_method": "ORNL high-temperature isopiestic apparatus with internal electromagnetic balance, fitted with four Digiquartz pressure transmitters for direct water vapor pressure measurement over CaCl2(aq) and CaBr2(aq) alongside NaCl(aq) reference solutions, 380 to 523 K.",
+ "uncertainties_stated": "Maximum absolute uncertainty of a single osmotic coefficient estimated at +-0.005 (isopiestic, low T) to +-0.05 (vapor pressure, highest T and molality); most values below 0.015. Pressure gauges specified 0.01% of full scale, conservatively taken as three times larger; temperature-hysteresis of gauges up to 0.001 MPa; CaCO3 precipitation (CO2 in apparatus) adds up to +-0.02 in phi at 498.15 and 523.15 K above 15 mol/kg.",
+ "quality_remarks": "A small amount of CO2 in the autoclave precipitated calcite from concentrated CaCl2 and CaBr2 at high T; molalities were corrected for the lost salt (correction fractions given in text) so the high-T, high-molality values carry extra uncertainty. Vapor-pressure osmotic coefficients below 413 K at low molality were discarded by the authors (not tabulated). Table 1 first two lines at 393.15 K repeat values of the 390.15 K row (probable misprint, kept as printed). Authors note that their NaCl phi at 498.15 and 523.15 K is about 0.01 above Liu and Lindsay.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   9,
+   10,
+   11
+  ],
+  "journal_pages": [
+   914,
+   915,
+   916
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; script-parsed from the text layer; all rows of Tables 1 and 2 checked against 220 dpi page images with no differing cell found (including the suspicious 393.15 K repeated values, which are in the print).",
+ "not_extracted_tables": [
+  {
+   "table": "Table 3",
+   "reason": "fitted parameters of the Pitzer-type model equations"
+  },
+  {
+   "table": "Tables 4 to 7",
+   "reason": "model-calculated osmotic and activity coefficients of CaCl2 and CaBr2"
+  },
+  {
+   "table": "Tables 8 to 11",
+   "reason": "model-calculated apparent relative enthalpies and apparent molar heat capacity differences"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 43 data rows (T blocks 380.15:13, 381.15:1, 383.15:2, 385.15:1, 388.15:1, 390.15:2, 393.15:5, 473.15:6, 498.15:5, 523.15:7) ; written 43 + 10 label rows = 53",
+  "table_2": "printed 121 data rows in 8 T blocks (413.15:17, 423.15:1, 433.15:17, 443.15:2, 453.15:15, 473.15:24, 498.15:24, 523.15:21); written 121 + 8 label rows = 129"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Side-by-side left/right column groups stacked (left rows then right rows per T block). Footnote letter a stripped from the pressure value and recorded in the note column as 'p/MPa:a'. Headers rewritten in ASCII (phi for the osmotic coefficient symbol). Osmotic coefficients in both tables are computed by the authors (from NaCl reference molality in Table 1, from measured vapor pressure in Table 2) and flagged derived_by_authors. Sanity: Table 2 pressure decreases with increasing molality within each T block and increases with T; Table 1 molalities increase with T for equal block order; no duplicates other than exact replicates printed (e.g. 4.2226 twice at 380.15 K).",
+ "pass2_diff": "token diff: 820 numbers per pass, identical"
+}

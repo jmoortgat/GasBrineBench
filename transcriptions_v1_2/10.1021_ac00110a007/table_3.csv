@@ -1,0 +1,7 @@
+compd,temp (C),pressure (bar),water band positions (cm-1) at 0.5 mol %,H2O wt %,H2O mol %,lit. value (mol %),note
+liquid R22,37.8,15.3,10 505,0.16,0.76,0.86,lit. value (mol %):b
+R22,105.0,344.8,10 505,0.19,0.90,,
+CO2,50.0,344.8,10 542,0.31,0.75,0.75,lit. value (mol %):c
+CO2,75.0,344.8,10 552,0.55,1.33,1.35,lit. value (mol %):c
+liquid R134a,37.8,11.9,10 543,0.15,0.84,,
+R134a,110.0,344.8,10 542,0.83,4.49,,

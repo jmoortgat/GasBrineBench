@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/ja01291a061",
+ "first_author": "Pearce",
+ "year": 1937,
+ "journal": "J. Am. Chem. Soc. 59(12), 2689-2691 (title as printed: Vapor Pressures and Partial Molal Volumes of Aqueous Solutions of the Alkali Sulfates at 25 deg; authors J. N. Pearce and H. C. Eckstrom)",
+ "source_key": "PEARCE(1937)",
+ "experimental_method": "Vapor pressures by the Pearce and Snow method (cited, with minor modifications); densities by 100-ml pycnometer; solutions by weight of anhydrous salt plus water.",
+ "uncertainties_stated": "Vapor pressures accurate within +-0.004 mm.",
+ "quality_remarks": "Authors state their gamma_pm values (from graphical h-function integration) disagree with e.m.f. values (lower than Akerlof) and consider the h-function method unsatisfactory; vapor pressures themselves are considered accurate. Temperature scale and density units not stated. PDF page 1 also holds the end of another article (adsorption, Washington D.C.), ignored.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1,
+   2
+  ],
+  "journal_pages": [
+   2689,
+   2690
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (Li2SO4 vapor pressures): Li2SO4 has no in-scope component",
+  "Table IV (Li2SO4 densities): out-of-scope salt"
+ ],
+ "row_counts": {
+  "Table II -> table_1": "printed 9, written 9",
+  "Table III -> table_2": "printed 6, written 6",
+  "Table V -> table_3": "printed 9, written 9",
+  "Table VI -> table_4": "printed 6, written 6"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page images in all cells of the four tables; footnote letter a on the saturated molality moved to note column (m:a). Blank phi_obsd cell at m = 0.0 (printed as dots). Pure water p0 = 23.752 mm. Pressure for density not printed.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Tables II, III, V, VI (pass 1 numbered 1-4): 54/54, 36/36, 62/62 and 41/41 numbers identical."
+}

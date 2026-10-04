@@ -1,0 +1,102 @@
+{
+ "table": "Table 6",
+ "title_as_printed": "Experimental Carbon Dioxide Solubility in Liquid Phases at 323.15 and 333.15 K Obtained for Validation of the Operating Protocol",
+ "footnotes_as_printed": {
+  "a": "Relative standard uncertainties ur are ur(gas solubility) = 0.028 and ur(salt molality) = 0.001.",
+  "b": "Standard uncertainties u are u(temperature) = 0.50 K and u(pressure) = 0.06 MPa.",
+  "c": "Literature deviation = 100*sum_i(|m_CO2,ourwork - m_CO2,i|/m_CO2,i)/n, i each literature study, n number of studies (formula as printed, rendered as math)",
+  "d": "No available literature data (printed in the 25.06 MPa row of the literature-deviation column; cell left empty, note column records it)."
+ },
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (no statement whether absolute or gauge, or total vs CO2 partial) in the table or footnotes; reactor pressure of the gas-liquid equilibrium cell",
+ "columns": {
+  "T": {
+   "col": "temperature K",
+   "unit": "K",
+   "fill_down": true
+  },
+  "P": {
+   "col": "pressure MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "gas solubility mol CO2/kg H2O",
+   "unit": "mol_per_kg_water"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "relative",
+   "constant": "0.028",
+   "what": "ur(gas solubility) = 0.028 (footnote a)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (block 1, salt molality printed 0); in blocks 2 and 3 the salt molality is per kg H2O and set in group_rows"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    13
+   ],
+   "reason": "block label row (system name)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.basis",
+     "value": "none"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "literature deviation/% (deviation computed by the authors from literature/PHREEQC)"
+ ],
+ "volume_basis": "not_applicable",
+ "notes": "Printed blank cells in system, salt molality and temperature columns are carried forward within each block; the system name printed beside the first data row is written as its own label row. Temperature fill_down applies within block (printed once per block). Salt molality cells were left as printed in the data rows (CSV) and also set per block in group_rows. Block 1 is pure water (salt molality printed 0): group_rows sets composition.basis none. Blocks 2 and 3 are validation measurements in 1 mol/kg NaCl and 1 mol/kg CaCl2 at 323.15 K (one CaCl2 point only).",
+ "mapping_fix": "other_species reworded so that the pure-water block is recognised (audit 2026-10-02)"
+}

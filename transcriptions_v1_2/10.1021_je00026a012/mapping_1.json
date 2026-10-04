@@ -1,0 +1,410 @@
+{
+ "table": "Table I",
+ "page_journal": 389,
+ "title_as_printed": "Isotherms for Water + Carbon Dioxide System",
+ "footnotes_as_printed": {
+  "a": "d = dew point."
+ },
+ "footnote_letter_note": "Letter d is attached to p and V of the first row of each block (dew point); stripped from the numbers and recorded in the note column as 'p/ MPa:d;V/(dm3 mol-1):d'. The footnote mark a on the title is not data.",
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "p in MPa at dew point / on the p-V isotherm; static method, Budenberg dead-weight manometer; absolute vs gauge not stated; total pressure of the mixture",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "per label row"
+  },
+  "P": {
+   "col": "p/ MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "",
+   "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point",
+   "constant": "x_1 in label row (water mole fraction, overall = gas-phase composition at the dew point)",
+   "what": "x_1 = water mole fraction of the mixture; for rows flagged d the incipient liquid is a trace so x_1 equals y_H2O"
+  },
+  "value2": {
+   "col": "V/(dm3 mol-1)",
+   "unit": "dm3/mol",
+   "what": "molar volume of the mixture on the p-V isotherm (dew-point row: molar volume at the dew point)",
+   "unmapped_for_non_dew_rows": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "water + CO2 mixture; x_1 (water) given in each label row as printed"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    154
+   ],
+   "reason": "label rows (block headings) and non-dew-point single-phase p-V rows (volumetric data of the CO2-rich gas mixture, not a phase-equilibrium value); only the dew-point rows (note 'd') carry a water mole fraction of the gas phase"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.1210",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.1210",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "398.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.2173",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.2173",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "398.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.2173",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.5008",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "398.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 72,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.5008",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.5008",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "448.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.5008",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 117,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.7032",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "423.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 130,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.7032",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "448.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 142,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.7032",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 152,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.9347",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "448.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 154,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.9347",
+     "unit": "mole_fraction_water_in_gas_rich_phase_at_dew_point"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "V/(dm3 mol-1) for all rows"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed as four (p, V) column pairs per line, p decreasing down each pair and continuing at the top of the next pair. Stacked: first pair column of a block first, then second, third, fourth. Only the first row of each block (dew point) is mapped as y_h2o. 'Table I' temperature headings include 373.15-473.15 K."
+}

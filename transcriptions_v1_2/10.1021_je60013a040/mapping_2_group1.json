@@ -1,0 +1,71 @@
+{
+ "table": "Table II",
+ "page_journal": 292,
+ "title_as_printed": "Solubility of Krypton and Oxygen - Solvent, H2O",
+ "footnotes_as_printed": "none printed; '...' in a cell means no value given",
+ "property": "solubility_x",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure and krypton / oxygen partial pressures in p.s.i.a. (absolute) at the test temperature; Kr tagged with Kr-85 at tracer level, O2 overpressure; partial pressures derived from the vapor-phase sample analysis",
+ "columns": {
+  "T": {
+   "col": "Temp., C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "O2 Partial Pressure, P.S.I.A.",
+   "unit": "psia",
+   "basis": "gas_partial",
+   "gas": "o2"
+  },
+  "value": {
+   "col": "Mole Fraction O2 in Liquid x 10^-4",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "gas": "o2",
+   "what": "measured mole fraction of O2 in the liquid sample; cells printed '...' give no datum"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14
+   ],
+   "reason": "O2 mole fraction printed as '...' (not determined); only the tracer-level Kr Henry constant is given for these rows (Kr out of scope, derived by authors)"
+  }
+ ],
+ "extra_unmapped": [
+  "Run",
+  "Sample",
+  "Length of Test, Hours",
+  "Total Pressure, P.S.I.A. (cell pressure; O2 partial pressure + water vapour pressure)",
+  "Kr Partial Pressure, P.S.I.A. x 10^-4 (tracer-level Kr-85)",
+  "K Krypton, P.S.I.A. per mole fraction x 10^5 (derived by authors, Kr tracer)",
+  "K Oxygen, P.S.I.A. per mole fraction x 10^5 (derived by authors, O2 partial pressure / O2 mole fraction)"
+ ],
+ "conversion_needs": [
+  "psia to Pa",
+  "K in psia per mole fraction, so x = p / K for Henry's law; the Kr mole fraction itself is not reported",
+  "oxygen mole fraction basis (with or without dissolved Kr, salts) not stated; gas volumes at STP are mentioned only in the text for Figs. 2-4 ('milliliters of krypton at STP per gram of solvent'), STP not defined"
+ ],
+ "notes": "Table II was split into three files, one per solvent (group files), because the exponent of the Kr partial pressure differs (10^-4 for H2O and uranyl sulfate B, 10^-3 for uranyl sulfate A). Run name filled down from the first row of each run (printed once per run); run printed '13' (without 'Kr-') in the source. Empty cells = '...' printed (not determined).  Rows with '...' in the O2 mole fraction column give no O2 datum and are skipped; Kr K rows (tracer, derived) are not entered because the Kr partial pressure is not the cell pressure.",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water",
+ "quality_remarks": "audit 2026-10-02: mapping switched from the Kr Henry constant (tracer-level Kr, out of scope, Kr partial pressure is not the cell pressure) to the measured O2 mole fraction in the liquid with the O2 partial pressure (total minus water vapour pressure, e.g. 400 - 14.7 = 385 psia at 100 C; 435 - 225 = 210 at 200 C). Five rows have an O2 mole fraction (Kr-10 samples 2-4, Kr-11 samples 1 and 3); the other rows are skipped. Basis of the O2 mole fraction (with or without dissolved Kr) is not stated."
+}

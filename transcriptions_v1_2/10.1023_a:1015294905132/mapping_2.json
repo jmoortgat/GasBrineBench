@@ -1,0 +1,39 @@
+{
+ "table": "Table 2",
+ "page_journal": 205,
+ "title_as_printed": "Solubility of water in supercritical carbon dioxide (molar fractions x10^3) at a temperature of 323 K",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure in the system (extraction cell), no further qualification; pressure set within +/-0.1 MPa with a regulator; gauge vs absolute not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "323"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "y x 10^3",
+   "unit": "mole_fraction_water_in_co2_rich_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "water in CO2 (99.8% pure); phase is supercritical CO2-rich fluid"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed transposed (P and y as rows, points as columns); written here one point per row, in printed left-to-right order. y is solubility of water in CO2 in mole fractions from circulation-method material balance; method error estimated 7.2% (mean-square relative). Temperature stated only in the table title; scale not stated."
+}

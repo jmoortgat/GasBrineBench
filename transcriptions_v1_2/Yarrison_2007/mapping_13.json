@@ -1,0 +1,116 @@
+{
+ "table": "Table 13",
+ "page_journal": 100,
+ "pdf_page": 110,
+ "title_as_printed": "Table 13. 10% CO2, 90% Methane Data, Mole fraction H2O",
+ "footnotes_as_printed": "none printed",
+ "property": "y_h2o",
+ "gas": "co2-ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Cell pressure in MPa; thesis does not say whether total or partial. Water-saturated gas flowed out of the saturation cell at cell pressure, so total pressure is implied but not stated.",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "p MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "y_H2O mole fraction",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "what": "water mole fraction in the water-saturated gas phase (the thesis says 'mole fraction basis')"
+  },
+  "uncertainty": {
+   "col": "uncertainty (printed +-%)",
+   "unit": "percent_relative_of_value"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Gas mixture 90 mol % CH4 + 10 mol % CO2 (stated molar composition, stated molar uncertainty 0.01 moles; thesis p.81-82: 'The 90% methane, 10% carbon dioxide mixture ... has a stated molar uncertainty of 0.01 moles'); deionised water, no salt."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "temperature block label (printed as a column header)"
+  },
+  {
+   "rows": [
+    10
+   ],
+   "reason": "temperature block label (printed as a column header)"
+  },
+  {
+   "rows": [
+    20
+   ],
+   "reason": "temperature block label (printed as a column header)"
+  },
+  {
+   "rows": [
+    30
+   ],
+   "reason": "temperature block label (printed as a column header)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "314.8",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "366.4",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "421.2",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "463.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "value printed in E notation (e.g. 2.21E-03); parse directly",
+  "uncertainty is relative percent"
+ ],
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "not_applicable (mole fraction)",
+ "notes": "Original table is a matrix (pressure rows x temperature columns). Restacked into one block per temperature, each with a label row 'T = x K'; cells empty or '-' in the original (no measurement) are not written as rows. Data rows written: 36."
+}

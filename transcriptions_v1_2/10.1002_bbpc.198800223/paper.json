@@ -1,0 +1,15 @@
+{
+ "doi": "10.1002/bbpc.198800223",
+ "first_author": "Alvarez",
+ "year": 1988,
+ "journal": "Ber. Bunsenges. Phys. Chem. 92, 935-940",
+ "source_key": "ALVAREZ(1988)",
+ "experimental_method": "Analytic method: a small liquid sample is withdrawn from the equilibrium cell through a capillary into an evacuated glass cell, weighed, and the dissolved gas is measured manometrically in a gas burette after cooling (liquid N2 or chloroform bath).",
+ "uncertainties_stated": "Thermocouples calibrated against a standard platinum resistance thermometer with a precision of 0.1 K at 373 K rising to 0.3 K near 673 K; temperature difference between the two thermocouples never exceeded 0.2 K; pressures from Bourdon gauges calibrated to 0.2% of full scale; gas-burette pressure measurement better than 0.2%; overall precision of 2% in kH (x always smaller than 0.02).",
+ "quality_remarks": "Activity coefficients assumed unity (solutions dilute); authors say this is a good approximation below about 570 K and that kH values at high temperature may be more uncertain (solute concentration rises steeply above 570 K, solute-solute interactions near the solvent critical point). N2 kH from this work is about 10% above the graphical values of Japas and Franck 1985 (Ref. 14), attributed by the authors to different treatment of the vapour phase. Fugacity coefficients from Peng-Robinson with kij 0.30 (H2-H2O) and 0.53 (N2-H2O).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": "true (PDF page 3 = journal page 937, the only page with Table 1; rendered at 220 dpi and all rows read against the image)",
+ "extraction_notes": "Table 1 printed rows: 26 H2-H2O + 31 N2-H2O = 57 data rows plus 2 section label rows. CSV has 57 data rows plus 2 label rows (59 rows after header). Numbers come from word coordinates of the text layer (pdftotext -bbox) grouped by line by script; the one row split across two text lines (N2 347.2 K, p 1.678) was reassembled by script and checked on the image. Rows changed after the image check: none (text layer matched the image in every cell). Sanity: T strictly increasing within each block; H2 T 318.9-636.1 K, p 0.436-28.45 MPa; N2 T 336.3-636.5 K, p 0.534-25.60 MPa; no duplicates; x<0.02 everywhere (max 163.9e-4). x vs T is not monotonic along the data because p varies from run to run (expected, not an isotherm). A naive check phi*p/x against printed kH disagrees because p is total pressure including water vapour (gas partial pressure is lower); not a data error. Table 1 column headed 10^4 x in the image (text layer shows 10' x). Table 2 (fit coefficients) and Table 3 (molecular parameters) are not measured data and were not extracted; the paper has no other measured table. Low-temperature points 278.2, 298.2, 308.2 K used in the fit come from Battino et al. review and are not in Table 1. Mixed-block table: gas set per block via group_rows.",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: 285 numbers per pass, identical (cell diff of the pilot also clean)"
+}

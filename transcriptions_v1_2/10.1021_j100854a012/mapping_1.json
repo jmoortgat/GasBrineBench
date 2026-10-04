@@ -1,0 +1,256 @@
+{
+ "table": "Table I",
+ "page_journal": 2760,
+ "title_as_printed": "Isopiestic Solutions of Binary Mixtures",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "isopiestic_molality",
+ "property_description": "Each block of six solutions (pure salt A, four mixtures A+B, pure salt B) is mutually isopiestic at 25 C; 'm' is the total molality (mol of solute per kg water, both salts counted) of each solution, yB = mole fraction of salt B in the total solute (yB = 0 pure A, 1.0 pure B). No reference salt is separately designated in the table; the first row of a block (yB = 0) is the pure salt A solution, the last (yB = 1.0) the pure salt B solution.",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at the vapour pressure of the solutions, in desiccators; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "m",
+   "unit": "mol_per_kg_water",
+   "what": "total molality of the solution in isopiestic equilibrium with the other five solutions of its block"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "total_molality": {
+    "col": "m",
+    "unit": "mol/kg"
+   },
+   "yB_solute_mole_fraction_of_B": {
+    "col": "yB",
+    "unit": "mole_fraction_of_solute"
+   }
+  },
+  "constant": {},
+  "other_species": "salt pairs of NaCl, KCl, NaBr, KBr; bromides are outside the six-ion set (NaBr-KBr block is entirely out of scope, kept as the table mixes scope); salts A and B are set per block by the label row",
+  "ionic_strength_rule": {
+   "I": "total_molality",
+   "y": "yB_solute_mole_fraction_of_B",
+   "salt_y": "salt_B",
+   "salt_other": "salt_A"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70,
+    77,
+    84,
+    91
+   ],
+   "reason": "block label rows (salt pair and block number)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaBr"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaBr"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaBr"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 70,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 77,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 84,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "composition.constant.salt_A",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_B",
+     "value": "NaBr"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality of each salt = total m * (1 - yB) for A and total m * yB for B; vapour pressure/water activity of each block must come from the reference osmotic coefficient of pure salt A (not printed in this table)"
+ ],
+ "notes": "Stacked layout: the printed table has three (m, yB) column pairs side by side; the six pairs are in panels. Panels with fewer than three blocks (NaCl-KCl one block, NaCl-NaBr two blocks, NaCl-KBr two blocks) were identified by agreement of each block's mean molality of the mixed solutions with Table IV (3.549; 4.325 and 3.090; 4.268 and 2.891). Blocks stacked left to right; the 'block k of n' text only numbers them.",
+ "quality_remarks": "Total molality m equals the ionic strength and yB equals the ionic-strength fraction only because all four salts (NaCl, KCl, NaBr, KBr) are 1-1; the rule is therefore valid here. No osmotic coefficient or water activity is printed in Table I (needs a reference-salt converter). Only the NaCl-KCl block and the pure NaCl/KCl rows are inside the six-ion set; the bromide blocks are held as outside the set."
+}

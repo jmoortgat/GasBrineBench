@@ -1,0 +1,68 @@
+{
+ "table": "Table 3",
+ "page_journal": 3579,
+ "title_as_printed": "Measured and calculated vapour pressures at 25 C of multicomponent solutions",
+ "footnotes_as_printed": {
+  "a": "The uncertainty is estimated at +-0.04 kPa."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "vapour pressure of the water above the solution, measured with a quartz Bourdon gauge (pressure of the solution's own vapour; no gas present, cell pumped free of air)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "p/kPa obsd",
+   "unit": "kPa"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "0.04"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m NaCl",
+    "unit": "mol/kg"
+   },
+   "KCl": {
+    "col": "m KCl",
+    "unit": "mol/kg"
+   },
+   "MgCl2": {
+    "col": "m MgCl2",
+    "unit": "mol/kg"
+   },
+   "CaCl2": {
+    "col": "m CaCl2",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "none; the 'saturated with' column gives the solid phase(s) in equilibrium (hal = halite, syl = sylvite, car = carnallite); the molality unit is not printed in the header, it is the paper's m (mol per kg water, as in eqn 15-16)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "p/kPa calcd (model-calculated by authors, eqn 5, 6, 10, 12)",
+  "saturated with (solid phase; equilibrium solid)"
+ ],
+ "conversion_needs": [],
+ "notes": "Temperature 25 C is given in the table title. Row 0 is unsaturated; the other rows are saturated with the solids listed. Rows with CaCl2 = 0 (rows 3 and 7) are ternary NaCl-MgCl2 (row 3) or KCl-MgCl2 (row 7) solutions.",
+ "row_held": [
+  {
+   "rows": [
+    3
+   ],
+   "reason": "printed composition 0.34 m NaCl + 0.99 m MgCl2 'saturated with hal' cannot be halite-saturated, and the printed p = 1.35 kPa (p/p0 = 0.43) belongs to a solution of about 4 m MgCl2 like its neighbours (3.4-4.2 m, p = 1.28-1.58 kPa); the MgCl2 molality is probably misprinted for 3.99. A 0.99 m MgCl2 + 0.34 m NaCl brine has a vapour-pressure ratio near 0.92. Reported by a model-comparison study, 2026-10-03. Held, not corrected."
+  }
+ ],
+ "quality_remarks": "Row 3 (0.34 m NaCl, 0.99 m MgCl2, saturated with halite, p = 1.35 kPa) is internally inconsistent as printed and is held; see row_held. The authors' calculated column (1.33 kPa) agrees with the observed value, which suggests the printed MgCl2 molality is the error, not the pressure."
+}

@@ -1,0 +1,333 @@
+{
+ "table": "Table 1",
+ "page_journal": 254,
+ "title_as_printed": "Apparent molar heat capacity C_p,phi of CaCl2(aq)",
+ "footnotes_as_printed": {
+  "a": "The apparent molar heat capacity C_p,phi was calculated from equation (2).",
+  "b": "The estimated accuracy delta of each value of C_p,phi/(J K-1 mol-1) was calculated assuming relative errors of 1 per cent in DeltaP/P and absolute errors estimated from the experimental sensitivity at each temperature. The absolute error estimates varied from +/-0.0001 to +/-0.0010.",
+  "c": "Delta is the value of {C_p,phi(calculated) - C_p,phi(observed)}/(J K-1 mol-1). The calculated value is from a cubic-spline interpolation of the knots in table 2.",
+  "d": "The value of the heat loss correction factor f was calculated using the heat capacity of 3.0053 mol kg-1 NaCl as a chemical standard. The measured values of DeltaP/P for 3.0053 mol kg-1 NaCl at the experimental pressure were -0.05154 at 306.82 K, -0.05062 at 306.55 K, -0.04954 at 306.36 K, -0.04813 at 306.21 K, -0.04828 at 307.17 K, -0.04744 at 324.39 K, -0.04963 at 349.86 K, -0.04894 at 350.06 K, -0.05918 at 403.95 K, -0.05934 at 400.99 K, -0.07366 at 451.18 K, -0.08671 at 500.92 K, -0.12527 at 551.88 K, -0.16103 at 577.89 K, -0.15076 at 577.86 K, and -0.21097 at 602.68 K.",
+  "e": "These values were not included in the fit."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter back-pressure regulated; p printed in each block label (2.12 to 10.09 MPa for four blocks near 306 K, otherwise 17.20 to 17.82 MPa; authors state pressure varied between 17.2 and 17.8 MPa for the rest and treat it as 17.5 MPa)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "from block label"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "from block label"
+  },
+  "value": {
+   "col": "Cp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of CaCl2 calculated by the authors from measured power ratio Ps/Pw and cp/cp* via their equation (2)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Ps/Pw",
+   "unit": "dimensionless",
+   "what": "measured electric power ratio of sample to water (primary measured quantity)"
+  },
+  "value3": {
+   "col": "cp/cp*",
+   "unit": "dimensionless",
+   "what": "specific heat capacity ratio of solution to water, derived from Ps/Pw with heat-loss factor f and densities",
+   "derived_by_authors": true
+  },
+  "uncertainty": {
+   "col": "delta J/K/mol",
+   "unit": "J/(mol K)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; CaCl2 in water, molality as printed (mol kg-1)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4,
+    8,
+    14,
+    37,
+    42,
+    64,
+    79,
+    99,
+    126,
+    136,
+    158,
+    180,
+    202,
+    215,
+    225
+   ],
+   "reason": "T/p/f block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "306.82",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "2.12",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "306.55",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "4.81",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "306.36",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.09",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "306.21",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.20",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "307.17",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.55",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "324.39",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.27",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.86",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.75",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 79,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "350.06",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.75",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 99,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "403.95",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.82",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 126,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "400.99",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.62",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 136,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "451.18",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.69",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 158,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "500.92",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.41",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 180,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "551.88",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.41",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 202,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "577.89",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.48",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 215,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "577.86",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.48",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 225,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "602.68",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.55",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Delta (deviation from authors' cubic-spline fit, footnote c)",
+  "f (heat-loss correction factor of footnote d, printed in the block label rows; an instrument correction, not a composition)"
+ ],
+ "conversion_needs": [],
+ "notes": "Two side-by-side blocks per T/p group stacked left block first then right block; the 350.06 K group spans two printed pages (left rows of both pages first, then right rows). Header footnote letters a (Cp,phi), b (delta), c (Delta) are not glued to numbers. Cells with footnote e in the Delta column have no Delta printed and carry note Delta:e (not included in the fit). Replicate rows kept (e.g. 350.06 K 0.0507 two identical rows). The e mark appears on the 11 rows of the 2-10 MPa blocks near 306 K (not used in the fit) and on 5 further rows (403.95 K x1, 451.18 K x1, 577.89 K x2, 602.68 K x1) which are the 5 points the authors eliminated; 232 data rows printed = 221 points of the text + 11 low-pressure rows."
+}

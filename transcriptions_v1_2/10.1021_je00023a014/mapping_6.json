@@ -1,0 +1,56 @@
+{
+ "table": "Table 6",
+ "page_journal": 40,
+ "title_as_printed": "Isopiestic Molalities of MgCl2 Stock No. 3 with 0.2% Na from Measurements with CaCl2 No. 1 Reference Solution",
+ "footnotes_as_printed": {
+  "a": "The MgCl2 concentrations were calculated as if the solution were pure MgCl2."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68 (25.00 +- 0.005 C stated in the text)",
+ "pressure_note": "not stated (isopiestic equilibration in a closed vacuum chamber at the vapour pressure of the solutions; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "[MgCl2] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of test salt MgCl2 at isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "[Reference salt] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference salt solution at isopiestic equilibrium",
+   "reference_salt": {
+    "col": "Reference salt"
+   }
+  }
+ },
+ "reference_salt": {
+  "col": "Reference salt"
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "[MgCl2] m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "MgCl2 stock no. 3 contained about 0.2% Na, 0.02% Ca, 0.02% Fe (text, Table I footnote b); molality calculated as if pure MgCl2"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molalities per kg of water (mol kg-1)"
+ ],
+ "notes": "Printed as two side-by-side blocks of 3 rows each; stacked left then right. Contaminated stock: not pure MgCl2.",
+ "caution": "MgCl2 stock no. 3 contains about 0.2% Na, 0.02% Ca and 0.02% Fe; the authors calculated molalities as if the solution were pure MgCl2 (footnote a).",
+ "quality_remarks": "MgCl2 stock no. 3 contains about 0.2% Na, 0.02% Ca and 0.02% Fe; the authors calculated molalities as if the solution were pure MgCl2 (footnote a)."
+}

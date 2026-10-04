@@ -1,0 +1,63 @@
+{
+ "doi": "not applicable (doctoral thesis, Universite de Pau et des Pays de l'Adour, defended 14 Nov 2019; no DOI in PDF)",
+ "first_author": "Lara Cruz",
+ "year": 2019,
+ "journal": "PhD thesis, Universite de Pau et des Pays de l'Adour (Caracterisation thermodynamique des equilibres entre phases liquide et vapeur dans les saumures a hautes pressions et temperatures)",
+ "source_key": "LARACRUZ(2019)_THESIS",
+ "experimental_method": "Stirred variable-volume autoclave; liquid sample trapped in NaOH and dissolved CO2 determined by titration (acid-base, conductimetric for Ca-containing brines); each reported molality is the mean of five (or eight for the repeatability study) titrations.",
+ "uncertainties_stated": "ANOVA relative uncertainty 2.8 percent (0.03 mol/kg at 1.07 mol/kg), extended to all CO2 solubilities.",
+ "quality_remarks": "Thesis data tables IV-5, IV-7, IV-9, IV-11, IV-12, IV-13, IV-14 (6+5+1+5+5+5+5 = 32 rows) are identical, digit for digit, to Tables 6 and 7 of Lara Cruz et al., J. Chem. Eng. Data 2021 (extract/10.1021_acs.jced.0c00592: 12 validation + 20 brine rows): same pressures, molalities, temperatures and salinities. They are therefore DUPLICATES and are not re-extracted to avoid double counting; the thesis adds the per-row absolute uncertainty column (0.01-0.04 mol/kg), whereas the journal gives relative uncertainty 0.028. Only Tableau IV-3 (individual titrations of CO2 in pure water, 10.0 MPa, 333.15 K) is not in the journal paper and is extracted. Table IV-3 mean of Experience 1 printed 1.0736 vs 1.07354 computed from printed values (rounding).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   150,
+   152,
+   155,
+   158,
+   163,
+   164,
+   166,
+   167
+  ],
+  "journal_pages": [
+   150,
+   152,
+   155,
+   158,
+   163,
+   164,
+   166,
+   167
+  ],
+  "note": "pdf page number equals printed page number; all table pages checked against 200 dpi images; text layer matched in every cell"
+ },
+ "not_extracted_tables": {
+  "Tableau IV-5 (p152)": "duplicate of JCED 2021 Table 6 block H2O-CO2 333.15 K (6 rows); thesis additionally lists absolute uncertainty 0.02,0.03,0.04,0.04,0.04,0.04",
+  "Tableau IV-7 (p155)": "duplicate of JCED 2021 Table 6, NaCl 1 mol/kg, 323.15 K (5 rows); uncertainties 0.02,0.03,0.03,0.03,0.04",
+  "Tableau IV-9 (p158)": "duplicate of JCED 2021 Table 6, CaCl2 1 mol/kg 323.15 K 15.0 MPa (0.88, unc 0.02)",
+  "Tableau IV-11 (p163)": "duplicate of JCED 2021 Table 7, NaCl 1.2 mol/kg 333.15 K (5 rows); uncertainties 0.02,0.02,0.03,0.03,0.03",
+  "Tableau IV-12 (p164)": "duplicate of JCED 2021 Table 7, CaCl2 0.2 mol/kg 333.15 K (5 rows); uncertainties 0.02,0.03,0.04,0.04,0.04",
+  "Tableau IV-13 (p166)": "duplicate of JCED 2021 Table 7, NaCl 1.2 + CaCl2 0.2 mol/kg 333.15 K (5 rows); uncertainties 0.02,0.02,0.03,0.03,0.03",
+  "Tableau IV-14 (p167)": "duplicate of JCED 2021 Table 7, NaCl 1.2 + CaCl2 0.2 mol/kg 453.15 K (5 rows); uncertainties 0.01,0.01,0.03,0.03,0.04",
+  "Tableau IV-4": "ANOVA statistics, derived",
+  "Tableau IV-15": "salting-out effect, derived by authors",
+  "Tableau IV-1, IV-2, III-4, III-5": "seal tests and experimental conditions, not solubility data",
+  "Tableaux II-4 to II-20": "literature surveys and compilations of other authors' data",
+  "Tableaux A4-1 to A4-4": "uncertainty-budget calculations (GUM), derived"
+ },
+ "row_counts": {
+  "Tableau IV-3": {
+   "printed_data_rows": 24,
+   "mean_rows": 3,
+   "label_rows_added": 3,
+   "written": 30
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "210-page thesis; tables listed from the text layer first. Table file is named table_3.csv for Tableau IV-3. Three side-by-side experiment columns stacked.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the image",
+ "pass2_diff": "Tableau IV-3: 24 values identical; the numbers only in pass 1 are its repeated row indices."
+}

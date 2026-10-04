@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/j100250a001",
+ "first_author": "Simonson",
+ "year": 1985,
+ "journal": "J. Phys. Chem. 89 (4), 557-560 (Letter)",
+ "source_key": "SIMONSON(1985)",
+ "title": "Enthalpies of Dilution of Aqueous Calcium Chloride to Low Molalities at High Temperatures",
+ "authors": "J. M. Simonson, R. H. Busey, R. E. Mesmer",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was clean and every cell matched the page image",
+ "how_extracted": "pdf_text_layer",
+ "experimental_method": "Calvet heat and liquid flow microcalorimeter with Pt alloy heat exchangers; CaCl2 stock (7.2589 mol/kg) diluted in the flow with water at varying ratios, 298-673 K, 7-40 MPa",
+ "uncertainties_stated": "precision about +/-1-2% of Delta phi_L (0.1 m stock at 673 K) to about +/-10% (0.01 m stock at 573 K)",
+ "quality_remarks": [
+  "PDF holds pages 557-560 of the issue; the last part of p. 560 begins another article (cyanine dye LB films), not extracted.",
+  "Figures 1-2 show the full dilution curves (to 7.2589 m start) only graphically; numerical values given only for Table II (below 0.1 m, above 573 K).",
+  "Temperature scale not stated."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   559
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table I",
+   "reason": "minimum final molalities versus temperature ranges: experimental design, no measured values"
+  }
+ ],
+ "row_counts": {
+  "table_2": "printed 29 data rows; written 29"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table II page spans the PDF page 3 only; sanity: T and P increase together; all dPhiL negative.",
+ "pass2_diff": "Table II: 29 rows, 145/145 numbers identical."
+}

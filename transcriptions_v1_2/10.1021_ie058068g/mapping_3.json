@@ -1,0 +1,107 @@
+{
+ "table": "Table 3",
+ "page_journal": 3976,
+ "title_as_printed": "Experimental Contents of Water and Dew-Point Temperatures and Pressures for Gas 1 + Water and for Gas 2 + Water",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "y_h2o",
+ "gas": "co2-c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "dew-point pressure measured with a pressure transmitter (max error 0.1%) at the chilled-mirror instrument inlet; absolute/gauge not stated",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/10^5 Pa",
+   "unit": "bar",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "constant": "per block",
+   "what": "x_water = experimental mean value of water mole fraction of the gas mixture, printed only in the block label; the dew T,P pair is the measured quantity"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Gas 1 = propane 5(+-1)% + CO2 95(+-1)%; Gas 2 = n-butane 1(+-1)% + CO2 99(+-1)% (prepared by weight, basis % not stated); "
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    22,
+    34
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c3h8"
+    },
+    {
+     "path": "value.constant",
+     "value": "0.00108"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c3h8"
+    },
+    {
+     "path": "value.constant",
+     "value": "0.00168"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-n-c4h10"
+    },
+    {
+     "path": "value.constant",
+     "value": "0.00073"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-n-c4h10"
+    },
+    {
+     "path": "value.constant",
+     "value": "0.00137"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "P printed in units of 10^5 Pa (= bar)",
+  "block label gives water mole fraction with a thin space as digit separator: 0.001 08 = 0.00108",
+  "gas mixtures: dry-gas composition quoted in Table 1 by supplier only"
+ ],
+ "notes": "Block layout printed as three side-by-side T/P column pairs per block; stacked left pair first, then middle, then right, as in the printed reading order down each column. Dew points of 247-290 K and 1.1-21.8 bar; authors note some may lie in solid-vapor (hydrate/ice) metastable region. Row indices 0-based over all rows after header incl. label rows."
+}

@@ -1,0 +1,47 @@
+{
+ "property": "other",
+ "property_description": "specific isobaric heat capacity (J/(kg K)) of the fluid, flow calorimeter",
+ "temperature_scale": "not stated",
+ "volume_basis": "not_applicable",
+ "pressure_note": "P1 = pressure ahead of the calorimeter, held by a pressure retention valve; stated absolute ('p = 2.6 MPa (abs)', p.207; abstract 'absolute pressures (0.2-2.6 MPa)')",
+ "table": "Table 2",
+ "page_journal": 209,
+ "title_as_printed": "Measured heat capacity of degassed and demineralized water at 2.6 MPa and 80 C for different heating power values. The mass flux was 2.541 g/s.",
+ "footnotes_as_printed": "none printed",
+ "gas": "",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "80"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "2.6",
+   "basis": "total"
+  },
+  "value": {
+   "col": "cp J/kgK",
+   "unit": "J_per_kg_K",
+   "what": "specific heat capacity of water at each heating-power step (Eq. 14)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (degassed and demineralized); no salt"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "Qt W (time-averaged heating power)",
+  "dT_hp K",
+  "dT_0 K",
+  "dT_in K (temperature differences used in Eq. 14)"
+ ],
+ "conversion_needs": [],
+ "notes": "Mass flux 2.541 g/s printed in the title. Each row is one power step at the same T1 and P1.",
+ "quality_remarks": "The five rows are the individual heating-power steps whose mean (4212.62) is the 80 C row of Table 3 (printed 4212.6): the same measurement, to avoid double counting."
+}

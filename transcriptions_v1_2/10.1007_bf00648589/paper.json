@@ -1,0 +1,50 @@
+{
+ "slug": "10.1007_bf00648589",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer garbled (plus-minus signs read as bullets, decimal commas, dropped digits); six cells of Table I differed from the text layer and were taken from the image; all PDF tables get a blind second pass.",
+ "doi": "10.1007/BF00648589",
+ "first_author": "Dec",
+ "year": 1984,
+ "journal": "Journal of Solution Chemistry 13(1), 27-41",
+ "source_key": "DEC(1984)",
+ "experimental_method": "Steady-state flow microcalorimeter: gas pumped at a steady rate into flowing water; power from the dissolution measured by thermopile; 25 C, gas partial pressure about 86-88 kPa; converted to standard state with second virial coefficients.",
+ "uncertainties_stated": "Calorimetric dH0: twice the standard error of the mean; precision for oxygen 0.2 percent, accuracy better than 0.5 percent at 25 C; precision generally better than 1 percent.",
+ "quality_remarks": "Table I propane trial 5 p_G = 83.53 kPa (neighbours 86-87), kept as printed. Table I values printed positive while standard values (Table II) are negative: sign convention for Table I is inferred (scale -1 in mapping). Table II ethene van't Hoff value printed 15.33 without minus. Table I block 'Butane' is n-butane by the gas list in the experimental section. Temperature scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6,
+   8
+  ],
+  "journal_pages": [
+   30,
+   31,
+   32,
+   34
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III (standard partial molar thermodynamic functions dG0, dH0, dS0, S_aq at 25 C): derived/compiled quantities (dG0 and entropies from literature solubilities, dH0 repeated from Table II)"
+ ],
+ "row_counts": {
+  "table_1": "printed 98 trial rows in 11 gas blocks; written 98 data rows + 11 label rows",
+  "table_2": "printed 11 gas rows (value + uncertainty lines); written 11 data rows + 11 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 propene trial 13 epsilon: text layer 15.982 -> 12.982",
+  "table_1 ethane trial 7 dH_sol: text layer 19244 -> 19.244",
+  "table_1 ethane trial 10 dV/dt: text layer 4.~50 -> 4.450",
+  "table_1 propene trial 10 dH: 2i.697 -> 21.697",
+  "table_1 propene trial 11 dH: 2t.654 -> 21.654",
+  "table_1 ethyne trial 3 E: 114:788 -> 114.788",
+  "table_1 ethyne trial 4 E: 111:290 -> 111.290",
+  "table_1 butane trial 11 epsilon: 1L629 -> 13.629",
+  "table_1 propane trial 4 epsilon etc: commas read as decimal points"
+ ],
+ "extraction_notes": "Table I typed from images (all rows have printed +- uncertainty on the voltage; the text layer lost most of them). Footnote letters of the headers recorded in the mapping, not the CSV.",
+ "pass2_diff": "Table I 98 rows/686 numbers and Table II 11 rows identical in magnitude and sign; the only token differences are gas-name digits (C2H6 etc.) that pass 2 keeps in data rows. Printed oddities copied as printed: C2H4 van t Hoff 15.33 without minus, propane trial 5 pG 83.53."
+}

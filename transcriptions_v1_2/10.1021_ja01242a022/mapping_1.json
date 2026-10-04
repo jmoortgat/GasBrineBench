@@ -1,0 +1,90 @@
+{
+ "table": "Table I",
+ "page_journal": 223,
+ "title_as_printed": "Table I (isopiestic molalities of KCl and NaCl at 25 C, with osmotic coefficients and Q)",
+ "footnotes_as_printed": {
+  "*": "Starred results: Q deviates markedly from unity; per text, the solutions are assumed not to have been successfully out-gassed (equilibrium not attained). Dist.: a = transport of solvent from the NaCl solution to the KCl solution, b = the reverse."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium in an evacuated vessel under the water vapour of the solutions; air removed down to the vapour pressure of water)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "m KCl",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "observed isopiestic molality of the KCl (unknown) solution; molality basis not explicitly stated, weights reduced to vacuum"
+  },
+  "value2": {
+   "col": "m NaCl",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "observed isopiestic molality of the NaCl reference solution",
+   "reference_salt": "NaCl"
+  },
+  "phi": {
+   "col": "phi KCl",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "from_literature": true,
+   "what": "osmotic coefficient of KCl interpolated by the author in tables of Hornibrook, Janz and Gordon (from e.m.f. data), not derived from this isopiestic run"
+  },
+  "phi2": {
+   "col": "phi NaCl",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "from_literature": true,
+   "what": "osmotic coefficient of NaCl interpolated in the tables of Janz and Gordon"
+  },
+  "Q": {
+   "col": "Q",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "what": "Q = (m phi)KCl/(m phi)NaCl, should be unity at equilibrium"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KCl": {
+    "col": "m KCl",
+    "unit": "mol/kg"
+   },
+   "NaCl": {
+    "col": "m NaCl",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "each solution is a single salt in water (KCl in one dish, NaCl in the other); no mixed-salt solution is measured"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Dist. (direction of distillation a/b)",
+  "phi KCl, phi NaCl (interpolated from literature tables)",
+  "Q (derived)"
+ ],
+ "conversion_needs": [],
+ "notes": "Constant T = 25 C from the title (stated 25 deg); thermostat controlled to 0.003 deg. Star marks are in the note column as Q:*. The printed trailing digits of the first three rows' molalities are subscript digits (e.g. 0.031720) and are written as ordinary digits.",
+ "row_held": [
+  {
+   "rows": [
+    3,
+    6,
+    7,
+    10
+   ],
+   "reason": "starred rows: equilibrium not attained per the author (Q 0.9951, 1.0059, 1.0037, 1.0036); 'solutions had not been successfully out-gassed'"
+  }
+ ],
+ "quality_remarks": "Four starred rows (m KCl 0.04563, 0.06833, 0.07201, 0.09022): the author states Q deviates markedly from unity and the solutions had probably not been successfully out-gassed; held. Both osmotic coefficients are interpolated from literature tables."
+}

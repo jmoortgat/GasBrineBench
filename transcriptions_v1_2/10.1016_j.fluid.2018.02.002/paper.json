@@ -1,0 +1,56 @@
+{
+ "doi": "10.1016/j.fluid.2018.02.002",
+ "first_author": "Ahmadi",
+ "year": 2018,
+ "journal": "Fluid Phase Equilibria 463, 80-90",
+ "source_key": "AHMADI(2018)",
+ "experimental_method": "Rocking-cell (300 mL titanium) equilibrium; liquid sampled into a flask, evolved gas volume measured in a gasometer plus dissolved gas by mass/density correction; water activity checked after each run.",
+ "uncertainties_stated": "Uc(T)=0.17 K, Uc(P)=0.068 MPa; per-point expanded uncertainty in x (k=2, 95%).",
+ "quality_remarks": "Pure CO2 0.99995; salts 99.0-99.7% with no analytical check. Cell temperature obtained from jacket PRT via calibration T=0.9633 T_jacket + 0.9208. Brine: NaCl 7.013, CaCl2 0.737, MgCl2 0.087, KCl 0.066, SrCl2 0.059, BaCl2 0.036 wt%. Text quotes %AAD figures (4.71/3.00 single salt; 1.20/1.57 in conclusion) not reconciled by extractor.",
+ "how_extracted": "image_read (text layer lost right-hand columns)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7
+  ],
+  "journal_pages": [
+   85,
+   86
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tables 1-3",
+   "reason": "literature surveys"
+  },
+  {
+   "table": "Table 4",
+   "reason": "salt purity/supplier table; wt% used as composition in mapping_7"
+  },
+  {
+   "table": "Table 5",
+   "reason": "Lewis and Perkin correlation coefficients"
+  }
+ ],
+ "row_counts": {
+  "Table 6": {
+   "printed_data_rows": 29,
+   "written_data_rows": 29,
+   "label_rows": 5,
+   "summary_rows": 5
+  },
+  "Table 7": {
+   "printed_data_rows": 19,
+   "written_data_rows": 19,
+   "label_rows": 4,
+   "summary_rows": 4
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer truncated right-hand columns, so Tables 6 and 7 were transcribed from the 200 dpi images (P, x and U columns also match the text layer). Sanity: x rises with P on each isotherm. Summary %AAD values written under deviation columns (first three cells blank).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "deviation columns transcribed from image only; blind second pass advised",
+ "pass2_diff": "278 cells, 0 disagreements"
+}

@@ -1,0 +1,50 @@
+{
+ "table": "Table 1a",
+ "page_journal": "1269-1270",
+ "title_as_printed": "Experimental values of water mole fraction x(H2O), temperature T, pressure P, and molar volume Vm on the liquid-gas phase equilibrium surface of the binary water-oxygen system. Data up to x(H2O) = 0.900 and more obtained with the \"synthetic\" method. Data for x(H2O) = 0.930 and more obtained with the analytic method",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure at the liquid-gas phase boundary",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "x(H2O)",
+   "unit": "mole_fraction_water",
+   "scale": 1,
+   "what": "water mole fraction: overall filling composition (synthetic rows) or measured liquid-phase composition (analytic rows)"
+  },
+  "value2": {
+   "col": "Vm/10^-6 m3 mol-1",
+   "unit": "m3/mol",
+   "scale": 1e-06,
+   "what": "molar volume at the phase boundary (synthetic rows only; - for analytic rows)"
+  },
+  "P_uncertainty": {
+   "col": "P uncertainty +- /MPa",
+   "unit": "MPa",
+   "what": "pressure uncertainty of analytic rows; printed as '+- 1' after the pressure, split into its own column by the extractor"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "No label rows. CSV rows 0-72 (73 rows, x(H2O) 0.058-0.899) synthetic-method break points (bubble or dew point, phase not specified, overall composition corrected for dead volume); rows 73-116 (44 rows, x(H2O) 0.93-0.99) analytic liquid-phase samples, x(O2 in liquid) = 1 - x(H2O). Note the text says synthetic data up to 0.900 but the last synthetic rows print 0.899. Printed 'P +- 1' split into P and an uncertainty column; synthetic rows have empty uncertainty cell."
+}

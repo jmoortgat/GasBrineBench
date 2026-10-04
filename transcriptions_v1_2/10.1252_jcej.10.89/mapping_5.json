@@ -1,0 +1,52 @@
+{
+ "table": "Table 5",
+ "page_journal": 91,
+ "title_as_printed": "Experimental solubility data of nitrogen in aqueous sodium sulfite and sulfate mixed solutions at 25 C",
+ "footnotes_as_printed": {},
+ "property": "ostwald",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Abstract/text: 'oxygen (nitrogen) partial pressure of 1 atm'; total pressure in the vessel was recorded and the water vapour pressure of the solution (Timmermans table for Na2SO4; for Na2SO3 the Na2SO4 curve at same molarity was used) enters the evaluation of L, i.e. gas partial pressure 1 atm excluding water vapour",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'L = VG/VL' (Eq. 1): 'the ratio of the volume of gas absorbed to the volume of the absorbing liquid'; Nomenclature: 'VG volume of gas dissolved in aqueous salt solution at observed temperature and pressure [cm3]', 'VL volume of aqueous salt solution [cm3]'; Cs liquid-phase concentration of salt [mol/l]. A small liquid volume increase due to gas absorption was corrected with partial molal volumes (31 cm3/mol O2, 40 cm3/mol N2).",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "constant": "1"
+  },
+  "value": {
+   "col": "L [-]",
+   "unit": "ostwald_L_dimensionless"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "total_Na2SO3_plus_Na2SO4": {
+    "col": "Total conc. [mol/l]",
+    "unit": "mol/L"
+   },
+   "mole_fraction_Na2SO3_of_total_salt": {
+    "col": "x [-]",
+    "unit": "fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "Na2SO3 + Na2SO4 mixtures; x = mole fraction of sulfite in the mixed salts (Nomenclature); Na2SO3 molarity = total x x, Na2SO4 = total x (1-x); sulfite determined iodometrically, sulfate by difference from total (evaporation)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "conversion_needs": [
+  "mol/l of solution to molality needs solution density",
+  "per-salt molarity = total x (x or 1-x)"
+ ],
+ "notes": "Total concentration is of sulfite plus sulfate together."
+}

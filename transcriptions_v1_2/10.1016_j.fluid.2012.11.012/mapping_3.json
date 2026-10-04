@@ -1,0 +1,13 @@
+{"table":"Table 3","page_journal":160,"title_as_printed":"Water solubility in scCO2 at 90 atm and different temperatures determined from NIR absorption spectroscopic measurements.",
+"footnotes_as_printed":{"a":"Ref. [26].","b":"Ref. [46].","c":"Ref. [47].","d":"Ref. [48].","e":"Ref. [49].","f":"Ref. [50].","g":"Ref. [51].","h":"Based on triplicate measurements, the error of the data is +/-10%.","i":"Based on Spycher et al. [52]."},
+"property":"y_h2o","gas":"co2","regime":"","temperature_scale":"not stated",
+"pressure_note":"90 atm stated in title; not stated whether total or CO2 partial; cell pressurised with scCO2 above liquid water, so total pressure assumed by the authors' wording only (not stated)",
+"columns":{"T":{"col":"T C","unit":"C"},"P":{"col":"","unit":"atm","constant":"90","basis":"unspecified"},
+"value":{"col":"H2O solubility mol%","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"what":"water mol% in scCO2 phase, NIR"},
+"value2":{"col":"Literature values mol%","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"from_literature":true,"what":"several literature values per row, joined by semicolons with their own T/P in brackets (not at 90 atm)"},
+"value3":{"col":"Calculated value mol%","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"from_literature":true,"what":"Spycher et al. model values at 100 atm"}},
+"composition":{"basis":"none","per_row":{},"constant":{},"other_species":"pure water (DDI)"},
+"skip_rows":[],"group_rows":[],
+"extra_unmapped":["ScCO2 density g/ml (not stated whether measured or calculated)","Literature values","Calculated value"],
+"conversion_needs":["atm to kPa","mol% to mole fraction"],
+"notes":"Uncertainty +/-10% relative (footnote h). Literature cell lists several values per temperature in one CSV cell. Temperature column header printed as degree-C only."}

@@ -1,0 +1,30 @@
+{
+ "doi": "10.1021/j100847a064",
+ "first_author": "Rigby",
+ "year": 1968,
+ "journal": "J. Phys. Chem. 72(1), 330-334",
+ "source_key": "RIGBY(1968)",
+ "experimental_method": "Flow saturation method: compressed gas bubbled through two water-containing cells in series at constant T, expanded to about 1 atm, water collected on weighed magnesium perchlorate drying tubes and gas volume measured with a wet-test meter.",
+ "uncertainties_stated": "Temperature controlled to +/-0.01 C, measured to +/-0.02 C; pressure uncertainty not more than 0.3% at about 20 atm and smaller at higher pressure; water measurements reproducible to +/-0.5%, probably accurate within 1% (slightly larger at lowest concentrations); B12 uncertainty about +/-5 ml/mole.",
+ "quality_remarks": "Authors report good agreement with Bartlett (N2, 50 C); Saddington and Krase data judged less consistent; Olds, Sage and Lacey CH4 data 4% higher at 50 atm and 71.1 C. Water-weight correction never above 0.2%. Dry-gas purities: N2 <0.2% impurity, Ar <0.002%, CH4 <=100 ppm. Rows are mean values of two or more determinations.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   332
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (pure-component second virial coefficients and vapour pressure of water): literature / reference values, not measured here"
+ ],
+ "row_counts": "Table I printed data rows 37 (N2 13, Ar 12, CH4 12) plus 3 gas-name label rows; written 37 plus 3 label rows (40 rows after header)",
+ "changes_after_image_check": "none (text layer matched the image in every cell)",
+ "extraction_notes": "Page 3 of the PDF holds Table I; PDF pages 1 and 5 contain other articles (ends of a Pt-CO adsorption paper, start of a sepiolite paper). Sanity: pressures increase within each temperature sub-block; y1 decreases with pressure and increases with T as expected; no duplicate rows. Printed T has no explicit temperature scale. Printed column 'y1' denotes water (component 1).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the page image",
+ "pass2_diff": "Table I: 37 data rows (+3 gas labels), 147/147 numbers identical."
+}

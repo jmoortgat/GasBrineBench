@@ -1,0 +1,40 @@
+{
+ "doi": "10.1021/ie50518a051",
+ "first_author": "Kobayashi",
+ "year": 1953,
+ "journal": "Ind. Eng. Chem. 45(2), 440-446",
+ "source_key": "KOBAYASHI(1953)",
+ "experimental_method": "Static batch cell with mechanical agitation in an air bath; phases sampled under equilibrium pressure; propane dehydrated (Dehydrite) and measured in a calibrated glass bottle, water determined gravimetrically/by difference; propane-water system only.",
+ "uncertainties_stated": "Thermocouples calibrated to 0.1 F; pressure gauges within +-1% of readings (0-150 psi gage), +-0.667% (0-1000 psi gage), +-0.5% (0-3000 psi gage).",
+ "quality_remarks": "Propane not less than 99 mole %, impurities mainly ethane and isobutane (about 0.2%). Table I includes critical-region rows (footnote a) and an extrapolated quadruple point (footnote b). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   5
+  ],
+  "journal_pages": [
+   442,
+   444
+  ]
+ },
+ "not_extracted_tables": [
+  "Table IV (p. 444): graphically smoothed three-phase data, derived",
+  "Table V (p. 444): graphically smoothed water content of propane-rich phases, derived",
+  "Table VI (p. 445/446): graphically smoothed propane solubility in water-rich phase, derived (not opened as data)"
+ ],
+ "row_counts": {
+  "Table I group1": "printed 21, written 21",
+  "Table I group2": "printed 18, written 18",
+  "Table I group3": "printed 16, written 16",
+  "Table II": "printed 53, written 53",
+  "Table III": "printed 50, written 50"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table I printed as three stacked blocks with sub-headings; written as table_1_group1/2/3 (different value definitions). Text layer clean; every cell compared against the 200 dpi page image and 2x crops. Pressures in psia, temperatures in F, mole fractions. Table II/III row regimes are overrides inferred from Table I/IV (flagged). Sanity: temperature monotonic within blocks; Table III propane mole fraction increases with pressure along isotherms; Table II water content decreases with pressure along isotherms. Printed 'Temp.' in Table I group2 202.1 and 206.1 carry footnote a.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean and every cell matched the image.",
+ "pass2_diff": "Tables I-III: 158 rows, 474/474 numbers identical. Table I vapour row 201.7 F / 612 psia: a blot covers the last digit of 0.01208; both readers read 8 (second reader about 85 percent sure)."
+}

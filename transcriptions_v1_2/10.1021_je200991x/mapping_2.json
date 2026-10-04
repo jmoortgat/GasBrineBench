@@ -1,0 +1,101 @@
+{
+ "page_journal": null,
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure of the equilibrium cell (paper Figure 2 caption: 'total pressure'); absolute (Keller transducer, accuracy +/-0.01 MPa). Gas phase is CO2 + water vapour only.",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "P(expt)/MPa +/- 0.01",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x1(expt) /molar fraction +/- 4 %",
+   "unit": "mole_fraction_gas_in_aqueous_phase"
+  }
+ },
+ "property": "solubility_x",
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "table": "Table 2",
+ "title_as_printed": "Experimental Results for Carbon Dioxide (1) Solubility in Pure Water (2)",
+ "footnotes_as_printed": "none captured. Column header: x1(expt)/molar fraction +/- 4 %; P(expt)/MPa +/- 0.01; each T block is headed 'T = ... K +/- 0.06 K'.",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    15,
+    22,
+    29
+   ],
+   "reason": "block label rows 'T = ... K +/- 0.06 K'"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "298.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "348.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "393.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "notes": "Printed as side-by-side blocks (298.15|323.15, 348.15|373.15, 393.15) split over three HTML tables; stacked left block first then right block, one label row per block. Liquid composition by ion chromatography of total CO2 (uncertainty about 4 %). Temperature uncertainty +/-0.06 K."
+}

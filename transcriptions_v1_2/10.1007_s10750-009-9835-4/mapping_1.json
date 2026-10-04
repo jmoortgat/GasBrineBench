@@ -1,0 +1,183 @@
+{
+ "table": "Table 1",
+ "page_journal": 161,
+ "title_as_printed": "Experimental values of oxygen solubility (umol kg-1), for temperatures from 8 to 35 C and salinity values from 37.77 permil to 133.15 permil",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "solubility_molality",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'oxygen solubility C* (umol kg-1) at 1 atm of pressure'; samples equilibrated by bubbling atmospheric air, total atmospheric pressure recorded with a Fortin barometer; the paper does not state whether the 1 atm is total or O2 partial pressure and whether values were corrected for water vapour or to standard pressure",
+ "gas_basis": "not_applicable",
+ "gas_basis_note": "gas is O2 from air; no gas mole fractions reported",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "unit is umol per kg ('umol kg-1'); the paper does not state kg of solution or kg of water (Weiss-type seawater convention suggests kg of solution)",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "O2 solubility umol kg-1",
+   "unit": "umol_per_kg_solution",
+   "what": "oxygen solubility in evaporated seawater from air-saturation (Winkler titration); kg basis is solution (seawater convention, 'C* is the solubility in umol kg-1 in air-saturated seawater at one atmosphere of pressure', compared with Benson and Krause 1984); inferred, not literally stated",
+   "scale": 1e-06,
+   "unit_note": "printed umol/kg; scale 1e-6 gives mol/kg"
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {},
+  "constant": {},
+  "other_species": "evaporated natural seawater from the Bay of Cadiz (Spain), diluted with distilled/natural samples; ionic composition not quantified; salinity measured with induction salinometer calibrated with KCl solutions, printed with the permil sign"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    29,
+    58,
+    87,
+    116,
+    145,
+    174,
+    203,
+    232,
+    261,
+    290
+   ],
+   "reason": "salinity block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "0",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "6.05",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 58,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "13.08",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 87,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "19.23",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 116,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "24.52",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 145,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "30.77",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 174,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "37.77",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 203,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "51.15",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 232,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "68.67",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 261,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "97.18",
+     "unit": "permil"
+    }
+   ]
+  },
+  {
+   "label_row": 290,
+   "sets": [
+    {
+     "path": "composition.constant.salinity",
+     "value": "133.15",
+     "unit": "permil"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "umol/kg to mol/kg: scale 1e-6",
+  "salinity (permil, evaporated seawater) is not a molality; needs a seawater-composition assumption",
+  "kg basis not stated"
+ ],
+ "notes": "Printed as a wide table (T rows x 11 salinity columns, rotated page); stacked here into 11 blocks of 28 temperatures (35 down to 8 C, order as printed), one label row per salinity. Samples above 37.77 permil are natural evaporated seawater; 0 to 37.77 permil are dilutions. Values are 'mean' solubilities of at least three measurements per T. Series are visibly noisy in places (e.g. S=6.05 at 35 to 32 C and S=13.08 vs 6.05 at 35 C: 213.7 vs 194.1; S=19.23 at 11-8 C above S=13.08) -- reported as printed, not corrected.",
+ "quality_remarks": "audit 2026-10-02: kg basis inferred as kg of SOLUTION from the paper's comparison with the seawater convention of Weiss/Benson and Krause (agreement within 6 uM); the builder must convert to kg water (m_water = m_solution/(1 - S/1000)). The ionic composition of the evaporated Bay of Cadiz seawater is never quantified (salinity by induction salinometer calibrated with KCl), so the reference-seawater ion assumption is unreliable at S >= about 97 permil; the practical salinity scale is not defined above 42. Irregular entries in the S=6.05 and S=13.08 columns at 31-35 C are authentic print. Values are air-saturated (C*), so they are stored as the binary O2-water equivalent with O2 at 0.20946 of (P - psat), like the Millero 2002 oxygen tables.",
+ "air_equilibrated": {
+  "gas": "o2",
+  "y": 0.20946,
+  "evidence": "the paper compares its values with Benson and Krause (1984) and defines C* as the solubility in air-saturated seawater at one atmosphere of pressure, i.e. O2 at 0.2095 of the air; found by the inter-source consensus check (values 0.2 x the pure-O2 solubilities of Fox 1909 and Cosgrove 1981), 2026-10-03"
+ }
+}

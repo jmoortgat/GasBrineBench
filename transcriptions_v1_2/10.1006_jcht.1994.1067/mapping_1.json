@@ -1,0 +1,355 @@
+{
+ "table": "Table 1",
+ "page_journal": "583-585",
+ "title_as_printed": "Isopiestic molalities m and the corresponding osmotic coefficients phi for {(1-y)NaHSO4 + yNa2SO4}(aq); m0 = 1 mol kg-1",
+ "footnotes_as_printed": {},
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at the water vapour pressure of the solutions)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K"
+  },
+  "value": {
+   "col": "m/m0 (mixture)",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "total stoichiometric molality (mol of NaHSO4 + Na2SO4 per kg water) of the test mixture, printed as m/m0 with m0 = 1 mol/kg"
+  },
+  "value2": {
+   "col": "m(NaCl)/m0",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "what": "molality of the NaCl reference solution in isopiestic equilibrium",
+   "reference_salt": "NaCl"
+  },
+  "phi": {
+   "col": "phi (stoichiometric osmotic coefficient, authors)",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "NaHSO4 (out-of-scope species) in the mixture (1-y)NaHSO4 + y Na2SO4; y = 0.3500, 0.5000, 0.6500 set by group rows as composition.constant.y_Na2SO4; y presumably the stoichiometric mole fraction of Na2SO4 in the salt mixture (paper does not give an explicit definition; text only says experimental samples were mixed from H2SO4(aq) and Na2SO4(aq)); m is the total stoichiometric molality of the mixture. Reference: NaCl."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    24,
+    50,
+    68,
+    69,
+    88,
+    112,
+    130,
+    131,
+    151,
+    171,
+    188,
+    189,
+    212,
+    234,
+    253,
+    254,
+    274,
+    292
+   ],
+   "reason": "label rows: temperature blocks and y blocks"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "383.46",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.3500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "383.46",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.5000",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "383.46",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.6500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "383.46",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.95",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.3500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "413.95",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 88,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.5000",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "413.95",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 112,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.6500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "413.95",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 130,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "443.32",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 131,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.3500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "443.32",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 151,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.5000",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "443.32",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 171,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.6500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "443.32",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 188,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "473.21",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 189,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.3500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.21",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 212,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.5000",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.21",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 234,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.6500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "473.21",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 253,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 254,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.3500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "498.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 274,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.5000",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "498.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 292,
+   "sets": [
+    {
+     "path": "composition.constant.y_Na2SO4",
+     "value": "0.6500",
+     "unit": "stoichiometric_mole_fraction_in_salt_mixture"
+    },
+    {
+     "path": "T.constant",
+     "value": "498.19",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "phi calculated by authors from phi = 2 m_ref... eq (1): phi_x = 2 m_r phi_r / (3 m_x) with stoichiometric 3-particle convention (phi derived_by_authors)"
+ ],
+ "conversion_needs": [
+  "osmotic coefficients assume complete dissociation into three particles for both Na2SO4 and NaHSO4 (stoichiometric)",
+  "none for units; m0=1 mol/kg"
+ ],
+ "notes": "Layout: the printed table has three y blocks side by side (phi, m/m0 for y=0.35, 0.50, 0.65) plus a shared NaCl column. Stacked here as: T label row, then for each y a label row followed by the (phi, m/m0, m(NaCl)/m0) rows of that block; NaCl value repeated for each block where the printed row has an entry for that y. Printed lines with an empty cell for a given y simply have no row in that y block (all printed lines are covered: 25, 23, 19, 26, 21 lines per temperature). Pairs of closely spaced replicate rows are genuine. Anomaly as printed: T=443.32 K, y=0.35, row phi=0.4905 m/m0=1.8944 (NaCl 1.5337) is out of sequence/trend (neighbours 0.5653 at m 1.2266 and 0.5608 at m 1.6928); other y blocks at that NaCl molality have m about 1.67; likely a misprint in the source, kept as printed. The 498.19 K block continues on page 585 without a repeated temperature heading.",
+ "quality_remarks": "audit 2026-10-02: CSV data row 137 (T = 443.32 K, y = 0.35: phi 0.4905, m/m0 1.8944, m(NaCl)/m0 1.5337) is out of line with its neighbours (0.5653/1.2266 and 0.5608/1.6928, NaCl 1.5649); the three printed numbers are mutually consistent through the osmotic-coefficient equation (implied phi 0.909 against 0.910 for the neighbour), so the point is kept as printed and flagged as a suspected source outlier. The T label rows are repeated into every y label row (T.constant) because the loader applies only the latest label row."
+}

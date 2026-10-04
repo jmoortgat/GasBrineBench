@@ -1,0 +1,41 @@
+{
+ "doi": "10.1016/0012-821X(84)90040-2",
+ "first_author": "Kishima",
+ "authors": "Noriaki Kishima, Hitoshi Sakai",
+ "title": "Fugacity-concentration relationship of dilute hydrogen in water at elevated temperature and pressure",
+ "year": 1984,
+ "journal": "Earth and Planetary Science Letters 67, 79-86",
+ "source_key": "KISHIMA(1984)",
+ "experimental_method": "Equilibrium H2 concentration in water measured in hydrothermal vessels in contact with a magnetite-hematite buffer (300-500 C) and a palladium hydride buffer (150 and 205.5 C), sampling the aqueous phase; fugacity of H2 fixed by the buffer, Y = fH2/C_H2 then calculated.",
+ "uncertainties_stated": "Duplicate C_H2 determinations agree within 0.7 per cent (PHW system); smoothed Y values of Table 4 expected accurate within 5 per cent.",
+ "quality_remarks": "Y values depend on buffer fugacity scales (Pd hydride desorption plateau; authors' own MH fO2 scale, eq. 9) and are anchored to literature H2 solubility at the saturation vapour pressure; the primary measured quantity is C_H2. Temperature scale not stated. Pure-water systems only (NaCl solutions deferred to another paper).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   5
+  ],
+  "journal_pages": [
+   81,
+   83
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 2": "Y along the saturation vapour pressure curve: derived from literature solubility data and estimated for some temperatures",
+  "Table 4": "smoothed Y values read from the authors' P-T-Y diagram: smoothed/derived",
+  "Table 5": "partial molar volumes of H2 derived by the authors from smoothed Y values: derived"
+ },
+ "row_counts": {
+  "Table 1": "printed 14, written 14",
+  "Table 3": "printed 38, written 38"
+ },
+ "changes_after_image_check": [
+  "table_3 (whole table): text layer scrambled by two-column layout and one comma decimal (2,89); all 38 rows typed from the page image instead"
+ ],
+ "extraction_notes": "Table 1 text layer was only partly usable (dash ditto marks, interleaved figure text), so Table 1 was also typed from the image. Table 1: Run and T filled down (dash = same as above). The standard conditions for gas volumes are defined by the paper: STP = 0 C, 760 mm Hg. Sanity: Table 3 T increasing 296 to 487 C; within each T pressure decreases while C_H2 increases (consistent). Table 1 within each run pressure decreases with C_H2 increasing.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer was unusable for Table 3 and partially for Table 1; both typed from the image, so an independent second read is wanted",
+ "pass2_diff": "Tables 1 and 3: all pass-2 numbers occur in pass 1 (pass-1-only numbers are run and temperature keys filled down); Table 3 152/152 identical."
+}

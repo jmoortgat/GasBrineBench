@@ -1,0 +1,51 @@
+{
+ "table": "Table 2",
+ "page_journal": 219,
+ "title_as_printed": "Solubility of oxygen in NaCl solutions as a function of temperature and concentration",
+ "footnotes_as_printed": {},
+ "property": "solubility_molality",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "solubilities corrected to a standard atmosphere from the measured atmospheric pressure (solutions equilibrated with the atmosphere); whether this is total pressure of moist air or O2 partial pressure of dry air is not stated",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "[O2] umol (kg H2O)^-1",
+   "unit": "mol_per_kg_water",
+   "scale": 1e-06
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "Molality",
+    "unit": "mol/kg H2O"
+   }
+  },
+  "constant": {},
+  "other_species": "none (single salt in water)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "pressure: standard atmosphere only stated in text, O2 partial pressure of air at 1 atm not given"
+ ],
+ "notes": "Side-by-side column blocks of the printed table are stacked column-major in reading order (left block top to bottom, then next block). Blank spacer lines between temperature groups are not rows. Printed temperatures scatter around nominal 5, 10, 15, 20, 25, 30, 35, 40, 45 C. The saturation limit of the salt sets the highest molality. Experiments equilibrated with atmosphere; oxygen determined by Winkler titration.",
+ "air_equilibrated": {
+  "gas": "o2",
+  "y": 0.20946,
+  "evidence": "solutions equilibrated with air and corrected to a standard atmosphere (Garcia and Gordon convention; not stated in the paper itself, audit 2026-10-02)"
+ }
+}

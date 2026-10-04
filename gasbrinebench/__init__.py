@@ -8,21 +8,23 @@ Five-minute tour
 ----------------
 >>> import gasbrinebench as gbb
 >>> gbb.__version__
-'1.1.1'
+'1.2.0'
 
-Load everything. The 144 ``lle-regime`` rows -- propane points whose heavy
-phase is a liquid, so they are mutual solubilities and not gas solubilities --
-are excluded by default; pass ``exclude_tags=None`` for the raw 11,537:
+Load everything. The 354 ``lle-regime`` rows -- points whose heavy phase is a
+liquid, so they are mutual solubilities and not gas solubilities -- and the
+rows carrying a default-excluded flag (``gas-out-of-scope``, ``hydrate-regime``,
+``pressure-unstated``, ...) are dropped by default; pass ``exclude_tags=None,
+exclude_flags=None`` for all 27,025:
 
 >>> df = gbb.load()
 >>> len(df)
-11393
+23687
 
 Filter on any axis, in one call or several:
 
 >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
 >>> len(co2)
-2837
+3597
 >>> hot_brine = gbb.select(co2, T=(373, 425), ionic_strength=(2, None))
 >>> len(hot_brine)
 500
@@ -32,7 +34,7 @@ Derived composition quantities:
 >>> float(gbb.ionic_strength(co2).max())
 18.0
 >>> gbb.salt_system_kind(co2).value_counts().to_dict()
-{'single-salt': 1937, 'water': 562, 'mixed-salt': 338}
+{'single-salt': 2002, 'water': 1228, 'mixed-salt': 367}
 
 Both mole-fraction siblings of a solubility, joined onto one row:
 
@@ -43,7 +45,7 @@ Both mole-fraction siblings of a solubility, joined onto one row:
 What a selection contains:
 
 >>> int(gbb.inventory(df, by='gas').loc['h2', 'rows'])
-437
+690
 
 Export. CSV always works; Parquet and HDF5 raise
 :class:`~gasbrinebench.export.MissingDependencyError` naming the one package

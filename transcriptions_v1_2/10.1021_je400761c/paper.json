@@ -1,0 +1,48 @@
+{
+ "doi": "10.1021/je400761c",
+ "first_author": "Zezin",
+ "authors": "Denis Zezin, Thomas Driesner, Carmen Sanchez-Valle",
+ "title": "Volumetric Properties of Mixed Electrolyte Aqueous Solutions at Elevated Temperatures and Pressures. The System KCl-NaCl-H2O to 523.15 K, 40 MPa, and Ionic Strength from (0.1 to 5.8) mol/kg",
+ "year": 2014,
+ "journal": "J. Chem. Eng. Data 59, 736-749",
+ "source_key": "ZEZIN(2014)",
+ "experimental_method": "Vibrating-tube densimeter (custom DMA HP, Stabinger) measuring the density difference between degassed KCl-NaCl solutions and pure Milli-Q water at 298.15-523.15 K up to 40 MPa.",
+ "uncertainties_stated": "u(T) = 0.01 K, u(p) = 0.0005 p, u(m_i) = 0.000012 m; combined U(Delta_rho) = 1.9e-4, 2.1e-4, 1.2e-4, 3.6e-5, 1.7e-4 g/cm3 at 298.15, 373.15, 423.15, 473.15, 523.15 K; density accuracy better than 2e-4 g/cm3 (abstract).",
+ "quality_remarks": "Nominal temperatures 298.15, 373.15, 423.15, 473.15, 523.15 K; printed actual T of individual rows scatter by up to about 0.2 K (473 K rows up to 473.36 K, 523 K rows from 523.05). Pressures include non-round values 1.97, 5.84 and 39.85 MPa at 473 K. Printed tables list only Delta_rho; apparent molar volumes are in Table 1S of the Supporting Information (not available). Many composition points are repeated across pressures.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "journal_pages": [
+   738,
+   739,
+   740,
+   741,
+   742,
+   743,
+   744
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (sample information: chemicals, purities): not data",
+  "Table 3 (pressure-dependent Pitzer parameters of eq 4) and Table 4 (standard deviations of model): model parameters",
+  "Table 1S (mean apparent molar volumes, Supporting Information): not in the PDF; derived from Table 2"
+ ],
+ "row_counts": {
+  "Table 2": "printed 740 data rows (count of the two-block layout over pages 738-744), written 740"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer parsed by script (pdftotext -layout; each line split into left and right 5-column blocks, single-block lines assigned by position); all seven table pages opened as page images; every page image read and compared with the parsed rows (visual comparison, not an independent cell-by-cell OCR diff); no discrepancy seen. Sanity: T clusters at five nominal temperatures, p 0.1-40 MPa, no negative values, no exact duplicate (T,p,mNaCl,mKCl) rows. Temperature scale not stated.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean and every cell checked matched the page image; table is large (740 rows), so a pass 2 would still be welcome if capacity exists.",
+ "pass2_diff": "Table 2: 740 rows, 3699/3700 numbers identical; the one disagreement (row 721 T 523.15 vs 523.17) arbitrated against the text layer: 523.15 (pass 1 right)."
+}

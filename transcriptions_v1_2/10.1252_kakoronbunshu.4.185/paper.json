@@ -1,0 +1,33 @@
+{
+ "doi": "10.1252/kakoronbunshu.4.185",
+ "first_author": "Yasunishi",
+ "year": 1978,
+ "journal": "Kagaku Kogaku Ronbunshu 4(2), 185-191",
+ "source_key": "YASUNISHI(1978)",
+ "experimental_method": "Gas-volumetric absorption method with pure oxygen (99.995%) at 1 atm O2 partial pressure and 15, 25, 35 C in aqueous solutions of 11 electrolytes; solution concentrations analysed (titration, Mohr, chelate, oxine methods).",
+ "uncertainties_stated": "Pure-water check: mean Ostwald coefficient 0.03643 at 15 C (mean deviation 0.49%), 0.03114 at 25 C (18 points, 0.32%), 0.02764 at 35 C (7 points, 0.39%), agreeing with literature.",
+ "quality_remarks": "NaOH samples contained 1-2% Na2CO3 (ignored; concentration given as total Na expressed as NaOH). Paper in Japanese; table headings in English. Cs is molarity per litre of solution. Authors' comparison: NaOH about 10% below Geffcken at 2 mol/l. Printed table value 0.008C0 (NaOH, 25 C, 3.613 mol/l) is a scan glitch, read as 0.00800.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   186
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (journal p. 187): observed salting-out parameters K and van Krevelen-Hoftijzer estimates: derived and estimated quantities.",
+  "Table 3: parameters of Eq. (7) (fit coefficients): model parameters."
+ ],
+ "row_counts": {
+  "table_1": "printed 181 data rows (23 NaOH, 30 KCl, 23 Na2CO3, 8 NaNO3, 7 BaCl2, 13 CaCl2, 7 Ca(NO3)2, 29 MgSO4 at 15/25 C, 10 MgCl2, 12 AlCl3, 11 MgSO4 at 35 C, 8 Al2(SO4)3); written 181 plus 12 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 1 is raster in the PDF (no usable text layer for it); whole table read from 300 dpi crops of each of the four column blocks. Temperature filled down from first row of each sub-block. Sanity: L decreases monotonically with Cs within each sub-block; a few near-duplicate concentrations (e.g. NaNO3 2.038/2.057, MgSO4 25 C 1.742/1.784) are separate runs. MgSO4 15 C L at 2.431/2.450/2.456 is 0.00701/0.00712/0.00699 (not monotonic, within scatter; as printed). Neither the temperature scale nor the stated atmosphere beyond oxygen 1 atm is given.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned raster table with no text layer, read by eye from image only (one scan glitch corrected)",
+ "pass2_diff": "Table 1: 181 rows; every pass-2 number occurs in pass 1; the differences are the temperature keys it filled down; NaOH 25 C L printed 0.008C0 (scan artefact) read 0.00800."
+}

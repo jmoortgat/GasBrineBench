@@ -1,0 +1,39 @@
+{
+ "doi": "10.1021/je00020a034",
+ "first_author": "Hubert",
+ "year": 1995,
+ "journal": "J. Chem. Eng. Data 40, 891-894",
+ "source_key": "HUBERT(1995)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer scrambled by the layout and watermark (rows out of order); table was re-read from the 200 dpi page image by hand and cross-checked only against the set of numbers in the text layer; no digit disagreements found, but because the CSV was hand-transcribed an independent pass is recommended",
+ "experimental_method": "Nonisothermal static apparatus: degassed NaCl solution of known molality in a cell, total pressure measured with a 0-1000 Torr absolute capacitance manometer at several temperatures (30 min equilibration).",
+ "uncertainties_stated": "T +/-0.02 K; pressure 0.1% of reading; composition +/-0.001 mol/kg; pure water P agrees with Haar et al. steam tables within 0.1%.",
+ "quality_remarks": "Authors fit results with Apelblat correlation (Table 2) and compare with literature (Table 3). a_w and phi are authors' calculations.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   892
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "Apelblat A,B,C fit parameters: model parameters"
+  },
+  {
+   "table": "Table 3",
+   "reason": "comparison of Apelblat-fit/polynomial osmotic coefficients and vapor pressures with literature at round T: derived/fitted"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 133 data rows (9 blocks) + 9 label rows; written 133 + 9"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: T and P increase monotonically within each stacked group in every block; a_w roughly constant with T per block; all 133 x 4 values also found in text-layer token set. Pure-water reference measurements mentioned in text but not tabulated.",
+ "pass2_diff": "Table 1: 133 (m, T, P, aw, phi) tuples identical between the hand transcription of pass 1 and the blind pass 2."
+}

@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/je60062a007",
+ "first_author": "Crozier",
+ "year": 1974,
+ "journal": "J. Chem. Eng. Data 19(3), 242-244",
+ "source_key": "CROZIER(1974)",
+ "title_authors": "Solubility of Hydrogen in Water, Seawater, and NaCl Solutions; Thomas E. Crozier and Sachio Yamamoto",
+ "experimental_method": "Scholander microgasometric technique as modified by Douglas: about 6 ml degassed water equilibrated with H2 in a shaken vessel in a bath thermoregulated to 0.01 C; gas volume absorbed and water volume measured, Bunsen coefficient corrected 0.12% for partial molal volume (26 cm3/mol).",
+ "uncertainties_stated": "estimated accuracy 0.5% (abstract); average deviation of data from fit 1.8e-5 beta; salinity accuracy 0.003 permil; bath +-0.01 C",
+ "quality_remarks": "Salinities of the seawater series are 27.665, 33.680, 39.927 permil (diluted or evaporated); seawater not NaCl. Table I replicate temperatures are slightly scattered around nominal set points. Salinity units printed as permil/parts per thousand. No pressure other than the definition (760 mm partial pressure) is given. Table I/IV unit header text-layer showed '%' for Table IV; image shows permil.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   243,
+   244
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: fit constants (model parameters)",
+  "Table III: Bunsen coefficients calculated from the fitted equation (derived, smoothed)"
+ ],
+ "row_counts": {
+  "Table I": "printed 74 lines x 3 pairs = 222 data points; written 222 data rows plus 5 label rows",
+  "Table IV": "printed 10 data rows; written 10 plus 2 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table I printed in three (T,beta) pairs per line and two side-by-side halves; re-laid out to one pair per row by script from the text layer, checked against the page image. Text layer matched the image in all cells examined. Sanity: beta decreases with T and salinity as expected; some replicate T/beta pairs.",
+ "gas_basis": "not_applicable",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, all cells matched image",
+ "pass2_diff": "Tables I and IV: 449/449 and 22/22 numbers identical."
+}

@@ -1,0 +1,45 @@
+{
+ "doi": "10.1002/aic.15512",
+ "first_author": "Zirrahi",
+ "year": 2017,
+ "journal": "AIChE J. 63 (4), 1384-1389",
+ "source_key": "ZIRRAHI(2017)",
+ "title": "Water content of light n-alkanes: new measurements and cubic-plus-association equation of state modeling",
+ "authors": "Mohsen Zirrahi, Hassan Hassanzadeh, Jalal Abedi",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; all 62 cells x3 columns matched the 200 dpi page image",
+ "experimental_method": "Bubble column in an oven saturates the gas with water; after a demister the gas is cooled, water adsorbed on a desiccant and weighed, dried gas volume measured by a gasometer.",
+ "uncertainties_stated": "Uncertainty of data less than 6 % of reported values; oven temperature accuracy +-1 C; gasometer accuracy 0.2 % of reading range; each experiment repeated at least twice and the average reported.",
+ "quality_remarks": "Abstract and title mention butane/n-alkanes including n-butane in the modelling, but Table A1 contains only methane, ethane, propane (the text says the apparatus was used to measure methane, ethane and propane). Publication year: online 2016, volume year 2017. Pressure basis and temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   1389
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "fitted binary interaction parameters and AARD (model)"
+  },
+  {
+   "table": "Table 2",
+   "reason": "comparison of model AARD with literature CPA models (derived)"
+  }
+ ],
+ "row_counts": {
+  "Table A1": {
+   "printed": 62,
+   "written": 62,
+   "note": "21 CH4 + 19 C2H6 + 22 C3H8 data rows plus 3 label rows in the CSV"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table A1 printed in three side-by-side blocks; parsed by column position then checked in the image.",
+ "pass2_diff": "Table A1: 62 rows, 186/186 numbers identical."
+}

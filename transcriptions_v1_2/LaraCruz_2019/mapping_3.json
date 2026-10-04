@@ -1,0 +1,58 @@
+{
+ "table": "Tableau IV-3",
+ "page_journal": 150,
+ "title_as_printed": "Resultats de solubilite du dioxyde de carbone dans l'eau pure a 10.0 MPa et 333.15 K utilises pour l'application de la methode ANOVA",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated beyond the title '10.0 MPa'; nominal pressure of the experiment (reactor pressure), absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "333.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "10.0",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "CO2 molality mol/kg H2O",
+   "unit": "mol_per_kg_water"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    20
+   ],
+   "reason": "label row (Experience 1/2/3; three side-by-side columns stacked)"
+  },
+  {
+   "rows": [
+    9,
+    19,
+    29
+   ],
+   "reason": "summary row (Moyenne = mean of the 8 analyses)"
+  }
+ ],
+ "extra_unmapped": [],
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "no per-volume quantity",
+ "notes": "Individual titration results (8 per experiment, 3 independent experiments, repeated sampling) used for the ANOVA uncertainty; each row is one titration, not an independent equilibrium state. Overall uncertainty from ANOVA 0.03 mol/kg (2.8 percent), t factor 4.30. Side-by-side experiment columns stacked left to right. Printed mean of Experience 1 is 1.0736 while the mean of the printed 4-decimal values is 1.07354 (rounding of unrounded values).",
+ "quality_remarks": "audit 2026-10-02: The 24 data rows are individual titrations (8 analyses in each of 3 repeated experiments) at one state point, used by the author for the ANOVA uncertainty (overall 0.03 mol/kg, 2.8 percent); they are replicates, not independent states. The three Moyenne rows (CSV rows 9, 19, 29: 1.0736, 1.0794, 1.0764) are skipped as summary rows.",
+ "caution": "The 24 rows are replicate titrations of one state point (333.15 K, 10.0 MPa), not independent measurements; weight as a single state point (three experiment means 1.0736, 1.0794, 1.0764)."
+}

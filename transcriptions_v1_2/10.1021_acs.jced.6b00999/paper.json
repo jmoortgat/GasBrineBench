@@ -1,0 +1,34 @@
+{
+ "doi": "10.1021/acs.jced.6b00999",
+ "first_author": "Loring",
+ "year": 2017,
+ "journal": "J. Chem. Eng. Data 62 (5), 1608-1614",
+ "source_key": "LORING(2017)",
+ "title": "Water Solubility at Saturation for CO2-CH4 Mixtures at 323.2 K and 9.000 MPa",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "experimental_method": "in situ high-pressure infrared (transmission, 40 mm path) spectroscopic titration: calibrated 0.848 uL tubing loop meters water into the cell until the dissolved-H2O absorbance saturates; replicate titrations averaged",
+ "uncertainties_stated": "u(T) = 0.1 K, u(P) = 0.005 MPa; u(x_Gr_CO2) = 0.03, u(x_GC_CO2) = 0.2 (mole percent); u(C_H2O) and u(x_H2O) expanded with coverage factor k = 10 (10 x standard deviation of replicates)",
+ "tables_written": {
+  "table_1": "6 data rows"
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 6 data rows; written 6"
+ },
+ "quality_remarks": [
+  "The capture holds Table 1 as two records (and a third copy in the wrapper text) with different header whitespace; the cells are identical. Assembled once. Only one table exists in the paper (no Table 2).",
+  "Abstract: six CO2-CH4 mixtures at 323.2 K and 9.000 MPa: matches Table 1 (six rows).",
+  "Footnote e calls the uncertainties 'expanded ... coverage factor k = 10'; methods text says the error is conservatively estimated as 10 times the standard deviation; k = 10 is as printed.",
+  "Gas composition is the initially dry mixture (footnote b); measured water content is in the CO2-CH4 fluid at saturation with liquid water. Up to 1 % N2 + O2 (air) was detected by GC in some samples (footnote c).",
+  "rho in Table 1 is calculated with STOMP-COMP (footnote d), not measured; the x_H2O (permil) column is the authors' conversion of C_H2O, with their calculated densities.",
+  "Pure CH4 and CO2 rows: the abstract/text give 0.00 and 100.00 % as vendor-gravimetric; 'na' for GC.",
+  "Temperature scale and whether P includes water vapour are not stated; volume basis of C_H2O not stated."
+ ],
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only, no PDF page image"
+ },
+ "extraction_notes": "CSV written by script from the captured DOM cells. Header footnote letters (b,c,d,e,e,e,e) stripped from headers (the capture glued them: xCO2Gr (%)b etc.) and repeated in the note column of every row. 'na' kept. En dash/permil sign transliterated (permil). No thin or no-break spaces occur in the cells. rho and C_H2O columns: C_H2O is printed in mmol.L-1 (middle dot in unit transliterated to a full stop).",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

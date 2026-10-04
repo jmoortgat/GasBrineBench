@@ -1,0 +1,28 @@
+{
+  "table": "Table 1", "page_journal": 25,
+  "title_as_printed": "Chemical composition of experimental samples and calculated Y_H2-Cl values.",
+  "footnotes_as_printed": {"SP": "SP = single-phase fluid."},
+  "property": "solubility_molality",
+  "gas": "h2",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "system pressure set by the syringe pump (ISCO); not stated whether it includes water vapour (fixed-volume reactor, total pressure of the fluid system); phase column vap = low-density vapour sample, SP = single-phase fluid",
+  "columns": {
+    "T": {"col": "Temp. (C)", "unit": "C"},
+    "P": {"col": "Pressure (bar)", "unit": "bar", "basis": "total"},
+    "value": {"col": "H2 (umol/kg)", "unit": "mol_per_kg_unspecified", "scale": 1e-6, "what": "dissolved H2 concentration in the sampled fluid (liquid-like single-phase fluid or low-density vapour sample); kg of water vs kg of solution not stated"},
+    "density": {"col": "Density (g/cm3)", "unit": "g/cm3", "what": "density of the sampled fluid, source (measured or calculated) not stated in the table", "derived_by_authors": true},
+    "value2": {"col": "Y_H2-Cl (bar/molal)", "unit": "bar_per_molal", "what": "fH2 / [H2(aq)], fH2 from hematite-magnetite buffer via SUPCRT92; kH = 55.51 x Y", "derived_by_authors": true}
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {"KCl": {"col": "Cl (mmol/kg)", "unit": "mmol/kg", "note": "Cl measured by IC; K column is measured separately by ICP-OES and agrees within error"}},
+    "constant": {},
+    "other_species": "KCl-H2O starting fluid, with K-feldspar, muscovite, quartz, hematite, magnetite present (pH/fO2 buffers); 200 umol/kg formic acid added as H2 source; kg basis (water or solution) not stated"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": ["pH 25C", "Rxn time (days)", "K (mmol/kg)", "Phase (vap or SP)"],
+  "conversion_needs": ["umol/kg to mol/kg: x 1e-6", "mmol/kg to mol/kg: x 1e-3", "molality vs mass-of-solution basis not stated", "Henry-like constant per experiment is derived by authors from buffer fugacity, not measured", "T in C, bar; high T 400-500 C, vapour and single-phase fluid rows both present"],
+  "notes": "18 rows, all in one block. Ti-alloy reactor; fH2 fixed by hematite-magnetite buffer. Phase vap rows are low-density vapour samples (H2 dissolved concentration in the sampled fluid, not a gas-phase mole fraction)."
+}

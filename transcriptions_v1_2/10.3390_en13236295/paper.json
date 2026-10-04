@@ -1,0 +1,33 @@
+{
+ "doi": "10.3390/en13236295",
+ "first_author": "Adeniyi",
+ "year": 2020,
+ "journal": "Energies 13, 6295 (Adeniyi, Deering, Marriott: The Saturated Water Content of Liquid Propane in Equilibrium with the sII Hydrate)",
+ "source_key": "ADENIYI(2020)",
+ "experimental_method": "Small equilibration loop with hydrate-bearing propane + water; saturated liquid propane flashed through a poppet valve to a tunable diode laser absorption spectrometer (TDLAS) for water content; 241.95-276.12 K, 1-40 MPa.",
+ "uncertainties_stated": "T +-0.1 K, p +-0.001 MPa (as printed), water content reproducibility 12 ppm at 95 % confidence; TDLAS factory relative accuracy 2 %, stable standard deviation 4 ppm.",
+ "quality_remarks": "Pressure dependence small; authors compare with Sloan, Song, Song and Kobayashi data. Temperature measured with ITS-90 calibrated PRT. Basis of ppm (mole vs volume) not explicitly stated (text uses ppmv for TDLAS signal).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   5
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: TDLAS validation, gravimetric feed vs measured water in single-phase propane + water; no T or p stated, validation of instrument, 4 rows (yH2O exp 92/152/219/251 ppm vs grav 106/165/223/263 ppm)",
+  "Table 3: average deviations of data sets from model (derived summary)"
+ ],
+ "row_counts": {
+  "table_2": "printed 27; written 27"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer clean; every one of the 27 rows compared with the 5 of 10 page image, all cells matched. Unicode minus converted to -. Continuation of footnotes appears on page 6 only as a repeat.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the page image",
+ "pass2_diff": "Table 2: 27 rows, 135/135 numbers identical."
+}

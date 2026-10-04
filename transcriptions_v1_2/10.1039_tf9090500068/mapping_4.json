@@ -1,0 +1,165 @@
+{
+ "temperature_scale": "not stated",
+ "gas": "co2",
+ "regime": "",
+ "property": "other",
+ "page_journal": 82,
+ "footnotes_as_printed": "none on the table (table headed by the text 'The measurements are given here, and the results are plotted in Fig. 6')",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'total CO2 in c.c. per litre' of sea-water (litre of the sea-water sample); gas volume basis (0 C, 760 mm) not stated",
+ "gas_basis": "not_applicable",
+ "table": "Alkalinity series (unnumbered, left block of table on p.82)",
+ "title_as_printed": "left column group: Total OH per litre (y mgms.), Total CO2 per litre (x c.c.), blocks with t, p, Cl, pa",
+ "pressure_note": "p printed in units 'per 10,000' (CO2 pressure as ten-thousandths of an atmosphere; text: 'pressures of about 1 to 7 per 10,000', 'constant pressure employed naturally being that of atmospheric CO2'); partial pressure of CO2 in air; atm interpretation of 'per 10,000' is the author's usage, not stated explicitly as atm",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "per block (group_rows)"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "scale": 0.0001,
+   "constant": "per block (group_rows, printed p per 10,000)"
+  },
+  "value": {
+   "col": "Total CO2 per litre (x c.c.)",
+   "unit": "cm3_CO2_per_litre_solution",
+   "what": "total CO2 (free CO2 plus bicarbonate) in c.c. per litre of sea-water; chemical equilibrium CO2 + OH- -> HCO3-"
+  },
+  "alkalinity": {
+   "col": "Total OH per litre (y mgms.)",
+   "unit": "mg_OH_per_litre"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "sea-water of chlorine content Cl per mille (g per kg, printed block constant 0.00 = distilled water with added NaOH/NaHCO3/Na2CO3, 18.22 sea-water) with alkalinity y as mg OH per litre (per row); not an in-scope single-salt composition"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    17,
+    25
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "3.22",
+     "unit": "C"
+    },
+    {
+     "path": "P.constant",
+     "value": "3.86",
+     "unit": "per_10000_atm"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "0.00",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.pa",
+     "value": "0.58",
+     "unit": "cc_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "11.51",
+     "unit": "C"
+    },
+    {
+     "path": "P.constant",
+     "value": "3.63",
+     "unit": "per_10000_atm"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "18.22",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.pa",
+     "value": "0.35",
+     "unit": "cc_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "18.00",
+     "unit": "C"
+    },
+    {
+     "path": "P.constant",
+     "value": "3.30",
+     "unit": "per_10000_atm"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "18.22",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.pa",
+     "value": "0.28",
+     "unit": "cc_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "26.46",
+     "unit": "C"
+    },
+    {
+     "path": "P.constant",
+     "value": "3.42",
+     "unit": "per_10000_atm"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "0.00",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.pa",
+     "value": "0.25",
+     "unit": "cc_per_litre"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "pa = free CO2 (c.c.) given in the block label, calculated by the author from Bohr's NaCl data (Table V), not measured"
+ ],
+ "conversion_needs": [
+  "p per 10,000 -> atm x 1e-4",
+  "total CO2 includes chemically bound CO2 so it is not a physical solubility",
+  "litre of solution to molality needs density"
+ ],
+ "notes": "Left column group of the printed table (4 blocks) stacked as table_4; the right two column groups are table_5. Label rows (0, 8, 17, 25; 0-based over all rows after the header) are the block heads 't = ..., p = ..., Cl = ..., pa = ...'; they hold 7, 8, 7 and 4 data rows. Block heads give t in deg C, p per 10,000, Cl (chlorine, per mille), pa (calculated free CO2, c.c.)."
+}

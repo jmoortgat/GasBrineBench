@@ -1,0 +1,52 @@
+{
+ "table": "Table 3.3",
+ "page_journal": "66-67",
+ "title_as_printed": "Experimental and calculated water content for CO2 in equilibrium with a hydrate phase.",
+ "footnotes_as_printed": {
+  "a": "Uncertainty from temperature measurements was calculated to be +-0.1K.",
+  "b": "Uncertainty for pressure measurements calculated to be +-0.001 MPa.",
+  "c": "Uncertainty for water content measurements was calculated to be +-20 ppm."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "p / MPa listed with footnote a (printed text of a refers to temperature uncertainty, b to pressure; letters appear swapped); thesis does not state total vs partial; single-phase CO2-rich fluid (CO2 liquid at these p) in equilibrium with hydrate, so p is the cell (total) pressure by context.",
+ "columns": {
+  "T": {
+   "col": "T / K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p / MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "yH2O(exp) / ppm",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1e-06
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "ppm",
+   "constant": "20"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure CO2 (liquid CO2-rich phase) + hydrate; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "yH2O(calc) / ppm (model calculation by the author, not measured)",
+  "yH2O(exp) - yH2O(calc) / ppm (residual)"
+ ],
+ "conversion_needs": [],
+ "volume_basis": "not applicable",
+ "volume_basis_evidence": "quantity labelled yH2O (mole fraction) in ppm; instrument (TDLAS) readings are called ppmv in the text; paper does not state whether ppm is mole or volume basis",
+ "notes": "Blank-line separated isotherm blocks (238, 244, 248, 253, 258, 263, 268, 273, 278 K nominal; 6 rows each) are not marked by label rows. Rows below 273.15 K are below the ice point and in the hydrate region. T drifts within some blocks (e.g. 244.58 -> 241.80 K in the 244 K block; 263.20 -> 262.22 K). T printed with 2 decimals."
+}

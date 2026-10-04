@@ -1,0 +1,61 @@
+{
+ "table": "Table II",
+ "page_journal": 34,
+ "title_as_printed": "Isopiestic Molalities of MgSO4, MgCl2, KCl, and H2SO4 at 25 C (group 1: MgSO4 columns of the printed table)",
+ "footnotes_as_printed": "none",
+ "property": "isopiestic_molality",
+ "reference_salt": "KCl and H2SO4 (value2 = KCl, value3 = H2SO4, same equilibrium)",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (isopiestic equilibrium at the equilibrium water vapour pressure; no pressure reported)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "m, MgSO4",
+   "unit": "mol_per_kg_water",
+   "what": "test salt MgSO4, molality isopiestic with the KCl and H2SO4 reference cups"
+  },
+  "value2": {
+   "col": "m, KCl",
+   "unit": "mol_per_kg_water",
+   "reference_salt": "KCl"
+  },
+  "value3": {
+   "col": "m, H2SO4",
+   "unit": "mol_per_kg_water",
+   "reference_salt": "H2SO4"
+  },
+  "phi": {
+   "col": "Phi, MgSO4",
+   "derived_by_authors": true,
+   "what": "osmotic coefficient of MgSO4 calculated by the authors (eq 1)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgSO4": {
+    "col": "m, MgSO4",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure aqueous MgSO4; the reference cups (KCl, H2SO4) are not part of the solution"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "molalities",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "no gas",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Phi of the other salt (in the other group file)"
+ ],
+ "conversion_needs": [],
+ "notes": "4 data rows printed and written. Printed with a thin space inside numbers (0.314 80); written without the space. The text says four MgCl2 points are included, up to 8 weeks equilibration. Each row is an equilibrium of MgSO4, MgCl2, KCl and H2SO4 cups. Split by test salt: table_2_group1.csv holds the MgSO4 columns plus the two reference columns, cells identical to table_2.csv; the original table_2.csv/mapping_2.json is kept but held as superseded."
+}

@@ -1,5 +1,171 @@
 # Changelog
 
+## 1.2.0 — 146 further papers, three new families, a supplementary tier
+
+**Not yet archived.** The Zenodo version DOI is minted at release.
+
+v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **27,025 rows from 256
+published sources** (+15,488 rows, +146 papers, -1 v1.1.1 source whose only point was removed) in 11 families, and a separate
+supplementary tier of 5,174 measurements from 107 tables.
+
+**How the new rows were made.** The papers were found by a documented
+literature search (`search/` in the maintainers' work area; summarised in the
+data descriptor). **No v1.2 value was typed by hand.** Each table was
+transcribed from the paper twice, independently, from the page image and the PDF text layer
+(the full statement of the tools used is added at release); the two
+transcriptions were compared number by number by a script, every disagreement
+was settled against a high-resolution crop of the page (or an independent OCR
+of it), and a separate mapping file per table
+(`transcriptions_v1_2/<doi>/mapping_N.json`) records how each column becomes a
+schema column. A further, separate pass then audited every mapping
+against the paper, and its proposals were applied to the mappings under written
+rules. The v1.0-v1.1 transcriptions (`transcriptions/`) were typed by hand and
+are untouched. Rows are built by `tools/builders_v1_2/` from
+those files alone, with no hand-edited value, and the build is reproducible
+byte for byte from this repository (`python3 tools/builders_v1_2/gbb12_build.py
+--extract transcriptions_v1_2 --out OUT`). A row is held back, with the
+reason on record, whenever its conversion would need a model, an assumed
+density or an assumed pressure; of 477 extracted tables, 353 contribute rows.
+
+### Full row-by-row audit (2026-10-04)
+
+Every one of the 27,051 rows then in the data was compared with its paper: 48 independent audit passes, one packet of papers each, read the printed
+tables (page images and PDF text layers) and compared each row digit by digit with a script they wrote from their own transcription. Verdict per row:
+correct, minor (a printed temperature or pressure that differs from the stored one by up to 1 K or 2 %), major, or unverifiable (paper or table not
+available, or the paper does not settle the basis). 18,908 rows were correct, 6,464 minor, 501 major and 1,178 unverifiable. The same passes then wrote a
+correction list: every stored temperature re-keyed to the printed one (the older blocks stored nominal whole-kelvin isotherm temperatures), pressures
+that were rounded to 0.1 bar re-keyed, nominal compositions replaced by printed ones where the paper prints them, molalities set to the printed
+digits where the stored value sat 0.09 % low, and every unambiguous major corrected. 12771 field corrections and 26 row removals were applied (rows
+that no printed point supports, or paper misprints that make a stored value physically wrong); each line is in `data/provenance/audit_corrections.csv`
+with its reason, and `data/provenance/audit_status.csv` gives every row its status: `verified`, `corrected`, `not-verifiable` or `residual-difference`.
+Corrections the paper does not settle (per kg solution against per kg water, nominal against actual composition) were not made.
+The inter-source consensus statistic was recomputed afterwards: rows more than three robust scales from the other laboratories fell from 338 to 177.
+A second, blind random audit of the corrected data (500 points, 540 independent readings, fresh, independent readers that had seen no earlier result) found 8 majors in 531 verifiable readings (1.5 %, 95 % interval 0.8-2.9 %; the first round, before the corrections, found 6.1 %); six of the eight are rows that already carry a flag or follow a documented derived-pressure convention, the other two are a paper that gives no concentration basis and a paper whose own mole-fraction and molality columns disagree (0.4 % after adjudication).
+`gbb.load(reliable=True)` returns the rows that passed the audit (status verified or corrected, quality not U, no unsettled-convention flag; 20,329 rows), and the column `audit_status` is attached by `load` so that `audit_status=` works as a filter.
+A new informational flag, `smoothed-values`, marks tables the authors state are smoothed or graphically interpolated.
+
+### Added
+
+* **Three families**: `rho_gas.csv` (density of CO2-loaded solutions, 951 rows),
+  `visc.csv` (viscosity, 85 rows), `thermo_brine.csv` (apparent molar heat
+  capacity, 692 rows); and 15,488 rows in total over the 11 families.
+* **An optional `flags` column** on every family, `;`-separated, and an optional
+  `m_gas` column in `rho_gas.csv` and `visc.csv`. `SCHEMA.md` defines the 16
+  flags. `tag` is unchanged.
+* **24 further single gases**, flagged `gas-out-of-scope` and dropped by the
+  default loader.
+* **`supplementary/`**: 5,174 rows in 14 classes (apparent molar volumes,
+  enthalpies of dilution and dissolution, isopiestic pairs, mixture volumes,
+  compressions, Henry constants on a molality basis, Ostwald and Bunsen
+  coefficients, salt solutions outside the six ions, ...), each with the value
+  and unit as printed. See `supplementary/README.md`.
+* **`data/provenance/provenance_v1_2.csv`**: paper, table, row count,
+  verification status, experimental method and caution for every v1.2
+  `dataset_id`; **`data/provenance/citation_counts.csv`**: OpenAlex citation
+  counts of every cited paper, retrieved 2026-10-03, now a column of
+  `SOURCES.md`. Counts are metadata, not a quality measure.
+* **`data/consensus/`**: for every row that other independent sources also measured at about the same conditions, the
+  deviation from their consensus (median, mean and standard deviation of the other sources; a strict-tolerance and a
+  leave-one-source-out smooth statistic), and per source the median signed deviation, its robust scale and the share beyond 10 %.
+  3,691 of 17,942 rows in the comparison have a comparator; 175 rows are listed as consensus outliers (after the corrections below). Descriptive only: no
+  value or quality code was changed by it. See `data/consensus/README.md`.
+* **`transcriptions_v1_2/`**: the 353 tables, their mappings and the papers'
+  metadata, for the 207 papers behind the families and the supplementary tier.
+* **`bib/references_v1_2.bib`**: Crossref records of the new sources.
+* `gasbrinebench`: `exclude_flags`/`flags` filters, `OTHER_GASES`, `FLAGS`,
+  `DEFAULT_EXCLUDED_FLAGS`; `load()` drops default-flagged rows.
+
+### Changed
+
+* **Defaults.** `load()` returns 23,300 rows: it drops the 354 `lle-regime` rows
+  (144 propane rows of v1.1.1, 210 added: propane, butanes, ethane, and CO2 below
+  its critical temperature) and every row carrying `gas-out-of-scope`,
+  `hydrate-regime`, `condensed-phase-uncertain`, `fugacity-as-pressure`,
+  `subfreezing`, `volume-basis-uncertain` or `pressure-unstated`. Pass
+  `exclude_tags=None, exclude_flags=None` for all 27,025.
+* **Quality codes** of solubility rows were recomputed over the enlarged set with
+  the v1.1.1 rules (`data/QUALITY.md`, *v1.2 addendum*): 166 rows rose T to R
+  because a new independent source agrees with them, and 44 rows fell R to T
+  because a new source lies outside the 5 % band around them or a corrected value
+  changed a cluster. No row went to U by rule; 62 rows (v1.1.1 solubility and water-content rows, and the low-pressure MOHAMMADIAN rows) were set to U by hand
+  after the check against the papers (below), and 138 new rows are U because their
+  mapping records an author flag or an unresolved doubt.
+* **Chapoy 2004, split in two.** v1.1.1 cited two papers under one key,
+  `CHAPOY(2004)`: the 32 methane-water rows (Fluid Phase Equilib. 220, 113,
+  10.1016/j.fluid.2004.02.010) and the 78 propane-water rows of `c3h8_water`,
+  which are Chapoy, Mokraoui, Valtz, Richon, Mohammadi & Tohidi, Fluid Phase
+  Equilib. 226, 213 (2004), 10.1016/j.fluid.2004.08.040, and were being cited as
+  the methane paper. The propane rows now read `CHAPOY(2004d)` and resolve to
+  their own record. No value changed.
+* `tools/make_sources.py`, `tools/validate.py`: read the second bib file, take
+  the citation counts, and validate the new families, the `flags` column, the
+  gas vocabulary and the supplementary file. Two source keys that the extra
+  bibliography made ambiguous (`king`, `SAKO`) are pinned in
+  `SOURCE_KEY_FIXES`.
+* `tests/`: counts and conventions that described v1.1.1 now describe v1.2; the
+  charge-imbalance test treats the seawater-matrix rows separately (bromide and
+  bicarbonate are not carried).
+* `README.md`, `SCHEMA.md`, `data/QUALITY.md`, `LEDGER.md`: updated.
+
+### Corrections to v1.1.1 rows, found by checking the consensus outliers against the papers
+
+The 330 rows listed by the first consensus pass were each read against the printed table of their paper. Most are real
+inter-laboratory scatter. The rest were defects, now corrected in v1.2 (each is a line of `LEDGER.md`; the corrections are
+code in `tools/builders_v1_2/gbb12_corrections.py`, each guarded by the value it expects to find). v1.1.1 itself is unchanged.
+
+* **Wrong values:** YOKOYAMA(1988) CH4 water content (6 rows, molar mass of CO2 used for CH4, values 2.75 times too high);
+  CHAPOY(2003) CH4 water content (30 rows, replaced by the authors' own Corrigendum values: the original table was withdrawn
+  because sampling adsorption made it too low); Valtz (2004) 288 K isotherm (14 rows, the transcribed column held P/1000);
+  ADDICKS(2002) (4 rows, wrong table column); TAKENOUCHI(1964) one digit; WIEBE(1934) H2 (all rows 1.3 % low, wrong molar volume
+  for the paper's S.T.P.); MICHELS(1936) and MULLER one pressure each.
+* **Wrong states:** nominal isotherm temperatures stored instead of the printed ones for FROST(2013), AWAN(2010), OU(2015),
+  PRICE(1979), SAKO, GILLESPIE(1980) and CHAPOY(2005) (0.1 to 1.3 K). The same pattern, at 0.1 to 0.8 K, remains in other
+  hand-transcribed isotherms (for example LEKVAM(1997)); the effect on a solubility is a few per cent at most and no row was
+  found whose flag it caused.
+* **The same data twice:** CHABAB(2020) five points (the 303 K label hid six-digit copies of Chabab 2021, which the v1.1.1 duplicate pass
+  missed); the Millero, Huang and Laferiere oxygen data at 25 C, printed in both the Geochimica (2002) and the Marine Chemistry (2002) paper
+  (19 states identical to the last digit: 38 rows of the Geochimica copy removed); the Yarrison thesis (8 rows that repeat the journal values).
+  Found by listing every pair of sources whose rows at the same state agree to five digits.
+* **Calculated references, not measurements:** the salt-free density rows of KUMAR(1986), ROGERS(1982) and ROMANKIW(1983) (the pure-water
+  density used for apparent molar volumes; Kumar and Rogers print identical values at six states, and Romankiw states they were taken from Kell);
+  34 rows held.
+* **A ternary system built as binary:** BRUNNER(1994) water + n-hexadecane + CO2: the 14 rows whose vapour also contains hexadecane are held;
+  only the four binary water-CO2 points remain.
+* **Not measurements:** SUSAK(1980) (output of a USGS program extrapolated beyond its validity) and SACHS(1995) (calculated
+  from literature correlations) are flagged `calculated-not-measured` and dropped by the default loader.
+* **Removed:** the DOHRN(1986) point at 523 K and 200 bar, whose temperature does not exist in the paper; and the 612 rows labelled
+  `WANG(2014)` in `co2_part1`, which are a mislabelled copy of Wang, J. et al. 2019 (J. Chem. Eng. Data 64, 2484) Tables 6-8 (306 points of CO2 in
+  1, 2 and 3 m NaCl, 303-353 K, 3-30 MPa, agreeing with the printed molalities to rounding). Wang, Shen, Hu & Yu 2014 measured synthetic formation
+  brines at 318-348 K and 80-110 bar. The two had been counted as independent sources, which inflated the R code: with the copy removed, the
+  solubility R count falls from 591 to 503 retained plus 166 newly corroborated.
+* **Hydrate regime / quality U:** CULBERSON(1951) two hydrate-region points; TODHEIDE water contents printed as the complement of
+  99 mol% CO2; a copied CARROLL(1998) block; CAMPOS(2010) (not Henry-law consistent); other points listed in `LEDGER.md`.
+* **Moved out of the benchmark:** KISHIMA(1984) H2 (52 states): the concentrations were measured at an H2 fugacity fixed by a
+  buffer, not at the total pressure the schema carries; they are in the supplementary tier (104 rows).
+* **Not changed, 21 rows unverifiable:** SULTANOV(1972), IPATEV(1934), DEVANEY(1978), LUCILE(2012), CHAPOY(2004b): the paper was
+  not available; the database equals the hand transcription for every one.
+
+### Corrections found while building v1.2
+
+These are defects of the first v1.2 build, not of v1.1.1; none was in a published release.
+
+* **Debelius (2009) oxygen solubility in seawater, 308 rows.** A micromole-to-mole conversion was applied twice (values 10^6 too
+  small), and, once corrected, the values were a factor 4.8 too large because they are air-saturated (O2 at 0.20946 of the air at
+  1 atm) and had been stored as if the O2 partial pressure were 1 atm. Found by the inter-source consensus check; they now
+  agree with Fox (1909), Cosgrove (1981) and Morrison (1952) within 3 %. The correction also adds the mole-fraction sibling rows (+308).
+
+### Not in the database, on purpose
+
+* **One row held after a report from a model-comparison study:** MARCUS(1988), 25 degC, the row printed as 0.34 m NaCl + 0.99 m MgCl2 "saturated with halite", p = 1.35 kPa (ratio 0.43). Five models give about 0.92 for that composition. The composition cannot be halite-saturated, and the pressure fits a solution of about 4 m MgCl2 like its neighbours, so the MgCl2 molality is probably misprinted (3.99?). The row is held with the reason on record, not corrected.
+* **Any measurement without a stated pressure** is excluded: no liquid density,
+  density difference or viscosity whose paper gives no pressure, unless the
+  property is conventionally measured without one (see `pressure-unstated`).
+* **Gas mixtures**: 545 rows of gas-phase mixtures and 194 rows of tables with two
+  dissolved gases were extracted and verified but have no home in a schema
+  without a gas-phase composition column; they are in `LEDGER.md`.
+* **1 v1.1.1 row removed** (DOHRN(1986), above) and **172 exact duplicates** of rows from the same source (the same table printed
+  twice, or a thesis and its paper) are not repeated.
+
 ## 1.1.1 — three corrected mixed-brine ion vectors
 
 Three recipes carried ion vectors that do not follow from their source

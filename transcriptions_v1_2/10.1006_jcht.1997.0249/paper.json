@@ -1,0 +1,35 @@
+{
+ "doi": "10.1006/jcht.1997.0249",
+ "first_author": "Teng",
+ "year": 1997,
+ "journal": "J. Chem. Thermodynamics 29, 1301-1310",
+ "source_key": "TENG(1997)",
+ "experimental_method": "Sapphire-tube apparatus with water column over liquid CO2 and a mercury column; volume change of the CO2 and water columns read on a scale after 24 h at set T and p gives CO2 solubility and solution density.",
+ "uncertainties_stated": "T +-0.2 K (bath); p +-0.01 MPa; overall uncertainty 1.55 per cent for solubility and 1.87 per cent for density.",
+ "quality_remarks": "Hydrate film at the interface at T <= 283 K, authors judge its effect negligible; no stirring; mercury solubility neglected. Authors' maximum deviation of prediction from measurement stated as -6.02 per cent in abstract and -6.1 per cent in text.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   1305,
+   1306
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3 (p. 1307): comparison of predictions of the authors' correlation with literature (Ref. 8) at 285 and 298 K and 5-40 MPa; derived/model values, not measurements"
+ ],
+ "row_counts": {
+  "Table 1": "printed 24 data rows (6 p x 4 T blocks, each with measured+predicted); written 24 data rows + 4 label rows",
+  "Table 2": "same: 24 + 4 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in every cell (both tables viewed). Sanity: x and density increase with p at each T, x decreases with T at fixed p. Journal page of Table 2 is 1306 (PDF page 6); Table 1 on 1305 (PDF page 5).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the images",
+ "pass2_diff": "Tables 1 and 2: all measured values identical; differences are only the pressure keys repeated in the long layout of pass 1."
+}

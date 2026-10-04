@@ -1,0 +1,116 @@
+{
+ "table": "Table 1",
+ "page_journal": 986,
+ "title_as_printed": "Isopiestic molalities m",
+ "footnotes_as_printed": "none printed (text states: values are averages of duplicate solutions except MgCl2 (single sample) and KCl at the three highest temperatures (single sample); dilute solutions corrected for a ~0.02 K temperature gradient by rotating the samples)",
+ "property": "isopiestic_molality",
+ "reference_salt": "NaCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; isopiestic equilibrium at the water vapour pressure of the solutions in a closed pressure vessel (saturation pressure)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "per block (group_rows)"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "KCl m/mol kg-1",
+   "unit": "mol_per_kg_water",
+   "salt": "KCl"
+  },
+  "value2": {
+   "col": "MgCl2 m/mol kg-1",
+   "unit": "mol_per_kg_water",
+   "salt": "MgCl2"
+  },
+  "value3": {
+   "col": "CaCl2 m/mol kg-1",
+   "unit": "mol_per_kg_water",
+   "salt": "CaCl2"
+  },
+  "reference": {
+   "col": "NaCl m/mol kg-1",
+   "unit": "mol_per_kg_water",
+   "salt": "NaCl",
+   "what": "reference salt molality in the same isopiestic equilibrium"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "NaCl m/mol kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "each row is one isopiestic equilibrium: four solutions (NaCl reference, KCl, MgCl2, CaCl2) at equal water activity at the block temperature; reference NaCl molality is in column 1, test salts in columns 2-4"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    23,
+    43,
+    64
+   ],
+   "reason": "temperature block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "382.0",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.8",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "445.4",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "474.0",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "osmotic coefficients (calculated by authors, only plotted)"
+ ],
+ "conversion_needs": [
+  "osmotic coefficient of each test salt = (nu_NaCl m_NaCl / (nu m)) phi_NaCl, needs phi of the NaCl standard (Silvester and Pitzer equation cited by authors); not given in the table"
+ ],
+ "notes": "Printed as two side-by-side blocks of four columns (NaCl, KCl, MgCl2, CaCl2); stacked left block first, then right block, within each temperature. Temperatures 382.0, 413.8, 445.4 and 474.0 K printed as block headings. Unit line 'm/mol kg-1' printed under the header. Authors printed one extra significant figure than warranted. A pure-water or osmotic-coefficient table is not present. Printed MgCl2 value 1.9053 in the 382.0 K block (row with NaCl 2.7044) looks out of sequence (neighbour 1.6047, ratio-consistent value would be near 1.60); kept as printed and confirmed against the page image."
+}

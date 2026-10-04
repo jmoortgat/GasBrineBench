@@ -13,17 +13,17 @@ redistributing a single copyrighted page.
 > script and commit the diff. It is generated precisely so that the
 > coverage figures below cannot drift away from what the CSVs say.
 
-Generated 2026-09-18 from `data`
+Generated 2026-10-04 from `data`
 
-- data files read: 8 (`dh_sol.csv`, `eps_r.csv`, `phi_osm.csv`, `psat_ratio.csv`, `rho.csv`, `solubility.csv`, `ternary.csv`, `y_h2o.csv`)
-- rows: 11,537
-- distinct sources: 111
-- fully documented (reference + DOI): **104**
-- reference known, DOI missing: **7**
+- data files read: 11 (`dh_sol.csv`, `eps_r.csv`, `phi_osm.csv`, `psat_ratio.csv`, `rho.csv`, `rho_gas.csv`, `solubility.csv`, `ternary.csv`, `thermo_brine.csv`, `visc.csv`, `y_h2o.csv`)
+- rows: 27,025
+- distinct sources: 256
+- fully documented (reference + DOI): **244**
+- reference known, DOI missing: **12**
 - placeholder citation, needs replacing: **0**
 - no bibliographic record at all: **0**
 
-By row count: 10,379 fully documented, 1,158 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
+By row count: 25,668 fully documented, 1,357 reference-only, 0 placeholder, 0 undocumented (100.0 % of rows carry a real reference).
 
 The reference-only entries are shown below with *none on record* in
 the DOI column. That is not a lookup we skipped: each was searched
@@ -35,6 +35,7 @@ column.
 
 Bibliographic records were read from:
 - `bib/references.bib`
+- `bib/references_v1_2.bib`
 
 The manifest is split into two tables keyed on the same citation key:
 a bibliography, and a coverage table. Eleven columns in one table is not
@@ -42,119 +43,269 @@ readable; two joined on the key is.
 
 ## Bibliography
 
-| Citation key | Reference | DOI | URL |
-|---|---|---|---|
-| `AlGhafri2012` | Al Ghafri, Saif et al., Densities of Aqueous MgCl2(aq), CaCl2(aq), KI(aq), NaCl(aq), KCl(aq), AlCl3(aq), and (0.964 NaCl + 0.136 KCl)(aq) at Temperatures Between (283 and 472) K, Pressures up to 68.5 MPa, and Molalities up to 6 mol·kg–1, Journal of Chemical & Engineering Data, **57**(4), 1288-1304, 2012 | `10.1021/je2013704` | [link](https://doi.org/10.1021/je2013704) |
-| `Wang2014` | Wang et al., Modeling and measurement of CO2 solubility in salty aqueous solutions and application in the Erdos Basin, Fluid Phase Equilibria, **377**, 45-55, 2014 | `10.1016/j.fluid.2014.06.016` | [link](https://doi.org/10.1016/j.fluid.2014.06.016) |
-| `Susak1980` | Susak et al., A routine for estimating the solubility of methane in pure water or NaCl brines by using the Texas Instruments TI-59 calculator, U.S. Geological Survey, 1980 | `10.3133/ofr80371` | [link](https://doi.org/10.3133/ofr80371) |
-| `Liu2021` | Liu, Bo et al., Measurement of Solubility of CO$_2$ in NaCl, CaCl$_2$, MgCl$_2$ and MgCl$_2$ + CaCl$_2$ Brines at Temperatures from 298 to 373 K and Pressures up to 20 MPa Using the Potentiometric Titration Method, Energies, **14**, 7222, 2021 | `10.3390/en14217222` | [link](https://doi.org/10.3390/en14217222) |
-| `Ou2015` | Ou, Wenjia et al., Quantitative Raman spectroscopic investigation of geo-fluids high-pressure phase equilibria: Part II. Accurate determination of CH$_4$ solubility in water from 273 to 603 K and from 5 to 140 MPa and refining the parameters of the thermodynamic model, Fluid Phase Equilibria, **391**, 18-30, 2015 | `10.1016/j.fluid.2015.01.025` | [link](https://doi.org/10.1016/j.fluid.2015.01.025) |
-| `Takenouchi1964` | Takenouchi, Sukune et al., The binary system H2O-CO2 at high temperatures and pressures, Am. J. Sci., **262**(9), 1055-1074, 1964 | `10.2475/ajs.262.9.1055` | [link](https://doi.org/10.2475/ajs.262.9.1055) |
-| `Todheide1963` | Todheide, K. et al., Das Zweiphasengebiet und die kritische Kurve im System Kohlendioxid--Wasser bis zu Drucken von 3500 bar, Zeitschrift fur Physikalische Chemie Neue Folge, **37**(5--6), 387-401, 1963 | `10.1524/zpch.1963.37.5_6.387` | [link](https://doi.org/10.1524/zpch.1963.37.5_6.387) |
-| `Guo2016` | Guo, Huirong et al., Quantitative Raman Spectroscopic Measurements of CO2 Solubility in NaCl Solution from (273.15 to 473.15) K at p = (10.0, 20.0, 30.0, and 40.0) MPa, J. Chem. Eng. Data, **61**(1), 466-474, 2016 | `10.1021/acs.jced.5b00651` | [link](https://doi.org/10.1021/acs.jced.5b00651) |
-| `Kiepe2002` | Kiepe, Jorn et al., Experimental Determination and Prediction of Gas Solubility Data for CO$_2$ + H$_2$O Mixtures Containing NaCl or KCl at Temperatures between 313 and 393 K and Pressures up to 10 MPa, Industrial & Engineering Chemistry Research, **41**, 4393-4398, 2002 | `10.1021/ie020154i` | [link](https://doi.org/10.1021/ie020154i) |
-| `Guo2016 (variant)` | Guo, Huirong et al., Quantitative Raman Spectroscopic Measurements of CO2 Solubility in NaCl Solution from (273.15 to 473.15) K at p = (10.0, 20.0, 30.0, and 40.0) MPa, J. Chem. Eng. Data, **61**(1), 466-474, 2016 <sup>(surname (unique))</sup> | `10.1021/acs.jced.5b00651` | [link](https://doi.org/10.1021/acs.jced.5b00651) |
-| `Liu2011` | Liu, Yang et al., Monte Carlo Simulations of High-Pressure Phase Equilibria of CO2–H2O Mixtures, J. Phys. Chem. B, **115**(20), 6629-6635, 2011 | `10.1021/jp201520u` | [link](https://doi.org/10.1021/jp201520u) |
-| `Hou2013b` | Hou, Shu-Xin et al., Phase equilibria of (CO2 + H2O + NaCl) and (CO2 + H2O + KCl): measurements and modeling, The Journal of Supercritical Fluids, **78**, 78-88, 2013 | `10.1016/j.supflu.2013.03.022` | [link](https://doi.org/10.1016/j.supflu.2013.03.022) |
-| `Rumpf1993b` | Rumpf, B. et al., An Experimental and Theoretical Investigation on the Solubility of Carbon Dioxide in Aqueous Solutions of Strong Electrolytes, Berichte der Bunsengesellschaft für physikalische Chemie, **97**(1), 85-97, 1993 | `10.1002/bbpc.19930970116` | [link](https://doi.org/10.1002/bbpc.19930970116) |
-| `Tong2013` | Tong, Danlu et al., Solubility of CO2 in Aqueous Solutions of CaCl2 or MgCl2 and in a Synthetic Formation Brine at Temperatures up to 423 K and Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **58**(7), 2116-2124, 2013 | `10.1021/je400396s` | [link](https://doi.org/10.1021/je400396s) |
-| `Kamps2007` | Kamps, Alvaro Perez Salado et al., Solubility of CO2 in Aqueous Solutions of KCl and in Aqueous Solutions of K2CO3, Journal of Chemical & Engineering Data, **52**(3), 817-832, 2007 | `10.1021/je060430q` | [link](https://doi.org/10.1021/je060430q) |
-| `OSullivan1970` | O'Sullivan, Thomas D. et al., Solubility and partial molar volume of nitrogen and methane in water and in aqueous sodium chloride from 50 to 125 C and 100 to 600 atm, The Journal of Physical Chemistry, **74**(7), 1460-1466, 1970 | `10.1021/j100702a012` | [link](https://doi.org/10.1021/j100702a012) |
-| `Culberson1951` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon--Water Systems III: The Solubility of Methane in Water at Pressures to 10,000 PSIA, Petroleum Transactions, AIME, **192**, 223-226, 1951 | `10.2118/951223-G` | [link](https://doi.org/10.2118/951223-G) |
-| `Price1979` | Price, Leigh C., Aqueous Solubility of Methane at Elevated Pressures and Temperatures, AAPG Bulletin, **63**(9), 1527-1533, 1979 | `10.1306/2F9185E0-16CE-11D7-8645000102C1865D` | [link](https://doi.org/10.1306/2F9185E0-16CE-11D7-8645000102C1865D) |
-| `Kiepe2003` | Kiepe, Jorn et al., Experimental Determination and Prediction of Gas Solubility Data for Methane + Water Solutions Containing Different Monovalent Electrolytes, Industrial & Engineering Chemistry Research, **42**(21), 5392-5398, 2003 | `10.1021/ie030386x` | [link](https://doi.org/10.1021/ie030386x) |
-| `Rumpf1993` | Rumpf, B. et al., Solubility of Carbon Dioxide in Aqueous Solutions of Sodium Chloride: Experimental Results and Correlation, Journal of Solution Chemistry, **23**(3), 431-448, 1994 | `10.1007/BF00973113` | [link](https://doi.org/10.1007/BF00973113) |
-| `Prutton1945` | Prutton, C. F. et al., The Solubility of Carbon Dioxide in Calcium Chloride-Water Solutions at 75, 100, 120 °C and High Pressures, Journal of the American Chemical Society, **67**(9), 1550-1554, 1945 | `10.1021/ja01225a047` | [link](https://doi.org/10.1021/ja01225a047) |
-| `Ghafri2013` | Al Ghafri, Saif Zahir et al., Densities of SrCl2(aq), Na2SO4(aq), NaHCO3(aq), and Two Synthetic Reservoir Brines at Temperatures between (298 and 473) K, Pressures up to 68.5 MPa, and Molalities up to 3 mol·kg–1, Journal of Chemical & Engineering Data, **58**(2), 402-412, 2013 | `10.1021/je301132p` | [link](https://doi.org/10.1021/je301132p) |
-| `Muller1988` | Muller, G. et al., Das dampf‐flüssigkeitsgleichgewicht des ternären systems ammoniak‐kohlendioxid‐wasser bei hohen wassergehalten im bereich zwischen 373 und 473 kelvin, Berich. Bunsen. Phys. Chem., **92**, 148-160, 1988 <sup>(surname (unique))</sup> | `10.1002/bbpc.198800036` | [link](https://doi.org/10.1002/bbpc.198800036) |
-| `Valtz2004` | Valtz et al., Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2K, Fluid Phase Equilibr., **226**, 333-344, 2004 <sup>(surname (unique))</sup> | `10.1016/j.fluid.2004.10.013` | [link](https://doi.org/10.1016/j.fluid.2004.10.013) |
-| `Tabasinejad2011` | Tabasinejad, Farshad et al., Water Solubility in Supercritical Methane, Nitrogen, and Carbon Dioxide: Measurement and Modeling from 422 to 483 K and Pressures from 3.6 to 134 MPa, Industrial & Engineering Chemistry Research, **50**(7), 4029-4041, 2011 | `10.1021/ie101218k` | [link](https://doi.org/10.1021/ie101218k) |
-| `Chabab2021` | Chabab, Salaheddine et al., Measurements and Modeling of High-Pressure O2 and CO2 Solubility in Brine (H2O + NaCl) between 303 and 373 K and Pressures up to 36 MPa, Journal of Chemical & Engineering Data, **66**(1), 609-620, 2021 | `10.1021/acs.jced.0c00799` | [link](https://doi.org/10.1021/acs.jced.0c00799) |
-| `CHAPOY2004` | Chapoy et al., Gas solubility measurement and modeling for methane–water and methane–ethane–n-butane–water systems at low temperature conditions, Fluid Phase Equilibria, **220**(1), 113-121, 2004 | `10.1016/j.fluid.2004.02.010` | [link](https://doi.org/10.1016/j.fluid.2004.02.010) |
-| `Zhao2015b` | Zhao, Haining et al., Experimental studies and modeling of CO2 solubility in high temperature aqueous CaCl2, MgCl2, Na2SO4, and KCl solutions, AIChE Journal, **61**(7), 2286-2297, 2015 | `10.1002/aic.14825` | [link](https://doi.org/10.1002/aic.14825) |
-| `Hou2013` | Hou et al., Measurement and modeling of the phase behavior of the (carbon dioxide+water) mixture at temperatures from 298.15K to 448.15K, J. Supercrit. Fluid., **73**, 87-96, 2013 | `10.1016/j.supflu.2012.11.011` | [link](https://doi.org/10.1016/j.supflu.2012.11.011) |
-| `Poulain2019` | Poulain, Marie et al., Experimental Measurements of Carbon Dioxide Solubility in Na–Ca–K–Cl Solutions at High Temperatures and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **64**(6), 2497-2503, 2019 | `10.1021/acs.jced.9b00023` | [link](https://doi.org/10.1021/acs.jced.9b00023) |
-| `Santos2020` | dos Santos, Pedro F. et al., Experimental Measurement of CO2 Solubility in Aqueous Na2SO4 Solution at Temperatures between 303.15 and 423.15 K and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **65**(6), 3230-3239, 2020 | `10.1021/acs.jced.0c00230` | [link](https://doi.org/10.1021/acs.jced.0c00230) |
-| `CulbersonMcKetta1950` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon-Water Systems II: The Solubility of Ethane in Water at Pressures to 10,000 psi, Trans. AIME (J. Pet. Technol.), **189**, 319-322, 1950 | `10.2118/950319-G` | [link](https://doi.org/10.2118/950319-G) |
-| `Jooss2026` | Jooss, Yannick et al., Vapor--liquid equilibrium measurements of the carbon dioxide + water (CO2 + H2O) system and carbon dioxide + water + sodium chloride (CO2 + H2O + NaCl) system, Fluid Phase Equilibria, **599**, 114516, 2026 | `10.1016/j.fluid.2025.114516` | [link](https://doi.org/10.1016/j.fluid.2025.114516) |
-| `Bamberger2000` | Bamberger et al., High-pressure (vapor+liquid) equilibrium in binary mixtures of (carbon dioxide+water or acetic acid) at temperatures from 313 to 353 K, J. Supercrit. Fluid., **17**(2), 97-110, 2000 | `10.1016/S0896-8446(99)00054-6` | [link](https://doi.org/10.1016/S0896-8446(99)00054-6) |
-| `Carroll1998` | Carroll, John J. et al., The Solubility of Methane in Aqueous Solutions of Monoethanolamine, Diethanolamine and Triethanolamine, The Canadian Journal of Chemical Engineering, **76**(5), 945-951, 1998 | `10.1002/cjce.5450760512` | [link](https://doi.org/10.1002/cjce.5450760512) |
-| `Chabab2020` | Chabab et al., Measurements and predictive models of high-pressure H2 solubility in brine (H2O+NaCl) for underground hydrogen storage application, International Journal of Hydrogen Energy, **45**(56), 32206-32220, 2020 | `10.1016/j.ijhydene.2020.08.192` | [link](https://doi.org/10.1016/j.ijhydene.2020.08.192) |
-| `Duffy1961` | Duffy, J. Regis et al., Solubility of natural gases in aqueous salt solutions I: Liquidus surfaces in the system CH$_4$--H$_2$O--NaCl--CaCl$_2$ at room temperatures and at pressures below 1000 psia, Geochimica et Cosmochimica Acta, **24**, 23-31, 1961 | `10.1016/0016-7037(61)90004-7` | [link](https://doi.org/10.1016/0016-7037(61)90004-7) |
-| `Mohammadi2004eth` | Mohammadi, Amir H. et al., Measurements and Thermodynamic Modeling of Vapor-Liquid Equilibria in Ethane-Water Systems from 274.26 to 343.08 K, Ind. Eng. Chem. Res., **43**(17), 5418-5424, 2004 | `10.1021/ie049747e` | [link](https://doi.org/10.1021/ie049747e) |
-| `Wiebe1934` | Wiebe, R. et al., The Solubility of Hydrogen in Water at 0, 50, 75 and 100 °C from 25 to 1000 Atmospheres, Journal of the American Chemical Society, **56**(1), 76-79, 1934 | `10.1021/ja01316a022` | [link](https://doi.org/10.1021/ja01316a022) |
-| `Jung1971` | Jung, J. et al., Löslichkeit von Kohlenmonoxid und Wasserstoff in Wasser bis 300°C, Chemie Ingenieur Technik, **43**(3), 112-116, 1971 | `10.1002/cite.330430304` | [link](https://doi.org/10.1002/cite.330430304) |
-| `Olds1942` | Olds, R. H. et al., Phase Equilibria in Hydrocarbon Systems.Composition of the Dew-Point Gas of the Methane-Water System, Industrial & Engineering Chemistry, **34**(10), 1223-1227, 1942 | `10.1021/ie50394a018` | [link](https://doi.org/10.1021/ie50394a018) |
-| `PitzerMayorga1973` | Pitzer et al., Thermodynamics of electrolytes. II. Activity and osmotic coefficients for strong electrolytes with one or both ions univalent, The Journal of Physical Chemistry, **77**(19), 2300-2308, 1973 | `10.1021/j100638a009` | [link](https://doi.org/10.1021/j100638a009) |
-| `Nighswander1989` | Nighswander, John A. et al., Solubilities of Carbon Dioxide in Water and 1 wt % NaCl Solution at Pressures up to 10 MPa and Temperatures from 80 to 200 textdegreeC, Journal of Chemical & Engineering Data, **34**(3), 355-360, 1989 | `10.1021/je00057a027` | [link](https://doi.org/10.1021/je00057a027) |
-| `Bando2003` | Bando, Shigeru et al., Solubility of CO$_2$ in Aqueous Solutions of NaCl at (30 to 60) textdegreeC and (10 to 20) MPa, Journal of Chemical & Engineering Data, **48**, 576-579, 2003 | `10.1021/je0255832` | [link](https://doi.org/10.1021/je0255832) |
-| `Messabeb2016` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous NaCl Solution at Temperature from 323.15 to 423.15 K and Pressure of up to 20 MPa, J. Chem. Eng. Data, **61**(10), 3573-3584, 2016 | `10.1021/acs.jced.6b00505` | [link](https://doi.org/10.1021/acs.jced.6b00505) |
-| `Messabeb2017` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous CaCl2 Solution at Temperature from 323.15 to 423.15 K and Pressure up to 20 MPa Using the Conductometric Titration, Journal of Chemical & Engineering Data, **62**(12), 4228-4234, 2017 | `10.1021/acs.jced.7b00591` | [link](https://doi.org/10.1021/acs.jced.7b00591) |
-| `Yan2011` | Yan et al., Measurement and modeling of CO2 solubility in NaCl brine and CO2–saturated NaCl brine density, Int. J. Greenh. Gas Cont., **5**(6), 1460-1477, 2011 | `10.1016/j.ijggc.2011.08.004` | [link](https://doi.org/10.1016/j.ijggc.2011.08.004) |
-| `Portier2005` | Portier et al., Modelling CO2 solubility in pure water and NaCl-type waters from 0 to 300 °C and from 1 to 300 bar: Application to the Utsira Formation at Sleipner, Chemical Geology, **217**(3), 187-199, 2005 | `10.1016/j.chemgeo.2004.12.007` | [link](https://doi.org/10.1016/j.chemgeo.2004.12.007) |
-| `Qin2008` | Qin, Junfeng et al., Experimental Measurements of Vapor–Liquid Equilibria of the H2O + CO2 + CH4 Ternary System, Journal of Chemical & Engineering Data, **53**(6), 1246-1249, 2008 | `10.1021/je700473e` | [link](https://doi.org/10.1021/je700473e) |
-| `Santos2021` | F. dos Santos, Pedro et al., Experimental Measurements of CO2 Solubility in Aqueous MgCl2 Solution at Temperature between 323.15 and 423.15 K and Pressure up to 20 MPa, Journal of Chemical & Engineering Data, **66**(11), 4166-4173, 2021 | `10.1021/acs.jced.1c00347` | [link](https://doi.org/10.1021/acs.jced.1c00347) |
-| `Frost2014` | Frost, Michael et al., Vapor–Liquid Equilibrium of Methane with Water and Methanol. Measurements and Modeling, Journal of Chemical & Engineering Data, **59**(4), 961-967, 2014 | `10.1021/je400684k` | [link](https://doi.org/10.1021/je400684k) |
-| `STOESSELL1982` | Stoessell et al., Salting-out of methane in single-salt solutions at 25°C and below 800 psia, Geochimica et Cosmochimica Acta, **46**(8), 1327-1332, 1982 | `10.1016/0016-7037(82)90268-X` | [link](https://doi.org/10.1016/0016-7037(82)90268-X) |
-| `Jacob2016` | Jacob, Ruth et al., CO$_2$ solubility in multi-component brines containing NaCl, KCl, CaCl$_2$ and MgCl$_2$ at 297 K and 1--14 MPa, Chemical Geology, **424**, 86-95, 2016 | `10.1016/j.chemgeo.2016.01.013` | [link](https://doi.org/10.1016/j.chemgeo.2016.01.013) |
-| `King1992` | King et al., The mutual solubilities of water with supercritical and liquid carbon dioxides, J. Supercrit. Fluid., **5**(4), 296-302, 1992 <sup>(surname (unique))</sup> | `10.1016/0896-8446(92)90021-B` | [link](https://doi.org/10.1016/0896-8446(92)90021-B) |
-| `Culbersonhorn1950` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon--Water Systems, Journal of Petroleum Technology, **2**, 1-6, 1950 | `10.2118/950001-G` | [link](https://doi.org/10.2118/950001-G) |
-| `Michels1936` | Michels, A. et al., The influence of pressure on the solubility of gases, Physica, **3**(8), 797-808, 1936 | `10.1016/S0031-8914(36)80353-X` | [link](https://doi.org/10.1016/S0031-8914(36)80353-X) |
-| `Meyer2015` | Meyer, Christopher W. et al., Dew-point measurements for water in compressed carbon dioxide, AIChE J., **61**(9), 2913-2925, 2015 <sup>(surname (unique))</sup> | `10.1002/aic.14818` | [link](https://doi.org/10.1002/aic.14818) |
-| `Takenouchi1965` | Takenouchi, Sukune et al., The solubility of carbon dioxide in NaCl solutions at high temperatures and pressures, Am. J. Sci., **263**(5), 445-454, 1965 | `10.2475/ajs.263.5.445` | [link](https://doi.org/10.2475/ajs.263.5.445) |
-| `Koschel2006` | Koschel et al., Enthalpy and solubility data of CO2 in water and NaCl(aq) at conditions of interest for geological sequestration, Fluid Phase Equilibr., **247**(1), 107-120, 2006 | `10.1016/j.fluid.2006.06.006` | [link](https://doi.org/10.1016/j.fluid.2006.06.006) |
-| `Chabab2024` | Chabab et al., Solubility of H2 in water and NaCl brine under subsurface storage conditions: Measurements and thermodynamic modeling, International Journal of Hydrogen Energy, **50**, 648-658, 2024 | `10.1016/j.ijhydene.2023.10.290` | [link](https://doi.org/10.1016/j.ijhydene.2023.10.290) |
-| `Zhao2015c` | Zhao, Haining et al., Measurement and Modeling of CO2 Solubility in Natural and Synthetic Formation Brines for CO2 Sequestration, Environmental Science & Technology, **49**(3), 1972-1980, 2015 | `10.1021/es505550a` | [link](https://doi.org/10.1021/es505550a) |
-| `Bastami2014` | Bastami, A. et al., Experimental and modelling study of the solubility of CO2 in various CaCl2 solutions at different temperatures and pressures., Pet. Sci.l, **11**, 569–577, 2014 | `10.1007/s12182-014-0373-1` | [link](https://doi.org/10.1007/s12182-014-0373-1) |
-| `Chabab2019` | Chabab et al., Thermodynamic study of the CO2–H2O–NaCl system: Measurements of CO2 solubility and modeling of phase equilibria using Soreide and Whitson, electrolyte CPA and SIT models, Int. J. Greenh. Gas Cont., **91**, 102825, 2019 | `10.1016/j.ijggc.2019.102825` | [link](https://doi.org/10.1016/j.ijggc.2019.102825) |
-| `Wang1995` | Wang, Yilin et al., Solubility of CH$_4$ in the mixed solvent t-butyl alcohol and water, Thermochimica Acta, **253**, 327-334, 1995 | `10.1016/0040-6031(94)02011-C` | [link](https://doi.org/10.1016/0040-6031(94)02011-C) |
-| `CHAPOY2003` | Chapoy et al., Solubility measurement and modeling of water in the gas phase of the methane/water binary system at temperatures from 283.08 to 318.12 K and pressures up to 34.5MPa, Fluid Phase Equilibria, **214**(1), 101-117, 2003 | `10.1016/S0378-3812(03)00322-4` | [link](https://doi.org/10.1016/S0378-3812(03)00322-4) |
-| `Yarrison2006` | Yarrison, Matt et al., Measurement and Modeling of the Solubility of Water in Supercritical Methane and Ethane from 310 to 477 K and Pressures from 3.4 to 110 MPa, Industrial & Engineering Chemistry Research, **45**(20), 6770-6777, 2006 | `10.1021/ie0513752` | [link](https://doi.org/10.1021/ie0513752) |
-| `Zhao2015` | Zhao et al., Carbon dioxide solubility in aqueous solutions of sodium chloride at geological conditions: Experimental results at 323.15, 373.15, and 423.15K and 150bar and modeling up to 573.15K and 2000bar, Geochim. Cosmochim. Ac., **149**, 165-189, 2015 | `10.1016/j.gca.2014.11.004` | [link](https://doi.org/10.1016/j.gca.2014.11.004) |
-| `Mohammadi2005` | Mohammadi, Amir H. et al., Water Content Measurement and Modeling in the Nitrogen + Water System, Journal of Chemical & Engineering Data, **50**(2), 541-545, 2005 | `10.1021/je049676q` | [link](https://doi.org/10.1021/je049676q) |
-| `Wang2003` | Wang, Lu-Kun et al., Experimental study on the solubility of natural gas components in water with or without hydrate inhibitor, Fluid Phase Equilibria, **207**, 143-154, 2003 | `10.1016/S0378-3812(03)00009-8` | [link](https://doi.org/10.1016/S0378-3812(03)00009-8) |
-| `AlGhafri2014` | Al Ghafri, Saif Z. S. et al., Experimental and Modeling Study of the Phase Behavior of (Methane + CO$_2$ + Water) Mixtures, The Journal of Physical Chemistry B, **118**(49), 14461-14478, 2014 | `10.1021/jp509678g` | [link](https://doi.org/10.1021/jp509678g) |
-| `Blanco1978` | Blanco C., Luis H. et al., The high pressure solubility of methane in aqueous calcium chloride and aqueous tetraethylammonium bromide. Partial molar properties of dissolved methane and nitrogen in relation to water structure, The Journal of Physical Chemistry, **82**(2), 186-191, 1978 | `10.1021/j100491a012` | [link](https://doi.org/10.1021/j100491a012) |
-| `Campos2010` | Campos, C. Eduardo Pereira Siqueira et al., Experimental Measurement and Thermodynamic Modeling for the Solubility of Methane in Water and Hexadecane, Journal of Chemical & Engineering Data, **55**, 2576-2580, 2010 | `10.1021/je9007958` | [link](https://doi.org/10.1021/je9007958) |
-| `dosSantos2021` | dos Santos, Pedro F. et al., An improved model for CO2 solubility in aqueous Na+--Cl---SO4(2-) systems up to 473.15 K and 40 MPa, Chemical Geology, **582**, 120443, 2021 | `10.1016/j.chemgeo.2021.120443` | [link](https://doi.org/10.1016/j.chemgeo.2021.120443) |
-| `Lekvam1997` | Lekvam, Knut et al., Dissolution of methane in water at low temperatures and intermediate pressures, Fluid Phase Equilibria, **131**, 297-309, 1997 | `10.1016/S0378-3812(96)03229-3` | [link](https://doi.org/10.1016/S0378-3812(96)03229-3) |
-| `Botger2016` | Bottger, Arne et al., An experimental investigation of the phase equilibrium of the binary system (methane + water) at low temperatures: Solubility of methane in water and three-phase (vapour + liquid + hydrate) equilibrium, Fluid Phase Equilibria, **407**, 209-216, 2016 | `10.1016/j.fluid.2015.03.041` | [link](https://doi.org/10.1016/j.fluid.2015.03.041) |
-| `Gao1997` | Gao, Jun et al., Solubilities of Methane, Nitrogen, Carbon Dioxide, and a Natural Gas Mixture in Aqueous Sodium Bicarbonate Solutions under High Pressure and Elevated Temperature, Journal of Chemical & Engineering Data, **42**, 69-73, 1997 | `10.1021/je960275n` | [link](https://doi.org/10.1021/je960275n) |
-| `Schlaikjer2018` | Schlaikjer, Anders et al., eCPA: an ion-specific approach to parametrization, Fluid Phase Equilibria, **470**, 176-187, 2018 | `10.1016/j.fluid.2017.12.008` | [link](https://doi.org/10.1016/j.fluid.2017.12.008) |
-| `Mohammadi2004` | Mohammadi, Amir H. et al., Experimental Measurement and Thermodynamic Modeling of Water Content in Methane and Ethane Systems, Industrial & Engineering Chemistry Research, **43**(22), 7148-7162, 2004 | `10.1021/ie049843f` | [link](https://doi.org/10.1021/ie049843f) |
-| `Sachs1995` | Sachs, W. et al., Pressure and temperature dependence of the surface tension in the system natural gas/water: Principles of investigation and the first precise experimental data, Colloids and Surfaces A: Physicochemical and Engineering Aspects, **94**, 291-301, 1995 | `10.1016/0927-7757(94)03008-1` | [link](https://doi.org/10.1016/0927-7757(94)03008-1) |
-| `Sako1991` | Sako et al., Phase Equilibrium Study of Extraction and Concentration of Furfural Produced in Reactor Using Supercritical Carbon Dioxide, J. Chem. Eng. Jpn., **24**(4), 449-455, 1991 <sup>(surname (unique))</sup> | `10.1252/jcej.24.449` | [link](https://doi.org/10.1252/jcej.24.449) |
-| `Yang2001` | Yang, S. O. et al., Measurement and prediction of phase equilibria for water + methane in hydrate forming conditions, Fluid Phase Equilibria, **185**, 53-63, 2001 | `10.1016/S0378-3812(01)00456-3` | [link](https://doi.org/10.1016/S0378-3812(01)00456-3) |
-| `Briones1987` | Briones et al., Ternary phase equilibria for acetic acid-water mixtures with supercritical carbon dioxide, Fluid Phase Equilibr., **36**, 235-246, 1987 <sup>(surname (unique))</sup> | `10.1016/0378-3812(87)85026-4` | [link](https://doi.org/10.1016/0378-3812(87)85026-4) |
-| `Chapoy2005` | Chapoy, Antonin et al., Estimation of Water Content for Methane + Water and Methane + Ethane + n-Butane + Water Systems Using a New Sampling Device, Journal of Chemical & Engineering Data, **50**(4), 1157-1161, 2005 | `10.1021/je049615s` | [link](https://doi.org/10.1021/je049615s) |
-| `Haas1976` | Haas, J. L., Jr., Physical Properties of the Coexisting Phases and Thermochemical Properties of the H2O Component in Boiling NaCl Solutions (Preliminary Steam Tables for NaCl Solutions), U.S. Geological Survey, 1976 | `10.3133/b1421A` | [link](https://doi.org/10.3133/b1421A) |
-| `Corti1990` | Corti, Horacio R. et al., Effect of a dissolved gas on the solubility of an electrolyte in aqueous solution, Industrial & Engineering Chemistry Research, **29**(6), 1043-1050, 1990 | `10.1021/ie00102a014` | [link](https://doi.org/10.1021/ie00102a014) |
-| `Torin2021` | Torín-Ollarves et al., Solubility of hydrogen in sodium chloride brine at high pressures, Fluid Phase Equilibria, **539**, 113025, 2021 | `10.1016/j.fluid.2021.113025` | [link](https://doi.org/10.1016/j.fluid.2021.113025) |
-| `Dhima1999` | Dhima, Aleksander et al., Solubility of Hydrocarbons and CO$_2$ Mixtures in Water under High Pressure, Industrial & Engineering Chemistry Research, **38**(8), 3144-3161, 1999 | `10.1021/ie980768g` | [link](https://doi.org/10.1021/ie980768g) |
-| `Kling1991` | Kling et al., The solubility of hydrogen in water and in 2-aminoethanol at temperatures between 323 K and 423 K and pressures up to 16 MPa, The Journal of Chemical Thermodynamics, **23**(6), 531-541, 1991 | `10.1016/S0021-9614(05)80095-3` | [link](https://doi.org/10.1016/S0021-9614(05)80095-3) |
-| `Pray1952` | Pray, H. A. et al., Solubility of Hydrogen, Oxygen, Nitrogen, and Helium in Water at Elevated Temperatures, Industrial & Engineering Chemistry, **44**(5), 1146-1151, 1952 | `10.1021/ie50509a058` | [link](https://doi.org/10.1021/ie50509a058) |
-| `Yokoyama1988` | Yokoyama, Chiaki et al., Vapor-liquid equilibria in the methane-diethylene glycol-water system at 298.15 and 323.15 K, Journal of Chemical & Engineering Data, **33**(3), 274-276, 1988 | `10.1021/je00053a015` | [link](https://doi.org/10.1021/je00053a015) |
-| `Amirijafari1972` | Amirijafari, Bahram et al., Solubility of Gaseous Hydrocarbon Mixtures in Water, Society of Petroleum Engineers Journal, **12**, 21-27, 1972 | `10.2118/3106-PA` | [link](https://doi.org/10.2118/3106-PA) |
-| `Awan2010` | Awan, Javeed A. et al., Vapor--Liquid Equilibrium Measurements and Modeling of the Propyl Mercaptan + Methane + Water System, Journal of Chemical & Engineering Data, **55**, 842-846, 2010 | `10.1021/je900441f` | [link](https://doi.org/10.1021/je900441f) |
-| `Maribo2013` | Maribo-Mogensen, Bjørn et al., Modeling of Dielectric Properties of Aqueous Salt Solutions with an Equation of State, J. Phys. Chem. B, **117**(36), 10523-10533, 2013 | `10.1021/jp403375t` | [link](https://doi.org/10.1021/jp403375t) |
-| `Dsouza1988` | D'souza, Rupert et al., High pressure phase equilibria in the carbon dioxide - n-Hexadecane and carbon dioxide — water systems, Can. J. Chem. Eng., **66**(2), 319-323, 1988 <sup>(surname (unique))</sup> | `10.1002/cjce.5450660221` | [link](https://doi.org/10.1002/cjce.5450660221) |
-| `Elmaghraby2012` | El-Maghraby, R. M. et al., A fast method to equilibrate carbon dioxide with brine at high pressure and elevated temperature including solubility measurements, The Journal of Supercritical Fluids, **62**, 55-59, 2012 | `10.1016/j.supflu.2011.11.002` | [link](https://doi.org/10.1016/j.supflu.2011.11.002) |
-| `Kim2003` | Kim, Y. S. et al., Liquid Water--Hydrate Equilibrium Measurements and Unified Predictions of Hydrate-Containing Phase Equilibria for Methane, Ethane, Propane, and Their Mixtures, Industrial & Engineering Chemistry Research, **42**(11), 2409-2414, 2003 | `10.1021/ie0209374` | [link](https://doi.org/10.1021/ie0209374) |
-| `Li2004` | Li, Zhaowen et al., Densities and Solubilities for Binary Systems of Carbon Dioxide + Water and Carbon Dioxide + Brine at 59 °C and Pressures to 29 MPa, Journal of Chemical & Engineering Data, **49**(4), 1026-1031, 2004 | `10.1021/je049945c` | [link](https://doi.org/10.1021/je049945c) |
-| `Savary2012` | Savary et al., The solubility of CO2+H2S mixtures in water and 2M NaCl at 120°C and pressures up to 35MPa, Int. J. Greenh. Gas Cont., **10**, 123-133, 2012 | `10.1016/j.ijggc.2012.05.021` | [link](https://doi.org/10.1016/j.ijggc.2012.05.021) |
-| `Tong2013 (variant)` | Tong, Danlu et al., Solubility of CO2 in Aqueous Solutions of CaCl2 or MgCl2 and in a Synthetic Formation Brine at Temperatures up to 423 K and Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **58**(7), 2116-2124, 2013 <sup>(surname (unique))</sup> | `10.1021/je400396s` | [link](https://doi.org/10.1021/je400396s) |
-| `Dohrn1993` | Dohrn et al., Experimental measurements of phase equilibria for ternary and quaternary systems of glucose, water, CO2 and ethanol with a novel apparatus, Fluid Phase Equilibr., **83**, 149-158, 1993 | `10.1016/0378-3812(93)87017-U` | [link](https://doi.org/10.1016/0378-3812(93)87017-U) |
-| `Torres2026` | Torres, Larissa F. et al., Water Content in Compressed Hydrogen at Low Temperatures: Experimental Measurements and Thermodynamic Modeling, Journal of Chemical & Engineering Data, **71**(7), 2989-2995, 2026 | `10.1021/acs.jced.6c00193` | [link](https://doi.org/10.1021/acs.jced.6c00193) |
-| `Addicks2002` | Addicks, Jan et al., Solubility of Carbon Dioxide and Methane in Aqueous Methyldiethanolamine Solutions, Journal of Chemical & Engineering Data, **47**, 855-860, 2002 | `10.1021/je010292z` | [link](https://doi.org/10.1021/je010292z) |
-| `Song1994` | Song, Kyoo Y. et al., The water content of ethane, propane and their mixtures in equilibrium with liquid water or hydrates, Fluid Phase Equilibria, **95**, 281-298, 1994 | `10.1016/0378-3812(94)80074-X` | [link](https://doi.org/10.1016/0378-3812(94)80074-X) |
-| `Dohrn1986` | Dohrn, Ralf et al., Phase equilibria in ternary and quaternary systems of hydrogen, water and hydrocarbons at elevated temperatures and pressures, Fluid Phase Equilibria, **29**, 535-544, 1986 | `10.1016/0378-3812(86)85052-X` | [link](https://doi.org/10.1016/0378-3812(86)85052-X) |
-| `Teymouri2017` | Mousavi Belfeh Teymouri, Seyed Ramin, Phase equilibria measurements and modelling of CO2-rich fluids/brine systems, Heriot-Watt University, 2017 | *none on record* | [link](https://www.ros.hw.ac.uk/items/2415f89e-8c8a-4537-8b45-fb846ff61cbe) |
-| `Kobayashi1951` | Kobayashi, Riki, Vapor-Liquid Equilibria in Binary Hydrocarbon-Water Systems, University of Michigan, 1951 | *none on record* | - |
-| `Umano1958` | Umano, S. et al., Kogyo Kagaku Zasshi, **61**, 536-544, 1958 | *none on record* | - |
-| `Sultanov1972` | Sultanov, R. G. et al., Rastvorimost' metana v vode pri povyshennykh temperaturakh i davleniyakh [Solubility of methane in water at elevated temperatures and pressures], Gazovaya Promyshlennost', **17**(5), 6-7, 1972 | *none on record* | - |
-| `Ipatev1934` | Ipatev, V. et al., Equilibrium compositions of vapor-gas mixtures over solutions, Zh. Obshch. Khim., **4**, 395-399, 1934 | *none on record* | - |
-| `Gillespie1980` | Gillespie, P C et al., Vapor-liquid equilibrium data on water-substitute gas components: N2-H2O, H2-H2O, CO-H2O, H2-CO-H2O and H2S-H2O, Wilco Research Co., 1-34, 1980 | *none on record* | [link](https://www.osti.gov/biblio/6782591) |
-| `Devaney1978` | Devaney, W. et al., High temperature VLE measurements for substitute gas components, GPA Research, 1-27, 1978 | *none on record* | - |
+*Cited by* is the OpenAlex citation count of the paper on the date
+given in `data/provenance/citation_counts.csv`. It depends on the
+field, the age and the indexing of the paper and is **not** a
+measure of the quality of its data; it is recorded as metadata only.
+
+| Citation key | Reference | DOI | Cited by | URL |
+|---|---|---|---:|---|
+| `Zezin2014b` | Zezin, Denis et al., Volumetric Properties of Mixed Electrolyte Aqueous Solutions at Elevated Temperatures and Pressures. The Systems CaCl<sub>2</sub>–NaCl–H<sub>2</sub>O and MgCl<sub>2</sub>–NaCl–H<sub>2</sub>O to 523.15 K, 70 MPa, and Ionic Strength from (0.1 to 18) mol·kg<sup>–1</sup>, Journal of Chemical & Engineering Data, **59**(8), 2570-2588, 2014 | `10.1021/je500371u` | 17 | [link](https://doi.org/10.1021/je500371u) |
+| `AlGhafri2012` | Al Ghafri, Saif et al., Densities of Aqueous MgCl2(aq), CaCl2(aq), KI(aq), NaCl(aq), KCl(aq), AlCl3(aq), and (0.964 NaCl + 0.136 KCl)(aq) at Temperatures Between (283 and 472) K, Pressures up to 68.5 MPa, and Molalities up to 6 mol·kg–1, Journal of Chemical & Engineering Data, **57**(4), 1288-1304, 2012 | `10.1021/je2013704` |  | [link](https://doi.org/10.1021/je2013704) |
+| `Zezin2014` | Zezin, Denis et al., Volumetric Properties of Mixed Electrolyte Aqueous Solutions at Elevated Temperatures and Pressures. The System KCl–NaCl–H<sub>2</sub>O to 523.15 K, 40 MPa, and Ionic Strength from (0.1 to 5.8) mol·kg<sup>–1</sup>, Journal of Chemical & Engineering Data, **59**(3), 736-749, 2014 | `10.1021/je400761c` | 12 | [link](https://doi.org/10.1021/je400761c) |
+| `Millero2002b` | Millero, Frank J. et al., Solubility of oxygen in the major sea salts as a function of concentration and temperature, Marine Chemistry, **78**(4), 217-230, 2002 | `10.1016/s0304-4203(02)00034-8` | 111 | [link](https://doi.org/10.1016/s0304-4203(02)00034-8) |
+| `Debelius2009` | Debelius, B. et al., Oxygen solubility in evaporated seawater as a function of temperature and salinity, Hydrobiologia, **632**(1), 157-165, 2009 | `10.1007/s10750-009-9835-4` | 36 | [link](https://doi.org/10.1007/s10750-009-9835-4) |
+| `Song2014b` | Song, Yongchen et al., Density Measurement and PC-SAFT/tPC-PSAFT Modeling of the CO<sub>2</sub> + H<sub>2</sub>O System over a Wide Temperature Range, Journal of Chemical & Engineering Data, **59**(5), 1400-1410, 2014 | `10.1021/je500062a` | 15 | [link](https://doi.org/10.1021/je500062a) |
+| `Wang2019` | Wang, Junliang et al., Determination of CO<sub>2</sub> Solubility in Water and NaCl Solutions under Geological Sequestration Conditions Using a Fused Silica Capillary Cell with in Situ Raman Spectroscopy, Journal of Chemical & Engineering Data, **64**(6), 2484-2496, 2019 | `10.1021/acs.jced.9b00013` | 45 | [link](https://doi.org/10.1021/acs.jced.9b00013) |
+| `Susak1980` | Susak et al., A routine for estimating the solubility of methane in pure water or NaCl brines by using the Texas Instruments TI-59 calculator, U.S. Geological Survey, 1980 | `10.3133/ofr80371` | 5 | [link](https://doi.org/10.3133/ofr80371) |
+| `Liu2021` | Liu, Bo et al., Measurement of Solubility of CO$_2$ in NaCl, CaCl$_2$, MgCl$_2$ and MgCl$_2$ + CaCl$_2$ Brines at Temperatures from 298 to 373 K and Pressures up to 20 MPa Using the Potentiometric Titration Method, Energies, **14**, 7222, 2021 | `10.3390/en14217222` | 55 | [link](https://doi.org/10.3390/en14217222) |
+| `Crozier1974` | Crozier, Thomas E. et al., Solubility of hydrogen in water, sea water, and sodium chloride solutions, Journal of Chemical & Engineering Data, **19**(3), 242-244, 1974 | `10.1021/je60062a007` | 187 | [link](https://doi.org/10.1021/je60062a007) |
+| `Majer1988` | Majer, Vladimir et al., Volumetric properties of aqueous NaCl solutions from 0.0025 to 5.0 mol · kg−1, 323 to 600 K, and 0.1 to 40 MPa, The Journal of Chemical Thermodynamics, **20**(8), 949-968, 1988 | `10.1016/0021-9614(88)90224-8` | 65 | [link](https://doi.org/10.1016/0021-9614(88)90224-8) |
+| `Ou2015` | Ou, Wenjia et al., Quantitative Raman spectroscopic investigation of geo-fluids high-pressure phase equilibria: Part II. Accurate determination of CH$_4$ solubility in water from 273 to 603 K and from 5 to 140 MPa and refining the parameters of the thermodynamic model, Fluid Phase Equilibria, **391**, 18-30, 2015 | `10.1016/j.fluid.2015.01.025` | 62 | [link](https://doi.org/10.1016/j.fluid.2015.01.025) |
+| `Song2013` | Song, Yongchen et al., Measurements of CO<sub>2</sub>–H<sub>2</sub>O–NaCl Solution Densities over a Wide Range of Temperatures, Pressures, and NaCl Concentrations, Journal of Chemical & Engineering Data, **58**(12), 3342-3350, 2013 | `10.1021/je400459y` | 16 | [link](https://doi.org/10.1021/je400459y) |
+| `Zezin2015` | Zezin, Denis et al., Volumetric Properties of Na<sub>2</sub>SO<sub>4</sub>–H<sub>2</sub>O and Na<sub>2</sub>SO<sub>4</sub>–NaCl–H<sub>2</sub>O Solutions to 523.15 K, 70 MPa, Journal of Chemical & Engineering Data, **60**(4), 1181-1192, 2015 | `10.1021/je501152a` | 25 | [link](https://doi.org/10.1021/je501152a) |
+| `Yamamoto1976` | Yamamoto, Sachio et al., Solubility of methane in distilled water and seawater, Journal of Chemical & Engineering Data, **21**(1), 78-80, 1976 | `10.1021/je60068a029` | 789 | [link](https://doi.org/10.1021/je60068a029) |
+| `Surdo1982` | Surdo, Antonio Lo et al., The (p, V, T) properties of concentrated aqueous electrolytes I. Densities and apparent molar volumes of NaCl, Na2SO4, MgCl2, and MgSO4 solutions from 0.1 mol·kg−1 to saturation and from 273.15 to 323.15 K, The Journal of Chemical Thermodynamics, **14**(7), 649-662, 1982 | `10.1016/0021-9614(82)90080-5` | 150 | [link](https://doi.org/10.1016/0021-9614(82)90080-5) |
+| `Takenouchi1964` | Takenouchi, Sukune et al., The binary system H2O-CO2 at high temperatures and pressures, Am. J. Sci., **262**(9), 1055-1074, 1964 | `10.2475/ajs.262.9.1055` | 611 | [link](https://doi.org/10.2475/ajs.262.9.1055) |
+| `Todheide1963` | Todheide, K. et al., Das Zweiphasengebiet und die kritische Kurve im System Kohlendioxid--Wasser bis zu Drucken von 3500 bar, Zeitschrift fur Physikalische Chemie Neue Folge, **37**(5--6), 387-401, 1963 | `10.1524/zpch.1963.37.5_6.387` | 464 | [link](https://doi.org/10.1524/zpch.1963.37.5_6.387) |
+| `Guo2016` | Guo, Huirong et al., Quantitative Raman Spectroscopic Measurements of CO2 Solubility in NaCl Solution from (273.15 to 473.15) K at p = (10.0, 20.0, 30.0, and 40.0) MPa, J. Chem. Eng. Data, **61**(1), 466-474, 2016 | `10.1021/acs.jced.5b00651` | 75 | [link](https://doi.org/10.1021/acs.jced.5b00651) |
+| `Saluja1995` | Saluja, Preet P. S. et al., Apparent Molar Heat Capacities and Volumes of Mixed Electrolytes: [NaCl(aq) + CaCl2(aq)], [NaCl(aq) + MgCl2(aq)], and [CaCl2(aq) + MgCl2(aq)], Journal of Chemical & Engineering Data, **40**(2), 398-406, 1995 | `10.1021/je00018a007` | 38 | [link](https://doi.org/10.1021/je00018a007) |
+| `Kiepe2002` | Kiepe, Jorn et al., Experimental Determination and Prediction of Gas Solubility Data for CO$_2$ + H$_2$O Mixtures Containing NaCl or KCl at Temperatures between 313 and 393 K and Pressures up to 10 MPa, Industrial & Engineering Chemistry Research, **41**, 4393-4398, 2002 | `10.1021/ie020154i` | 214 | [link](https://doi.org/10.1021/ie020154i) |
+| `Guo2016 (variant)` | Guo, Huirong et al., Quantitative Raman Spectroscopic Measurements of CO2 Solubility in NaCl Solution from (273.15 to 473.15) K at p = (10.0, 20.0, 30.0, and 40.0) MPa, J. Chem. Eng. Data, **61**(1), 466-474, 2016 <sup>(surname (unique))</sup> | `10.1021/acs.jced.5b00651` | 75 | [link](https://doi.org/10.1021/acs.jced.5b00651) |
+| `Gates1989` | Gates, Jeffrey A. et al., Density and apparent molar volume of aqueous calcium chloride at 323-600 K, Journal of Chemical & Engineering Data, **34**(1), 53-56, 1989 | `10.1021/je00055a016` | 52 | [link](https://doi.org/10.1021/je00055a016) |
+| `Liu2011` | Liu, Yang et al., Monte Carlo Simulations of High-Pressure Phase Equilibria of CO2–H2O Mixtures, J. Phys. Chem. B, **115**(20), 6629-6635, 2011 | `10.1021/jp201520u` | 56 | [link](https://doi.org/10.1021/jp201520u) |
+| `Morrison1952` | Morrison, T. J. et al., 730. The salting-out of non-electrolytes. Part II. The effect of variation in non-electrolyte, Journal of the Chemical Society (Resumed), 3819, 1952 | `10.1039/jr9520003819` | 259 | [link](https://doi.org/10.1039/jr9520003819) |
+| `Douglas1965` | Douglas, Everett, Solubilities of Argon and Nitrogen in Sea Water, The Journal of Physical Chemistry, **69**(8), 2608-2610, 1965 | `10.1021/j100892a021` | 40 | [link](https://doi.org/10.1021/j100892a021) |
+| `Kobayashi1953` | Kobayashi, Riki et al., Vapor-Liquid Equilibria For Binary Hydrocarbon-Water Systems, Industrial & Engineering Chemistry, **45**(2), 440-446, 1953 | `10.1021/ie50518a051` | 200 | [link](https://doi.org/10.1021/ie50518a051) |
+| `White1987` | White, Dorothy E et al., Heat capacity of aqueous CaCl2 from 306 to 603 K at 17.5 MPa, The Journal of Chemical Thermodynamics, **19**(3), 251-259, 1987 | `10.1016/0021-9614(87)90132-7` | 43 | [link](https://doi.org/10.1016/0021-9614(87)90132-7) |
+| `Wood1984` | Wood, S. A. et al., Mean molal stoichiometric activity coefficients of alkali halides and related electrolytes in hydrothermal solutions, American Journal of Science, **284**(6), 668-705, 1984 | `10.2475/ajs.284.6.668` | 54 | [link](https://doi.org/10.2475/ajs.284.6.668) |
+| `Call2000` | Call,, T.G. et al., Apparent molar volumes and heat capacities of aqueous magnesium chloride and cadmium chloride at temperatures from 278.15 K to 393.15 K at the pressure 0.35 MPa: a comparison of ion–ion interactions, The Journal of Chemical Thermodynamics, **32**(11), 1525-1538, 2000 | `10.1006/jcht.2000.0697` | 22 | [link](https://doi.org/10.1006/jcht.2000.0697) |
+| `Hou2013b` | Hou, Shu-Xin et al., Phase equilibria of (CO2 + H2O + NaCl) and (CO2 + H2O + KCl): measurements and modeling, The Journal of Supercritical Fluids, **78**, 78-88, 2013 | `10.1016/j.supflu.2013.03.022` | 68 | [link](https://doi.org/10.1016/j.supflu.2013.03.022) |
+| `Marliacy2002` | Marliacy, Philippe et al., Vapor Pressure and Dissolution Enthalpy Measurements in Ternary H<sub>2</sub>O + NaCl + Na<sub>2</sub>SO<sub>4</sub> System between 298 K and 363 K, Journal of Chemical & Engineering Data, **48**(2), 241-248, 2002 | `10.1021/je0200766` | 14 | [link](https://doi.org/10.1021/je0200766) |
+| `Crovetto1993` | Crovetto, Rosa et al., Vapor pressures and densities of NaCl(aq) and KCl(aq) at the temperature 623 K and CaCl2(aq) at the temperatures 623 K and 643 K, The Journal of Chemical Thermodynamics, **25**(1), 127-138, 1993 | `10.1006/jcht.1993.1013` | 28 | [link](https://doi.org/10.1006/jcht.1993.1013) |
+| `Holmes1996` | Holmes, H.F. et al., Aqueous solutions of the alkaline-earth metal chlorides at elevated temperatures. Isopiestic molalities and thermodynamic properties, The Journal of Chemical Thermodynamics, **28**(12), 1325-1358, 1996 | `10.1006/jcht.1996.0117` | 47 | [link](https://doi.org/10.1006/jcht.1996.0117) |
+| `Holmes1994b` | Holmes, H.F. et al., CaCl2(aq) at elevated temperatures. Enthalpies of dilution, isopiestic molalities, and thermodynamic properties, The Journal of Chemical Thermodynamics, **26**(3), 271-298, 1994 | `10.1016/0021-9614(94)90005-1` | 60 | [link](https://doi.org/10.1016/0021-9614(94)90005-1) |
+| `Rumpf1993b` | Rumpf, B. et al., An Experimental and Theoretical Investigation on the Solubility of Carbon Dioxide in Aqueous Solutions of Strong Electrolytes, Berichte der Bunsengesellschaft für physikalische Chemie, **97**(1), 85-97, 1993 | `10.1002/bbpc.19930970116` | 210 | [link](https://doi.org/10.1002/bbpc.19930970116) |
+| `Romankiw1983` | Romankiw, Lisa A. et al., Densities of aqueous sodium chloride, potassium chloride, magnesium chloride, and calcium chloride binary solutions in the concentration range 0.5-6.1 m at 25, 30, 35, 40, and 45.degree.C, Journal of Chemical & Engineering Data, **28**(3), 300-305, 1983 | `10.1021/je00033a005` | 88 | [link](https://doi.org/10.1021/je00033a005) |
+| `Millero2002` | Millero, Frank J. et al., The solubility of oxygen in the major sea salts and their mixtures at 25°C, Geochimica et Cosmochimica Acta, **66**(13), 2349-2359, 2002 | `10.1016/s0016-7037(02)00838-4` | 63 | [link](https://doi.org/10.1016/s0016-7037(02)00838-4) |
+| `Tong2013` | Tong, Danlu et al., Solubility of CO2 in Aqueous Solutions of CaCl2 or MgCl2 and in a Synthetic Formation Brine at Temperatures up to 423 K and Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **58**(7), 2116-2124, 2013 | `10.1021/je400396s` | 133 | [link](https://doi.org/10.1021/je400396s) |
+| `Oakes1990` | Oakes, Charles S. et al., The system sodium chloride-calcium chloride-water. 2. Densities for ionic strengths 0.1-19.2 mol.cntdot.kg-1 at 298.15 and 308.15 and at 0.1 MPa, Journal of Chemical & Engineering Data, **35**(3), 304-309, 1990 | `10.1021/je00061a022` | 46 | [link](https://doi.org/10.1021/je00061a022) |
+| `Kamps2007` | Kamps, Alvaro Perez Salado et al., Solubility of CO2 in Aqueous Solutions of KCl and in Aqueous Solutions of K2CO3, Journal of Chemical & Engineering Data, **52**(3), 817-832, 2007 | `10.1021/je060430q` | 107 | [link](https://doi.org/10.1021/je060430q) |
+| `OSullivan1970` | O'Sullivan, Thomas D. et al., Solubility and partial molar volume of nitrogen and methane in water and in aqueous sodium chloride from 50 to 125 C and 100 to 600 atm, The Journal of Physical Chemistry, **74**(7), 1460-1466, 1970 | `10.1021/j100702a012` | 238 | [link](https://doi.org/10.1021/j100702a012) |
+| `Phutela1986` | Phutela, Ramesh C. et al., Densities and apparent molar volumes of aqueous magnesium sulfate and sodium sulfate to 473 K and 100 bar, Journal of Chemical & Engineering Data, **31**(3), 320-327, 1986 | `10.1021/je00045a018` | 56 | [link](https://doi.org/10.1021/je00045a018) |
+| `Mcbridewright2014` | McBride-Wright, Mark et al., Viscosity and Density of Aqueous Solutions of Carbon Dioxide at Temperatures from (274 to 449) K and at Pressures up to 100 MPa, Journal of Chemical & Engineering Data, **60**(1), 171-180, 2014 | `10.1021/je5009125` | 85 | [link](https://doi.org/10.1021/je5009125) |
+| `Gruszkiewicz2005` | Gruszkiewicz, Miroslaw S. et al., Vapor pressures and isopiestic molalities of concentrated CaCl2(aq), CaBr2(aq), and NaCl(aq) to T= 523 K, The Journal of Chemical Thermodynamics, **37**(9), 906-930, 2005 | `10.1016/j.jct.2004.12.009` | 61 | [link](https://doi.org/10.1016/j.jct.2004.12.009) |
+| `Blanco1999` | Blanco, Sofı́a T. et al., Water dew points of binary nitrogen+water and propane+water mixtures. Measurement and correlation, Fluid Phase Equilibria, **161**(1), 107-117, 1999 | `10.1016/s0378-3812(99)00164-8` | 29 | [link](https://doi.org/10.1016/s0378-3812(99)00164-8) |
+| `Gates1985` | Gates, Jeffrey A. et al., Densities of aqueous solutions of sodium chloride, magnesium chloride, potassium chloride, sodium bromide, lithium chloride, and calcium chloride from 0.05 to 5.0 mol kg-1 and 0.1013 to 40 MPa at 298.15 K, Journal of Chemical & Engineering Data, **30**(1), 44-49, 1985 | `10.1021/je00039a015` | 128 | [link](https://doi.org/10.1021/je00039a015) |
+| `Culberson1951` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon--Water Systems III: The Solubility of Methane in Water at Pressures to 10,000 PSIA, Petroleum Transactions, AIME, **192**, 223-226, 1951 | `10.2118/951223-G` | 202 | [link](https://doi.org/10.2118/951223-G) |
+| `Price1979` | Price, Leigh C., Aqueous Solubility of Methane at Elevated Pressures and Temperatures, AAPG Bulletin, **63**(9), 1527-1533, 1979 | `10.1306/2F9185E0-16CE-11D7-8645000102C1865D` | 65 | [link](https://doi.org/10.1306/2F9185E0-16CE-11D7-8645000102C1865D) |
+| `Kiepe2003` | Kiepe, Jorn et al., Experimental Determination and Prediction of Gas Solubility Data for Methane + Water Solutions Containing Different Monovalent Electrolytes, Industrial & Engineering Chemistry Research, **42**(21), 5392-5398, 2003 | `10.1021/ie030386x` | 98 | [link](https://doi.org/10.1021/ie030386x) |
+| `Rumpf1993` | Rumpf, B. et al., Solubility of Carbon Dioxide in Aqueous Solutions of Sodium Chloride: Experimental Results and Correlation, Journal of Solution Chemistry, **23**(3), 431-448, 1994 | `10.1007/BF00973113` | 243 | [link](https://doi.org/10.1007/BF00973113) |
+| `Prutton1945` | Prutton, C. F. et al., The Solubility of Carbon Dioxide in Calcium Chloride-Water Solutions at 75, 100, 120 °C and High Pressures, Journal of the American Chemical Society, **67**(9), 1550-1554, 1945 | `10.1021/ja01225a047` | 168 | [link](https://doi.org/10.1021/ja01225a047) |
+| `Hubert1995b` | Hubert, Nathalie et al., Vapor Pressure Measurements with a Nonisothermal Static Method between 293.15 and 363.15 K for Electrolyte Solutions. Application to the H2O + NaCl System, Journal of Chemical & Engineering Data, **40**(4), 891-894, 1995 | `10.1021/je00020a034` | 31 | [link](https://doi.org/10.1021/je00020a034) |
+| `Carvalho2015` | Carvalho, Pedro J. et al., Carbon dioxide solubility in aqueous solutions of NaCl: Measurements and modeling with electrolyte equations of state, Fluid Phase Equilibria, **388**, 100-106, 2015 | `10.1016/j.fluid.2014.12.043` | 102 | [link](https://doi.org/10.1016/j.fluid.2014.12.043) |
+| `Oakes1995` | Oakes, Charles S. et al., Apparent molar volumes of aqueous calcium chloride to 250�C, 400 bars, and from molalities of 0.242 to 6.150, Journal of Solution Chemistry, **24**(9), 897-916, 1995 | `10.1007/bf00973444` | 36 | [link](https://doi.org/10.1007/bf00973444) |
+| `Wang2014` | Wang et al., Modeling and measurement of CO2 solubility in salty aqueous solutions and application in the Erdos Basin, Fluid Phase Equilibria, **377**, 45-55, 2014 | `10.1016/j.fluid.2014.06.016` | 38 | [link](https://doi.org/10.1016/j.fluid.2014.06.016) |
+| `Ghafri2013` | Al Ghafri, Saif Zahir et al., Densities of SrCl2(aq), Na2SO4(aq), NaHCO3(aq), and Two Synthetic Reservoir Brines at Temperatures between (298 and 473) K, Pressures up to 68.5 MPa, and Molalities up to 3 mol·kg–1, Journal of Chemical & Engineering Data, **58**(2), 402-412, 2013 | `10.1021/je301132p` | 21 | [link](https://doi.org/10.1021/je301132p) |
+| `Muller1988` | Muller, G. et al., Das dampf‐flüssigkeitsgleichgewicht des ternären systems ammoniak‐kohlendioxid‐wasser bei hohen wassergehalten im bereich zwischen 373 und 473 kelvin, Berich. Bunsen. Phys. Chem., **92**, 148-160, 1988 <sup>(surname (unique))</sup> | `10.1002/bbpc.198800036` | 159 | [link](https://doi.org/10.1002/bbpc.198800036) |
+| `Luo2021` | Luo, Jielin et al., Experimental Research on the Vapor Pressures of CaCl<sub>2</sub>–H<sub>2</sub>O and MgCl<sub>2</sub>–H<sub>2</sub>O as Working Fluids of Absorption Heat Transformers at High Temperature, Journal of Chemical & Engineering Data, **66**(12), 4293-4299, 2021 | `10.1021/acs.jced.1c00397` | 8 | [link](https://doi.org/10.1021/acs.jced.1c00397) |
+| `Valtz2004` | Valtz et al., Vapour–liquid equilibria in the carbon dioxide–water system, measurement and modelling from 278.2 to 318.2K, Fluid Phase Equilibr., **226**, 333-344, 2004 <sup>(surname (unique))</sup> | `10.1016/j.fluid.2004.10.013` | 379 | [link](https://doi.org/10.1016/j.fluid.2004.10.013) |
+| `Murray1969b` | Murray, C.N. et al., The solubility of gases in distilled water and sea water—II. Oxygen, Deep Sea Research and Oceanographic Abstracts, **16**(3), 311-320, 1969 | `10.1016/0011-7471(69)90021-7` | 82 | [link](https://doi.org/10.1016/0011-7471(69)90021-7) |
+| `Olofsson1984` | Olofsson, G. et al., Calorimetric measurements on slightly soluble gases in water Enthalpies of solution of helium, neon, argon, krypton, xenon, methane, ethane, propane, n-butane, and oxygen at 288.15, 298.15, and 308.15 K, The Journal of Chemical Thermodynamics, **16**(11), 1041-1052, 1984 | `10.1016/0021-9614(84)90132-0` | 112 | [link](https://doi.org/10.1016/0021-9614(84)90132-0) |
+| `Tabasinejad2011` | Tabasinejad, Farshad et al., Water Solubility in Supercritical Methane, Nitrogen, and Carbon Dioxide: Measurement and Modeling from 422 to 483 K and Pressures from 3.6 to 134 MPa, Industrial & Engineering Chemistry Research, **50**(7), 4029-4041, 2011 | `10.1021/ie101218k` | 85 | [link](https://doi.org/10.1021/ie101218k) |
+| `Chabab2021` | Chabab, Salaheddine et al., Measurements and Modeling of High-Pressure O2 and CO2 Solubility in Brine (H2O + NaCl) between 303 and 373 K and Pressures up to 36 MPa, Journal of Chemical & Engineering Data, **66**(1), 609-620, 2021 | `10.1021/acs.jced.0c00799` | 36 | [link](https://doi.org/10.1021/acs.jced.0c00799) |
+| `Alvarez1988` | Alvarez, Jorge et al., The Dissolution of N<sub>2</sub> and of H<sub>2</sub> in Water from Room Temperature to 640 K, Berichte der Bunsengesellschaft für physikalische Chemie, **92**(8), 935-940, 1988 | `10.1002/bbpc.198800223` | 84 | [link](https://doi.org/10.1002/bbpc.198800223) |
+| `Cosgrove1981` | Cosgrove, Bruce A. et al., Solubilities of gases in H2O and 2H2O, Journal of Chromatography A, **216**, 161-167, 1981 | `10.1016/s0021-9673(00)82344-4` | 85 | [link](https://doi.org/10.1016/s0021-9673(00)82344-4) |
+| `Murray1969` | Murray, C.N. et al., The solubility of gases in distilled water and sea water—I. Nitrogen, Deep Sea Research and Oceanographic Abstracts, **16**(3), 297-310, 1969 | `10.1016/0011-7471(69)90020-5` | 28 | [link](https://doi.org/10.1016/0011-7471(69)90020-5) |
+| `Zhao2015b` | Zhao, Haining et al., Experimental studies and modeling of CO2 solubility in high temperature aqueous CaCl2, MgCl2, Na2SO4, and KCl solutions, AIChE Journal, **61**(7), 2286-2297, 2015 | `10.1002/aic.14825` | 80 | [link](https://doi.org/10.1002/aic.14825) |
+| `Hou2013` | Hou et al., Measurement and modeling of the phase behavior of the (carbon dioxide+water) mixture at temperatures from 298.15K to 448.15K, J. Supercrit. Fluid., **73**, 87-96, 2013 | `10.1016/j.supflu.2012.11.011` | 210 | [link](https://doi.org/10.1016/j.supflu.2012.11.011) |
+| `Chapoy2004c` | Chapoy, Antonin et al., Gas Solubility Measurement and Modeling for the Nitrogen + Water System from 274.18 K to 363.02 K, Journal of Chemical & Engineering Data, **49**(4), 1110-1115, 2004 | `10.1021/je049869d` | 87 | [link](https://doi.org/10.1021/je049869d) |
+| `Saluja1987` | Saluja, Preet P. S. et al., Apparent molar heat capacities and volumes of aqueous solutions of magnesium chloride, calcium chloride, and strontium chloride at elevated temperatures, Journal of Chemical & Engineering Data, **32**(1), 72-76, 1987 | `10.1021/je00047a021` | 50 | [link](https://doi.org/10.1021/je00047a021) |
+| `Chen2020` | Chen, Ying et al., Measurements of Vapor Pressures of Aqueous Solutions in the NaCl–KCl–H<sub>2</sub>O System from 493.15 to 693.25 K in a Fused Silica Capillary High-Pressure Optical Cell, Journal of Chemical & Engineering Data, **65**(2), 766-776, 2020 | `10.1021/acs.jced.9b00993` | 8 | [link](https://doi.org/10.1021/acs.jced.9b00993) |
+| `Fox1909` | Fox, Charles J. J., On the coefficients of absorption of nitrogen and oxygen in distilled water and sea-water, and of atmospheric carbonic acid in sea-water, Transactions of the Faraday Society, **5**(September), 68, 1909 | `10.1039/tf9090500068` | 101 | [link](https://doi.org/10.1039/tf9090500068) |
+| `Ahmadi2018` | Ahmadi, Pezhman et al., CO 2 solubility in formation water under sequestration conditions, Fluid Phase Equilibria, **463**, 80-90, 2018 | `10.1016/j.fluid.2018.02.002` | 61 | [link](https://doi.org/10.1016/j.fluid.2018.02.002) |
+| `Poulain2019` | Poulain, Marie et al., Experimental Measurements of Carbon Dioxide Solubility in Na–Ca–K–Cl Solutions at High Temperatures and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **64**(6), 2497-2503, 2019 | `10.1021/acs.jced.9b00023` | 31 | [link](https://doi.org/10.1021/acs.jced.9b00023) |
+| `Santos2020` | dos Santos, Pedro F. et al., Experimental Measurement of CO2 Solubility in Aqueous Na2SO4 Solution at Temperatures between 303.15 and 423.15 K and Pressures up to 20 MPa, Journal of Chemical & Engineering Data, **65**(6), 3230-3239, 2020 | `10.1021/acs.jced.0c00230` | 21 | [link](https://doi.org/10.1021/acs.jced.0c00230) |
+| `Liu1971` | Liu, Chia-tsun et al., Thermodynamic Properties of Aqueous Solutions at High Temperatures, 1971 | `10.2172/1436979` | 20 | [link](https://doi.org/10.2172/1436979) |
+| `Crovetto1991` | Crovetto, Rosa et al., Revised densities of xCO2 + (1 − x)H2O with x < 0.014 at supercritical conditions Molar volumes, partial molar volumes of CO2 at infinite dilution, and excess molar volumes, The Journal of Chemical Thermodynamics, **23**(12), 1138-1146, 1991 | `10.1016/s0021-9614(05)80146-6` | 23 | [link](https://doi.org/10.1016/s0021-9614(05)80146-6) |
+| `CulbersonMcKetta1950` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon-Water Systems II: The Solubility of Ethane in Water at Pressures to 10,000 psi, Trans. AIME (J. Pet. Technol.), **189**, 319-322, 1950 | `10.2118/950319-G` | 38 | [link](https://doi.org/10.2118/950319-G) |
+| `Jooss2026` | Jooss, Yannick et al., Vapor--liquid equilibrium measurements of the carbon dioxide + water (CO2 + H2O) system and carbon dioxide + water + sodium chloride (CO2 + H2O + NaCl) system, Fluid Phase Equilibria, **599**, 114516, 2026 | `10.1016/j.fluid.2025.114516` | 1 | [link](https://doi.org/10.1016/j.fluid.2025.114516) |
+| `Lu2008` | Lu, Wanjun et al., Determination of methane concentrations in water in equilibrium with sI methane hydrate in the absence of a vapor phase by in situ Raman spectroscopy, Geochimica et Cosmochimica Acta, **72**(2), 412-422, 2008 | `10.1016/j.gca.2007.11.006` | 135 | [link](https://doi.org/10.1016/j.gca.2007.11.006) |
+| `Bamberger2000` | Bamberger et al., High-pressure (vapor+liquid) equilibrium in binary mixtures of (carbon dioxide+water or acetic acid) at temperatures from 313 to 353 K, J. Supercrit. Fluid., **17**(2), 97-110, 2000 | `10.1016/S0896-8446(99)00054-6` | 405 | [link](https://doi.org/10.1016/S0896-8446(99)00054-6) |
+| `Wiebe1940` | Wiebe, R. et al., The Solubility of Carbon Dioxide in Water at Various Temperatures from 12 to 40° and at Pressures to 500 Atmospheres. Critical Phenomena<sup>*</sup>, Journal of the American Chemical Society, **62**(4), 815-817, 1940 | `10.1021/ja01861a033` | 487 | [link](https://doi.org/10.1021/ja01861a033) |
+| `Duffy1961` | Duffy, J. Regis et al., Solubility of natural gases in aqueous salt solutions I: Liquidus surfaces in the system CH$_4$--H$_2$O--NaCl--CaCl$_2$ at room temperatures and at pressures below 1000 psia, Geochimica et Cosmochimica Acta, **24**, 23-31, 1961 | `10.1016/0016-7037(61)90004-7` | 79 | [link](https://doi.org/10.1016/0016-7037(61)90004-7) |
+| `Mohammadi2004eth` | Mohammadi, Amir H. et al., Measurements and Thermodynamic Modeling of Vapor-Liquid Equilibria in Ethane-Water Systems from 274.26 to 343.08 K, Ind. Eng. Chem. Res., **43**(17), 5418-5424, 2004 | `10.1021/ie049747e` | 61 | [link](https://doi.org/10.1021/ie049747e) |
+| `Shiah1996` | Shiah, I-Min et al., Experimental and theoretical determination of vapor pressures of NaClKCl, NaBrKBr and NaClCaCl2 aqueous solutions at 298 to 343 K, Fluid Phase Equilibria, **124**(1-2), 235-249, 1996 | `10.1016/s0378-3812(96)03013-0` | 27 | [link](https://doi.org/10.1016/s0378-3812(96)03013-0) |
+| `Wiebe1934` | Wiebe, R. et al., The Solubility of Hydrogen in Water at 0, 50, 75 and 100 °C from 25 to 1000 Atmospheres, Journal of the American Chemical Society, **56**(1), 76-79, 1934 | `10.1021/ja01316a022` | 217 | [link](https://doi.org/10.1021/ja01316a022) |
+| `Zawisza1981` | Zawisza, Andrzej et al., Solubility of carbon dioxide in liquid water and of water in gaseous carbon dioxide in the range 0.2-5 MPa and at temperatures up to 473 K, Journal of Chemical & Engineering Data, **26**(4), 388-391, 1981 | `10.1021/je00026a012` | 196 | [link](https://doi.org/10.1021/je00026a012) |
+| `Chapoy2004d` | Chapoy, Antonin et al., Solubility measurement and modeling for the system propane--water from 277.62 to 368.16 K, Fluid Phase Equilibria, **226**, 213-220, 2004 | `10.1016/j.fluid.2004.08.040` | 123 | [link](https://doi.org/10.1016/j.fluid.2004.08.040) |
+| `Gordon1977` | Gordon, Louis I. et al., The solubility of molecular hydrogen in seawater, Deep Sea Research, **24**(10), 937-941, 1977 | `10.1016/0146-6291(77)90563-x` | 62 | [link](https://doi.org/10.1016/0146-6291(77)90563-x) |
+| `Rettich1981` | Rettich, Timothy R. et al., Solubility of gases in liquids. 13. High-precision determination of Henry's constants for methane and ethane in liquid water at 275 to 328 K, The Journal of Physical Chemistry, **85**(22), 3230-3237, 1981 | `10.1021/j150622a006` | 240 | [link](https://doi.org/10.1021/j150622a006) |
+| `King1971` | King, Allen Dupree et al., Solubility of water in compressed carbon dioxide, nitrous oxide, and ethane. Evidence for hydration of carbon dioxide and nitrous oxide in the gas phase, Journal of the American Chemical Society, **93**(8), 1857-1862, 1971 | `10.1021/ja00737a004` | 271 | [link](https://doi.org/10.1021/ja00737a004) |
+| `Jung1971` | Jung, J. et al., Löslichkeit von Kohlenmonoxid und Wasserstoff in Wasser bis 300°C, Chemie Ingenieur Technik, **43**(3), 112-116, 1971 | `10.1002/cite.330430304` | 24 | [link](https://doi.org/10.1002/cite.330430304) |
+| `Olds1942` | Olds, R. H. et al., Phase Equilibria in Hydrocarbon Systems.Composition of the Dew-Point Gas of the Methane-Water System, Industrial & Engineering Chemistry, **34**(10), 1223-1227, 1942 | `10.1021/ie50394a018` | 133 | [link](https://doi.org/10.1021/ie50394a018) |
+| `Sako1985` | Sako, Takeshi et al., Vapor pressures of binary (water-hydrogen chloride, -magnesium chloride, and -calcium chloride) and ternary (water-magnesium chloride-calcium chloride) aqueous solutions, Journal of Chemical & Engineering Data, **30**(2), 224-228, 1985 | `10.1021/je00040a030` | 53 | [link](https://doi.org/10.1021/je00040a030) |
+| `Fabuss1966` | Fabuss, B.M. et al., Vapor pressures of binary aqueous solutions of NaCl, KCl, Na2SO4 and MgSO4 at concentrations and temperatures of interest in desalination processes, Desalination, **1**(2), 139-148, 1966 | `10.1016/s0011-9164(00)84013-8` | 30 | [link](https://doi.org/10.1016/s0011-9164(00)84013-8) |
+| `PitzerMayorga1973` | Pitzer et al., Thermodynamics of electrolytes. II. Activity and osmotic coefficients for strong electrolytes with one or both ions univalent, The Journal of Physical Chemistry, **77**(19), 2300-2308, 1973 | `10.1021/j100638a009` | 1841 | [link](https://doi.org/10.1021/j100638a009) |
+| `Chabab2020` | Chabab et al., Measurements and predictive models of high-pressure H2 solubility in brine (H2O+NaCl) for underground hydrogen storage application, International Journal of Hydrogen Energy, **45**(56), 32206-32220, 2020 | `10.1016/j.ijhydene.2020.08.192` | 304 | [link](https://doi.org/10.1016/j.ijhydene.2020.08.192) |
+| `Kennan1990` | Kennan, Richard P. et al., Pressure dependence of the solubility of nitrogen, argon, krypton, and xenon in water, The Journal of Chemical Physics, **93**(4), 2724-2735, 1990 | `10.1063/1.458911` | 107 | [link](https://doi.org/10.1063/1.458911) |
+| `Nighswander1989` | Nighswander, John A. et al., Solubilities of Carbon Dioxide in Water and 1 wt % NaCl Solution at Pressures up to 10 MPa and Temperatures from 80 to 200 textdegreeC, Journal of Chemical & Engineering Data, **34**(3), 355-360, 1989 | `10.1021/je00057a027` | 220 | [link](https://doi.org/10.1021/je00057a027) |
+| `Bando2003` | Bando, Shigeru et al., Solubility of CO$_2$ in Aqueous Solutions of NaCl at (30 to 60) textdegreeC and (10 to 20) MPa, Journal of Chemical & Engineering Data, **48**, 576-579, 2003 | `10.1021/je0255832` | 180 | [link](https://doi.org/10.1021/je0255832) |
+| `Carroll1998` | Carroll, John J. et al., The Solubility of Methane in Aqueous Solutions of Monoethanolamine, Diethanolamine and Triethanolamine, The Canadian Journal of Chemical Engineering, **76**(5), 945-951, 1998 | `10.1002/cjce.5450760512` | 46 | [link](https://doi.org/10.1002/cjce.5450760512) |
+| `Messabeb2016` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous NaCl Solution at Temperature from 323.15 to 423.15 K and Pressure of up to 20 MPa, J. Chem. Eng. Data, **61**(10), 3573-3584, 2016 | `10.1021/acs.jced.6b00505` | 79 | [link](https://doi.org/10.1021/acs.jced.6b00505) |
+| `Messabeb2017` | Messabeb, Hamdi et al., Experimental Measurement of CO2 Solubility in Aqueous CaCl2 Solution at Temperature from 323.15 to 423.15 K and Pressure up to 20 MPa Using the Conductometric Titration, Journal of Chemical & Engineering Data, **62**(12), 4228-4234, 2017 | `10.1021/acs.jced.7b00591` | 49 | [link](https://doi.org/10.1021/acs.jced.7b00591) |
+| `Yan2011` | Yan et al., Measurement and modeling of CO2 solubility in NaCl brine and CO2–saturated NaCl brine density, Int. J. Greenh. Gas Cont., **5**(6), 1460-1477, 2011 | `10.1016/j.ijggc.2011.08.004` | 288 | [link](https://doi.org/10.1016/j.ijggc.2011.08.004) |
+| `Portier2005` | Portier et al., Modelling CO2 solubility in pure water and NaCl-type waters from 0 to 300 °C and from 1 to 300 bar: Application to the Utsira Formation at Sleipner, Chemical Geology, **217**(3), 187-199, 2005 | `10.1016/j.chemgeo.2004.12.007` | 217 | [link](https://doi.org/10.1016/j.chemgeo.2004.12.007) |
+| `Mohammadian2015` | Mohammadian, Erfan et al., Measurement of CO<sub>2</sub>Solubility in NaCl Brine Solutions at Different Temperatures and Pressures Using the Potentiometric Titration Method, Journal of Chemical & Engineering Data, **60**(7), 2042-2049, 2015 | `10.1021/je501172d` | 91 | [link](https://doi.org/10.1021/je501172d) |
+| `Granttaylor1981` | Grant-Taylor, D. F., Partial molar volumes of sodium chloride solutions at 200 bar, and temperatures from 175 to 350�C, Journal of Solution Chemistry, **10**(9), 621-630, 1981 | `10.1007/bf00650738` | 33 | [link](https://doi.org/10.1007/bf00650738) |
+| `Zheng1997` | Zheng, Da-Qing et al., Experimental and modeling studies on the solubility of CO2, CHC1F2, CHF3, C2H2F4 and C2H4F2 in water and aqueous NaCl solutions under low pressures, Fluid Phase Equilibria, **129**(1-2), 197-209, 1997 | `10.1016/s0378-3812(96)03177-9` | 108 | [link](https://doi.org/10.1016/s0378-3812(96)03177-9) |
+| `Pabalan1988` | Pabalan, Roberto T et al., Heat capacity and other thermodynamic properties of Na2SO4(aq) in hydrothermal solutions and the solubilities of sodium sulfate minerals in the system Na-Cl-SO4-OH-H2O to 300°C, Geochimica et Cosmochimica Acta, **52**(10), 2393-2404, 1988 | `10.1016/0016-7037(88)90296-7` | 89 | [link](https://doi.org/10.1016/0016-7037(88)90296-7) |
+| `Qin2008` | Qin, Junfeng et al., Experimental Measurements of Vapor–Liquid Equilibria of the H2O + CO2 + CH4 Ternary System, Journal of Chemical & Engineering Data, **53**(6), 1246-1249, 2008 | `10.1021/je700473e` | 136 | [link](https://doi.org/10.1021/je700473e) |
+| `Santos2021` | F. dos Santos, Pedro et al., Experimental Measurements of CO2 Solubility in Aqueous MgCl2 Solution at Temperature between 323.15 and 423.15 K and Pressure up to 20 MPa, Journal of Chemical & Engineering Data, **66**(11), 4166-4173, 2021 | `10.1021/acs.jced.1c00347` | 15 | [link](https://doi.org/10.1021/acs.jced.1c00347) |
+| `Rettich2000` | Rettich, T.R. et al., Solubility of gases in liquids. 22. High-precision determination of Henry’s law constants of oxygen in liquid water from=274 K to=328 K, The Journal of Chemical Thermodynamics, **32**(9), 1145-1156, 2000 | `10.1006/jcht.1999.0581` | 83 | [link](https://doi.org/10.1006/jcht.1999.0581) |
+| `Frost2014` | Frost, Michael et al., Vapor–Liquid Equilibrium of Methane with Water and Methanol. Measurements and Modeling, Journal of Chemical & Engineering Data, **59**(4), 961-967, 2014 | `10.1021/je400684k` | 63 | [link](https://doi.org/10.1021/je400684k) |
+| `Kumar1986` | Kumar, Anil, Densities and apparent molal volumes of aqueous concentrated calcium chloride solutions from 50 to 200�C at 20.27 bar, Journal of Solution Chemistry, **15**(5), 409-412, 1986 | `10.1007/bf00646263` | 27 | [link](https://doi.org/10.1007/bf00646263) |
+| `STOESSELL1982` | Stoessell et al., Salting-out of methane in single-salt solutions at 25°C and below 800 psia, Geochimica et Cosmochimica Acta, **46**(8), 1327-1332, 1982 | `10.1016/0016-7037(82)90268-X` | 73 | [link](https://doi.org/10.1016/0016-7037(82)90268-X) |
+| `Jacob2016` | Jacob, Ruth et al., CO$_2$ solubility in multi-component brines containing NaCl, KCl, CaCl$_2$ and MgCl$_2$ at 297 K and 1--14 MPa, Chemical Geology, **424**, 86-95, 2016 | `10.1016/j.chemgeo.2016.01.013` | 69 | [link](https://doi.org/10.1016/j.chemgeo.2016.01.013) |
+| `King1992` | King et al., The mutual solubilities of water with supercritical and liquid carbon dioxides, J. Supercrit. Fluid., **5**(4), 296-302, 1992 | `10.1016/0896-8446(92)90021-B` | 445 | [link](https://doi.org/10.1016/0896-8446(92)90021-B) |
+| `Zirrahi2016` | Zirrahi, Mohsen et al., Water content of light n‐alkanes: New measurements and cubic‐plus‐association equation of state modeling, AIChE Journal, **63**(4), 1384-1389, 2016 | `10.1002/aic.15512` | 15 | [link](https://doi.org/10.1002/aic.15512) |
+| `Culbersonhorn1950` | Culberson, O. L. et al., Phase Equilibria in Hydrocarbon--Water Systems, Journal of Petroleum Technology, **2**, 1-6, 1950 | `10.2118/950001-G` | 38 | [link](https://doi.org/10.2118/950001-G) |
+| `Lucile2012` | Lucile, Floriane et al., Solubility of Carbon Dioxide in Water and Aqueous Solution Containing Sodium Hydroxide at Temperatures from (293.15 to 393.15) K and Pressure up to 5 MPa: Experimental Measurements, Journal of Chemical & Engineering Data, **57**(3), 784-789, 2012 | `10.1021/je200991x` | 123 | [link](https://doi.org/10.1021/je200991x) |
+| `Michels1936` | Michels, A. et al., The influence of pressure on the solubility of gases, Physica, **3**(8), 797-808, 1936 | `10.1016/S0031-8914(36)80353-X` | 70 | [link](https://doi.org/10.1016/S0031-8914(36)80353-X) |
+| `Rogers1981` | Rogers, P. S. Z. et al., High-temperature thermodynamic properties of aqueous sodium sulfate solutions, The Journal of Physical Chemistry, **85**(20), 2886-2895, 1981 | `10.1021/j150620a008` | 138 | [link](https://doi.org/10.1021/j150620a008) |
+| `An1978` | An, Doan Thi et al., Vapour pressures of CaCl<sub>2</sub>–NaCl–H<sub>2</sub>O and MgCl<sub>2</sub>–NaCl–H<sub>2</sub>O at 25 °C. Prediction of the water activity of supersaturated NaCl solutions, Canadian Journal of Chemistry, **56**(14), 1853-1855, 1978 | `10.1139/v78-301` | 10 | [link](https://doi.org/10.1139/v78-301) |
+| `Meyer2015` | Meyer, Christopher W. et al., Dew-point measurements for water in compressed carbon dioxide, AIChE J., **61**(9), 2913-2925, 2015 <sup>(surname (unique))</sup> | `10.1002/aic.14818` | 47 | [link](https://doi.org/10.1002/aic.14818) |
+| `Wiebe1939` | Wiebe, R. et al., The Solubility in Water of Carbon Dioxide at 50, 75 and 100°, at Pressures to 700 Atmospheres, Journal of the American Chemical Society, **61**(2), 315-318, 1939 | `10.1021/ja01871a025` | 328 | [link](https://doi.org/10.1021/ja01871a025) |
+| `Han2009` | Han, Ji Min et al., Measurement and correlation of high pressure phase behavior of carbon dioxide+water system, Journal of Industrial and Engineering Chemistry, **15**(2), 212-216, 2009 | `10.1016/j.jiec.2008.09.012` | 54 | [link](https://doi.org/10.1016/j.jiec.2008.09.012) |
+| `Chapoy2003b` | Chapoy, Antonin et al., Measurement of the Water Solubility in the Gas Phase of the Ethane + Water Binary System near Hydrate Forming Conditions, Journal of Chemical & Engineering Data, **48**(4), 957-966, 2003 | `10.1021/je0202230` | 40 | [link](https://doi.org/10.1021/je0202230) |
+| `Chapoy2004b` | Chapoy, A. et al., Measurement and Modeling of Gas Solubility and Literature Review of the Properties for the Carbon Dioxide−Water System, Industrial & Engineering Chemistry Research, **43**(7), 1794-1802, 2004 | `10.1021/ie034232t` | 190 | [link](https://doi.org/10.1021/ie034232t) |
+| `Ellis1967` | Ellis, A. J., Partial molal volumes of MgCl <sub>2</sub> , CaCl <sub>2</sub> , SrCl <sub>2</sub> , and BaCl <sub>2</sub> in aqueous solution to 200°, J. Chem. Soc. A, **0**(0), 660-664, 1967 | `10.1039/j19670000660` | 25 | [link](https://doi.org/10.1039/j19670000660) |
+| `Saddington1934` | Saddington, Arthur W. et al., Vapor—Liquid Equilibria in the System Nitrogen—Water, Journal of the American Chemical Society, **56**(2), 353-361, 1934 | `10.1021/ja01317a024` | 74 | [link](https://doi.org/10.1021/ja01317a024) |
+| `Takenouchi1965` | Takenouchi, Sukune et al., The solubility of carbon dioxide in NaCl solutions at high temperatures and pressures, Am. J. Sci., **263**(5), 445-454, 1965 | `10.2475/ajs.263.5.445` | 329 | [link](https://doi.org/10.2475/ajs.263.5.445) |
+| `Song1987` | Song, Kyoo Y. et al., Water Content of CO2 in Equilibrium With Liquid Water and/or Hydrates, SPE Formation Evaluation, **2**(04), 500-508, 1987 | `10.2118/15905-pa` | 149 | [link](https://doi.org/10.2118/15905-pa) |
+| `Bermejo2005` | Bermejo, M.D. et al., The influence of Na2SO4 on the CO2 solubility in water at high pressure, Fluid Phase Equilibria, **238**(2), 220-228, 2005 | `10.1016/j.fluid.2005.10.006` | 73 | [link](https://doi.org/10.1016/j.fluid.2005.10.006) |
+| `Folas2007` | Folas, Georgios K. et al., Data and prediction of water content of high pressure nitrogen, methane and natural gas, Fluid Phase Equilibria, **252**(1-2), 162-174, 2007 | `10.1016/j.fluid.2006.12.018` | 94 | [link](https://doi.org/10.1016/j.fluid.2006.12.018) |
+| `Koschel2006` | Koschel et al., Enthalpy and solubility data of CO2 in water and NaCl(aq) at conditions of interest for geological sequestration, Fluid Phase Equilibr., **247**(1), 107-120, 2006 | `10.1016/j.fluid.2006.06.006` | 270 | [link](https://doi.org/10.1016/j.fluid.2006.06.006) |
+| `Chabab2024` | Chabab et al., Solubility of H2 in water and NaCl brine under subsurface storage conditions: Measurements and thermodynamic modeling, International Journal of Hydrogen Energy, **50**, 648-658, 2024 | `10.1016/j.ijhydene.2023.10.290` | 94 | [link](https://doi.org/10.1016/j.ijhydene.2023.10.290) |
+| `Rogers1982` | Rogers, P. S. Z. et al., Densities of aqueous sodium chloride solutions from 75 to 200.degree.C at 20 bar, Journal of Chemical & Engineering Data, **27**(1), 47-50, 1982 | `10.1021/je00027a014` | 34 | [link](https://doi.org/10.1021/je00027a014) |
+| `Teng1997` | Teng, H. et al., Solubility of liquid CO2in water at temperatures from 278 K to 293 K and pressures from 6.44 MPa to 29.49 MPa and densities of the corresponding aqueous solutions, The Journal of Chemical Thermodynamics, **29**(11), 1301-1310, 1997 | `10.1006/jcht.1997.0249` | 187 | [link](https://doi.org/10.1006/jcht.1997.0249) |
+| `Zhao2015c` | Zhao, Haining et al., Measurement and Modeling of CO2 Solubility in Natural and Synthetic Formation Brines for CO2 Sequestration, Environmental Science & Technology, **49**(3), 1972-1980, 2015 | `10.1021/es505550a` | 79 | [link](https://doi.org/10.1021/es505550a) |
+| `Mokraoui2007` | Mokraoui, Salim et al., New Solubility Data of Hydrocarbons in Water and Modeling Concerning Vapor−Liquid−Liquid Binary Systems, Industrial & Engineering Chemistry Research, **46**(26), 9257-9262, 2007 | `10.1021/ie070858y` | 51 | [link](https://doi.org/10.1021/ie070858y) |
+| `Bastami2014` | Bastami, A. et al., Experimental and modelling study of the solubility of CO2 in various CaCl2 solutions at different temperatures and pressures., Pet. Sci.l, **11**, 569–577, 2014 | `10.1007/s12182-014-0373-1` | 66 | [link](https://doi.org/10.1007/s12182-014-0373-1) |
+| `Caumon2016` | Caumon, Marie-Camille et al., Measuring mutual solubility in the H 2 O–CO 2 system up to 200 bar and 100 °C by in situ Raman spectroscopy, International Journal of Greenhouse Gas Control, **47**, 63-70, 2016 | `10.1016/j.ijggc.2016.01.034` | 43 | [link](https://doi.org/10.1016/j.ijggc.2016.01.034) |
+| `Chabab2019` | Chabab et al., Thermodynamic study of the CO2–H2O–NaCl system: Measurements of CO2 solubility and modeling of phase equilibria using Soreide and Whitson, electrolyte CPA and SIT models, Int. J. Greenh. Gas Cont., **91**, 102825, 2019 | `10.1016/j.ijggc.2019.102825` | 83 | [link](https://doi.org/10.1016/j.ijggc.2019.102825) |
+| `Nasirzadeh2004` | Nasirzadeh, Karamat et al., Vapor-Pressure Measurements of Liquid Solutions at Different Temperatures: Apparatus for Use over an Extended Temperature Range and Some New Data, Journal of Chemical & Engineering Data, **49**(3), 607-612, 2004 | `10.1021/je034197x` | 66 | [link](https://doi.org/10.1021/je034197x) |
+| `Servio2001` | Servio, Phillip et al., Effect of temperature and pressure on the solubility of carbon dioxide in water in the presence of gas hydrate, Fluid Phase Equilibria, **190**(1-2), 127-134, 2001 | `10.1016/s0378-3812(01)00598-2` | 203 | [link](https://doi.org/10.1016/s0378-3812(01)00598-2) |
+| `Wang1995` | Wang, Yilin et al., Solubility of CH$_4$ in the mixed solvent t-butyl alcohol and water, Thermochimica Acta, **253**, 327-334, 1995 | `10.1016/0040-6031(94)02011-C` | 53 | [link](https://doi.org/10.1016/0040-6031(94)02011-C) |
+| `Mohammadi2025` | Mohammadi, Shahram et al., Experimental investigation of thermophysical properties in CO2-saturated Brine under variable temperatures (303 to 333 K), pressures (0.1 to 30 MPa), and salt types and concentrations, Discover Applied Sciences, **7**(9), 2025 | `10.1007/s42452-025-07557-2` | 4 | [link](https://doi.org/10.1007/s42452-025-07557-2) |
+| `He2021` | He, Haikang et al., Experimental and theoretical study on water solubility of carbon dioxide in oil and gas displacement, Journal of Petroleum Science and Engineering, **203**, 108685, 2021 | `10.1016/j.petrol.2021.108685` | 26 | [link](https://doi.org/10.1016/j.petrol.2021.108685) |
+| `Pabalan1988b` | Pabalan, Roberto T. et al., Apparent molar heat capacity and other thermodynamic properties of aqueous potassium chloride solutions to high temperatures and pressures, Journal of Chemical & Engineering Data, **33**(3), 354-362, 1988 | `10.1021/je00053a037` | 111 | [link](https://doi.org/10.1021/je00053a037) |
+| `Reamer1943` | Reamer, H. H. et al., Phase Equilibria in Hydrocarbon Systems. Composition of Dew-Point Gas in Ethane-Water System, Industrial & Engineering Chemistry, **35**(7), 790-793, 1943 | `10.1021/ie50403a012` | 68 | [link](https://doi.org/10.1021/ie50403a012) |
+| `CHAPOY2003` | Chapoy et al., Solubility measurement and modeling of water in the gas phase of the methane/water binary system at temperatures from 283.08 to 318.12 K and pressures up to 34.5MPa, Fluid Phase Equilibria, **214**(1), 101-117, 2003 | `10.1016/S0378-3812(03)00322-4` | 100 | [link](https://doi.org/10.1016/S0378-3812(03)00322-4) |
+| `Liu1970` | Liu, Chia-Tsun et al., Osmotic coefficients of aqueous sodium chloride solutions from 125 to 130.deg., The Journal of Physical Chemistry, **74**(2), 341-346, 1970 | `10.1021/j100697a020` | 22 | [link](https://doi.org/10.1021/j100697a020) |
+| `Rigby1968` | Rigby, Maurice et al., Solubility of water in compressed nitrogen, argon, and methane, The Journal of Physical Chemistry, **72**(1), 330-334, 1968 | `10.1021/j100847a064` | 173 | [link](https://doi.org/10.1021/j100847a064) |
+| `Yarrison2006` | Yarrison, Matt et al., Measurement and Modeling of the Solubility of Water in Supercritical Methane and Ethane from 310 to 477 K and Pressures from 3.4 to 110 MPa, Industrial & Engineering Chemistry Research, **45**(20), 6770-6777, 2006 | `10.1021/ie0513752` | 53 | [link](https://doi.org/10.1021/ie0513752) |
+| `Dec1984b` | Dec, Steven F. et al., Steady-state gas dissolution flow microcalorimeter for determination of heats of solution of slightly soluble gases in water, Review of Scientific Instruments, **55**(5), 765-772, 1984 | `10.1063/1.1137814` | 35 | [link](https://doi.org/10.1063/1.1137814) |
+| `Zhao2015` | Zhao et al., Carbon dioxide solubility in aqueous solutions of sodium chloride at geological conditions: Experimental results at 323.15, 373.15, and 423.15K and 150bar and modeling up to 573.15K and 2000bar, Geochim. Cosmochim. Ac., **149**, 165-189, 2015 | `10.1016/j.gca.2014.11.004` | 142 | [link](https://doi.org/10.1016/j.gca.2014.11.004) |
+| `Mohammadi2005` | Mohammadi, Amir H. et al., Water Content Measurement and Modeling in the Nitrogen + Water System, Journal of Chemical & Engineering Data, **50**(2), 541-545, 2005 | `10.1021/je049676q` | 38 | [link](https://doi.org/10.1021/je049676q) |
+| `Wiebe1941` | Wiebe, R. et al., Vapor Phase Composition of Carbon Dioxide-Water Mixtures at Various Temperatures and at Pressures to 700 Atmospheres, Journal of the American Chemical Society, **63**(2), 475-477, 1941 | `10.1021/ja01847a030` | 282 | [link](https://doi.org/10.1021/ja01847a030) |
+| `Parisod1981` | Parisod, Charles J. et al., Vapor-liquid equilibriums of the sodium chloride-water system in the temperature range 300-440 .degree.C, Journal of Chemical & Engineering Data, **26**(1), 16-20, 1981 | `10.1021/je00023a008` | 52 | [link](https://doi.org/10.1021/je00023a008) |
+| `Rettich1984` | Rettich, T. R. et al., Solubility of gases in liquids. XVI. Henry's law coefficients for nitrogen in water at 5 to 50�C, Journal of Solution Chemistry, **13**(5), 335-348, 1984 | `10.1007/bf00645706` | 66 | [link](https://doi.org/10.1007/bf00645706) |
+| `Sabirzyanov2003` | Sabirzyanov, A. N. et al., Water Solubility of Carbon Dioxide under Supercritical and Subcritical Conditions, Theoretical Foundations of Chemical Engineering, **37**(1), 51-53, 2003 | `10.1023/a:1022256927236` | 48 | [link](https://doi.org/10.1023/a:1022256927236) |
+| `Wang2003` | Wang, Lu-Kun et al., Experimental study on the solubility of natural gas components in water with or without hydrate inhibitor, Fluid Phase Equilibria, **207**, 143-154, 2003 | `10.1016/S0378-3812(03)00009-8` | 185 | [link](https://doi.org/10.1016/S0378-3812(03)00009-8) |
+| `CHAPOY2004` | Chapoy et al., Gas solubility measurement and modeling for methane–water and methane–ethane–n-butane–water systems at low temperature conditions, Fluid Phase Equilibria, **220**(1), 113-121, 2004 | `10.1016/j.fluid.2004.02.010` | 215 | [link](https://doi.org/10.1016/j.fluid.2004.02.010) |
+| `Claussen1952` | Claussen, W. F. et al., Solubilities and Structures in Aqueous Aliphatic Hydrocarbon Solutions, Journal of the American Chemical Society, **74**(19), 4817-4819, 1952 | `10.1021/ja01139a026` | 135 | [link](https://doi.org/10.1021/ja01139a026) |
+| `Laracruz2020` | Lara Cruz, José et al., Experimental Study of Carbon Dioxide Solubility in Sodium Chloride and Calcium Chloride Brines at 333.15 and 453.15 K for Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **66**(1), 249-261, 2020 | `10.1021/acs.jced.0c00592` | 30 | [link](https://doi.org/10.1021/acs.jced.0c00592) |
+| `AlGhafri2014` | Al Ghafri, Saif Z. S. et al., Experimental and Modeling Study of the Phase Behavior of (Methane + CO$_2$ + Water) Mixtures, The Journal of Physical Chemistry B, **118**(49), 14461-14478, 2014 | `10.1021/jp509678g` | 71 | [link](https://doi.org/10.1021/jp509678g) |
+| `Bhatnagar1982` | Bhatnagar, Om N. et al., Osmotic and activity coefficients of sodium sulphate in water from 150 to 250 °C, Canadian Journal of Chemistry, **60**(13), 1754-1758, 1982 | `10.1139/v82-240` | 11 | [link](https://doi.org/10.1139/v82-240) |
+| `Blanco1978` | Blanco C., Luis H. et al., The high pressure solubility of methane in aqueous calcium chloride and aqueous tetraethylammonium bromide. Partial molar properties of dissolved methane and nitrogen in relation to water structure, The Journal of Physical Chemistry, **82**(2), 186-191, 1978 | `10.1021/j100491a012` | 37 | [link](https://doi.org/10.1021/j100491a012) |
+| `Campos2010` | Campos, C. Eduardo Pereira Siqueira et al., Experimental Measurement and Thermodynamic Modeling for the Solubility of Methane in Water and Hexadecane, Journal of Chemical & Engineering Data, **55**, 2576-2580, 2010 | `10.1021/je9007958` | 33 | [link](https://doi.org/10.1021/je9007958) |
+| `dosSantos2021` | dos Santos, Pedro F. et al., An improved model for CO2 solubility in aqueous Na+--Cl---SO4(2-) systems up to 473.15 K and 40 MPa, Chemical Geology, **582**, 120443, 2021 | `10.1016/j.chemgeo.2021.120443` | 22 | [link](https://doi.org/10.1016/j.chemgeo.2021.120443) |
+| `Lekvam1997` | Lekvam, Knut et al., Dissolution of methane in water at low temperatures and intermediate pressures, Fluid Phase Equilibria, **131**, 297-309, 1997 | `10.1016/S0378-3812(96)03229-3` | 164 | [link](https://doi.org/10.1016/S0378-3812(96)03229-3) |
+| `Servio2001b` | Servio, Phillip et al., Measurement of Dissolved Methane in Water in Equilibrium with Its Hydrate, Journal of Chemical & Engineering Data, **47**(1), 87-90, 2001 | `10.1021/je0102255` | 212 | [link](https://doi.org/10.1021/je0102255) |
+| `Weiss1974` | Weiss, R.F., Carbon dioxide in water and seawater: the solubility of a non-ideal gas, Marine Chemistry, **2**(3), 203-215, 1974 | `10.1016/0304-4203(74)90015-2` | 3548 | [link](https://doi.org/10.1016/0304-4203(74)90015-2) |
+| `Botger2016` | Bottger, Arne et al., An experimental investigation of the phase equilibrium of the binary system (methane + water) at low temperatures: Solubility of methane in water and three-phase (vapour + liquid + hydrate) equilibrium, Fluid Phase Equilibria, **407**, 209-216, 2016 | `10.1016/j.fluid.2015.03.041` | 50 | [link](https://doi.org/10.1016/j.fluid.2015.03.041) |
+| `Gao1997` | Gao, Jun et al., Solubilities of Methane, Nitrogen, Carbon Dioxide, and a Natural Gas Mixture in Aqueous Sodium Bicarbonate Solutions under High Pressure and Elevated Temperature, Journal of Chemical & Engineering Data, **42**, 69-73, 1997 | `10.1021/je960275n` | 40 | [link](https://doi.org/10.1021/je960275n) |
+| `Leopold1927` | Leopold, H. Geneva et al., THE VAPOR PRESSURE OF THE SATURATED AQUEOUS SOLUTIONS OF CERTAIN SALTS, Journal of the American Chemical Society, **49**(8), 1974-1988, 1927 | `10.1021/ja01407a019` | 47 | [link](https://doi.org/10.1021/ja01407a019) |
+| `Adeniyi2020b` | Adeniyi, Kayode I. et al., The Saturated Water Content of Liquid Propane in Equilibrium with the sII Hydrate, Energies, **13**(23), 6295, 2020 | `10.3390/en13236295` | 5 | [link](https://doi.org/10.3390/en13236295) |
+| `Dhima1998` | Dhima, Aleksandër et al., Solubility of light hydrocarbons and their mixtures in pure water under high pressure, Fluid Phase Equilibria, **145**(1), 129-150, 1998 | `10.1016/s0378-3812(97)00211-2` | 103 | [link](https://doi.org/10.1016/s0378-3812(97)00211-2) |
+| `Gaudette2007` | Gaudette, Jason et al., Measurement of Dissolved Propane in Water in the Presence of Gas Hydrate, Journal of Chemical & Engineering Data, **52**(4), 1449-1451, 2007 | `10.1021/je7001286` | 36 | [link](https://doi.org/10.1021/je7001286) |
+| `Schlaikjer2018` | Schlaikjer, Anders et al., eCPA: an ion-specific approach to parametrization, Fluid Phase Equilibria, **470**, 176-187, 2018 | `10.1016/j.fluid.2017.12.008` | 36 | [link](https://doi.org/10.1016/j.fluid.2017.12.008) |
+| `Serra2006` | Serra, Maria Celeste C. et al., Solubility of methane in water and in a medium for the cultivation of methanotrophs bacteria, The Journal of Chemical Thermodynamics, **38**(12), 1629-1633, 2006 | `10.1016/j.jct.2006.03.019` | 35 | [link](https://doi.org/10.1016/j.jct.2006.03.019) |
+| `Pereda2009` | Pereda, Selva et al., Solubility of hydrocarbons in water: Experimental measurements and modeling using a group contribution with association equation of state (GCA-EoS), Fluid Phase Equilibria, **275**(1), 52-59, 2009 | `10.1016/j.fluid.2008.09.008` | 57 | [link](https://doi.org/10.1016/j.fluid.2008.09.008) |
+| `Anthony1967` | Anthony, Rayford G. et al., Phase equilibrium in the ethylene-ethane-water system, Journal of Chemical & Engineering Data, **12**(1), 21-28, 1967 | `10.1021/je60032a007` | 22 | [link](https://doi.org/10.1021/je60032a007) |
+| `Dec1985` | Dec, S. F. et al., Heats of solution of gaseous hydrocarbons in water at 15, 25, and 35�C, Journal of Solution Chemistry, **14**(12), 827-836, 1985 | `10.1007/bf00646293` | 78 | [link](https://doi.org/10.1007/bf00646293) |
+| `Gardner1963` | Gardner, E. R. et al., Osmotic coefficients of some aqueous sodium chloride solutions at high temperature, Transactions of the Faraday Society, **59**, 1994, 1963 | `10.1039/tf9635901994` | 20 | [link](https://doi.org/10.1039/tf9635901994) |
+| `Mohammadi2004` | Mohammadi, Amir H. et al., Experimental Measurement and Thermodynamic Modeling of Water Content in Methane and Ethane Systems, Industrial & Engineering Chemistry Research, **43**(22), 7148-7162, 2004 | `10.1021/ie049843f` | 92 | [link](https://doi.org/10.1021/ie049843f) |
+| `Sachs1995` | Sachs, W. et al., Pressure and temperature dependence of the surface tension in the system natural gas/water: Principles of investigation and the first precise experimental data, Colloids and Surfaces A: Physicochemical and Engineering Aspects, **94**, 291-301, 1995 | `10.1016/0927-7757(94)03008-1` | 114 | [link](https://doi.org/10.1016/0927-7757(94)03008-1) |
+| `Sako1991` | Sako et al., Phase Equilibrium Study of Extraction and Concentration of Furfural Produced in Reactor Using Supercritical Carbon Dioxide, J. Chem. Eng. Jpn., **24**(4), 449-455, 1991 | `10.1252/jcej.24.449` | 103 | [link](https://doi.org/10.1252/jcej.24.449) |
+| `Song1997` | Song, K.Y et al., Solubility measurements of methane and ethane in water at and near hydrate conditions, Fluid Phase Equilibria, **128**(1-2), 249-259, 1997 | `10.1016/s0378-3812(96)03165-2` | 61 | [link](https://doi.org/10.1016/s0378-3812(96)03165-2) |
+| `Yang2001` | Yang, S. O. et al., Measurement and prediction of phase equilibria for water + methane in hydrate forming conditions, Fluid Phase Equilibria, **185**, 53-63, 2001 | `10.1016/S0378-3812(01)00456-3` | 203 | [link](https://doi.org/10.1016/S0378-3812(01)00456-3) |
+| `Briones1987` | Briones et al., Ternary phase equilibria for acetic acid-water mixtures with supercritical carbon dioxide, Fluid Phase Equilibr., **36**, 235-246, 1987 <sup>(surname (unique))</sup> | `10.1016/0378-3812(87)85026-4` | 200 | [link](https://doi.org/10.1016/0378-3812(87)85026-4) |
+| `Chapoy2005` | Chapoy, Antonin et al., Estimation of Water Content for Methane + Water and Methane + Ethane + n-Butane + Water Systems Using a New Sampling Device, Journal of Chemical & Engineering Data, **50**(4), 1157-1161, 2005 | `10.1021/je049615s` | 70 | [link](https://doi.org/10.1021/je049615s) |
+| `Haas1976` | Haas, J. L., Jr., Physical Properties of the Coexisting Phases and Thermochemical Properties of the H2O Component in Boiling NaCl Solutions (Preliminary Steam Tables for NaCl Solutions), U.S. Geological Survey, 1976 | `10.3133/b1421A` | 127 | [link](https://doi.org/10.3133/b1421A) |
+| `Corti1990` | Corti, Horacio R. et al., Effect of a dissolved gas on the solubility of an electrolyte in aqueous solution, Industrial & Engineering Chemistry Research, **29**(6), 1043-1050, 1990 | `10.1021/ie00102a014` | 29 | [link](https://doi.org/10.1021/ie00102a014) |
+| `Torin2021` | Torín-Ollarves et al., Solubility of hydrogen in sodium chloride brine at high pressures, Fluid Phase Equilibria, **539**, 113025, 2021 | `10.1016/j.fluid.2021.113025` | 89 | [link](https://doi.org/10.1016/j.fluid.2021.113025) |
+| `Randall1929` | Randall, Merle et al., HEAT CAPACITIES IN AQUEOUS SALT SOLUTIONS, Journal of the American Chemical Society, **51**(2), 323-345, 1929 | `10.1021/ja01377a001` | 64 | [link](https://doi.org/10.1021/ja01377a001) |
+| `Dhima1999` | Dhima, Aleksander et al., Solubility of Hydrocarbons and CO$_2$ Mixtures in Water under High Pressure, Industrial & Engineering Chemistry Research, **38**(8), 3144-3161, 1999 | `10.1021/ie980768g` | 156 | [link](https://doi.org/10.1021/ie980768g) |
+| `Kling1991` | Kling et al., The solubility of hydrogen in water and in 2-aminoethanol at temperatures between 323 K and 423 K and pressures up to 16 MPa, The Journal of Chemical Thermodynamics, **23**(6), 531-541, 1991 | `10.1016/S0021-9614(05)80095-3` | 76 | [link](https://doi.org/10.1016/S0021-9614(05)80095-3) |
+| `Naim1963` | Naim, A. Ben et al., Method for measuring solubilities of slightly soluble gases in liquids, Transactions of the Faraday Society, **59**, 2735, 1963 | `10.1039/tf9635902735` | 101 | [link](https://doi.org/10.1039/tf9635902735) |
+| `Pray1952` | Pray, H. A. et al., Solubility of Hydrogen, Oxygen, Nitrogen, and Helium in Water at Elevated Temperatures, Industrial & Engineering Chemistry, **44**(5), 1146-1151, 1952 | `10.1021/ie50509a058` | 315 | [link](https://doi.org/10.1021/ie50509a058) |
+| `Scheuermann2020` | Scheuermann, Peter P. et al., Experimental measurement of H2(aq) solubility in hydrothermal fluids: Application to the Piccard hydrothermal field, Mid-Cayman Rise, Geochimica et Cosmochimica Acta, **283**, 22-39, 2020 | `10.1016/j.gca.2020.05.020` | 20 | [link](https://doi.org/10.1016/j.gca.2020.05.020) |
+| `Wiebe1932` | Wiebe, R. et al., Solubility of Nitrogen in Water in 250c from 25 to 1000 Atmospheres, Industrial & Engineering Chemistry, **24**(8), 927-927, 1932 | `10.1021/ie50272a023` | 68 | [link](https://doi.org/10.1021/ie50272a023) |
+| `Yokoyama1988` | Yokoyama, Chiaki et al., Vapor-liquid equilibria in the methane-diethylene glycol-water system at 298.15 and 323.15 K, Journal of Chemical & Engineering Data, **33**(3), 274-276, 1988 | `10.1021/je00053a015` | 67 | [link](https://doi.org/10.1021/je00053a015) |
+| `Apelblat1998` | Apelblat, Alexander, Vapour pressures of H216O and H218O, and saturated aqueous solutions of KCl fromT=298 K toT=318 K by the isoteniscopic method, The Journal of Chemical Thermodynamics, **30**(10), 1191-1198, 1998 | `10.1006/jcht.1998.0381` | 14 | [link](https://doi.org/10.1006/jcht.1998.0381) |
+| `Gill1982` | Gill, S.J. et al., Flow-microcalorimetric techniques for solution of slightly soluble gases. Enthalpy of solution of oxygen in water at 298.15 K, The Journal of Chemical Thermodynamics, **14**(10), 905-919, 1982 | `10.1016/0021-9614(82)90001-5` | 57 | [link](https://doi.org/10.1016/0021-9614(82)90001-5) |
+| `Amirijafari1972` | Amirijafari, Bahram et al., Solubility of Gaseous Hydrocarbon Mixtures in Water, Society of Petroleum Engineers Journal, **12**, 21-27, 1972 | `10.2118/3106-PA` | 47 | [link](https://doi.org/10.2118/3106-PA) |
+| `Awan2010` | Awan, Javeed A. et al., Vapor--Liquid Equilibrium Measurements and Modeling of the Propyl Mercaptan + Methane + Water System, Journal of Chemical & Engineering Data, **55**, 842-846, 2010 | `10.1021/je900441f` | 23 | [link](https://doi.org/10.1021/je900441f) |
+| `Perron1974` | Perron, Gérald et al., Apparent Molal Volumes and Heat Capacities of Alkaline Earth Chlorides in Water at 25 °C, Canadian Journal of Chemistry, **52**(22), 3738-3741, 1974 | `10.1139/v74-558` | 83 | [link](https://doi.org/10.1139/v74-558) |
+| `Burgass2021` | Burgass, Rod et al., Development of a new method for measurement of the water dew/frost point of gas, Fluid Phase Equilibria, **530**, 112873, 2021 | `10.1016/j.fluid.2020.112873` | 15 | [link](https://doi.org/10.1016/j.fluid.2020.112873) |
+| `Crovetto1982` | Crovetto, Rosa et al., Solubilities of inert gases and methane in H2O and in D2O in the temperature range of 300 to 600 K, The Journal of Chemical Physics, **76**(2), 1077-1086, 1982 | `10.1063/1.443074` | 279 | [link](https://doi.org/10.1063/1.443074) |
+| `Pearce1937` | Pearce, J. N. et al., Vapor Pressures and Partial Molal Volumes of Aqueous Solutions of the Alkali Sulfates at 25° <sup>1</sup>, Journal of the American Chemical Society, **59**(12), 2689-2691, 1937 | `10.1021/ja01291a061` | 31 | [link](https://doi.org/10.1021/ja01291a061) |
+| `Sabirzyanov2002` | Sabirzyanov, A. N. et al., Solubility of Water in Supercritical Carbon Dioxide, High Temperature, **40**(2), 203-206, 2002 | `10.1023/a:1015294905132` | 138 | [link](https://doi.org/10.1023/a:1015294905132) |
+| `Chapoy2012` | Chapoy, Antonin et al., On the phase behaviour of the (carbon dioxide + water) systems at low temperatures: Experimental and modelling, The Journal of Chemical Thermodynamics, **47**, 6-12, 2012 | `10.1016/j.jct.2011.10.026` | 80 | [link](https://doi.org/10.1016/j.jct.2011.10.026) |
+| `Maribo2013` | Maribo-Mogensen, Bjørn et al., Modeling of Dielectric Properties of Aqueous Salt Solutions with an Equation of State, J. Phys. Chem. B, **117**(36), 10523-10533, 2013 | `10.1021/jp403375t` | 114 | [link](https://doi.org/10.1021/jp403375t) |
+| `Naghibi1986` | Naghibi, Hossein et al., Heat of solution of methane in water from 0 to 50.degree.C, The Journal of Physical Chemistry, **90**(19), 4621-4623, 1986 | `10.1021/j100410a030` | 95 | [link](https://doi.org/10.1021/j100410a030) |
+| `Dsouza1988` | D'souza, Rupert et al., High pressure phase equilibria in the carbon dioxide - n-Hexadecane and carbon dioxide — water systems, Can. J. Chem. Eng., **66**(2), 319-323, 1988 <sup>(surname (unique))</sup> | `10.1002/cjce.5450660221` | 170 | [link](https://doi.org/10.1002/cjce.5450660221) |
+| `Elmaghraby2012` | El-Maghraby, R. M. et al., A fast method to equilibrate carbon dioxide with brine at high pressure and elevated temperature including solubility measurements, The Journal of Supercritical Fluids, **62**, 55-59, 2012 | `10.1016/j.supflu.2011.11.002` | 104 | [link](https://doi.org/10.1016/j.supflu.2011.11.002) |
+| `Kim2003` | Kim, Y. S. et al., Liquid Water--Hydrate Equilibrium Measurements and Unified Predictions of Hydrate-Containing Phase Equilibria for Methane, Ethane, Propane, and Their Mixtures, Industrial & Engineering Chemistry Research, **42**(11), 2409-2414, 2003 | `10.1021/ie0209374` | 114 | [link](https://doi.org/10.1021/ie0209374) |
+| `Li2004` | Li, Zhaowen et al., Densities and Solubilities for Binary Systems of Carbon Dioxide + Water and Carbon Dioxide + Brine at 59 °C and Pressures to 29 MPa, Journal of Chemical & Engineering Data, **49**(4), 1026-1031, 2004 | `10.1021/je049945c` | 136 | [link](https://doi.org/10.1021/je049945c) |
+| `Markham1941` | Markham, Aaron E. et al., The Solubility of Carbon Dioxide and Nitrous Oxide in Aqueous Salt Solutions, Journal of the American Chemical Society, **63**(2), 449-454, 1941 | `10.1021/ja01847a027` | 171 | [link](https://doi.org/10.1021/ja01847a027) |
+| `Osullivan1966` | O'Sullivan, Thomas D. et al., Solubility of natural gases in aqueous salt solutions—III Nitrogen in aqueous NaCl at high pressures, Geochimica et Cosmochimica Acta, **30**(6), 617-619, 1966 | `10.1016/0016-7037(66)90015-9` | 31 | [link](https://doi.org/10.1016/0016-7037(66)90015-9) |
+| `Savary2012` | Savary et al., The solubility of CO2+H2S mixtures in water and 2M NaCl at 120°C and pressures up to 35MPa, Int. J. Greenh. Gas Cont., **10**, 123-133, 2012 | `10.1016/j.ijggc.2012.05.021` | 73 | [link](https://doi.org/10.1016/j.ijggc.2012.05.021) |
+| `Song2014` | Song, Wen et al., Determination of Dew Point Conditions for CO<sub>2</sub> with Impurities Using Microfluidics, Environmental Science & Technology, **48**(6), 3567-3574, 2014 | `10.1021/es404618y` | 50 | [link](https://doi.org/10.1021/es404618y) |
+| `Stewart1970` | Stewart, Paul Bennett et al., Solubility of carbon dioxide in pure water, synthetic sea water, and synthetic sea water concentrates at -5.deg. to 25.deg. and 10- to 45-atm. pressure, Journal of Chemical & Engineering Data, **15**(1), 67-71, 1970 | `10.1021/je60044a001` | 135 | [link](https://doi.org/10.1021/je60044a001) |
+| `Sun2023` | Sun, Qiang et al., Experimental and Modeling Study on Phase Equilibria of the Methane + Ethane Gas Mixture, Journal of Chemical & Engineering Data, **68**(9), 2345-2352, 2023 | `10.1021/acs.jced.3c00096` | 2 | [link](https://doi.org/10.1021/acs.jced.3c00096) |
+| `Truche2016` | Truche, Laurent et al., Direct measurement of CO2 solubility and pH in NaCl hydrothermal solutions by combining in-situ potentiometry and Raman spectroscopy up to 280 °C and 150 bar, Geochimica et Cosmochimica Acta, **177**, 238-253, 2016 | `10.1016/j.gca.2015.12.033` | 73 | [link](https://doi.org/10.1016/j.gca.2015.12.033) |
+| `Dec1984` | Dec, S. F. et al., Heats of solution of gaseous hydrocarbons in water at 25�C, Journal of Solution Chemistry, **13**(1), 27-41, 1984 | `10.1007/bf00648589` | 108 | [link](https://doi.org/10.1007/bf00648589) |
+| `Anderson1962` | Anderson, C. J. et al., Solubility of Krypton and Oxygen in Water and Aqueous Uranyl Sulphate Solutions at Elevated Temperatures., Journal of Chemical & Engineering Data, **7**(2), 290-294, 1962 | `10.1021/je60013a040` | 7 | [link](https://doi.org/10.1021/je60013a040) |
+| `Smith1962` | Smith, Norman O et al., Solubility of natural gases in aqueous salt solutions—II, Geochimica et Cosmochimica Acta, **26**(9), 921-926, 1962 | `10.1016/0016-7037(62)90066-2` | 42 | [link](https://doi.org/10.1016/0016-7037(62)90066-2) |
+| `Tong2013 (variant)` | Tong, Danlu et al., Solubility of CO2 in Aqueous Solutions of CaCl2 or MgCl2 and in a Synthetic Formation Brine at Temperatures up to 423 K and Pressures up to 40 MPa, Journal of Chemical & Engineering Data, **58**(7), 2116-2124, 2013 <sup>(surname (unique))</sup> | `10.1021/je400396s` | 133 | [link](https://doi.org/10.1021/je400396s) |
+| `Dohrn1993` | Dohrn et al., Experimental measurements of phase equilibria for ternary and quaternary systems of glucose, water, CO2 and ethanol with a novel apparatus, Fluid Phase Equilibr., **83**, 149-158, 1993 | `10.1016/0378-3812(93)87017-U` | 158 | [link](https://doi.org/10.1016/0378-3812(93)87017-U) |
+| `Torres2026` | Torres, Larissa F. et al., Water Content in Compressed Hydrogen at Low Temperatures: Experimental Measurements and Thermodynamic Modeling, Journal of Chemical & Engineering Data, **71**(7), 2989-2995, 2026 | `10.1021/acs.jced.6c00193` | 0 | [link](https://doi.org/10.1021/acs.jced.6c00193) |
+| `Addicks2002` | Addicks, Jan et al., Solubility of Carbon Dioxide and Methane in Aqueous Methyldiethanolamine Solutions, Journal of Chemical & Engineering Data, **47**, 855-860, 2002 | `10.1021/je010292z` | 58 | [link](https://doi.org/10.1021/je010292z) |
+| `Marcus1990` | Marcus, Yizhak et al., Solubilities and vapour pressures in the quinquinary system NaCl–KCl–MgCl <sub>2</sub> –CaCl <sub>2</sub> –H <sub>2</sub> O. Part 2.—Predictions and measurements at 30–45 °C, J. Chem. Soc., Faraday Trans., **86**(3), 495-500, 1990 | `10.1039/ft9908600495` | 5 | [link](https://doi.org/10.1039/ft9908600495) |
+| `Rard1981` | Rard, Joseph A. et al., Isopiestic determination of the Osmotic coefficients of aqueous sodium sulfate, magnesium sulfate, and sodium sulfate-magnesium sulfate at 25 .degree.C, Journal of Chemical & Engineering Data, **26**(1), 33-38, 1981 | `10.1021/je00023a013` | 102 | [link](https://doi.org/10.1021/je00023a013) |
+| `Song1994` | Song, Kyoo Y. et al., The water content of ethane, propane and their mixtures in equilibrium with liquid water or hydrates, Fluid Phase Equilibria, **95**, 281-298, 1994 | `10.1016/0378-3812(94)80074-X` | 55 | [link](https://doi.org/10.1016/0378-3812(94)80074-X) |
+| `Uusikyyny2016` | Uusi-Kyyny, Petri et al., Design of Equilibrium Cells for Phase Equilibria and <i>PVT</i> Measurements in Large Ranges of Temperatures and Pressures. I. Vapor–Liquid–Liquid Equilibria, Journal of Chemical & Engineering Data, **61**(8), 2700-2711, 2016 | `10.1021/acs.jced.6b00126` | 7 | [link](https://doi.org/10.1021/acs.jced.6b00126) |
+| `Yasunishi1977` | YASUNISHI, AKIRA, Solubilities of sparingly soluble gases in aqueous sodium sulfate and sulfite solutions., JOURNAL OF CHEMICAL ENGINEERING OF JAPAN, **10**(2), 89-94, 1977 | `10.1252/jcej.10.89` | 41 | [link](https://doi.org/10.1252/jcej.10.89) |
+| `Marcus1988` | Marcus, Yizhak et al., Solubilities and vapour pressures in the quinquinary system NaCl–KCl–MgCl2–CaCl2–H2O. Part 1.—Predictions and measurements at 25 °C, Journal of the Chemical Society, Faraday Transactions 1: Physical Chemistry in Condensed Phases, **84**(10), 3575, 1988 | `10.1039/f19888403575` | 9 | [link](https://doi.org/10.1039/f19888403575) |
+| `Brunner1994` | Brunner, Gerd et al., Phase equilibria in systems containing hydrogen, carbon dioxide, water and hydrocarbons, Fluid Phase Equilibria, **100**, 253-268, 1994 | `10.1016/0378-3812(94)80013-8` | 53 | [link](https://doi.org/10.1016/0378-3812(94)80013-8) |
+| `Wang2013` | Wang, Zheming et al., Near-infrared spectroscopic investigation of water in supercritical CO2 and the effect of CaCl2, Fluid Phase Equilibria, **338**, 155-163, 2013 | `10.1016/j.fluid.2012.11.012` | 46 | [link](https://doi.org/10.1016/j.fluid.2012.11.012) |
+| `Jackson1995` | Jackson, Kevin. et al., Water Solubility Measurements In Supercritical Fluids and High-Pressure Liquids Using Near-Infrared Spectroscopy, Analytical Chemistry, **67**(14), 2368-2372, 1995 | `10.1021/ac00110a007` | 88 | [link](https://doi.org/10.1021/ac00110a007) |
+| `Loring2017` | Loring, John S. et al., Water Solubility at Saturation for CO<sub>2</sub>–CH<sub>4</sub> Mixtures at 323.2 K and 9.000 MPa, Journal of Chemical & Engineering Data, **62**(5), 1608-1614, 2017 | `10.1021/acs.jced.6b00999` | 26 | [link](https://doi.org/10.1021/acs.jced.6b00999) |
+| `Teymouri2017` | Mousavi Belfeh Teymouri, Seyed Ramin, Phase equilibria measurements and modelling of CO2-rich fluids/brine systems, Heriot-Watt University, 2017 | *none on record* |  | [link](https://www.ros.hw.ac.uk/items/2415f89e-8c8a-4537-8b45-fb846ff61cbe) |
+| `Kobayashi1951` | Kobayashi, Riki, Vapor-Liquid Equilibria in Binary Hydrocarbon-Water Systems, University of Michigan, 1951 | *none on record* |  | - |
+| `Umano1958` | Umano, S. et al., Kogyo Kagaku Zasshi, **61**, 536-544, 1958 | *none on record* |  | - |
+| `Sultanov1972` | Sultanov, R. G. et al., Rastvorimost' metana v vode pri povyshennykh temperaturakh i davleniyakh [Solubility of methane in water at elevated temperatures and pressures], Gazovaya Promyshlennost', **17**(5), 6-7, 1972 | *none on record* |  | - |
+| `Adeniyi2020` | Adeniyi, 2020 | *none on record* |  | - |
+| `Yarrison2006b` | Yarrison, 2006 | *none on record* |  | - |
+| `Ipatev1934` | Ipatev, V. et al., Equilibrium compositions of vapor-gas mixtures over solutions, Zh. Obshch. Khim., **4**, 395-399, 1934 | *none on record* |  | - |
+| `Gillespie1980` | Gillespie, P C et al., Vapor-liquid equilibrium data on water-substitute gas components: N2-H2O, H2-H2O, CO-H2O, H2-CO-H2O and H2S-H2O, Wilco Research Co., 1-34, 1980 | *none on record* |  | [link](https://www.osti.gov/biblio/6782591) |
+| `Mcgee1981` | McGee, 1981 | *none on record* |  | - |
+| `Laracruz2019` | Cruz, 2019 | *none on record* |  | - |
+| `Devaney1978` | Devaney, W. et al., High temperature VLE measurements for substitute gas components, GPA Research, 1-27, 1978 | *none on record* |  | - |
+| `Robinson1968` | Robinson, 1968 | *none on record* |  | - |
 
 ## Coverage
 
@@ -164,117 +315,262 @@ U (uncertain).
 
 | Citation key | Property families (rows) | Gas | Salt system | T [K] | P [bar] | m [mol/kg] | R/T/U |
 |---|---|---|---|---|---|---|---|
-| `AlGhafri2012` | rho (779) | - | CaCl2, KCl, MgCl2, NaCl | 283-473 | 9-686 | 2.12-18 | 0/779/0 |
-| `Wang2014` | xc_saltfree (370), solubility_molality (370) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, NaCl | 303-353 | 30-300 | 0.54-6 | 50/690/0 |
-| `Susak1980` | solubility_molality (415), xc_saltfree (87) | ch4 | NaCl, pure water | 298-623 | 68.9-1379 | 0-8.54 | 10/492/0 |
-| `Liu2021` | xc_saltfree (217), solubility_molality (217) | co2 | CaCl2, MgCl2, NaCl | 298-373 | 20.4-202.6 | 0.27-0.52 | 0/434/0 |
-| `Ou2015` | xc_saltfree (204), solubility_molality (204) | ch4 | pure water | 275-603 | 50-1400 | 0 | 32/376/0 |
-| `Teymouri2017` | xc_saltfree (191), solubility_molality (191) | co2 | CaCl2, KCl, MgCl2, Na++Cl-+K++Ca2++Mg2+, NaCl | 283-423 | 13.66-595.86 | 2.19-12.9 | 0/382/0 |
-| `Takenouchi1964` | xc_saltfree (108), solubility_molality (108), y_h2o (108) | co2 | pure water | 383-623 | 100-1500 | 0 | 57/267/0 |
-| `Todheide1963` | xc_saltfree (105), solubility_molality (105), y_h2o (105) | co2 | pure water | 323-623 | 200-3500 | 0 | 45/264/6 |
-| `Guo2016` | xc_saltfree (156), solubility_molality (156) | co2 | NaCl | 283-473 | 100-400 | 2-10 | 56/256/0 |
-| `Kiepe2002` | xc_saltfree (139), solubility_molality (139) | co2 | KCl, NaCl | 313-353 | 1.27-105.08 | 1-8.68 | 2/276/0 |
-| `Kobayashi1951` | solubility_molality (136), xc_saltfree (136) | c3h8 | pure water | 288.71-427.59 | 6.895-206.843 | 0 | 0/272/0 |
-| `Umano1958` | solubility_molality (135), xc_saltfree (135) | c3h8 | NaCl, pure water | 273.2-298.2 | 0.0974746-1.02521 | 0-10.63 | 0/260/10 |
-| `Guo2016 (variant)` | xc_saltfree (131), solubility_molality (131) | co2 | pure water | 273-573 | 100-1200 | 0 | 40/222/0 |
-| `Liu2011` | xc_saltfree (123), solubility_molality (123) | co2 | CaCl2, Cl-+K++Ca2+, KCl, Na++Cl-+Ca2+, Na++Cl-+K+, Na++Cl-+K++Ca2+, NaCl | 308-328 | 13.4-160.2 | 1.544-4.899 | 0/246/0 |
+| `Zezin2014b` | rho (1339) | - | CaCl2, MgCl2, Na++Cl-+Ca2+, Na++Cl-+Mg2+ | 298.14-523.17 | 1-700 | 0.23022-18.2133 | 0/1339/0 |
+| `AlGhafri2012` | rho (779) | - | CaCl2, KCl, MgCl2, NaCl | 283.15-472.96 | 9-686 | 2.12-18 | 0/779/0 |
+| `Zezin2014` | rho (740) | - | Na++Cl-+K+, NaCl | 298.09-523.22 | 1-400 | 0.19954-11.6609 | 0/740/0 |
+| `Millero2002b` | solubility_molality (322), xc_saltfree (317) | o2 | MgCl2, MgSO4, Na++Cl-+K++Ca2++Mg2++SO4 2-, Na2SO4, NaCl, pure water | 273.19-318.54 | 0.2171-0.2896 | 0-16.4781 | 70/569/0 |
+| `Debelius2009` | solubility_molality (308), xc_saltfree (308) | o2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 281.15-308.15 | 0.2207-0.2567 | 0-4.90293 | 20/596/0 |
+| `Song2014b` | rho_gas_loaded (459), rho (85) | co2 | pure water | 274.11-413.28 | 99.89-180.16 | 0 | 0/544/0 |
+| `Wang2019` | solubility_molality (504) | co2 | NaCl, pure water | 303.15-353.15 | 30-300 | 0-6 | 86/418/0 |
+| `Susak1980` | solubility_molality (415), xc_saltfree (87) | ch4 | NaCl, pure water | 298.15-623.15 | 68.9-1379 | 0-8.54 | 8/494/0 |
+| `Liu2021` | xc_saltfree (217), solubility_molality (217) | co2 | CaCl2, MgCl2, NaCl | 298-373 | 20.67-202.6 | 0.27-0.52 | 20/414/0 |
+| `Crozier1974` | solubility_molality (210), xc_saltfree (207) | h2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 274.6-303.49 | 1.02-1.0566 | 0-1.32676 | 38/379/0 |
+| `Majer1988` | rho (415) | - | NaCl | 321.57-597.45 | 1-401.6 | 0.00517-10.0928 | 0/415/0 |
+| `Ou2015` | xc_saltfree (204), solubility_molality (204) | ch4 | pure water | 275.15-603.15 | 50-1400 | 0 | 30/378/0 |
+| `Song2013` | rho_gas_loaded (300), rho (100) | co2 | NaCl | 332.26-414.36 | 99.45-180.26 | 2-8 | 0/400/0 |
+| `Zezin2015` | rho (397) | - | Na++Cl-+SO4 2-, Na2SO4 | 298.15-523.16 | 1-700 | 0.29997-10.2995 | 0/397/0 |
+| `Yamamoto1976` | solubility_molality (198), xc_saltfree (196) | ch4 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 273.88-303.16 | 1.0197-1.0557 | 0-1.3078 | 42/352/0 |
+| `Teymouri2017` | xc_saltfree (191), solubility_molality (191) | co2 | CaCl2, KCl, MgCl2, Na++Cl-+K++Ca2++Mg2+, NaCl | 283.15-423.15 | 13.66-595.86 | 2.19-12.9 | 0/382/0 |
+| `Surdo1982` | rho (367) | - | MgCl2, MgSO4, Na2SO4, NaCl | 278.15-318.15 | 1.0132 | 0.02901-16.2792 | 0/367/0 |
+| `Takenouchi1964` | xc_saltfree (108), solubility_molality (108), y_h2o (108) | co2 | pure water | 383.15-623.15 | 100-1500 | 0 | 57/267/0 |
+| `Todheide1963` | xc_saltfree (105), solubility_molality (105), y_h2o (105) | co2 | pure water | 323.15-623.15 | 200-3500 | 0 | 39/262/14 |
+| `Guo2016` | xc_saltfree (156), solubility_molality (156) | co2 | NaCl | 283.15-473.15 | 100-400 | 2-10 | 56/256/0 |
+| `Saluja1995` | rho (304) | - | CaCl2, Cl-+Ca2++Mg2+, MgCl2, Na++Cl-+Ca2+, Na++Cl-+Mg2+, NaCl | 296.02-371.82 | 6 | 0.2152-16.6221 | 0/304/0 |
+| `Kiepe2002` | xc_saltfree (139), solubility_molality (139) | co2 | KCl, NaCl | 313.16-353.4 | 1.2655-105.08 | 1-8.68 | 0/278/0 |
+| `Kobayashi1951` | solubility_molality (136), xc_saltfree (136) | c3h8 | pure water | 288.71-427.59 | 6.895-206.843 | 0 | 14/258/0 |
+| `Umano1958` | solubility_molality (135), xc_saltfree (135) | c3h8 | NaCl, pure water | 273.15-298.15 | 0.0974746-1.02521 | 0-10.63 | 2/258/10 |
+| `Guo2016 (variant)` | xc_saltfree (131), solubility_molality (131) | co2 | pure water | 273.15-573.15 | 100-1200 | 0 | 70/192/0 |
+| `Gates1989` | rho (256) | - | CaCl2 | 323.05-597.45 | 1.01-407.1 | 0.0453-19.2732 | 0/256/0 |
+| `Liu2011` | xc_saltfree (123), solubility_molality (123) | co2 | CaCl2, Cl-+K++Ca2+, KCl, Na++Cl-+Ca2+, Na++Cl-+K+, Na++Cl-+K++Ca2+, NaCl | 308.15-328.15 | 13.4-160.2 | 1.544-4.899 | 0/246/0 |
+| `Morrison1952` | solubility_molality (119), xc_saltfree (119) | c2h4, c2h6, c3h8, ch4, co2, h2, n-c4h10, n2, o2 | pure water | 284.05-349.25 | 1.0132 | 0 | 34/204/0 |
+| `Douglas1965` | solubility_molality (118), xc_saltfree (115) | ar, n2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 274.65-303.14 | 1.0201-1.0557 | 0.911443-1.25709 | 20/213/0 |
+| `Kobayashi1953` | y_h2o (91), xc_saltfree (66), solubility_molality (66) | c3h8 | pure water | 278.872-422.039 | 4.9642-193.26 | 0 | 16/207/0 |
+| `White1987` | Cp_app (223) | - | CaCl2 | 306.21-602.68 | 21.2-178.2 | 0.1521-9.0852 | 0/223/0 |
+| `Wood1984` | psat_ratio (223) | - | CaCl2, KCl, NaCl | 473.15-623.15 | - | 1-20.4 | 0/223/0 |
+| `Call2000` | Cp_app (216) | - | MgCl2 | 278.15-393.15 | 3.5 | 0.02511-2.99553 | 0/216/0 |
 | `Hou2013b` | xc_saltfree (72), solubility_molality (72), y_h2o (72) | co2 | KCl, NaCl | 323.15-423.15 | 26.13-182.15 | 5-8 | 0/204/12 |
-| `Rumpf1993b` | xc_saltfree (90), solubility_molality (90) | co2 | Na2SO4 | 313-433 | 5.13-97.13 | 3-6 | 2/178/0 |
-| `Tong2013` | xc_saltfree (88), solubility_molality (88) | co2 | CaCl2, MgCl2, Na++Cl-+K+ | 308-423 | 10.7-379.9 | 2.106-15 | 6/170/0 |
-| `Kamps2007` | xc_saltfree (85), solubility_molality (85) | co2 | KCl | 313-433 | 4.084-93.95 | 4-8 | 2/168/0 |
-| `OSullivan1970` | solubility_molality (101), xc_saltfree (69) | ch4, n2 | NaCl, pure water | 324.65-398.15 | 101.3-616.056 | 0-8 | 4/166/0 |
-| `Culberson1951` | xc_saltfree (72), solubility_molality (72) | ch4 | pure water | 298-444.26 | 22.3-689.1 | 0 | 4/140/0 |
-| `Price1979` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 427-627 | 35.4-1972.6 | 0 | 6/136/0 |
+| `Marliacy2002` | psat_ratio (209) | - | Na++Cl-+SO4 2- | 298.31-362.26 | - | 0.79488-5.2475 | 0/209/0 |
+| `Crovetto1993` | rho (162), psat_ratio (37) | - | CaCl2, KCl, NaCl | 622.98-642.92 | 148.5-220.6 | 0.5-9.702 | 0/199/0 |
+| `Holmes1996` | phi_osm (192) | - | MgCl2 | 383.05-524.12 | - | 1.2726-11.8497 | 0/192/0 |
+| `Holmes1994b` | phi_osm (182) | - | CaCl2 | 443.92-524.12 | 8.0704-40.4171 | 1.2222-14.4393 | 0/182/0 |
+| `Rumpf1993b` | xc_saltfree (90), solubility_molality (90) | co2 | Na2SO4 | 313.11-433.16 | 5.13-97.13 | 3.033-6.03 | 2/178/0 |
+| `Romankiw1983` | rho (179) | - | CaCl2, KCl, MgCl2, NaCl | 298.15-318.15 | 1.0132 | 1-15.15 | 0/179/0 |
+| `Millero2002` | solubility_molality (89), xc_saltfree (89) | o2 | Cl-+Mg2++SO4 2-, MgCl2, MgSO4, Na++Cl-+Mg2+, Na++Cl-+Mg2++SO4 2-, Na++Cl-+SO4 2-, Na++Mg2++SO4 2-, Na2SO4, pure water | 298.15 | 0.2373 | 0-14.6376 | 60/118/0 |
+| `Tong2013` | xc_saltfree (88), solubility_molality (88) | co2 | CaCl2, MgCl2, Na++Cl-+K+ | 308-424.68 | 10.7-379.9 | 2.106-15 | 0/176/0 |
+| `Oakes1990` | rho (171) | - | CaCl2, Na++Cl-+Ca2+, NaCl | 298.153-308.154 | 1 | 0.142317-19.2372 | 0/171/0 |
+| `Kamps2007` | xc_saltfree (85), solubility_molality (85) | co2 | KCl | 313.1-433.1 | 4.084-93.95 | 3.884-8.1 | 0/170/0 |
+| `OSullivan1970` | solubility_molality (101), xc_saltfree (69) | ch4, n2 | NaCl, pure water | 324.65-398.15 | 101.3-616.056 | 0-8 | 22/148/0 |
+| `Phutela1986` | rho (169) | - | MgSO4, Na2SO4 | 293.84-475.81 | 20-104.1 | 0.1446-0.9909 | 0/169/0 |
+| `Mcbridewright2014` | rho_gas_loaded (98), visc (70) | co2 | pure water | 274.72-449.2 | 150-1008.1 | 0 | 0/168/0 |
+| `Gruszkiewicz2005` | psat_ratio (118), phi_osm (40) | - | CaCl2 | 380.15-523.15 | - | 7.1547-58.2183 | 0/158/0 |
+| `Blanco1999` | y_h2o (152) | c3h8, n2 | pure water | 249.8-283.93 | 1.01-109.61 | 0 | 0/152/0 |
+| `Gates1985` | rho (148) | - | CaCl2, KCl, MgCl2, NaCl | 298.15 | 1.013-407.8 | 0.0936-14.94 | 0/148/0 |
+| `Culberson1951` | xc_saltfree (72), solubility_molality (72) | ch4 | pure water | 298.15-444.26 | 22.2701-689.1 | 0 | 6/138/0 |
+| `Price1979` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 427.15-627.15 | 35.4391-1972.6 | 0 | 6/136/0 |
 | `Sultanov1972` | xc_saltfree (71), solubility_molality (71) | ch4 | pure water | 423-633 | 49-1078.7 | 0 | 12/130/0 |
-| `Kiepe2003` | solubility_molality (112), xc_saltfree (26) | ch4 | KCl, pure water | 313-373 | 3.4-97.9 | 0-8 | 0/138/0 |
-| `Rumpf1993` | xc_saltfree (68), solubility_molality (68) | co2 | NaCl, pure water | 313-433 | 4.7-96.4 | 0-12 | 0/136/0 |
-| `Prutton1945` | xc_saltfree (67), solubility_molality (67) | co2 | CaCl2 | 348-393 | 15-703 | 3-11.7 | 0/134/0 |
-| `Ghafri2013` | rho (126) | - | Na2SO4 | 298-473 | 11-686 | 2.34-4.5 | 0/126/0 |
-| `Muller1988` | xc_saltfree (41), solubility_molality (41), y_h2o (41) | co2 | pure water | 373-473 | 6-78 | 0 | 2/121/0 |
-| `Valtz2004` | xc_saltfree (44), solubility_molality (44), y_h2o (33) | co2 | pure water | 278-318 | 4.65-204 | 0 | 2/119/0 |
+| `Kiepe2003` | solubility_molality (112), xc_saltfree (26) | ch4 | KCl, pure water | 313.15-373.29 | 3.4043-97.9 | 0-8 | 0/138/0 |
+| `Rumpf1993` | xc_saltfree (68), solubility_molality (68) | co2 | NaCl, pure water | 313.14-433.08 | 4.67-96.4 | 0-12 | 2/134/0 |
+| `Prutton1945` | xc_saltfree (67), solubility_molality (67) | co2 | CaCl2 | 348.65-394.15 | 15.199-712.315 | 3.0369-11.7 | 0/134/0 |
+| `Hubert1995b` | psat_ratio (133) | - | NaCl | 294.34-368.07 | - | 2.49-10.846 | 0/133/0 |
+| `Carvalho2015` | xc_saltfree (66), solubility_molality (66) | co2 | pure water | 283.24-363.42 | 3.1-120.8 | 0 | 14/118/0 |
+| `Oakes1995` | rho (131) | - | CaCl2 | 298.04-522.95 | 70.3-417 | 0.7248-18.45 | 0/131/0 |
+| `Wang2014` | xc_saltfree (64), solubility_molality (64) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 318-348 | 80-110 | 0.54-1.637 | 0/128/0 |
+| `Ghafri2013` | rho (126) | - | Na2SO4 | 298.11-473.02 | 11-686 | 2.349-4.5 | 0/126/0 |
+| `Muller1988` | xc_saltfree (41), solubility_molality (41), y_h2o (41) | co2 | pure water | 373.15-473.15 | 5.99-78 | 0 | 4/119/0 |
+| `Luo2021` | psat_ratio (121) | - | CaCl2, MgCl2 | 322.46-373.54 | - | 1.66535-27.1501 | 0/121/0 |
+| `Valtz2004` | xc_saltfree (44), solubility_molality (44), y_h2o (33) | co2 | pure water | 278.22-318.23 | 4.64-204 | 0 | 14/107/0 |
+| `Murray1969b` | solubility_molality (59), xc_saltfree (59) | o2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 273.89-307.95 | 0.2173-0.2562 | 0-1.33624 | 16/102/0 |
+| `Olofsson1984` | dh_sol (117) | ar, c2h6, c3h8, ch4, he, kr, n-c4h10, ne, o2, xe | pure water | 288.07-308.15 | 1.0295-1.0971 | 0 | 0/117/0 |
 | `Tabasinejad2011` | y_h2o (117) | ch4, co2, n2 | pure water | 422.44-483.15 | 36.7-1349 | 0 | 0/117/0 |
-| `Chabab2021` | xc_saltfree (58), solubility_molality (58) | co2, o2 | NaCl | 303.26-373.39 | 30.516-394.477 | 1-12 | 10/96/10 |
-| `CHAPOY2004` | xc_saltfree (55), solubility_molality (55) | c3h8, ch4 | pure water | 275-368.16 | 3.9-179.98 | 0 | 10/100/0 |
+| `Chabab2021` | xc_saltfree (58), solubility_molality (58) | co2, o2 | NaCl | 303.26-373.39 | 30.516-394.477 | 1-12 | 2/104/10 |
+| `Alvarez1988` | xc_saltfree (57), solubility_molality (57) | h2, n2 | pure water | 318.9-636.5 | 4.36-284.5 | 0 | 0/114/0 |
+| `Cosgrove1981` | xc_saltfree (57), solubility_molality (57) | ar, c2h6, cf4, ch4, kr, n2, o2, sf6 | pure water | 278.15-318.15 | 0.5239-1.0132 | 0 | 44/70/0 |
+| `Murray1969` | solubility_molality (54), xc_saltfree (54) | n2, o2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 273.73-303.86 | 1.0196-1.0575 | 0-1.33101 | 28/80/0 |
 | `Zhao2015b` | xc_saltfree (54), solubility_molality (54) | co2 | CaCl2, KCl, MgCl2, Na2SO4 | 323-423 | 150 | 1-9 | 24/84/0 |
-| `Hou2013` | xc_saltfree (36), solubility_molality (36), y_h2o (33) | co2 | pure water | 298-448 | 10.9-175.5 | 0 | 10/83/12 |
-| `Poulain2019` | xc_saltfree (48), solubility_molality (48) | co2 | Na++Cl-+Ca2+, Na++Cl-+K++Ca2+ | 323-423 | 10.1-199.3 | 3-3.2 | 0/96/0 |
-| `Santos2020` | xc_saltfree (48), solubility_molality (48) | co2 | Na2SO4 | 303-423 | 16-201.7 | 3-6 | 14/82/0 |
-| `CulbersonMcKetta1950` | solubility_molality (45), xc_saltfree (45) | c2h6 | pure water | 310.93-444.26 | 50.7-685 | 0 | 0/90/0 |
+| `Hou2013` | xc_saltfree (36), solubility_molality (36), y_h2o (33) | co2 | pure water | 298.15-448.15 | 10.9-175.5 | 0 | 6/87/12 |
+| `Chapoy2004c` | xc_saltfree (52), solubility_molality (52) | n2 | pure water | 274.18-363.02 | 9.15-71.6 | 0 | 0/104/0 |
+| `Saluja1987` | rho (53), Cp_app (51) | - | CaCl2, MgCl2 | 297.19-373.15 | 6 | 0.08928-2.95356 | 0/104/0 |
+| `Chen2020` | psat_ratio (100) | - | KCl, Na++Cl-+K+, NaCl, pure water | 496.65-647.05 | - | 0-8 | 0/100/0 |
+| `Fox1909` | solubility_molality (50), xc_saltfree (50) | n2, o2 | pure water | 273.68-323.44 | 1.0196-1.1386 | 0 | 44/56/0 |
+| `Ahmadi2018` | xc_saltfree (48), solubility_molality (48) | co2 | Na++Cl-+K++Ca2++Mg2+, pure water | 300.95-423.48 | 12.92-420.77 | 0-2.8712 | 6/90/0 |
+| `Poulain2019` | xc_saltfree (48), solubility_molality (48) | co2 | Na++Cl-+Ca2+, Na++Cl-+K++Ca2+ | 323-423 | 10-199.7 | 3-3.2 | 0/96/0 |
+| `Santos2020` | xc_saltfree (48), solubility_molality (48) | co2 | Na2SO4 | 303.15-423.15 | 16-201.7 | 3-6 | 14/82/0 |
+| `Liu1971` | phi_osm (95) | - | MgCl2, MgSO4, NaCl | 348.15-573.15 | 0.3854-85.9027 | 0.8458-20.836 | 0/95/0 |
+| `Crovetto1991` | rho_gas_loaded (94) | co2 | pure water | 651.09-725.51 | 279.8-380.5 | 0 | 0/94/0 |
+| `CulbersonMcKetta1950` | solubility_molality (45), xc_saltfree (45) | c2h6 | pure water | 310.93-444.26 | 50.7-685 | 0 | 2/88/0 |
 | `Jooss2026` | y_h2o (90) | co2 | NaCl, pure water | 308.13-393.22 | 10-700 | 0-5.3146 | 0/90/0 |
-| `Bamberger2000` | xc_saltfree (29), solubility_molality (29), y_h2o (29) | co2 | pure water | 323-353 | 41-141 | 0 | 9/78/0 |
-| `Carroll1998` | xc_saltfree (43), solubility_molality (43) | ch4 | pure water | 298-398 | 1-179.6 | 0 | 12/74/0 |
-| `Chabab2020` | xc_saltfree (42), solubility_molality (42) | co2, h2 | NaCl, pure water | 303-372.78 | 19.884-360.2 | 0-12 | 12/72/0 |
-| `Duffy1961` | solubility_molality (65), xc_saltfree (17) | ch4 | CaCl2, NaCl, pure water | 298-303 | 3.2-74.8 | 0-16.8 | 0/82/0 |
-| `Mohammadi2004eth` | solubility_molality (41), xc_saltfree (41) | c2h6 | pure water | 283.1-343.08 | 3.73-49.52 | 0 | 0/82/0 |
-| `Wiebe1934` | solubility_molality (40), xc_saltfree (40) | h2 | pure water | 273-373 | 25.3-1013.3 | 0 | 8/72/0 |
+| `Lu2008` | xc_saltfree (44), solubility_molality (44) | ch4 | pure water | 276.45-294.55 | 100-400 | 0 | 0/0/88 |
+| `Bamberger2000` | xc_saltfree (29), solubility_molality (29), y_h2o (29) | co2 | pure water | 323.2-353.1 | 40.5-141 | 0 | 45/42/0 |
+| `Wiebe1940` | solubility_molality (42), xc_saltfree (42) | co2 | pure water | 285.15-313.15 | 25.3313-506.625 | 0 | 26/58/0 |
+| `Duffy1961` | solubility_molality (65), xc_saltfree (17) | ch4 | CaCl2, NaCl, pure water | 298.15-303.15 | 3.172-74.8 | 0-16.8 | 0/82/0 |
+| `Mohammadi2004eth` | solubility_molality (41), xc_saltfree (41) | c2h6 | pure water | 283.1-343.08 | 3.73-49.52 | 0 | 2/80/0 |
+| `Shiah1996` | psat_ratio (80) | - | Na++Cl-+Ca2+, Na++Cl-+K+ | 298.15-343.15 | - | 1.934-6.632 | 0/80/0 |
+| `Wiebe1934` | solubility_molality (40), xc_saltfree (40) | h2 | pure water | 273.15-373.15 | 25.3313-1013.3 | 0 | 8/72/0 |
+| `Zawisza1981` | xc_saltfree (33), solubility_molality (33), y_h2o (14) | co2 | pure water | 323.15-473.15 | 1.54-53.89 | 0 | 8/72/0 |
+| `Adeniyi2020` | y_h2o (78) | co2, h2s | pure water | 237.86-298.28 | 41.79-500.97 | 0 | 0/78/0 |
+| `Chapoy2004d` | solubility_molality (39), xc_saltfree (39) | c3h8 | pure water | 288.13-368.16 | 3.9-39.15 | 0 | 0/78/0 |
+| `Gordon1977` | solubility_molality (39), xc_saltfree (39) | h2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 272.8-302.41 | 1.0192-1.0539 | 0-1.29801 | 10/68/0 |
+| `Rettich1981` | xc_saltfree (39), solubility_molality (39) | c2h6, ch4 | pure water | 275.44-328.15 | 0.5074-1.1831 | 0 | 4/74/0 |
+| `King1971` | y_h2o (77) | c2h6, co2, n2o | pure water | 298.15-373.15 | 17.3266-51.4731 | 0 | 0/77/0 |
 | `Jung1971` | solubility_molality (38), xc_saltfree (38) | h2 | pure water | 373-573 | 21-100 | 0 | 2/74/0 |
-| `Olds1942` | y_h2o (76) | ch4 | pure water | 311-511 | 26.7-688.8 | 0 | 5/71/0 |
-| `PitzerMayorga1973` | phi_osm (75) | - | CaCl2, KCl, MgCl2, Na2SO4, NaCl | 298.15 | 1 | 0.02-13.5 | 75/0/0 |
-| `Nighswander1989` | xc_saltfree (37), solubility_molality (37) | co2 | NaCl, pure water | 353-473 | 20.4-102 | 0-0.34 | 6/68/0 |
-| `Bando2003` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 303-333 | 100-200 | 0.34-1.04 | 0/72/0 |
-| `Messabeb2016` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323-423 | 49.9-202.3 | 2-12 | 24/48/0 |
-| `Messabeb2017` | xc_saltfree (36), solubility_molality (36) | co2 | CaCl2 | 323-423 | 50.4-200.4 | 3-18 | 6/66/0 |
-| `Yan2011` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323-413 | 50-400 | 2-10 | 30/42/0 |
-| `Portier2005` | xc_saltfree (35), solubility_molality (35) | co2 | Na++Cl-+K++Ca2++Mg2+ | 291.15-353 | 80-120 | 1.019 | 0/70/0 |
-| `Qin2008` | xc_saltfree (37), y_h2o (22), solubility_molality (7) | ch4, co2, co2-ch4 | pure water | 323-376 | 105-500 | 0 | 4/62/0 |
-| `Santos2021` | xc_saltfree (33), solubility_molality (33) | co2 | MgCl2 | 323-423 | 16-202.9 | 3-15 | 12/54/0 |
-| `Frost2014` | xc_saltfree (21), solubility_molality (21), y_h2o (21) | ch4 | pure water | 283-323 | 47.8-194.9 | 0 | 2/61/0 |
-| `STOESSELL1982` | solubility_molality (60), xc_saltfree (3) | ch4 | CaCl2, KCl, MgCl2, MgSO4, Na2SO4, NaCl, pure water | 298 | 24.1-51.7 | 0-8 | 0/63/0 |
+| `Olds1942` | y_h2o (76) | ch4 | pure water | 310.93-510.93 | 26.7-688.8 | 0 | 5/70/1 |
+| `Sako1985` | psat_ratio (76) | - | CaCl2, Cl-+Ca2++Mg2+, MgCl2 | 322.5-402.7 | - | 2.8704-15.006 | 0/76/0 |
+| `Fabuss1966` | psat_ratio (75) | - | KCl, MgSO4, Na2SO4, NaCl | 348.15-423.15 | - | 0.10014-7.1826 | 0/75/0 |
+| `PitzerMayorga1973` | phi_osm (75) | - | CaCl2, KCl, MgCl2, Na2SO4, NaCl | 298.15 | 1 | 0.02-13.5 | 0/75/0 |
+| `Chabab2020` | xc_saltfree (37), solubility_molality (37) | h2 | NaCl, pure water | 323.18-372.78 | 19.884-229.72 | 0-10 | 2/72/0 |
+| `Kennan1990` | xc_saltfree (37), solubility_molality (37) | ar, kr, n2, xe | pure water | 298.15 | 4.8862-117.366 | 0 | 0/74/0 |
+| `Nighswander1989` | xc_saltfree (37), solubility_molality (37) | co2 | NaCl, pure water | 352.85-473.65 | 20.4-102 | 0-0.345672 | 4/70/0 |
+| `Bando2003` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 303.15-333.15 | 100-200 | 0.342181-1.0584 | 0/72/0 |
+| `Carroll1998` | xc_saltfree (36), solubility_molality (36) | ch4 | pure water | 298.15-373.15 | 0.97-179.6 | 0 | 10/62/0 |
+| `Messabeb2016` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323.15-423.15 | 49.9-202.3 | 2-12 | 22/50/0 |
+| `Messabeb2017` | xc_saltfree (36), solubility_molality (36) | co2 | CaCl2 | 323.15-423.15 | 50.4-200.4 | 3-18 | 6/66/0 |
+| `Yan2011` | xc_saltfree (36), solubility_molality (36) | co2 | NaCl | 323.2-413.2 | 50-400 | 2-10 | 30/42/0 |
+| `Portier2005` | xc_saltfree (35), solubility_molality (35) | co2 | Na++Cl-+K++Ca2++Mg2+ | 291.15-353.15 | 80-120 | 1.019 | 0/70/0 |
+| `Mohammadian2015` | solubility_molality (69) | co2 | NaCl, pure water | 333.15-353.15 | 1-213 | 0-0.516 | 17/46/6 |
+| `Granttaylor1981` | rho (68) | - | NaCl | 446.18-627.38 | 200 | 0.2-8 | 0/68/0 |
+| `Zheng1997` | xc_saltfree (34), solubility_molality (34) | c2h2f4, c2h4f2, chclf2, chf3, co2 | pure water | 278.15-338.21 | 0.3667-0.9306 | 0 | 0/68/0 |
+| `Pabalan1988` | Cp_app (67) | - | Na2SO4 | 413.53-572.74 | 200 | 0.15-4.5024 | 0/67/0 |
+| `Qin2008` | xc_saltfree (37), y_h2o (22), solubility_molality (7) | ch4, co2, co2-ch4 | pure water | 324.2-376.2 | 105-506 | 0 | 4/62/0 |
+| `Santos2021` | xc_saltfree (33), solubility_molality (33) | co2 | MgCl2 | 323.15-423.15 | 16-202.9 | 3-15 | 6/60/0 |
+| `Rettich2000` | xc_saltfree (32), solubility_molality (32) | o2 | pure water | 274.147-328.142 | 0.7189-1.1968 | 0 | 8/56/0 |
+| `Frost2014` | xc_saltfree (21), solubility_molality (21), y_h2o (21) | ch4 | pure water | 283.89-323.56 | 47.8-194.9 | 0 | 4/58/1 |
+| `Kumar1986` | rho (63) | - | CaCl2 | 323.15-473.15 | 20.27 | 1.5117-19.3167 | 0/63/0 |
+| `STOESSELL1982` | solubility_molality (60), xc_saltfree (3) | ch4 | CaCl2, KCl, MgCl2, MgSO4, Na2SO4, NaCl, pure water | 298.15 | 24.1317-51.7 | 0-8 | 0/63/0 |
 | `Jacob2016` | xc_saltfree (31), solubility_molality (31) | co2 | KCl, MgCl2, NaCl | 297 | 17.2-169.5 | 1.2-8 | 0/62/0 |
-| `King1992` | y_h2o (26), xc_saltfree (18), solubility_molality (18) | co2 | pure water | 288-313 | 51.7-243.2 | 0 | 10/52/0 |
+| `King1992` | y_h2o (26), xc_saltfree (18), solubility_molality (18) | co2 | pure water | 288.15-313.15 | 51.7-243.2 | 0 | 14/48/0 |
+| `Zirrahi2016` | y_h2o (62) | c2h6, c3h8, ch4 | pure water | 373.15-493.15 | 11.4-60.7 | 0 | 0/62/0 |
 | `Culbersonhorn1950` | solubility_molality (30), xc_saltfree (30) | c2h6 | pure water | 310.93-444.26 | 4.1-83.8 | 0 | 0/60/0 |
-| `Michels1936` | xc_saltfree (30), solubility_molality (30) | ch4 | pure water | 298-398 | 40.6-212.2 | 0 | 2/52/6 |
-| `Meyer2015` | y_h2o (58) | co2 | pure water | 283-353 | 5-50 | 0 | 58/0/0 |
-| `Takenouchi1965` | xc_saltfree (27), solubility_molality (27) | co2 | NaCl | 423-473 | 100-1200 | 2.18-8.54 | 0/54/0 |
-| `Koschel2006` | dh_sol (22), xc_saltfree (14), solubility_molality (14) | co2 | NaCl, pure water | 323-373.1 | 20.6-202.4 | 0-6 | 6/44/0 |
-| `Chabab2024` | solubility_molality (39), xc_saltfree (9) | h2 | NaCl, pure water | 298-373 | 100-200.5 | 0-8 | 8/40/0 |
+| `Lucile2012` | xc_saltfree (30), solubility_molality (30) | co2 | pure water | 298.15-393.15 | 5.4-51.4 | 0 | 2/58/0 |
+| `Michels1936` | xc_saltfree (30), solubility_molality (30) | ch4 | pure water | 298.15-398.15 | 40.6-212.2 | 0 | 2/52/6 |
+| `Rogers1981` | Cp_app (60) | - | Na2SO4 | 304.62-474.68 | 1.01-200 | 0.15-7.8882 | 0/60/0 |
+| `An1978` | psat_ratio (59) | - | Na++Cl-+Ca2+, Na++Cl-+Mg2+ | 298.15 | - | 4.8695-14.7806 | 0/59/0 |
+| `Yarrison2006b` | y_h2o (59) | c2h6, ch4 | pure water | 310.9-477.5 | 34.5-1103.2 | 0 | 0/59/0 |
+| `Meyer2015` | y_h2o (58) | co2 | pure water | 283.15-353.15 | 5-50.055 | 0 | 58/0/0 |
+| `Wiebe1939` | solubility_molality (29), xc_saltfree (29) | co2 | pure water | 323.15-373.15 | 25.3313-709.275 | 0 | 14/44/0 |
+| `Han2009` | xc_saltfree (28), solubility_molality (28) | co2 | pure water | 313.2-343.2 | 43.3-183.4 | 0 | 30/26/0 |
+| `Chapoy2003b` | y_h2o (54) | c2h6 | pure water | 278.08-303.11 | 3.23-46.3 | 0 | 0/54/0 |
+| `Chapoy2004b` | xc_saltfree (27), solubility_molality (27) | co2 | pure water | 274.14-351.31 | 1.9-93.33 | 0 | 2/52/0 |
+| `Ellis1967` | rho (54) | - | CaCl2, MgCl2 | 348.15-473.15 | 20.265 | 0.15-3 | 0/54/0 |
+| `Saddington1934` | solubility_molality (18), xc_saltfree (18), y_h2o (18) | n2 | pure water | 323.15-513.15 | 101.325-303.975 | 0 | 0/54/0 |
+| `Takenouchi1965` | xc_saltfree (27), solubility_molality (27) | co2 | NaCl | 423.15-473.15 | 100-1200 | 2.18-8.54 | 0/54/0 |
+| `Song1987` | y_h2o (53) | co2 | pure water | 245.15-304.21 | 6.9-137.9 | 0 | 0/53/0 |
+| `Bermejo2005` | xc_saltfree (26), solubility_molality (26) | co2 | pure water | 296.73-369.65 | 15.5-83.4 | 0 | 4/48/0 |
+| `Folas2007` | y_h2o (52) | ch4, n2 | pure water | 253.15-293.15 | 5-200 | 0 | 0/52/0 |
+| `Koschel2006` | dh_sol (22), xc_saltfree (14), solubility_molality (14) | co2 | NaCl, pure water | 323.1-373.1 | 20.6-202.4 | 0-6 | 4/46/0 |
+| `Chabab2024` | solubility_molality (39), xc_saltfree (9) | h2 | NaCl, pure water | 298-373.85 | 100-200.51 | 0-8 | 8/40/0 |
+| `Rogers1982` | rho (48) | - | NaCl | 348.15-473.15 | 20.27 | 0.106-8.7866 | 0/48/0 |
+| `Teng1997` | xc_saltfree (24), solubility_molality (24) | co2 | pure water | 278-293 | 64.4-294.9 | 0 | 26/22/0 |
 | `Zhao2015c` | xc_saltfree (24), solubility_molality (24) | co2 | Na++Cl-+K++Ca2++Mg2+, Na++Cl-+K++Ca2++Mg2++SO4 2- | 323-423 | 100-175 | 2.798-8.009 | 0/48/0 |
-| `Bastami2014` | xc_saltfree (22), solubility_molality (22) | co2 | CaCl2 | 328-375.15 | 68.9-206.9 | 5.7-14.4 | 0/44/0 |
+| `Mokraoui2007` | xc_saltfree (23), solubility_molality (23) | c2h6, c3h8, i-c4h10, n-c4h10 | pure water | 288.33-363.19 | 3.544-46.146 | 0 | 4/42/0 |
+| `Bastami2014` | xc_saltfree (22), solubility_molality (22) | co2 | CaCl2 | 328.15-375.15 | 68.9-206.9 | 5.7-14.4 | 0/44/0 |
+| `Caumon2016` | solubility_molality (22), y_h2o (21) | co2 | pure water | 338.15-373.15 | 3-201 | 0 | 0/0/43 |
 | `Chabab2019` | xc_saltfree (21), solubility_molality (21) | co2 | NaCl | 322.97-373.41 | 16.983-229.817 | 2-6.02 | 2/40/0 |
 | `Ipatev1934` | solubility_molality (21), xc_saltfree (21) | h2 | pure water | 373-498 | 31-118 | 0 | 2/40/0 |
-| `Wang1995` | xc_saltfree (21), solubility_molality (21) | ch4 | pure water | 283-298 | 11.3-51.8 | 0 | 2/40/0 |
-| `CHAPOY2003` | y_h2o (39) | ch4 | pure water | 283-318 | 9.92-346.1 | 0 | 2/35/2 |
-| `Yarrison2006` | y_h2o (37) | ch4 | pure water | 311-478 | 34.5-1103.2 | 0 | 5/32/0 |
-| `Zhao2015` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 323-423 | 150 | 2-12 | 20/16/0 |
+| `Nasirzadeh2004` | psat_ratio (42) | - | NaCl | 298.15-363.15 | - | 2.1368-7.1428 | 0/42/0 |
+| `Servio2001` | xc_saltfree (21), solubility_molality (21) | co2 | pure water | 273.95-283.15 | 20-60 | 0 | 0/42/0 |
+| `Wang1995` | xc_saltfree (21), solubility_molality (21) | ch4 | pure water | 283.15-298.15 | 11.3-51.8 | 0 | 2/40/0 |
+| `Mohammadi2025` | rho (26), visc (15) | - | Na++Cl-+Ca2+, NaCl | 303-333 | 1-303.7 | 5.53-8.56 | 0/41/0 |
+| `He2021` | xc_saltfree (20), solubility_molality (20) | co2 | pure water | 293.15-348.15 | 52.2-382.6 | 0 | 8/32/0 |
+| `Pabalan1988b` | Cp_app (40) | - | KCl | 412.99-572.5 | 200 | 0.1-6.002 | 0/40/0 |
+| `Reamer1943` | y_h2o (40) | c2h6 | pure water | 310.928-510.928 | 22.1184-682.326 | 0 | 0/40/0 |
+| `CHAPOY2003` | y_h2o (39) | ch4 | pure water | 283.08-318.12 | 9.92-346.1 | 0 | 2/35/2 |
+| `Liu1970` | phi_osm (38) | - | NaCl | 398.15-573.15 | 2.3224-85.879 | 0.2026-2.1486 | 0/38/0 |
+| `Rigby1968` | y_h2o (37) | ar, ch4, n2 | pure water | 298.15-373.15 | 20.3663-101.517 | 0 | 0/37/0 |
+| `Yarrison2006` | y_h2o (37) | ch4 | pure water | 310.9-477.5 | 34.5-1103.2 | 0 | 5/32/0 |
+| `Dec1984b` | dh_sol (36) | o2 | pure water | 298.15 | 0.8898-0.9087 | 0 | 0/36/0 |
+| `Zhao2015` | xc_saltfree (18), solubility_molality (18) | co2 | NaCl | 323.15-423.15 | 150 | 2-12 | 20/16/0 |
 | `Mohammadi2005` | y_h2o (35) | n2 | pure water | 282.86-363.08 | 4.25-49.62 | 0 | 0/35/0 |
-| `Wang2003` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 283-303 | 20-400.3 | 0 | 0/34/0 |
-| `Gillespie1980` | solubility_molality (16), xc_saltfree (16) | h2 | pure water | 311-589 | 3.4-137.9 | 0 | 0/32/0 |
-| `AlGhafri2014` | xc_saltfree (20), y_h2o (10) | ch4, co2, co2-ch4 | pure water | 323-423 | 20-180 | 0 | 0/30/0 |
-| `Blanco1978` | solubility_molality (30) | ch4 | CaCl2 | 298-398 | 101.3-607.8 | 3 | 0/30/0 |
-| `Campos2010` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 303-323 | 1.824-6.383 | 0 | 0/30/0 |
+| `Wiebe1941` | y_h2o (35) | co2 | pure water | 298.15-348.15 | 25.3313-709.275 | 0 | 0/35/0 |
+| `Parisod1981` | psat_ratio (34) | - | NaCl | 573.15-633.15 | - | 2.18435-20.797 | 0/34/0 |
+| `Rettich1984` | xc_saltfree (17), solubility_molality (17) | n2 | pure water | 278.124-323.15 | 0.4589-1.1551 | 0 | 10/24/0 |
+| `Sabirzyanov2003` | xc_saltfree (17), solubility_molality (17) | co2 | pure water | 298.15-423.15 | 100-800 | 0 | 4/30/0 |
+| `Wang2003` | xc_saltfree (17), solubility_molality (17) | ch4 | pure water | 283.2-303.2 | 20-400.3 | 0 | 8/26/0 |
+| `CHAPOY2004` | xc_saltfree (16), solubility_molality (16) | ch4 | pure water | 275.11-313.11 | 9.73-179.98 | 0 | 8/24/0 |
+| `Claussen1952` | solubility_molality (16), xc_saltfree (16) | c2h6, c3h8, ch4, n-c4h10 | pure water | 274.65-312.85 | 1.0201-1.0859 | 0 | 12/20/0 |
+| `Gillespie1980` | solubility_molality (16), xc_saltfree (16) | h2 | pure water | 310.928-588.706 | 3.44738-137.9 | 0 | 0/32/0 |
+| `Laracruz2020` | solubility_molality (32) | co2 | CaCl2, Na++Cl-+Ca2+, NaCl, pure water | 323.15-453.15 | 50.7-400.8 | 0-3 | 7/25/0 |
+| `AlGhafri2014` | xc_saltfree (20), y_h2o (10) | ch4, co2, co2-ch4 | pure water | 323.15-423.15 | 19.11-180 | 0 | 0/30/0 |
+| `Bhatnagar1982` | phi_osm (30) | - | Na2SO4 | 423.15-523.15 | - | 0.8655-9.546 | 0/30/0 |
+| `Blanco1978` | solubility_molality (30) | ch4 | CaCl2 | 298.15-398.15 | 101.3-607.8 | 3 | 0/30/0 |
+| `Campos2010` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 303.2-323.2 | 1.824-6.383 | 0 | 0/0/30 |
 | `dosSantos2021` | solubility_molality (30) | co2 | Na++Cl-+SO4 2-, NaCl | 303.15-423.15 | 15.3-201.8 | 9-12 | 1/29/0 |
-| `Lekvam1997` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 275-286 | 5.67-90.82 | 0 | 0/30/0 |
-| `Botger2016` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 283-298 | 11.51-103.6 | 0 | 0/28/0 |
-| `Gao1997` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 323-375 | 56-580 | 0 | 4/24/0 |
+| `Lekvam1997` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 274.28-285.68 | 5.67-90.82 | 0 | 0/30/0 |
+| `Mcgee1981` | solubility_molality (30) | ch4 | NaCl, pure water | 464.75-565.45 | 102.4-179.8 | 0-8.55537 | 0/30/0 |
+| `Servio2001b` | xc_saltfree (15), solubility_molality (15) | ch4 | pure water | 274.15-284.35 | 35-65 | 0 | 4/26/0 |
+| `Weiss1974` | solubility_molality (15), xc_saltfree (15) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2-, pure water | 279.74-293.78 | 1.023-1.0376 | 0-1.16838 | 0/30/0 |
+| `Botger2016` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 283.14-298.15 | 11.51-103.6 | 0 | 0/28/0 |
+| `Gao1997` | xc_saltfree (14), solubility_molality (14) | ch4 | pure water | 324.15-375.15 | 56-580 | 0 | 10/18/0 |
+| `Leopold1927` | psat_ratio (28) | - | K2SO4, KCl, Na2SO4, NaCl | 292.05-325.45 | - | 1.8768-12.554 | 0/28/0 |
+| `Adeniyi2020b` | y_h2o (27) | c3h8 | pure water | 241.95-276.12 | 10.81-401.32 | 0 | 0/27/0 |
+| `Dhima1998` | xc_saltfree (13), solubility_molality (13) | c2h6, ch4, n-c4h10 | pure water | 344.15 | 100-1000 | 0 | 2/24/0 |
+| `Gaudette2007` | xc_saltfree (13), solubility_molality (13) | c3h8 | pure water | 274.16-276.21 | 1.5-3.58 | 0 | 0/26/0 |
 | `Schlaikjer2018` | phi_osm (26) | - | Na2SO4 | 373.15 | 1.5 | 0.462-6.51 | 0/26/0 |
+| `Serra2006` | solubility_molality (13), xc_saltfree (13) | ch4 | pure water | 293.15-323.15 | 1.0366-1.1368 | 0 | 10/16/0 |
+| `Pereda2009` | xc_saltfree (12), solubility_molality (12) | c-c6h12, i-c8h18, n-c6h14 | pure water | 298.09-353.16 | 4.4-5.03 | 0 | 0/24/0 |
+| `Laracruz2019` | solubility_molality (23) | co2 | pure water | 333.15 | 100 | 0 | 0/23/0 |
+| `Anthony1967` | y_h2o (22) | c2h4, c2h6 | pure water | 310.872-377.706 | 34.2463-346.648 | 0 | 0/22/0 |
+| `Dec1985` | dh_sol (22) | 1-c4h8, c-c3h6, c2h2, c2h4, c2h6, c3h6, c3h8, ch4, i-c4h10, n-c4h10, neo-c5h12 | pure water | 288.15-308.15 | - | 0 | 0/22/0 |
+| `Gardner1963` | phi_osm (22) | - | NaCl | 395.55-543.35 | 2.1501-55.0853 | 2-6.05 | 0/22/0 |
 | `Mohammadi2004` | y_h2o (22) | c2h6, ch4 | pure water | 282.93-313.12 | 5.06-29.9 | 0 | 0/22/0 |
-| `Sachs1995` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 4.4-468.5 | 0 | 4/18/0 |
-| `Sako1991` | y_h2o (8), xc_saltfree (7), solubility_molality (7) | co2 | pure water | 348-423 | 101.8-209.4 | 0 | 4/18/0 |
-| `Yang2001` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298 | 23.3-126.8 | 0 | 2/20/0 |
-| `Briones1987` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | co2 | pure water | 323 | 68.2-176.8 | 0 | 8/13/0 |
-| `Chapoy2005` | y_h2o (21) | ch4 | pure water | 278-298 | 4.91-43.74 | 0 | 2/19/0 |
+| `Sachs1995` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298.15 | 4.379-468.5 | 0 | 4/18/0 |
+| `Sako1991` | y_h2o (8), xc_saltfree (7), solubility_molality (7) | co2 | pure water | 348.2-421.4 | 101.8-209.4 | 0 | 2/20/0 |
+| `Song1997` | xc_saltfree (11), solubility_molality (11) | c2h6, ch4 | pure water | 273.15-288.15 | 6.6-34.5 | 0 | 0/0/22 |
+| `Yang2001` | xc_saltfree (11), solubility_molality (11) | ch4 | pure water | 298.1 | 23.3-126.8 | 0 | 2/20/0 |
+| `Briones1987` | xc_saltfree (7), solubility_molality (7), y_h2o (7) | co2 | pure water | 323.15 | 68.2-176.8 | 0 | 8/13/0 |
+| `Chapoy2005` | y_h2o (21) | ch4 | pure water | 277.8-297.9 | 4.91-43.74 | 0 | 2/19/0 |
 | `Haas1976` | psat_ratio (21) | - | NaCl | 373.15-523.15 | - | 2-12 | 21/0/0 |
-| `Corti1990` | xc_saltfree (10), solubility_molality (10) | co2 | Na2SO4 | 323-348 | 37.9-145.1 | 3-8.1 | 0/20/0 |
-| `Torin2021` | solubility_molality (15), xc_saltfree (5) | h2 | NaCl, pure water | 323-423 | 112.4-458.1 | 0-5 | 0/20/0 |
+| `Corti1990` | xc_saltfree (10), solubility_molality (10) | co2 | Na2SO4 | 323.15-348.15 | 37.9-145.1 | 2.85-8.16 | 0/20/0 |
+| `Torin2021` | solubility_molality (15), xc_saltfree (5) | h2 | NaCl, pure water | 323.15-423.15 | 112.4-458.1 | 0-5 | 0/20/0 |
+| `Randall1929` | Cp_app (19) | - | NaCl | 298.15 | - | 0.081-4.5922 | 0/19/0 |
 | `Devaney1978` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 366-589 | 13.8-110.3 | 0 | 0/18/0 |
-| `Dhima1999` | xc_saltfree (18) | ch4, co2 | pure water | 344 | 100-1000 | 0 | 0/18/0 |
-| `Kling1991` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323-423 | 31.8-153.7 | 0 | 2/16/0 |
-| `Pray1952` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323-589 | 6.9-24.1 | 0 | 0/18/0 |
-| `Yokoyama1988` | xc_saltfree (6), solubility_molality (6), y_h2o (6) | ch4 | pure water | 298-323 | 30-80 | 0 | 0/18/0 |
-| `Amirijafari1972` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 311-343 | 41.4-344.7 | 0 | 2/14/0 |
-| `Awan2010` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 298-313 | 9.93-99.81 | 0 | 8/8/0 |
+| `Dhima1999` | xc_saltfree (18) | ch4, co2 | pure water | 344.15 | 100-1000 | 0 | 0/18/0 |
+| `Kling1991` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 323.15-423.15 | 31.8-153.7 | 0 | 2/16/0 |
+| `Naim1963` | solubility_molality (9), xc_saltfree (9) | ar | pure water | 276.05-301.05 | 1.0132 | 0 | 6/12/0 |
+| `Pray1952` | solubility_molality (9), xc_saltfree (9) | h2 | pure water | 324.817-588.706 | 6.9-24.1 | 0 | 0/18/0 |
+| `Scheuermann2020` | solubility_molality (18) | h2 | KCl | 673.15-773.15 | 215-510 | 0.026-2.024 | 0/18/0 |
+| `Wiebe1932` | solubility_molality (9), xc_saltfree (9) | n2 | pure water | 298.15 | 25.3313-1013.25 | 0 | 0/18/0 |
+| `Yokoyama1988` | xc_saltfree (6), solubility_molality (6), y_h2o (6) | ch4 | pure water | 298.15-323.15 | 30-80 | 0 | 0/18/0 |
+| `Apelblat1998` | psat_ratio (17) | - | KCl, pure water | 298.15-314.3 | - | 0-8.0394 | 0/17/0 |
+| `Gill1982` | dh_sol (17) | o2 | pure water | 298.15 | 0.9823-1.027 | 0 | 0/17/0 |
+| `Amirijafari1972` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 310.928-344.261 | 41.4-344.7 | 0 | 4/12/0 |
+| `Awan2010` | xc_saltfree (8), solubility_molality (8) | ch4 | pure water | 298.77-314.28 | 9.93-99.81 | 0 | 4/10/2 |
+| `Perron1974` | Cp_app (16) | - | CaCl2, MgCl2 | 298.15 | - | 0.03768-1.02288 | 0/16/0 |
+| `Burgass2021` | y_h2o (14) | ch4, n2 | pure water | 274.1-283.1 | 3.6-568.4 | 0 | 0/14/0 |
+| `Crovetto1982` | xc_saltfree (7), solubility_molality (7) | ch4 | pure water | 297.5-518.3 | 13.27-64.51 | 0 | 0/14/0 |
+| `Pearce1937` | psat_ratio (14) | - | K2SO4, Na2SO4, pure water | 298.15 | - | 0-5.8923 | 0/14/0 |
+| `Sabirzyanov2002` | y_h2o (14) | co2 | pure water | 313-323 | 83.1-205.4 | 0 | 0/14/0 |
+| `Chapoy2012` | y_h2o (13) | co2 | pure water | 253.15-277.15 | 137.9 | 0 | 0/13/0 |
 | `Maribo2013` | eps_r (13) | - | NaCl, pure water | 298.15 | 1 | 0-11 | 0/13/0 |
-| `Dsouza1988` | xc_saltfree (4), solubility_molality (4), y_h2o (4) | co2 | pure water | 323-348 | 101.3-152 | 0 | 3/9/0 |
-| `Elmaghraby2012` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K+ | 306-343 | 3.4-90 | 1.98 | 0/12/0 |
-| `Kim2003` | xc_saltfree (6), solubility_molality (6) | ch4 | pure water | 298 | 23-166 | 0 | 0/12/0 |
-| `Li2004` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 333 | 17.6-208.7 | 3.012 | 0/12/0 |
-| `Savary2012` | xc_saltfree (6), solubility_molality (6) | co2 | NaCl | 423 | 125-305 | 4 | 0/12/0 |
-| `Tong2013 (variant)` | xc_saltfree (5), solubility_molality (5) | co2 | pure water | 373 | 72.1-272.6 | 0 | 2/8/0 |
-| `Dohrn1993` | xc_saltfree (3), solubility_molality (3), y_h2o (3) | co2 | pure water | 323 | 101-301 | 0 | 3/6/0 |
+| `Naghibi1986` | dh_sol (13) | ch4 | pure water | 273.24-323.17 | - | 0 | 0/13/0 |
+| `Dsouza1988` | xc_saltfree (4), solubility_molality (4), y_h2o (4) | co2 | pure water | 323.15-348.15 | 101.3-152 | 0 | 3/9/0 |
+| `Elmaghraby2012` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K+ | 306.15-343.15 | 3.4-90 | 1.98 | 0/12/0 |
+| `Kim2003` | xc_saltfree (6), solubility_molality (6) | ch4 | pure water | 298.15 | 23-166 | 0 | 0/12/0 |
+| `Li2004` | xc_saltfree (6), solubility_molality (6) | co2 | Na++Cl-+K++Ca2++Mg2++SO4 2- | 332.15 | 17.6-208.7 | 2.9623 | 0/12/0 |
+| `Markham1941` | solubility_molality (6), xc_saltfree (6) | co2, n2o | pure water | 273.35-313.15 | 1.0195-1.0871 | 0 | 0/12/0 |
+| `Osullivan1966` | xc_saltfree (6), solubility_molality (6) | n2 | pure water | 324.65 | 101.325-607.95 | 0 | 12/0/0 |
+| `Savary2012` | xc_saltfree (6), solubility_molality (6) | co2 | NaCl | 393.15 | 125-305 | 4 | 0/12/0 |
+| `Song2014` | y_h2o (12) | co2 | pure water | 304.15-323.15 | 68.9-127.5 | 0 | 0/12/0 |
+| `Stewart1970` | solubility_molality (12) | co2 | pure water | 273.15-298.15 | 10.1325-45.5962 | 0 | 0/12/0 |
+| `Sun2023` | xc_saltfree (6), solubility_molality (6) | ch4 | pure water | 293.2 | 60-210 | 0 | 8/4/0 |
+| `Truche2016` | solubility_molality (12) | co2 | NaCl, pure water | 473.15-553.15 | 29-132 | 0-2.8 | 1/11/0 |
+| `Dec1984` | dh_sol (11) | 1-c4h8, c-c3h6, c2h2, c2h4, c2h6, c3h6, c3h8, ch4, i-c4h10, n-c4h10, neo-c5h12 | pure water | 298.15 | - | 0 | 0/11/0 |
+| `Anderson1962` | xc_saltfree (5), solubility_molality (5) | o2 | pure water | 373.15-473.15 | 19.2835-30.0283 | 0 | 0/10/0 |
+| `Smith1962` | xc_saltfree (5), solubility_molality (5) | n2 | pure water | 303.15 | 11.0316-58.9502 | 0 | 0/10/0 |
+| `Tong2013 (variant)` | xc_saltfree (5), solubility_molality (5) | co2 | pure water | 374.15-374.99 | 72.1-272.6 | 0 | 0/10/0 |
+| `Dohrn1993` | xc_saltfree (3), solubility_molality (3), y_h2o (3) | co2 | pure water | 323.15 | 101-301 | 0 | 3/6/0 |
+| `Robinson1968` | phi_osm (9) | - | CaCl2 | 298.15 | - | 1.4844-6.3585 | 0/9/0 |
 | `Torres2026` | y_h2o (9) | h2 | pure water | 273.15-283.15 | 8.8-249.5 | 0 | 0/9/0 |
-| `Addicks2002` | xc_saltfree (4), solubility_molality (4) | ch4 | pure water | 298 | 73.6-178.2 | 0 | 2/6/0 |
+| `Addicks2002` | xc_saltfree (4), solubility_molality (4) | ch4 | pure water | 298.15 | 73.6-178.2 | 0 | 2/6/0 |
+| `Marcus1990` | psat_ratio (8) | - | Na++Cl-+K++Ca2++Mg2+ | 303.15-318.15 | - | 14.05-16.2 | 0/8/0 |
+| `Rard1981` | phi_osm (8) | - | MgCl2, MgSO4 | 298.15 | - | 0.327-0.6296 | 0/8/0 |
 | `Song1994` | y_h2o (8) | c2h6, c3h8 | pure water | 281.95-303.75 | 6.21-47.14 | 0 | 0/8/0 |
-| `Dohrn1986` | solubility_molality (1), xc_saltfree (1) | h2 | pure water | 523 | 200 | 0 | 0/2/0 |
+| `Uusikyyny2016` | xc_saltfree (4), solubility_molality (4) | c3h8 | pure water | 323.13-323.41 | 4.75-15.48 | 0 | 0/8/0 |
+| `Yasunishi1977` | solubility_molality (4), xc_saltfree (4) | n2, o2 | pure water | 288.15-308.15 | 1.0303-1.0695 | 0 | 8/0/0 |
+| `Marcus1988` | psat_ratio (7) | - | Cl-+K++Mg2+, Na++Cl-+K++Ca2++Mg2+ | 298.15 | - | 9.81-16.92 | 0/7/0 |
+| `Brunner1994` | y_h2o (4) | co2 | pure water | 473.15-573.15 | 101-301 | 0 | 0/4/0 |
+| `Wang2013` | y_h2o (4) | co2 | pure water | 313.15-373.15 | 91.1925 | 0 | 0/4/0 |
+| `Jackson1995` | y_h2o (2) | co2 | pure water | 323.15-348.15 | 344.8 | 0 | 0/2/0 |
+| `Loring2017` | y_h2o (2) | ch4, co2 | pure water | 323.2 | 90 | 0 | 0/2/0 |
 
 ## Source-key corrections
 
@@ -304,9 +600,11 @@ for; it is reproduced verbatim in the first column.
 | `Hou2013_JSCF78_T3` | 72 | `HOU(2013b)` | the key names the volume and then resolves to the wrong paper. `JSCF78` is J. Supercrit. Fluids volume 78, which is Hou, Maitland & Trusler's *brine* paper (Hou2013b); volume 73 is the same group's CO2 + H2O binary (Hou2013), and without the `b` these rows were being cited as the binary. They are CO2 in 2.5 and 4 mol/kg NaCl and KCl at 323.15/373.15/423.15 K and 2.6-18.2 MPa -- Tables 2 and 3 of the brine paper, the same tables whose gas-phase water content is already keyed HOU(2013b) in y_h2o.csv, and the transcription module that carries them says as much in its own docstring. |
 | `OSULLIVAN(1969)` | 68 | `OSULLIVAN(1970)` | wrong year: these 32 CH4-in-NaCl rows and the 102 rows already keyed OSULLIVAN(1970) are the *same* paper. O'Sullivan & Smith (1970) measured nitrogen AND methane in water and in aqueous NaCl from 50 to 125 degC and 100 to 600 atm; the rows under both keys sit inside that single grid. |
 | `FROST(2013)` | 63 | `FROST(2014)` | the key carries the ASAP year. Frost, Karakatsani, von Solms, Richon & Kontogeorgis appeared online in December 2013 but was assigned to J. Chem. Eng. Data 59(4), 961-967 (2014); the 21 rows span 283-323 K and 47.8-194.9 bar, inside that paper's 5-20 MPa methane + water set. |
+| `king` | 62 | `KING(1992)` | no year and a lower-case surname in the key. The 62 rows (36 in solubility.csv, 26 in y_h2o.csv) are the King, Mubarak, Kim & Bott (1992) binary named in data/README.md (yh2o_co2_binary lists 'King 1992'); the v1.2 bibliography added further King records, so the bare surname no longer resolves uniquely and is pinned to the 1992 paper here. |
 | `TAKENOUSHI(1965)` | 54 | `TAKENOUCHI(1965)` | surname misspelt. The 36 rows are CO2 in NaCl at 423 K, 100-1200 bar, at total ion molalities 2.18 and 8.54 -- i.e. 1.09 and 4.27 mol/kg NaCl, exactly the 6 and 20 wt% solutions of Takenouchi & Kennedy (1965). |
 | `NIGHSWANDER` | 38 | `NIGHSWANDER(1989)` | no year in the key. Both spellings occur: 38 rows as 'NIGHSWANDER' and 36 as 'NIGHSWANDER(1989)', all CO2 in water and 1 wt% NaCl over 353-473 K, which is the range of Nighswander, Kalogerakis & Mehrotra (J. Chem. Eng. Data 1989, 34, 355-360: 80-200 degC, to 10 MPa, water and 1 wt% NaCl). There is no second Nighswander paper these rows could belong to. |
 | `BLANCO(1977)` | 30 | `BLANCO(1978)` | wrong year. Blanco & Smith's high-pressure methane in aqueous CaCl2 paper is J. Phys. Chem. 82(2), 186-191 (1978); the 30 rows are CH4 in 1 mol/kg CaCl2 over 298-398 K and 101-608 bar, which is that paper's grid. |
+| `SAKO` | 22 | `SAKO(1991)` | no year in the key. The 22 rows (14 in solubility.csv, 8 in y_h2o.csv) are the Sako et al. (1991) binary named in data/README.md (yh2o_co2_binary lists 'Sako 1991'); pinned to that paper for the same reason as `king`. |
 | `TORIN(2022)` | 20 | `TORIN(2021)` | wrong year. The paper -- Torin-Ollarves & Trusler, H2 in NaCl brine, 323-423 K to 40 MPa at 2.5 mol/kg, matching these 20 rows -- is Fluid Phase Equilibria 539 (2021) 113025; its own PDF metadata carries the 2021 volume. |
 | `PRAY(1957)` | 18 | `PRAY(1952)` | wrong year. The 18 rows sit on the exact pressure grid of Pray, Schweickert & Minnich (1952) Table II -- 100/200/300 psi at 500 and 600 degF and 200/300/350 psi at 125 degF -- and the transcribed mole fractions reproduce that table's cm3(STP)/g values to three figures (0.39 cm3/g at 500 degF and 100 psi -> x = 3.1e-4, transcribed 3.09e-4). |
 | `RUMPF` | 10 | `RUMPF(1993)` | the transcription header reads '#RUMPF (1993)' with a space before the parenthesis, so the year does not parse and the cell arrives bare. The 10 rows are CO2 in PURE WATER at 323 K, 10.6-58.0 bar, from the CO2-water binary tree. Coelho et al. (2025), whose compilation that tree derives from, cites exactly one Rumpf paper for it -- ref. 54: Rumpf, Nicolaisen, Ocal & Maurer, J. Sol. Chem. 1994, 23, 431-448, whose 40-160 degC range covers 323 K. Distinct from RUMPFb(1993), the Na2SO4 study. |

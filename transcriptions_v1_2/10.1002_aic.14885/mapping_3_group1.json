@@ -1,0 +1,43 @@
+{
+ "table": "Table 3",
+ "page_journal": 3041,
+ "title_as_printed": "Water Content of Mixtures Measured in this Work",
+ "footnotes_as_printed": "none",
+ "property": "y_h2o",
+ "gas": "ch4-co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated whether absolute; text: pressures within 0.01% of full scale for the high temperature apparatus; p is the cell pressure in the saturation cell (total)",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p (MPa)",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "H2O (mol %)",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.01,
+   "what": "water content of the gas phase, mol %; value = printed x 0.01"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "dry gas composition (mol %, printed per row, constant in this block): CH4 90 mol % + CO2 10 mol %"
+ },
+ "gas_composition_columns": {
+  "ch4": "C1 (mol %)",
+  "co2": "CO2 (mol %)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Table 3 is printed as one table with three composition blocks (no label rows) and split here into table_3_group1/2/3 by gas composition. Group 1 = printed rows in order of the table. Blank cell = component absent. Whether the 3rd block's H2O value at 366.48 K is non-monotonic in p is as printed."
+}

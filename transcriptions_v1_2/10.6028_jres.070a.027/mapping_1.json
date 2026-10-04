@@ -1,0 +1,57 @@
+{
+ "table": "Table 1",
+ "page_journal": 314,
+ "title_as_printed": "Isopiestic ratios for the system water-sodium chloride-calcium chloride at 25 C",
+ "footnotes_as_printed": {
+  "a": "Delta = R(calc) - R(obs), where R(calc) is obtained with the aid of eq (1) and the parameters in table 2. (letter a is on the Delta column header)"
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable (isopiestic equilibrium at 25 C, pressure is the water vapour pressure)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "m_C",
+   "unit": "mol_per_kg_water",
+   "what": "molality of CaCl2 in the mixed NaCl-CaCl2 solution at isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "M_B",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the NaCl reference solution in isopiestic equilibrium (printed once per block, filled down to every row of the block)",
+   "reference": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m_B",
+    "unit": "mol/kg"
+   },
+   "CaCl2": {
+    "col": "m_C",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none; mixed solutions contain NaCl and CaCl2. Rows with empty m_B are the pure CaCl2 solution (y_C = 1.0)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "y_C (ionic fraction of CaCl2, y_C = 1.5 m_C/m, m = m_B + 1.5 m_C; calculated by authors)",
+  "R(obs) = M_B/m (isopiestic ratio, calculated by authors)",
+  "R(calc) (from fitted eq 1)",
+  "Delta (R(calc)-R(obs), fit residual, printed in units of 1e-2: Delta x 1e-2 = R(calc) - R(obs), footnote a p.314)"
+ ],
+ "conversion_needs": [],
+ "notes": "Set and M_B are printed once per block and are filled down to every row (carried-forward values). Sets 1-8 have two M_B blocks each; sets 9 and 10 one. A dotted line in the m_B column (printed dotted) means no NaCl: pure CaCl2 solution, m_B written empty. Pure-CaCl2 rows (y_C = 1.0) are isopiestic CaCl2 versus NaCl reference. The mixed-solution total molality convention: m = m_B + 1.5 m_C. Delta column is written as printed, with sign. Set 2 block 0.8005 and set 8 block 4.5821 have no pure CaCl2 row printed."
+}

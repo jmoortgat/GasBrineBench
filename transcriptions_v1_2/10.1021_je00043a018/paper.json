@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je00043a018",
+ "first_author": "Davis, Thomas M.",
+ "authors": "Thomas M. Davis, Lisa M. Duckett, Chad E. Garvey, Jeffrey M. Hollifield, C. Stuart Patterson",
+ "year": 1986,
+ "journal": "J. Chem. Eng. Data 31(1), 54-55",
+ "title": "Osmotic Coefficients of Aqueous LiCl and CaCl2 from Their Isopiestic Ratios to NaCl at 50 C",
+ "source_key": "DAVIS(1986)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; all 60 cells matched the 200 dpi page image; no corrections.",
+ "experimental_method": "Isopiestic method at 50 C with NaCl as reference salt; 20 successful equilibrations, two or three samples per salt; molalities of NaCl, LiCl and CaCl2 solutions at isopiestic equilibrium.",
+ "uncertainties_stated": "Coefficient of variation of replicates below 0.1 % (weighted average 0.048 % NaCl, 0.037 % LiCl, 0.040 % CaCl2; overall 0.042 %). Uncertainty of smoothed osmotic coefficients about 0.2 % (LiCl) and 0.3 % (CaCl2).",
+ "quality_remarks": "Authors report their CaCl2 osmotic coefficients disagree significantly with Ananthaswamy and Atkinson recommended values below about 0.8 m; LiCl agrees with Gibbard and Scatchard in 1-4 m. Temperature scale not stated. Table I values are experimental; Table II (smoothed osmotic coefficients derived from Pitzer NaCl reference) is derived.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   54
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (smoothed osmotic coefficients at rounded molalities, p. 55): smoothed/derived from fits and Pitzer NaCl reference.",
+  "Table III (fit parameters for R and phi): model parameters."
+ ],
+ "row_counts": {
+  "table_1": "printed 20 data rows (two side-by-side blocks of 10), written 20"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Header names written as m_NaCl, m_LiCl, m_CaCl2 (printed as subscripted m). Sanity: all three molalities rise together in every row; ratios m_NaCl/m_CaCl2 fall smoothly with m; no replicate rows. Page 2 of the PDF contains Tables II and III only.",
+ "pass2_diff": "Table 1: 60/60 numbers identical (pass 2 kept the side-by-side layout)."
+}

@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/j100665a024",
+ "first_author": "Tiepel",
+ "authors": "E. W. Tiepel, K. E. Gubbins",
+ "title": "Partial molal volumes of gases dissolved in electrolyte solutions",
+ "year": 1972,
+ "journal": "Journal of Physical Chemistry 76(21), 3044-3049",
+ "source_key": "TIEPEL(1972)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer for Table I was scrambled (columns scattered) but table was read completely from the 300 dpi image, clear print; no cell corrections of a text-layer CSV were needed (CSV built from image)",
+ "experimental_method": "Horiuti dilatometer: volume change on addition of known gas amounts to degassed solution at 25 C, partial molal volume from slope of volume change vs moles of gas.",
+ "uncertainties_stated": "estimated accuracy +-3 percent in water, up to +-6 percent in electrolyte solutions; table gives standard deviation of the mean of three or more experiments",
+ "quality_remarks": "Main error source temperature fluctuations. Gas purities 99.9% (Ar, H2, O2) and 99.0% (CH4, C2H6). Table II (comparison with literature and calculated values) not extracted. Molarity basis not defined.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   3047
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II (p. 3048)",
+   "reason": "water-only comparison of this work with literature values and theory-calculated (Eq 14, Lyckman) values; derived/model values"
+  },
+  {
+   "table": "Table III (p. 3048-3049)",
+   "reason": "model parameters / calculated values"
+  }
+ ],
+ "row_counts": {
+  "Table I": "printed 26 data rows; written 26"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Blank gas cells of continuation rows filled down. +- split into two columns. Sanity: V1 decreases with salt molarity for KCl, KI, CaCl2, KOH and increases for R4NBr, as the paper states.",
+ "pass2_diff": "Table I: all measured numbers identical; the pass-1-only numbers are the digits of gas names (O2, N2) filled down where pass 2 left them blank."
+}

@@ -1,0 +1,64 @@
+{
+ "table": "Table 6",
+ "page_journal": 2354,
+ "title_as_printed": "The solubility of Oxygen (umol kg-1) in mixtures of Na2SO4 + MgSO4, MgCl2 + MgSO4NaCl + Na2SO4, and NaCl + MgCl2 at 25 C.",
+ "footnotes_as_printed": {
+  "a": "The measurements were made on solutions in equilibrium with the atmosphere saturated with water vapor.",
+  "b": "Separate mixture with different stock solutions."
+ },
+ "property": "solubility_molality",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Solubilities in moist air were corrected to a total pressure of 1 atm from the measured atmospheric pressures (+-1 mbar); 'The measurements were made on solutions in equilibrium with the atmosphere saturated with water vapor.' Small correction for water vapour pressure being constant when correcting to 1 atm was neglected.",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "O2 from air; result is the dissolved O2 amount per kg H2O ('we report the solubilities in umol (kg H2O)-1 or molality (m)'), not a gas mole fraction",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "'we report the solubilities in umol (kg H2O)-1 or molality (m)'; solutions were made by volume and converted to molality with density equations (Lo Surdo et al., 1982)",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "P is 1 atm total pressure of moist air, not O2 partial pressure; builder needs the O2 mole fraction in dry air and water vapour pressure if partial pressure is wanted"
+ ],
+ "standard_conditions_note": "Not applicable (no gas volumes); the paper does not define standard conditions.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "total"
+  },
+  "value": {
+   "col": "[O2] umol kg^-1",
+   "unit": "umol_per_kg_water",
+   "what": "dissolved O2 per kg H2O"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m(NaCl)",
+    "unit": "mol_per_kg_water"
+   },
+   "MgCl2": {
+    "col": "m(MgCl2)",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "notes": "Table 6 printed as four blocks (two upper, two lower); this file is block 4 (NaCl + MgCl2), 7 rows incl. the printed zero-molality reference row.",
+ "air_equilibrated": {
+  "gas": "o2",
+  "y": 0.20946,
+  "evidence": "solution equilibrated with water-vapour-saturated air, corrected to 1 atm total (p.2351); the O2 mole fraction of dry air is not printed in the paper; standard-air value taken from the Garcia and Gordon convention the paper compares with (coordinator precedent, audit 2026-10-02)"
+ }
+}

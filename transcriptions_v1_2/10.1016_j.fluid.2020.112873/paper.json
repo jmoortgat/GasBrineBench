@@ -1,0 +1,43 @@
+{
+ "doi": "10.1016/j.fluid.2020.112873",
+ "first_author": "Burgass, Rod",
+ "authors": "Rod Burgass, Antonin Chapoy, Valderio de Oliveira Cavalcanti Filho",
+ "year": 2021,
+ "journal": "Fluid Phase Equilibria 530 (2021) 112873",
+ "title": "Development of a new method for measurement of the water dew/frost point of gas",
+ "source_key": "BURGASS(2021)",
+ "experimental_method": "Gas equilibrated with water (or hydrate) at fixed T and P is expanded and flowed at ~30 mL/min through a temperature-controlled Sulfinert flow tube; the tube T is cycled and a capacitance moisture sensor detects ice deposition/removal to give the frost point at atmospheric pressure, from which water content (ppmV) is calculated.",
+ "uncertainties_stated": "T +-0.1 K, P +-0.03 MPa, water content +-1 % of value",
+ "quality_remarks": "Proof-of-concept method paper. Paper year printed 2021 (volume 530; available online 2020); chunk listed 2020. Water-content basis (mole or volume ppm) and pressure type not stated. Cell/equilibration details are brief. Experimental values agree with CPA predictions within a few percent.",
+ "how_extracted": "image_read (text layer clean, every cell compared with page image)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6
+  ],
+  "journal_pages": [
+   4,
+   5,
+   6
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: uncertainty figures of hygrometer methods from reviews (not measured data)",
+  "Table 2: gas purities",
+  "Table 3: natural gas composition (recorded in mapping_6 gas field)",
+  "Fig. 1: 104 ppmV water in CO2 standard test, one value in text (frost point 231.2 K at atmospheric pressure, 105 ppmV found) is a calibration check of a certified standard, not a table"
+ ],
+ "row_counts": {
+  "table_4": "printed 9 / written 9",
+  "table_5": "printed 5 / written 5",
+  "table_6": "printed 7 / written 7"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Thousands commas removed (1,810 -> 1810). Table 4 T filled down. Table 6 Phases-present column kept as printed text. Sanity: water content decreases monotonically with P in every block; predicted within ~4 % of experimental.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image, no corrections",
+ "pass2_diff": "Tables 4-6: values identical; the apparent differences are thousands separators (1,165 vs 1165) and temperatures filled down in pass 1 where pass 2 kept 'same as above' blank."
+}

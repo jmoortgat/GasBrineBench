@@ -1,0 +1,49 @@
+{
+ "table": "Table 1",
+ "page_journal": 1528,
+ "title_as_printed": "Apparent molar volumes V_phi for MgCl2(aq) at p = 0.35 MPa",
+ "footnotes_as_printed": "not captured (none printed; caption states the +/- are standard deviations)",
+ "property": "pmv",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p = 0.35 MPa as stated in the table caption and abstract (solution pressure held by computer-controlled syringe)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "0.35",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "V_phi cm3/mol",
+   "unit": "cm3/mol",
+   "what": "apparent molar volume of MgCl2 (computed by the authors from measured densities, eq. 5; reported result of the density experiment)",
+   "derived_by_authors": true
+  },
+  "uncertainty": {
+   "col": "uncertainty cm3/mol",
+   "unit": "cm3/mol"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; MgCl2 solution in distilled, deionized, autoclaved, degassed water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed layout has blocks of temperatures side by side as columns (5 per block in Table 1, 6 in Table 4) with the T in a block heading row; restacked to long form (one row per m,T), uncertainty split from the value at the +/- sign. Molalities calculated assuming the only impurity of the solid is water. Property 'other' = apparent molar volume V_phi; raw densities are not printed. Value is derived_by_authors from density."
+}

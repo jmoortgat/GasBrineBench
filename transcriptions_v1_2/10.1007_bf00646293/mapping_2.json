@@ -1,0 +1,180 @@
+{
+ "table": "Table II",
+ "page_journal": 831,
+ "title_as_printed": "Comparison of Calorimetric and van't Hoff Delta H0 for Solution of Gaseous Hydrocarbons into Water at 35 C (printed with a degree sign and -Delta H0 headers)",
+ "footnotes_as_printed": {
+  "a": "This work. Uncertainty is twice the standard deviation of the mean. Units: kJ-mol^-1.",
+  "b": "Olofsson et al., Ref. 26. Uncertainty is twice the standard deviation of the mean.",
+  "c": "Rettich et al., Ref. 21. Uncertainty is twice the standard deviation as calculated according to the method of Clarke and Glew.",
+  "d": "Wilhelm et al., Ref. 18. Uncertainty is twice the standard deviation as calculated using an equal temperature interval data set, Ref. 4, based on the method of Clarke and Glew."
+ },
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "standard-state enthalpy of solution; gas partial pressure = measured total pressure minus water vapour pressure, then transformed to standard state with second virial coefficients (as stated in text); no pressure column",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "35"
+  },
+  "value": {
+   "col": "-dH0 a kJ/mol",
+   "unit": "kJ/mol",
+   "scale": -1,
+   "what": "standard enthalpy change of solution dH0 of the gas in water; printed column is -dH0 (positive), so scale -1; calorimetric, this work"
+  },
+  "uncertainty": {
+   "col": "+- a",
+   "unit": "kJ/mol",
+   "what": "twice the standard deviation of the mean"
+  },
+  "value2": {
+   "col": "-dH0 b kJ/mol",
+   "unit": "kJ/mol",
+   "scale": -1,
+   "what": "Olofsson et al. (Ref. 26) calorimetric",
+   "from_literature": true
+  },
+  "uncertainty2": {
+   "col": "+- b",
+   "unit": "kJ/mol"
+  },
+  "n_measurements": {
+   "col": "n",
+   "unit": "count"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, gas at infinite dilution (standard state)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+   ],
+   "reason": "gas label rows (gas name printed beside the first data row, written as its own label row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 2,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "i-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "neo-c5h12"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c-c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h4"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "1-c4h8"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "-dH0 c (Rettich et al. Ref. 21, van't Hoff from solubility, from_literature) and its uncertainty",
+  "-dH0 d (Wilhelm et al. Ref. 18, van't Hoff, from_literature) and its uncertainty"
+ ],
+ "conversion_needs": [],
+ "notes": "Each printed gas row has the value line and an uncertainty line below; written as one data row with separate +- columns. Printed \u00b1 sign omitted. Gases outside the seven (neopentane, cyclopropane, ethene, propene, 1-butene, ethyne, butanes) kept. Temperature written as 15 C / 35 C in title; scale not stated."
+}

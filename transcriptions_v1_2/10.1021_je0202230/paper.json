@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je0202230",
+ "first_author": "Chapoy",
+ "year": 2003,
+ "journal": "J. Chem. Eng. Data 48 (4), 957-966",
+ "source_key": "CHAPOY(2003)",
+ "title": "Measurement of the Water Solubility in the Gas Phase of the Ethane + Water Binary System near Hydrate Forming Conditions",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only"
+ },
+ "experimental_method": "Static-analytic method with vapour sampling (Rolsi), GC with TCD (water) and FID (ethane); water calibration with an exponential dilutor.",
+ "uncertainties_stated": "T +/-0.02 K (bath control +/-0.01 K); P +/-0.5 kPa (0-2.5 MPa), +/-5 kPa (2.5-38 MPa); ethane calibration +/-1%. Uncertainty on water mole fraction not stated in the captured text.",
+ "tables": {
+  "table_4": "54 rows"
+ },
+ "row_counts": {
+  "4": {
+   "printed": 54,
+   "written": 54
+  }
+ },
+ "not_extracted_tables": {
+  "Table 1": "critical parameters",
+  "Table 2": "vapour pressure correlation coefficients",
+  "Table 3": "calculated pressures from a correlation / EoS",
+  "Table 5": "fitted NRTL parameters",
+  "Table 6": "model deviations (bias/MRD)",
+  "Table 7": "calculated (not measured) water mole fraction in the aqueous phase (Henry-law model); the capture holds this table in several identical duplicates"
+ },
+ "quality_remarks": [
+  "Table 1 prints the ethane critical pressure as 48.08 MPa (should be 4.808 MPa), not extracted.",
+  "Table 6 (not extracted) lists temperatures 283.08, 288.11 ... 318.12 K, which differ from the measured isotherms in Table 4 (278.08-303.11 K): 308-318 K are not measured here and 278.08 is missing; also 283.08 vs 283.11 K.",
+  "Table 4 dy/% decimals vary in the print (e.g. 1.7, 0.3, 3.50) and the printed Dy for 278.08 K/2.71 MPa is 0.00; kept as printed.",
+  "Row count 54 matches the printed table. The water mole fractions decrease monotonically with pressure along every isotherm (script check). Ranges match the abstract (278.08-303.11 K).",
+  "Hydrate rows: the abstract states that vapour-hydrate equilibria were measured but the table does not flag which points; not marked."
+ ],
+ "extraction_notes": "Header '103yw,exp' written as '10^3 yw,exp'; 'Dy' kept; Unicode minus replaced by ASCII minus.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

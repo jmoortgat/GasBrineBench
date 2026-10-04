@@ -1,0 +1,61 @@
+{
+ "table": "Table I",
+ "page_journal": 410,
+ "title_as_printed": "Densities of Aqueous CaCl2 at 20.27 bar",
+ "footnotes_as_printed": {
+  "a": "Units: g-cm-3."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "20.27 bar (title); system pressurized with nitrogen from a gas cylinder; pressure kept constant at 20.27 bar (= 20 atm)",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "20.27",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "density g/cm3",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m CaCl2 mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "water; m = 0.0000 rows are pure water (density of pure water listed in the table)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality printed as m (mol per kg); per kg of water implied but not explicitly stated"
+ ],
+ "notes": "Wide layout (molality rows x temperature columns 50-200 C) restacked to long form: for each molality, seven rows in temperature order. 10 molalities x 7 T = 70 rows. Density at 25 C reference was from earlier work and is not in the table.",
+ "row_held": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "reason": "salt-free row: the density of pure water rho0 used for the apparent molar volumes, a reference value, not a measurement of this paper (found by the inter-source consensus: identical values in two sources, 2026-10-03)"
+  }
+ ]
+}

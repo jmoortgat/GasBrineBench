@@ -1,0 +1,49 @@
+{
+ "table": "Experiment IV (unnumbered table)",
+ "page_journal": 76,
+ "title_as_printed": "Experiment IV. Oxygen in distilled water",
+ "footnotes_as_printed": "no table footnotes",
+ "property": "bunsen",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Gas (moist, saturated with water vapour) in equilibrium with the water at the corrected mercury pressure p (cm Hg, printed in the table, varies 56.95-83.99 cm); the printed coefficient 1,000 a is reduced to a gas pressure of 760 mm (the heading reads: volume absorbed by 1,000 c.c. at t deg and 760 mm). Whether 760 mm is total or dry-gas pressure is not stated.",
+ "columns": {
+  "T": {
+   "col": "t",
+   "unit": "C"
+  },
+  "P": {
+   "constant": "101.325",
+   "unit": "kPa",
+   "basis": "gas_partial",
+   "col": ""
+  },
+  "value": {
+   "col": "1,000 a = volume absorbed by 1,000 c.c. at t 760 (c.c. at 0 760)",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "scale": 0.001,
+   "what": "absorption coefficient a: c.c. of gas reduced to 0 deg C and 760 mm absorbed by 1 c.c. of water at t deg under 760 mm gas pressure (Bunsen type); printed as 1,000 a"
+  }
+ },
+ "volume_basis": "solvent",
+ "volume_basis_evidence": "1,000 c.c. of water (distilled water); heading: 'Volume Absorbed by 1,000 c.c. at t 760 (c.c. at 0 760)'",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, air-free); no salt"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "w_t, v_t (volumes of water and bulb at t)",
+  "burette readings and intermediate volumes",
+  "p corrected mercury pressure in cm Hg (experimental pressure of the run)",
+  "volume of gas taken, volume absorbed (raw measurements entering 1,000 a)"
+ ],
+ "conversion_needs": [
+  "value = printed x 1e-3",
+  "760 mm Hg = 1 atm"
+ ],
+ "notes": "Pairs of rows at nearly equal t from different mercury pressures of the same run. Arithmetic inconsistencies against the printed raw columns (gas taken - unabsorbed vs printed volume absorbed): row 7 (13.75 C) 3.866 vs 4.866, row 13 (29.88 C) 3.972 vs 3.962, row 14 (37.51 C) 3.348 vs 3.318; printed as is. Water 127.4260 c.c. at 0 C; gas 25.1071 c.c. at 0 C, 760 mm."
+}

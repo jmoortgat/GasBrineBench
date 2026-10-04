@@ -1,0 +1,33 @@
+{
+ "doi": "10.1016/j.gca.2020.05.020",
+ "first_author": "Scheuermann",
+ "year": 2020,
+ "journal": "Geochim. Cosmochim. Acta 283, 22-39",
+ "source_key": "SCHEUERMANN(2020)",
+ "experimental_method": "Fixed-volume titanium-alloy reactor connected to a syringe pump, fH2 fixed by the hematite-magnetite buffer in KCl-H2O fluids at 400-500 C and 215-510 bar; vapour and single-phase fluid aliquots sampled and H2 measured by gas chromatography, K by ICP-OES, Cl by ion chromatography.",
+ "uncertainties_stated": "Temperature +/-5 C; ICP-OES 3 % and IC 2 % (2 sigma); H2 standard reproducibility within 10 %; H2(aq) uncertainty +/-40 umol/kg stated for the error bars of Fig. 5 (text prints mmol/kg).",
+ "quality_remarks": "Authors note Y_H2-Cl < Y_H2 at 500 C in the comparison with pure-water data is likely inter-dataset inconsistency, not salting-in. The Y_H2-Cl column depends on SUPCRT92 fugacities (derived). kg basis of the concentrations not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   25
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean and every cell of all 18 rows matched the 200 dpi page image.",
+ "not_extracted_tables": {
+  "Table 2": "Ding and Seyfried (1990) data re-tabulated with Y_H2-Cl and Y_H2S-Cl recalculated by the present authors; other authors' measurements (NaCl-H2O, 300-450 C, 300-500 bar, 19 rows, p. 26) - flag: extract from the original paper if wanted, not measured here",
+  "Table A1": "chemical composition of the buffer minerals, out of scope"
+ },
+ "row_counts": {
+  "table_1": "printed 18, written 18"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: 400 C P 215-330, 425 C 322-338, 450 C 350-470, 500 C 400-510 bar; pressure increasing within each isotherm; K ~ Cl everywhere (within ~10 %). Lone isolated change: header 'Y_H2-Cl' and 'umol' written ASCII; 'pH 25 C' printed as pH 25 degC subscript. No replicate rows. Temperature in C and pressure in bar as printed; the 'vap' rows give the H2 concentration measured in the vapour aliquot expressed per kg, not a vapour mole fraction.",
+ "pass2_diff": "token diff: 162 numbers per pass, identical"
+}

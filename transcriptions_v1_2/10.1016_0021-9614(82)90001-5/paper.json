@@ -1,0 +1,38 @@
+{
+ "doi": "10.1016/0021-9614(82)90001-5",
+ "first_author": "Gill",
+ "year": 1982,
+ "journal": "J. Chem. Thermodyn. 14, 905-919",
+ "source_key": "GILL(1982)",
+ "experimental_method": "Batch flow-microcalorimetry: 0.4161 cm3 of O2 injected from a gas syringe into flowing water (1e-8 m3/s) in a flow microcalorimeter at 298.15 K, with electrical calibration.",
+ "uncertainties_stated": "Mean -DeltaH = 12.056 +- 0.019 kJ/mol (2 sigma of mean); with possible systematic errors -(12.06 +- 0.04) kJ/mol; systematic terms (calibration constant, water-vapour condensation correction) each believed < 0.2 percent.",
+ "quality_remarks": "Authors report agreement with Benson et al. (12.02 kJ/mol from solubilities). Mean pressure drop caused by the gas bubble 20 Pa. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   14
+  ],
+  "journal_pages": [
+   918
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 17,
+   "printed_rows_total_incl_mean": 18,
+   "written": 18
+  }
+ },
+ "changes_after_image_check": [
+  "table_1 row 2 (-DeltaH column row 3 of data): 920.11 printed in text as '920.1 I' -> 920.11 (I column)",
+  "table_1 data row 7: '9 14.23' -> 914.23 (I column)",
+  "table_1 data row 12: '2.51 I2' -> 2.5112 (c column)"
+ ],
+ "extraction_notes": "Text layer is a noisy scan OCR with glyph errors in a few cells; all values were set from the page image. Calibration constants placed on the row above them (ambiguous). Only table in paper. Sanity: all -DeltaH between 11.965 and 12.147 kJ/mol; mean of 17 rows checked to be consistent with 12.056.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer is OCR with glyph errors in several cells (corrections made after image check).",
+ "pass2_diff": "Table I: 17 measurement rows identical; the only token difference is the sign of the +/- uncertainty in the Mean row (tool artefact). Calibration-constant row assignment is approximate by design."
+}

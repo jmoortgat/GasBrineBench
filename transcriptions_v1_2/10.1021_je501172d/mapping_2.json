@@ -1,0 +1,55 @@
+{
+ "table": "Table 2",
+ "page_journal": 2046,
+ "title_as_printed": "Experimental Values of CO2 Solubility x in Aqueous NaCl Solutions and Calculated Setchenov Constant Ke at 60 C and Pressure P, where m Denotes Molality of NaCl in Water",
+ "footnotes_as_printed": {
+  "a": "Combined expanded uncertainties are U(P) = 0.02 MPa, U(T) = 0.05 C, U(m) = 0.0020 mol/kg, U(x) = 0.050 mol/kg and U(Ke) = 0.03."
+ },
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "CO2 was injected into the preheated reactor at the pressure of interest (set with an ISCO pump), 70 mL of the 100 mL autoclave filled with brine; paper does not say whether P is total or CO2 partial pressure and does not mention water vapour. U(P) = 0.02 MPa.",
+ "volume_basis": "not_applicable",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "solubility reported as mol CO2 per kg (not a gas mole fraction)",
+ "mass_basis_evidence": "Ca = Ct*Vt*N/Ma with Ma the mass of the titrated sample (solution) in grams; paper calls the result 'molal units (mol/kg)' and says 'the mass of solution is not a function of pressure or temperature'",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "60"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "x mol/kg",
+   "unit": "mol_per_kg_solution",
+   "what": "CO2 solubility in NaCl solution"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Ke (Setchenov constant, calculated by authors from eq 3)"
+ ],
+ "conversion_needs": [
+  "value unit is mol CO2 per kg; authors call it molal but derive it from the mass of the titrated sample (see mass_basis_evidence); builder must decide the kg basis"
+ ],
+ "notes": "Brine molalities 0.0172, 0.1720, 0.2580 mol/kg NaCl = 1000, 10000, 15000 ppm as stated. Not every pressure is printed for every salinity. A printed dash in the Ke column is an empty cell.",
+ "quality_remarks": "audit 2026-10-02: p.2044: Ca = Ct x Vt x N / Ma with Ma the mass of the titrated sample; 'The advantage of using mass of solution (Ma)': the printed 'molal' CO2 values are mol per kg of solution (sample), not per kg water. The sample is the NaOH-preserved mixture, so the mass basis is not strictly clean."
+}

@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/j100822a016",
+ "first_author": "Robinson",
+ "year": 1961,
+ "journal": "J. Phys. Chem. 65(4), 662-667",
+ "source_key": "ROBINSON(1961)",
+ "title": "Activity Coefficients of Sodium Chloride and Potassium Chloride in Mixed Aqueous Solutions at 25 C",
+ "authors": "R. A. Robinson",
+ "experimental_method": "Isopiestic vapour-pressure equilibration at 25 C of NaCl-KCl mixtures against NaCl reference solutions in a desiccator with up to thirteen dishes; isopiestic ratio R = M/m.",
+ "uncertainties_stated": "Duplicates agreed within 0.05% in isopiestic ratio or mean deviation of triplicates 0.03% or less; over about a hundred duplicates average deviation from the mean 0.016%.",
+ "quality_remarks": "PDF is this paper (6 pages, begins at p. 662). Table IV prints M, x, R and the authors' alpha coefficients; the molalities of the individual solutions are not tabulated, only R at x (m = M/R). Table I gives full molalities for 11 solutions near 4 M. Temperature 25 C, scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4
+  ],
+  "journal_pages": [
+   663,
+   664,
+   665
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: parameters of eq 6 (fit parameters)",
+  "Table III: calculation of alpha_B and alpha_C at M~4 (derived; its x, R duplicate Table I)",
+  "Table V: smoothed values of alpha_B and alpha_C (smoothed/derived)",
+  "Tables on later pages (activity coefficients, smoothed/derived), see text"
+ ],
+ "row_counts": {
+  "Table I": "printed 11, written 11",
+  "Table IV": "printed 75 data rows + 11 series label rows + 11 Mean rows (Series 6 has a Mean row only), written 97 rows after header (75 data, 11 label, 11 Mean)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer of Table IV was scrambled (rows split), so both tables were typed from the page images and compared token-wise to the text layer; the only mismatches were text-layer glitches (checked on zoomed crops). Sanity: Table I: mB+mC equals printed sum, M/(mB+mC) equals R, R decreases with x in each M. M carried forward and filled down. Series 6 in Table IV shows only the Mean row.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "1961 scan with scrambled text layer; tables typed from image so an independent second read is needed",
+ "pass2_diff": "Tables I and IV: every pass-2 number occurs in pass 1; the pass-1-only numbers are the M values it filled down; the sign of one pct_delta cell is smudged (read -.01 by pass 2)."
+}

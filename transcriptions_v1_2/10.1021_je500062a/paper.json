@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je500062a",
+ "first_author": "Song",
+ "year": 2014,
+ "journal": "J. Chem. Eng. Data 59, 1400-1410",
+ "source_key": "SONG(2014)",
+ "title": "Density Measurement and PC-SAFT/tPC-PSAFT Modeling of the CO2 + H2O System over a Wide Temperature Range",
+ "experimental_method": "Compressed-liquid densities of deionized water and CO2 + H2O solutions at fixed CO2 mole fractions measured at 274-413 K and 10-18 MPa in a closed-cell vibrating-tube type apparatus (density from mass and volume as described in the paper's Experimental Section).",
+ "uncertainties_stated": "u(T) = 0.01 K, u(P) = 0.001 MPa, u(x1) = 0.0002 mol/mol, combined expanded uncertainty U(rho) = 0.29 kg/m3.",
+ "quality_remarks": "Pure-water densities agree with NIST (ARD 0.03 %). Temperature scale not stated. Mole fractions x1 are fixed compositions of the single-phase liquid (0.0042, 0.0084, 0.0124). Authors compare density differences with Li et al.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   1404,
+   1405,
+   1406
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (purity of chemicals)",
+  "Table 2 (PC-SAFT/tPC-PSAFT model parameters)",
+  "Table 3 (correlation coefficients)",
+  "Table 6 (models used in the model cases)",
+  "Table 7 (% ARD of model calculations)"
+ ],
+ "row_counts": {
+  "table_4": "printed 85, written 85",
+  "table_5": "printed 459 data rows in 3 blocks of 153, written 459 plus 3 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Word coordinates (pdftotext -bbox) grouped by line and by column triple by script, left and right triples of each block concatenated. Sanity: within each triple, P and rho increase monotonically at constant T; block sizes equal (153); 17 temperatures x 5 pressures in Table 4. Page images were viewed at reduced zoom: first/last rows of each page and block boundaries checked; not every cell compared digit by digit.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer clean and no corrections, but images were not compared digit by digit for all 544 cells",
+ "pass2_diff": "Tables 4 and 5: 85/85 and 459/459 rows, 255/255 and 1377/1377 numbers identical."
+}

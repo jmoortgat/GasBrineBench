@@ -1,0 +1,374 @@
+{
+ "table": "Table III",
+ "page_journal": 204,
+ "title_as_printed": "The Apparent Molal Volumes of Aqueous Salt Solutions as a Function of Concentration and Pressure at 50 °C",
+ "footnotes_as_printed": {
+  "a": "The values of phi_V have been normalized to the best available literature values calculated from eq 3."
+ },
+ "property": "other",
+ "gas": "",
+ "regime": "",
+ "property_description": "apparent molal volume phi_V of the dissolved salt (cm3 per mol of salt), computed by the authors from measured solution densities with phi_V = 1000(d0-d)/(d d0 m) + M/d (their eq 1); the densities themselves are not tabulated. Value is the printed phi_V.",
+ "temperature_scale": "IPTS-68",
+ "temperature_scale_evidence": "bath temperature set with a platinum resistance thermometer (calibrated by the National Bureau of Standards, 1968 temperature scale)",
+ "pressure_note": "applied pressure P in bar from a Heise Bourdon gauge; text: at P = 0 the absolute pressure is 1 atm (the 0.00 rows are therefore 1 atm, not zero absolute); no gas phase",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "phi_V is per mole of salt (units not printed in the table header; text gives cm3 mol-1 for the 0.3 cm3/mol density-error estimate); molality is mol/kg of H2O",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "50"
+  },
+  "P": {
+   "col": "P bar",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "phi_V cm3/mol",
+   "unit": "cm3/mol",
+   "derived_by_authors": true,
+   "what": "apparent molal volume of the salt named in the block label, at the molality in the label"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none beyond the salt named in each block label; molality m is mol/kg of H2O as stated in the text"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    12,
+    24,
+    36,
+    48,
+    60,
+    72,
+    79,
+    86,
+    93,
+    100,
+    107,
+    117,
+    127,
+    137,
+    147,
+    157,
+    167,
+    177,
+    187,
+    197,
+    207,
+    217,
+    227,
+    237,
+    247
+   ],
+   "reason": "block label rows (salt and molality)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.1299",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.2507",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.3852",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.7766",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.9630",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.307",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 72,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.3331",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 79,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.5009",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 86,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.6693",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 93,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.8360",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 100,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.0040",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 107,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "0.07937",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 117,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "0.1395",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 127,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "0.2184",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 137,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "0.3150",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 147,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.00899",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 157,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.0367",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 167,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.0832",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 177,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.1480",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 187,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.2312",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 197,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.3335",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 207,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.01985",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 217,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.05328",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 227,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.1029",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 237,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.1693",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 247,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.2503",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "row_from_literature": [
+  {
+   "rows": [
+    1,
+    13,
+    25,
+    37,
+    49,
+    61,
+    73,
+    80,
+    87,
+    94,
+    101,
+    108,
+    118,
+    128,
+    138,
+    148,
+    158,
+    168,
+    178,
+    188,
+    198,
+    208,
+    218,
+    228,
+    238,
+    248
+   ],
+   "reason": "footnote a: the P = 0.00 values of phi_V are normalized to the best available literature 1-atm values calculated from the authors' eq 3 (a fit to literature data), not measured here"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "value unit cm3/mol is taken from the paper text (not printed in the table header)"
+ ],
+ "notes": "Printed layout: for each salt one block of columns (molality across, pressure down). Stacked here as one block per (salt, molality): a label row, then one row per printed pressure. Printed dash (not measured) written as an empty cell, row kept. Footnote letter a on 0.00 is recorded in the note column. Salts NaCl, KCl, MgCl2, Na2SO4, MgSO4. Columns appear in the same order as printed; the printed salt-block pressure grids differ between salts (11 pressures for NaCl, MgCl2 and Na2SO4 in Tables I and II, 6-10 for the others)."
+}

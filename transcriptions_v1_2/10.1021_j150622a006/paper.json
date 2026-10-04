@@ -1,0 +1,52 @@
+{
+ "doi": "10.1021/j150622a006",
+ "first_author": "Rettich",
+ "year": 1981,
+ "journal": "J. Phys. Chem. 85, 3230-3237",
+ "source_key": "RETTICH(1981)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "earlier-run CSVs were unverified; this run checked every cell of all three tables against 300 dpi page images and found them correct, but the text layer is a poor OCR (it had a wrong minus value at Table I row 303.14), and a blind second pass is still advised",
+ "experimental_method": "Benson-Krause type high-precision gas-solubility apparatus: degassed water equilibrated with methane, ethane or oxygen in a thermostatted cell; gas amounts determined from p-V-T of dry gas; Henry's constant derived per run with virial-equation corrections.",
+ "uncertainties_stated": "Estimated uncertainty of H2,1 less than +-0.06% (text); average percent deviation from smoothing equations 0.056% (CH4) and 0.078% (C2H6); about 0.1% mean offset from Benson-Krause for O2 (ours lower).",
+ "quality_remarks": "Table II row T=283.95: Z printed 0.988178 where neighbouring rows are about 0.9981, probably a misprint for 0.998178, kept as printed. Table I: text layer gives -0.24 for the 303.14 K deviation; the image shows -0.04 (the 4 is crossed by a smudge); -0.04 is consistent with 4.7521 vs 4.7539.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   3234,
+   3235
+  ]
+ },
+ "earlier_run_files": "table_1.csv, table_2.csv, table_3.csv and a scratch ret.py existed from the interrupted run; they were treated as unverified, every cell was checked against the page images, and the CSV files were kept unchanged (they were found fully correct, 14 + 16 + 23 rows). mapping_N.json and paper.json were written in this run.",
+ "not_extracted_tables": [
+  "Table IV: coefficients of smoothing equations - model parameters",
+  "Table V: conventional partial molar Gibbs energy etc. - derived",
+  "Table VI: scaled particle theory comparison - derived/model",
+  "Table VII: Ostwald coefficients at selected temperatures - calculated from the smoothing equations (derived)",
+  "Table VIII: regression coefficients of BK-type equation - model parameters"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 14,
+   "written": 14
+  },
+  "table_2": {
+   "printed": 16,
+   "written": 16
+  },
+  "table_3": {
+   "printed": 23,
+   "written": 23
+  }
+ },
+ "changes_after_image_check": [
+  "none: the existing CSV cells all agreed with the page images; thin-space digit grouping (e.g. 23 099.2) is written without the space"
+ ],
+ "extraction_notes": "Table I is the O2 validation set with a literature comparison column (from_literature). Tables II and III give one row per experiment. The GPa column is the headline Henry constant at saturation pressure. Sanity: H21 rises with T for all gases; replicate T rows kept.",
+ "pass2_diff": "485 cells, 0 disagreements"
+}

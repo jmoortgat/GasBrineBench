@@ -1,0 +1,58 @@
+{
+ "table": "Table 6",
+ "page_journal": 204,
+ "title_as_printed": "Solubility of R134a (x1) in aqueous NaCl solutions",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_x",
+ "gas": "c2h2f4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P is the equilibrium pressure of the cell as printed; the paper does not state whether it is total or gas partial pressure (water vapour not discussed); solvents degassed to the solvent vapour pressure, then gas admitted, pressure measured with an absolute transducer (0-1700 mbar)",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "no per-volume quantity; x1 is a mole fraction ('molar concentration of component 1 in aqueous NaCl solution in mole/mole')",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x1 mole/mole",
+   "unit": "mole_fraction_gas_in_aqueous_phase"
+  },
+  "value2": {
+   "col": "H1_s MPa",
+   "unit": "MPa",
+   "what": "Henry coefficient of component 1 in aqueous NaCl solution (definition not given in paper; abstract says determined from measured data, molar concentration on a salt-free basis)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "NaCl": {
+    "col": "NaCl mole/mole",
+    "unit": "mole_fraction"
+   }
+  },
+  "other_species": "NaCl mole fraction xs in mole/mole of the aqueous solution (printed 0.00 for pure water); exact denominator not stated"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "NaCl value printed only on first row of each block and filled down in the CSV (carried forward). Rows come in replicate pairs at each T. Printed trailing full stops on some H1_s values (e.g. 1041.) kept as printed. Block labels 0.0121/0.0291 (Table 3) vs 0.0121/0.0295 (Tables 4-7) as printed; abstract says 0.0291. Gas is a refrigerant outside the seven-gas list, kept per SPEC v2.1 (R22 = CHClF2, R23 = CHF3, R134a = 1,1,1,2-C2H2F4, R152a = 1,1-C2H4F2).",
+ "pressure_evidence": "P/x1 would be off by up to 45 %; (P - p_water)/x1 reproduces the printed H1,s for all 124 rows to 0.996-1.03 (audit 2026-10-02)",
+ "row_held": [
+  {
+   "rows": [
+    7
+   ],
+   "reason": "P 0.08557 MPa contradicts the H and x1 of that row (consistent value about 0.067-0.068); likely misprint (audit 2026-10-02)"
+  }
+ ]
+}

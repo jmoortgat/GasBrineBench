@@ -1,0 +1,44 @@
+{
+ "doi": "10.1021/ie034232t",
+ "first_author": "Chapoy",
+ "year": 2004,
+ "journal": "Ind. Eng. Chem. Res. 43 (7), 1794-1802",
+ "source_key": "CHAPOY(2004)",
+ "title": "Measurement and Modeling of Gas Solubility and Literature Review of the Properties for the Carbon Dioxide-Water System",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only"
+ },
+ "experimental_method": "Bubble point of known water-CO2 binaries at isothermal conditions in a variable-volume PVT cell (graphical technique, pressure versus volume).",
+ "uncertainties_stated": "P +/-0.002 MPa, T +/-0.1 K (paper text); composition from analytical-balance loading (2 mg accuracy).",
+ "tables": {
+  "table_4": "30 CSV rows = 27 data rows + 3 label rows"
+ },
+ "row_counts": {
+  "4": {
+   "printed": 27,
+   "written": 27,
+   "label_rows": 3
+  }
+ },
+ "not_extracted_tables": {
+  "Table 1": "literature compilation of CO2 solubility data",
+  "Table 2": "literature compilation of water content data",
+  "Table 3": "literature compilation of hydrate dissociation data",
+  "Table 5": "critical properties",
+  "Table 6": "Kihara parameters",
+  "Table 7": "hydrate reference properties",
+  "Table 8": "binary interaction parameters (model)"
+ },
+ "quality_remarks": [
+  "The capture split Table 4 into a header record and three body records (one per temperature range block) and the block labels exist only in wrapper_text; the CSV was assembled by script from those cells, left group then right group per block (right-group blank cells skipped).",
+  "The printed xCO2 values take only five values (0.00262, 0.0059, 0.01420, 0.02017, 0.02488) - they are the overall loading compositions, so each (T, P) pair is a bubble point of a given loading, not a free solubility isotherm.",
+  "Abstract range 274.14-351.31 K matches the table (274.14 to 351.31 K); Figure 3 caption says 273.15 to 353.15 K.",
+  "Rows between 304 and 322 K are labelled 'Tc < T' with Tc = 304.2 K in this table's block heading; row 303.99 K belongs to the previous block.",
+  "Temperature scale not stated."
+ ],
+ "extraction_notes": "Thin-space digit grouping inside xCO2 removed (0.002 62 -> 0.00262, 0.005 9 -> 0.0059, trailing zeros kept as printed: 0.014 20 -> 0.01420); this is a deviation from 'verbatim', recorded here. Label texts transliterated: '<=' for the less-or-equal sign.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

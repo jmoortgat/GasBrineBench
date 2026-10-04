@@ -1,0 +1,108 @@
+{
+ "table": "Table 3 and Table 3 (continued)",
+ "page_journal": "112-113",
+ "title_as_printed": "Experimental dew points temperatures and pressures for binary mixtures {(1-y) propane + y water}",
+ "footnotes_as_printed": {},
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the dew point measurement (line pressure at the chilled-mirror instrument), pressure transmitter; total pressure of the binary mixture; unit 10^5 Pa as printed in header",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K",
+   "what": "measured dew point temperature (chilled mirror)"
+  },
+  "P": {
+   "col": "P (10^5 Pa)",
+   "unit": "bar",
+   "basis": "total",
+   "note": "printed unit 10^5 Pa = bar"
+  },
+  "value": {
+   "col": "",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "from_group_rows": true,
+   "derived_by_authors": true,
+   "what": "y of the generated wet gas, printed in the block label row 'y = ...'; calculated by the authors from the Karl Fischer water content (10^-6 kg m^-3 (n)) times 10^-6*22.4/18.01; dew point T is the measured quantity at that y and P"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    20,
+    40,
+    61,
+    83
+   ],
+   "reason": "label row 'y = ...' (value set via group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.00127",
+     "unit": "mole_fraction_water_in_gas"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.00147",
+     "unit": "mole_fraction_water_in_gas"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.00178",
+     "unit": "mole_fraction_water_in_gas"
+    }
+   ]
+  },
+  {
+   "label_row": 61,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.00215",
+     "unit": "mole_fraction_water_in_gas"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.00278",
+     "unit": "mole_fraction_water_in_gas"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "The dew curve is a function of y: each block is one isoplethic dew-point curve; builder should treat y_h2o at the printed (T,P) as the stated y (derived by authors)"
+ ],
+ "notes": "Side-by-side two-column printing (T,P left and right pairs) was stacked: left column of each block read downwards, then the right column; order within a block is therefore the printed order (monotonic increasing in T and P). Many points lie below 273.15 K: whether the condensed phase is liquid water or ice is not stated.",
+ "quality_remarks": "audit 2026-10-02: see Table 2 remark on very low water content",
+ "caution": "Derived water mole fractions from Karl Fischer water content; at the lowest-water, low-pressure nitrogen points y*P/psat(T) is only 0.6-0.76, which is not physical; the authors attribute their largest deviations to error at very low water content."
+}

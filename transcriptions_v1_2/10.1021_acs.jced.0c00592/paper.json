@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/acs.jced.0c00592",
+ "first_author": "Lara Cruz",
+ "year": 2021,
+ "journal": "J. Chem. Eng. Data 66(1), 249-261",
+ "source_key": "LARACRUZ(2021)",
+ "title": "Experimental Study of Carbon Dioxide Solubility in Sodium Chloride and Calcium Chloride Brines at 333.15 and 453.15 K for Pressures up to 40 MPa",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "New stirred variable-volume reactor; liquid sample trapped in NaOH solution and CO2 determined by titration with HCl (two equivalence points).",
+ "uncertainties_stated": "ur(gas solubility)=0.028, ur(salt molality)=0.001, u(T)=0.50 K, u(P)=0.06 MPa",
+ "tables": {
+  "Table 6": 15,
+  "Table 7": 24
+ },
+ "row_counts": {
+  "Table 6": {
+   "printed_data_rows": 12,
+   "label_rows_added": 3,
+   "written": 15
+  },
+  "Table 7": {
+   "printed_data_rows": 20,
+   "label_rows_added": 4,
+   "written": 24
+  }
+ },
+ "not_extracted_tables": {
+  "Table 1": "literature studies list (T/P ranges only)",
+  "Table 2": "literature studies list",
+  "Table 3": "literature studies list",
+  "Table 4": "summary of literature gaps",
+  "Table 5": "chemicals and purities"
+ },
+ "quality_remarks": "Abstract says 20 original data, Table 7 has 20 rows; Table 6 (12 validation rows) not counted there. Abstract: pure water validation at 333.15 K, single-salt validation at 323.15 K, matches Table 6. Pressure absolute/gauge not stated. Salt molality is per kg H2O. Captured tables are inline plus popup duplicates (11 captures = 7 printed tables; Tables 1-4 captured twice, inline and popup). One printed misspelling in Table 4 text ('NaCl0.2 mol CaCl2') irrelevant. Brine at 453.15 K only for mixed salt; single-salt brines only at 333.15 K although abstract wording says both temperatures.",
+ "extraction_notes": "System-name cell printed beside first data row written as its own label row (rule 10). Footnote d (no literature data) in Table 6 row 25.06 MPa emptied and recorded in note column. Header footnote letters stripped. Values verbatim.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

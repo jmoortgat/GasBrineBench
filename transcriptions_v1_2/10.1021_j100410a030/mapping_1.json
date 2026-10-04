@@ -1,0 +1,20 @@
+{
+ "table": "Table I", "page_journal": 4622,
+ "title_as_printed": "Heat of Solution of Methane in Water from 0 to 50 C",
+ "footnotes_as_printed": {"a": "Reference 11.", "b": "Reference 27."},
+ "property": "dh_sol",
+ "gas": "ch4", "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated for methane; text only says the partial pressure of water vapor was calculated from Ambrose and Lawrenson and the methane virial coefficient from Dymond and Smith; dH0 is the standard enthalpy change upon dissolution",
+ "columns": {
+  "T": {"col": "temp K", "unit": "K"},
+  "value": {"col": "dH0 kJ mol-1", "unit": "kJ/mol"},
+  "uncertainty": {"col": "2 sigma kJ mol-1", "unit": "kJ/mol", "what": "twice the standard error (printed as +/- 2 sigma in the value column header)"}
+ },
+ "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": "pure water"},
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": ["no. of determinations"],
+ "conversion_needs": [],
+ "notes": "Printed '-18.53 +/- 0.10' split into value and uncertainty columns. Rows at 288.15 and 298.15 carry footnote letters (data from refs 11 and 27, earlier work of the same group, reprinted here). Standard state not defined in the paper beyond 'standard enthalpy change upon dissolution'."
+}

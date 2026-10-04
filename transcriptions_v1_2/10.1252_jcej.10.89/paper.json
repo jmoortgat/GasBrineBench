@@ -1,0 +1,43 @@
+{
+ "doi": "10.1252/jcej.10.89",
+ "first_author": "Yasunishi, Akira",
+ "authors": "Akira Yasunishi",
+ "year": 1977,
+ "journal": "Journal of Chemical Engineering of Japan 10(2), 89-94",
+ "title": "Solubilities of sparingly soluble gases in aqueous sodium sulfate and sulfite solutions",
+ "source_key": "YASUNISHI(1977)",
+ "experimental_method": "Gas saturation (volumetric) method: degassed solution and measured gas volume in a dissolution vessel (Hg-sealed) in an air thermostat, gas buret and manometer; Ostwald coefficient L = VG/VL from gas absorbed and liquid volume, at gas partial pressure 1 atm.",
+ "uncertainties_stated": "Pure-water results: average deviation 0.19-0.49 % over 7-18 determinations (Table 1). Mixed-salt data deviate <1 % from the interpolated values; Eq. (2) holds within 1 %.",
+ "quality_remarks": "Ostwald coefficient per volume of liquid (salt solution), small liquid volume change from gas absorption corrected with partial molal volumes (O2 31, N2 40 cm3/mol). Vapour pressure of Na2SO3 solutions not available: Na2SO4 values (Timmermans) used at the same molarity, justified via Lantzke et al. isopiestic data. Sulfite solutions contained 96-98 mol % sulfite (rest sulfate); 'pure sulfite' solubility is therefore approximate. Authors note O2 in sulfite solution is not directly measurable because of oxidation (Table 7 is estimated). N2 pure-water value (0.01619) differs slightly from literature average (0.01589). Table 4 rows 0.778/0.785 mol/l: L 0.00808 and 0.00830 (text layer reads the second as 'O.OO83O'; image confirms 0.00830, non-monotonic as printed). Table 2 25 C has near-replicates 0.510/0.513 and 1.228/1.240.",
+ "how_extracted": "image_read (all five tables read from the 200 dpi page image; text layer checked)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   91
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 6 (constants A, B of Eq. 3 for O2-Na2SO4): fitted model parameters",
+  "Table 7 (estimated solubility of oxygen in aqueous sodium sulfite solutions at 25 C): estimated by authors, derived from the sulfate data and Setschenow relation, not measured"
+ ],
+ "row_counts": {
+  "Table 1": "printed 4 / written 4",
+  "Table 2": "printed 26 data rows (8+12+6) / written 26 (+3 label rows)",
+  "Table 3": "printed 8 / written 8",
+  "Table 4": "printed 11 / written 11",
+  "Table 5": "printed 6 / written 6"
+ },
+ "changes_after_image_check": [
+  "Table 4 row 0.785: text layer 'O.OO83O' -> 0.00830 (OCR letters, same digits as image)",
+  "Table 4 rows 0.102/0.106: text layer spacing '0.       102' -> 0.102"
+ ],
+ "extraction_notes": "Table 1 gas varies per row (column Gas). Table 2 side-by-side blocks (15, 25, 35 C) stacked with label rows. Cs = 0.0 rows are pure-water points kept. Temperature scale not stated. Printed pressure: 1 atm gas partial pressure (oxygen or nitrogen). No gas mole fractions in salt solution, so gas_basis not applicable.",
+ "gas_basis": "not_applicable",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer matched the image for every numeric cell (only OCR letter/spacing artefacts noted).",
+ "pass2_diff": "Tables 1-5: 55 rows, 132/132 numbers identical."
+}

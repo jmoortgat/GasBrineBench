@@ -1,0 +1,37 @@
+{
+ "doi": "10.1006/jcht.1998.0381",
+ "first_author": "Apelblat",
+ "year": 1998,
+ "journal": "J. Chem. Thermodynamics 30, 1191-1198",
+ "source_key": "APELBLAT(1998)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "all PDF-derived tables get a blind second pass; text layer garbled the '*' and footnote symbols, though every number matched the image (no numeric corrections)",
+ "experimental_method": "Direct and differential isoteniscopic vapour-pressure measurement of water, H2 18O-enriched water and saturated KCl solutions, 298-318 K.",
+ "uncertainties_stated": "Sensitivity better than +/-0.5 Pa; earlier check agreed with literature within +/-0.05 per cent.",
+ "quality_remarks": "Measurements made ~25 years before publication. Temperature scale not stated. Saturated-solution p values are derived from measured Dp and the Saul-Wagner water vapour pressure.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   4
+  ],
+  "journal_pages": [
+   1192,
+   1194
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: vapour pressures of H2 18O-enriched water (isotopically labelled water, out of scope; also contains calculated columns)",
+  "Table 4: compilation of literature vapour pressures of saturated KCl with this work's values repeated (literature/derived)",
+  "Table 5: values calculated from a fitted correlation (derived: p, aw, phi, enthalpy of vaporization)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 22 rows (9 literature + 12 this work + label row 'This work' written as own row); written 22",
+  "Table 3": "printed 29; written 29"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 1 literature rows skipped in mapping (kept in CSV). Table 3 T filled down; '*' kept in molality column.",
+ "pass2_diff": "token diff: Table 1 identical; Table 3 every pass-2 number found in pass 1 (extras are filled-down temperatures)"
+}

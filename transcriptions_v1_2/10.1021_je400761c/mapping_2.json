@@ -1,0 +1,25 @@
+{
+  "table": "Table 2", "page_journal": "738-743", "title_as_printed": "Results of Experimental Measurements of Density Difference of Aqueous KCl-NaCl Mixtures Delta_rho with Respect to Pure Water at Temperature T, Pressure p, and Molalities of Components m_i",
+  "footnotes_as_printed": {"a": "m_i is the molality of solute i; Delta_rho represents the measured difference in density of a solution with respect to water. Standard uncertainties u are u(T) = 0.01 K, u(p) = 0.0005 p, u(m_i) = 0.000012 m. The combined uncertainty U(Delta_rho) = (1.9e-4, 2.1e-4, 1.2e-4, 3.6e-5, and 1.7e-4) g/cm3 at T = (298.15, 373.15, 423.15, 473.15 and 523.15) K, respectively. The combined uncertainty is based on the standard deviation of the mean density difference of solutions evaluated from the repeated measurements of the solution at all temperatures."},
+  "property": "rho_diff",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "p is the pressure of the vibrating-tube densimeter (pressure transmitter, 0.05 % accuracy); the paper does not say whether it is total or gas-free; no gas present (degassed solutions)",
+  "columns": {
+    "T": {"col": "T K", "unit": "K"},
+    "P": {"col": "p MPa", "unit": "MPa", "basis": "unspecified"},
+    "value": {"col": "10^3 Delta_rho g/cm^3", "unit": "g/cm3", "scale": 0.001, "what": "density of the KCl-NaCl solution minus density of pure Milli-Q water at the same T and p (reference: pure water at same T, p)"}
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {"NaCl": {"col": "mNaCl mol/kg", "unit": "mol/kg"}, "KCl": {"col": "mKCl mol/kg", "unit": "mol/kg"}},
+    "constant": {},
+    "other_species": ""
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": [],
+  "conversion_needs": ["printed value is 10^3 x Delta_rho: multiply by 1e-3", "molality is mol per kg of water (stated as mol/kg, solvent mass)"],
+  "notes": "Two blocks of five columns are printed side by side on each page; they are stacked here, left block of a page first, then the right block, page after page (PDF pages 3-8). No label rows. Delta_rho is a difference from pure water, so absolute density needs a pure-water density from the builder. Single-salt rows have mKCl = 0.00000 or mNaCl = 0.00000 as printed."
+}

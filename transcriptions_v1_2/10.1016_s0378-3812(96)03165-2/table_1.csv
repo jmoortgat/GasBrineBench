@@ -1,0 +1,11 @@
+Temperature/C,Mole fraction x (1000) Experiment (this work),Mole fraction x (1000) Henry's Law prediction,note
+90,-,0.50,
+70,-,0.55,
+50,-,0.69,
+30,-,0.75,
+20,-,0.85,
+15,1.2,0.97,
+10,1.8,1.05,
+5,3.6,1.20,
+1,1.30/3.26,1.37,Mole fraction x (1000) Experiment (this work):* (both values)
+0,15.2,1.40,

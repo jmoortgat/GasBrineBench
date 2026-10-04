@@ -1,0 +1,51 @@
+{
+ "table": "Table 3b",
+ "page_journal": "1272",
+ "title_as_printed": "Experimental values of molar volumes Vm of supercritical, homogeneous water-air mixtures at 673 K at specified water mole fractions x(H2O) and pressures P",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "gas": "air",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of the single homogeneous phase (header says bar, values are MPa per abstract)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "673"
+  },
+  "P": {
+   "col": "P/bar",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Vm/m3 mol-1",
+   "unit": "m3/mol",
+   "scale": 1e-06,
+   "what": "molar volume of homogeneous water-air mixture"
+  },
+  "value2": {
+   "col": "x(H2O)",
+   "unit": "mole_fraction_water",
+   "scale": 1,
+   "what": "composition of the mixture"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "water": {
+    "col": "x(H2O)",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "MISPRINT IN HEADERS: the printed pressure header is 'P/bar' and the volume header 'Vm/m3 mol-1', but the values (33.3-279.5 and 27.2-120.6) match the MPa and 10^-6 m3/mol scale of Table 3a (same isotherm, x(H2O) about 0.80; the text says pressures 33 to 280 MPa in the abstract). Mapped as MPa and scale 1e-6; verify by the builder. Values printed exactly as given."
+}

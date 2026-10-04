@@ -1,0 +1,103 @@
+{
+ "table": "Table 9",
+ "page_journal": 24,
+ "title_as_printed": "Viscosities of CO2-saturated and non-CO2 NaCl + CaCl2 solutions at 5.00 mpa under varying temperature, (S7:19wt%NaCl + 1wt%CaCl2, S8: 19wt%NaCl + 1wt%CaCl2 + CO2)",
+ "footnotes_as_printed": "none",
+ "property": "visc",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Table title gives 5.00 and/or 8.00 MPa; sample kept at that pressure by a back-pressure regulator with a CO2-filled buffer vessel for saturated runs. Total or partial not stated.",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "dynamic viscosity in mPa.s",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "Temp., K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Viscosity, mPa.s",
+   "unit": "mPa.s"
+  },
+  "uncertainty": {
+   "col": "Uncertainty mPa.s",
+   "unit": "mPa.s"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {},
+  "other_species": "",
+  "note": "set per block by label rows from the table caption (S7: 19 wt% NaCl + 1 wt% CaCl2; S8: same + CO2); Table 4's 'mol kg-1' entries for S7/S8 (3.25, 0.09) are mol per kg of solution (190 g/58.44 = 3.251; 10 g/110.98 = 0.0901), not molality"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4
+   ],
+   "reason": "block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": ""
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "19",
+     "unit": "mass_percent"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1",
+     "unit": "mass_percent"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "19",
+     "unit": "mass_percent"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1",
+     "unit": "mass_percent"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Side-by-side blocks stacked left to right. CO2-saturated blocks (S2,S4,S6,S8) have gas co2. P is constant per block, set in the label row.",
+ "quality_remarks": "audit 2026-10-02: Composition taken from the caption (19 wt% NaCl + 1 wt% CaCl2) instead of Table 4's 'mol kg-1' (3.25, 0.09), which are per kg of solution; the true molalities are 4.064 and 0.113 mol/kg water (the same wt%-to-molality check reproduces Table 4 for S1 and S5)."
+}

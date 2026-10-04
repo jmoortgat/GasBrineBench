@@ -1,0 +1,54 @@
+{
+ "table": "Table I",
+ "page_journal": 900,
+ "title_as_printed": "Apparent Molar Volumes, Fit Deviations, Water Densities, and Density Differences for CaCl2(aq)",
+ "footnotes_as_printed": {
+  "a": "From the equation of state of Haar, Gallagher, and Kell, Ref. 15."
+ },
+ "property": "rho_diff",
+ "property_description": "value = measured density difference rho - rho0 between the CaCl2 solution and pure water at the same t and p (printed 10^3 d_rho, scale 0.001, g/cm3); V_phi (derived by the authors, Eq. 1), rho0 (Haar-Gallagher-Kell, literature) and dV_phi (fit deviation) are in extra_unmapped",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated how defined; printed per row in bars (cell pressure of the high-pressure vibrating-tube densimeter, nominally near 70 and 400 bar); the pressure column varies between rows of one nominal-pressure block by up to 4 bar",
+ "columns": {
+  "T": {
+   "col": "t C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "p bars",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^3 d_rho (g-cm^-3)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "measured density difference rho - rho0 between the CaCl2 solution and pure water at the same t and p"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m mol-kg^-1",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "V_phi cm3-mol^-1 (apparent molar volume, calculated by the authors from the density difference, Eq. 1)",
+  "rho0 g-cm^-3 (water density from the Haar, Gallagher and Kell equation of state, literature, not measured)",
+  "dV_phi (fit deviation from the authors' model; not data)"
+ ],
+ "conversion_needs": [
+  "bar to MPa"
+ ],
+ "notes": "Rows are printed in blocks (nominal 70 bar and nominal 400 bar at each of 25, 50, 100, 150, 200, 250 C, separated by blank lines) with no label rows; the CSV keeps the printed order. Replicate m values within a block are real repeat runs (kept).",
+ "quality_remarks": "audit 2026-10-02: The measured datum is the density difference (p.899: V_phi 'obtained from density differences (delta rho) between the solution of interest and water'); V_phi is derived by the authors. Printed oddities noted in paper.json are kept as printed."
+}

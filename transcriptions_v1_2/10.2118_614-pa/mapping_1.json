@@ -1,0 +1,29 @@
+{
+  "table": "Table 1", "page_journal": 297,
+  "title_as_printed": "EQUILIBRIUM WATER CONTENT OF METHANE-HYDROGEN SULFIDE VAPOR AT 160 F",
+  "footnotes_as_printed": {},
+  "property": "other",
+  "property_description": "water content of the CH4-H2S vapour phase in ppm (basis - mole, mass or volume - not stated in the paper); candidate for y_h2o if the builder treats ppm as mole ppm. Fig. 4 of the paper plots the same data as mole fraction of water, which suggests mole basis but the table/text never say so.",
+  "gas": "ch4-h2s",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "Column 'Pressure psia'; text: 'water content of pure methane at pressures up to 1,495 psia'; whether total cell pressure is not stated explicitly (mixture vapour in equilibrium with water, cell pressure set by pumping confining fluid).",
+  "columns": {
+    "T": {"col": "", "unit": "F", "constant": "160"},
+    "P": {"col": "Pressure psia", "unit": "psia", "basis": "unspecified"},
+    "value": {"col": "Water Content ppm", "unit": "ppm_basis_not_stated"},
+    "gas_composition": {"col": "H2S Content of Vapor %", "unit": "percent (Fig. 4 caption: 'mole percent of hydrogen sulphide in vapour phase'; table says only %)", "gas": "h2s", "note": "balance of the dry gas is methane"},
+    "uncertainty": {"col": "Max-Min Deviation %", "unit": "percent", "what": "max and min deviation of individual samples from the average, printed as '- a; + b' strings"}
+  },
+  "composition": {
+    "basis": "none",
+    "per_row": {},
+    "constant": {},
+    "other_species": "H2S content of vapor (16-29 %) given in column; remainder methane; liquid phase distilled water (no salt)"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": ["Avg. Peak Height Chart Units (raw chromatograph signal)", "No. of Samples Analyzed", "Max-Min Deviation % (string)"],
+  "conversion_needs": ["F to K", "psia to Pa", "ppm basis must be established (mole assumed only by Fig. 4 context)"],
+  "notes": "Rows are in printed order; the composition (H2S content) differs for every row because the vapour composition could not be kept constant over a range of pressures per cell charge. volume_basis not applicable."
+}

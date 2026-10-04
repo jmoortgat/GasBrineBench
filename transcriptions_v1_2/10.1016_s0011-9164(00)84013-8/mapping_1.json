@@ -1,0 +1,100 @@
+{
+ "table": "Table I",
+ "page_journal": 145,
+ "title_as_printed": "Experimental data and correlation of water activities of NaCl solutions by molar vapor pressure depression",
+ "footnotes_as_printed": {
+  "table": "aw = (p/p0); S. D. = +/- 0.08% (printed below the 150 C block)"
+ },
+ "property": "aw",
+ "property_description": "water activity aw = p/p0 (ratio of solution vapour pressure to pure-water vapour pressure at the same T), from differential isoteniscope measurement; corrected for water-vapour non-ideality and for water evaporated in the isoteniscope",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable; vapour pressure itself is not tabulated, only aw = p/p0",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "75"
+  },
+  "value": {
+   "col": "(aw)exp.",
+   "unit": "dimensionless",
+   "what": "aw = p/p0, experimental"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m (mol/kg)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "",
+  "note": "molality column header printed only as 'm'; unit mol/kg inferred from the paper's symbol list ('m molality of the solution'); concentration corrected by authors for water evaporated in the isoteniscope"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12,
+    18
+   ],
+   "reason": "temperature block label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "100",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "125",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "150",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "(aw)calc. (value calculated from the authors' correlation k = a + b mu^1/2; not measured)"
+ ],
+ "conversion_needs": [
+  "water activity is a derived-from-measurement quantity (aw = p/p0); the database must map it to its own water-activity/vapor-pressure property; T per block from label rows, in C"
+ ],
+ "notes": "Four temperature blocks printed side by side, stacked here with one label row per block (e.g. '75 C'), label rows are carried by group_rows (T.constant).",
+ "vapour_nonideality_corrected": true,
+ "quality_remarks": "builder: the authors corrected for vapour non-ideality at high T (text), so aw above 373 K is accepted and tagged."
+}

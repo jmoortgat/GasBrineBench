@@ -1,0 +1,60 @@
+{
+ "doi": "10.1002/bbpc.19850891206",
+ "first_author": "Japas",
+ "year": 1985,
+ "journal": "Ber. Bunsenges. Phys. Chem. 89, 1268-1275",
+ "source_key": "JAPAS(1985)_O2",
+ "experimental_method": "Synthetic (isochoric P-T kink points in a sapphire-window autoclave, with molar volumes) and analytic (liquid-phase sampling, gas by volumetry at 77.3 K, water by weighing) methods; water-oxygen plus one water-air isopleth.",
+ "uncertainties_stated": "T agreement +-1 K and +-0.5% of P between determinations; molar volume +-0.3%; P accuracy +-0.2% (supercritical); analytic P +-1 MPa (printed per row); O2 amount 0.3-1.0% (synthetic), liquid O2 uncertainty not above 2%.",
+ "quality_remarks": "Table 3b headers print P/bar and Vm/m3 mol-1, evidently wrong units (values match MPa, 10^-6 m3/mol). Text says synthetic data up to x=0.900 but last rows print 0.899. Synthetic compositions corrected for dead volume. Pressure transducer corrosion problems reported with O2 (replaced). Air composition not given.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   1269,
+   1270,
+   1271,
+   1272
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Five text-layer cells were corrupted (e.g. '51 1', '513', '64 1') and had to be corrected from the page images; rule v2.1 item 14 requires pass 2.",
+ "not_extracted_tables": [
+  "Table 2: critical-curve points, described by the authors as graphically determined",
+  "Henry constants and excess functions: figures only/derived"
+ ],
+ "row_counts": {
+  "Table 1a": {
+   "printed": 117,
+   "written": 117
+  },
+  "Table 1b": {
+   "printed": 9,
+   "written": 9
+  },
+  "Table 3a": {
+   "printed": 73,
+   "written": 73
+  },
+  "Table 3b": {
+   "printed": 9,
+   "written": 9
+  }
+ },
+ "changes_after_image_check": [
+  "table_1a row 2 (x=0.076) T: 51 1 -> 511",
+  "table_1a row for x=0.96, P=104 T: 513 -> 573",
+  "table_1a row x=0.797, P=120.7 T: 64 1 -> 641",
+  "table_1a row x=0.898 T: 64 1 -> 641",
+  "table_1a row x=0.97, P=39 T: 61 3 -> 613"
+ ],
+ "extraction_notes": "Table 1a P column for analytic rows printed 'N +- 1'; split into P and an uncertainty column (value 1). Analytic rows have no volume ('-'). All other cells matched the images.",
+ "pass2_diff": "token diff: 750 numbers per pass, identical multisets in all four tables"
+}

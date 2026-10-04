@@ -1,0 +1,51 @@
+{
+ "doi": "10.1021/je049869d",
+ "first_author": "Chapoy",
+ "year": 2004,
+ "journal": "J. Chem. Eng. Data 49 (4), 1110-1115",
+ "source_key": "CHAPOY(2004)",
+ "title": "Gas Solubility Measurement and Modeling for the Nitrogen + Water System from 274.18 K to 363.02 K",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source, no PDF image check; CSV written by script from captured cells"
+ },
+ "experimental_method": "Static-analytic method with a ROLSI pneumatic capillary sampler on a sapphire cell (28 cm3); liquid samples (>=10 per condition) analysed by GC-TCD.",
+ "uncertainties_stated": "T +-0.02 K; P +-1 kPa (0.2-7 MPa); moles of water +-1.5%; moles of nitrogen +-2.5% (relative); per-point repeatability given as AAD (exp) column.",
+ "tables": {
+  "table_3.csv": 52
+ },
+ "row_counts": {
+  "Table 3": {
+   "printed": 52,
+   "written": 52
+  }
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "literature compilation of T/P ranges of nitrogen-in-water studies, no measured values"
+  },
+  {
+   "table": "Table 2",
+   "reason": "critical properties and acentric factors"
+  },
+  {
+   "table": "Table 4",
+   "reason": "EoS binary interaction parameters (fit)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "literature compilation of T/P ranges of water-content studies"
+  },
+  {
+   "table": "Table 6",
+   "reason": "y2 water content in the gas phase: all values are literature data (Rigby and Prausnitz, Namiot and Bondareva, Althaus) compared with model predictions, not measured in this work (the paper measures only aqueous-phase N2). Captured four-fold identical copies of Tables 1, 5 and 6 are popup duplicates."
+  }
+ ],
+ "quality_remarks": "Table range matches abstract and text: T 274.18-363.02 K, P up to 7.16 MPa (table min P 0.915, max 7.160 MPa). 52 data points over 10 nominal isotherms (274, 278, 283, 288, 293, 298, 308, 323, 343, 363 K). Ethane is mentioned in Materials only as the GC calibration gas. Footnote formula for AAD is garbled in the HTML text. Whether Pexp includes water vapour is not stated. Captured table list contains duplicate popup copies of Tables 1, 5, 6; none contain extra data.",
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 3 rows: cells normalised only for Unicode minus (none present). x1 header printed 'x1 x 10^3' i.e. value = printed x 1e-3.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

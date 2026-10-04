@@ -1,0 +1,123 @@
+{
+ "table": "Table 3",
+ "page_journal": 140,
+ "title_as_printed": "Observed results for acetylene in aqueous solutions of a single salt and mixed salts at 1 atm and 25 C",
+ "footnotes_as_printed": {
+  "xi": "xi is for the first salt in the mixture"
+ },
+ "property": "bunsen",
+ "gas": "c2h2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Title: 'at 1 atm and 25 C'; Bunsen coefficient defined in the companion paper (Onda 1970, JCEJ 3, 18) as volume of gas at 0 C and 760 mmHg partial gas pressure per cm3 of solution; this paper only says solubilities are measured at 25 C and 1 atm, expressed as Bunsen absorption coefficients; total vs partial pressure not otherwise stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "basis": "unspecified",
+   "constant": "1"
+  },
+  "value": {
+   "col": "alpha",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "ionic_strength_total": {
+    "col": "I (mol/l)",
+    "unit": "mol/L"
+   },
+   "ionic_strength_fraction_first_salt": {
+    "col": "xi (ionic strength fraction of first salt)",
+    "unit": "fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "Salt system is given by block label rows (group_rows set composition.salts, e.g. 'NaCl+NH4NO3'; first named salt is the one xi refers to; xi = I_first/I, '-' for a single salt, 1/3 means equal ionic-strength fraction for each of three salts). I = total ionic strength in mol/l (Eq. 6, Nomenclature 'total ionic strength [mol/l]'), I_i = (z^2 C + z C)/2 per salt i; per-salt molarities are not tabulated. Species outside the six-ion set present: NH4NO3."
+ },
+ "volume_basis": "solution",
+ "volume_basis_evidence": "Nomenclature: 'I = total ionic strength [mol/l]', 'Ci = concentration of salt i [mol/l]', 'alpha = Bunsen absorption coefficient [cm3 of gas/cm3 of solution]'",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    3,
+    7,
+    11,
+    16,
+    21
+   ],
+   "reason": "system label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 3,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "NH4NO3"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "NaCl+NH4NO3"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "NaCl+CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.salts",
+     "value": "NaCl+CaCl2+NH4NO3"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "I (mol/l of solution) to molality of each salt needs xi, salt stoichiometry and solution density (not given)",
+  "Bunsen coefficient is per cm3 of salt solution, gas reduced to 0 C, 760 mmHg"
+ ],
+ "notes": "xi printed only on first row of each sub-block; filled down on following rows (marked in note column). Printed layout: system name beside first row of each block, written as its own label row. Pure-water reference runs reported only in text (CO2 and C2H4 from the companion paper; C2H2 three runs mean 0.9487, range 0.14%).",
+ "quality_remarks": "Single-salt NaCl at I = 2.213 prints alpha = 0.0065 (data row 2); single-salt NaCl at I = 1.302 gives 0.6942, so 0.0065 is an evident misprint; kept as printed."
+}

@@ -1,0 +1,222 @@
+{
+ "table": "Table I",
+ "page_journal": 306,
+ "title_as_printed": "Experimental Densities rho and Mean Apparent Molar Volumes V_phi of Aqueous Solutions of NaCl and CaCl2 at Ionic Strength I and Ionic Fraction yB",
+ "footnotes_as_printed": {
+  "a": "The datum masked by an asterisk was excluded from the final fit. (asterisk on V_phi 25.035 at 308 K, yB = 0.8860, I = 6.1709)"
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "0.1 MPa (title); measured with a vibrating-tube densimeter, no further statement on pressure",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "0.1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho g/cm3",
+   "unit": "g/cm3"
+  },
+  "value2": {
+   "col": "V_phi cm3/mol",
+   "unit": "cm3/mol",
+   "what": "mean apparent molar volume, calculated by the authors from the measured density (eq 3)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "ionic_strength": {
+    "col": "I mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl and CaCl2 mixtures; ionic strength fraction yB = 3m(CaCl2)/(3m(CaCl2)+m(NaCl)) given in label rows (yB=0 pure NaCl, yB=1 pure CaCl2); I is in mol per kg of water (molality scale, paper writes mol.kg-1; the word water is not used explicitly)",
+  "ionic_strength_rule": {
+   "I": "ionic_strength",
+   "y": "yB_CaCl2_ionic_fraction",
+   "salt_y": "CaCl2",
+   "salt_other": "NaCl"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    14,
+    31,
+    52,
+    70,
+    89,
+    97,
+    123,
+    134,
+    142,
+    151,
+    158,
+    165,
+    171
+   ],
+   "reason": "block labels (temperature heading with ionic fraction yB)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.0000",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.2883",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.5199",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.7091",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 70,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.8669",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 89,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.8860",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 97,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "1.0000",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 123,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.0000",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 134,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.2883",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 142,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.5199",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 151,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.7091",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 158,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.8669",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 165,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "0.8860",
+     "unit": "dimensionless"
+    }
+   ]
+  },
+  {
+   "label_row": 171,
+   "sets": [
+    {
+     "path": "composition.constant.yB_CaCl2_ionic_fraction",
+     "value": "1.0000",
+     "unit": "dimensionless"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "V_phi (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "ionic strength I and yB to molalities: m_CaCl2 = yB*I/3, m_NaCl = (1-yB)*I (from the definition of yB, I = m_NaCl + 3 m_CaCl2)"
+ ],
+ "notes": "Printed layout is two side-by-side column blocks per yB block; stacked left block first then right block. Blocks are headed 298 K (rows 0-122) and 308 K (rows 123-end); the label-row text carries the nominal temperature and yB. Each row's measured T is in the T column. The 308 K asterisk is moved to the note column. Densities printed with a thin space between digit groups (e.g. 1.174 149) written without the space. Table II (fit parameters) not extracted."
+}

@@ -1,0 +1,40 @@
+{
+  "table": "Table 2", "page_journal": "276-277", "title_as_printed": "Molar enthalpy of dilution Delta_dil H_m of CaCl2(aq); m_i and m_f are the initial and final molalities, respectively",
+  "footnotes_as_printed": {},
+  "property": "dh_dilution",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "mean pressure of each set as printed in the label row (variation typically +-0.1 MPa); absolute vs gauge not stated",
+  "columns": {
+    "T": {"col": "", "unit": "K", "constant": "see group_rows"},
+    "P": {"col": "", "unit": "MPa", "basis": "unspecified"},
+    "value": {"col": "-Delta_dil H_m J/mol", "unit": "J/mol", "scale": -1, "what": "printed column is MINUS the molar enthalpy of dilution (printed numbers are positive); Delta_dil H_m = L_phi(m_f) - L_phi(m_i) for CaCl2(aq, m_i) = CaCl2(aq, m_f)"},
+    "m_final": {"col": "m_f mol/kg", "unit": "mol/kg", "what": "final molality after dilution"}
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {"CaCl2": {"col": "m_i mol/kg", "unit": "mol/kg", "what": "initial molality"}},
+    "constant": {},
+    "other_species": "none"
+  },
+  "skip_rows": [{"rows": [0, 11, 22, 25, 38, 51, 56, 68, 73, 117, 126, 154, 160], "reason": "T, p label rows"}],
+  "group_rows": [
+    {"label_row": 0, "sets": [{"path": "T", "value": "298.11", "unit": "K"}, {"path": "P", "value": "7.2", "unit": "MPa"}]},
+    {"label_row": 11, "sets": [{"path": "T", "value": "323.23", "unit": "K"}, {"path": "P", "value": "7.2", "unit": "MPa"}]},
+    {"label_row": 22, "sets": [{"path": "T", "value": "323.18", "unit": "K"}, {"path": "P", "value": "43.3", "unit": "MPa"}]},
+    {"label_row": 25, "sets": [{"path": "T", "value": "348.17", "unit": "K"}, {"path": "P", "value": "7.4", "unit": "MPa"}]},
+    {"label_row": 38, "sets": [{"path": "T", "value": "373.23", "unit": "K"}, {"path": "P", "value": "7.4", "unit": "MPa"}]},
+    {"label_row": 51, "sets": [{"path": "T", "value": "373.34", "unit": "K"}, {"path": "P", "value": "43.5", "unit": "MPa"}]},
+    {"label_row": 56, "sets": [{"path": "T", "value": "423.34", "unit": "K"}, {"path": "P", "value": "7.3", "unit": "MPa"}]},
+    {"label_row": 68, "sets": [{"path": "T", "value": "423.42", "unit": "K"}, {"path": "P", "value": "43.5", "unit": "MPa"}]},
+    {"label_row": 73, "sets": [{"path": "T", "value": "473.35", "unit": "K"}, {"path": "P", "value": "7.3", "unit": "MPa"}]},
+    {"label_row": 117, "sets": [{"path": "T", "value": "473.17", "unit": "K"}, {"path": "P", "value": "43.5", "unit": "MPa"}]},
+    {"label_row": 126, "sets": [{"path": "T", "value": "525.76", "unit": "K"}, {"path": "P", "value": "7.2", "unit": "MPa"}]},
+    {"label_row": 154, "sets": [{"path": "T", "value": "526.25", "unit": "K"}, {"path": "P", "value": "20.4", "unit": "MPa"}]},
+    {"label_row": 160, "sets": [{"path": "T", "value": "526.53", "unit": "K"}, {"path": "P", "value": "36.6", "unit": "MPa"}]}
+  ],
+  "extra_unmapped": [],
+  "conversion_needs": ["sign: printed column is -Delta_dil H_m (scale -1 gives Delta_dil H_m)", "enthalpy is per mole of CaCl2"],
+  "notes": "Printed as three side-by-side column groups (-Delta_dil H_m, m_i, m_f) under T, p headings; stacked per heading as left, middle, right group. The 473.35 K block runs over the page break (journal p. 276 to 277). Replicate rows (e.g. 17939 at m_i 0.0500, m_f 0.0083 twice at 525.76 K) are kept. Printed T is the mean temperature of each set. The calorimeter measures flowing mixing of the CaCl2 solution with water; m_f derived by the authors from flow rates and densities."
+}

@@ -1,0 +1,41 @@
+{
+ "doi": "10.1007/BF00646263",
+ "first_author": "Kumar",
+ "year": 1986,
+ "journal": "J. Solution Chem. 15(5), 409-413",
+ "source_key": "KUMAR(1986)",
+ "title": "Densities and Apparent Molal Volumes of Aqueous Concentrated Calcium Chloride Solutions from 50 to 200 C at 20.27 bar",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one correction after image check (comma printed as decimal point in a scan-like page); journal scan",
+ "experimental_method": "dilatometer (Rogers et al. type) with an 11 cm3 pressure vessel in an oil bath, density relative to a reference solution of known density at 25 C, pressurized with nitrogen, T raised in 25 C steps",
+ "uncertainties_stated": "densities precise to 2.2e-4 g/cm3 up to 125 C and 5.1e-4 g/cm3 up to 200 C; bath control +-0.05 C to 125 C, +-0.1 C to 200 C",
+ "quality_remarks": [
+  "Text layer printed '1,11476' (m=1.5603, 50 C); the page image shows 1.11476.",
+  "Density at 25 C taken from earlier work (not tabulated)."
+ ],
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   410
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "fitted Pitzer-parameter temperature coefficients, model parameters"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 10 molalities x 7 temperatures = 70 values; written 70 rows (long form)"
+ },
+ "changes_after_image_check": [
+  "table_1 m=1.5603, T=50: '1,11476' (text layer) -> 1.11476"
+ ],
+ "extraction_notes": "Apparent molal volumes were calculated by the author and are not tabulated. Sanity: density increases with m at each T and decreases with T at each m.",
+ "pass2_diff": "Table I: all 70 density values identical to the pass-2 matrix (pass-1-only numbers are the molality and temperature keys of the restacked rows; counts reconcile)."
+}

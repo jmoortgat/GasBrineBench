@@ -1,0 +1,58 @@
+{
+ "table": "Table 2",
+ "page_journal": 4,
+ "title_as_printed": "Experimental data of CO2 solubility in pure water.",
+ "footnotes_as_printed": {
+  "": "u(x) is the standard uncertainties of CO2 solubility."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed P/MPa; paper does not say whether total or CO2 partial; cell was pressurised with CO2 only; text refers to 'pressure' and to the water saturated vapour pressure only in the modelling section",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xCO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1
+  },
+  "uncertainty": {
+   "col": "u(x)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "what": "standard uncertainty"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure deionized water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Temperature is printed only on the first row of each block; filled down in the CSV (SPEC v2.1 item 3). Printed block order kept (293.15, 323.15, 308.15, 348.15 K in Table 2). Solubility x = n_g/(n_l+n_g) from sampled liquid flashed at about 293.15 K and atmospheric pressure, gas volume measured by drainage and by GC. Some rows are at pressures where CO2 is liquid or supercritical (e.g. 293.15 K above 5.7 MPa, 308.15 K above ~7.2 MPa); not flagged as lle by the authors (water-rich liquid in equilibrium with CO2-rich phase); regime left empty.",
+ "volume_basis": "not_applicable",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "regime": "lle",
+   "reason": "293.15 K above the CO2 vapour pressure (about 5.7 MPa): L(H2O)-L(CO2) region per the paper (audit 2026-10-02)"
+  }
+ ]
+}

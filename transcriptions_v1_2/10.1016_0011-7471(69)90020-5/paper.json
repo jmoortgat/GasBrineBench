@@ -1,0 +1,46 @@
+{
+ "doi": "10.1016/0011-7471(69)90020-5",
+ "first_author": "Murray",
+ "year": 1969,
+ "journal": "Deep-Sea Research 16, 297-310",
+ "source_key": "MURRAY(1969)",
+ "experimental_method": "Gasometric saturation (Ben-Naim and Baer type): degassed sample in a stirred glass vessel in a thermostat, gas volume absorbed at constant pressure read on a mercury gas burette, sample weighed; Bunsen coefficient computed.",
+ "uncertainties_stated": "Estimated total instrumental uncertainty about 0.019 x 10^3 at 20 C (Table 1); coefficient of variation 0.13 percent (O2 replicates) and 0.15 percent (N2 distilled water duplicates); temperature accuracy +/-0.015 C.",
+ "quality_remarks": "Table 3 N2 sea-water data, 0-40 permil salinity, 0.58-30.71 C. Bunsen coefficient defined as volume of gas reduced to STP dissolving in unit volume of solvent at the temperature of measurement under 760 Torr gas pressure. Text says 51 replicate determinations (matches 51 rows). Misprint probable in smoothed column (9.15 C, S=10.01). Chlorinity header is per mil in the image (text layer shows %). Text layer is an OCR-type layer with quotes for decimal points.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8,
+   9
+  ],
+  "journal_pages": [
+   304,
+   305
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "estimated instrumental uncertainties, not measurements"
+  },
+  {
+   "table": "Table 4",
+   "reason": "Bunsen coefficients of N2 in water at integral T and chlorinity, interpolated from the authors' fitted equations (derived)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "interpolated N2 solubility (ml/l) from air, derived from Table 4"
+  }
+ ],
+ "row_counts": {
+  "Table 2": "printed 6 sources x 3 temperatures = 18 values (one dash), written 18 long-format rows",
+  "Table 3": "printed 51, written 51"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 3 transcribed from the page image; a script cross-check against the text layer found no digit disagreement beyond text-layer punctuation damage (e.g. '1.47' for 11.47 at 30.71 C, S=23.95, and dropped cells caused by quote characters). Table 2 (O2 in pure water) appears in the N2 paper; this work's three values are measured, the rest are literature. Pass-1 reading was from the image because the text layer uses quote marks for decimal points, so a blind second pass is recommended.",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer unreliable (OCR with quote characters as decimal points); all cells read from image",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: every number of pass 2 found in pass 1; extra numbers in pass 1 are carried-forward temperatures and the transposed Table 2 layout"
+}

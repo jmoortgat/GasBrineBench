@@ -1,0 +1,76 @@
+{
+ "table": "Table A1",
+ "page_journal": 1389,
+ "title_as_printed": "Measured Experimental Water Content Data",
+ "footnotes_as_printed": "none",
+ "property": "y_h2o",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P/bar as printed; the paper does not say whether absolute or gauge, nor whether it is the total pressure; the experiment is a water-saturated gas stream in a bubble column at the stated pressure",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/bar",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x_water (%)",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.01,
+   "what": "water content of the gas-rich phase, printed in percent (mole basis implied by the symbol x; not spelled out in the paper); value = printed x 0.01"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    22,
+    42
+   ],
+   "reason": "gas label rows C1H4, C2H6, C3H8"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Three side-by-side blocks (C1H4, C2H6, C3H8) stacked left to right with one label row per block. Data rows 1-21 methane, 23-41 ethane, 43-63 propane (0-based over all data rows incl. label rows). At 383.15 K and 413.15 K the propane rows may lie in the liquid-propane region (text mentions part of the data at LLE); the table does not mark this. The label 'C1H4' is printed so (typographic)."
+}

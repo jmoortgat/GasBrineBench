@@ -1,0 +1,44 @@
+{
+ "doi": "10.1016/0021-9614(78)90060-5",
+ "first_author": "Holmes, H. F.",
+ "authors": "H. F. Holmes, C. F. Baes Jr., R. E. Mesmer",
+ "year": 1978,
+ "journal": "J. Chem. Thermodynamics 10, 983-996",
+ "title": "Isopiestic studies of aqueous solutions at elevated temperatures I. KCl, CaCl2, and MgCl2",
+ "source_key": "HOLMES(1978)",
+ "experimental_method": "Isopiestic method in a titanium-cup pressure vessel on a copper block, NaCl as reference, molalities from weighed cups with buoyancy corrections, 382 to 474 K.",
+ "uncertainties_stated": "Weighing uncertainty below 0.1 per cent; corrected dilute molalities uncertain by not more than 0.4 per cent; results consistent to better than 0.002 in the isopiestic ratio R; duplicates agree within 0.1 per cent except MgCl2 (constant 2.0 per cent difference, single sample reported) and KCl at three highest temperatures.",
+ "quality_remarks": "MgCl2 duplicates differed by a constant 2.0 per cent so only one sample is listed; KCl duplicates at 413.8, 445.4, 474.0 K differ because solutions went to dryness in heat-up, only one sample is listed; authors flag serious disagreements with literature MgCl2 osmotic coefficients. Printed MgCl2 1.9053 at 382.0 K (row NaCl 2.7044) is out of sequence with its neighbour 1.6047, probably a misprint; kept as printed.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   986,
+   987
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "Pitzer parameters fitted by the authors"
+  }
+ ],
+ "row_counts": {
+  "Table 1": "printed 78 data rows (382.0 K 11+11; 413.8 K 10+9; 445.4 K 10+10; 474.0 K 9+8), written 78 plus 4 temperature label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 row 9 (382.0 K block right, NaCl 1.4724): KCl 'I .5404' -> 1.5404",
+  "table_1 413.8 K right block NaCl 2.1373: CaCl2 '1A054' -> 1.4054",
+  "table_1 413.8 K right block NaCl 1.2539: NaCl 'I .2539' -> 1.2539",
+  "table_1 445.4 K left block: NaCl '5.ooo7' -> 5.0007"
+ ],
+ "extraction_notes": "Text layer was parsed by script and every row compared with the 250 dpi page images (rows read visually from both pages); only the OCR glitches listed were repaired. Sanity checks (script): within each row NaCl < KCl and MgCl2 < NaCl; molalities are in no strict monotone order because left and right blocks are stacked (each block descends in NaCl). Replicate-like pairs (e.g. 6.2134/6.2020) are separate equilibrium points. Temperature scale and pressure not stated.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed a few OCR repairs (I/1, A/., o/0) after the image check",
+ "pass2_diff": "Table 1: 78 rows, 312/312 numbers identical."
+}

@@ -12,9 +12,9 @@ Examples
 >>> import gasbrinebench as gbb
 >>> df = gbb.load("rho")
 >>> float(gbb.ionic_strength(df).max())
-18.0
+19.3167
 >>> gbb.salt_system(df).value_counts().to_dict()['Na-Cl']
-189
+1175
 """
 
 from __future__ import annotations

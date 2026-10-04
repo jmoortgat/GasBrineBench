@@ -1,0 +1,173 @@
+{
+ "table": "Table 1",
+ "page_journal": null,
+ "title_as_printed": "Equilibrium Compositions (in Mole Fraction) of the Vapor Phase (yi) and Liquid Phase (xi) of the N2 (1) + CO2 (2) + H2O (3) Ternary System at Different Temperatures and Pressures (y1 and y2 Are Expressed on a Water-Free Basis)",
+ "footnotes_as_printed": "none captured. Text: uncertainties of vapour and liquid mole fractions estimated +/-2.0 % and +/-3.0 %.",
+ "property": "solubility_x",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure of the view cell (FOXBORO/ICT transducer); 'total pressures of 8.0, 12.0 and 16.0 MPa'; absolute/gauge not stated. Water in the vapour is not reported (vapour compositions y1, y2 are on a water-free basis).",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total",
+   "constant": "see group_rows"
+  },
+  "value": {
+   "col": "10^3 x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "n2"
+  },
+  "value2": {
+   "col": "10^2 x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.01,
+   "gas": "co2"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; two-gas (N2 + CO2) mixture; liquid mole fractions x1, x2, x3 are over the three components N2, CO2, H2O"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40
+   ],
+   "reason": "block label rows '<p> MPa, <T> K' (label printed beside first data row in the DOM; written as own label row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "8.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "12.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "16.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "8.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "12.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "16.0",
+     "unit": "MPa"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "x3 (water mole fraction in liquid, by difference)",
+  "y1 (N2 mole fraction in vapour, water-free basis, measured by GC)",
+  "y2 (CO2 mole fraction in vapour, water-free basis)"
+ ],
+ "conversion_needs": [
+  "x1, x2 are printed as 10^3 x1 and 10^2 x2 (different scales per column)"
+ ],
+ "notes": "Each block runs from pure CO2 vapour (y2=1, x1=0) to pure N2 vapour (y1=1, x2=0), so first and last rows of each block are the binary CO2-H2O and N2-H2O points. Two-gas rows: value = N2 (x1), value2 = CO2 (x2).",
+ "gas_mixture": true,
+ "value2_gas_in_liquid": true,
+ "row_held": [
+  {
+   "rows": [
+    1,
+    9,
+    17,
+    25,
+    33,
+    41
+   ],
+   "reason": "x1 (N2) printed as 0.000 for the CO2-only vapour: placeholder, no N2 solubility measured (audit 2026-10-02)"
+  }
+ ],
+ "mapping_note": "only the N2 column is built; the CO2 column (value2) is not stored; gas mixture, vapour composition y1,y2 not stored"
+}

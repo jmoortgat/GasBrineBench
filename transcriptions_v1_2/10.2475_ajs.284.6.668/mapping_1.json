@@ -1,0 +1,374 @@
+{
+ "table": "Table 1",
+ "page_journal": 672,
+ "title_as_printed": "The differential vapor pressure (dP, in psi) for NaCl, KCl, and CaCl2 solutions at vapor saturated conditions from 200 C to 350 C",
+ "footnotes_as_printed": "none printed",
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Differential pressure dP (psi), measured with differential Bourdon-tube gauges or strain-gauge transducer by comparing the solution (low-pressure, brine side) against pure water at the same temperature; the gauges are 'psid'. Table title: 'differential vapor pressure (dP, in psi) ... at vapor saturated conditions'. Not an absolute vapor pressure; pure-water vapor pressure at T is not tabulated (the text cites Keenan and Keyes 1936). dP is water vapor pressure minus solution vapor pressure (sign taken from the gauge arrangement: brine side fed to the Bourdon tube, water side to the case; the paper's wording establishes dP = P_water - P_brine (water side high-pressure, brine side low-pressure, same T)).",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": ""
+  },
+  "value": {
+   "col": "dP (psi)",
+   "unit": "psi",
+   "what": "differential vapor pressure P0(water) - P(solution), authors' wording: differential vapor pressure",
+   "basis_note": "differential, not absolute"
+  },
+  "P": {
+   "col": "",
+   "unit": "psi",
+   "basis": "saturation",
+   "what": "vapor-saturated conditions at the stated T"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m (mol/kg H2O)",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "salt named in the label row (composition.salt): NaCl, KCl, CaCl2; single-salt solutions in doubly distilled degassed water. Column header is just 'm'; unit 'moles/kg H2O' is from the figure axes (Figs. 2, 3)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    17,
+    32,
+    39,
+    49,
+    64,
+    71,
+    81,
+    96,
+    103,
+    113,
+    128,
+    134,
+    144,
+    159,
+    172,
+    182,
+    201,
+    214,
+    224
+   ],
+   "reason": "block label rows (temperature and salt)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "200",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "200",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "200",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "225",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "225",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "225",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "250",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 71,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "250",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 81,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "250",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 96,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "275",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 103,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "275",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 113,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "275",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 128,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "300",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 134,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "300",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 144,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "300",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 159,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "325",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 172,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "325",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 182,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "325",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 201,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "350",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 214,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "350",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 224,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "350",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psi to Pa; dP is differential, absolute brine pressure needs the pure-water saturation pressure at T (ITS not stated)",
+  "temperature scale not stated"
+ ],
+ "notes": "Stacked layout: the printed table has NaCl, KCl and CaCl2 blocks side by side for each temperature; stacked here per temperature in the order NaCl, KCl, CaCl2. Table header column 'T (C)' holds the temperature printed once per block; it is set from label rows. Table continues on journal p. 673 (PDF page 6): KCl 275 C 4.6/126.7 and CaCl2 275 C rows 4.0-5.8 are on p. 673 while the rest of the 275 C blocks are on p. 672. Replicate molalities printed as is (CaCl2 325 C 5.3 twice, 6.1 twice; 350 C 5.5 twice). CaCl2 350 C: dP 537.0 at 6.4 is followed by 528.1 at 6.5 (non-monotonic, as printed). Authors state molality accuracy +-2.0 percent (NaCl, KCl) and +-5.0 percent (CaCl2); NaCl data below 325 C were used only as spot checks (paper text, p. 677).",
+ "quality_remarks": "audit 2026-10-02: Three printed low-molality rows lie more than 3 psid below their neighbours while the stated systematic error is 1-2 psid: CSV row 1 (NaCl 200 C, 0.5 m, dP 0.8; about 4-5 psi expected from KCl 4.9 and NaCl 225 C 4.7), row 18 (CaCl2 200 C, 0.5 m, dP 1.9; about 6-7 expected), row 145 (CaCl2 300 C, 0.5 m, dP 11.5; KCl 22.7 and NaCl 17.7 at the same m, CaCl2 should be higher than NaCl). Kept as printed (page images checked). Differential pressure convention: dP = P_water - P_brine (text p.671: brine side low-pressure, water side high-pressure). NaCl rows below 325 C were used only as spot checks in the authors' fits. builder 2026-10-02: dP = P(pure water) - P(solution); the solution pressure is IAPWS-95 psat(T) minus dP.",
+ "caution": "CSV rows 1, 18 and 145 (0.5 m NaCl 200 C, CaCl2 200 C, CaCl2 300 C) are more than 3 psid below neighbours (stated systematic error 1-2 psid); printed as is. dP = P_water - P_brine.",
+ "value_is_differential": "water_minus_solution"
+}

@@ -1,0 +1,38 @@
+{
+ "doi": "10.1016/j.geothermics.2014.06.001",
+ "first_author": "Schroeder, Elisabeth",
+ "authors": "Elisabeth Schroeder, Klaus Thomauske, Jens Schmalzbauer, Sabrina Herberger, Christoph Gebert, Marina Velevska",
+ "year": 2015,
+ "journal": "Geothermics 53 (2015) 202-212",
+ "title": "Design and test of a new flow calorimeter for online detection of geothermal water heat capacity",
+ "source_key": "SCHRODER(2015)",
+ "experimental_method": "Flow calorimeter: fluid at fixed T1 and P1 flows at known mass flux past an electrically heated nickel-chromium rod; cp = (heating power / mass flux)/(temperature rise corrected for heat exchange with the environment), Eq. 14.",
+ "uncertainties_stated": "Mass-flux determination about 3 % error from degassing behind the pressure retention valve (balance method); errors versus reference cp below 1 % for water (about 1 % at worst for 143 C); NaCl errors vs. experimental references below 1 %.",
+ "quality_remarks": "Instrument-development paper; test fluids water and NaCl solutions. Table 4 repeats the same measurements across reference blocks. Composition given as mNaCl/mwater without a definition. Year: Geothermics volume year 2015 (online 2014). Table 3 label cp_reference is NIST/Lemmon. No temperature scale stated.",
+ "how_extracted": "image_read (text layer clean, all cells matched the page image)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8,
+   9
+  ],
+  "journal_pages": [
+   209,
+   210
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: instrument resistance values of probe segments (not thermodynamic data)"
+ ],
+ "row_counts": {
+  "table_2": "printed 5 / written 5",
+  "table_3": "printed 19 / written 19",
+  "table_4": "printed 32 data rows in 5 blocks / written 32 data rows plus 5 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Mid-line minus signs written as -. Empty cells in Table 4 VDI block left empty. Sanity: Table 3 cp mostly scattered about the reference within 1 %; Table 4 cp decreases with NaCl ratio at fixed T.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image, no corrections",
+ "pass2_diff": "Tables 2-4: 25/25, 76/76 and 184/184 numbers identical."
+}

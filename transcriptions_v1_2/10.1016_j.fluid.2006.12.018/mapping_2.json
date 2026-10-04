@@ -1,0 +1,117 @@
+{
+ "table": "Table 2",
+ "page_journal": 164,
+ "title_as_printed": "Gas phase water content ppm (mol) for the binary system water-methane",
+ "footnotes_as_printed": "none",
+ "property": "y_h2o",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "absolute system pressure (saturator and condenser at same pressure), measured by transducer, uncertainty 0.05 bar; printed in column headers; value is water mole fraction in the gas phase in equilibrium with liquid water, ice or hydrate (most stable phase), pressure basis total",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "basis": "total",
+   "constant": "set per block by label row"
+  },
+  "value": {
+   "col": "ppm (mol) water",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1e-06
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "salt-free pure water phase; gas composition: ch4"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12,
+    17,
+    21,
+    23
+   ],
+   "reason": "pressure block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "15",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "40",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "60",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "100",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "140",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "180",
+     "unit": "bar"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed as a wide table (T rows x pressure columns). Stacked into one block per pressure column (label row = column header), as SPEC rule 11 prescribes; '-' cells (no measurement) are not written as rows. Rows with T<273.15 K are ice-equilibrium (or metastable liquid) conditions: below_273K. Hydrate may be the stable condensed phase for methane at some conditions; paper does not tag individual points, so regime left empty. Table 2 header '140' printed without 'bar' (taken as bar). Temperature is the condenser dew-point bath temperature.",
+ "row_tag_all": [
+  "condensed-phase-uncertain"
+ ],
+ "condensed_phase_note": "Table 6/7 give only the counts of liquid-water, ice and hydrate points (N2: 20/10/2; CH4: 8/2/10); individual points are not assigned (audit 2026-10-02)",
+ "caution": "Individual points are not assigned to liquid-water, ice or hydrate condensed phases (the paper gives only the counts); one printed cell in the CH4 table repeats the neighbouring value (probable typo)."
+}

@@ -1,0 +1,52 @@
+{
+ "table": "Table 3",
+ "page_journal": 1562,
+ "title_as_printed": "Experimentally determined excess molar volumes and estimated uncertainties (cm3 mol-1) for CO2-H2O mixtures at 400C",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure P (MPa) given in the tables, isobaric-isothermal conditions; paper states accuracy +-0.02 MPa; not otherwise defined (flow-through cell, no vapour phase; total pressure presumed but not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "400"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Vex (cm^3 mol^-1)",
+   "unit": "cm3/mol",
+   "what": "excess molar volume Vex = V - sum(Xi Vi) of the mixture",
+   "derived_by_authors": true
+  },
+  "uncertainty": {
+   "col": "uncertainty (cm^3 mol^-1)",
+   "unit": "cm3/mol"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "CO2": {
+    "col": "X_CO2",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "balance H2O; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "cm3/mol to m3/mol"
+ ],
+ "gas_basis": "not_applicable",
+ "notes": "Derived by the authors from the measured densities of Table 2 and pure CO2 (Table 1) and H2O densities from Hill (1990); kept because the paper reports it as a main result. Printed as '+-' entries: split into value and uncertainty columns. Restacked from wide layout; 4 printed blank cells kept as empty rows (same cells as Table 2)."
+}

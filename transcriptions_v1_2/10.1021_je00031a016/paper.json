@@ -1,0 +1,49 @@
+{
+ "doi": "10.1021/je00031a016",
+ "first_author": "Mayrath",
+ "year": 1983,
+ "journal": "J. Chem. Eng. Data 28 (1), 57-59 (pages 56-59 of issue; PDF is pages 56-59)",
+ "source_key": "MAYRATH(1983)",
+ "title": "Enthalpy of dilution of aqueous solutions of sodium sulfate, potassium sulfate, and magnesium sulfate at 373.15 and 423.65 K and of magnesium chloride at 373.15, 423.65 and 472.95 K",
+ "authors": "J. E. Mayrath (title block not in the PDF; author taken from the chunk list)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was scrambled (two-column table) so the CSV was written from the page image; no cell was corrected afterwards, but page image read was the only source. Scan is clean.",
+ "how_extracted": "image_read",
+ "experimental_method": "Flow calorimeter; stock salt solution diluted with water in the flow, enthalpy of dilution measured at 373.15, 423.65 and 472.95 K with pressure 0.1-0.3 MPa above water vapour pressure",
+ "uncertainties_stated": "calorimeter accuracy approximately 1 %; temperature accurate to about 0.3 K; concentrations +/-0.1 %; sigma_e per row",
+ "quality_remarks": [
+  "PDF begins with the end of another article (CO2-butane/butene critical points, p. 56) and ends with the start of another (CO in alcohols, p. 59); the first page of this article (title, abstract) is not in the PDF, only its Experimental Section, Table I (p. 57), Tables II-III (p. 58) and discussion (p. 58-59).",
+  "Authors state that Na2SO4 results at 472.95 K were erroneous and are not reported.",
+  "Temperature scale not stated."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   57
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "least-squares polynomial coefficients of the authors' fit (model parameters)"
+  },
+  {
+   "table": "Table III",
+   "reason": "relative apparent molar enthalpies, osmotic and activity coefficient changes calculated by fit and spline integration (derived, smoothed), also uses literature data at 298.15 K"
+  },
+  {
+   "table": "Table V (p. 56)",
+   "reason": "belongs to another article (CO2-butane critical points)"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 111 data rows in 9 blocks (A-I); written 111 data rows plus 9 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: m_f is about m_i/2 in every row (each dilution step about 1:1); -dil H positive throughout. Right column of printed Table I carries block E continuation, F, G, H, I.",
+ "pass2_diff": "Table I: 111 rows, 617/617 numbers identical."
+}

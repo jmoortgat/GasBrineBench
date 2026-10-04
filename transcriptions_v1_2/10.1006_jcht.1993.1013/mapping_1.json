@@ -1,0 +1,107 @@
+{
+ "table": "Table 1",
+ "page_journal": 130,
+ "title_as_printed": "Measured bubble pressure <p> for salt solutions of molality m",
+ "footnotes_as_printed": {
+  "a": "Values for m = 3.000 mol/kg and 1.000 mol/kg of NaCl were taken from reference 2.",
+  "b": "When no value of dp is tabulated, only the pressure p_d for bubble appearance could be measured."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "<p> = (p_a + p_d)/2, mean of pressures of bubble appearance (decreasing p) and disappearance (increasing p); dp = (p_a - p_d)/2 (as stated in the text); this is the solution bubble (vapour) pressure",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "<p> MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "<p> MPa",
+   "unit": "MPa",
+   "scale": 1,
+   "what": "bubble pressure of the solution"
+  },
+  "uncertainty": {
+   "col": "dp MPa",
+   "unit": "MPa",
+   "what": "half-difference of the two pressure readings, not an accuracy"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    27
+   ],
+   "reason": "salt label rows KCl, NaCl, CaCl2"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "the salt of each row comes from the preceding label row; 'm mol/kg' is the molality of that salt"
+ ],
+ "notes": "Printed as two side-by-side column groups: KCl (left) and NaCl (right); the CaCl2 section uses both groups (left group T about 623 K, right group 623.02 K then 642.8 K). Stacked left group then right group per section. Footnote a is printed on the m cell of the first two KCl rows (3.0000) and on NaCl rows 3.000 and 1.000, although its text refers to NaCl values only; kept as printed in the note column. Footnote b stands alone in the dp cell of two CaCl2 rows (cell written empty, note 'dp MPa:b'). Printed dp 0.00 kept. Table 2 supplies the same solutions' densities.",
+ "row_from_literature": [
+  {
+   "rows": [
+    14,
+    19
+   ],
+   "reason": "footnote a: NaCl values at m=3.000 and 1.000 taken from the authors earlier paper (ref. 2, Crovetto and Wood 1991), not new measurements"
+  },
+  {
+   "rows": [
+    1,
+    2
+   ],
+   "reason": "footnote letter a is also printed on the first two KCl 3.0000 rows although the footnote names NaCl; held conservatively (mapping audit 2026-10-02)"
+  }
+ ]
+}

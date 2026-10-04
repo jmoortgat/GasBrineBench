@@ -1,0 +1,103 @@
+{
+ "table": "Table I",
+ "page_journal": 475,
+ "title_as_printed": "Composition of the Phase Rich in Carbon Dioxide in Equilibrium with the Phase Rich in Water (G. H2O per Liter of Expanded Gas at S. T. P.)",
+ "footnotes_as_printed": {},
+ "property": "water_content_mass",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Total press., atm.'; gauge/absolute not stated; the 1 atm row is the atmospheric-pressure saturation value",
+ "columns": {
+  "T": {
+   "col": "Temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Total press. atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "g H2O per liter of expanded gas at S.T.P.",
+   "unit": "g_water_per_L_expanded_gas_STP",
+   "what": "grams of water per litre of the CO2-rich phase after expansion to S.T.P."
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "'G. H2O per Liter of Expanded Gas at S. T. P.' (gas-phase volume, not solution or solvent)",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    20,
+    32
+   ],
+   "reason": "temperature block label rows"
+  },
+  {
+   "rows": [
+    1,
+    11,
+    21,
+    33
+   ],
+   "reason": "1 atm entries are a water-vapour saturation reference ('approximate saturation value at 23 deg', p. 476), not measured with the apparatus and not on the dry-gas-at-STP basis of the other rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "31.04",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "g H2O per litre of expanded gas at STP to mole fraction: STP molar volume (0 C, 1 atm assumed) and water molar mass; assumes expanded-gas volume counts CO2 only"
+ ],
+ "notes": "Printed as a matrix (pressure rows x four temperature columns); restacked by temperature, blocks in order 25, 31.04 (critical temperature), 50, 75 C, only filled cells written (blank cells are not measurements). A printed pressure row 300 atm has no entry in any column and is not written. Rows 1 atm (skipped, see skip_rows): values 0.023, 0.032, 0.093, 0.242 g/l, text calls 0.023 'approximate saturation value at 23 C' in the discussion. 25 C isotherm: 450-500 atm, 31.04: to 550 atm. Phase-rich-in-CO2 sample; the text notes supersaturation/condensation beyond highest pressures.",
+ "quality_remarks": "audit 2026-10-02: the four 1 atm rows (0.023, 0.032, 0.093, 0.242 g/l) coincide with the saturated water-vapour density at the stated T, not with a CO2-water measurement; skipped. The 0.093 at 50 C is 12 % above the vapour density 0.083 (possible misprint); irrelevant once skipped."
+}

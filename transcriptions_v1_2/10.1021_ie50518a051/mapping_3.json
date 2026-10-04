@@ -1,0 +1,65 @@
+{
+ "table": "Table III",
+ "page_journal": 444,
+ "title_as_printed": "Experimental Data in Two-Phase Region (Concentration of propane in water-rich liquid phase)",
+ "footnotes_as_printed": {
+  "a": "Critical region.",
+  "b": "Quadruple point by extrapolation."
+ },
+ "property": "solubility_x",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column 'Pressure, Lb./Sq. Inch Abs.' (absolute, total equilibrium cell pressure, as measured on gauges)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure lb/sq in abs",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Composition of water-rich liquid phase mole fraction propane",
+   "unit": "mole_fraction",
+   "what": "mole fraction propane in the water-rich liquid phase (pure water; no salt)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; propane stated as not less than 99 mole %"
+ },
+ "skip_rows": [],
+ "conversion_needs": [
+  "psia and F conversion; propane mole fraction is on a total basis (water-rich liquid: propane per total moles of liquid)"
+ ],
+ "notes": "Isotherms 54, 100, 133, 170, 190, 205.7, 230, 260, 300 F; blocks separated by a blank line in print. The two 54.0 F/617 psia rows are distinct printed values. A dot printed next to the 170 F/307 and 300 F/471 rows in the scan is a speck, not a footnote.",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    20,
+    21,
+    22,
+    23
+   ],
+   "regime": "lle",
+   "reason": "pressure above the three-phase pressure at that temperature, so a propane-rich liquid phase coexists (54 F: three-phase pressure about 100 psia; 100 F: 191.5; 133 F: about 270; 190 F: 538); rows below are propane vapor (regime empty); at 205.7 F and above no liquid/vapor distinction. Extractor's inference from Table I/IV, rows are not labelled by the paper."
+  }
+ ]
+}

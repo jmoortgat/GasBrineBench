@@ -1,0 +1,57 @@
+{
+ "table": "Table I",
+ "page_journal": 47,
+ "title_as_printed": "Coefficients of Equation 1 and Integral Arguments of Equations 2 and 3",
+ "footnotes_as_printed": {
+  "a": "Na2SO4.10H2O",
+  "b": "Na2SO4.7H2O",
+  "c": "Delta = Average of |R_B (calcd.) - R_B (obsd.)| x 100"
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; isopiestic equilibrium in an evacuated desiccator (evacuated with a water aspirator) at 25 +- 0.005 C, pressure is the water vapour pressure of the solutions",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "M_C mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the pure Na2SO4 solution (M_C) in isopiestic equilibrium with the pure NaCl solution M_B (and with the mixtures)"
+  },
+  "value2": {
+   "col": "M_B mol/kg",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the pure NaCl reference solution (M_B) in the same run (set)",
+   "reference_salt": "NaCl"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "M_C mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl is the reference salt (M_B column); the mixed NaCl+Na2SO4 solutions of each run are not tabulated (only their derived coefficients a and b)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "a, b (coefficients of R_B = 1 - a x_C - b x_C^2, fitted by the author)",
+  "Delta (average deviation of the fit)",
+  "M_B Phi_B (derived using the NaCl osmotic coefficient)",
+  "b/M_B (derived)"
+ ],
+ "conversion_needs": [
+  "molality as printed (mol per kg water implied by isopiestic practice; text says 'weighing dry pure salts into the cups, adding water')"
+ ],
+ "notes": "Each row is one set of runs; sets are fits of the isopiestic ratio over mixtures, so M_B and M_C are the end-member pure-salt isopiestic molalities. Set 13 is a combination of four runs with saturated Na2SO4 as reference (less accurate); set 21 is in contact with a solid phase and the authors say it is less reliable (M_B 3.62 and M_C 3.64 stated to 2 decimals in print). Footnote letters moved to note column."
+}

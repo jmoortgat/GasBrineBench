@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/j100697a020",
+ "first_author": "Liu",
+ "year": 1970,
+ "journal": "J. Phys. Chem. 74 (2), 341-345",
+ "source_key": "LIU(1970)",
+ "title": "Osmotic Coefficients of Aqueous Sodium Chloride Solutions from 125 to 300 deg",
+ "authors": "Chia-tsun Liu and W. T. Lindsay, Jr.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; the only discrepancy was a glyph-reading ambiguity (0.809g in text layer) resolved to 0.8098 and a decimal comma 1076,47 -> 1076.47, both consistent with the image; no value changed",
+ "how_extracted": "pdf_text_layer",
+ "experimental_method": "differential vapour pressure of solution vs pure water in two identical platinum/bellows cells in a thermostatted oil bath, balanced by helium gas pressure, 125-300 C, 0.1-1.0 m NaCl",
+ "uncertainties_stated": "average deviation of osmotic coefficients of duplicate/triplicate ~1 m runs about +/-0.002 at low T up to +/-0.005 at 275 C and +/-0.006 at 300 C; differential pressure reproducibility about 0.1 mm; bath +/-0.001 C",
+ "quality_remarks": [
+  "Poorest reproducibility at smallest vapour pressure lowering; 0.1 m 125 C results discarded by the authors; 0.1 m values at 150, 175, 200 C are averages of 2-3 runs (footnotes).",
+  "Printed small subscript digits (last significant digit) transcribed as ordinary digits.",
+  "Temperature scale not stated; pressure in Table I is mm Hg lowering only."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   344
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "contributions of the three terms to the calculated osmotic coefficient (0.25 m): derived quantities"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 38 data rows; written 38"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Printed 'Osmotic coefficient at p = p0' is calculated by the authors from dp, hence derived_by_authors.",
+ "pass2_diff": "Table I: 38 rows; every pass-2 number occurs in pass 1; the pass-1-only numbers are temperatures filled down on continuation rows."
+}

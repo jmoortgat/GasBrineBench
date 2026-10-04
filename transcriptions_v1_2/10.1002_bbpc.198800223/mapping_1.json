@@ -1,0 +1,24 @@
+{
+  "table": "Table 1", "page": 937,
+  "title_as_printed": "Solubilities and Henry's constants for binary gas-water systems",
+  "property": "solubility_x",
+  "gas": "",
+  "regime": "",
+  "columns": {
+    "T": {"col": "T K", "unit": "K"},
+    "P": {"col": "p MPa", "unit": "MPa", "basis": "total"},
+    "value": {"col": "10^4 x", "unit": "mole_fraction_gas_in_aqueous_phase_times_1e4", "what": "x = mole fraction of the solute gas in the liquid phase; printed values are 10^4 x; pure water, so salt-free by construction"},
+    "extra_unmapped": ["Phi_2 (fugacity coefficient of solute in gas phase, Peng-Robinson, calculated)", "kH_inf GPa (Henry constant at infinite dilution, calculated from the data)"]
+  },
+  "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": ""},
+  "skip_rows": [
+    {"rows": [0], "reason": "section label H2-H2O"},
+    {"rows": [27], "reason": "section label N2-H2O"}
+  ],
+  "group_rows": [
+    {"label_row": 0, "sets": {"gas": "h2"}},
+    {"label_row": 27, "sets": {"gas": "n2"}}
+  ],
+  "conversion_needs": ["value column is printed as 10^4 x: multiply by 1e-4", "pressure is total pressure of the cell (gas plus water vapour); the paper gives no separate gas partial pressure column, builder would need a vapour-pressure model if partial pressure is wanted"],
+  "notes": "Data rows are 0-based indices among all CSV data rows after the header, including the two label rows. H2 block = rows 1-26, N2 block = rows 28-58. Temperature scale (IPTS-68/ITS-90) not stated. Table 2 (fit coefficients of Eq. 3) and Table 3 (molecular parameters) are not measured data and were not extracted."
+}

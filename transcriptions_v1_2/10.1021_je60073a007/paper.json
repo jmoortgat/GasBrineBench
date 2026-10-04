@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/je60073a007",
+ "first_author": "Chen",
+ "year": 1977,
+ "journal": "J. Chem. Eng. Data 22(2), 201-207",
+ "source_key": "CHEN(1977)",
+ "experimental_method": "Densities of aqueous NaCl, KCl, MgCl2, Na2SO4 and MgSO4 measured with a high-pressure magnetic-float densimeter (nonmagnetic Be-Cu bomb, 170 cm3) at 0, 25 and 50 C from 0 to about 1000 bar in 100-bar steps; apparent molal volumes phi_V computed from the densities with their eq 1.",
+ "uncertainties_stated": "Bath controlled to 0.001 C, set to 0.005 C with a Pt resistance thermometer; pressures reproducible to 0.5 bar and accurate to 1.4 bar; density precision 3 ppm at a given T (8 ppm over the range), accuracy about 30 ppm at 1000 bar, equal to 0.3 cm3/mol in phi_V at 0.1 m and 0.03 cm3/mol at 1.0 m for 1-1 electrolytes.",
+ "quality_remarks": "Footnote a: the 0.00 bar rows of phi_V are normalized to literature 1-atm values from the authors' eq 3 (not measured here). Apparent misprints or outliers kept as printed: Table II NaCl m=0.1299 at 1001.20 bar printed 31.133 (neighbours about 20.9-21.1); Table II MgCl2 m=0.2184 at 401.00 bar printed 21.199 above the 501.10 bar value 20.839; Table I NaCl m=1.307 at 601.00 bar 19.935 above 701.60 bar 19.353; Table I MgCl2 m=0.00876 identical 12.568 at 99.90 and 199.80 bar; Table I MgSO4 m=0.05328 identical 7.755 at 595.97 and 795.65 bar. Not corrected.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4
+  ],
+  "journal_pages": [
+   202,
+   203,
+   204
+  ]
+ },
+ "not_extracted_tables": [
+  "Table IV (coefficients of eq 2): fitted model parameters",
+  "Table V (coefficients of eq 3): fitted model parameters",
+  "Table VI (comparison with Millero et al.): derived/comparison",
+  "PDF page 1 (literature list of the preceding article and the title page of this paper) has no data table"
+ ],
+ "row_counts": {
+  "Table I": "31 salt/molality blocks, 312 printed (P, phi_V) cells of which 68 are printed dashes (empty cells kept); 343 CSV rows incl. 31 label rows",
+  "Table II": "25 blocks, 250 cells of which 45 dashes; 275 CSV rows incl. 25 label rows",
+  "Table III": "26 blocks, 231 cells of which 32 dashes; 257 CSV rows incl. 26 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "The printed side-by-side molality columns of each salt were stacked as one block per (salt, molality) with a label row, as the spec's standard layout; values transcribed from the page image and checked by script: the multiset of all numbers (molalities, pressures, phi_V) equals that of the text layer except prose tokens, all clean. The table values are phi_V derived by the authors from measured densities (densities not tabulated), property recorded as other (apparent molal volume). Units cm3/mol from the paper text; molality is mol per kg of H2O as stated in the text. The second-and-third-table pressure grids differ per salt as printed. Temperature scale IPTS-68 from 'platinum resistance thermometer (calibrated by the National Bureau of Standards, 1968 temperature scale)'.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "cells transcribed from the image and the number multiset agrees with the text layer; no corrections; dash positions not independently diffed by a second reader",
+ "pass2_diff": "Tables I-III: (salt, molality, pressure, phi_V) tuples identical in a structured comparison (244, 205, 199)."
+}

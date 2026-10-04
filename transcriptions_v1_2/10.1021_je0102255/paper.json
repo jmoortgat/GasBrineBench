@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/je0102255",
+ "first_author": "Servio",
+ "year": 2002,
+ "journal": "J. Chem. Eng. Data 47, 87-90",
+ "source_key": "SERVIO(2002)",
+ "experimental_method": "Liquid water sampled through a microfilter from a crystallizer with CH4 hydrate (or hydrate-free Lw-V), flashed in an evacuated bomb and the evolved CH4 measured in a Ruska gasometer, corrected for CH4 left dissolved at room conditions.",
+ "uncertainties_stated": "Gasometer volume +-0.2% of reading; the flash method has a relative error of 5-9% of the calculated solubility (authors).",
+ "quality_remarks": "Authors state hydrate formation reverses the temperature trend of solubility; pressure effect weak. Journal volume year 2002 (web 2001). The title page chunk metadata lists author as Servio alone; paper has Servio and Englezos.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   89
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: comparison of Table 1 xeq (rounded to 5 decimals) with values calculated from the Englezos et al. assumption; derived/model values"
+ ],
+ "row_counts": {
+  "table_1": "printed 15, written 15"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image in every cell. T not monotonic across the table (grouped by pressure). No duplicates.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Table 1: 15 rows, 45/45 numbers identical."
+}

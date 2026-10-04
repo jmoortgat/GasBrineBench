@@ -1,0 +1,40 @@
+{
+ "doi": "10.1016/j.jct.2006.03.019",
+ "first_author": "Serra",
+ "year": 2006,
+ "journal": "J. Chem. Thermodynamics 38, 1629-1633",
+ "source_key": "SERRA(2006)",
+ "experimental_method": "Ben-Naim type apparatus at atmospheric pressure, 293.15-333.15 K (measurements 293.15-323.15 K): degassed solvent stirred in a dissolution cell (662.4 cm3) with water-saturated methane, dissolved gas read directly from a gas column.",
+ "uncertainties_stated": "Precision of the measurements about +-0.3%; temperature control +-0.05 K; standard deviation in ln x 0.0037 (water) and 0.0057 (medium) for the fits.",
+ "quality_remarks": "Table 2 H value at 315.15 K (6.149) is non-monotonic and probably a misprint. Mole fractions and Henry coefficients are derived from the measured Ostwald coefficients assuming ideal phases. Medium composition (Table 1A) lists Na2MoO4.2H2O at 5.54 g/dm3 which looks implausible; recorded as printed.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   1631,
+   1632
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1A (medium composition, recorded in mapping_4 only)",
+  "Table 1B (trace element solution composition)",
+  "Table 3 (Gibbs energy and enthalpy changes calculated from the fitted equation, derived)",
+  "Table 5 (Lennard-Jones parameters, model inputs)"
+ ],
+ "row_counts": {
+  "Table 2": "printed 13, written 13",
+  "Table 4": "printed 5, written 5"
+ },
+ "changes_after_image_check": [
+  "none. Folder did not exist from the earlier run; built fresh and every cell compared with page images (3 and 4) and text layer."
+ ],
+ "extraction_notes": "Table 2 is split over the foot of one column and continues on the same column image; read from the cropped page images. Superscript infinity in header written as 'inf'.",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer; every cell matched the image",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: 90 numbers per pass, identical"
+}

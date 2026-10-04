@@ -1,0 +1,104 @@
+{
+ "table": "Table 2",
+ "page_journal": "130-134",
+ "title_as_printed": "Measured changes Delta rho in density and calculated densities rho, molar volumes Vm, apparent molar volumes V_phi, and average isothermal compressibilities kappa_T, of salt solutions. m0 = 1 mol/kg, rho0 = 1 g/cm3, Vm0 = 1 cm3/mol",
+ "footnotes_as_printed": {
+  "a": "No value of V_phi was tabulated when p2 was smaller than the vapor pressure of pure water at that temperature. (letter printed on the V_phi/Vm0 column header)",
+  "b": "kappa_T was calculated from equation (3) using rho and Delta rho from the line on which kappa_T is given and the results from the previous line. If Delta p2 was less than 1 MPa, kappa_T was not calculated. (letter printed on the kappa_T column header)"
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p1 = pressure at which pure-water baseline and solution were compared (Delta rho = solution at p2 minus pure water at p1, per text); p2 = pressure of the solution measurement; absolute pressure, near saturation; text gives vapour pressures in Table 1",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K",
+   "what": "printed only on the first row of each block; blank cells mean same T as the row above"
+  },
+  "P": {
+   "col": "p2/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Delta rho/rho0",
+   "unit": "g/cm3",
+   "scale": 1,
+   "what": "density of solution at p2 minus density of pure water at p1 (rho0 = 1 g/cm3)"
+  },
+  "value2": {
+   "col": "rho/rho0",
+   "unit": "g/cm3",
+   "what": "calculated density of the solution at p2 (from Delta rho and Haar et al. water density)",
+   "from_literature": false
+  },
+  "p1": {
+   "col": "p1/MPa",
+   "unit": "MPa"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m/m0",
+    "unit": "mol/kg",
+    "scale": 1
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    48,
+    89
+   ],
+   "reason": "salt label rows NaCl, KCl, CaCl2"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 89,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Vm/Vm0 (calculated molar volume of solution)",
+  "Vphi/Vm0 (calculated apparent molar volume of solute)",
+  "kappa_T/GPa-1 (calculated average isothermal compressibility)"
+ ],
+ "conversion_needs": [
+  "blank T cell = previous T (forward fill)",
+  "salt from label row",
+  "Vm0 = 1 cm3/mol, so Vm/Vm0 is in cm3/mol"
+ ],
+ "notes": "Only Delta rho is directly measured; rho, Vm, Vphi, kappa_T are calculated by the authors and are listed as printed. T is the mean temperature of each block of rows. Printed oddities kept: T 623.090 (page 5); Vphi printed as '-243 9' (decimal point missing in the scan, written -243.9); rho 0.819890 (6 decimals) at 623.10 K KCl 3.0000; kappa values printed as integers 20, 18, 1800 (CaCl2 0.225, 642.83 K) and 11, 10, 11, 10 (0.487, 642.89 K) kept; two rows (CaCl2 3.234, 642.85 K, p2 19.015 and 19.96) have small numbers 0.056 and 0.0024 printed shifted left toward the Vphi column but they are written in the kappa_T column. Consistency check rho/rho0 - Delta rho/rho0 (= water density at T, p1) within a block disagrees for two printed values: CaCl2 3.234 623.13 K first row rho 0.97349 (neighbours imply 0.97394) and CaCl2 0.225 642.89 K first row rho 0.56648 (neighbours imply 0.56603); both are as printed in the scan (zoomed)."
+}

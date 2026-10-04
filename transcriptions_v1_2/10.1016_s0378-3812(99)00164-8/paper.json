@@ -1,0 +1,44 @@
+{
+ "doi": "10.1016/s0378-3812(99)00164-8",
+ "first_author": "Blanco",
+ "year": 1999,
+ "journal": "Fluid Phase Equilibria 161, 107-117",
+ "source_key": "BLANCO(1999)",
+ "experimental_method": "Dynamic moisture-generation bench (gas saturated in two temperature-controlled condensers at set pressure, continuous flow); water content of the generated wet gas by Karl Fischer titration at atmospheric pressure, dew point temperature at line pressure by a chilled-mirror instrument.",
+ "uncertainties_stated": "Dew temperature better than 0.4 K; pressure transmitter maximum error 0.2% of calibrated range; Karl Fischer titrator with wet gas meter 0.2%; Table 1 gives repeatability/reproducibility of water content (test A Karl Fischer 59.26e-6 kg/m3, repeatability 0.73, reproducibility 1.68; test B dew point generation at 263.15 K and 60 bar 43.08, 3.64, 8.90).",
+ "quality_remarks": "Water mole fraction y is calculated by the authors from the Karl Fischer water content, so the printed y is derived from a measurement. Dew points compared with Bogoya et al. and Kosyakov et al. (nitrogen+water): differences 0.15 to 2 K and up to 5 K (printed as '28' and '58' in the text layer; the degree sign was lost). Propane+water measured only at 1.01-4.99 bar because of propane vapour pressure. Temperature scale not stated; no statement whether condensed phase is water or ice below 273.15 K.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   111,
+   112,
+   113
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; script-parsed T,P pairs, all cells compared with 200 dpi page images and no discrepancy found.",
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "performance evaluation (repeatability/reproducibility) of the apparatus, not thermodynamic data"
+  },
+  {
+   "table": "Table 4",
+   "reason": "fitted model interaction parameters"
+  }
+ ],
+ "row_counts": {
+  "table_2": "printed 52 data rows (11+14+17+10) in 4 blocks; written 52 + 4 label rows = 56",
+  "table_3": "printed 100 data rows (19+19+20+21+21) in 5 blocks; written 100 + 5 label rows = 105"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Two-column layout (T,P | T,P) stacked: left column downwards then right column, one label row 'y = ...' per block. Header kept as 'T (K)' and 'P (10^5 Pa)'. Table 3 continues on journal page 113 (y = 0.00278 block), merged into table_3.csv. Sanity: T and P strictly increasing within every block; nitrogen T 249.80-283.93 K, P 4.21-109.61 bar; propane T 256.21-283.84 K, P 1.01-4.99 bar; no duplicates. Pure-gas rows of the propane table: mixtures are binary (1-y) gas + y water; y_h2o is a gas-phase water mole fraction at the dew point (saturation), pressure basis total.",
+ "pass2_diff": "token diff: 304 numbers per pass, identical"
+}

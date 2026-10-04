@@ -1,0 +1,186 @@
+{
+ "table": "Table I",
+ "page_journal": 1080,
+ "title_as_printed": "Solubilities, fugacities, and Henry's constants for gases dissolved in light and heavy water.",
+ "footnotes_as_printed": "not captured (no footnotes in table; the continuation on the right of p. 1080 continues Ar-D2O and the D2O blocks)",
+ "property": "solubility_x",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "total equilibrium cell pressure in the cell (gas + solvent vapour), measured with Bourdon gauges; column P",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "10^4 x",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  },
+  "value2": {
+   "col": "ln(kH/GPa)",
+   "unit": "ln of Henry constant kH in GPa, kH = y phi2 P / x (Eq. 5), gamma2 in Henry reference state taken as 1",
+   "what": "henry",
+   "from_literature": false,
+   "note": "calculated by the authors from measured x with literature virial coefficients; kH is a derived value"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (pure H2O, or D2O in skipped blocks)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+   ],
+   "reason": "gas not in scope (noble gas)"
+  },
+  {
+   "rows": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "reason": "solvent D2O (heavy water), not in scope"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "y (gas-phase mole fraction of solute, calculated by authors from Eq. 2; water mole fraction in gas = 1 - y)",
+  "f2 MPa (solute fugacity, calculated)"
+ ],
+ "conversion_needs": [
+  "x is the mole fraction of dissolved gas at the total pressure P (not at fixed partial pressure)",
+  "ln(kH/GPa) to kH needs exp"
+ ],
+ "notes": "Blocks are stacked, one label row per gas-solvent block; only CH4-H2O block mapped. Ne, Ar, Kr, Xe blocks and all D2O blocks are kept in the CSV but skipped. Gas partial pressure = y*P (approx) is derivable from y. Temperature probe calibrated on IPTS 68."
+}

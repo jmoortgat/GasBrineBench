@@ -1,0 +1,142 @@
+{
+ "table": "Table 7",
+ "page_journal": 22,
+ "title_as_printed": "Viscosities of CO2-saturated and non-CO2 NaCl (3.42 mol kg-1) and NaCl + CaCl2 (NaCl 2.42 mol kg-1 and CaCl2 0.23 mol kg-1) solutions at 5.00 MPa under varying temperature conditions",
+ "footnotes_as_printed": "none",
+ "property": "visc",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Table title gives 5.00 and/or 8.00 MPa; sample kept at that pressure by a back-pressure regulator with a CO2-filled buffer vessel for saturated runs. Total or partial not stated.",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "dynamic viscosity in mPa.s",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "Temp., K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Viscosity, mPa.s",
+   "unit": "mPa.s"
+  },
+  "uncertainty": {
+   "col": "Uncertainty mPa.s",
+   "unit": "mPa.s"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "",
+  "note": "set per block by label rows; molalities from Table 4 of the paper"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    4,
+    8,
+    12
+   ],
+   "reason": "block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": ""
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.42",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.42",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "gas",
+     "value": ""
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2"
+    },
+    {
+     "path": "P.constant",
+     "value": "5.00",
+     "unit": "MPa"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.42",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.23",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Side-by-side blocks stacked left to right. CO2-saturated blocks (S2,S4,S6,S8) have gas co2. P is constant per block, set in the label row."
+}

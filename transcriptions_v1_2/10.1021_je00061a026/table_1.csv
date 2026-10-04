@@ -1,0 +1,9 @@
+temp F,temp C,pressure psia,pressure MPa,10^3 x mole fracn of water,phase sampled,note
+60,15.56,806.0,5.559,0.6266,vapor,
+60,15.66,835.5,5.762,1.0485,liquid,
+70,21.11,883.1,6.090,0.8420,vapor,
+70,21.11,920.0,6.345,1.3115,liquid,
+81.1,27.28,1016.0,7.007,1.1033,vapor,
+81.1,27.28,1090.0,7.517,1.3843,liquid,
+83.1,28.39,1088.9,7.510,,3-phase critical end point,temp F and C:a
+53.0,11.67,875.0,6.035,,,temp F and C:b

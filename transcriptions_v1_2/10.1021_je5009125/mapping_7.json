@@ -1,0 +1,369 @@
+{
+ "table": "Table 7",
+ "page_journal": "J. Chem. Eng. Data 60, 171-180",
+ "title_as_printed": "Experimental Viscosities eta of [(1 - x)H2O + xCO2] at Temperatures T and Pressures p (footnote a)",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties are u(T) = 0.025 K, u(p) = 0.1 MPa, and u(eta) = 0.007*eta."
+ },
+ "property": "visc",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "temperature_scale_evidence": "PRTs calibrated against a standard PRT which was itself calibrated on ITS-90 (body text, section 4.1)",
+ "pressure_note": "not stated whether absolute or gauge; single-phase compressed liquid (under-saturated) solutions, p is the cell pressure",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows (T label rows)"
+  },
+  "P": {
+   "col": "p MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "eta mPa s",
+   "unit": "mPa_s"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "CO2 dissolved in water; mole fraction x of CO2 in the liquid solution (1-x H2O + x CO2) is given in the x label rows (0.0086, 0.0168, 0.0271); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    7,
+    13,
+    19,
+    24,
+    29,
+    34,
+    35,
+    41,
+    47,
+    52,
+    57,
+    62,
+    67,
+    68,
+    73,
+    76,
+    79,
+    83,
+    87
+   ],
+   "reason": "label rows (x block or T sub-block)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "294.30",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "322.93",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.13",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "397.98",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "424.03",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "448.93",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0086",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "294.27",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 41,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "322.91",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 47,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.03",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "397.88",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "422.91",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 62,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "448.29",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0168",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 67,
+   "sets": [
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "294.31",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 73,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.12",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 76,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "374.09",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 79,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "398.98",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.82",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 87,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "448.71",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.x_CO2",
+     "value": "0.0271",
+     "unit": "mole_fraction_CO2_in_solution"
+    }
+   ]
+  }
+ ],
+ "notes": "Printed table has three (p, value) column pairs side by side per T row. Stacked as one label row 'x = ..', then for each printed T row the three T sub-blocks left to right, each with its own label row 'T = .. K' followed by its (p, value) rows. Empty printed cells (ragged sub-blocks) are not written. x is a label-row quantity: group_rows sets composition.constant.x_CO2 (gas mole fraction in solution, not a salt).",
+ "mapping_fix": "x_CO2 repeated on every T label row because a label row replaces the previous one in the loader (2026-10-02)"
+}

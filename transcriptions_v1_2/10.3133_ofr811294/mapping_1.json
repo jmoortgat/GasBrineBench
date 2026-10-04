@@ -1,0 +1,52 @@
+{
+ "table": "Table 1",
+ "page_journal": 17,
+ "title_as_printed": "Summary of individual run data for CH4",
+ "footnotes_as_printed": {
+  "a": "The values for temperature and pressure define the intersection of lines AB and BC in figure 2.",
+  "b": "A_S is the calculated value for the Setschenow constant for each run."
+ },
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure at the intersection of the liquid-vapour (two-phase) and one-phase liquid P-T curves of a fixed-volume, fixed-composition run, i.e. the saturation (bubble-point) pressure at that T; includes water vapour pressure",
+ "columns": {
+  "T": {
+   "col": "Temp. (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure (MPa)",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "Methane Molality (mol/kg)",
+   "unit": "mol/kg",
+   "note": "overall methane molality of the loaded charge (moles CH4 per kg water); equals the solubility at the intersection point"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {
+   "NaCl": {
+    "col": "Wt.% NaCl",
+    "unit": "wt%"
+   }
+  },
+  "constant": {},
+  "other_species": "",
+  "note": "wt% NaCl in the brine charge (salt-free CH4 basis); 0 = pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "A_S (calculated Setschenow constant per run, derived by authors; '-' for pure water)",
+  "Run No"
+ ],
+ "conversion_needs": [
+  "wt% NaCl to molality NaCl: m = 1000*w/(58.443*(100-w))"
+ ],
+ "notes": "Each row is a bubble point at fixed volume and composition (not an isotherm). Replicate charges share the same molality. Table has 30 runs; the text states Setschenow constant 0.129 +- 0.030."
+}

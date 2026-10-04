@@ -1,0 +1,34 @@
+{
+ "doi": "10.1038/2001092a0",
+ "first_author": "McAuliffe",
+ "year": 1963,
+ "journal": "Nature",
+ "source_key": "MCAULIFFE(1963)",
+ "experimental_method": "Water saturated with the hydrocarbon (shaken or stirred, with liquid hydrocarbon present or 1 atm gas over water) at about 25 C; 0.05-0.10 ml water directly injected into a gas chromatograph with a water-absorbing fractionator, flame ionisation detector calibrated with known hydrocarbon amounts, peak areas by planimeter.",
+ "uncertainties_stated": "Standard deviation of the mean from the number of determinations given; temperature not controlled closer than 25 +- 1.5 C.",
+ "quality_remarks": "Gas-phase hydrocarbons at 1 atm; the author notes methane solubility (24 ppm) is anomalous relative to the vapour-pressure correlation; his values for n-pentane to n-octane are 10-20 times lower than Fuhner (1924). Short communication: experimental technique to be reported elsewhere. The PDF begins with another article (SDS enzyme) and ends with another (ATR spectra); the table is the McAuliffe table on journal page 1092.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   1092
+  ]
+ },
+ "not_extracted_tables": [
+  "Fig. 1 (log solubility vs molar volume): figure only, no table"
+ ],
+ "row_counts": {
+  "Table 1": "printed 23 data rows; written 23"
+ },
+ "changes_after_image_check": [
+  "Table 1 all rows: text layer is OCR-garbled (e.g. '0.661; 0.06', 'lfl8', '60.4 :.1: 1-3'); every cell re-read from the 300 dpi page image rather than corrected from the text layer"
+ ],
+ "extraction_notes": "Mid-dot decimals (24\u00b74) written with a full stop. Methane to butanes are gases at 25 C and 1 atm; pentane and heavier are liquids (marked lle through row_regime_overrides). Weight ratio only (g per 10^6 g water); no mole fraction printed.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned page with unreliable OCR text layer; all cells read from the image",
+ "pass2_diff": "Table 1: 23 rows, 129/129 numbers identical."
+}

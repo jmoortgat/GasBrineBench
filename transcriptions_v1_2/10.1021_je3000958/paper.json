@@ -1,0 +1,44 @@
+{
+ "doi": "10.1021/je3000958",
+ "first_author": "Liu",
+ "year": 2012,
+ "journal": "J. Chem. Eng. Data 57(7), 1928-1932",
+ "source_key": "LIU(2012)",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "experimental_method": "Variable-volume view cell with sampling bombs; vapour composition by GC, liquid gas content from pressure of degassed sample (Peng-Robinson) and GC.",
+ "uncertainties_stated": "vapour mole fractions +/-2.0 %, liquid +/-3.0 %; repeatability 1.5 % (vapour) and 2.0 % (liquid); T better than +/-0.05 K; p +/-0.125 %",
+ "tables": {
+  "table_1.csv": 48,
+  "table_2.csv": 7
+ },
+ "row_counts": {
+  "Table 1": {
+   "printed": "42 data rows (6 blocks of 7)",
+   "written": "48 (42 data + 6 label rows)"
+  },
+  "Table 2": {
+   "printed": 7,
+   "written": 7
+  }
+ },
+ "not_extracted_tables": [],
+ "quality_remarks": [
+  "In the HTML DOM the block label ('8.0 MPa, 308.15 K') shares the first data row of each block; it was split into its own label row, no numbers changed.",
+  "Water in the vapour phase not reported; y1, y2 on water-free basis.",
+  "Table 2 liquid mole fractions are salt-free; the 5.0 wt % mixed salt (NaCl, KCl, CaCl2 1:1:1) is given on a gas-free basis in the title.",
+  "Printed digits vary between columns (e.g. x1 '0.00' vs '0.000', '1.01', '1.22'); kept verbatim.",
+  "Figure captions list '308.15 K, 12.0 MPa' twice (second should be 16.0 MPa); not table-related.",
+  "Setschenow constants quoted in the text (23.7 N2, 10.4 CO2) are derived, not extracted.",
+  "Abstract ranges (308.15 and 318.15 K, 8, 12, 16 MPa; salt run at 308.15 K, 8.0 MPa) agree with the tables.",
+  "Temperature scale not stated; pressure absolute/gauge not stated."
+ ],
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "changes_after_image_check": [],
+ "needs_pass2": false,
+ "extraction_notes": "",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

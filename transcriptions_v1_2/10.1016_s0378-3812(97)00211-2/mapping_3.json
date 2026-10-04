@@ -1,0 +1,177 @@
+{
+ "table": "Table 3",
+ "page_journal": 137,
+ "title_as_printed": "Solubility of methane, n-butane and their mixtures in pure water at 71C (160F)",
+ "footnotes_as_printed": {
+  "a": "Measurements performed most probably in the three phase region."
+ },
+ "property": "solubility_x",
+ "gas": "ch4-n-c4h10",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of the equilibrium cell (block label 'Total pressure (MPa)'), held constant within +-1%; whether it includes water vapour not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "71"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total",
+   "from_group_rows": true
+  },
+  "value": {
+   "col": "C1+n-C4 solubility % mol",
+   "unit": "mole_percent_total_hydrocarbon_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "total hydrocarbon (both gases) in the water-rich phase, mol% printed, x = printed*0.01; pure water, salt-free; gas-phase composition in first column"
+  },
+  "value2": {
+   "col": "C1 solubility % mol",
+   "unit": "mole_percent_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "methane component in the water-rich phase"
+  },
+  "value3": {
+   "col": "n-C4 solubility % mol",
+   "unit": "mole_percent_in_aqueous_phase",
+   "scale": 0.01,
+   "what": "n-butane component in the water-rich phase (out of scope gas, kept)"
+  },
+  "gas_phase_composition": {
+   "col": "HC phase water-free methane content % mol",
+   "unit": "mole_percent_methane_in_water_free_hydrocarbon_phase"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (pure water, Milli-Q)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    34,
+    40
+   ],
+   "reason": "pressure block label"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "P",
+     "value": "100",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "P",
+     "value": "75",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "P",
+     "value": "50",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "P",
+     "value": "20",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "P",
+     "value": "10",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "P",
+     "value": "5",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "P",
+     "value": "2.5",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "printed values are mol% (multiply by 0.01 for mole fraction); the sign '-' means no measurement (printed dash), not a value; empty cells are cells left blank in the print; the value column header 'Solubility (% mol) of' is read as mole percent of the component in the water-rich phase (consistent with x~0.005 for methane at 100 MPa)",
+  "gas = mixture of methane with the second hydrocarbon; builder must use column 'HC phase water-free methane content' as the gas-phase composition (y_CH4 = printed/100 on water-free basis)"
+ ],
+ "notes": "Block label rows are the stacked side-by-side pressure blocks. Dash cells are kept as '-'. Footnote a rows (5 and 2.5 MPa) are most probably three-phase (liquid butane-rich phase present): marked in note column; set regime lle for those cells if desired (the block rows 23.0 and 45.5 at 5 and 2.5 MPa). Row '100' printed without .0; C1 at 75 MPa printed 0.466 (not 0.4660). At 75 MPa row 83.0 C1+C4 cell is blank and at 50 MPa the row 83.0 cells are all blank as printed. Table 3 header prints 'Total pressure (Mpa)' (sic).",
+ "gas_per_row": {
+  "col": "HC phase water-free methane content % mol",
+  "map": {
+   "0.0": "n-c4h10",
+   "100": "ch4"
+  },
+  "default": "mixture"
+ },
+ "row_duplicate_of": [
+  {
+   "rows": [
+    6,
+    13,
+    20,
+    27
+   ],
+   "reason": "pure-methane rows identical to Table 2 (audit 2026-10-02)"
+  }
+ ],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    37,
+    38,
+    43,
+    44
+   ],
+   "regime": "lle",
+   "reason": "footnote a: most probably in the three-phase region (audit 2026-10-02)"
+  }
+ ]
+}

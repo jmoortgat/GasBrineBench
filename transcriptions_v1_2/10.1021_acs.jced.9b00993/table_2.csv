@@ -1,0 +1,31 @@
+PS (MPa),TB (K),TM (K),TC (K),Delta T (K),PC (MPa),Delta P (MPa),D (%),note
+2.4890,538.05,496.75,496.85,-0.1,2.4836,0.0054,0.22,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+2.4959,530.45,496.75,497.05,-0.3,2.4836,0.0123,0.50,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+2.4959,540.05,496.65,497.05,-0.4,2.4789,0.0170,0.69,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+4.9918,557.75,537.35,536.95,0.4,5.0208,-0.0290,-0.58,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+4.9987,547.65,537.35,537.05,0.3,5.0208,-0.0221,-0.44,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+4.9987,553.65,537.15,537.05,0.1,5.0047,-0.0060,-0.12,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+9.9793,592.15,584.05,583.95,0.1,9.9868,-0.0075,-0.07,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+9.9793,592.65,584.15,583.95,0.2,10.0000,-0.0207,-0.21,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+9.9793,591.15,584.15,583.95,0.2,10.0000,-0.0207,-0.21,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+14.9655,616.45,615.35,615.15,0.2,15.0080,-0.0425,-0.28,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+14.9655,616.85,615.35,615.15,0.2,15.0080,-0.0425,-0.28,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+14.9655,617.95,615.35,615.15,0.2,15.0080,-0.0425,-0.28,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+14.9655,616.95,615.45,615.15,0.3,15.0270,-0.0615,-0.41,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+19.9931,639.85,639.05,638.85,0.2,20.0360,-0.0429,-0.21,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+19.9931,639.75,639.15,638.85,0.3,20.0600,-0.0669,-0.33,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+19.9931,639.75,639.15,638.85,0.3,20.0600,-0.0669,-0.33,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.2069,643.55,643.15,643.85,-0.7,21.0440,0.1629,0.77,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.2069,643.75,643.35,643.85,-0.5,21.0940,0.1129,0.54,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.2069,643.85,643.45,643.85,-0.4,21.1190,0.0879,0.42,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.9931,647.55,647.05,646.85,0.2,22.0520,-0.0589,-0.27,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.9931,647.35,647.15,646.85,0.3,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+21.9931,647.35,647.25,646.85,0.4,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+22.0000,647.35,647.25,646.85,0.4,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i
+22.0621,647.55,647.45,647.05,0.4,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;TM (K):j
+22.0640,,,647.09,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;PS (MPa):k;TC (K):k
+22.0966,647.65,647.55,,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;TM (K):j
+22.3931,648.85,648.75,,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;TM (K):j
+22.3862,648.85,648.75,,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;TM (K):j
+22.8552,650.75,650.65,,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;TM (K):j
+23.0828,,,,,,,,PS (MPa):b;TB (K):c;TM (K):d;TC (K):e;Delta T (K):f;PC (MPa):g;Delta P (MPa):h;D (%):i;PS (MPa):l

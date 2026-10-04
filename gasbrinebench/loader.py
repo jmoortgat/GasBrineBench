@@ -13,9 +13,9 @@ Examples
 >>> import gasbrinebench as gbb
 >>> df = gbb.load()                      # every family, lle-regime excluded
 >>> len(df)
-11393
+23687
 >>> gbb.load("solubility", gas="co2", T=(320, 330)).shape[0]
-744
+856
 """
 
 from __future__ import annotations
@@ -27,7 +27,8 @@ from pathlib import Path
 import pandas as pd
 
 from .derived import with_derived
-from .vocab import COLUMNS, DEFAULT_EXCLUDED_TAGS, FAMILIES, NUMERIC_COLUMNS
+from .vocab import (COLUMNS, DEFAULT_EXCLUDED_FLAGS, DEFAULT_EXCLUDED_TAGS, FAMILIES,
+                    NUMERIC_COLUMNS, OPTIONAL_COLUMNS, RELIABLE_EXCLUDED_FLAGS)
 
 __all__ = ["data_dir", "available_families", "load", "load_family"]
 
@@ -104,9 +105,27 @@ def _read_csv_cached(path: str, mtime: float) -> pd.DataFrame:
     for col in df.columns:
         if col not in NUMERIC_COLUMNS:
             df[col] = df[col].str.strip()
-    ordered = [c for c in COLUMNS if c in df.columns]
+    ordered = [c for c in [*COLUMNS, *OPTIONAL_COLUMNS] if c in df.columns]
     extra = [c for c in df.columns if c not in ordered]
     return df[ordered + extra]
+
+
+@lru_cache(maxsize=8)
+def _audit_table(path: str, mtime: float) -> pd.DataFrame:
+    return pd.read_csv(path, keep_default_na=False, dtype=str, usecols=["family", "row_id", "status"])
+
+
+def _with_audit_status(df: pd.DataFrame, root: Path) -> pd.DataFrame:
+    """Attach ``audit_status`` (position in the family file -> status; '' where the table is absent)."""
+    path = root / "provenance" / "audit_status.csv"
+    df = df.copy()
+    df["audit_status"] = ""
+    if path.is_file():
+        t = _audit_table(str(path), path.stat().st_mtime)
+        t = t[t["family"] == df["family"].iloc[0]] if len(df) else t
+        status = dict(zip(t["row_id"].astype(int), t["status"]))
+        df["audit_status"] = [status.get(i, "") for i in range(len(df))]
+    return df
 
 
 def load_family(
@@ -147,7 +166,9 @@ def load(
     *,
     where: Path | str | None = None,
     exclude_tags: tuple[str, ...] | list[str] | None = DEFAULT_EXCLUDED_TAGS,
+    exclude_flags: tuple[str, ...] | list[str] | None = DEFAULT_EXCLUDED_FLAGS,
     derive: bool = True,
+    reliable: bool = False,
     **filters,
 ) -> pd.DataFrame:
     """Load one, several or all property families into a DataFrame.
@@ -159,15 +180,28 @@ def load(
     where : path, optional
         Directory holding the CSVs. Defaults to :func:`data_dir`.
     exclude_tags : sequence of str or None, default ``('lle-regime',)``
-        Tags dropped before anything else. **The default matters.** The 144
-        ``lle-regime`` rows are propane points whose heavy phase is a liquid:
+        Tags dropped before anything else. **The default matters.** The 354
+        ``lle-regime`` rows are points whose heavy phase is a liquid:
         they are liquid-liquid mutual solubilities, not gas solubilities, and
         scoring them as the latter is a category error
         (``data/QUALITY.md`` Sec. 7). Pass ``exclude_tags=None`` to get every
         row, or ``exclude_tags=()`` equivalently.
+    exclude_flags : sequence of str or None, default ``DEFAULT_EXCLUDED_FLAGS``
+        Rows carrying any of these modifier flags are dropped (the ``flags``
+        column holds ``;``-separated flags). The default removes the v1.2 rows
+        that are outside the seven gases, in a hydrate regime, below the
+        brine's freezing point, of an unsettled phase, pressure or volume
+        basis, or without any stated pressure (``SCHEMA.md``). Pass
+        ``exclude_flags=None`` to keep them.
     derive : bool, default True
         Attach the derived composition columns
         (:func:`gasbrinebench.with_derived`).
+    reliable : bool, default False
+        Keep only the rows that passed the row-by-row audit against the papers: audit status ``verified`` or ``corrected``
+        (the stored digits equal the printed ones), quality code not ``U``, none of the default-excluded flags, and none of the
+        flags ``source-caution``, ``stp-assumed``, ``salinity-matrix`` or ``solution-basis-converted`` (a convention or caution the paper does not settle).
+        It is the set to fit on when no doubt is acceptable; it needs ``data/provenance/audit_status.csv``. The audit status of every
+        row is attached as the column ``audit_status``, so ``audit_status='verified'`` also works as a filter.
     **filters
         Forwarded to :func:`gasbrinebench.select`, so the common case is one
         call: ``load('solubility', gas='co2', quality='R')``.
@@ -183,10 +217,10 @@ def load(
     >>> import gasbrinebench as gbb
     >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
     >>> int(co2['source'].nunique())
-    56
-    >>> everything = gbb.load(exclude_tags=None)
+    76
+    >>> everything = gbb.load(exclude_tags=None, exclude_flags=None)
     >>> len(everything)
-    11537
+    27025
     """
     root = Path(where) if where is not None else data_dir()
     if family == "all":
@@ -196,11 +230,23 @@ def load(
     else:
         names = list(family)
 
-    frames = [load_family(n, where=root) for n in names]
+    frames = [_with_audit_status(load_family(n, where=root), root) for n in names]
     df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+
+    if reliable:
+        if not (df["audit_status"] != "").any():
+            raise FileNotFoundError(f"reliable=True needs {root / 'provenance' / 'audit_status.csv'}")
+        exclude_flags = tuple(dict.fromkeys([*(exclude_flags or ()), *DEFAULT_EXCLUDED_FLAGS, *RELIABLE_EXCLUDED_FLAGS]))
+        exclude_tags = tuple(dict.fromkeys([*(exclude_tags or ()), *DEFAULT_EXCLUDED_TAGS]))
+        df = df[df["audit_status"].isin(["verified", "corrected"]) & (df["quality"] != "U")]
 
     if exclude_tags:
         df = df[~df["tag"].isin(list(exclude_tags))]
+
+    if exclude_flags and "flags" in df.columns:
+        bad = set(exclude_flags)
+        has = df["flags"].fillna("").map(lambda f: bool(bad.intersection(f.split(";"))))
+        df = df[~has]
 
     if derive:
         df = with_derived(df)

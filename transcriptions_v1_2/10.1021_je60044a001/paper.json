@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je60044a001",
+ "first_author": "Stewart",
+ "year": 1970,
+ "journal": "J. Chem. Eng. Data 15, 67-71",
+ "source_key": "STEWART(1970)",
+ "experimental_method": "Rocking autoclave equilibrium at constant CO2 pressure; liquid sample withdrawn into a Monel tube, CO2 distilled out, absorbed in standard Ba(OH)2 and back-titrated.",
+ "uncertainties_stated": "Temperature control +-0.06 C; pressure readable to +-0.25 psi below 500 psi and +-0.50 psi above; no uncertainty on solubility stated.",
+ "quality_remarks": "Synthetic sea water (Subow/Brujewicz recipe) used since natural sea water varies. The 50 atm pure-water pressure was not investigated because of possible hydrate; authors note hydrate formation at higher pressure may explain literature disagreement. Rows at -5 C and some 0 C / 5 C / 38 atm may lie in the hydrate region but the paper does not say; regime left empty. Sea-water solvent is described only as 'solvent'. Text uses 'Atm.' for pressure.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   69,
+   70
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I: composition recipe of synthetic sea water (not a measurement; recorded in mapping_3 composition)"
+ ],
+ "row_counts": {
+  "table_2": "printed 6 pressure rows x 5 T = 30 cells (12 measured); written 5 label rows + 30 data rows",
+  "table_3": "printed 9 x 7 = 63 cells (42 measured); written 7 label rows + 63 rows",
+  "table_4": "printed 2 blocks x 4 x 3 = 24 cells (15 measured); written 6 label rows + 24 rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Matrix tables restructured to stacked-by-temperature form (not a value change). Text layer for Tables III/IV scrambled the layout, so every cell was read from the page image and cross-checked with the text. Table II is on journal p.69 (PDF p.3); Tables III, IV on journal p.70 (PDF p.4); PDF begins and ends with other articles. Sanity: solubility increases with p and decreases with T in every column; no duplicates.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "old scan with dotted-blank matrix tables restructured; text layer scrambled for Tables III/IV (values read from image)",
+ "pass2_diff": "Tables II-IV: pooled numbers consistent; (P, T, value) tuples of Tables II (12) and III (42) identical in a structured comparison."
+}

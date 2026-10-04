@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je60036a015",
+ "first_author": "Platford",
+ "year": 1968,
+ "journal": "J. Chem. Eng. Data 13(1), 46-48",
+ "source_key": "PLATFORD(1968)",
+ "title": "Isopiestic Measurements on the System H2O-NaCl-Na2SO4 at 25 C",
+ "authors": "R. F. Platford",
+ "experimental_method": "Isopiestic method: solutions in seven silver cups in a gold plated copper block inside an evacuated desiccator rotated 4-7 days in a 25 C water bath; concentrations by weighing dry salts and water.",
+ "uncertainties_stated": "Bath 25 +- 0.005 C; Na2SO4.10H2O solubility 1.9503 +- 0.0020 m (mean of seven runs); uncertainty in log gamma usually about 0.005.",
+ "quality_remarks": "Set 13 combines four runs with saturated Na2SO4 reference (two with dried A.R. chemicals, large scatter); set 21 had a solid phase present (probably Na2SO4.7H2O) and is flagged unreliable by the author; Na2SO4 solutions beyond 1.95 m are supersaturated. Table I gives end-member molality pairs and fit coefficients only; the mixed-solution molalities are not printed. PDF page 1 begins with the end of another article (reference list of a Sage/Sengers paper), ignored.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   47
+  ]
+ },
+ "not_extracted_tables": {
+  "Table II": "mean activity coefficients (and m_B + m_C compositions) derived by the author from isopiestic data; e.m.f. columns are literature (Gieskes, Lanier)",
+  "Table III": "Harned coefficients, derived, with literature comparison"
+ },
+ "row_counts": {
+  "table_1": "printed 22 data rows; written 22"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer clean; all 22 rows compared with the page image; footnote marks (OCR quotes) stripped from set 13 and 21 M_C cells and placed in note column. Table I columns a, b, Delta, M_B Phi_B, b/M_B are derived and kept as unmapped.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was clean and every cell matched the image (footnote glyph removal only)",
+ "pass2_diff": "Table I: 22 rows, 176/176 numbers identical."
+}

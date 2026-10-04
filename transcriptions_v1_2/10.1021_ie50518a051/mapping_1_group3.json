@@ -1,0 +1,51 @@
+{
+ "table": "Table I (water-rich liquid block)",
+ "page_journal": 442,
+ "title_as_printed": "Experimental Data in Three-Phase Region - Concentration of Propane in Water-Rich Liquid Phase",
+ "footnotes_as_printed": {
+  "a": "Critical region.",
+  "b": "Quadruple point by extrapolation."
+ },
+ "property": "solubility_x",
+ "gas": "c3h8",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column 'Pressure, Lb./Sq. Inch Abs.' (absolute, total equilibrium cell pressure, as measured on gauges)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure lb/sq in abs",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Composition of water-rich liquid phase mole fraction propane",
+   "unit": "mole_fraction",
+   "what": "mole fraction propane in the water-rich liquid phase, in equilibrium with propane-rich liquid and vapor (pure water; no salt)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; propane stated as not less than 99 mole %"
+ },
+ "skip_rows": [],
+ "conversion_needs": [
+  "psia and F conversion; propane mole fraction is on a total basis (water-rich liquid: propane per total moles of liquid)"
+ ],
+ "notes": "Block 3 of 3 of Table I. Row 0 (42.3 F, 82.2 psia) carries footnote b, quadruple point by extrapolation, i.e. at or near hydrate formation (regime override hydrate).",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    0
+   ],
+   "regime": "hydrate",
+   "reason": "footnote b: quadruple point by extrapolation (hydrate-formation condition, temperature 42.3 F = 278.9 K)"
+  }
+ ],
+ "quality_remarks": "Row 0 (42.3 F, 82.2 psia, 0.000366) is the quadruple point by extrapolation (footnote b; Figure 5 'ESTIMATED QUADRUPLE POINT'): not a direct measurement; it is also the first row of the smoothed Table IV."
+}

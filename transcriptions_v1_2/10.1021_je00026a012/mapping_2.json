@@ -1,0 +1,135 @@
+{
+ "table": "Table II",
+ "page_journal": 389,
+ "title_as_printed": "Boiling-Point Pressures for the Water + Carbon Dioxide System",
+ "footnotes_as_printed": "none",
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "boiling-point (bubble-point) pressure p/MPa of the liquid of water mole fraction x_1; static method; dew and boiling points differ by 0.002-0.003 MPa at pure water; absolute vs gauge not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "constant": "1 - x_1 from label row",
+   "what": "CO2 mole fraction x_2 = 1 - x_1 of the binary liquid; x_1 is the printed WATER mole fraction (glossary: subscript 1 water, 2 carbon dioxide), shown in the label rows"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water + CO2"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40
+   ],
+   "reason": "label rows (x_1 block headings)"
+  },
+  {
+   "rows": [
+    10,
+    11,
+    18,
+    19,
+    26,
+    27,
+    45,
+    46,
+    47
+   ],
+   "reason": "no measurement printed (empty p cell)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0005",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9995"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0016",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9984"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0025",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9975"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0030",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9970"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0046",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9954"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "value.constant",
+     "value": "0.0076",
+     "unit": "mole_fraction_gas_in_aqueous_phase",
+     "printed_x1_water": "0.9924"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "printed x_1 is water; value = 1 - x_1 (binary system), applied in group_rows"
+ ],
+ "notes": "Printed as a T by x_1 grid; stacked one block per x_1 (columns left to right), one label row per block. Printed blanks (no measurement) are written as empty p cells; 9 such rows kept. The x_1 header is the prepared overall composition at the boiling point; the equilibrium liquid composition is taken to equal it (not stated explicitly beyond 'compositions of 0.992-1 mole fraction of water').",
+ "quality_remarks": "audit 2026-10-02: value constants are 1 - printed x_1 (0.0005, 0.0016, 0.0025, 0.0030, 0.0046, 0.0076) because the printed x_1 is the water mole fraction."
+}

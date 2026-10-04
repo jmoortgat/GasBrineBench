@@ -1,0 +1,33 @@
+{
+ "doi": "10.1021/ja00737a004",
+ "first_author": "King",
+ "year": 1971,
+ "journal": "J. Am. Chem. Soc. 93(8), 1857-1862",
+ "source_key": "KING(1971)",
+ "experimental_method": "Flow saturation method: compressed gas bubbled through water in a steel cell at constant T, expanded through a heated needle valve, water collected in cold traps (or drying tubes) and weighed, dry-gas volume from a wet-test meter.",
+ "uncertainties_stated": "Cell temperature controlled to +/-0.05 C; pressure by Bourdon gauge calibrated against dead-weight tester; no explicit uncertainty on Y2 in the table (B12 uncertainties in Table II are average deviations from the mean).",
+ "quality_remarks": "No correction for residual water vapour loss (traps very efficient); no variation of water content with flow rate (0.5-1.0 l/min) so saturation assumed. CO2 data agree well with Wiebe except one 75 C point. Gas purities: ethane CP grade 99.0%, N2O 98%, CO2 99.8%. Replicate state points show scatter beyond printed digits in places (e.g. N2O 25 C, 36.5/36.7/36.7 atm: 0.00127, 0.00151, 0.00137).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   1859
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (second cross virial coefficients, Kp): derived from Table I by the authors, not measured"
+ ],
+ "row_counts": "Table I printed data rows 78 (CO2 22, N2O 14 in left panel + 24 in right panel, C2H6 18) plus 4 label rows; written 78 plus 4 label rows (82 rows after header)",
+ "changes_after_image_check": [
+  "table 1 row (N2O 75 C, 29.3 atm): text layer '0,0158' -> 0.0158",
+  "table 1 row (C2H6 100 C, 35.9 atm): text layer '0,0296' -> 0.0296"
+ ],
+ "extraction_notes": "PDF page 1 starts with the end of another article (N2 doubly charged ions); Table I is on PDF page 3. Values typed from the text layer and compared with the rendered image (220 dpi) for all rows; text layer matched except two decimal points rendered as commas. Sanity: Y2 decreases with pressure within each temperature, increases with T; a few non-monotonic replicate pairs are as printed (N2O 25 C 36.5-36.7 atm). Table II gives B12 for CO2, N2O (printed 'NaO' in text layer), C2H6, and Ar (from Rigby and Prausnitz).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "two cells corrected after the image check (decimal commas); per SPEC convention 14 any correction triggers pass 2",
+ "pass2_diff": "Table I: 78 rows; all numbers identical (the only extra tokens in pass 2 are digits of gas names it wrote in data rows)."
+}

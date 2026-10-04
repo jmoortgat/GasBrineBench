@@ -1,0 +1,90 @@
+{
+ "table": "Table 6",
+ "page_journal": 498,
+ "title_as_printed": "The vapour pressures, in kPa, of various salt solutions (measured values in bold type, from this work, unless otherwise noted)",
+ "footnotes_as_printed": {
+  "a": "Ref. (19).",
+  "b": "Ref. (20).",
+  "c": "Ref. (21).",
+  "d": "This work, saturated also in carnallite."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "vapour pressure of the water above the solution (quartz Bourdon gauge, apparatus of Part 1; no gas present); 'pressure' stated only as vapour pressure in kPa",
+ "columns": {
+  "T": {
+   "col": "T/C",
+   "unit": "C"
+  },
+  "value": {
+   "col": "p/kPa measured (bold)",
+   "unit": "kPa"
+  },
+  "value2": {
+   "col": "p/kPa calcd",
+   "unit": "kPa",
+   "what": "vapour pressure calculated by the authors from p0*a_H2O (eqn 6/1, 10/1)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m NaCl",
+    "unit": "mol/kg"
+   },
+   "KCl": {
+    "col": "m KCl",
+    "unit": "mol/kg"
+   },
+   "MgCl2": {
+    "col": "m MgCl2",
+    "unit": "mol/kg"
+   },
+   "CaCl2": {
+    "col": "m CaCl2",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "Rows whose 'solution' column reads 'satd in sylvite/halite/bischofite' are solutions saturated with that salt with no molality printed (binary saturated solutions; molalities are in Table 3 of the paper at the four temperatures, not in this table). Rows 'satd in sylvite/halite, but containing x mol kg-1 MgCl2' are saturated in that salt with the given MgCl2 molality (the saturating-salt molality is not printed). The three 'composition rows' sets give printed molalities (mol/kg assumed from the header 'm'); the equilibrium solid for them is not stated except footnote d (also saturated in carnallite). Pure water rows have no salt."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_from_literature": [
+  {
+   "rows": [
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "reason": "bold values footnoted a, b or c are from Refs 19, 20, 21 (other authors), not this work; row 15 is the second literature value (2.49, ref c) at 40 C for bischofite, row 16 the 45 C value"
+  }
+ ],
+ "extra_unmapped": [
+  "p/kPa calcd values are mapped to value2 as authors' calculation"
+ ],
+ "conversion_needs": [],
+ "notes": "REFORMATTED: the printed table has one row per solution and four temperature columns, each cell printing 'calcd, measured(bold)'. The CSV has one row per (solution, temperature, printed value) so the cell values map one-to-one. Non-bold numbers are calculated; where a cell shows only one non-bold number the measured value is empty (not measured). Cells with no entry at all in the original (e.g. composition rows at 40/45 C for rows 1 and 3) are not written. The 40 C bischofite cell printed two measured values stacked (2.33 a and 2.49 c), written as two rows, the second without a calculated value. Composition rows: label 'composition rows' stands for the unlabelled bottom block with printed molalities; footnote d rows are this work, saturated also in carnallite; the unlabelled rows' own saturation state is not stated. Measured values from other authors (a,b,c) are marked in row_from_literature. Bold detection read on the 200 dpi image.",
+ "row_held": [
+  {
+   "rows": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "reason": "saturated in KCl (rows 17-20) or NaCl (rows 21-24) with an added MgCl2 molality; the saturating-salt molality is not printed, so the composition cannot be represented (p.498 Table 6 labels)"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "table": "Table I",
+ "page_journal": 49,
+ "title_as_printed": "Density (g/cm3) of Aqueous NaCl at 20.27 bar",
+ "footnotes_as_printed": {
+  "a": "Determined from literature data (4, 7-16)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated (platinum resistance thermometer, Mueller bridge; scale not named)",
+ "pressure_note": "Table title: 'at 20.27 bar'; text: observed values corrected to rounded temperatures and 20.27 bar; system pressure read on a bourdon gauge to +-0.1 bar (N2 gas pressurised, above saturation pressure); 20.27 bar = 20 atm assumed not stated",
+ "columns": {
+  "T": {
+   "col": "Temperature [C]",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "20.27",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Density [g/cm3]",
+   "unit": "g/cm3",
+   "what": "density of aqueous NaCl solution, printed with a thin-space digit grouping (e.g. 0.996 51), written without the space"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "molality [mol/kg]",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water at molality 0.0000 (degassed, distilled, Millipore Q-filtered)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_from_literature": {
+  "rows": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "reason": "T = 30 C column (footnote a): determined from literature data, not measured in this work (water-bath temperature density used in the eq. 5 data reduction)"
+ },
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality is mol NaCl per kg water (not stated explicitly; solutions made by weighing salt in water)"
+ ],
+ "notes": "Printed wide with seven temperature columns (30, 75, 100, 125, 150, 175, 200 C); restacked to long form, ordered by temperature then molality (9 per temperature). The 0.0000 molality rows are pure water (density of water at 20.27 bar), also used as calibration standard from literature; kept as printed.",
+ "row_held": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45,
+    54
+   ],
+   "reason": "salt-free row: the density of pure water used as reference for the apparent molar volumes; identical to the Kumar et al. (1986) values at six states, i.e. a shared reference, not an independent measurement (found by the inter-source consensus: identical values in two sources, 2026-10-03)"
+  }
+ ]
+}

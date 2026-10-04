@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/j100886a005",
+ "first_author": "Enns",
+ "authors": "T. Enns, P. F. Scholander, E. D. Bradstreet",
+ "year": 1965,
+ "title": "Effect of Hydrostatic Pressure on Gases Dissolved in Water",
+ "journal": "J. Phys. Chem. 69 (2), 389-391",
+ "source_key": "ENNS(1965)",
+ "experimental_method": "Water saturated with gas near atmospheric pressure is held in a pressure chamber at 0-102 atm hydrostatic pressure; the gas equilibrium pressure is found by a null-point measurement of pressure developed inside a gas-permeable Teflon tube immersed in the solution.",
+ "uncertainties_stated": "None given for the table values.",
+ "quality_remarks": "Water vapour pressure was subtracted from all gas pressures. Partial molal volumes are average values from straight lines through ln p versus hydrostatic pressure; the authors say all gases except He actually give slightly curved plots. The table holds no dissolved-gas concentrations, so it is not a solubility table; only the derived partial molal volume (and the raw equilibrium pressures) are given. PDF page 1 begins with Table VIII of another article (heats of formation of XO3 species) which is not this paper's. Header row 'P = 102' for the He first row carries footnote b (102.7 atm). Temperature scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   390
+  ]
+ },
+ "not_extracted_tables": [
+  "Table VIII on journal p. 389 (heats of formation of ClO3, BrO3, IO3): belongs to a different article, out of scope"
+ ],
+ "row_counts": "Table 1: printed 16 data rows, written 16 data rows plus 8 label rows (24 rows after header)",
+ "changes_after_image_check": "none (text layer garbled only in gas label cells: 'O' read as CO2, '8156' read as 815 with footnote b, first-row 'o2'/'n2' case; corrected from image before writing)",
+ "extraction_notes": "Printed decimal forms such as '.133' kept as printed. 'O2 at 0.5 C' printed as 0.5 degrees. Table is a mix of gas rows in distilled water, one sea-water row and one detergent row. Text layer was partly garbled so the table was written from the image.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer garbled for gas labels and a footnote; label cells corrected from the image",
+ "pass2_diff": "Table I: all measured numbers identical; the pass-2-only numbers are digits in gas and condition labels (O2, N2, 0.5 deg) that pass 1 kept as label rows."
+}

@@ -1,0 +1,45 @@
+{
+ "doi": "10.1039/J19670000660",
+ "first_author": "Ellis",
+ "year": 1967,
+ "journal": "J. Chem. Soc. A, 1967, 660-664",
+ "source_key": "ELLIS(1967)",
+ "title_authors": "Partial molal volumes of MgCl2, CaCl2, SrCl2, and BaCl2 in aqueous solution to 200 deg; A. J. Ellis, DSIR Petone, New Zealand",
+ "experimental_method": "Precise density change of solutions between 50 C and higher temperatures measured as in Ellis (1966) J. Chem. Soc. A 1579; densities at 50 C taken from International Critical Tables; total pressure 20 atm.",
+ "uncertainties_stated": "densities significant to the fifth decimal (relative); a systematic change of 1 in the fourth decimal at 50 C changes limiting partial molal volume by 1-1.5 cc/mol",
+ "quality_remarks": "Fifth decimal has relative significance only (arbitrary zero added to the 50 C literature densities). Temperature scale not stated. Only the 50 C column rests on literature densities. Table 2 phi0 values are free-hand extrapolations (error up to 2-3 cc/mol at 200 C).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   661
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: limiting partial molal volumes (derived by extrapolation, from apparent molal volumes)",
+  "Table 3: total intrinsic volumes of ions (calculated)",
+  "Table 4: electrostriction coefficients A' (calculated)",
+  "Apparent molal volumes phi are only shown in Figures 1-4"
+ ],
+ "row_counts": {
+  "Table 1": "printed 17 salt/molality rows x 7 temperatures = 119 values; written 119 data rows plus 4 label rows"
+ },
+ "changes_after_image_check": [
+  "table 1 CaCl2 0.5 m 75 C: text layer '1.0 1909' -> 1.01909",
+  "CaCl2 0.5 m 125 C: '0.9851 1' -> 0.98511",
+  "BaCl2 0.1 m 125 C: '0.957 6 1' -> 0.95761",
+  "MgCl2 0.2 m 175 C: '0.91 148' -> 0.91148",
+  "CaCl2 0.5 m 200 C: '0.9 1660' -> 0.91660",
+  "BaCl2 0.1 m 175 C: '0.9 1091' -> 0.91091",
+  "printed mid-dot decimals (1.06072) written with full stop; hyphen-like decimals in text layer ('1-04846') written with full stop"
+ ],
+ "extraction_notes": "Text layer had spacing and hyphen/decimal errors; all 119 values re-read from the rendered page image. Sanity: density decreases with T and increases with m throughout; Table 1 contains four salts of which SrCl2 and BaCl2 are outside the six-ion set (rows kept).",
+ "gas_basis": "not_applicable",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "several text-layer cells needed correction after the image check (old scan with spacing errors)",
+ "pass2_diff": "Table 1: 119 (salt,m,T) values identical to the pass-2 matrix; CaCl2 0.05 m at 175 C read 0.89810 in both passes."
+}

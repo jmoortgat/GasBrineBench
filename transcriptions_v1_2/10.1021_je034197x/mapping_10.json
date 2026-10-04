@@ -1,0 +1,91 @@
+{
+  "table": "Table 10",
+  "page_journal": null,
+  "title_as_printed": "Measured Vapor Pressure of Aqueous Sodium Chloride Solution, p, at the Equilibrium Temperature, T, Calculated Values of the Activity of Water in the Liquid Phase, aw, and the Osmotic Coefficient, phi, at Different Molalities m",
+  "footnotes_as_printed": "none",
+  "property": "psat_brine",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "Total measured equilibrium pressure; the salt is not volatile so p is the vapour pressure of the solution ('The salt was not volatile so that the total measured pressure at equilibrium p is the vapor pressure of water'). Absolute pressure sensor (MKS Baratron 690A) was used for absolute vapour pressure.",
+  "columns": {
+    "T": {
+      "col": "T K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "p kPa",
+      "unit": "kPa",
+      "basis": "saturation"
+    },
+    "value2": {
+      "col": "aw",
+      "unit": "dimensionless",
+      "what": "activity of water = p/p* with p* the authors' own measured pure-water vapour pressure",
+      "derived_by_authors": true
+    },
+    "value3": {
+      "col": "phi",
+      "unit": "dimensionless",
+      "what": "osmotic coefficient from aw with the vapour-phase non-ideality (second virial coefficient) correction of the authors' eq 4",
+      "derived_by_authors": true
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {},
+    "constant": {
+      "NaCl": {
+        "value": "set by group_rows",
+        "unit": "mol/kg"
+      }
+    },
+    "other_species": "NaCl only; composition from weighing, corrected for solvent loss on degassing"
+  },
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        15,
+        30
+      ],
+      "reason": "molality label rows 'm = ... mol.kg-1'"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1.0684",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 15,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "2.1950",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 30,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "3.5714",
+          "unit": "mol/kg"
+        }
+      ]
+    }
+  ],
+  "volume_basis": "not_applicable",
+  "extra_unmapped": [],
+  "conversion_needs": [],
+  "notes": "Published table has two column groups side by side (T 298.15-328.15 K left, 333.15-363.15 K right) per molality block, stacked left first, then right (14 data rows per block, 3 blocks = 42 data rows). The pure-water vapour pressures used for aw are given only in a figure (Figure 2), not in a table. Same 5 K steps 298.15-363.15 K at each molality."
+}

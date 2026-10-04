@@ -1,0 +1,115 @@
+{
+ "table": "Table I",
+ "page_journal": 624,
+ "title_as_printed": "Densities of Aqueous Sodium Chloride Solutions at 200 bar",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "temperature_scale_evidence": "The thermometer was calibrated in terms of the IPTS-68",
+ "pressure_note": "constant pressure of 200 bar (title); text: 'maintained at constant pressure by bleeding off mercury', within 0.05 bar; total pressure ('200 bar total pressure' in Fig. 4 caption)",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "constant": "200",
+   "basis": "total"
+  },
+  "value": {
+   "col": "rho g-cm-3",
+   "unit": "g/cm3",
+   "what": "density of NaCl solution (header printed 'rho (g-cm3)', sic, g cm-3)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (NaCl + triply distilled water); molality from label rows, unit mol/kg printed in text ('0.1 to 4.0 mol-kg-1')"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    22,
+    33,
+    52,
+    65
+   ],
+   "reason": "molality label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.100",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.200",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.500",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 33,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.000",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.00",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 65,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.000",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density, no per-volume quantity",
+ "notes": "Side-by-side blocks (3 per band) stacked in order m=0.100,0.200,0.500,1.000,2.00,4.000. Rows kept in printed order, not sorted by T (m=1.000 block has runs 183-335 C then 271-344 C)."
+}

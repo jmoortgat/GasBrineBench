@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/je00061a026",
+ "first_author": "Song",
+ "year": 1990,
+ "title": "The Water Content of a CO2-Rich Gas Mixture Containing 5.31 mol % Methane along the Three-Phase and Supercritical Conditions",
+ "authors": "Kyoo Y. Song, Riki Kobayashi",
+ "journal": "J. Chem. Eng. Data 35(3), 320-322",
+ "source_key": "SONG(1990)",
+ "experimental_method": "Equilibrium cell (100 cm3, magnetic pump) with sampling of each phase through heated lines; water analysed by glycerol-packed absorption column and split chromatographic columns with helium carrier (Bloch and Lifland method).",
+ "uncertainties_stated": "Bath temperature controlled to better than 0.05 C (L&N Pt resistance thermometer, NBS-traceable); pressure transducer certified to better than 0.1 % of full scale (0-3000 psia); accuracy of tabulated water content estimated generally within 5-6 %.",
+ "quality_remarks": "PDF page 1 begins with another article (LiBr-LiI-water heat capacity, journal page 320 top); this paper starts at the bottom of pdf page 1. Table I row 2 temperature printed 60/15.66 (probably 15.56). Table III (enhancement factors, smoothed pressures and water contents, derived) not extracted.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   321
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III: enhancement of water partial pressure, E = P y_w/P_w0, with rounded/smoothed pressures and a vapor-pressure calculation; derived"
+ ],
+ "row_counts": {
+  "table_1": "printed 8 rows; written 8",
+  "table_2": "printed 21 rows; written 21"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image in all cells; text layer columns were interleaved on the left column so cells were typed from the image and cross-checked against the text layer. Temperature and pressure printed as dual units (F/C, psia/MPa), split into separate columns.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "all cells matched between text layer and image",
+ "pass2_diff": "Tables I and III: all numbers identical (extra '3' in pass 2 is the text '3-phi'); row 1 prints 15.66 in both passes."
+}

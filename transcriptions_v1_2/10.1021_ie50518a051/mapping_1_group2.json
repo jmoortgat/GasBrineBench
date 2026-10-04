@@ -1,0 +1,41 @@
+{
+ "table": "Table I (propane-rich liquid block)",
+ "page_journal": 442,
+ "title_as_printed": "Experimental Data in Three-Phase Region - Concentration of Water in Propane-Rich Liquid Phase",
+ "footnotes_as_printed": {
+  "a": "Critical region.",
+  "b": "Quadruple point by extrapolation."
+ },
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "lle",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column 'Pressure, Lb./Sq. Inch Abs.' (absolute, total equilibrium cell pressure, as measured on gauges)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure lb/sq in abs",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Composition of propane-rich liquid phase mole fraction water",
+   "unit": "mole_fraction_water_in_hc_rich_phase",
+   "what": "mole fraction water in the propane-rich LIQUID phase (not a gas phase), three phases coexisting"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; propane stated as not less than 99 mole %"
+ },
+ "skip_rows": [],
+ "conversion_needs": [
+  "psia and F conversion; propane mole fraction is on a total basis (water-rich liquid: propane per total moles of liquid)"
+ ],
+ "notes": "Block 2 of 3 of Table I. The property name y_h2o is used for the water content of the hydrocarbon-rich phase; the phase here is liquid (regime lle). Rows 15 and 17 carry footnote a (critical region)."
+}

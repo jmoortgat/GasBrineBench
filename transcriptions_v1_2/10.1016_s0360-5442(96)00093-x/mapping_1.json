@@ -1,0 +1,56 @@
+{
+ "table": "Table 1",
+ "page_journal": 267,
+ "title_as_printed": "Data of temperature and CO2 concentration",
+ "footnotes_as_printed": {
+  "a": "[ ] : Estimated concentration",
+  "b": "( ) : Measured at different time from C",
+  "-": "-- : not measured",
+  "C0": "Measured initial concentration",
+  "C": "Measure concentration after precipitation"
+ },
+ "property": "other",
+ "gas": "co2",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "constant 30 MPa (figure and title: 'P = 30 MPa', 'solubility ... at 30 MPa'); not further specified (loop pressure; no separate partial pressure)",
+ "columns": {
+  "T": {
+   "col": "T (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "30",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "C",
+   "unit": "mass_fraction_CO2_in_aqueous_phase",
+   "what": "saturated CO2 concentration after hydrate precipitation, C = M_CO2/(M_H2O + M_CO2) (mass fraction, dimensionless), in the hydrate region (3.0-9.6 C, below the 12 C equilibrium temperature of CO2(l)-water-hydrate at 30 MPa)"
+  },
+  "value2": {
+   "col": "C0",
+   "unit": "mass_fraction_CO2_in_aqueous_phase",
+   "what": "measured initial concentration before hydrate precipitation (not a saturation value)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "water of unstated quality (text says only 'CO2-rich water' / 'sample water'); no salt mentioned for the solubility runs; sea water is used only in the separate dissolution-rate tests"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Delta C (concentration change C0 - C, derived)",
+  "Delta T (K) (temperature jump on precipitation)",
+  "Cooling Rate (K/h)"
+ ],
+ "conversion_needs": [
+  "mass fraction to mole fraction/molality needs the molar masses of CO2 and H2O (builder)"
+ ],
+ "notes": "Printed '--' in Delta T (test 3) and Cooling Rate (test 4) means not measured: empty cells. Brackets and parentheses removed from numbers and recorded in the note column. Test 8 C0 and Delta C are estimated by the authors. Water is described in the paper as sample water from a loop; purity of water not stated anywhere in the paper."
+}

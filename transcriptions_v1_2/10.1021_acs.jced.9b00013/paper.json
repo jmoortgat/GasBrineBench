@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/acs.jced.9b00013",
+ "first_author": "Wang",
+ "year": 2019,
+ "journal": "J. Chem. Eng. Data 64 (6), 2484-2496; Wang, J.; et al.: Determination of CO2 Solubility in Water and NaCl Solutions under Geological Sequestration Conditions Using a Fused Silica Capillary Cell with in Situ Raman Spectroscopy",
+ "source_key": "WANG(2019)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was clean; all four tables compared against the 170 dpi page images with no discrepancy found",
+ "experimental_method": "CO2-saturated water or NaCl solution is circulated through a fused silica capillary cell; the Raman nu(CO2)/nu(H2O) peak height ratio, converted with a calibration against known CO2 concentrations, gives the CO2 solubility in situ.",
+ "uncertainties_stated": "u(T) = 0.01 K; u(P) = 0.039 MPa; u(b) = 0.0005 b (NaCl molality, relative); CO2 solubility uncertainty from the average deviation of five Raman ratio measurements; NaCl solutions prepared gravimetrically.",
+ "quality_remarks": "Indirect (calibrated spectroscopic) determination. Authors compare water data with the Duan and Akinfiev-Diamond models (Tables 9, 10, not extracted). Pressure basis (total vs CO2 partial) not stated. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   7,
+   8,
+   9
+  ],
+  "journal_pages": [
+   2490,
+   2491,
+   2492
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 chemicals used: not data",
+  "Tables 2 and 3: Raman peak height ratios of calibration solutions (spectroscopic intermediate, not solubility)",
+  "Table 4: fit equations of calibration curves: model parameters",
+  "Tables 9 and 10: deviations from Duan and Akinfiev-Diamond models: derived"
+ ],
+ "row_counts": {
+  "Table 5": "33 printed pressure rows x 6 T = 198 written",
+  "Table 6": "17 x 6 = 102",
+  "Table 7": "17 x 6 = 102",
+  "Table 8": "17 x 6 = 102"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Tables restacked wide to long by script from the text layer (cell regex value +- uncertainty), row counts verified (6 values per printed row). Sanity: at fixed T solubility rises with P; at fixed P falls with T and with NaCl molality, except the near-critical region where isotherms cross-over at the low end is not observed. Table 2/3 not checked in detail since not extracted.",
+ "pass2_diff": "Tables 5-8: every pass-2 value and uncertainty occurs in pass 1; the pass-1-only numbers are exactly the temperature and pressure keys of the restacked rows (counts reconcile: 363 = 198 T + 198 P - 33 and 187 = 102 + 102 - 17)."
+}

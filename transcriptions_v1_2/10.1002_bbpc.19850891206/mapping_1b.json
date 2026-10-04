@@ -1,0 +1,45 @@
+{
+ "table": "Table 1b",
+ "page_journal": "1270",
+ "title_as_printed": "Experimental values of water mole fraction x(H2O), temperature T, pressure P, and molar volume Vm on the liquid-gas phase equilibrium surface of the water-air system. Data obtained with the synthetic method",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "gas": "air",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure at the liquid-gas phase boundary",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "x(H2O)",
+   "unit": "mole_fraction_water",
+   "scale": 1,
+   "what": "overall water mole fraction (synthetic)"
+  },
+  "value2": {
+   "col": "Vm/10^-6 m3 mol-1",
+   "unit": "m3/mol",
+   "scale": 1e-06,
+   "what": "molar volume of the mixture"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Gas is air (composition of the air not stated in the table); isopleth x(H2O)=0.80 nominal. Rows are break points of the isochoric P-T curve."
+}

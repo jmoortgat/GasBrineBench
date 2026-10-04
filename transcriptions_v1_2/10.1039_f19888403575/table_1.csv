@@ -1,0 +1,9 @@
+m NaCl,m KCl,m MgCl2,m CaCl2,saturated with,p/kPa obsd,p/kPa calcd,note
+1.75,0.17,1.56,0.43,none,2.40,2.40,p/kPa obsd:a
+0.98,0.34,3.01,0.86,hal,1.70,1.75,p/kPa obsd:a
+0.61,0.38,3.42,0.98,hal,1.58,1.58,p/kPa obsd:a
+0.34,0,0.99,0,hal,1.35,1.33,p/kPa obsd:a
+0.47,0.39,3.64,1.04,hal+car,1.36,1.48,p/kPa obsd:a
+0.32,0.25,3.91,1.12,hal+car,1.34,1.38,p/kPa obsd:a
+0.19,0.17,4.20,1.20,hal+car,1.28,1.26,p/kPa obsd:a
+0,0.05,4.98,0,syl+car,1.48,1.38,p/kPa obsd:a

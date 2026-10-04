@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/je00044a022",
+ "first_author": "Duckett",
+ "year": 1986,
+ "journal": "J. Chem. Eng. Data 31, 213-214",
+ "title": "Osmotic Coefficients of Aqueous CaCl2 Solutions from 3 to 12 m at 50 C",
+ "authors": "Lisa M. Duckett, Jeffrey M. Hollifield, C. Stuart Patterson",
+ "source_key": "DUCKETT(1986)",
+ "experimental_method": "Isopiestic comparison of CaCl2(aq) with LiCl(aq) reference at 50 C using the apparatus of Humphries et al. with modifications of Davis et al.",
+ "uncertainties_stated": "Experimental uncertainty about 0.05%; per-row coefficient of variation of replicate samples is tabulated (0.00-0.10 %).",
+ "quality_remarks": "Osmotic coefficients derived from literature LiCl data (Gibbard and Scatchard); authors note reliability above 3 m is limited by accuracy of those data. Temperature scale not stated. Footnote letters a,b,c in Table I belong to the headers m, n, cv and were stripped from the headers.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   213
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean and every cell matched the page image.",
+ "not_extracted_tables": [
+  "Table II: parameters of empirical fits of R and phi (model parameters)",
+  "Table III: smoothed CaCl2 osmotic coefficients at rounded molalities with literature comparison (smoothed/fitted, derived)"
+ ],
+ "row_counts": {
+  "Table I": {
+   "printed": 27,
+   "written": 27
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: both molality columns increase monotonically; CaCl2/LiCl ratio smooth.",
+ "pass2_diff": "Table I: 54 rows, 162/162 numbers identical."
+}

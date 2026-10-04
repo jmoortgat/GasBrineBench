@@ -1,0 +1,55 @@
+{
+ "property": "other",
+ "property_description": "specific isobaric heat capacity (J/(kg K)) of the fluid, flow calorimeter",
+ "temperature_scale": "not stated",
+ "volume_basis": "not_applicable",
+ "pressure_note": "P1 = pressure ahead of the calorimeter, held by a pressure retention valve; stated absolute ('p = 2.6 MPa (abs)', p.207; abstract 'absolute pressures (0.2-2.6 MPa)')",
+ "table": "Table 3",
+ "page_journal": 210,
+ "title_as_printed": "Measured and reported heat capacity of degassed and demineralized water at 2.6 MPa and different inlet temperatures. The error is based on reference data of Lemmon et al. (2010) and defined as (cp_mean, measured values - cp_reference)/cp_reference.",
+ "footnotes_as_printed": "none printed",
+ "gas": "",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "Temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "constant": "2.6",
+   "basis": "total"
+  },
+  "value": {
+   "col": "cp_mean measured values J/kgK",
+   "unit": "J_per_kg_K",
+   "what": "mean of cp over the heating-power steps"
+  },
+  "value2": {
+   "col": "cp_reference J/kgK",
+   "unit": "J_per_kg_K",
+   "what": "NIST database (Lemmon et al. 2010) value",
+   "from_literature": true
+  },
+  "error": {
+   "col": "Error %",
+   "unit": "percent",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (degassed and demineralized); no salt"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "Error % (calculated by authors)"
+ ],
+ "conversion_needs": [],
+ "notes": "T is the fluid inlet temperature T1; rows at 143-160 C are above the saturation temperature at 2.6 MPa unless pressure retention keeps liquid (P1 held at 2.6 MPa as printed; at 160 C saturation pressure is about 0.62 MPa so liquid). The 75 C row 4209.9 equals the 48.0 W entry of Table 2 (printed so).",
+ "quality_remarks": "Suspect value: the 75 C row cp_mean 4209.9 is identical to the first heating step (48.0 W) of Table 2 (80 C); the reference 4187.8 and error 0.53 are consistent with 4209.9, so it is probably printed so (likely copy error by the authors). Row 80 C (4212.6) is the mean of the Table 2 steps.",
+ "caution": "75 C row cp_mean 4209.9 equals the first Table 2 heating step at 80 C (possible copy error by the authors)."
+}

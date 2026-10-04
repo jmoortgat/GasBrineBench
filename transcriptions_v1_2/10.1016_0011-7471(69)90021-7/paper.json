@@ -1,0 +1,38 @@
+{
+ "doi": "10.1016/0011-7471(69)90021-7",
+ "first_author": "Murray",
+ "year": 1969,
+ "journal": "Deep-Sea Research 16, 311-320",
+ "source_key": "MURRAY(1969)_O2",
+ "experimental_method": "Chemical: Winkler titration of water saturated with air in a thermostatted counter-current saturator (triplicate); physical: gasometric saturation with pure O2 as in Part I.",
+ "uncertainties_stated": "Chemical accuracy about 0.01 ml O2/l (replicate SD 0.008 ml/l at 20 C); temperature control 0.022 C (chemical) and 0.017 C (physical); chlorinity accuracy better than 0.01 permil; physical replicate SDs 0.010, 0.007, 0.006 ml/l at 13.60, 25.72, 28.31 C.",
+ "quality_remarks": "Winkler results include a 0.011 ml/l reagent-oxygen correction. Results agree with Carpenter (1966) to about 0.006 ml/l on average; Green and Carritt tables deviate up to 1-1.7 percent. Source says Table 1 and Table 3 are on a ml/l basis from air (20.94 % O2, 100 % RH); the physical values were converted by the authors. Text layer is OCR-like with quote marks for decimal points.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   315,
+   316
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "smoothed curve oxygen solubility values at integral T and chlorinity (fitted/derived), pdf page 6 / journal p. 316"
+  }
+ ],
+ "row_counts": {
+  "Table 1": "printed 53, written 53",
+  "Table 3": "printed 9, written 9"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Both tables transcribed from the page images; a script cross-check against the text layer found the only disagreement was one text-layer damage (10.021 read as 0.021 at 0.74 C, S=0.000). Because the text layer is unusable for decimals, a blind second pass is recommended. No sanity violations found: solubility decreases with T and with salinity within each block.",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer unreliable (OCR with quote characters as decimals); all cells read from image",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: Table 3 identical; Table 1 every number of pass 2 found in pass 1, extras are carried-forward temperatures"
+}

@@ -1,0 +1,186 @@
+{
+ "table": "Table 1",
+ "page_journal": "1328-1329",
+ "title_as_printed": "Isopiestic molalities m and the corresponding osmotic coefficients f for MgCl2(aq). (m0 = 1 mol.kg-1)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "isopiestic_molality",
+ "property_note": "reference salt NaCl; value = MgCl2 molality in isopiestic equilibrium, value2 = NaCl reference molality of the same equilibrium",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at the saturation vapour pressure of the solutions; pressure not tabulated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "383.05"
+  },
+  "value": {
+   "col": "MgCl2 m/m0",
+   "unit": "mol/kg",
+   "scale": "1 (printed as m/m0 with m0 = 1 mol/kg)",
+   "what": "MgCl2 isopiestic molality"
+  },
+  "value2": {
+   "col": "NaCl m/m0",
+   "unit": "mol/kg",
+   "scale": "1",
+   "what": "NaCl reference-electrolyte molality in the same isopiestic equilibrium (measured)"
+  },
+  "phi": {
+   "col": "f",
+   "unit": "osmotic_coefficient_stoichiometric",
+   "derived_by_authors": true,
+   "what": "phi_x = 2 phi_s m_s / (3 m_x) (eq. 1), phi_s of NaCl from Pitzer et al. equations; stoichiometric (complete dissociation assumed)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "MgCl2 m/m0",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl reference solution in the partner isopiestic cup, molality in column 'NaCl m/m0'"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2,
+    4,
+    6,
+    12,
+    38,
+    60,
+    88,
+    112,
+    142,
+    174
+   ],
+   "reason": "temperature label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "383.05",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 2,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.74",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "444.03",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "473.85",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.72",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "524.12",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "383.11",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 88,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.56",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 112,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "443.44",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 142,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "473.18",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 174,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.22",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Printed values are m/m0 with m0 = 1 mol/kg: molality equals the printed number",
+  "T label rows give T per block; note two loadings: 383.05-524.12 K (loading 1) and 383.11-498.22 K (loading 2), with nominally equal temperatures differing slightly"
+ ],
+ "notes": "Printed as three side-by-side column groups (f, MgCl2 m, NaCl m) per temperature block; stacked here per block in the order column group 1 (top to bottom), group 2, group 3, which is the printed reading order and is increasing in molality within a group. Table is a combination of two separate loadings of the apparatus (stated in the text). Temperature scale not stated.",
+ "quality_remarks": "audit 2026-10-02: rows at 383.11 K (f 0.9186, 0.7203, 1.0284) and 473.18 K (f 0.8353, 1.1689, 1.6142) deviate about 2.5 % from smooth trend; printed exactly so (page image checked); paper scatter or misprint",
+ "caution": "Two printed rows (383.11 K and 473.18 K) deviate about 2.5 % from the smooth trend of the implied reference coefficient; printed exactly so (paper scatter or misprint)."
+}

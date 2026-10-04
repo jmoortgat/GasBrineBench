@@ -39,11 +39,19 @@
 # The database and its documentation
 # ---------------------------------------------------------------------------
 !/data/*.csv
+!/data/provenance/*.csv
+!/data/consensus/*.csv
+!/data/consensus/README.md
+
+# v1.2: the supplementary tier (measurements the benchmark families cannot hold)
+!/supplementary/*.csv
+!/supplementary/README.md
 !/data/README.md
 !/data/QUALITY.md
 
 # The hand-maintained bibliographic library that SOURCES.* is generated from.
 !/bib/references.bib
+!/bib/references_v1_2.bib
 
 # ---------------------------------------------------------------------------
 # Code: the validator, the manifest generator, and the build scripts kept as
@@ -52,6 +60,8 @@
 !/tools/*.py
 !/tools/builders/*.py
 !/tools/builders/README.md
+!/tools/builders_v1_2/*.py
+!/tools/builders_v1_2/*.md
 
 # ---------------------------------------------------------------------------
 # The raw hand transcriptions. Only files named EXP*.txt, only under
@@ -60,6 +70,14 @@
 !/transcriptions/README.md
 !/transcriptions/MANIFEST.tsv
 !/transcriptions/**/EXP*.txt
+
+# v1.2: tables as extracted (table_N.csv), the mapping that converts each
+# (mapping_N.json), and the paper's own metadata (paper.json), by DOI slug.
+!/transcriptions_v1_2/MANIFEST.csv
+!/transcriptions_v1_2/HASHES.csv
+!/transcriptions_v1_2/*/table_*.csv
+!/transcriptions_v1_2/*/mapping_*.json
+!/transcriptions_v1_2/*/paper.json
 
 # ---------------------------------------------------------------------------
 # The reader package, its tests, and the tour notebook. The notebook is
@@ -71,6 +89,7 @@
 !/tests/*.py
 !/notebooks/*.ipynb
 !/notebooks/README.md
+!/notebooks/gbb_viz.py
 
 # ---------------------------------------------------------------------------
 # Belt and braces. These come last, so they override every re-admission above:

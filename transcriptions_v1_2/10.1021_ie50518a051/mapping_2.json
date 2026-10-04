@@ -1,0 +1,72 @@
+{
+ "table": "Table II",
+ "page_journal": 442,
+ "title_as_printed": "Experimental Data in Two-Phase Region (Concentration of water in propane-rich phases)",
+ "footnotes_as_printed": {
+  "a": "Critical region.",
+  "b": "Quadruple point by extrapolation."
+ },
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column 'Pressure, Lb./Sq. Inch Abs.' (absolute, total equilibrium cell pressure, as measured on gauges)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure lb/sq in abs",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Composition of propane-rich phase mole fraction water",
+   "unit": "mole_fraction_water_in_hc_rich_phase",
+   "what": "mole fraction water in the propane-rich phase (vapor or liquid depending on row, see overrides)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; propane stated as not less than 99 mole %"
+ },
+ "skip_rows": [],
+ "conversion_needs": [
+  "psia and F conversion; propane mole fraction is on a total basis (water-rich liquid: propane per total moles of liquid)"
+ ],
+ "notes": "Isotherms 100, 150, 190, 205.7, 230, 260, 300 F; blocks separated by a blank line in print (no label rows). Replicate-looking rows (100 F/2798 psia; 260 F/2023 psia) are distinct printed values, kept.",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    21
+   ],
+   "regime": "lle",
+   "reason": "pressure above the three-phase pressure at that temperature (Table I/IV: 191.5 psia at 100 F, about 311-389 psia at 140-160 F, 538 psia at 190 F), so the propane-rich phase is liquid; rows below are vapor (regime empty); at 205.7 F and above (T >= propane Tc about 206 F) no liquid/vapor distinction is made. This classification is the extractor's inference from the paper's own three-phase data, the paper does not label rows."
+  }
+ ],
+ "row_held": [
+  {
+   "rows": [
+    2
+   ],
+   "reason": "probable printed misprint: 0.00492 at 100 F / 533 psia is about 8x the neighbouring liquid values (0.000587 at 818 psia; Table V p.444 gives 0.000604 at 500 psia, 100 F); probably 0.000492; cell not changed"
+  }
+ ],
+ "quality_remarks": "Row 2 (100 F, 533 psia, 0.00492) is a probable misprint of 0.000492 (see row_held)."
+}

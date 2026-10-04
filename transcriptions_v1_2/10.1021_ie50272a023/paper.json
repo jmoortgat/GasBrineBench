@@ -1,0 +1,33 @@
+{
+ "doi": "10.1021/ie50272a023",
+ "first_author": "Wiebe",
+ "year": 1932,
+ "journal": "Ind. Eng. Chem. 24(8), 927",
+ "source_key": "WIEBE(1932)_N2",
+ "experimental_method": "Gas-saturated water at 25 C analysed by bubbling (approach to saturation from low and high pressure) and, at 100/200/300 atm, by a shaking apparatus; apparatus as in the authors' hydrogen work.",
+ "uncertainties_stated": "Errors (probable error) calculated from E = 0.674 sqrt(sum D^2 / (n(n-1))); listed per row; two methods agree within about 0.1 per cent at 100-300 atm.",
+ "quality_remarks": "N2 purity about 99.9 per cent (argon and traces of oxygen remain). Table I final value at 50 atm printed 0.374 (probably 0.674, Table III prints 0.674). Temperature scale not stated; temperature 25 C only in title.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   927
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III: comparison of results of different observers (Frolich estimates from a blue print, Goodman and Krase, this work); duplicates this paper's final values plus literature estimates"
+ ],
+ "row_counts": {
+  "Table I": "printed 8, written 8",
+  "Table II": "printed 3, written 3"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer was garbled (decimal points doubled, +- read as zk); all cells read from the 200 dpi image and a 2x crop. Page is the whole article (single page). No sanity problems except the 50 atm misprint; coefficients monotonic in pressure.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer unreliable (garbled digits); all cells re-read from image.",
+ "pass2_diff": "Tables I and II: 11 rows, 90/90 numbers identical; the 0.374 at 50 atm is printed so."
+}

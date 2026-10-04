@@ -1,0 +1,39 @@
+{
+ "doi": "10.1016/s0378-3812(96)03165-2",
+ "first_author": "Song",
+ "year": 1997,
+ "journal": "Fluid Phase Equilibria 128, 249-260",
+ "source_key": "SONG(1997)",
+ "experimental_method": "Constant-pressure P-V-T runs in a rocking visual cell with a Ruska positive displacement pump: gas volume taken up by water followed vs liquid temperature while cooling, giving mole fraction solubility of CH4 (3.45 MPa) and C2H6 (0.66 MPa) at and near hydrate conditions.",
+ "uncertainties_stated": "PRTs calibrated to 0.003 C; pressure transducer 0.07 percent full scale; no uncertainty on solubility values",
+ "quality_remarks": "Experimental values are read from ramped volume curves (Figs 1-4), not static equilibrium points; 'sorption' excess over Henry's law at 5-15 C is the authors' interpretation. Table 1 1 C row holds literature values (Englezos and Bishnoi). Text gives Tc of ethane as 1.8 C = 286.2 K (inconsistent). Henry's law column is a literature-correlation prediction, kept as from_literature value2.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8
+  ],
+  "journal_pages": [
+   256
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "PDF is a scan with an OCR text layer; the tables' OCR text matched the 200 dpi page image in every cell (read from the image), page sharp. Pass 2 optional.",
+ "not_extracted_tables": [
+  "Figs 6 and 7 are plots only (no tables)"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 10,
+   "written": 10
+  },
+  "table_2": {
+   "printed": 10,
+   "written": 10
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Footnote star on the 1 C row of Table 1 removed from the cell and recorded in the note column. Experiment '-' entries kept as '-'. Header 'Mole fraction x (1000)' read as printed x 1000 (scale 1e-3), consistent with figure axis values around 0.01.",
+ "pass2_diff": "Tables 1 and 2: 10 + 10 rows, 26/26 and 27/27 numbers identical."
+}

@@ -1,0 +1,439 @@
+{
+  "table": "Table 2",
+  "page_journal": "3342-3350 (table page not captured)",
+  "title_as_printed": "Densities of CO2-H2O-NaCl Solution at different concentrations of NaCl (C_NaCl = 1, 2, 3, 4 mol.kg-1) and different CO2 mass fractions (w = 0, 0.01, 0.02, 0.03)a",
+  "footnotes_as_printed": {
+    "a": "footnote a is cited in the caption but its text is not captured"
+  },
+  "property": "rho_gas_loaded",
+  "gas": "co2",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "not stated (pressure measured in the measuring cell with a 20 MPa sensor, reproducibility 0.08 %; u(P) = 0.005 MPa); liquid-phase brine under CO2 pressure",
+  "volume_basis": "not_applicable",
+  "volume_basis_evidence": "rho in g.cm-3 of the solution",
+  "columns": {
+    "T": {
+      "col": "T/C",
+      "unit": "C"
+    },
+    "P": {
+      "col": "P/MPa",
+      "unit": "MPa",
+      "basis": "total"
+    },
+    "value": {
+      "col": "rho/g.cm-3",
+      "unit": "g_per_cm3"
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {},
+    "constant": {
+      "NaCl": {
+        "value": "set by group_rows",
+        "unit": "mol/kg"
+      }
+    },
+    "other_species": "",
+    "evidence": "1 kg of deionized water was weighed, then different weights of NaCl were weighed for 1, 2, 3, 4 mol/kg; i.e. mol per kg of water (the paper prints mol.kg-1 and calls it C_NaCl)"
+  },
+  "gas_loading_note": "CO2 mass fraction w is set per block (label rows) in group_rows under path gas_loading.w_co2; w = 0 blocks are gas-free brine (gas empty, property rho). The basis of w (CO2 mass over total solution mass) is not stated. The printed w differs slightly between the two NaCl blocks of one label row (e.g. 0.0104 vs 0.0102).",
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        26,
+        52,
+        78,
+        104,
+        130,
+        156,
+        182,
+        208,
+        234,
+        260,
+        286,
+        312,
+        338,
+        364,
+        390
+      ],
+      "reason": "block label rows (NaCl molality; CO2 mass fraction)"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": ""
+        },
+        {
+          "path": "property",
+          "value": "rho"
+        }
+      ]
+    },
+    {
+      "label_row": 26,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "2",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": ""
+        },
+        {
+          "path": "property",
+          "value": "rho"
+        }
+      ]
+    },
+    {
+      "label_row": 52,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0104",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 78,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "2",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0102",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 104,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0201",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 130,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "2",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0203",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 156,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0298",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 182,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "2",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0299",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 208,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "3",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": ""
+        },
+        {
+          "path": "property",
+          "value": "rho"
+        }
+      ]
+    },
+    {
+      "label_row": 234,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "4",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": ""
+        },
+        {
+          "path": "property",
+          "value": "rho"
+        }
+      ]
+    },
+    {
+      "label_row": 260,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "3",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0105",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 286,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "4",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0102",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 312,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "3",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0201",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 338,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "4",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0204",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 364,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "3",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0305",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    },
+    {
+      "label_row": 390,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "4",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "gas_loading.w_co2",
+          "value": "0.0302",
+          "unit": "mass_fraction"
+        },
+        {
+          "path": "gas",
+          "value": "co2"
+        },
+        {
+          "path": "property",
+          "value": "rho_gas_loaded"
+        }
+      ]
+    }
+  ],
+  "extra_unmapped": [],
+  "conversion_needs": [],
+  "notes": "The printed table has two side-by-side blocks (left: 1 and 3 mol/kg NaCl; right: 2 and 4 mol/kg NaCl) over 8 label bands; stacked per SPEC: for each band the left block (26 rows incl. label) then the right block. 16 blocks x 25 data rows = 400 data rows + 16 label rows = 416 CSV rows. Each block holds five temperatures (about 60, 80, 100, 120, 140 C) x five pressures (about 10, 12, 14, 16, 18 MPa). The capture lists the printed table once (209 DOM rows); temperatures are the measured values (not nominal). The saved record also holds Table 1 (materials) and Table 3 (eq 10 coefficients), not extracted."
+}

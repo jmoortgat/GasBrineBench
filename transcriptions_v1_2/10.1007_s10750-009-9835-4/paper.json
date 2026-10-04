@@ -1,0 +1,32 @@
+{
+ "doi": "10.1007/s10750-009-9835-4",
+ "first_author": "Debelius",
+ "year": 2009,
+ "journal": "Hydrobiologia 632, 157-165",
+ "source_key": "DEBELIUS(2009)",
+ "experimental_method": "Evaporated seawater in a 10 l thermostated reactor equilibrated with air bubbling; dissolved O2 of subsamples by whole-bottle Winkler titration (potentiometric endpoint), 8-35 C in 1 C steps, at least three measurements per T.",
+ "uncertainties_stated": "Salinity accuracy +-0.001 permil (salinometer); no explicit uncertainty on the solubilities; agreement with Benson and Krause (1984) within 6 umol/kg (1.7 percent) below S = 40 permil.",
+ "quality_remarks": "Equation fitted by the authors (Weiss-type with S^2 term, Table 2) not extracted. Pressure basis and kg basis not stated. Natural evaporated seawater, composition not quantified; HgCl2 fixative (1 mM) added to samples. Some columns are visibly irregular (see mapping notes). Authors note their values are higher than synthetic-NaCl results by up to -15 umol/kg difference at 133 permil (their statement).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   161
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (p. 162): fitted parameters of the authors' equation (model parameters)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 28 T rows x 11 salinities = 308 values; written 308 data rows plus 11 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table is rotated on the page; text layer parsed by script; verified by viewing the page image and by an independent tesseract OCR of the rotated 300 dpi image, all 28 rows x 12 numbers identical. Sanity: T strictly decreasing in print order; solubility rises as T falls and falls as salinity rises except for the irregular entries noted. Salinity unit printed as per mille.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image and an independent OCR",
+ "pass2_diff": "Table 1: 308 values identical; differences are only the temperature keys repeated in pass 1's long layout (pass 2 wide)."
+}

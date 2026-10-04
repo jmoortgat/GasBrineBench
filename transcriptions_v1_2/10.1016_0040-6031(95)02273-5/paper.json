@@ -1,0 +1,42 @@
+{
+ "doi": "10.1016/0040-6031(95)02273-5",
+ "first_author": "Hubert, Nathalie",
+ "authors": "Nathalie Hubert, Mohammed Bouroukba, Louis Schuffenecker",
+ "year": 1995,
+ "journal": "Thermochimica Acta 259, 41-48",
+ "title": "Aqueous solution of sodium sulfate. Determination of the dissolution enthalpy at 25, 27.5 and 45 C",
+ "source_key": "HUBERT(1995)",
+ "experimental_method": "Setaram C80D differential calorimeter, mixing cell with known mass of solid Na2SO4 and twice distilled water by inverting mechanism, reference cell with water of equal total mass; calibrated with indium fusion and NaCl dissolution at 25 C.",
+ "uncertainties_stated": "Precision of the results about 2%. Lowest molality (0.28) set by calorimeter sensitivity.",
+ "quality_remarks": "Text layer is OCR-quality; digits verified against page images. Nominal temperatures in text 24.4, 27.5, 44.3 C; no temperature scale, no pressure stated. Table 4 gives fitted Pitzer parameters, not data. Saturation limits derived from plateau (3.64 and 3.57 mol/kg). Table 4 of the paper lists 300.35 K (27.2 C) for the 27.5 C series, whereas text, Table 2 title and Fig. 3 say 27.5 C: a paper inconsistency, the 27.5 C constant is kept. The tabulated quantity is the integral enthalpy of dissolution of the solid salt at the stated final molality.",
+ "how_extracted": "pdf_text_layer, checked cell by cell against 170 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   43,
+   44
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 4 (Pitzer-model fit parameters and fitted infinite-dilution dissolution enthalpies): fitted/model parameters, not measured values"
+ ],
+ "row_counts": {
+  "Table 1": "printed 21, written 21",
+  "Table 2": "printed 8, written 8",
+  "Table 3": "printed 14, written 14"
+ },
+ "changes_after_image_check": [
+  "Table 3 row 5 dHexp: text layer '-ll.20' -> -11.20",
+  "Table 3 row 4 dHexp and dH^: text layer '--12.48', '--8320' -> -12.48, -8320 (double dash artefact)",
+  "Table 1 and 3 several negatives with a stray space ('- 10.44', '- 17.13' etc) normalised to '-10.44'"
+ ],
+ "extraction_notes": "Value mapping: value = dHexp/n1 (J per mol Na2SO4, authors' calculation Eq. 7), value2 = raw dHexp (J), value3 = dH^ per kg water. Sanity: n1/k = n1/(nw*0.0180153) spot-checked by script; enthalpy decreases to plateau as stated. Columns of Table 1: replicate nw values (0.2942, 0.0555 etc) are different n1.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "a few text-layer cells (ll.20, double dash) needed correction after image check",
+ "pass2_diff": "Tables 1-3: 126/126, 48/48 and 84/84 numbers identical."
+}

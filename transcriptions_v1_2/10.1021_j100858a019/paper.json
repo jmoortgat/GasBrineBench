@@ -1,0 +1,40 @@
+{
+ "doi": "10.1021/j100858a019",
+ "first_author": "Platford, R. F.",
+ "authors": "R. F. Platford",
+ "year": 1968,
+ "journal": "The Journal of Physical Chemistry 72(12), 4053-4057",
+ "title": "Isopiestic Measurements on the System Water-Sodium Chloride-Magnesium Chloride at 25 deg",
+ "source_key": "PLATFORD(1968)",
+ "experimental_method": "Isopiestic method at 25 C: seven solutions (pure NaCl, pure MgCl2 and mixtures) equilibrated per run for 3-7 days; concentrations by weighing dried salts, adding water and reweighing after equilibration; MgCl2.6H2O water corrected, weights in vacuo; saturated NaCl taken as 6.1443 m.",
+ "uncertainties_stated": "Uncertainty of log gamma about +/-0.004 (McKay-Perring); standard deviation of phi(obs)-phi(calc) 0.002; isopiestic osmotic coefficients agree with Robinson and Stokes within 0.5%.",
+ "quality_remarks": "Two printed values are obviously misprinted: set 7 R = 0.1062 (should be near 1.06) and set 17 I = 0.7676 (should be near 7.77); kept as printed. Temperature scale not stated. The first PDF page begins with the end of another article (Harned rule discussion, p. 4053) which is not this paper; Tables II and III belong to this paper.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   4055
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: mean activity coefficients (log gamma for NaCl and MgCl2, McKay-Perring and Scatchard treatments, plus literature emf values) - derived",
+  "Table III: Harned's rule coefficients - derived"
+ ],
+ "row_counts": {
+  "Table I": "printed 121 data rows in 17 sets, written 121 data rows plus 17 label rows"
+ },
+ "changes_after_image_check": [
+  "Table I set 12 row 4 I: '4 5936' -> 4.5936 (space in text layer)",
+  "Table I set 6 row 5 R: '0 9970' -> 0.9970",
+  "Table I set 3 row 3 I: '0,3235' -> 0.3235",
+  "Table I set 12 row 1 R: '1;0' -> 1.0"
+ ],
+ "extraction_notes": "Corrections listed were text-layer glitches fixed by the image; all other cells matched the image. Sanity: I increases with yB within each set except the set 17 outlier row; R is 1.0 at yB = 0 in every set; set 7 R and set 17 I outliers as noted.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "four cells needed correction after the image check",
+ "pass2_diff": "Table I: every pass-1 number occurs in pass 2; pass-2-only numbers are the set numbers; printed misprints (set 7 R 0.1062, set 17 I 0.7676) agree in both passes."
+}

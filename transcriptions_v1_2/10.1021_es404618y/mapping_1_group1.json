@@ -1,0 +1,50 @@
+{
+ "table": "Table 1",
+ "page_journal": 3570,
+ "title_as_printed": "Dew Point Conditions for the Synthetic CO2 Mixture at the 31, 35, 40, and 50 C Isotherms",
+ "footnotes_as_printed": {
+  "*": "A dew point does not exist at this temperature, pressure, and water content in the pure CO2-water binary system."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "dew point pressure P_dew read from the pressure transducer on the chip; absolute/gauge not stated; P_prep is the pump pressure at sample preparation (75 C), not an equilibrium datum",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P_pure MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "y_H2O mol_w/mol_t x 1000",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001,
+   "what": "prepared (gravimetric/volumetric) water mole fraction of the single-phase gas; the dew pressure P_dew is the measured quantity at this composition"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (pure CO2, research grade 99.99%)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "T_prep C and P_prep MPa (sample preparation conditions)",
+  "V_inj uL (injected water volume)",
+  "% change (relative increase of mixture dew pressure over the pure-CO2 value, calculated by authors)",
+  "the other P column of this table (mapped in the companion group file)"
+ ],
+ "conversion_needs": [
+  "value printed x 1000 (scale 0.001)",
+  "rows with printed N/A in the mapped pressure column have no measured dew point (no dew point exists / not available); kept with the N/A text, value of P empty for the builder"
+ ],
+ "notes": "One printed table, written twice (table_1_group1: pure CO2 + water, P_pure column; table_1_group2: CO2 + 2.5% N2 + 5.8% O2 + water, mixture column). Rows are identical in both CSVs. Rows 7,8,9 are two exact replicates (rows 8 and 9) plus a close row 7 at the same y. Row 0 N/A carries footnote *."
+}

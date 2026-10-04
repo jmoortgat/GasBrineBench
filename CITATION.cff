@@ -5,12 +5,14 @@ abstract: >-
   gas-brine systems: gas solubility, brine density, osmotic coefficients,
   vapor-pressure lowering, gas-phase water content, enthalpy of dissolution
   and brine permittivity, in single- and mixed-salt aqueous electrolyte
-  solutions. 11,537 rows from 111 published sources, covering seven gases
-  (CO2, CH4, H2, N2, O2, C2H6, C3H8) and six ions (Na+, K+, Ca2+, Mg2+, Cl-,
-  SO4 2-) over 273-633 K and 0.1-3,500 bar, including a CO2 + CH4 + water
-  ternary family carrying the gas-phase split as an explicit state variable. Every row carries its source, an
-  R/T/U quality code with a documented justification, and a fit/test tag; the
-  raw hand transcriptions the values were typed from are included.
+  solutions. 27,025 rows from 256 published sources in 11 families, covering
+  seven benchmark gases (CO2, CH4, H2, N2, O2, C2H6, C3H8; 24 further gases
+  are flagged) and six ions (Na+, K+, Ca2+, Mg2+, Cl-, SO4 2-) over 238-773 K
+  and 0.1-3,500 bar, including a CO2 + CH4 + water ternary family, and a
+  separate supplementary tier of 5,159 measurements that the benchmark
+  families cannot hold. Every row carries its source, an R/T/U quality code
+  with a documented justification, a fit/test tag and modifier flags; the
+  tables the values were taken from are included.
 message: >-
   The numerical values are measurements published by the authors cited in
   SOURCES.md; please cite those primary sources for the data you use, and
@@ -19,20 +21,25 @@ message: >-
   snapshot it was computed against. A data-descriptor reference will be
   added here if one is published.
 type: dataset
-version: 1.1.1
-date-released: 2026-09-22
-doi: 10.5281/zenodo.22834146
+version: 1.2.0
+date-released: 2026-10-03
+doi: 10.5281/zenodo.22834145
 identifiers:
-  - type: doi
-    value: 10.5281/zenodo.22834146
-    description: >-
-      Version DOI for v1.0.0. Cite this one; it is pinned to the 11,444-row
-      snapshot and will not move.
   - type: doi
     value: 10.5281/zenodo.22834145
     description: >-
       Concept DOI. Always resolves to the newest version, so it names the
-      project rather than any particular row set.
+      project rather than any particular row set. The version DOI of v1.2.0
+      is added here when the release is archived; until then cite the
+      v1.1.1 version DOI below for the 11,537-row snapshot.
+  - type: doi
+    value: 10.5281/zenodo.22898153
+    description: >-
+      Version DOI for v1.1.1 (11,537 rows, 111 sources).
+  - type: doi
+    value: 10.5281/zenodo.22834146
+    description: >-
+      Version DOI for v1.0.0 (11,444 rows).
 repository-code: https://github.com/jmoortgat/GasBrineBench
 authors:
   - family-names: Moortgat

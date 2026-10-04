@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je00026a012",
+ "first_author": "Zawisza, Andrzej",
+ "authors": "Andrzej Zawisza, Boguslawa Malesinska",
+ "year": 1981,
+ "journal": "Journal of Chemical and Engineering Data 26, 388-391",
+ "title": "Solubility of carbon dioxide in liquid water and of water in gaseous carbon dioxide in the range 0.2-5 MPa and at temperatures up to 473 K",
+ "source_key": "ZAWISZA(1981)",
+ "experimental_method": "Static method in a thermostatted measuring tube with cathetometer volume readings and dead-weight manometer pressure: dew-point pressures and p-V isotherms down to 0.2 MPa for water + CO2 mixtures of fixed composition, and boiling-point pressures near pure water.",
+ "uncertainties_stated": "temperature controlled within +-5 mK (Tinsley Pt thermometer, IPTS-68); pressure overall accuracy 0.03 %; tube volume calibration 0.09 %; cathetometer +-0.006 mm; correction for 1e-9 mol air in the tube; difference between dew and boiling points of pure water 0.002-0.003 MPa",
+ "quality_remarks": "Table I contains p-V isotherm points beyond the dew points (single-phase gas, with water mole fraction x_1 = overall composition). Only the dew-point rows (flag d) are mapped as water content of the gas phase. The PDF starts with the end of another article (page 388, glossary and references of a chromatography paper) and the figures on page 390 are not data. Water was twice distilled; CO2 from Na2CO3 + H2SO4, dried and liquefied; purity not stated numerically.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   389
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III (second cross virial coefficient B12: not in scope)",
+  "Table IV (Henry constants H_p calculated by the authors by extrapolation from the data and literature comparison columns: derived)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 142 (p,V) pairs in 14 blocks (14 dew points); written 142 data rows plus 14 label rows",
+  "Table 2": "printed 42 cells (7 T x 6 x_1), 33 values and 9 printed blanks; written 42 data rows (9 with empty p) plus 6 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image in every cell (checked blocks at 250 dpi crops). Sanity: within each Table I block p decreases monotonically while V increases; dew pressure rises with T at fixed x_1; Table II p increases with T and with decreasing x_1 in each row. Block x_1=0.9347 has only the dew-point pair. Several printed (p,V) lines have fewer than four pairs; blocks end with shorter lines; stacking order is pair-column wise.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image",
+ "pass2_diff": "Tables I and II: all pass-1 values occur in pass 2 (pass 2 also read the non-dew p-V rows and the table II headers); differences are layout keys only."
+}

@@ -1,0 +1,38 @@
+{
+ "doi": "10.1039/f19888403575",
+ "first_author": "Marcus",
+ "year": 1988,
+ "journal": "J. Chem. Soc., Faraday Trans. 1, 84(10), 3575-3585",
+ "source_key": "MARCUS(1988)",
+ "experimental_method": "Static vapour pressure of NaCl-KCl-MgCl2-CaCl2 solutions (with excess solid if saturated) at 25 C measured with a quartz Bourdon precision pressure gauge after freezing and pumping off air.",
+ "uncertainties_stated": "Reproducibility +-0.04 kPa; temperature controlled to +-0.2 K; measured pure-water p0 = 3.146 +- 0.030 kPa (literature 3.168).",
+ "quality_remarks": "Fig. 1 (vapour pressure of ternary MgCl2 solutions saturated with halite or sylvite) holds measured points only in a graph, not in a table. Observed values deviate from the authors' model by up to 0.12 kPa (rows with carnallite).",
+ "how_extracted": "pdf_text_layer",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean and every cell matched the page image (only the decimal '1.34' appears as 'I .34' in the text layer, read correctly).",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   3579
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: model parameters for activity and osmotic coefficients.",
+  "Table 2: molalities at singular points in ternary systems (literature solubilities) and derived interaction parameters; derived/literature, not measured here.",
+  "Table 4: parameters of the solubility surface fit.",
+  "Fig. 1: measured vapour pressures of MgCl2 solutions saturated with halite or sylvite are given only as a graph."
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 8,
+   "written": 8
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Sanity: all observed p between 1.28 and 2.40 kPa, below p0 (3.168 kPa); p decreases with total molality roughly. No replicates. Calcd column kept in the CSV, not mapped.",
+ "pass2_diff": "Table 3: 8 rows, 48/48 numbers identical."
+}

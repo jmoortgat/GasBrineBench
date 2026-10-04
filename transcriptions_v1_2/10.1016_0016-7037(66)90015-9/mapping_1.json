@@ -1,0 +1,51 @@
+{
+ "footnotes_as_printed": "none",
+ "property": "solubility_x",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction",
+ "table": "Table 1",
+ "page_journal": 618,
+ "title_as_printed": "Solubility of nitrogen in water at 51.5 C",
+ "pressure_note": "Pressure in atm; text: 'At this temperature any correction of the pressures for the vapor pressure of water, even at the high total pressures, is negligibly small' (so total pressure, treated as N2 pressure).",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "51.5"
+  },
+  "P": {
+   "col": "Pressure (atm)",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "This study Mole fraction of nitrogen (x 10^4)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  },
+  "value2": {
+   "col": "Wiebe et al. (1933) Mole fraction of nitrogen (x 10^4)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "what": "values interpolated by the authors from Wiebe, Gaddy and Heins (1933)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "atm to MPa x 0.101325"
+ ],
+ "notes": "Authors' check against Wiebe et al.; second value column is literature (interpolated by the authors). The printed mid-dot decimals are written with full stops."
+}

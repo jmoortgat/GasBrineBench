@@ -1,0 +1,35 @@
+{
+ "doi": "10.1063/1.443074",
+ "first_author": "Crovetto",
+ "year": 1982,
+ "journal": "J. Chem. Phys. 76, 1077-1086",
+ "source_key": "CROVETTO(1982)",
+ "experimental_method": "Direct sampling of the equilibrated liquid phase from a stirred stainless-steel cell at high temperature; dissolved gas determined by freezing the solvent out and measuring the gas in a gas burette.",
+ "uncertainties_stated": "Temperature within 0.1 K; pressure within 0.5%; reproducibility in x better than 0.5%; overall precision in Henry constants 1-2% (up to ~20% at 600 K).",
+ "quality_remarks": "kH values are reliable to experimental error up to about 520 K; above ~520 K third and higher virial terms make kH uncertain. Authors report 20% discrepancy with Potter and Clyne (1978). Ar-D2O row at 536.9 K has y=0.4092 which is non-monotonic in the series (printed as is). Xe above 470 K limited by clathrate formation in cold part of the line.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   1080
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (fit coefficients of ln kH, model parameters)",
+  "Table III (derived thermodynamic functions at three temperatures)"
+ ],
+ "row_counts": {
+  "Table 1": "printed data rows 77 (Ne-H2O 7, Ar-H2O 8, Kr-H2O 6, Xe-H2O 6, CH4-H2O 7, Ne-D2O 9, Ar-D2O 14, Kr-D2O 6, Xe-D2O 6, CH4-D2O 8); written data rows 77 plus 10 label rows = 87 CSV rows"
+ },
+ "changes_after_image_check": [
+  "none. Earlier-run files (table_1.csv, mapping_1.json, paper.json) were found already present and were fully re-checked: every cell of table_1.csv compared with the 200 dpi page image and with a script-parsed text layer; no cell differed (text-layer differences were only split decimals such as '1. 908'). Earlier paper.json row count (91) was a typo, corrected to 77."
+ ],
+ "extraction_notes": "Earlier-run files were treated as unverified and fully verified against the page image in this run (not redone from scratch). Table I spans both columns of journal page 1080 (Ar-D2O block continues at the top of the right column). Only CH4-H2O (7 rows) is in the mapped scope; noble-gas blocks and D2O blocks are kept and skipped. Stacked layout, one label row per block. Header '10^4 x' is printed as 10^4 x x-with-multiplication sign.",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer present and every cell matched the image",
+ "status": "verified_pass2",
+ "pass2_diff": "token diff: 462 numbers, identical"
+}

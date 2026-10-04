@@ -1,0 +1,47 @@
+{
+ "table": "Table II",
+ "page_journal": 559,
+ "title_as_printed": "Dilution Enthalpies below 0.1 mol-kg-1 at Temperatures above 573 K",
+ "footnotes_as_printed": {
+  "a": "Delta^phi L = phi_L(m_f) - phi_L(m_i)."
+ },
+ "property": "dh_dilution",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P/MPa printed per row; not further defined (dilutions measured at two or more widely varying pressures per temperature to allow later correction to a reference pressure)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "dPhiL kJ/mol",
+   "unit": "kJ/mol",
+   "what": "difference in apparent relative molal enthalpy phi_L(m_f) - phi_L(m_i), per mole of solute, at experimental T and P"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m_f mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (deionized); CaCl2 only"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "m_i mol/kg (initial molality of the diluted solution, the other end of the dilution step)"
+ ],
+ "conversion_needs": [],
+ "notes": "Composition per_row is the final (diluted) molality m_f; initial molality m_i is the second molality of the dilution pair."
+}

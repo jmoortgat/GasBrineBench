@@ -1,0 +1,35 @@
+{
+ "doi": "10.1016/j.jiec.2008.09.012",
+ "first_author": "Han",
+ "year": 2009,
+ "journal": "Journal of Industrial and Engineering Chemistry 15, 212-216",
+ "source_key": "HAN(2009)",
+ "title": "Measurement and correlation of high pressure phase behavior of carbon dioxide + water system",
+ "authors": "Ji Min Han, Hun Yong Shin, Byoung-Moo Min, Keun-Hee Han, Ara Cho",
+ "experimental_method": "Synthetic method in a variable-volume view cell: a loaded mixture of known composition is compressed to one phase, then pressure is lowered until the bubble point appears visually.",
+ "uncertainties_stated": "T measured within 0.2 K (sensor 0.05 K, cell held within 0.5 K); p within 0.01 MPa; composition of prepared mixture 0.0002 in mole fraction.",
+ "quality_remarks": "PDF is this paper (5 pages, no foreign pages). Only the loaded overall composition is known, bubble point at one composition per point; 313.2 K points lie close to literature (Fig. 3). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   214
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: CO2 + ethanol bubble points at 303.1 K (organic solvent, apparatus check)",
+  "Table 3, Table 4: EOS model parameters / deviations"
+ ],
+ "row_counts": {
+  "Table 2": "printed 28, written 28"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in every cell. Sanity: p increases and x increases within each isotherm; no duplicates.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image",
+ "pass2_diff": "Table 2: 28 rows, 84/84 numbers identical."
+}

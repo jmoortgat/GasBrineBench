@@ -1,0 +1,87 @@
+{
+ "table": "Table I",
+ "page_journal": 3047,
+ "title_as_printed": "Partial Molal Volumes (cm3/g mol) of Gases in Electrolyte Solutions at 25 C",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "pmv",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated beyond 'Atmospheric pressure changes were usually insignificant during an experiment'; dilatometer at ambient pressure; partial molal volume at low gas concentration",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "V1 (cm3/g mol)",
+   "unit": "cm3/mol"
+  },
+  "uncertainty": {
+   "col": "V1 std dev",
+   "unit": "cm3/mol",
+   "what": "standard deviation of arithmetic mean of three or more experiments"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "salt_from_column": {
+    "col": "Electrolyte",
+    "parse": "Electrolyte name is the salt formula (KCl, KI, CaCl2); 'Water' = no salt (0.0 M); (Me)4NBr, (Bu)4NBr, KOH are outside the six-ion set",
+    "conc": {
+     "col": "Molarity",
+     "unit": "mol/L"
+    }
+   }
+  },
+  "constant": {},
+  "other_species": "Electrolyte column: Water (0.0 M, pure water, gas-free), KCl, KI, CaCl2 in scope; (Me)4NBr, (Bu)4NBr, KOH out of scope (rows kept). Electrolyte names written as KCl, CaCl2 ('Water' = no salt)."
+ },
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "Column headed 'Molarity'; the paper does not say litres of solution or solvent",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molarity (mol/L) to molality needs solution density; CaCl2 etc. as printed",
+  "partial molal volume unit printed cm3/g mol = cm3/mol"
+ ],
+ "notes": "Gas is Ar, CH4, C2H6, O2 or H2 per row (column 'Solute gas'); Ar rows are outside the seven-gas list. Printed '+/-' split into the std dev column. Standard conditions for gas volumes not applicable. Partial molal volume of dissolved gas, not a solubility.",
+ "gas_from_column": {
+  "col": "Solute gas",
+  "map": {
+   "Ar": "ar",
+   "CH4": "ch4",
+   "C2H6": "c2h6",
+   "O2": "o2",
+   "H2": "h2"
+  },
+  "note": "continuation cells blank in print, filled down in the CSV"
+ },
+ "row_held": [
+  {
+   "rows": [
+    8,
+    9,
+    10,
+    14,
+    15,
+    16,
+    21,
+    22,
+    24,
+    25
+   ],
+   "reason": "test electrolyte (Me)4NBr, (Bu)4NBr or KOH is outside the six-ion set"
+  }
+ ],
+ "quality_remarks": "Molarity is not defined in the paper (litres of solution assumed, not stated); molarity-to-molality conversion would need a solution density. Partial molal volumes are infinite-dilution limits of the dissolved gas, not solubilities."
+}

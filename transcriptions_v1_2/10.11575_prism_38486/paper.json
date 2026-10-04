@@ -1,0 +1,80 @@
+{
+ "doi": "10.11575/prism/38486",
+ "first_author": "Adeniyi",
+ "year": 2020,
+ "journal": "PhD thesis, University of Calgary (PRISM repository)",
+ "source_key": "ADENIYI(2020)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; every cell of the four extracted tables matched the page image (pdf pages 86, 87, 122, 138, 176 viewed).",
+ "experimental_method": "Tunable diode laser absorption spectroscopy (TDLAS) of water in the liquid acid-gas / liquid propane phase, equilibrated with hydrate in a cold loop; hydrate annealed at 238 K, then stepped in temperature.",
+ "uncertainties_stated": "Pressure +-0.001 MPa; temperature +-0.1 K (stability); water content +-20 ppm for CO2 (Table 3.3), 12 ppm (95%) for C3H8 (Table 6.1), 2% relative with triplicate std. dev. 25 ppm for H2S and mixtures (Table 5.2, A.3.1); TDLAS manufacturer accuracy 2% relative.",
+ "quality_remarks": "Footnote letters a and b are swapped relative to the column headers in Table 3.3 and 5.2 (a text refers to temperature, b to pressure). In the text of A.3 the second mixture is called 55.5% H2S + 45.5% CO2 but table label gives 44.5% CO2 (table value kept). Basis of 'ppm' (mole vs volume) not stated; written as yH2O. Temperature scale not stated. Calc and residual columns are the author's model, not data.",
+ "duplication_check_vs_alassi_2022": "Compared ONLY with extract/10.1016_j.jngse.2022.104732 tables 12-14 (liquid propane water content at 8.274 MPa, 276.15-313.15 K, QCM and SiO2 hygrometer, ppmV). Adeniyi Table 6.1 (liquid propane + hydrate, TDLAS, 242-276 K, 1.1-40 MPa) shares no T-p points and no values with them (e.g. Alassi 276.15 K / 8.274 MPa = 112 ppmV vs Adeniyi 276.10-276.12 K at 2.55, 10.0 MPa = 110, 105 ppm). These are NOT the same data: all four extracted thesis tables carry new measured data.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   86,
+   87,
+   122,
+   138,
+   176
+  ],
+  "journal_pages": [
+   66,
+   67,
+   102,
+   118,
+   156
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 1.1": "hydrate structure geometry",
+  "Table 2.1": "literature summary of techniques",
+  "Table 2.2": "gas impurities in H2S feed (composition of purity, not data)",
+  "Table 2.3": "gas impurities in H2S feed",
+  "Table 2.4": "TDLAS calibration against gravimetrically prepared single-phase CO2(l)+H2O feeds, not an equilibrium measurement (prepared composition is the reference; exp value is a calibration check; 7 rows)",
+  "Table 2.5": "same type calibration for C3H8(l)+H2O (4 rows)",
+  "Table 3.1": "model parameters",
+  "Table 3.2": "literature summary of CO2 water contents",
+  "Table 3.4": "summary of average deviations",
+  "Table 3.5": "CO2 hydrate dissociation p-T conditions, no composition",
+  "Table 3.6": "summary of dissociation data deviations",
+  "Table 3.7": "upper quadruple points",
+  "Table 4.1": "H2S hydrate dissociation p-T conditions, no composition",
+  "Table 4.2": "correlations",
+  "Table 4.3": "model parameters",
+  "Table 4.4": "reference properties",
+  "Table 4.5": "quadruple points",
+  "Table 5.1": "model properties",
+  "Table 5.3": "summary of deviations",
+  "Table 5.4": "binary interaction parameters",
+  "Table 6.2": "summary of deviations with literature data",
+  "Table 7.1": "health effects",
+  "Table 7.2": "safety dimensions"
+ },
+ "row_counts": {
+  "Table 3.3": {
+   "printed": 54,
+   "written": 54
+  },
+  "Table 5.2": {
+   "printed": 24,
+   "written": 24
+  },
+  "Table 6.1": {
+   "printed": 27,
+   "written": 27
+  },
+  "Table A.3.1": {
+   "printed": 21,
+   "written": 21,
+   "label_rows_added": 2
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Printed page numbers are pdf page minus 20. Table 3.3 is CO2(l) + hydrate (7.9-50 MPa, 238-278 K); Table 5.2 H2S(l) + hydrate (mole fraction); Table A.3.1 H2S + CO2 mixtures + hydrate. Isotherm blocks separated by blank lines are not labelled in print; no group rows needed. H2S and H2S-CO2 are outside the seven-gas list but kept per SPEC v2.1.",
+ "sanity_checks": "Pressure/temperature ranges as stated in text; y_H2O increases with T at fixed pressure in all tables; slight pressure dependence as the text states; no replicate rows flagged.",
+ "pass2_diff": "Tables 3.3, 5.2, 6.1, A.3.1: 126 rows, 588/588 numbers identical."
+}

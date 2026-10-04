@@ -41,16 +41,41 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-BIB = ROOT / "bib" / "references.bib"
+BIBS = [ROOT / "bib" / "references.bib", ROOT / "bib" / "references_v1_2.bib"]
+SUPP = ROOT / "supplementary"
+PROVENANCE = ROOT / "data" / "provenance"
 M_W = 0.01801528  # kg/mol
 
 #: property vocabulary. `miac` is declared in SCHEMA.md and has no rows yet;
 #: `eps_r` is the static-permittivity extension family (see data/README.md).
 PROPS = {"solubility_molality", "xc_saltfree", "y_h2o", "rho",
-         "phi_osm", "psat_ratio", "dh_sol", "miac", "eps_r"}
+         "phi_osm", "psat_ratio", "dh_sol", "miac", "eps_r",
+         # v1.2 families: density of a gas-loaded solution, viscosity,
+         # apparent molar heat capacity
+         "rho_gas_loaded", "visc", "Cp_app"}
 
 #: properties of the brine alone: `gas` must be empty for these.
-GAS_FREE_PROPS = {"rho", "phi_osm", "psat_ratio", "eps_r", "miac"}
+GAS_FREE_PROPS = {"rho", "phi_osm", "psat_ratio", "eps_r", "miac", "Cp_app"}
+
+#: `visc` is a brine property when the gas is blank and the property of a
+#: gas-loaded solution when a gas and its loading `m_gas` are given.
+GAS_OPTIONAL_PROPS = {"visc"}
+
+#: properties whose rows carry the dissolved-gas loading `m_gas` [mol/kg water]
+GAS_LOADED_PROPS = {"rho_gas_loaded", "visc"}
+
+#: gas codes: the seven benchmark gases, plus the single gases of the v1.2
+#: additions, which carry the flag `gas-out-of-scope`.
+GASES_MAIN = {"co2", "ch4", "h2", "n2", "o2", "c2h6", "c3h8"}
+GASES_OTHER = {"ar", "he", "ne", "kr", "xe", "c2h4", "c2h2", "c3h6", "c-c3h6", "1-c4h8", "n-c4h10", "i-c4h10",
+               "neo-c5h12", "c-c6h12", "n-c6h14", "i-c8h18", "cf4", "sf6", "n2o", "h2s", "chf3", "chclf2", "c2h2f4", "c2h4f2"}
+GASES = GASES_MAIN | GASES_OTHER | {"co2-ch4"}
+
+#: modifier flags (column `flags`, ';'-separated); see SCHEMA.md
+FLAGS = {"salinity-matrix", "volume-basis-uncertain", "source-caution", "gas-out-of-scope", "stp-assumed", "hydrate-regime",
+         "solution-basis-converted", "differential-pressure-converted", "subfreezing", "condensed-phase-uncertain",
+         "vapour-nonideality-by-authors", "fugacity-as-pressure", "pressure-unstated", "minor-species-omitted",
+         "calculated-not-measured", "figure-digitized", "smoothed-values"}
 
 #: properties for which `P_bar` is legitimately blank. `psat_ratio` is a ratio
 #: of saturation pressures at one temperature: the pressure is the measured
@@ -73,7 +98,11 @@ REQUIRED = ["dataset_id", "source", "gas", "property", "T_K",
 #: of CH4 and CO2 depending on it -- and there is nowhere for that in the
 #: single-gas schema. Rather than add a column that would be blank for every
 #: other family, it is declared here for ternary.csv alone.
-EXTRA_COLS = {"ternary.csv": ["y_co2_dry"]}
+EXTRA_COLS = {"ternary.csv": ["y_co2_dry"], "rho_gas.csv": ["m_gas"], "visc.csv": ["m_gas"]}
+
+#: optional column of every family: modifier flags
+OPTIONAL_COLS = ["flags", "data_origin"]
+DATA_ORIGINS = {"table", "figure", "calculated"}
 
 #: state columns that identify one measured point
 STATE = ["property", "gas", "T_K", "P_bar", *ION_COLS]
@@ -93,7 +122,7 @@ STATE = ["property", "gas", "T_K", "P_bar", *ION_COLS]
 #   mol/kg), two of them reading 1.000. Checked against the paper
 #   2026-09-18. The state is 310.15 K, not the 308 K of its directory.
 DOCUMENTED_REPLICATES = {
-    ("KIM(2003)", "ch4", 298.0, 49.0),
+    ("KIM(2003)", "ch4", 298.15, 49.0),
     ("PORTIER_2005", "co2", 310.15, 80.0),
 }
 
@@ -111,7 +140,7 @@ def check_family(fpath, resolve, msgs, notes):
     df = pd.read_csv(fpath, keep_default_na=False)
     name = fpath.name
 
-    allowed = REQUIRED + EXTRA_COLS.get(name, [])
+    allowed = REQUIRED + OPTIONAL_COLS + EXTRA_COLS.get(name, [])
     missing = [c for c in REQUIRED if c not in df.columns]
     if missing:
         msgs.append(f"{name}: missing columns {missing}")
@@ -162,7 +191,8 @@ def check_family(fpath, resolve, msgs, notes):
         msgs.append(f"{name}: non-numeric P_bar")
     if (p < 0).any():
         msgs.append(f"{name}: negative P_bar")
-    bad_blank = blank_p & ~df["property"].isin(BLANK_P_PROPS)
+    unstated = df["flags"].astype(str).str.contains("pressure-unstated") if "flags" in df.columns else False
+    bad_blank = blank_p & ~df["property"].isin(BLANK_P_PROPS) & ~unstated
     if bad_blank.any():
         msgs.append(f"{name}: blank P_bar on {int(bad_blank.sum())} rows "
                     f"whose property is not one of {sorted(BLANK_P_PROPS)}")
@@ -178,9 +208,41 @@ def check_family(fpath, resolve, msgs, notes):
     if (gas_free & (gas != "")).any():
         msgs.append(f"{name}: {int((gas_free & (gas != '')).sum())} gas-free "
                     "rows carry a gas")
-    if (~gas_free & (gas == "")).any():
-        msgs.append(f"{name}: {int((~gas_free & (gas == '')).sum())} gas-property "
+    gas_opt = df["property"].isin(GAS_OPTIONAL_PROPS)
+    if (~gas_free & ~gas_opt & (gas == "")).any():
+        msgs.append(f"{name}: {int((~gas_free & ~gas_opt & (gas == '')).sum())} gas-property "
                     "rows have no gas")
+    bad_gas = sorted(set(gas[gas != ""]) - GASES)
+    if bad_gas:
+        msgs.append(f"{name}: unknown gas codes {bad_gas}")
+    far = (gas != "") & ~gas.isin(GASES_MAIN) & (name != "ternary.csv")
+    if "flags" in df.columns and far.any():
+        nof = far & ~df["flags"].astype(str).str.contains("gas-out-of-scope")
+        if nof.any():
+            msgs.append(f"{name}: {int(nof.sum())} rows of a gas outside the seven lack the flag gas-out-of-scope")
+    loaded = df["property"].isin(GAS_LOADED_PROPS)
+    if "m_gas" in df.columns and loaded.any():
+        mg = pd.to_numeric(df["m_gas"], errors="coerce")
+        need = loaded & (gas != "")
+        if (need & mg.isna()).any():
+            msgs.append(f"{name}: {int((need & mg.isna()).sum())} gas-loaded rows lack m_gas")
+        if (mg < 0).any():
+            msgs.append(f"{name}: negative m_gas")
+    if "data_origin" in df.columns:
+        bad_o = sorted(set(df["data_origin"]) - DATA_ORIGINS)
+        if bad_o:
+            msgs.append(f"{name}: unknown data_origin {bad_o}")
+        if "flags" in df.columns:
+            fl = df["flags"].astype(str)
+            if (fl.str.contains("figure-digitized") & (df["data_origin"] != "figure")).any() or \
+               (fl.str.contains("calculated-not-measured") & (df["data_origin"] != "calculated")).any() or \
+               ((df["data_origin"] == "figure") & ~fl.str.contains("figure-digitized")).any() or \
+               ((df["data_origin"] == "calculated") & ~fl.str.contains("calculated-not-measured")).any():
+                msgs.append(f"{name}: data_origin disagrees with the flags figure-digitized / calculated-not-measured")
+    if "flags" in df.columns:
+        used = {x for f in df["flags"].astype(str) for x in f.split(";") if x}
+        if used - FLAGS:
+            msgs.append(f"{name}: unknown flags {sorted(used - FLAGS)}")
 
     # --- vocabularies -------------------------------------------------
     if (~df["quality"].isin(["R", "T", "U"])).any():
@@ -249,16 +311,63 @@ def check_family(fpath, resolve, msgs, notes):
     return len(df)
 
 
+SUPP_COLUMNS = ["dataset_id", "source", "doi", "property_class", "property_native", "gas", "T_K", "P_bar", "solutes_mol_per_kg_water",
+                "composition_as_printed", "value", "value_unit", "value_what", "value2", "value2_unit", "value2_what", "reference_salt",
+                "uncertainty", "quality", "tag", "data_origin", "src_table", "row"]
+SUPP_CLASSES = {"apparent_molar_volume", "mixture_volume", "enthalpy_of_dilution", "enthalpy_of_dissolution", "isopiestic_pair", "water_activity", "henry_constant",
+                "heat_capacity", "density", "compression", "water_vapour_enhancement", "gas_solubility_coefficient",
+                "gas_solubility_other_basis", "other"}
+#: classes conventionally reported without a pressure
+SUPP_P_OPTIONAL = {"isopiestic_pair", "enthalpy_of_dilution", "enthalpy_of_dissolution", "water_activity", "heat_capacity"}
+
+
+def check_supplementary(resolve, msgs, notes):
+    path = SUPP / "supplementary_measurements.csv"
+    if not path.exists():
+        return None
+    df = pd.read_csv(path, keep_default_na=False)
+    name = "supplementary_measurements.csv"
+    if list(df.columns) != SUPP_COLUMNS:
+        msgs.append(f"{name}: columns differ from the documented schema")
+        return len(df)
+    bad = sorted(set(df["property_class"]) - SUPP_CLASSES)
+    if bad:
+        msgs.append(f"{name}: unknown property_class {bad}")
+    t = pd.to_numeric(df["T_K"], errors="coerce")
+    if t.isna().any() or ((t < 230) | (t > 1300)).any():
+        msgs.append(f"{name}: T_K missing or outside [230, 1300]")
+    p = pd.to_numeric(df["P_bar"], errors="coerce")
+    blank = df["P_bar"].astype(str).str.strip() == ""
+    if (p.isna() & ~blank).any() or (p < 0).any():
+        msgs.append(f"{name}: P_bar not numeric or negative")
+    if (blank & ~df["property_class"].isin(SUPP_P_OPTIONAL)).any():
+        msgs.append(f"{name}: {int((blank & ~df['property_class'].isin(SUPP_P_OPTIONAL)).sum())} rows without a pressure in a class that needs one")
+    if pd.to_numeric(df["value"], errors="coerce").isna().any():
+        msgs.append(f"{name}: non-numeric value")
+    if (df["value_unit"].astype(str).str.strip() == "").any():
+        msgs.append(f"{name}: empty value_unit")
+    if (~df["quality"].isin(["R", "T", "U"])).any():
+        msgs.append(f"{name}: quality codes must be R/T/U")
+    unresolved = sorted({s for s in set(df["source"]) if not resolve(s)})
+    if unresolved:
+        msgs.append(f"{name}: {len(unresolved)} source keys resolve to no record in the bib files: {unresolved[:5]}")
+    dup = df.duplicated(["dataset_id", "row", "value", "value2", "T_K", "P_bar"], keep=False)
+    if dup.any():
+        msgs.append(f"{name}: {int(dup.sum())} rows repeat the same (dataset_id, row) record")
+    return len(df)
+
+
 def main():
     msgs: list[str] = []
     notes: list[str] = []
 
-    if not BIB.exists():
-        print(f"VALIDATION FAILED:\n - missing {BIB.relative_to(ROOT)}")
-        return 1
+    for b in BIBS:
+        if not b.exists():
+            print(f"VALIDATION FAILED:\n - missing {b.relative_to(ROOT)}")
+            return 1
 
     ms = load_make_sources()
-    idx = ms.index_bib(ms.dedupe_bib(ms.parse_bib(str(BIB))))
+    idx = ms.index_bib(ms.dedupe_bib([e for b in BIBS for e in ms.parse_bib(str(b))]))
 
     def resolve(raw: str) -> bool:
         surname, year, suffix = ms.parse_source_key(
@@ -275,6 +384,9 @@ def main():
     for f in csvs:
         counts[f.stem] = check_family(f, resolve, msgs, notes)
 
+    ns = check_supplementary(resolve, msgs, notes)
+    if ns is not None:
+        notes.append(f"supplementary tier: {ns:,} rows (not part of the benchmark families)")
     for n in notes:
         print("NOTE:", n)
     inventory = ", ".join(f"{k} {v:,}" for k, v in sorted(counts.items())

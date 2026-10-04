@@ -20,7 +20,7 @@ import pandas as pd
 
 from . import __version__, inventory, load, write
 from .export import MissingDependencyError
-from .vocab import GASES, QUALITY_CODES, TAGS
+from .vocab import DEFAULT_EXCLUDED_FLAGS, GASES, QUALITY_CODES, TAGS
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -42,9 +42,12 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--tag", nargs="+", metavar="TAG",
                    help=f"restrict to these tags ({', '.join(TAGS)})")
     p.add_argument("--include-lle", action="store_true",
-                   help="keep the 144 lle-regime rows, which the default "
+                   help="keep the lle-regime rows, which the default "
                         "loader drops because they are liquid-liquid mutual "
                         "solubilities, not gas solubilities")
+    p.add_argument("--include-flagged", action="store_true",
+                   help="keep the rows carrying a default-excluded flag "
+                        "(gas-out-of-scope, hydrate-regime, pressure-unstated, ...)")
     p.add_argument("--T", nargs=2, type=float, metavar=("LO", "HI"),
                    help="temperature window [K]")
     p.add_argument("--P", nargs=2, type=float, metavar=("LO", "HI"),
@@ -77,6 +80,7 @@ def main(argv=None) -> int:
         df = load(
             args.family,
             exclude_tags=None if args.include_lle else ("lle-regime",),
+            exclude_flags=None if args.include_flagged else DEFAULT_EXCLUDED_FLAGS,
             **filters,
         )
     except (ValueError, KeyError, FileNotFoundError) as exc:

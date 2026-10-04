@@ -1,0 +1,53 @@
+{
+ "doi": "10.1016/0021-9614(86)90055-8",
+ "first_author": "Holmes",
+ "year": 1986,
+ "journal": "J. Chem. Thermodynamics 18, 263-275",
+ "source_key": "HOLMES(1986)",
+ "experimental_method": "Isopiestic comparison at 383-498 K of aqueous Li2SO4, Na2SO4, K2SO4, Cs2SO4 solutions with NaCl(aq) as reference electrolyte (duplicate samples, high-temperature isopiestic apparatus of earlier papers).",
+ "uncertainties_stated": "molalities are averages of duplicate samples that rarely differ by more than 0.2 percent; average molality uncertainty less than 0.2 percent for the most dilute solutions; last digit not significant above 1.0 mol/kg; osmotic coefficient uncertainty about 0.005",
+ "quality_remarks": "Printed values that look like misprints, kept as printed: 443.16 K row 1 left Li2SO4 1.5913 (neighbouring right half 2.5981); 443.16 K row 5 left K2SO4 1.4480 (right half 1.1504); 443.16 K row 3 right Na2SO4 1.91139 and K2SO4 1.79981 (five decimals); 473.17 K row 6 left Na2SO4 1.1275 (right half 2.2124, NaCl 1.7051); 383.14 K row 3 right half (NaCl 1.0196) is far from its left half. Data at 523.15 K were irreversible and are not reported. The OCR text layer of this scan was unreliable (dropped cells, wrong digits), so the whole table was read from the 300 dpi image.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   264,
+   265
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "Cs2SO4 vs NaCl-reference isopiestic molalities only (higher Cs2SO4 range); no in-scope sulfate. NaCl is only the isopiestic reference. Not transcribed; could be added if reference-NaCl data are wanted."
+  },
+  {
+   "table": "Table 3",
+   "reason": "ion-interaction model fit parameters"
+  },
+  {
+   "table": "Table 4",
+   "reason": "calculated (model) osmotic and activity coefficients"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_rows": 53,
+   "printed_half_blocks": 105,
+   "written_data_rows": 105,
+   "label_rows_additional": 5,
+   "note": "473.17 K last printed row has only a left half"
+  }
+ },
+ "changes_after_image_check": [
+  "text layer (not used for the CSV) differed from the image in many cells, e.g. 498.19 K row1 Li2SO4 2.1221 -> 2.7227; 383.14 K row7 Li2SO4 2.6136 -> 2.6736; CSV was written directly from the image reading, so no CSV row was corrected"
+ ],
+ "extraction_notes": "An earlier run left no files for this paper (folder did not exist). Stacked layout described in mapping_1.json. Temperature labels as printed (383.14, 413.23, 443.16, 473.17, 498.19 K); temperature scale not stated. Single read from the image; a second blind pass is warranted because of the scan, the dense numbers and the misprint-like cells.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scan/OCR text layer unreliable; table read by eye from image only",
+ "pass2_diff": "525 cells, 0 disagreements"
+}

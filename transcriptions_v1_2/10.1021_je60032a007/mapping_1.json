@@ -1,0 +1,72 @@
+{
+ "table": "Table I",
+ "page_journal": 22,
+ "title_as_printed": "Experimental Data for Ethane-Ethylene-Water System",
+ "footnotes_as_printed": "not captured (none printed); column group headings: 'Analysis Mole Fraction, Dry Basis' (HC Vapor ethane, ethylene; Water in HC vapor x 10^3) and 'Analysis Mole Fraction, Wet Basis' (HC in Water x 10^3: ethane, ethylene, total)",
+ "property": "y_h2o",
+ "gas": "c2h6-c2h4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed 'Pressure, P.S.I.A.' (absolute); treated as total pressure of the two-phase cell (p.21 phase-rule statement: pressure, temperature and vapor composition specified; p.23 hydrocarbon partial pressure = dry-basis vapor fraction x P)",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F"
+  },
+  "P": {
+   "col": "Pressure psia",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Water in HC vapor 10^3 x",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001,
+   "what": "water mole fraction in the ethane-ethylene vapor ('Mole fraction water in vapor')"
+  },
+  "value2": {
+   "col": "HC in water wet basis 10^3 x Ethane",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "c2h6",
+   "what": "ethane mole fraction in the water-rich liquid, wet basis (water included in the total)"
+  },
+  "value3": {
+   "col": "HC in water wet basis 10^3 x Ethylene",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "c2h4",
+   "what": "ethylene mole fraction in the water-rich liquid, wet basis"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt. Gas phase is a binary ethane-ethylene mixture, dry-basis composition in the columns HC vapor dry basis Ethane/Ethylene"
+ },
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water, no salt",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "HC vapor dry basis Ethane (vapor-phase mole fraction on a water-free basis; an independent variable set by the experimenters)",
+  "HC vapor dry basis Ethylene (same)",
+  "HC in water wet basis 10^3 x Total (sum of ethane and ethylene in water, measured as total hydrocarbon)"
+ ],
+ "conversion_needs": [
+  "psia to kPa",
+  "F to K",
+  "three-phase-free two-phase region, hydrocarbon vapor is supercritical at 100 F and above for the ethane-rich mixtures near the ethane critical point: no liquid hydrocarbon phase reported"
+ ],
+ "notes": "Rows with 'No liquid sample taken' have the three water-phase cells empty. Printed '-0-' (zero) for the absent component in the two pure-gas runs is written 0. Pure-gas rows (rows 7 and 8: pure ethane, pure ethylene) are binary data. Dry-basis fractions in data row 102 do not sum to 1 (see paper.json). Page 22 = rows 0-70 and page 23 = rows 71-115 (0-based data rows). No standard-conditions definition is needed (no gas volumes).",
+ "gas_per_row": {
+  "col": "HC vapor dry basis Ethane",
+  "map": {
+   "1.00": "c2h6",
+   "0": "c2h4"
+  },
+  "default": "c2h6-c2h4"
+ },
+ "quality_remarks": "audit 2026-10-02: CSV rows 7 and 8 are the pure-gas runs (pure ethane 99.9 F, 539.6 psia; pure ethylene 100.1 F, 1017.2 psia), i.e. binary ethane-water and ethylene-water points; gas set per row from the dry-basis ethane column. Liquid-phase columns of some rows do not satisfy ethane + ethylene = total as printed (e.g. 219.8 F, 503.9 psia: 0.9797 + 0.9790 vs 1.077; 219.9 F, 4009.7 psia: 0.5425 + 2.4124 vs 1.955); kept as printed, these columns are not used."
+}

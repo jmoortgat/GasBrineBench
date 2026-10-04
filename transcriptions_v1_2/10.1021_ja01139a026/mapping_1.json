@@ -1,0 +1,100 @@
+{
+ "table": "Table I",
+ "page_journal": 4818,
+ "title_as_printed": "Solubilities (alpha) of Hydrocarbons in Water",
+ "footnotes_as_printed": {
+  "header": "a is the vol. of gas at 0 deg and 760 mm. dissolved in one vol. water at 760 mm. hydrocarbon pressure and temp. given in table.",
+  "Winkler propane/n-butane entries": "printed as .065 (17 deg) and .15 (17 deg) with reference superscripts to Lebeau (refs 5, 6); single literature values at 17 C, not at the row temperature"
+ },
+ "property": "bunsen",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "alpha defined at 760 mm. hydrocarbon pressure (i.e. gas partial pressure of 1 atm, 'at 760 mm. hydrocarbon pressure and temp. given in table'); not stated whether water vapour is included",
+ "volume_basis": "solvent",
+ "volume_basis_evidence": "'the vol. of gas at 0 deg and 760 mm. dissolved in one vol. water at 760 mm. hydrocarbon pressure'",
+ "gas_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "Temp., C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "constant": "760",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "alpha (this work, av.)",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "what": "mean of the individual determinations of this work"
+  },
+  "value2": {
+   "col": "alpha (Winkler)",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "what": "literature value (Winkler for methane and ethane; Lebeau single value at 17 C for propane and n-butane)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (doubly-distilled water, hydrocarbon-free); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    17
+   ],
+   "reason": "gas label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "alpha (individual values) (replicate runs; semicolon-joined in the CSV)"
+ ],
+ "conversion_needs": [],
+ "notes": "Each data row has the mean of the replicate determinations in 'alpha (this work, av.)'; individual values are kept as printed in one cell. Winkler value for propane and n-butane is at 17 C (not the row temperature); builder should not pair it with the row T. Empty Winkler cell = printed dots (no literature value). Rows below 273 K: none (lowest 1.5 C is above 273.15 K)."
+}

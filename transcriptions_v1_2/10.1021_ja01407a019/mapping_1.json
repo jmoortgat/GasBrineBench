@@ -1,0 +1,131 @@
+{
+ "table": "Table I",
+ "page_journal": "1975-1976",
+ "title_as_printed": "The Observed Vapor Pressures of Saturated Aqueous Salt Solutions",
+ "footnotes_as_printed": {
+  "text": "Table I, Col. 2 contains the molality (M) of the saturated solution at t, as derived from the 'best' curve drawn through a large-scale plot of the solubility data available. Cols. 3 and 4 list the vapor pressure at t of water (p0, taken from the Reichsanstalt 'Warmetabellen', Holborn, Scheel and Henning, 1909) and of the solution (p), expressed in millimeters of mercury at 0 C, and the last column lists the molal relative vapor pressure lowering."
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Vapour pressure of the saturated solution (equilibrium with its own vapour, air removed), in millimetres of mercury reduced to 0 C; no gas present. Each datum the mean of 6 or more readings over at least 24 h at constant T (+-0.01 C).",
+ "columns": {
+  "T": {
+   "col": "Temp. C t",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "basis": "saturation",
+   "note": "the vapour pressure is the measured value itself"
+  },
+  "value": {
+   "col": "Vapor pressure of solution p",
+   "unit": "torr",
+   "note": "mm Hg at 0 C, treated as torr"
+  },
+  "value2": {
+   "col": "Vapor pressure of water p0",
+   "unit": "torr",
+   "what": "vapour pressure of pure water at the same t",
+   "from_literature": true
+  },
+  "phi": {
+   "col": "Delta = (p0 - p)/(p0 M)",
+   "unit": "1/(mol/kg)",
+   "derived_by_authors": true,
+   "what": "molal relative vapour-pressure lowering"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "Moles salt per 1000 g. water M",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "saturated solutions: the molality is the solubility read from the authors' smoothed best curve through literature solubility data (not measured here). The NaCl and KCl block is saturated with both salts, no molality printed. K2Cr2O7 block: out-of-scope salt (kept)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    29,
+    39
+   ],
+   "reason": "block label row naming the salt"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl+KCl (saturated with both salts)"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2Cr2O7"
+    }
+   ]
+  }
+ ],
+ "row_from_literature": [],
+ "extra_unmapped": [
+  "Delta (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "mm Hg at 0 C to Pa (x133.322)"
+ ],
+ "notes": "Blocks printed one after another (not side by side); one label row per salt. Molality column is blank for the NaCl and KCl block (printed as dots). Ordering of Na2SO4 rows: molality 3.473 repeated at 32.38 and 35.02 C as printed. K2SO4 and K2Cr2O7 are saturated solutions as well.",
+ "quality_remarks": "Suspected misprints kept as printed: NaCl at 20.42 C prints p0 = 18.19 mm where neighbouring rows and a smooth water curve give about 18.0 mm (ratio 0.7504, about 1% off; Delta 0.04073 reproduces with 18.19, so the printed p0 or t is probably wrong); K2SO4 at 24.73 C prints p = 22.60 giving p/p0 = 0.9666 against 0.9712-0.9715 for neighbouring rows (Delta .04857 reproduces with the printed values, so p is a probable misprint, about 0.5%). Molalities of the saturated solutions are read by the authors from a smoothed solubility curve through literature data, not measured here."
+}

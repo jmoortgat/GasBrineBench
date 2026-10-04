@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/ja01139a026",
+ "first_author": "Claussen",
+ "year": 1952,
+ "journal": "J. Am. Chem. Soc. 74(19), 4817-4819",
+ "title": "Solubilities and Structures in Aqueous Aliphatic Hydrocarbon Solutions",
+ "authors": "W. F. Claussen and M. F. Polglase",
+ "source_key": "CLAUSSEN(1952)",
+ "experimental_method": "Microcombustion method: water saturated with the hydrocarbon by bubbling, dissolved gas stripped with oxygen, burned over CuO at 700 C and the CO2 weighed.",
+ "uncertainties_stated": "Reproducibility within at least 1% from detailed run data; data not corrected for slight gas impurities or saturating bubble size.",
+ "quality_remarks": "Methane 99.7% (N2 main impurity), ethane 99.9%, propane and n-butane 99%. Authors' averages differ from Winkler's methane values by about 2-10%. The PDF begins with the last paragraph of another article (NMR, p. 4817); Table I is on journal page 4818 of THIS paper. Propane/n-butane literature values are single points at 17 C.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   4818
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (heats and entropies of solution at 25 C): derived by authors from the solubility fits",
+  "Table III (iceberg structure assignments): not data"
+ ],
+ "row_counts": {
+  "table_1": "printed 16 data rows + 4 gas label rows; written 16 data rows + 4 label rows (20 rows)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer of the table was scrambled (columns, dropped digits), so the table was re-read entirely from the 220 dpi image; no text-layer-derived CSV existed. Printed values like .0547 written as 0.0547 for the first row of each block as printed with leading zero; subsequent rows printed without leading zero are written with 0. Individual-value cells joined with '; '. Sanity: alpha decreases with T within each gas; average lies within the individual values.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer scrambled; whole table read from image, so a blind second read is warranted",
+ "pass2_diff": "Table I: 100/100 numbers identical."
+}

@@ -1,0 +1,22 @@
+{
+  "table": "Table 2", "page_journal": 1150,
+  "title_as_printed": "Experimental \"uncorrected Henry's law constants\" h_2,1 at the indicated temperatures T and total pressures p, Henry's law constants H_2,1(T, p_s,1), and individual percentage deviations delta_i from smoothed values calculated via equations (9) and (12), and Ostwald coefficients L_2,1^inf at infinite dilution. For the exact significance of h_2,1 see references 5, and 10 to 12",
+  "footnotes_as_printed": {},
+  "property": "henry",
+  "gas": "o2",
+  "regime": "",
+  "temperature_scale": "IPTS-68",
+  "pressure_note": "total equilibrium pressure p (water vapour plus oxygen), column 10^-3 p/Pa",
+  "columns": {
+    "T": {"col": "T /K", "unit": "K"},
+    "P": {"col": "10^-3 p/Pa", "unit": "Pa", "basis": "total", "scale": 1e3},
+    "value": {"col": "10^-9 H_2,1(T,ps_1)/Pa", "unit": "Pa", "scale": 1e9, "what": "Henry's law constant H_2,1(T,p_s,1) = lim f_2L/x_2 of O2 in water at the vapour pressure of water (mole-fraction basis, Pa); calculated by the authors point by point from the measured h_2,1 via H = h Z^V phi^V I^-1 (Poynting correction, virial coefficients)", "derived_by_authors": true},
+    "value2": {"col": "10^2 L_inf_2,1", "unit": "ostwald_infinite_dilution", "scale": 1e-2, "what": "Ostwald coefficient at infinite dilution (c_2^L/c_2^V at equilibrium, limit), calculated by the authors from H_2,1 via eq. (14),(15)", "derived_by_authors": true}
+  },
+  "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": "pure water, no salt"},
+  "skip_rows": [],
+  "group_rows": [],
+  "extra_unmapped": ["10^-9 h_2,1 /Pa (uncorrected Henry's law constant, primary experimental quantity; no p-independent definition of a standard state)", "delta_i (percentage deviation from the authors' smoothed fit, eq. 12)"],
+  "conversion_needs": ["none for H (Pa, mole-fraction basis)", "Ostwald coefficient is volumetric concentration ratio, kept as printed"],
+  "notes": "Gas-free reference pure water, oxygen solute; solubility at about 100 kPa total pressure. Rows 0-13 are region I (274.15-281.14 K), rows 14-31 region II (283.17-328.14 K) in the authors' fitting. Replicate temperatures (e.g. 298.152 K, 318.16 K) are separate runs."
+}

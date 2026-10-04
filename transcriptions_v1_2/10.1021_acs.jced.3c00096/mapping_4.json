@@ -1,0 +1,54 @@
+{
+ "table": "Table 4",
+ "page_journal": 2349,
+ "title_as_printed": "Comparison between Experimental and Literature Values of CH4 Solubility in Pure Water at 293.2 K",
+ "footnotes_as_printed": {
+  "a": "u(T) = +/- 0.05 K, u(p) = +/- 0.01 MPa."
+ },
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated whether total or partial; experimental pressure p, MPa, u(p)=0.01 MPa",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "293.2"
+  },
+  "P": {
+   "col": "p, MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "exp x 10^3, mol %",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "what": "measured CH4 solubility in pure water, printed x 10^3 in mol %"
+  },
+  "value2": {
+   "col": "ref x 10^3, mol %",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "what": "literature value (Ref 46 of the paper)",
+   "from_literature": true
+  }
+ },
+ "gas_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure deionized water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "relative error, % (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "unit label question: see paper.json quality_remarks"
+ ],
+ "notes": "Validation measurement of the apparatus with pure CH4 (99.9 mol %). Temperature printed as 293.2 K in title (293.15 K in Table 3 context not related). The printed unit label 'mol %' with factor 10^3 is judged a mislabel on physical grounds (value x 1e-3 is a mole fraction of the right magnitude for CH4 in water at 293 K, 6-21 MPa; the same label appears in the authors' Figure 7/8 and Table 6); the number is used as a mole fraction x 1e-3, not corrected by a factor 100."
+}

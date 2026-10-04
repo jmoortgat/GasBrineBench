@@ -1,0 +1,48 @@
+{
+ "doi": "10.1016/S0016-7037(02)00838-4",
+ "first_author": "Millero",
+ "title": "The solubility of oxygen in the major sea salts and their mixtures at 25 C (F.J. Millero, F. Huang, A.L. Laferiere)",
+ "year": 2002,
+ "journal": "Geochim. Cosmochim. Acta 66(13), 2349-2359",
+ "source_key": "MILLERO(2002)_GCA",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell matched the 200 dpi page images; no corrections",
+ "experimental_method": "Solutions equilibrated with water-vapour-saturated air at 25 +-0.02 C for 4-40 h in a 2 L jacketed vessel; dissolved O2 by Winkler titration (Carpenter modification, photometric end point); molality from solution density (Mettler densimeter).",
+ "uncertainties_stated": "Duplicate measurements agree to 0.2-1 umol/kg (0.3%); fit standard errors 0.5-3.1 umol/kg; atmospheric pressure to +-1 mbar; T +-0.02 C.",
+ "quality_remarks": "Solutions made by volume, converted to molality via densities (Lo Surdo et al., 1982). Water-vapour-pressure correction to 1 atm neglected. Four printed zero-salt references differ (258.1 NaCl; 258.9 for the other single salts; 258.5 in mixtures; Table 1 gives 258.9 at 25.12 C). Table 1 shows 2.6 umol/kg deviation at 45 C in water (authors attribute partly to extrapolation); seawater units in Table 1 ambiguous (footnote b). Caption of Table 6 has a missing comma.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   6,
+   10
+  ],
+  "journal_pages": [
+   2351,
+   2352,
+   2354,
+   2358
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3: fit coefficients of Eqn. 10 (model parameters)",
+  "Table 4: NaCl O2 solubility converted to umol/L and compared with Sherwood et al. equations (derived from Table 2 and a literature model)",
+  "Table 7: salting coefficients (derived/literature)",
+  "Table 8: Pitzer coefficients (model parameters)",
+  "Table 9: deviation summary (derived)",
+  "Table 10, Seawater block: calculated values from Eqn. 9 and model, no measurements (the Dead Sea block with measured values IS extracted)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 10 data + 2 label, written 10 + 2",
+  "Table 2": "printed 13/12/9/14 (NaCl/MgCl2/Na2SO4/MgSO4), written same in table_2_group1-4",
+  "Table 5": "printed 8+7 per mixture (+ 2 run labels), written 17 rows each in table_5_group1-2",
+  "Table 6": "printed 8, 12, 10, 7, written same in table_6_group1-4",
+  "Table 10": "Dead Sea block 5 rows written"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Side-by-side blocks of Tables 2, 5, 6 written as separate table_N_groupK files (different salts/column headers). Printed superscript letters: only Table 6 footnote b (last row of MgCl2 + MgSO4 block) and Table 1 'c' (values in parentheses, Weiss 1970) are carried; Table 1 Calculated column holds 'Garcia-Gordon (Weiss)' pairs as printed. All gas data are for O2 in air-saturated solutions at 1 atm total pressure; the paper does not define standard conditions.",
+ "pass2_diff": "Tables 1, 2, 5, 6, 10: pass 1 split by block into group files; all values match pass 2."
+}

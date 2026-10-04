@@ -1,0 +1,39 @@
+{
+ "doi": "10.1039/ft9908600495",
+ "first_author": "Marcus",
+ "year": 1990,
+ "journal": "J. Chem. Soc., Faraday Trans. 86(3), 495-500",
+ "source_key": "MARCUS(1990)",
+ "experimental_method": "Static vapour pressure of salt solutions (NaCl, KCl, MgCl2, CaCl2; saturated or not) at 30-45 C with a quartz Bourdon gauge, apparatus and procedure of Part 1.",
+ "uncertainties_stated": "Not restated in this paper (Part 1: +-0.04 kPa reproducibility; T +-0.2 K).",
+ "quality_remarks": "Table 6 mixes measured (bold), calculated (non-bold) and literature values (footnotes a-c); the text says vapour pressures in ternary or higher systems at these temperatures had not been measured elsewhere. Measured pure-water values 4.27 and 7.39 kPa vs calculated 4.25 and 7.38. Fig. 5 shows measured MgCl2 solution points only graphically.",
+ "how_extracted": "image_read",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; bold (measured) vs non-bold identified from the image, no cell corrected. Reshaped layout requires bold read on image - flagged for caution.",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   498
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: parameters of the temperature-dependent equation (derived).",
+  "Table 2: activity-coefficient parameters (model).",
+  "Table 3: solubilities, calculated activity coefficients and log a_sat (literature/derived).",
+  "Table 4 and 5: saturation lines and planes (calculated/fitted).",
+  "Fig. 5: measured MgCl2 vapour pressures in graph only."
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": "9 rows x 4 temperature cells (some cells with 2 numbers)",
+   "written": 33
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 6 reshaped to long format (see mapping notes). The 'Ref 19' pure-halite/bischofite values etc. flagged as row_from_literature. Sanity: p increases with T within each solution row; all pairs calc vs measured within 0.3 kPa.",
+ "pass2_diff": "Table 6: every pass-2 number occurs in pass 1; pass 1 wrote one row per (solution, T) with composition columns repeated, pass 2 one cell per temperature with calcd and measured values together; measured/calcd assignment not independently paired."
+}

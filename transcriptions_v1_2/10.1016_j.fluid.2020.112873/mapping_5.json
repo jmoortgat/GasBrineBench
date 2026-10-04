@@ -1,0 +1,53 @@
+{
+ "table": "Table 5",
+ "page_journal": 5,
+ "gas": "ch4",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "total cell pressure ('The cell pressure was measured using a Druck 960 strain gauge pressure transducer'); absolute vs gauge not stated; Pressure of the equilibrated gas / flow tube ('P / MPa +-0.03 MPa'); the paper does not say whether absolute or gauge or total or partial. Water content is evaluated at atmospheric pressure from the measured frost-point temperature.",
+ "property": "y_h2o",
+ "volume_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "uncertainty_stated": "T +-0.1 K, P +-0.03 MPa, water content +-1 %",
+ "title_as_printed": "Experimental and predicted water contents, in ppmV, for methane in equilibrium with hydrates at 283.1 K(+-0.1 K) at different P conditions.",
+ "footnotes_as_printed": {
+  "table note": "Uncertainty of temperature is +-0.1 K, pressure is +-0.03 MPa and water content is +-1% of the water content in ppmV."
+ },
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "283.1"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Water content ppmV Experimental",
+   "unit": "ppmV_water_in_gas",
+   "what": "water content of the gas in ppmV (volume ppm; mole/volume basis not stated, ideal-gas equivalence assumed by the method), measured via frost-point temperature at atmospheric pressure",
+   "scale": 1e-06
+  },
+  "value2": {
+   "col": "Water content ppmV predicted",
+   "unit": "ppmV_water_in_gas",
+   "what": "HWPVT (CPA) model prediction",
+   "derived_by_authors": true,
+   "scale": 1e-06
+  }
+ },
+ "skip_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "ppmV to mole fraction if mole basis (not stated)"
+ ],
+ "notes": "T = 283.1 K printed only in the title. Methane in equilibrium with hydrates (regime hydrate per title).",
+ "quality_remarks": "ppmV is taken as mole ppm (ideal gas at atmospheric pressure); the paper never states mole or volume basis but derives the water content from the frost-point temperature at atmospheric pressure. P is the equilibrium-cell pressure measured with a strain-gauge transducer (absolute vs gauge not stated). Transducer range quoted 0-41 MPa while Table 5 reaches 56.84 MPa."
+}

@@ -1,0 +1,54 @@
+{
+ "doi": "10.1016/0016-7037(88)90296-7",
+ "first_author": "Pabalan",
+ "year": 1988,
+ "journal": "Geochimica et Cosmochimica Acta 52, 2393-2404",
+ "source_key": "PABALAN(1988)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "The text layer is a poor OCR (garbled digits, scrambled columns), so the whole table was typed from the 300 dpi page image; a blind second reading is warranted.",
+ "experimental_method": "Flow calorimetry (Picker-type, Spectroflow pumps) giving the specific heat capacity of Na2SO4(aq) relative to pure water at 200 bar from 413 to 573 K; apparent molar heat capacities calculated with a heat-loss correction factor f.",
+ "uncertainties_stated": "Column Unc: per-value uncertainty of phi_Cp from +-0.00015 in P_s/P_w and +-1% in (P_s-P_w)/P_w and in f.",
+ "quality_remarks": "Densities of the solutions (25 C, 200 bar) were taken from literature (Chen et al. 1977 below 0.33 m; estimated from Gibson 1934 compressibilities above), so rho_s is not a measurement of this paper. Molality column has no unit printed. Replicates at identical molality kept. Temperature scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   2394
+  ]
+ },
+ "earlier_run_files": "No earlier files existed for this slug; done from scratch in this run.",
+ "not_extracted_tables": [
+  "Table 2 (p.2394): Pitzer equations - model equations",
+  "Table 3: parameters for Eqns 10-12 - fitted model parameters",
+  "Table 4: Pitzer parameters for osmotic/activity coefficient - model parameters",
+  "Table 5: calculated apparent molar heat capacities - model-generated",
+  "Table 6: calculated osmotic coefficients - model-generated",
+  "Table 7: calculated activity coefficients - model-generated",
+  "Table 8: mixing-term parameters - model parameters",
+  "Na2SO4 mineral solubility data are used from literature and shown in figures only"
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 67,
+   "written_data_rows": 67,
+   "label_rows_added": 5,
+   "csv_rows_excluding_header": 72,
+   "per_block": {
+    "413.53": 9,
+    "423.67": 23,
+    "472.63": 15,
+    "522.47": 8,
+    "572.74": 12
+   }
+  }
+ },
+ "changes_after_image_check": [
+  "none as corrections: the table was read directly from the image because the text layer was unreliable (not diffed cell by cell); no values were first taken from the text layer"
+ ],
+ "extraction_notes": "The five T label rows (T(K) = value, f = value) are kept with the label in the first column; T is set per block through group_rows (path T.constant). Pressure 200 bar constant from the title. Sanity: phi_Cp rises with m at every T; and falls with T at fixed m (to strongly negative at 573 K); heat capacity of solution c_p,s decreases with m at fixed T.",
+ "pass2_diff": "402 cells, 0 disagreements"
+}

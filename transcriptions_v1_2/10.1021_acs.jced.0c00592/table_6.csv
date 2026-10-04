@@ -1,0 +1,16 @@
+system,salt molality mol/kg H2O,temperature K,pressure MPa,gas solubility mol CO2/kg H2O,literature deviation %,note
+H2O-CO2,,,,,,
+,0,333.15,6.07,0.75,2.6,
+,,,10.07,1.04,1.8,
+,,,20.00,1.27,1.1,
+,,,25.06,1.32,,literature deviation/%:d
+,,,30.05,1.36,1.4,
+,,,40.08,1.50,4.8,
+H2O-NaCl-CO2,,,,,,
+,1,323.15,5.07,0.62,4.1,
+,,,10.05,0.91,4.4,
+,,,20.02,1.06,2.7,
+,,,29.99,1.13,1.6,
+,,,40.04,1.28,3.7,
+H2O-CaCl2-CO2,,,,,,
+,1,323.15,15.04,0.88,1.8,

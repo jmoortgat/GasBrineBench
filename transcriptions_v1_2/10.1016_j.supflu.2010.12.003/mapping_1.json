@@ -1,0 +1,100 @@
+{
+ "table": "Table 1",
+ "page_journal": 126,
+ "title_as_printed": "The solubility (S) of CO2 in water at different temperatures and pressures.",
+ "footnotes_as_printed": "none",
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the system at equilibrium (view cell, pressure transducer +-0.025 MPa); total system pressure, not stated whether water/salt vapour corrected",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set per block by label row"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "S/wt%",
+   "unit": "mass_percent_gas_in_liquid_sample",
+   "scale": 1.0
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (doubly distilled)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27
+   ],
+   "reason": "block label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55.0",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "S is wt% CO2 in the liquid sample (mass of CO2 / mass of sample x 100, assumed): needs conversion to mole fraction/molality"
+ ],
+ "notes": "Four side-by-side blocks (35.0, 45.0, 50.0, 55.0 C) stacked left to right, one label row each. Property is gas solubility as weight percent of CO2 in the liquid (the paper: 'S/wt%'); no native property for wt%, so property 'other' with unit mass_percent_gas_in_liquid_sample; basis presumed total liquid-sample mass (CO2+water), not explicitly stated. The text and abstract mention only 35.0, 45.0, 55.0 C, but the table has a 50.0 C block (printed as such; Fig. 1 also uses 50.0 C). Row 26 (15.23, 5.05) belongs to the 55.0 C block as printed (50.0 C has 7 rows, 55.0 C has 8); held, CSV order left as extracted.",
+ "row_held": [
+  {
+   "rows": [
+    26
+   ],
+   "reason": "CSV row (15.23 MPa, 5.05 wt%) is printed in the 55.0 C column (last row of that block, p.126) but sits after the 50.0 C rows in the CSV; the builder would assign 50.0 C"
+  }
+ ]
+}

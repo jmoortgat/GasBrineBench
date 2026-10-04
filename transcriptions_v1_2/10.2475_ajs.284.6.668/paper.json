@@ -1,0 +1,36 @@
+{
+ "doi": "10.2475/ajs.284.6.668",
+ "first_author": "Wood",
+ "year": 1984,
+ "journal": "American Journal of Science 284(6), 668-705",
+ "source_key": "WOOD(1984)",
+ "experimental_method": "Static vapor-pressure method: differential pressure between a pure-water autoclave and a salt-solution autoclave at the same temperature (oil bath), measured with Bourdon-tube differential gauges and a strain-gauge transducer; molality by weight at room temperature corrected for water in the vapor space, or by sampling and atomic absorption for CaCl2 above 300 C.",
+ "uncertainties_stated": "Gauges: Bourdon +-0.5 percent of full scale, strain gauge +-0.25 percent of span; systematic calibration/measurement error about 1 to 2 psid; temperature controlled to +-0.2 C (oil bath, thermocouples accurate to +-0.2 C as stated in text); molality accuracy +-2.0 percent (NaCl, KCl) and +-5.0 percent (CaCl2); CaCl2 calculated molalities at 300 C agree within +-0.2 m with measured ones.",
+ "quality_remarks": "Authors: NaCl rows below 325 C were used as spot checks only and not in their fits; at 350 C NaCl gross discrepancy with Mashovets et al. 1973 (authors suspect any systematic error of their data makes values too low, and note agreement with Lindsay 1980); CaCl2 350 C: literature point at m=5.6 of Zarembo et al. 1980 deviates; authors discarded the literature point, not their own. Gauge responded sluggishly (1-2 h Bourdon, 20-30 min strain gauge). Table is dP (differential vapor pressure) only; absolute brine pressure not tabulated. Non-monotonic as printed: CaCl2 350 C 537.0 (m 6.4) then 528.1 (m 6.5). Replicate molalities within block: CaCl2 325 C m 5.3 (346.2, 357.8) and 6.1 (387.7, 389.2), CaCl2 350 C m 5.5 (456.0, 465.0).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   672,
+   673
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (journal p. 680-681): Lietzke-Stoughton and Pitzer parameters fitted to the data (model parameters, with a table of smoothed osmotic coefficients described as available on request)",
+  "Table 3: association constants and hydration numbers (model parameters)",
+  "Table 4: ionic potential ratios (derived)"
+ ],
+ "row_counts": {
+  "table_1": "printed 223 data rows (21 temperature/salt blocks, side-by-side in print); written 223 data rows plus 21 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "No text layer; table read from 300 dpi page images by viewing crops (every cell read from the image; no OCR text used). Table 1 spans journal pp. 672-673. Pages 1-38 all belong to this article (pp. 668-705); the PDF has no other article. Sanity script: within each block m and dP increase monotonically except CaCl2 350 C row 6.5/528.1 (as printed). Needs a second independent read because pass 1 was single-agent image transcription of 223 rows. Temperature scale not stated. Molality unit written as 'm' in the table; text and figures use moles/kg H2O. NaCl 300 C block has 5 rows (molalities 0.5, 1.0, 2.1, 3.1, 5.1).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "PDF has no text layer; table transcribed by eye from page images (second blind read required)",
+ "pass2_diff": "Table 1: 223 rows; the ordered (m, dP) sequences of pass 1 and the blind pass 2 are identical; printed oddities (CaCl2 350 C 537.0 then 528.1; NaCl 200 C 0.5 -> 0.8) kept."
+}

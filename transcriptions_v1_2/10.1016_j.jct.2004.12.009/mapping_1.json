@@ -1,0 +1,184 @@
+{
+ "table": "Table 1",
+ "page_journal": 914,
+ "title_as_printed": "Isopiestic molalities of NaCl, CaCl2, and CaBr2 and osmotic coefficients of CaCl2 and CaBr2 calculated using NaCl as the reference standard based on the model of Pitzer et al. [40]",
+ "footnotes_as_printed": {},
+ "property": "isopiestic_molality",
+ "reference_salt": "NaCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium at the saturation vapor pressure of the solutions; pressure not tabulated in Table 1)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_group_rows": true
+  },
+  "value": {
+   "col": "m CaCl2 (mol/kg)",
+   "unit": "mol/kg",
+   "what": "isopiestic molality of CaCl2 in equilibrium with NaCl reference solution at the same T"
+  },
+  "value2": {
+   "col": "m NaCl (mol/kg)",
+   "unit": "mol/kg",
+   "what": "isopiestic molality of the NaCl(aq) reference solution in the same equilibrium"
+  },
+  "phi_CaCl2": {
+   "col": "phi CaCl2",
+   "unit": "1",
+   "derived_by_authors": true,
+   "what": "osmotic coefficient of CaCl2 solution calculated by the authors from the NaCl reference molality with the Pitzer et al. [40] NaCl model"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "m CaCl2 (mol/kg)",
+    "unit": "mol/kg",
+    "role": "separate solution in own cup"
+   }
+  },
+  "constant": {},
+  "other_species": "CaCl2 test solution; NaCl(aq) reference (value2) and CaBr2 (outside the six-ion set, not mapped) are separate binary solutions in their own cups; there is no mixed solution"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    32,
+    39,
+    45
+   ],
+   "reason": "temperature label row 'T = ... K' (T set via group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "380.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "381.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "383.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "385.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "388.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "390.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "393.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "473.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "523.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "m CaBr2 (mol/kg) (separate solution, out of scope)",
+  "phi CaBr2 (calculated by authors)"
+ ],
+ "conversion_needs": [
+  "The two printed column blocks (left, right) were stacked: within each T block the left-block rows come first, then the right-block rows.",
+  "Each row is one isopiestic equilibrium of three binary solutions (NaCl, CaCl2, CaBr2) at one water activity."
+ ],
+ "notes": "Row 393.15 K, first line (5.6527 2.9216 2.7033 1.4181 1.6226) repeats the CaCl2 molality 2.9216 and phi 1.4181 of the 390.15 K row; the second line (5.6572 2.9256 ... 1.4184) repeats the 390.15 K right-block values 2.9256 and 1.4184 -- these look like misprints but are kept as printed (the text layer and the page image agree). The authors' molalities are corrected for CaCO3 precipitation and averaged from two samples at some points (see paper text).",
+ "row_held": [
+  {
+   "rows": [
+    27,
+    28
+   ],
+   "reason": "CaCl2 molality and phi at 393.15 K (2.9216/1.4181, 2.9256/1.4184) are identical to the 390.15 K rows 24 and 25 while NaCl and CaBr2 differ; next 393.15 K row is 3.2221 at NaCl 6.0664: probable printed duplicate"
+  }
+ ]
+}

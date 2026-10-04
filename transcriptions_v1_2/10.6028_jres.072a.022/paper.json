@@ -1,0 +1,33 @@
+{
+ "doi": "10.6028/jres.072A.022",
+ "first_author": "Robinson",
+ "year": 1968,
+ "journal": "J. Res. Natl. Bur. Stand. 72A(3), 239-",
+ "source_key": "ROBINSON(1968)",
+ "experimental_method": "Isopiestic vapour-pressure method at 25 C with KCl reference solutions for mixed KCl-CaCl2 solutions.",
+ "uncertainties_stated": "not captured from Table 1 (see text of the paper)",
+ "quality_remarks": "Table 1 phi(calc.) values come from the authors' fit; starred rows were not used in computing beta_0 in eq (26). Journal start page assumed from running page 240 on PDF page 2.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   240
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (osmotic coefficients of KCl(B)-CaCl2(C) solutions derived by the authors from set 6 data): derived",
+  "Table 3 (osmotic and activity coefficients of the system, calculated): derived"
+ ],
+ "row_counts": {
+  "table_1": "printed 66 data rows in 10 sets; written 66"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer is an OCR of a scan; Table 1 transcribed from the 300 dpi page image. Journal page numbering: start page of the article not verified beyond running page 240 for Table 1. Sanity scripts: m_C and phi(obs.) increase with decreasing m_B within each block.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "OCR/scan source; table read from image only",
+ "pass2_diff": "Table 1: 66 rows; every pass-2 number occurs in pass 1; differences are keys filled down."
+}

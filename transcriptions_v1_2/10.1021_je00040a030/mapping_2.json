@@ -1,0 +1,98 @@
+{
+ "table": "Table II",
+ "page_journal": 226,
+ "title_as_printed": "Vapor Pressures of MgCl2 Aqueous Solutions",
+ "footnotes_as_printed": "none on this table",
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Vapor pressure of the solution measured with an all-glass Bourdon gauge, solution degassed before each run; paper says the pressure outside the spiral equals the vapor pressure inside it. Pressure in kPa.",
+ "columns": {
+  "T": {
+   "col": "T, K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p(exptl), kPa",
+   "unit": "kPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "p(exptl), kPa",
+   "unit": "kPa"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {}
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    20,
+    29
+   ],
+   "reason": "molality block label rows"
+  },
+  {
+   "rows": [
+    9,
+    19,
+    28,
+    37
+   ],
+   "reason": "mean deviation summary rows"
+  }
+ ],
+ "extra_unmapped": [
+  "p(calcd), kPa (Antoine-type fit by authors)",
+  "dev, kPa (calculated)"
+ ],
+ "conversion_needs": [],
+ "notes": "Composition basis mol/kg (molality, per kg water as per paper's 'mol/kg of electrolyte'); sample composition analysed after the vapor pressure run (EDTA titration). The value column repeats the pressure; builder should treat P with basis saturation as the datum.",
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "1.051",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "2.105",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "3.102",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.constant.MgCl2",
+     "value": "4.104",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "table": "Table 2",
+ "page_journal": 39,
+ "title_as_printed": "Isopiestic Molalities of MgCl2 Stock No. 1 from Measurements with CaCl2 Reference Solution No. 1",
+ "footnotes_as_printed": {
+  "a": "Saturated solution in equilibrium with MgCl2.6H2O."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68 (25.00 +- 0.005 C stated in the text)",
+ "pressure_note": "not stated (isopiestic equilibration in a closed vacuum chamber at the vapour pressure of the solutions; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "[MgCl2] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of test salt MgCl2 at isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "[Reference salt] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference salt solution at isopiestic equilibrium",
+   "reference_salt": {
+    "col": "Reference salt"
+   }
+  }
+ },
+ "reference_salt": {
+  "col": "Reference salt"
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "[MgCl2] m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water; no other species"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molalities per kg of water (mol kg-1)"
+ ],
+ "notes": "Printed as two side-by-side blocks of 19 + 18 rows (left block first); stacked here, reference salt column added (all CaCl2 stock no. 1). Footnote a marks the 5.8101 row (saturated).",
+ "quality_remarks": "Row with MgCl2 5.8101 m carries footnote a: solution saturated with MgCl2.6H2O (a solubility point, solid phase present)."
+}

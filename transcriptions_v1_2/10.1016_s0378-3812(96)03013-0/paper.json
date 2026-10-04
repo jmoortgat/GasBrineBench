@@ -1,0 +1,50 @@
+{
+ "doi": "10.1016/S0378-3812(96)03013-0",
+ "first_author": "Shiah, I-Min",
+ "authors": "I-Min Shiah, Hsieng-Cheng Tseng",
+ "year": 1996,
+ "journal": "Fluid Phase Equilibria 124, 235-249",
+ "title": "Experimental and theoretical determination of vapor pressures of NaCl-KCl, NaBr-KBr and NaCl-CaCl2 aqueous solutions at 298 to 343 K",
+ "source_key": "SHIAH(1996)",
+ "experimental_method": "Static method with an isoteniscope and U-tube null indicator in a windowed thermostat; absolute pressure read with an MKS Baratron transducer; solutions degassed by boiling and freezing; 298.15-343.15 K in 5 K steps.",
+ "uncertainties_stated": "Transducer relative accuracy 0.5%; temperature to 0.1 K; salt concentration standard deviation below 0.003 m (from triplicate samples); pure-water test: mean deviation 0.13% from literature, maximum below 0.5%; U-tube level difference <1 mm gives error within 0.074 torr.",
+ "quality_remarks": "Salt concentration obtained from the weight fraction of the mixed salts made up beforehand (salt non-volatile). Salt purities: NaCl 99.95 mass%, CaCl2 97.5 mass% (Baker). Pressures given to 0.1 torr only. Table 2 (NaBr-KBr) has bromide salts and is out of scope. Text layer of the PDF has OCR-style errors (e.g. '1 t4.69', '! 11.0', '! 72.15', '38.7 !', '- O. 16'); all resolved against the image.",
+ "how_extracted": "pdf_text_layer (OCR-type text layer) transcribed from the 200 dpi page images (journal pages 238, 239, 242, 243)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   8,
+   9
+  ],
+  "journal_pages": [
+   238,
+   239,
+   242,
+   243
+  ]
+ },
+ "verification_note": "Earlier interrupted run left no files in the slug folder; extraction done from scratch.",
+ "not_extracted_tables": [
+  "Table 2: NaBr(1)-KBr(2) aqueous solution vapour pressures (bromide salts, out of scope)",
+  "Table 4: model parameters",
+  "Table 5: model comparison deviations (derived)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 40 data rows (4 blocks x 10), written 40; plus 4 block label rows, 4 'Mean deviation' rows and 1 'Overall mean deviation' row kept and skipped",
+  "Table 3": "printed 40 data rows (4 x 10), written 40; same extra label/summary rows"
+ },
+ "changes_after_image_check": [
+  "Table 1 block 2 328.15 K pexp: '! 11.0' -> 111.0",
+  "Table 1 block 1 328.15 K Ppre: '1 t4.69' -> 114.69",
+  "Table 3 block 2 308.15 K Pcal: '38.7 !' -> 38.71",
+  "Table 3 block 2 338.15 K Ppre: '! 72.15' -> 172.15",
+  "Table 3 several D/% cells '- O. 16', '- O. 14' -> -0.16, -0.14 (text layer only)"
+ ],
+ "needs_pass2": true,
+ "needs_pass2_reason": "The text layer was an OCR-type layer with several corrupted cells; a blind second pass is advised although all cells were checked against the image.",
+ "status": "verified_pass2",
+ "extraction_notes": "Column headers joined: 'Primary model Ppre/torr', etc. Only pexp is a measurement; model columns are in the CSV as printed but not mapped. Sanity: pexp rises monotonically with T in every block; at a given T, pexp falls with total molality as expected; no duplicates. Mean-deviation rows hold values in the D/% columns only. The CSV uses a 6-column layout; label rows are 'm1 = ..., m2 = ...'.",
+ "pass2_diff": "480 cells, 0 disagreements"
+}

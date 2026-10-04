@@ -1,0 +1,26 @@
+Run Number,m test salt mol/kg,"m NaCl, Ref. mol/kg",Av. sigma',note
+Na2SO4 vs NaCl,,,,
+"5,C",0.9086,0.9838,0.0012,
+"4,D",1.1164,1.1765,0.0011,
+"4,C",1.6237,1.6410,0.0014,
+"4,A",1.8478,1.8455,0.0012,
+"1,C",2.0594,2.0334,0.0011,
+"4,B",2.2338,2.1937,0.0012,
+"1,B",2.6264,2.5490,0.0009,
+"3,F",2.8330,2.7396,0.0009,
+"2,D",3.0337,2.9383,0.0015,
+"3,E",3.1531,3.0423,0.0006,
+"1,A",3.1795,3.0707,0.0007,
+"2,C",3.3496,3.2333,0.0010,
+"3,C",,3.2388,0.0004,m test salt mol/kg:missing_printed_ellipsis
+"3,D",3.4397,3.3152,0.0007,
+"6,H",,3.6397,0.0004,m test salt mol/kg:c (printed c in place of value)
+"6,G",,4.0028,0.0004,m test salt mol/kg:blank_in_print
+"3,B",,4.0639,0.0006,m test salt mol/kg:blank_in_print
+"3,A",,4.0722,0.0004,m test salt mol/kg:blank_in_print
+"6,A",,4.4132,0.0006,m test salt mol/kg:blank_in_print
+"6,F",,4.7872,0.0007,m test salt mol/kg:blank_in_print
+"6,D",,5.2090,0.0014,m test salt mol/kg:blank_in_print
+"6,E",,5.2396,0.0010,m test salt mol/kg:blank_in_print
+"6,B",,5.4957,0.0008,m test salt mol/kg:blank_in_print
+"6,C",,6.2301,0.0006,"m NaCl, Ref. mol/kg:c"

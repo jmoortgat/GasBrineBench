@@ -1,0 +1,108 @@
+{
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "set pressure, taken by the authors as the vapor pressure of the solution at the vapor-disappearance temperature TM (footnote b); sample pressurized with CH4 as pressure-transmitting fluid (capillary nonmixing method), pressure transducer accurate to +/-0.097 MPa; absolute pressure not explicitly stated",
+ "volume_basis": "not_applicable",
+ "table": "Table 5",
+ "page_journal": "not captured",
+ "title_as_printed": "Measured Vapor Pressures of Aqueous Solutions Containing (1) 0.5 mol/kg NaCl and 0.5 mol/kg KCl, (2) 1.0 mol/kg NaCl and 1.0 mol/kg KCl, and (3) 2.0 mol/kg NaCl and 2.0 mol/kg KCla",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties u are u(TB) = 0.5 K for 473 K < T < 693 K, u(TM) = 0.5 K for 473 K < T < 693 K, u(PS) = 0.097 MPa, u(mNaCl) = 0.01 mol/kg, and u(mKCl) = 0.01 mol/kg.",
+  "b": "Set pressure, which is considered to be the vapor pressure of the solution at the observed vapor disappearance temperature (TM).",
+  "c": "The temperature at which the vapor phase is generated at the set pressure.",
+  "d": "Vapor disappearance temperature during cooling at the set pressure."
+ },
+ "columns": {
+  "T": {
+   "col": "TM (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "PS (MPa)",
+   "unit": "MPa",
+   "basis": "saturation"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "set by group_rows",
+    "unit": "mol/kg"
+   },
+   "KCl": {
+    "value": "set by group_rows",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "",
+  "evidence": "concentrations printed as mol/kg; whether per kg of water is not stated"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    22,
+    44
+   ],
+   "reason": "block label rows (group header printed above the three column groups)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.5",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.0",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.0",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "2.0",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "TB (K): temperature of vapor appearance on heating at the set pressure (superheated), measured but not an equilibrium temperature"
+ ],
+ "conversion_needs": [],
+ "notes": "The printed table has three side-by-side column groups of identical layout (PS, TB, TM); stacked into one CSV, left group first, one label row per group (66 CSV rows = 3 labels + 3 x 21 data rows). This replaces the pilot's three separate group files. No calculated columns are printed in Table 5. Footnote letters of column headers (b,c,d) repeated in the note column of every row.",
+ "comment_reply_checked": "2026-10-02: the Comment (Cisternas, JCED 65:5062, doi 10.1021/acs.jced.0c00710) and the Reply (Chen and Chou, JCED 65:5064, doi 10.1021/acs.jced.0c00806) concern a modelling application (Cisternas-Lam correlation) and do not dispute the measurements; the Reply re-lists measured ternary pressures that match Table 5 (e.g. 2.5166 MPa at 497.65 K)",
+ "caution": "Single laboratory, no independent corroboration; vapour pressures to 693 K in a fused-silica capillary cell, many points near or above the critical point of water; the authors attribute a shifted critical line to dissolved silica; molality basis (per kg water) and temperature scale not stated in the paper. A published Comment (doi 10.1021/acs.jced.0c00710) and Reply (10.1021/acs.jced.0c00806) concern a model comparison and do not dispute the measurements. Use with caution at T above about 620 K."
+}

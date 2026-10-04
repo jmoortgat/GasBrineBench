@@ -1,0 +1,69 @@
+{
+ "doi": "10.1021/ie070858y",
+ "first_author": "Mokraoui",
+ "year": 2007,
+ "journal": "Ind. Eng. Chem. Res. 46 (26), 9257-9262",
+ "source_key": "MOKRAOUI(2007)",
+ "title": "New Solubility Data of Hydrocarbons in Water and Modeling Concerning Vapor-Liquid-Liquid Binary Systems",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only, no PDF consulted"
+ },
+ "experimental_method": "Static-analytic method with online Rolsi liquid/vapour samplers and GC (TCD+FID); VLLE conditions, 288 K up to below the hydrocarbon critical temperature.",
+ "uncertainties_stated": "T +/-0.02 K; P +/-0.3 kPa; mole numbers +/-2% water, +/-2% ethane, +/-2.5% propane, +/-1.3% n-butane, +/-2% isobutane, +/-1.5% n-pentane, +/-1% n-hexane.",
+ "tables": {
+  "table_5": "4 rows (ethane)",
+  "table_6": "6 rows (propane)",
+  "table_7": "8 rows (isobutane)",
+  "table_8": "7 rows (n-butane)",
+  "table_9": "6 rows (n-pentane)",
+  "table_10": "4 rows (n-hexane)"
+ },
+ "row_counts": {
+  "5": {
+   "printed": 4,
+   "written": 4
+  },
+  "6": {
+   "printed": 6,
+   "written": 6
+  },
+  "7": {
+   "printed": 8,
+   "written": 8
+  },
+  "8": {
+   "printed": 7,
+   "written": 7
+  },
+  "9": {
+   "printed": 6,
+   "written": 6
+  },
+  "10": {
+   "printed": 4,
+   "written": 4
+  }
+ },
+ "not_extracted_tables": {
+  "Table 1": "critical constants and acentric factors",
+  "Table 2": "three-phase vapour pressures of ethane-water and propane-water: measured P3(T) but no solute composition; the pressures reappear in Tables 5-6 (calculated column and correlation not in scope)",
+  "Table 3": "three-phase vapour pressures of isobutane/n-butane/n-pentane-water: no composition, pressure only (same reason as Table 2)",
+  "Table 4": "correlation parameters for P3 (model parameters)",
+  "Table 11": "parameters of the solubility correlation (fit)",
+  "Table 12": "parameters of the Henry constant correlation (fit)",
+  "Table 13": "parameters of the activity coefficient correlation (fit)"
+ },
+ "quality_remarks": [
+  "Table 2 (not extracted) prints the ethane three-phase pressure as 3.4122 MPa at all four temperatures (288.33-303.30 K) while Table 5 gives 3.4122, 3.7883, 4.1982 and 4.6146 MPa at those temperatures; the constant column in Table 2 is probably a copy error.",
+  "Table 4 (not extracted) prints temperature ranges truncated (288-30, 298-34 etc.).",
+  "n-Butane (Table 8) rows at 313.24-353.14 K and n-pentane/n-hexane rows are non-monotonic in pressure (e.g. 0.5669 MPa at 303.31 K then 0.3868 MPa at 313.24 K) because the first two n-butane points and all pentane/hexane points use helium-adjusted pressure; the pressure is therefore not the saturation pressure for these rows.",
+  "Large rel dev (up to 8.9% n-butane, -9.7% n-pentane) between the authors' own correlation and the data: caused by the authors' fit, not by the table.",
+  "Abstract: minimum T 288 K (ethane 288.33 K), consistent. Maximum T below the hydrocarbon critical temperature consistent (ethane 303.30 K vs Tc 305.32 K).",
+  "Temperature scale not stated (Pt100 calibrated against a 25 ohm reference probe); the xexp unit scale (x10^3 ... x10^6) is read from the headers: ethane 10^3, propane 10^4, isobutane 10^4, n-butane 10^5, n-pentane 10^5, n-hexane 10^6."
+ ],
+ "extraction_notes": "Header glyphs transliterated to ASCII (delta_x for the Greek delta x, 'x' for the multiplication sign); footnote letters stripped from header and cells into the note column; Unicode minus replaced by ASCII minus. Hydrocarbon gases other than the seven kept per SPEC v2.1 (i-c4h10, n-c4h10, n-c5h12, n-c6h14).",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

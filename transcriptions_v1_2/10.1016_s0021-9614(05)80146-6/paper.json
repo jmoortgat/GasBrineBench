@@ -1,0 +1,44 @@
+{
+ "doi": "10.1016/S0021-9614(05)80146-6",
+ "first_author": "Crovetto, Rosa",
+ "authors": "Rosa Crovetto, Robert H. Wood, Vladimir Majer",
+ "year": 1991,
+ "journal": "J. Chem. Thermodynamics 23, 1139-1146",
+ "title": "Revised densities of {xCO2 + (1-x)H2O} with x < 0.014 at supercritical conditions: molar volumes, partial molar volumes of CO2 at infinite dilution, and excess molar volumes",
+ "source_key": "CROVETTO(1991)",
+ "experimental_method": "Vibrating-tube densimeter: density difference between dilute aqueous CO2 and pure water at 651-726 K and 28, 33, 38 MPa; this paper corrects a computational error in the conversion of period of vibration to density in Crovetto et al. 1990.",
+ "uncertainties_stated": "None stated for the Table 1 values; Table 2 gives graphical extrapolation errors.",
+ "quality_remarks": "Revised data superseding Crovetto et al. J. Chem. Thermodynamics 1990, 22, 231 (authors report a computational mistake there, and that m in the earlier table was a different quantity; see footnote a). PDF page 1 is the end of another article (Svoboda and Finke, p.1138); the Crovetto paper occupies PDF pages 2-9 (journal pp.1139-1146). Two digits are blemished in the scan (Dp -83.56 at 665.40 K; Vphi 410.9 at 725.50 K), read from 400 dpi zooms and supported by internal consistency (rho + |Dp| equal within replicate pairs). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   1141,
+   1142
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2: apparent molar volumes of CO2 at x=0 and x=0.01 graphically obtained from Table 1 (derived/extrapolated)"
+ ],
+ "row_counts": {
+  "Table 1": "94 printed / 94 written (48 on p.1141, 46 on p.1142)"
+ },
+ "changes_after_image_check": [
+  "table_1 row 7: T 651.tl -> 651.10",
+  "row 23: 10^3 Dp/p0 83.~6 -> -83.56",
+  "row 38: 51.07 -> -51.07 (minus missing in text layer)",
+  "row 52: 16.08 -> -16.08",
+  "row 65: 5.39 -> -5.39",
+  "rows 54,56,57,58,61: rho/rho0 decimal comma -> full stop",
+  "row 91: Vphi 410.\"0 -> 410.9"
+ ],
+ "extraction_notes": "Text layer read with pdftotext -layout and all 94 rows compared with the 200 dpi page images. Sanity: all Dp negative; rho/rho0 decreases with T at fixed p.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "cells needed correction after the image check (signs, glyph errors) and two digits are blemished in the scan",
+ "pass2_diff": "Table 1: 94 rows; one disagreement (T 651.10 vs 651.11 in the second row of the 0.7809 m block) arbitrated on a 600 dpi crop: 651.11 (pass 2 right), pass 1 corrected; otherwise 846/846 identical."
+}

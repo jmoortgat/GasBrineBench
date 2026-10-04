@@ -1,0 +1,57 @@
+{
+ "doi": "10.1039/tf9090500068",
+ "first_author": "Fox",
+ "year": 1909,
+ "journal": "Trans. Faraday Soc. 5, 68-87",
+ "source_key": "FOX(1909)",
+ "experimental_method": "N2 and O2 in air-free distilled water: modified Estreicher-Ostwald burette method (gas volume, pressure and temperature read before and after absorption in a bulb at 0-50 C, several pressures per run); CO2 in sea-water/distilled water at low CO2 partial pressure: equilibration by rotating bottle, CO2 pressure by Pettenkofer (Ba(OH)2) titration, total CO2 and alkalinity by gas extraction and titration.",
+ "uncertainties_stated": "not stated as numbers; the author lists neglected-error considerations (residual air bubble 0.01-0.10 c.c. in earlier work, argon content of atmospheric nitrogen)",
+ "quality_remarks": "Experiment I uses atmospheric nitrogen (1.185 % Ar): coefficients in that table are not corrected to pure nitrogen. Absorption coefficient reduced to 760 mm; temperature scale not stated (1909 mercury thermometers). Several printed cells are inconsistent with the other printed columns (see mapping notes: Exp I row 29.88 C; Exp IV rows 13.75, 29.88, 37.51 C; Exp III w_t 128.970 at 40.09 C; CO2 block 24.18 C p 4.73). CO2 'total CO2' is chemically bound plus free CO2 at alkalinity ~40 mg OH/l, not a physical solubility.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   8,
+   9,
+   15
+  ],
+  "journal_pages": [
+   71,
+   75,
+   76,
+   82
+  ]
+ },
+ "not_extracted_tables": [
+  "Experiment II (nitrogen in distilled water): referred to in the text but not in this PDF",
+  "Table I (N2, 1,000 a for each degree 0-50 C from the author's interpolation formula; derived/smoothed)",
+  "Table II (O2 1,000 a each degree 0-50 C, formula-generated; derived/smoothed)",
+  "Table III and IV (sea-water N2 and O2 coefficients as a function of chlorine; formula-generated, derived)",
+  "Table V (free CO2 coefficient a, calculated from Bohr's NaCl data; derived)",
+  "Table VI (factor b, formula-generated; derived)",
+  "Winkler/Fox/Bohr and Bock comparison tables (literature or derived)",
+  "Raw sea-water N2 and O2 measurements (21 duplicate observations per gas): not tabulated in the paper"
+ ],
+ "row_counts": {
+  "table_1": "printed 11, written 11",
+  "table_2": "printed 22, written 22",
+  "table_3": "printed 18, written 18",
+  "table_4": "printed 26 data rows in 4 blocks (+4 label rows), written 26+4",
+  "table_5": "printed 57 data rows in 7 blocks (+7 label rows), written 57+7"
+ },
+ "changes_after_image_check": [
+  "table_2 row 18 (first 45.29 C row): t 45.20 -> 45.29",
+  "table_3 row 3 (6.60 C): 1,000 a 41.93 -> 41.58",
+  "table_3 row 16 (43.25 C): w_t 128.387 -> 128.587",
+  "(all other cells were read from the image directly because the text layer is scrambled OCR; text-layer digits such as I for 1 are not listed individually)"
+ ],
+ "extraction_notes": "Printed mid-dot decimals (0'53) written with a full stop. Experiment tables are landscape pages rotated for reading. Table 1 row 3 carries dagger (rejected observation, kept; note column). Coefficient is a Bunsen-type coefficient (volume of gas at 0 C, 760 mm per volume of water at t C at 760 mm).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned page text layer was unusable OCR; every cell was read from the page image, so a blind second pass is required.",
+ "changes_after_pass2": [
+  "table_2 row 0 column 3: 138.089 -> 138.689 (second reader; consistent with the 138.69x series of the column)"
+ ],
+ "pass2_diff": "Experiments I, III, IV, alkalinity and CO2-pressure series: 134 rows, 733 numbers; one disagreement (Exp III first row v_t 138.089 vs 138.689): pass 2 correct (the column runs 138.69x, bulb volume 138.686), pass 1 corrected."
+}

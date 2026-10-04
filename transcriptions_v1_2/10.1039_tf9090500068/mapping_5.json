@@ -1,0 +1,208 @@
+{
+ "temperature_scale": "not stated",
+ "gas": "co2",
+ "regime": "",
+ "property": "other",
+ "page_journal": 82,
+ "footnotes_as_printed": "none on the table (table headed by the text 'The measurements are given here, and the results are plotted in Fig. 6')",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "'total CO2 in c.c. per litre' of sea-water (litre of the sea-water sample); gas volume basis (0 C, 760 mm) not stated",
+ "gas_basis": "not_applicable",
+ "table": "CO2 pressure series (unnumbered, right two blocks of table on p.82)",
+ "title_as_printed": "p, Free CO2 pa (c.c.), Total CO2 x (c.c.), blocks with t, Cl, OH = 40.00",
+ "pressure_note": "p printed in units 'per 10,000' (CO2 partial pressure as ten-thousandths of an atmosphere, text: 'pressures 1-6.5 per 10,000'); not stated explicitly as atm",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "per block (group_rows)"
+  },
+  "P": {
+   "col": "p (per 10,000)",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "scale": 0.0001
+  },
+  "value": {
+   "col": "Total CO2 x (c.c.)",
+   "unit": "cm3_CO2_per_litre_solution",
+   "what": "total CO2 (free plus bicarbonate) in c.c. per litre of sea-water at alkalinity 40 mg OH per litre"
+  },
+  "value2": {
+   "col": "Free CO2 pa (c.c.)",
+   "unit": "cm3_CO2_per_litre_solution",
+   "what": "free CO2 = p x a, calculated by the author from Bohr's NaCl data, not measured",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "sea-water of chlorine content Cl per mille (g per kg); alkalinity 40.00 mg OH per litre in every block; Cl 0.00 = distilled water adjusted with NaOH/NaHCO3"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    16,
+    33,
+    40,
+    51,
+    58
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "2.77",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "7.14",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "8.06",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "14.26",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "10.53",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "0.00",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 33,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15.04",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "19.46",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "20.96",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "14.36",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "24.18",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "0.00",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  },
+  {
+   "label_row": 58,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "28.49",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.Cl",
+     "value": "19.48",
+     "unit": "g_per_kg"
+    },
+    {
+     "path": "extra.OH",
+     "value": "40.00",
+     "unit": "mg_OH_per_litre"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Free CO2 pa (derived)"
+ ],
+ "conversion_needs": [
+  "p per 10,000 -> atm x 1e-4",
+  "total CO2 includes chemically bound CO2; litre of solution to molality needs density"
+ ],
+ "notes": "Right two column groups of the printed table (7 blocks) stacked in reading order (second column group first block downwards, then third). Block 20.96 C printed 'HO = 40.00' (misprint for OH). Block 24.18 printed 'OH = 40.00' with letter c in text layer, read from image as 40.00. Row 24.18 C p=4.73 pa 0.32 total 47.66 looks inconsistent with neighbours (pa/p ratio 0.068 vs 0.08-0.10; probably a misprint, e.g. 3.73); printed as is. Label rows are 0, 9, 16, 33, 40, 51, 58 (0-based over all rows after the header)."
+}

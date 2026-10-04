@@ -1,0 +1,40 @@
+{
+ "doi": "10.1023/A:1015294905132",
+ "first_author": "Sabirzyanov",
+ "year": 2002,
+ "journal": "High Temperature 40(2), 203-206",
+ "source_key": "SABIRZYANOV(2002)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; all 28 cells of Tables 1-2 matched the 200 dpi page image; no corrections",
+ "experimental_method": "Circulation (dynamic saturation) facility: CO2 passed at 0.3-0.4 kg/h through an extraction cell with water at fixed T and P, water dissolved found from material balance by weighing.",
+ "uncertainties_stated": "T control +/-0.05 K, T measurement +/-0.1 K, P set within +/-0.1 MPa; mean-square relative error of solubility 7.2%; agreement with King et al. within total error 14% at 313 K.",
+ "quality_remarks": "Only two isotherms, 7 points each. At 313 K y falls slightly at the highest pressure (6.07 at 17.96 MPa, 5.96 at 20.54 MPa) and rises very steeply between 9.12 and 10.26 MPa; kept as printed. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   205
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 3",
+   "reason": "pure-component critical constants (literature properties)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "fitted Soave interaction parameters: model parameters"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 7 points, written 7",
+  "table_2": "printed 7 points, written 7"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Tables printed transposed; written one point per row. P increases monotonically; y increases with P in Table 2; in Table 1 the last point is slightly lower than the previous one. English translation of a Russian original.",
+ "pass2_diff": "Tables 1 and 2: 7 + 7 points, all numbers identical."
+}

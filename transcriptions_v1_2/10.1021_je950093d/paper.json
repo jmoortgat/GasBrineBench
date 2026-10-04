@@ -1,0 +1,37 @@
+{
+ "doi": "10.1021/je950093d",
+ "first_author": "Wylie, Russell G.",
+ "authors": "Russell G. Wylie, Robert S. Fisher",
+ "year": 1996,
+ "journal": "Journal of Chemical and Engineering Data 41(2), 175-180",
+ "title": "Molecular Interaction of Water Vapor and Oxygen",
+ "source_key": "WYLIE(1996)",
+ "experimental_method": "Flow saturation method: oxygen passed through a two-stage saturator in a temperature-controlled bath at 25, 50 and 75 C, the water in the gas collected chemically and weighed together with the dried gas (mass of water per mass of oxygen gives x_w and hence f_w).",
+ "uncertainties_stated": "Uncertainties are 3-sigma (random and systematic summed in quadrature); no uncertainty column for individual f_w values in Table 1; rms difference of the group means from the fitted virial model is 9.8 parts in 10^4 (text, Figure 4).",
+ "quality_remarks": "Oxygen of commercial purity (0.5-1.0 vol% argon according to supplier, authors infer about 0.4 vol% from the fitted offset); no argon determination made. Table 1 values are means of about five runs each adjusted to nominal conditions, not raw single measurements. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   176
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 2": "theoretically derived Coww (Hyland-Mason method), not measured",
+  "Table 3": "adopted compressibility factor of pure oxygen (derived/interpolated)",
+  "Table 4": "fitted virial coefficients Bow, Coow and offsets",
+  "Table 5": "calculated Bow and derivatives",
+  "Table 6": "calculated Coow",
+  "Table 7": "calculated gw and fw from the virial model (derived)"
+ },
+ "row_counts": "Table 1 printed 5 pressure rows x 3 temperature columns (14 values, one blank cell); written 14 long-form rows",
+ "changes_after_image_check": "none",
+ "extraction_notes": "Restacked to long form; the blank 75 C / 2.1580 MPa cell has no row.",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the page image",
+ "status": "verified_pass2",
+ "pass2_diff": "Table 1: all printed values identical; pass-1-only numbers are pressure and temperature keys filled into the restacked rows."
+}

@@ -1,0 +1,54 @@
+{
+ "doi": "10.1016/0378-3812(94)80013-8",
+ "first_author": "Brunner",
+ "year": 1994,
+ "journal": "Fluid Phase Equilibria 100, 253-268",
+ "source_key": "BRUNNER(1994)",
+ "title": "Phase equilibria in systems containing hydrogen, carbon dioxide, water and hydrocarbons",
+ "experimental_method": "static-analytical method in a 1000 cm3 autoclave with electromechanically driven stirrer; phases sampled through thermostated capillaries, liquid part collected in cold traps (water by Karl Fischer, hydrocarbons by GC), gas part volume measured in burettes.",
+ "uncertainties_stated": "temperature < 1 K; pressure < 50 kPa; composition accuracy about 1 mol% (calibration and reproducibility of the analysis)",
+ "quality_remarks": "Phase labels of Table 2 are 'Hydrocarbon Phase' / 'Aqueous Phase' / 'Vapor Phase'; row 573.15 K, 10.1 MPa, x1 = 0.996 (water-rich, y1 = 0.921) is printed under the hydrocarbon heading. Printed dashes mark absent phases. CO2 contents are not printed.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8
+  ],
+  "journal_pages": [
+   260
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "CO2 + n-hexadecane binary VLE (no water, organic solvent; no in-scope water/brine system)"
+  },
+  {
+   "table": "Table 3",
+   "reason": "benzene + n-hexadecane + CO2 (no water, organic solvents)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "benzene + n-hexadecane + hydrogen (no water, organic solvents)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "EOS pure-component parameters"
+  }
+ ],
+ "row_counts": {
+  "table_2": {
+   "printed_rows": 22,
+   "written_data_rows": 22,
+   "label_rows_additional": 0
+  }
+ },
+ "changes_after_image_check": [
+  "table_2: dashes (printed for absent phases) were missing from the text layer; the CSV was built from the page image, no digit changed after the image check; P and T filled down from the first row of each block"
+ ],
+ "extraction_notes": "Table 2 only (water-containing). Composition by difference not recorded. Temperature scale and pressure basis not stated.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer dropped the dash cells and the table was keyed in from the image; second blind read recommended because dash placement defines which phase exists for each row",
+ "pass2_diff": "Table 2: 22 rows; all numbers identical (pass 1 filled down P and T, pass 2 left them blank as printed)."
+}

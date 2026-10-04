@@ -1,0 +1,58 @@
+{
+ "doi": "10.1006/jcht.1994.1067",
+ "first_author": "Holmes",
+ "year": 1994,
+ "journal": "J. Chem. Thermodynamics 26, 581-594",
+ "source_key": "HOLMES(1994)",
+ "experimental_method": "High-temperature isopiestic apparatus with in-situ weighing; mixed NaHSO4 + Na2SO4 solutions equilibrated with NaCl(aq) reference at five temperatures.",
+ "uncertainties_stated": "not stated in the paper's text pages examined",
+ "quality_remarks": "Osmotic coefficients are stoichiometric (3 particles assumed). Table 1 row T=443.32 K, y=0.35, (0.4905, 1.8944, NaCl 1.5337) looks anomalous (see mapping). Composition definition of y not explicit. Out-of-scope component NaHSO4 present in all mixtures; Na2SO4 is in scope; all rows are mixtures and extracted per the mixed-species rule.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   583,
+   584,
+   585
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned PDF with no text layer; two independent tesseract passes (200 dpi with word coordinates for column assignment, 400 dpi token multiset) were compared and 16 cells needed correction; second pass by a different agent is required.",
+ "not_extracted_tables": [
+  "Table 2: fitted mixing parameters (model parameters)",
+  "Table 3: temperature-independent parameters (model parameters)",
+  "Table 4: ion-interaction parameter fits (model parameters)"
+ ],
+ "row_counts": {
+  "Table 1": {
+   "printed": "114 printed lines (25+23+19+26+21 over five temperatures) with 3 y-blocks and an NaCl column",
+   "written": "308 CSV rows = 15 y-block label rows + 5 T label rows + 288 data rows (sum of per-y entries 22+25+17 + 18+23+17 + 19+19+16 + 22+21+18 + 19+17+15)"
+  }
+ },
+ "changes_after_image_check": [
+  "T=383.46 K y=0.65 line: m/m0 18103 -> 1.8103",
+  "T=383.46 K line NaCl: 1.7875 -> 1.7575",
+  "T=413.95 K y=0.5 m/m0: 1.0002, -> 1.0002",
+  "T=443.32 K NaCl: 4,5067 -> 4.5067",
+  "T=443.32 K NaCl: 4,5908 -> 4.5908",
+  "T=473.21 K y=0.5 phi: 0,5593 -> 0.5593",
+  "T=473.21 K y=0.35 phi 9.5568 -> 0.5568",
+  "T=473.21 K y=0.5 phi 9.5507 -> 0.5507",
+  "T=473.21 K y=0.35 m 1,0250 -> 1.0250",
+  "T=473.21 K y=0.65 m 14839 -> 1.4839",
+  "T=473.21 K NaCl 19972 -> 1.9972",
+  "T=473.21 K y=0.35 m 43277 -> 4.3277",
+  "T=498.19 K y=0.35 phi 9.5307 -> 0.5307",
+  "T=498.19 K y=0.5 phi 9.5099 -> 0.5099",
+  "T=498.19 K y=0.65 m 9.9088 -> 0.9088",
+  "T=498.19 K (p585) NaCl 08835 -> 0.8835"
+ ],
+ "extraction_notes": "The row-count line above: 114 is the sum of line counts 25+23+19+26+21=114. Table extracted stacked per SPEC. Stoichiometric osmotic coefficient formula eq (1): phi_x = 2 m_r phi_r/(3 m_x). Every other digit agreed between the two independent OCR passes.",
+ "pass2_diff": "structured comparison: 288 (T, y, phi, m/m0, m_NaCl) tuples identical between the stacked pass-1 layout and the wide pass-2 layout"
+}

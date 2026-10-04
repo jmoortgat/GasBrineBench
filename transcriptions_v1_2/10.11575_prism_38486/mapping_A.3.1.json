@@ -1,0 +1,91 @@
+{
+ "table": "Table A.3.1",
+ "page_journal": 156,
+ "title_as_printed": "Water content for H2S + CO2 mixture in equilibrium with the hydrate.",
+ "footnotes_as_printed": {
+  "a": "Stability during temperature measurements was calculated to be +-0.1K (well above the accuracy of the PRT).",
+  "b": "Uncertainty for pressure measurements calculated to be +-0.001 MPa (95% confidence).",
+  "c": "Uncertainty for water content measurements is 2% relative accuracy and reproducibility for triplicate measurements was within a standard deviation of 25 ppm."
+ },
+ "property": "y_h2o",
+ "gas": "h2s-co2",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "p / MPa, total vs partial not stated; footnote letters not printed on the table headers.",
+ "columns": {
+  "T": {
+   "col": "T / K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p / MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "yH2O (exp) / ppm",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1e-06
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "H2S + CO2 mixture; compositions in the block label rows (74.7% H2S + 25.3% CO2; 55.5% H2S + 44.5% CO2), basis of the % not stated (presumably mol%). Prose (page 156 text) says '55.5% H2S + 45.5% CO2' while the table label says 44.5%: misprint in text, table value kept."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "h2s-co2"
+    },
+    {
+     "path": "composition.constant.H2S",
+     "value": "74.7",
+     "unit": "percent_basis_not_stated"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "25.3",
+     "unit": "percent_basis_not_stated"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "h2s-co2"
+    },
+    {
+     "path": "composition.constant.H2S",
+     "value": "55.5",
+     "unit": "percent_basis_not_stated"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "44.5",
+     "unit": "percent_basis_not_stated"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "volume_basis": "not applicable",
+ "volume_basis_evidence": "printed yH2O (exp) / ppm; basis not stated",
+ "notes": "Side-by-side blocks stacked: left block (74.7% H2S; 12 rows) first, then right block (55.5% H2S; 9 rows). Blank-line separated isotherms inside each block. Gas composition is the feed composition (not stated whether equilibrium vapor composition)."
+}

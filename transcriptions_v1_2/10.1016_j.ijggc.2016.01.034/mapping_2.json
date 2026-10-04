@@ -1,0 +1,53 @@
+{
+ "table": "Table 2",
+ "page_journal": 68,
+ "title_as_printed": "Molar fraction of water in vapor phase yH2O (permil) calculated from the fit in Fig. 7a as a function of pressure (bar) at 100 C and difference with the EOS of Duan and Sun (2003) (Delta model, %). The values are the mean of 2-5 measurements at a given pressure.",
+ "footnotes_as_printed": {
+  "a": "+-0.2 bar.",
+  "b": "At 95% confidence; n.d.: not determined."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "autoclave pressure; basis (total) assumed as total pressure of CO2-H2O system, not explicitly stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "100"
+  },
+  "P": {
+   "col": "Pressure (bar)",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "permil H2O",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001,
+   "note": "value = printed permil x 0.001; derived from Raman area ratio A_CO2/A_H2O via a linear fit made against Duan and Sun (2003) model y values, so model-calibrated"
+  },
+  "uncertainty": {
+   "col": "u(permil H2O)",
+   "unit": "permil",
+   "note": "95% confidence; scale 0.001; n.d. = not determined"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, CO2 rich phase"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "A_CO2/A_H2O (Raman peak-area ratio, measured)",
+  "Delta model (%) (calculated by authors)"
+ ],
+ "conversion_needs": [],
+ "notes": "The authors write 'calculated from the fit in Fig. 7a'; the fit relates measured area ratio to model-derived yCO2/yH2O. Values at 4.9 and 11.7 bar have huge u.",
+ "quality": "U",
+ "quality_reason": "mole fraction derived through a Raman calibration anchored to an equation of state (audit 2026-10-02)"
+}

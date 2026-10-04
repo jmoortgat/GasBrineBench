@@ -1,0 +1,820 @@
+{
+ "table": "Table I",
+ "page_journal": 191,
+ "title_as_printed": "Experimental Results of Carbon Dioxide Solubility in Aqueous Binary Mixed-Salt Solutions at 25 C and 1 atm",
+ "footnotes_as_printed": {
+  "a": "From Ref. 8."
+ },
+ "property": "ostwald",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'measured at 25 C and 1 atm partial pressure of carbon dioxide' (text, p. 190); title: 'at 25 C and 1 atm'; saturation method with correction for vapour pressure of the solution (estimated by the Robinson-Bower method from single-salt data)",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "'Ostwald absorption coefficient, L, which is defined as the ratio of the volume of absorbed gas to the volume of absorbing liquid at the temperature and pressure of the measurement'; 'absorbing liquid' is the (gas-free) salt solution but the paper does not say solution vs solvent explicitly. Salt concentration Cs is 'total concentration of mixed salt (kmol m-3)' ('The molarity is used here as the salt concentration variable'), per volume of solution presumably, basis not spelled out.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "atm",
+   "constant": "1",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "L",
+   "unit": "ostwald_absorption_coefficient"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "total_salt": {
+    "col": "Cs kmol/m3",
+    "unit": "kmol/m3 (= mol/L)"
+   }
+  },
+  "other_species": "Total salt concentration Cs (kmol/m3 = mol/L) of the salt mixture is per row; the share of each salt is its mole fraction in the salt mixture (water excluded), set per block through group_rows (composition.constant.<salt>, unit mole_fraction_of_salt_mixture). Systems containing salts outside the six-ion set: MgSO4, NH4Cl, (NH4)2SO4, KNO3 (partner salts: NaCl or NH4Cl)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    7,
+    13,
+    19,
+    25,
+    31,
+    32,
+    38,
+    44,
+    50,
+    56,
+    62,
+    63,
+    70,
+    77,
+    84,
+    91,
+    98,
+    99,
+    105,
+    111,
+    117,
+    123,
+    129,
+    130,
+    138,
+    146,
+    153,
+    161,
+    169,
+    170,
+    179,
+    188,
+    197,
+    205,
+    214,
+    215,
+    221,
+    227,
+    233,
+    240
+   ],
+   "reason": "system heading rows and block label rows (x1 = ...); block label rows carry the group_rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 19,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 70,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 77,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 84,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 99,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 105,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 111,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 117,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 123,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 130,
+   "sets": [
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.(NH4)2SO4",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 138,
+   "sets": [
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.(NH4)2SO4",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 146,
+   "sets": [
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.(NH4)2SO4",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 153,
+   "sets": [
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.(NH4)2SO4",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 161,
+   "sets": [
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.(NH4)2SO4",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 170,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 179,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 188,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 197,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 205,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.NH4Cl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 215,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KNO3",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  },
+  {
+   "label_row": 221,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KNO3",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 227,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KNO3",
+     "value": "0.50",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 233,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.75",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KNO3",
+     "value": "0.25",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": false
+    }
+   ]
+  },
+  {
+   "label_row": 240,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "composition.constant.KNO3",
+     "value": "0.00",
+     "unit": "mole_fraction_of_salt_mixture"
+    },
+    {
+     "path": "value.from_literature",
+     "value": true
+    },
+    {
+     "path": "note",
+     "value": "single-salt block, footnote a: From Ref. 8 (Yasunishi and Yoshida, J. Chem. Eng. Data, in press)"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Cs is a molarity (per volume of solution, presumably): conversion to molality needs solution density",
+  "Ostwald coefficient: converting to mole fraction needs CO2 molar volume and solution density"
+ ],
+ "notes": "Five side-by-side blocks (x1 = 0.00, 0.25, 0.50, 0.75, 1.00) per salt system are stacked left to right, one system heading row plus one block label row each. x1 is the mole fraction of salt (1) in the mixed salt, x2 = 1 - x1. The x1 = 0.00 and x1 = 1.00 blocks (single salts) are marked from_literature through footnote a (Ref. 8, same group). Rows not printed under a block (shorter columns) are simply absent. The NaCl single-salt block (0.455 ... 3.400) is identical in the six systems that contain NaCl as x1 = 1.00; the NaCl+Na2SO4 x1=0.50 block repeats as Table II block 1 and the NaCl+MgSO4 x1=0.50 block as Table IV block 1 (exact replicate rows kept)."
+}

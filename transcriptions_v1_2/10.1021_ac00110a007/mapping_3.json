@@ -1,0 +1,75 @@
+{
+ "table": "Table 3",
+ "page_journal": 2371,
+ "title_as_printed": "Measured Water Saturation Concentrations in Various Fluids",
+ "footnotes_as_printed": {
+  "a": "Where available, literature values are reported for comparison.",
+  "b": "Reference 20.",
+  "c": "Reference 4."
+ },
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Fluid pressure monitored by an electronic transducer to +-1 bar; the paper does not say whether it is total pressure",
+ "columns": {
+  "T": {
+   "col": "temp (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pressure (bar)",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "H2O mol %",
+   "unit": "mole_fraction_water_in_fluid_phase",
+   "scale": 0.01,
+   "what": "water saturation concentration in the CO2-rich (supercritical) fluid, mol % H2O, measured by near-IR absorbance"
+  },
+  "value2": {
+   "col": "H2O wt %",
+   "unit": "mass_percent_water_in_fluid_phase",
+   "what": "same saturation concentration in wt %"
+  },
+  "value3": {
+   "col": "lit. value (mol %)",
+   "unit": "mole_fraction_water_in_fluid_phase",
+   "scale": 0.01,
+   "from_literature": true,
+   "what": "literature value for comparison (Ref. 4 for CO2: derived from mass spectrometric measurements)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt. Fluid phase is pure CO2 (rows 2-3), or the refrigerants R22 / R134a (out of scope)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1
+   ],
+   "reason": "solvent is refrigerant R22 (chlorodifluoromethane), not an in-scope gas"
+  },
+  {
+   "rows": [
+    4,
+    5
+   ],
+   "reason": "solvent is refrigerant R134a, not an in-scope gas"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "water band positions (cm-1) at 0.5 mol % (spectroscopic)"
+ ],
+ "conversion_needs": [
+  "value printed in mol %: multiply by 0.01",
+  "second-phase composition not measured: the aqueous phase is assumed pure water"
+ ],
+ "notes": "Only rows 2 and 3 (CO2, 344.8 bar, 50 and 75 C) are in scope. All six printed rows are kept in the CSV. The text says water is quantified in the supercritical fluid at saturation (peak area plateau). The paper does not define the physical state of 'saturation' beyond that, and no standard conditions for gas volumes are used."
+}

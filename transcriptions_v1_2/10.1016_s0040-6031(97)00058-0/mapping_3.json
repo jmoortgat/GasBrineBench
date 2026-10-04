@@ -1,0 +1,53 @@
+{
+ "table": "Table 3",
+ "page_journal": 160,
+ "title_as_printed": "Table 3: The dissolution of NaCl in water at 59.2 C; nw = moles of water, n1 = moles of pure solid sodium chloride",
+ "footnotes_as_printed": "none printed",
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (calorimetric dissolution in water; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "59.2"
+  },
+  "value": {
+   "col": "dH_exp/n_1 = DeltasolH(m) J (mol NaCl)-1",
+   "unit": "J/mol",
+   "derived_by_authors": true,
+   "what": "molar dissolution enthalpy of solid NaCl to final molality m, = dH_exp / n_1 (authors' division of the measured heat)"
+  },
+  "value2": {
+   "col": "dH_exp J",
+   "unit": "J",
+   "what": "measured heat of dissolution of n_1 mol NaCl in n_w mol water (raw calorimeter result, sign as printed: positive)"
+  },
+  "m_final": {
+   "col": "m mol kg-1",
+   "unit": "mol/kg"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "water; molality is that of the final solution after dissolving n_1 mol NaCl in n_w mol water (m = n_1/(n_w x 0.018015) numerically consistent); per kg water implied by n_w"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "n_w mol (moles of water)",
+  "n_1 10^2 mol (moles of NaCl dissolved)"
+ ],
+ "conversion_needs": [
+  "n_w and n_1 are amounts per experiment, not per kg"
+ ],
+ "notes": "Isothermal batch calorimetry (SETARAM C80D); T printed to 0.1 C in caption (24.4, 44.3, 59.2 C)."
+}

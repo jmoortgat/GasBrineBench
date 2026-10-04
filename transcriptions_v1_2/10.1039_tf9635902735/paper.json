@@ -1,0 +1,34 @@
+{
+ "doi": "10.1039/tf9635902735",
+ "first_author": "Ben-Naim",
+ "authors": "A. Ben-Naim and S. Baer",
+ "title": "Method for measuring solubilities of slightly soluble gases in liquids",
+ "year": 1963,
+ "journal": "Trans. Faraday Soc. 59, 2735-2738",
+ "source_key": "BENNAIM(1963)",
+ "experimental_method": "Gas burette volumetric method: gas saturated with water vapour is dissolved in outgassed water at constant pressure of 1 atm in a stirred thermostatted vessel and the volume of gas dissolved is read directly on the mercury-levelled burette.",
+ "uncertainties_stated": "Apparatus precision 0.2 %; thermostat +-0.03 C; estimated error from diffusion through capillaries at most 0.01 %; neglect of solvent expansion on dissolution (partial molar volume correction about half of the estimated total error) not applied.",
+ "quality_remarks": "Authors' argon values are systematically higher than Lannung and Morrison and Johnstone, which they attribute to incomplete saturation in the earlier work. Supersaturation (about 1 % high) observed with too vigorous stirring; procedure avoids it. Temperature scale not stated. Argon is outside the seven gases of the brief but is kept per SPEC v2.1 convention 1.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   2738
+  ]
+ },
+ "not_extracted_tables": [
+  "Fig. 3 (comparison plot with Lannung and Morrison and Johnstone data): figure, not a table"
+ ],
+ "row_counts": {
+  "Table 1": "printed 9 temperatures (1 row of t, 1 row of gamma x 10^3); written 9 data rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer had a clean table (mid-dots read as hyphens, e.g. 34-7, 32-99); every cell matched the page image. Sanity: gamma decreases monotonically with t over 2.9-27.9 C. Table spans only pure water, so no salt. Standard conditions not defined (not needed for Ostwald coefficient).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page image, no corrections",
+ "pass2_diff": "Table 1: 9 rows, 18/18 numbers identical (pass 2 transposed)."
+}

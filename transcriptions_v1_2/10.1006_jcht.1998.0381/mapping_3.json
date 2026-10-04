@@ -1,0 +1,63 @@
+{
+ "table": "Table 3",
+ "page_journal": 1194,
+ "title_as_printed": "Vapour pressures p of water over potassium chloride solutions at temperature T",
+ "footnotes_as_printed": {
+  "*": "Saturated solutions of potassium chloride.",
+  "a": "Dp = p(H2O,T) - p(H2O + KCl, m_sat, T) measured by the differential isoteniscopic method.",
+  "b": "p = p(H2O,T) - Dp, where p(H2O,T) is calculated from the Saul and Wagner equation.(14)",
+  "c": "Calculated from the Pitzer equation for osmotic coefficients of KCl.(17)",
+  "d": "Calculated from the water activity obtained in isopiestic measurements by Stokes and Robinson.(18)"
+ },
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "vapour pressure of water over the solution (absolute); direct isoteniscopic for the first 5 rows and one row at 303.95 K; for '*' rows p = p(H2O) from Saul-Wagner minus measured Dp (derived)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/Pa",
+   "unit": "Pa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "p/Pa",
+   "unit": "Pa"
+  },
+  "value2": {
+   "col": "Dp/Pa",
+   "unit": "Pa",
+   "what": "vapour pressure lowering p(H2O,T) - p(solution), differential isoteniscopic method"
+  },
+  "value3": {
+   "col": "p/Pa (calculated)",
+   "unit": "Pa",
+   "what": "Pitzer equation (rows 0-3) or Stokes-Robinson isopiestic (row 5)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "KCl": {
+    "col": "m/(mol kg-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "rows with '*' are saturated KCl solutions; molality not measured here (Table 5 gives literature-averaged m_sat, e.g. 4.783 mol/kg at 298.15 K, not extracted)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "p/Pa (calculated)"
+ ],
+ "conversion_needs": [
+  "rows with '*' need saturation molality from external solubility data (builder or Table 5, derived)"
+ ],
+ "notes": "T printed only on first row of each T block and filled down (carried forward) in the CSV; rows 5-9 share 298.15 K. The '*' in the m column is printed text. Row 14 (303.95 K, p 3701.7, no Dp) is printed on its own line. Footnote letters b,d stripped from numbers and recorded in the note column."
+}

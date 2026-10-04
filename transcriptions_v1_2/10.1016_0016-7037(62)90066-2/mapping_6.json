@@ -1,0 +1,63 @@
+{
+  "table": "Table 6",
+  "page": 925,
+  "title_as_printed": "Solubility of nitrogen in aqueous magnesium sulphate at 30°C",
+  "property": "solubility_x",
+  "gas": "n2",
+  "regime": "",
+  "columns": {
+    "T": {
+      "col": "",
+      "unit": "C",
+      "constant": "30"
+    },
+    "P": {
+      "col": "Pressure (psia)",
+      "unit": "psia",
+      "basis": "total"
+    },
+    "value": {
+      "col": "Mole fraction of nitrogen ( x 10^4)",
+      "unit": "mole_fraction_gas_in_aqueous_phase",
+      "scale": "x1e-4 (printed x 10^4)"
+    }
+  },
+  "composition": {
+    "basis": "normality",
+    "per_row": {},
+    "constant": {},
+    "other_species": "",
+    "note": "Composition is set per block by the label rows (group_rows), unit N = equivalents per litre of solution."
+  },
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        6
+      ],
+      "reason": "block label row giving the concentration of the rows below (also repeated column header absent: header printed once per block pair)"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": {
+        "composition.constant.MgSO4": "2.49 N"
+      }
+    },
+    {
+      "label_row": 6,
+      "sets": {
+        "composition.constant.MgSO4": "4.98 N"
+      }
+    }
+  ],
+  "conversion_needs": [
+    "Concentration is normality (equivalents/L of solution), not molality: N = mol/L x charge equivalents (for CaCl2, Na2SO4, MgSO4 1 N = 0.5 mol/L; for NaCl 1 N = 1 mol/L). Conversion to mol/kg needs solution density at 30 C, which the paper does not give.",
+    "Mole fraction of N2 is printed x10^4: stored value must be multiplied by 1e-4. Basis (mole fraction in the whole liquid, salt as undissociated species or ions) is not stated.",
+    "Pressure psia to MPa (x 0.00689476); pressure is total pressure with no correction for water vapour (stated for water, Table 2 text), whether this holds for the salt solutions is not stated.",
+    "Temperature given only as 30 C (303.15 K); temperature scale not stated.",
+    "Paper gives no solution densities."
+  ],
+  "notes": "Table printed as side-by-side blocks; stacked here one block after another with the printed block heading as a label row."
+}

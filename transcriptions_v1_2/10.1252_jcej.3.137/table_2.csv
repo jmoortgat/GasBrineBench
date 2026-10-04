@@ -1,0 +1,46 @@
+System,xi (ionic strength fraction of first salt),I (mol/l),alpha,note
+HNO3,,,,
+,-,0.646,0.1114,
+,-,0.657,0.1113,
+,-,0.979,0.1103,
+,-,1.408,0.1096,
+,-,1.810,0.1105,
+NaCl+NH4NO3,,,,
+,0.4821,0.600,0.0973,
+,0.4821,1.373,0.0824,xi:filled_down
+,0.4821,1.611,0.0784,xi:filled_down
+,0.4821,2.926,0.0603,xi:filled_down
+,0.4821,3.686,0.0514,xi:filled_down
+Na2SO4+NH4NO3,,,,
+,0.3869,0.425,0.1020,
+,0.3869,0.818,0.0965,xi:filled_down
+,0.3869,0.904,0.0926,xi:filled_down
+,0.3869,0.915,0.0964,xi:filled_down
+,0.3869,1.306,0.0894,xi:filled_down
+,0.3869,1.749,0.0798,xi:filled_down
+,0.3869,1.801,0.0803,xi:filled_down
+BaCl2+NH4NO3,,,,
+,0.5399,0.430,0.1046,
+,0.5399,0.691,0.0998,xi:filled_down
+,0.5399,0.911,0.0948,xi:filled_down
+,0.5399,1.086,0.0915,xi:filled_down
+NaCl+HNO3,,,,
+,0.6156,1.102,0.0903,
+,0.6156,1.421,0.0834,xi:filled_down
+,0.6156,1.988,0.0754,xi:filled_down
+,0.6156,2.308,0.0722,xi:filled_down
+KHCO3+K2CO3,,,,
+,0.8343,0.286,0.0983,
+,0.8343,0.645,0.0805,xi:filled_down
+,0.8343,0.704,0.0848,xi:filled_down
+,0.8343,1.046,0.0709,xi:filled_down
+,0.8343,1.299,0.0627,xi:filled_down
+NaHCO3+Na2CO3,,,,
+,0.8217,0.302,0.0951,
+,0.8217,0.645,0.0824,xi:filled_down
+,0.8217,0.799,0.0774,xi:filled_down
+NaCl+BaCl2+NH4NO3,,,,
+,1/3,0.584,0.0985,"xi:printed '1/3 for each salt' on first row of block; value 1/3 for each salt, filled down on other rows"
+,1/3,0.748,0.0955,xi:filled_down (1/3 for each salt)
+,1/3,0.952,0.0911,xi:filled_down (1/3 for each salt)
+,1/3,1.145,0.0881,xi:filled_down (1/3 for each salt)

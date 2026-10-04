@@ -1,0 +1,210 @@
+{
+ "table": "Table 1",
+ "page_journal": 1069,
+ "title_as_printed": "Enthalpies of dilution dH_dil(m1 -> m2) of various salt solutions at 303.15 K (cal_th = 4.184 J)",
+ "footnotes_as_printed": "not captured (none printed besides cal_th = 4.184 J)",
+ "property": "dh_dilution",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (microcalorimeter, pressure not given)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "303.15"
+  },
+  "value": {
+   "col": "dH_dil(expt) cal_th/mol",
+   "unit": "cal_th_per_mol",
+   "scale": 4.184,
+   "what": "measured enthalpy of dilution from molality m1 (printed in the block label) to m2 (per mole of solute; basis per mol solute as printed 'cal_th mol-1'), value x 4.184 gives J/mol"
+  },
+  "value2": {
+   "col": "dH_dil(calc.) cal_th/mol",
+   "unit": "cal_th_per_mol",
+   "scale": 4.184,
+   "what": "calculated from the authors' extended Debye-Hueckel fit (not measured)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "salt_from_label_row": true,
+  "per_row": {
+   "final_molality_m2": {
+    "col": "m2 mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "salts in each block: RbCl, CsCl, NaF, NaBr, NaI, NaHCO3, CaCl2, SrCl2, BaCl2, Na2CO3 (only CaCl2 is in the in-scope salt set; all kept); ion-exchanged water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    23,
+    31,
+    39,
+    50,
+    57,
+    64,
+    71
+   ],
+   "reason": "block label rows giving salt and initial molality m1"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "RbCl"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "1.03489",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CsCl"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "0.95760",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaF"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "0.91521",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaBr"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "1.07783",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaI"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "1.12909",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaHCO3"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "0.97942",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "0.98994",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "1.0071",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "BaCl2"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "1.08889",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  },
+  {
+   "label_row": 71,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2CO3"
+    },
+    {
+     "path": "composition.m_initial",
+     "value": "0.98860",
+     "unit": "mol_per_kg_water"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "m1 (initial molality, in label rows, recorded as composition.m_initial)"
+ ],
+ "conversion_needs": [
+  "cal_th to J via 4.184",
+  "molality is per kg water, stated as mol kg-1 of solution preparation by mass"
+ ],
+ "notes": "Printed as two side-by-side blocks (left then right) per salt; stacked left block first, then right block, under one label row per salt. Left block of NaBr and NaI has 4 rows and right block 3; the last left-block calc. value 68.63 / 116.02 sits in the calc. column. Duplicate-run rows kept (NaF 0.55679 and 0.55636; NaHCO3 0.78666, 0.78562, 0.78627). dH_dil(calc) is the fitted value, so derived_by_authors."
+}

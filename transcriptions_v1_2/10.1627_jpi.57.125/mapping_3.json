@@ -1,0 +1,59 @@
+{
+ "table": "Table 3",
+ "page_journal": 131,
+ "title_as_printed": "Repeatability of CH4 and CO2 Solubility in CH4-CO2-H2O System",
+ "footnotes_as_printed": {
+  "": "Solubility (mL/g): mL of gas (0 C, 101.3 kPa)/g of water."
+ },
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium cell pressure (total); not stated whether water vapour is included",
+ "columns": {
+  "T": {
+   "col": "Temperature [C]",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure [MPa]",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "CO2 solubility [mL/g]",
+   "unit": "mL_gas_STP(0C,101.3kPa)_per_g_water",
+   "what": "CO2 solubility in water; gas-volume per mass of water, not a mole fraction; empty where no CO2 in gas phase",
+   "gas": "co2"
+  },
+  "value2": {
+   "col": "CH4 solubility [mL/g]",
+   "unit": "mL_gas_STP(0C,101.3kPa)_per_g_water",
+   "what": "CH4 solubility in water, same definition",
+   "gas": "ch4"
+  },
+  "uncertainty": {
+   "col": "CO2 solubility CV [%]",
+   "unit": "percent_CV_of_3_repeats"
+  },
+  "uncertainty2": {
+   "col": "CH4 solubility CV [%]",
+   "unit": "percent_CV_of_3_repeats"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (liquid phase); no salt. The printed gas-phase CH4/CO2 mol % columns give the equilibrium gas phase (water not reported) and are not a liquid composition"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Gas phase CH4 [mol%] and Gas phase CO2 [mol%] (equilibrium gas-phase composition, water-free basis, water not reported)"
+ ],
+ "conversion_needs": [
+  "Vg is the ideal-gas standard-state volume (0 C, 101.3 kPa) after real-gas correction by Z (Eq. 1, p.129); n = Vg/22414 mL/mol; mL gas per g water to molality needs a gas_volume_solubility converter (not applied)"
+ ],
+ "notes": "Titled as a repeatability table, but the values are measurements of mixed-gas solubility at 60 C by direct GC analysis of 1 microlitre samples of both phases. Each value is the mean of 3 repeats (CV given). Liquid-phase gas-phase compositions are measured, not set. Pressure column is not monotonic with gas composition because the series are different loadings."
+}

@@ -1,0 +1,196 @@
+{
+ "table": "Table I",
+ "page_journal": "2890-2891",
+ "title_as_printed": "Heat Capacity of Aqueous Sodium Sulfate",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Flow calorimeter; each block prints two pressures. P taken as the pressure printed in the phiCp/density/cps column headings (1.01, 3.69, 9.40, 16.04, 200 bar; the text says the data along the saturation curve were analysed assuming the density ratio is constant from 1 to 16 bar). The ratio column prints a different measured pressure (1.01, 5, 10, 17, 207.2, 199.2 bar). Text: measurements at 1 bar or the saturated vapor pressure, and at 200 bar.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "phiCp, J mol-1 K-1",
+   "unit": "J/(mol K)",
+   "scale": 1,
+   "what": "apparent molal heat capacity of Na2SO4, calculated by the authors from the measured heat-capacity ratio",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "(cps/cpw)T(rhos/rhow)25C ratio",
+   "unit": "dimensionless",
+   "what": "measured heat-capacity ratio solution/water corrected by density ratio at 25 C (raw calorimeter quantity)"
+  },
+  "value3": {
+   "col": "cps, J g-1 K-1",
+   "unit": "J_per_g_per_K",
+   "what": "specific heat capacity of solution, derived from ratio with water cp from literature",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "molality",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none besides water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    22,
+    32,
+    42,
+    51,
+    56,
+    69
+   ],
+   "reason": "T/P block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "304.62",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.01",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "324.00",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.01",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 22,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.18",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.01",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "413.90",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "3.69",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "450.41",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "9.40",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "474.68",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "16.04",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.81",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "200",
+     "unit": "bar"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "414.20",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "200",
+     "unit": "bar"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "rhos(25 C), g/cm3 (literature or estimated solution density at 25 C used in the analysis, not measured here)"
+ ],
+ "conversion_needs": [
+  "molality assumed mol per kg water (not explicitly stated)"
+ ],
+ "notes": "Rows with molality 0 are pure-water reference rows (phiCp empty). Rows at 2.6294 m in the 200 bar blocks have only the ratio printed. The 474.68 K block ends at 0.2491 m on the printed page (page 2890 bottom, continues no further on 2891) - the block appears truncated in the print. Blocks stacked in printed order."
+}

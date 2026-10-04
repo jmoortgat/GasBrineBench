@@ -1,0 +1,21 @@
+{
+ "table": "Table 1", "page_journal": 1756,
+ "title_as_printed": "Osmotic and activity coefficients of sodium sulphate in water",
+ "footnotes_as_printed": "none printed",
+ "property": "phi_osm",
+ "gas": "", "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure measured by transducer; dP (vapour pressure lowering) is the measured quantity; absolute pressure of solution not tabulated",
+ "columns": {
+  "T": {"col": "Temp. (C)", "unit": "C"},
+  "value": {"col": "phi", "unit": "dimensionless", "derived_by_authors": true, "what": "osmotic coefficient calculated from dP via eq. [1] (vapour-phase non-ideality and compression corrections)"},
+  "value2": {"col": "dP (Torr)", "unit": "torr", "what": "measured vapour pressure lowering of solution relative to pure water at the same T"},
+  "value3": {"col": "gamma_pm", "unit": "dimensionless", "derived_by_authors": true, "what": "mean ionic activity coefficient from the authors' Pitzer fit"}
+ },
+ "composition": {"basis": "molality", "per_row": {"Na2SO4": {"col": "m (mol/kg)", "unit": "mol/kg"}}, "constant": {}, "other_species": ""},
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": ["dP in Torr; vapour pressure of pure water at T not tabulated"],
+ "notes": "Largest m in each isotherm is the saturation molality taken from the literature. Table 3 (smoothed values), Table 2 (Pitzer parameters), Tables 4,5 not extracted."
+}

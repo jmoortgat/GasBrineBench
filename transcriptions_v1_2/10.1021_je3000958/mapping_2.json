@@ -1,0 +1,80 @@
+{
+ "table": "Table 2",
+ "page_journal": null,
+ "title_as_printed": "Equilibrium Compositions (in Mole Fraction and on a Salt-Free Basis) of the Vapor Phase (yi) and Liquid Phase (xi) of the N2 (1) + CO2 (2) + H2O (3) + NaCl + KCl + CaCl2 System (Weight Ratio of NaCl/KCl/CaCl2 Is 1:1:1, and Concentration of Mixed Salts Is 5.0 wt %) at 308.15 K and 8.0 MPa (y1 and y2 Are Expressed on a Water-Free Basis)",
+ "footnotes_as_printed": "none captured",
+ "property": "solubility_x",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure of the view cell (FOXBORO/ICT transducer); 'total pressures of 8.0, 12.0 and 16.0 MPa'; absolute/gauge not stated. Water in the vapour is not reported (vapour compositions y1, y2 are on a water-free basis).",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "308.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "total",
+   "constant": "8.0"
+  },
+  "value": {
+   "col": "10^3 x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "n2"
+  },
+  "value2": {
+   "col": "10^2 x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.01,
+   "gas": "co2"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "1.666667",
+    "unit": "%"
+   },
+   "KCl": {
+    "value": "1.666667",
+    "unit": "%"
+   },
+   "CaCl2": {
+    "value": "1.666667",
+    "unit": "%"
+   }
+  },
+  "other_species": "NaCl + KCl + CaCl2, total 5.0 wt % (gas-free basis), weight ratio 1:1:1"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "x3 (water mole fraction in liquid, by difference)",
+  "y1 (N2 mole fraction in vapour, water-free basis, measured by GC)",
+  "y2 (CO2 mole fraction in vapour, water-free basis)"
+ ],
+ "conversion_needs": [
+  "mass percent of the salt mixture to molality needs the salt molar masses (builder), 1:1:1 by weight"
+ ],
+ "notes": "Liquid mole fractions are on a salt-free basis (x1 + x2 + x3 = 1 without salt ions) as stated in the caption. Two-gas rows: value = N2 (x1), value2 = CO2 (x2). Block runs from pure CO2 to pure N2 vapour.",
+ "gas_mixture": true,
+ "value2_gas_in_liquid": true,
+ "row_held": [
+  {
+   "rows": [
+    0
+   ],
+   "reason": "x1 (N2) printed as 0.000 for the CO2-only vapour: placeholder, no N2 solubility measured (audit 2026-10-02)"
+  }
+ ],
+ "mapping_note": "only the N2 column is built; the CO2 column (value2) is not stored; gas mixture, vapour composition y1,y2 not stored",
+ "gas_basis": "salt_free",
+ "gas_basis_evidence": "audit 2026-10-02: paper states liquid fractions over N2, CO2 and H2O; total salt 5.0 wt % gas-free"
+}

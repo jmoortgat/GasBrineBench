@@ -1,0 +1,57 @@
+{
+ "doi": "10.1016/j.petrol.2021.108685",
+ "first_author": "He",
+ "year": 2021,
+ "journal": "Journal of Petroleum Science and Engineering 203, 108685",
+ "source_key": "HE(2021)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell of Tables 2-4 matched the 200 dpi page images; no corrections",
+ "experimental_method": "Static 300 mL high-pressure cell with stirring, equilibrium taken when pressure stable for 4 h; liquid sampled, flashed, evolved gas volume measured and analysed by GC, x = n_g/(n_l+n_g).",
+ "uncertainties_stated": "Per-point standard uncertainty u(x) in tables; pressure gauge 60 +- 1.5 MPa (Fig. 1 caption).",
+ "quality_remarks": "Temperature scale not stated. Pressure basis not stated. Table 2 block order is 293.15, 323.15, 308.15, 348.15 K as printed. Authors compare pure CO2 data with literature (average ARD 3.42%). Table 4 gives xCO2 x10^2 and xCH4 x10^3 headers. Mixture feed gas specified as CH4>=49.9+-2% (Table 1).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   4,
+   5
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "gas specifications"
+  },
+  {
+   "table": "Table 5",
+   "reason": "ANN input/output parameter list"
+  },
+  {
+   "table": "Tables 6-10",
+   "reason": "model parameters, model prediction deviations (ARD%) and literature comparisons; derived"
+  }
+ ],
+ "row_counts": {
+  "Table 2": {
+   "printed": 20,
+   "written": 20
+  },
+  "Table 3": {
+   "printed": 15,
+   "written": 15,
+   "label_rows": 3
+  },
+  "Table 4": {
+   "printed": 19,
+   "written": 19
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 3 sanity: xCO2 decreases with salt at similar P, increases with P. Table 2 and 4 monotonic in P within blocks. Table 2 and 4 T filled down.",
+ "pass2_diff": "Tables 2-4: 20, 15, 19 rows identical; token differences are only temperatures that pass 1 filled down and pass 2 left blank as printed, plus block-label numbers."
+}

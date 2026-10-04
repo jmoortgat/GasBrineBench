@@ -1,0 +1,35 @@
+{
+ "doi": "10.6028/jres.070A.027",
+ "first_author": "Robinson",
+ "year": 1966,
+ "journal": "J. Res. Natl. Bur. Stand. 70A(4), 313-318",
+ "source_key": "ROBINSON(1966)",
+ "experimental_method": "Isopiestic vapour-pressure method at 25 +- 0.01 C: NaCl+CaCl2 solutions equilibrated against NaCl reference solutions; composition from weight loss or gain of water.",
+ "uncertainties_stated": "thermostat 25 +- 0.01 C; no explicit uncertainty on molalities",
+ "quality_remarks": "CaCl2 contained 2 ppm Na, 10 ppm K, 300 ppm Sr (flame photometry); concentration of stock by coulometric titration. Equilibration 3-7 days. Three printed rows deviate from R=M_B/(m_B+1.5 m_C) by more than 6e-4 (set 2 M_B 0.7988 pure CaCl2 row 0.9959 vs printed .9980; set 5 M_B 1.7785 row 2 1.0606 vs 1.0595; set 6 M_B 2.7546 row 1 1.0486 vs 1.0497); image confirmed these as printed, so M_B is likely the nominal/mean reference molality and R(obs) uses the individual reference molality; not corrected.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   314
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (parameters a, b of eq (1) and integral): fitted/derived",
+  "Table 3 (values of alpha_B, alpha_C from Table 1 data): derived",
+  "Table 4 (comparison with previous work): derived/comparison",
+  "Table 5 (excess free energy of mixing): derived"
+ ],
+ "row_counts": {
+  "table_1": "printed 69 data rows (incl. pure CaCl2 rows) in 10 sets; written 69"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "The text layer is OCR of a scan with many errors (O/0, dropped digits, 0.54<>8 etc.), so Table 1 was transcribed entirely from the 300 dpi page image and the text layer used only as a cross-check. Sanity: every row checked by script that R(obs)=M_B/(m_B+1.5 m_C) and y_C=1.5 m_C/(m_B+1.5 m_C) within 6e-4 (all rows pass or listed in report). R(obs) falls with y_C only in set 1 (as in Fig. 1).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "OCR/scan source; table read from image only",
+ "pass2_diff": "Table 1: 69 rows; every pass-2 number occurs in pass 1; differences are the Set and M_B keys filled down; three rows off in R(obs) arithmetic printed so."
+}

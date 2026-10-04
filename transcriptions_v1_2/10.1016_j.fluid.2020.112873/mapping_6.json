@@ -1,0 +1,67 @@
+{
+ "table": "Table 6",
+ "page_journal": 6,
+ "gas": "natural gas (N2 7.00, CH4 84.13, C2H6 4.67, C3H8 2.34, C4H10 0.93, C5H12 0.93 mole %)",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total cell pressure ('The cell pressure was measured using a Druck 960 strain gauge pressure transducer'); absolute vs gauge not stated; Pressure of the equilibrated gas / flow tube ('P / MPa +-0.03 MPa'); the paper does not say whether absolute or gauge or total or partial. Water content is evaluated at atmospheric pressure from the measured frost-point temperature.",
+ "property": "y_h2o",
+ "volume_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "uncertainty_stated": "T +-0.1 K, P +-0.03 MPa, water content +-1 %",
+ "title_as_printed": "Experimental and predicted water contents, in ppmV, for natural gas in equilibrium with free water or hydrates at 283.1 K(+-0.1 K).",
+ "footnotes_as_printed": {
+  "table note": "Uncertainty of temperature is +-0.1 K, pressure is +-0.03 MPa and water content is +-1% of the water content in ppmV."
+ },
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "283.1"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Water content ppmV Experimental",
+   "unit": "ppmV_water_in_gas",
+   "what": "water content of the gas in ppmV (volume ppm; mole/volume basis not stated, ideal-gas equivalence assumed by the method), measured via frost-point temperature at atmospheric pressure",
+   "scale": 1e-06
+  },
+  "value2": {
+   "col": "Water content ppmV predicted",
+   "unit": "ppmV_water_in_gas",
+   "what": "HWPVT (CPA) model prediction",
+   "derived_by_authors": true,
+   "scale": 1e-06
+  }
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "Phases present (text, printed as a vertical bracket Vapour / liquid, Vapour / hydrate across rows)"
+ ],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "regime": "hydrate",
+   "reason": "Phases present column: Vapour/hydrate for the four highest pressures; rows 0-2 Vapour/liquid (regime empty)"
+  }
+ ],
+ "conversion_needs": [
+  "ppmV to mole fraction if mole basis (not stated)"
+ ],
+ "notes": "Gas is a multicomponent natural gas (Table 3 of the paper, GC mole %), not in the seven-gas set; builder decides. 'Phases present' column is printed as a bracket across rows (Vapour / liquid on rows 0-2, Vapour / hydrate on rows 3-6); the slash character sits on its own rows 1 and 4.",
+ "quality_remarks": "ppmV is taken as mole ppm (ideal gas at atmospheric pressure); the paper never states mole or volume basis but derives the water content from the frost-point temperature at atmospheric pressure. P is the equilibrium-cell pressure measured with a strain-gauge transducer (absolute vs gauge not stated). Transducer range quoted 0-41 MPa while Table 5 reaches 56.84 MPa. Row 6 (13.97 MPa) has a blank phase cell; the hydrate regime for it is inferred from the vapour/hydrate bracket."
+}

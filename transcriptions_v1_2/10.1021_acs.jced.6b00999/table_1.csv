@@ -1,0 +1,7 @@
+x_CO2 Gr (%),x_CO2 GC (%),rho (g/mL),C_H2O (mmol.L-1),u(C_H2O) (mmol.L-1),x_H2O (permil),u(x_H2O) (permil),note
+0.00,na,0.059,7.5,0.4,2.0,0.1,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e
+3.01,2.9,0.064,7.5,0.5,2.0,0.1,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e
+25.00,24.4,0.091,8.5,0.3,2.14,0.06,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e
+49.95,49.7,0.128,10.7,0.1,2.50,0.03,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e
+75.00,74.9,0.180,14.7,0.6,3.0,0.1,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e
+100.00,na,0.285,24.2,0.4,3.74,0.06,x_CO2 Gr (%):b;x_CO2 GC (%):c;rho (g/mL):d;C_H2O (mmol.L-1):e;u(C_H2O) (mmol.L-1):e;x_H2O (permil):e;u(x_H2O) (permil):e

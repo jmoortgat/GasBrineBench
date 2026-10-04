@@ -1,0 +1,48 @@
+{
+ "table": "Table 2",
+ "page_journal": 417,
+ "title_as_printed": "Dissolved methane concentrations (in mole fraction of methane, X(CH4)) calculated from Raman peak-area ratios (PAR) from the spectra of aqueous solutions in equilibrium with sI methane hydrate",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the liquid-water + hydrate system in the absence of a vapour phase (in situ cell pressure); not a gas partial pressure",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "X(CH4) x 1000",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "derived_by_authors": true,
+   "what": "CH4 mole fraction in water in equilibrium with sI hydrate, computed from PAR using the authors' calibration Eq. (2); salt-free, pure water"
+  },
+  "value2": {
+   "col": "PAR x 1000",
+   "unit": "dimensionless",
+   "scale": 0.001,
+   "what": "Raman peak-area ratio CH4 (about 2910 cm-1) to water, the primary measurement"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Table printed as two side-by-side blocks (left: 40 MPa, 22 rows; right: 30, 20 and 10 MPa, 22 rows); stacked left first then right. Text says sixty measurements; table prints 44 rows. Replicate rows are exact repeats of conditions, kept.",
+ "quality": "U",
+ "quality_reason": "mole fraction derived through a Raman calibration anchored to an equation of state (audit 2026-10-02)"
+}

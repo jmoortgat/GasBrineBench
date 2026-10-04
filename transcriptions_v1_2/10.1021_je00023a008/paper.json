@@ -1,0 +1,34 @@
+{
+ "doi": "10.1021/je00023a008",
+ "first_author": "Parisod, Charles J.",
+ "authors": "Charles J. Parisod, Eric Plattner",
+ "year": 1981,
+ "journal": "J. Chem. Eng. Data 26(1), 16-20",
+ "title": "Vapor-Liquid Equilibria of the NaCl-H2O System in the Temperature Range 300-440 C",
+ "source_key": "PARISOD(1981)",
+ "experimental_method": "Direct sampling of liquid and vapour phases from a 1-L stainless-steel autoclave with a high-pressure dilution unit, NaCl analysed by AgNO3 potentiometric titration (liquid) and Na+ electrode (vapour).",
+ "uncertainties_stated": "Pressure gauge 0.1 % full scale (+-0.7 kg/cm2); liquid concentration +-1 %; vapour Na+ +-2 %; temperature ripple <0.1 C; coefficient of variation <=2.5 %.",
+ "quality_remarks": "The PDF starts with page 16 of another article (K2S2O7-KHS04-V2O5 densities, end of text) which was not extracted. Text layer header lists vapour column as 'm' in places; the page image shows [%]. Basis of percent (mass) not stated. Printed K_D values were not recomputed.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   18
+  ]
+ },
+ "not_extracted_tables": [
+  "Table VI (polynomial coefficients for molten K2S2O7-KHSO4-V2O5 densities; belongs to another article)"
+ ],
+ "row_counts": {
+  "Table I": "printed 73 data rows; written 73"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table transcribed from the 200 dpi page image (text layer scrambled). Ditto marks for temperature filled down. Sanity: within each isotherm pressure falls as liquid concentration rises; vapour NaCl rises with temperature. No duplicate rows (420 C 292.0 and 288.9 have similar but distinct values).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer scrambled, table was transcribed from the image alone",
+ "pass2_diff": "Table 1: 74 rows; every pass-2 number occurs in pass 1; pass-1-only numbers are the group temperatures filled down."
+}

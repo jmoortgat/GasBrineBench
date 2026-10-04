@@ -38,8 +38,12 @@ def test_gas_column_is_empty_string_not_nan():
 
 def test_blank_pressure_becomes_nan_only_for_psat_ratio(all_rows):
     blank = all_rows["P_bar"].isna()
-    assert set(all_rows.loc[blank, "property"]) == {"psat_ratio"}
-    assert blank.sum() == 21
+    unstated = all_rows["flags"].str.contains("pressure-unstated")
+    # psat_ratio carries the pressure as its value; every other blank is a row whose
+    # paper states no pressure, and the builder says so with the flag
+    assert set(all_rows.loc[blank & ~unstated, "property"]) == {"psat_ratio"}
+    assert blank.sum() == (all_rows["property"] == "psat_ratio").sum() + (blank & unstated & (all_rows["property"] != "psat_ratio")).sum()
+    assert (all_rows.loc[unstated, "P_bar"].isna()).all()
 
 
 def test_numeric_columns_are_numeric(all_rows):
@@ -79,17 +83,27 @@ def test_row_totals_match_the_repository_readme(all_rows):
 
 
 def test_lle_regime_excluded_by_default(default_rows, all_rows):
-    """The default that matters: 144 propane rows are not gas solubilities."""
+    """The default that matters: lle-regime rows are not gas solubilities."""
     assert "lle-regime" not in set(default_rows["tag"])
-    assert len(all_rows) - len(default_rows) == 144
+    only_tags = gbb.load(exclude_flags=None)
+    assert len(all_rows) - len(only_tags) == (all_rows["tag"] == "lle-regime").sum() == 354
     dropped = all_rows[all_rows["tag"] == "lle-regime"]
-    assert set(dropped["gas"]) == {"c3h8"}
+    # the 144 propane rows of v1.1.1 plus 210 rows added in v1.2 (propane, butanes, ethane, CO2 below its critical temperature)
+    assert {"c3h8", "c2h6", "n-c4h10", "i-c4h10", "co2"} == set(dropped["gas"])
+    assert (dropped[dropped["dataset_id"] == "c3h8_water"]).shape[0] == 144
+
+
+def test_default_flag_exclusion(default_rows, all_rows):
+    from gasbrinebench.vocab import DEFAULT_EXCLUDED_FLAGS
+    carried = all_rows["flags"].map(lambda f: bool(set(f.split(";")) & set(DEFAULT_EXCLUDED_FLAGS)))
+    kept = all_rows[~carried & (all_rows["tag"] != "lle-regime")]
+    assert len(default_rows) == len(kept)
 
 
 def test_exclude_tags_none_keeps_everything():
     _, grand = _readme_row_counts()
-    assert len(gbb.load(exclude_tags=None)) == grand
-    assert len(gbb.load(exclude_tags=())) == grand
+    assert len(gbb.load(exclude_tags=None, exclude_flags=None)) == grand
+    assert len(gbb.load(exclude_tags=(), exclude_flags=())) == grand
 
 
 def test_derived_columns_attached_by_default(default_rows):
@@ -100,8 +114,8 @@ def test_derived_columns_attached_by_default(default_rows):
 
 
 def test_load_accepts_a_list_of_families():
-    df = gbb.load(["rho", "eps_r"])
-    assert set(df["family"]) == {"rho", "eps_r"}
+    df = gbb.load(["rho", "dh_sol"])
+    assert set(df["family"]) == {"rho", "dh_sol"}
 
 
 def test_load_forwards_filters():

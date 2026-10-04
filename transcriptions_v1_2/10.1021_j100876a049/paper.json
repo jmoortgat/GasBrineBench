@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/j100876a049",
+ "first_author": "McAuliffe, Clayton",
+ "authors": "Clayton McAuliffe",
+ "year": 1966,
+ "journal": "The Journal of Physical Chemistry 70(4), 1267-1275",
+ "title": "Solubility in Water of Paraffin, Cycloparaffin, Olefin, Acetylene, Cycloolefin, and Aromatic Hydrocarbons",
+ "source_key": "MCAULIFFE(1966)",
+ "experimental_method": "Hydrocarbon-saturated distilled water (gas at 1 atm shaken or stirred over water; liquids stirred or shaken with water) injected (50 microlitre) into a gas chromatograph with hydrogen-flame ionization detection after removal of water on a firebrick/Ascarite fractionator; detector calibrated with weighed liquid hydrocarbon mixtures.",
+ "uncertainties_stated": "Standard deviation from the mean given for every value (Table I); temperature only held within 25 +- 1.5 C.",
+ "quality_remarks": "Temperature is room temperature, 25 +- 1.5 C, not thermostatted. Methane, ethane, propane (in scope) agree with Winkler and Claussen/Polglase within about 10 percent. The PDF begins with page 1267 of another article (a discharge/ion paper, unrelated; this paper starts on its journal page 1267 lower half). Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer (Lit. column garbled by OCR) checked against 200 dpi page image; all Table I cells re-read from the image",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   1270
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (olefins and diolefins, journal p. 1271): no in-scope gas (ethene, propene, butenes etc. only), image-checked",
+  "Table III (acetylenes, p. 1271): no in-scope component",
+  "Table IV (cycloparaffins, cycloolefins, aromatics): no in-scope component"
+ ],
+ "row_counts": "Table I: 17 printed data rows, 17 written, no label rows",
+ "changes_after_image_check": [
+  "Table 1 Lit. column: text layer garbled (for example 'tC &copy; &copy;' for n-heptane, '14=' for n-octane) -> 50 [6]; 10 [10] and 14 [6] from image; '360=' -> 360 [6]; 'ro-Heptane' -> n-Heptane"
+ ],
+ "extraction_notes": "Parenthesised numbers in the printed 'This work' column (136, 165, 54) are written to a separate column (calculated liquid-hydrocarbon solubility at 25 C, footnote b). Literature column kept as text with the paper's reference numbers in square brackets. Per-row gas identity is in mapping_1.json gas_per_row because the table mixes in-scope and out-of-scope hydrocarbons. Superscript reference numbers in the Lit. column were read from the image (superscript on 22.8 etc.).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer garbled in Lit. column and corrections were needed after the image check",
+ "pass2_diff": "Table I: 17 rows, 100/100 numbers identical."
+}

@@ -1,0 +1,45 @@
+{
+  "table": "Table 2",
+  "page": 923,
+  "title_as_printed": "Solubility of nitrogen in water at 30°C",
+  "property": "solubility_x",
+  "gas": "n2",
+  "regime": "",
+  "columns": {
+    "T": {
+      "col": "",
+      "unit": "C",
+      "constant": "30"
+    },
+    "P": {
+      "col": "Pressure (psia)",
+      "unit": "psia",
+      "basis": "total"
+    },
+    "value": {
+      "col": "Mole fraction of nitrogen ( x 10^4), This study",
+      "unit": "mole_fraction_gas_in_aqueous_phase",
+      "scale": "x1e-4 (printed x 10^4)"
+    },
+    "value2": {
+      "col": "Mole fraction of nitrogen ( x 10^4), WIEBE et al. (1933)",
+      "unit": "mole_fraction_gas_in_aqueous_phase",
+      "what": "literature values of Wiebe et al. 1933, interpolated by the authors to this study's pressures from their 25 C and 50 C data; NOT a measurement of this paper (do not load as this source's data, or load under a Wiebe source key only if wanted)"
+    }
+  },
+  "composition": {
+    "basis": "none",
+    "per_row": {},
+    "constant": {},
+    "other_species": "pure water"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "conversion_needs": [
+    "Mole fraction of N2 is printed x10^4: stored value must be multiplied by 1e-4. Basis (mole fraction in the whole liquid, salt as undissociated species or ions) is not stated.",
+    "Pressure psia to MPa (x 0.00689476); pressure is total pressure with no correction for water vapour (stated for water, Table 2 text), whether this holds for the salt solutions is not stated.",
+    "Temperature given only as 30 C (303.15 K); temperature scale not stated.",
+    "Temperature 30 C is stated in the table title, not in a column."
+  ],
+  "notes": "Salt-free. Authors state Henry's law holds in the studied range and no pressure correction for water vapour was applied."
+}

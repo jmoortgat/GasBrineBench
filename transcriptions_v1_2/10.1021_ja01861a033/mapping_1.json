@@ -1,0 +1,116 @@
+{
+ "table": "Table I",
+ "page_journal": 815,
+ "title_as_printed": "Solubility of Carbon Dioxide in Water (cc. S. T. P. per g. of H2O)",
+ "footnotes_as_printed": {},
+ "property": "gas_volume_solubility",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "'Total pressure in atm.'; gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "Temperature C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Total pressure in atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "cc. S.T.P. per g. of H2O",
+   "unit": "cm3STP_per_g_water",
+   "what": "cc of carbon dioxide (S.T.P.) contained in 1 g of water (text)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "'the number of cc. of carbon dioxide (S. T. P.) contained in 1 g. of water' (mass of water basis)",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    15,
+    20,
+    29,
+    38
+   ],
+   "reason": "temperature block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "12",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "18",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 15,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "31.04",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "40",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "cm3 CO2 (S.T.P.) per g water to mole fraction or molality needs the STP molar volume (0 C, 1 atm assumed; CO2 non-ideal at STP not corrected)"
+ ],
+ "notes": "Printed as matrix (pressure rows x six temperature columns); restacked by temperature, 12, 18, 25, 31.04, 35, 40 C, only filled cells written. The text states a solid hexahydrate (hydrate) formed at 12 C above 300 atm and complete miscibility near 500 atm at 12 C; no tabulated row is flagged hydrate, so regime is left empty. Liquid CO2-rich phase is present at pressures above the CO2 vapour pressure at the lower temperatures (text: 'two liquid systems') but rows are not flagged by the authors; regime not assigned per row. Original table has no 10 C values (text mentions a single 150 atm series at 10 C that is not tabulated).",
+ "quality_remarks": "audit 2026-10-02: data row 45 (40 C, 200 atm, printed 31.74) is a suspected misprint (probably 30.74): the authors' Table III experimental 0.0243 at 200 atm agrees with 30.74 and not with 31.74 (0.0250). Printed value kept."
+}

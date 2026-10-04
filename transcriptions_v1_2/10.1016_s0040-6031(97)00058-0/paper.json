@@ -1,0 +1,46 @@
+{
+ "doi": "10.1016/s0040-6031(97)00058-0",
+ "first_author": "Hubert",
+ "year": 1997,
+ "journal": "Thermochimica Acta 294 (1997) 157-163",
+ "title": "Dissolution enthalpy of NaCl in water at 25 C, 45 C and 60 C. Determination of the Pitzer's parameters of the {H2O-NaCl} system and the molar dissolution enthalpy at infinite dilution of NaCl in water between 25 C and 100 C",
+ "authors": "Nathalie Hubert, Roland Solimando, Alexandra Pere, Louis Schuffenecker",
+ "source_key": "HUBERT(1997)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer was usable; every cell of Tables 1-4 matched the page images after the corrections listed (only decimal-comma/OCR-letter artefacts in the text layer, not in the numbers); page scan is clean",
+ "experimental_method": "Batch differential calorimetry (SETARAM C80D, calibrated with the heat of fusion of indium) of the dissolution of dried solid NaCl in water at 24.4, 44.3 and 59.2 C up to saturation; water activity of NaCl(aq) at m=4.086 from a static vapour-pressure apparatus (earlier paper).",
+ "uncertainties_stated": "precision of the calorimetric results about 2%; lowest salt molality 0.06 mol/kg set by calorimeter sensitivity; average relative error of fitted dissolution enthalpies about 2%; mean relative deviation of aw about 0.1%",
+ "quality_remarks": [
+  "Heat sign: DeltaH_exp is printed positive (endothermic dissolution).",
+  "Table 1 (24.4 C) printed with 27 rows, Table 2 14, Table 3 13.",
+  "Conclusion text says {N2O-NaCl}, a misprint for {H2O-NaCl}.",
+  "Table 3 column header printed 'DeltaH_exp/n1 Delta_sol(m)' (the H dropped), meaning the same as in Tables 1-2.",
+  "Table 1 first row has the largest DeltaH_exp/n1 at low m; per-experiment scatter of order 2-5% visible (e.g. 4113 vs 4305).",
+  "Table 4 aw (exp.) values duplicate the authors' earlier paper (ref 10) and the column is used as validation; text says 133 values for 293.15-363.15 K and m 1-5.5, only m=4.086 is tabulated."
+ ],
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   7
+  ],
+  "journal_pages": [
+   160,
+   163
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 27; written 27",
+  "table_2": "printed 14; written 14",
+  "table_3": "printed 13; written 13",
+  "table_4": "printed 16; written 16"
+ },
+ "changes_after_image_check": [
+  "text layer substituted decimal commas for points in the dH_exp columns of Table 1 (17,03 etc.), OCR letter o/t for 0/1 (o.1676, t735): all values written from the page image; no digit differed otherwise"
+ ],
+ "extraction_notes": "CSVs written from the page image reading (checked against text layer). Tables 1-3 are separate files, T constant from caption. In Table 4 only aw (exp.) is a datum. The mapping's 'm_final' key marks the molality as that of the final solution. Page image p-3 (journal 159) was theory only, no tables. Mapping property dh_sol with the value being the authors' division of the measured heat by n_1 (derived_by_authors) and the raw heat as value2, per the brief convention; a molar enthalpy is the reported result.",
+ "pass2_diff": "Tables 1-4: 135/135, 70/70, 65/65 and 64/64 numbers identical."
+}

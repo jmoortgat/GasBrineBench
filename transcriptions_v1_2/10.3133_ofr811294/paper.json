@@ -1,0 +1,35 @@
+{
+ "doi": "10.3133/ofr81-1294",
+ "first_author": "McGee",
+ "year": 1981,
+ "journal": "U.S. Geological Survey Open-File Report 81-1294",
+ "source_key": "MCGEE(1981)",
+ "experimental_method": "Fixed-volume gold-lined pressure vessels loaded with weighed methane and degassed NaCl brine, heated stepwise; the intersection of the two-phase and single-phase liquid P-T curves gives the saturation T, P for the known methane molality.",
+ "uncertainties_stated": "Not stated for T, P or molality; Setschenow constant 0.129 +- 0.030 (pressure of the intersection point is the main uncertainty source).",
+ "quality_remarks": "Preliminary USGS report not reviewed for editorial standards. Pressure at the intersection is hard to resolve (line BC is steep). Temperature scale not stated. Pure-water runs (1-7) and brine runs are at 190-292 C only. Other tabular results (smoothed solubility) appear only as figures.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   18
+  ],
+  "journal_pages": [
+   17
+  ]
+ },
+ "not_extracted_tables": [
+  "Figures 3-9 smoothed solubility isobars and eq. 4-5 coefficients: fitted/derived, no tables"
+ ],
+ "row_counts": {
+  "Table 1": "printed 30 runs, written 30"
+ },
+ "changes_after_image_check": [
+  "table 1 run 7 Temp: 191-6 -> 191.6 (text layer misread; image shows 191.6)",
+  "table 1 run 1: missed by the first text parse, added from the image (1,0,272.6,11.80,0.22648,-)"
+ ],
+ "extraction_notes": "Printed leading zeros kept as printed (.18621). Earlier partial run left only scratch files; this folder was written fresh. Sanity: pure-water runs 2-4 share molality .18621 with T 265.8-267.9, P 10.24-10.60 (replicates of one charge); same pattern for other charges.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed two corrections (run 7 temperature, run 1 missed) and the page is a typewritten photocopy; second-pass diff advised",
+ "pass2_diff": "180 cells, 0 disagreements"
+}

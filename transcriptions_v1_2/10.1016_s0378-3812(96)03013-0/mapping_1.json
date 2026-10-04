@@ -1,0 +1,124 @@
+{
+  "table": "Table 1",
+  "page_journal": "238-239",
+  "title_as_printed": "Experimental data of vapor pressures of NaCl(1)-KCl(2) aqueous solution and comparison of calculated deviations using primary and modified models",
+  "footnotes_as_printed": "not captured (table has no footnotes)",
+  "property": "psat_brine",
+  "property_note": "vapour pressure of the mixed-salt aqueous solution (absolute pressure, torr)",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "vapour pressure of the solution measured with an absolute pressure transducer; gas-free (degassed) solution, no gas present besides helium used for level control",
+  "columns": {
+    "T": {
+      "col": "T/K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "pexp/torr",
+      "unit": "torr",
+      "basis": "saturation"
+    },
+    "value": {
+      "col": "pexp/torr",
+      "unit": "torr",
+      "what": "measured vapour pressure of solution"
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {},
+    "constant": {},
+    "other_species": "",
+    "note": "molalities set per block by the label rows via group_rows: m1 = NaCl, m2 = KCl, mol per kg water (unit stated implicitly by 'm' in the paper's text; ionic strength up to 4 m)"
+  },
+  "skip_rows": [
+    {
+      "rows": [
+        0,
+        11,
+        12,
+        23,
+        24,
+        35,
+        36,
+        47,
+        48
+      ],
+      "reason": "block label rows (also carried by group_rows), 'Mean deviation' and 'Overall mean deviation' rows (model deviation summaries, not data)"
+    }
+  ],
+  "group_rows": [
+    {
+      "label_row": 0,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.645",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.KCl",
+          "value": "0.322",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 12,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.777",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.KCl",
+          "value": "0.845",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 24,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "0.982",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.KCl",
+          "value": "1.125",
+          "unit": "mol/kg"
+        }
+      ]
+    },
+    {
+      "label_row": 36,
+      "sets": [
+        {
+          "path": "composition.constant.NaCl",
+          "value": "1.985",
+          "unit": "mol/kg"
+        },
+        {
+          "path": "composition.constant.KCl",
+          "value": "1.331",
+          "unit": "mol/kg"
+        }
+      ]
+    }
+  ],
+  "extra_unmapped": [
+    "Primary model Ppre/torr (calculated)",
+    "Primary model D/% (deviation of model)",
+    "Modified model Pcal/torr (calculated)",
+    "Modified model D/%"
+  ],
+  "conversion_needs": [
+    "torr to Pa (1 torr = 133.322 Pa) done by builder",
+    "molality of each salt from the block label"
+  ],
+  "notes": "Rows printed 10 per concentration block (298.15-343.15 K, 5 K step). The 1.985/1.331 block of Table 1 continues on the next journal page."
+}

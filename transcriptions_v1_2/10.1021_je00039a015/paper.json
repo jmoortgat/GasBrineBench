@@ -1,0 +1,49 @@
+{
+ "doi": "10.1021/je00039a015",
+ "first_author": "Gates",
+ "year": 1985,
+ "journal": "J. Chem. Eng. Data 30 (1), 44-49 (data on pp. 46-47)",
+ "source_key": "GATES(1985)",
+ "title": "Densities of Aqueous Solutions of NaCl, MgCl2, KCl, NaBr, LiCl, and CaCl2 from 0.05 to 5.0 mol kg-1 and 0.1013 to 40 MPa at 298.15 K",
+ "authors": "Jeffrey A. Gates, Robert H. Wood",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer (original PDF text, positions via bbox) was clean; rows were assembled by script from word coordinates and every block was compared with the page images of pp. 46 and 47; no cell needed correction",
+ "how_extracted": "pdf_text_layer",
+ "experimental_method": "Vibrating-tube densimeter (Albert design) measuring density difference between solution and water by injecting a 6-mL sample into a water stream; calibrated with water and nitrogen; 298.15 K, 0.1013-40 MPa",
+ "uncertainties_stated": "concentration to 0.1 % (0.2 % for 2.952 mol/kg MgCl2), giving 0.1 % in Delta rho; pressure about 0.3 MPa (max 30 ppm in Delta rho); temperature constant to better than 0.001 K; replicate runs agree to better than 20 ppm (95 % limits about 40 ppm); fit standard errors about 50 ppm",
+ "quality_remarks": [
+  "PDF starts with the end of another article (Singh & Sinha, p. 44, table/references of binary/ternary liquid mixtures) and ends with a short article (enthalpy of mixing, p. 49-50).",
+  "NaBr block, 40 MPa group, third row: molality printed 0.013 where the sequence 4.972, 3.013, 2.006, 1.004 shows 3.013 is meant (Delta rho 211.360, consistent with 3.013); kept as printed.",
+  "MgCl2 at about 31 MPa lacks the 2.262 mol/kg row; CaCl2 at about 40 MPa lacks the 0.5026 mol/kg row (as printed).",
+  "Several rows have Delta residuals of 100 ppm or more (e.g. NaCl 4.991 mol/kg at 17.13 MPa, 117); authors comment that the calculated density for 5.0 mol/kg NaCl is 600 ppm low at 40 MPa.",
+  "Temperature scale not stated; 298.15 K given in the title."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   46,
+   47
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "coefficients of the authors' empirical fit (model parameters)"
+  },
+  {
+   "table": "Figure 1",
+   "reason": "comparison plots with literature"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 228 data rows in 6 blocks (NaCl 40, MgCl2 34, KCl 35, NaBr 40, LiCl 40, CaCl2 39); written 228 plus 6 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "value is the density difference Delta rho (printed x 10^3, scale 0.001); phi_v is derived by the authors. Pressure varies per row (nominal 0.1013, 10.38, 17.13, about 31, about 40 MPa).",
+ "pass2_diff": "Table I: 228 rows, 1368/1368 numbers identical; NaBr molality 0.013 printed so in both passes."
+}

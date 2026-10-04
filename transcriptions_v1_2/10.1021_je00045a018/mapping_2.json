@@ -1,0 +1,49 @@
+{
+ "table": "Table 2",
+ "page_journal": 322,
+ "title_as_printed": "Experimental Density of Aqueous MgSO4",
+ "footnotes_as_printed": "not captured (none printed under the table)",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P/bar is the pressure of the system read from a bourdon-tube gauge (+-0.1 bar), applied with nitrogen to the mercury and solution; nominal sets near 20, 50 and 100 bar; not stated whether it includes the water vapour pressure",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/bar",
+   "unit": "bar",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho/g-cm-3",
+   "unit": "g/cm3",
+   "scale": 1
+  },
+  "value2": {
+   "col": "phiV/cm3-mol-1",
+   "unit": "cm3/mol",
+   "what": "apparent molar volume calculated by the authors from the measured density",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgSO4": {
+    "col": "m/mol-kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none (binary MgSO4 + water)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Single block, rows in printed order."
+}

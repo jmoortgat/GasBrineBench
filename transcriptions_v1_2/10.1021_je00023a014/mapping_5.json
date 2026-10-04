@@ -1,0 +1,56 @@
+{
+ "table": "Table 5",
+ "page_journal": 39,
+ "title_as_printed": "Isopiestic Molalities of CaCl2 Stock No. 1, NaCl Stock No. 2, and KCl Solutions",
+ "footnotes_as_printed": {
+  "a": "Saturated solution in equilibrium with solid NaCl.",
+  "b": "Supersaturated solution."
+ },
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68 (25.00 +- 0.005 C stated in the text)",
+ "pressure_note": "not stated (isopiestic equilibration in a closed vacuum chamber at the vapour pressure of the solutions; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "[CaCl2] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of test salt CaCl2 at isopiestic equilibrium"
+  },
+  "value2": {
+   "col": "[Reference salt] m",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the reference salt solution at isopiestic equilibrium",
+   "reference_salt": {
+    "col": "Reference salt"
+   }
+  }
+ },
+ "reference_salt": {
+  "col": "Reference salt"
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "CaCl2": {
+    "col": "[CaCl2] m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water; no other species"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molalities per kg of water (mol kg-1)"
+ ],
+ "notes": "Test salt is CaCl2 (stock no. 1) against NaCl (stock no. 2) and KCl. Printed wide, restacked: 4 printed rows -> 6 written pairs.",
+ "quality_remarks": "Footnote a: the NaCl 6.1589 m solution is saturated; footnote b: KCl 4.9873 m is supersaturated."
+}

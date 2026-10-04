@@ -1,0 +1,41 @@
+{
+ "doi": "10.1006/jcht.1996.0117",
+ "first_author": "Holmes, H. F.",
+ "authors": "H. F. Holmes, R. E. Mesmer",
+ "year": 1996,
+ "journal": "J. Chem. Thermodynamics 28, 1325-1358",
+ "title": "Aqueous solutions of the alkaline-earth metal chlorides at elevated temperatures. Isopiestic molalities and thermodynamic properties",
+ "source_key": "HOLMES(1996)",
+ "experimental_method": "High-temperature isopiestic method (Oak Ridge facility, in-situ weighing with an electromagnetic balance); MgCl2(aq) against NaCl(aq) as the reference electrolyte, 383-524 K; osmotic coefficients from NaCl osmotic coefficients of Pitzer et al.",
+ "uncertainties_stated": "not captured in the table pages read; none tabulated per point",
+ "quality_remarks": "The paper repeats earlier MgCl2 isopiestic work (previous results suggested by others to be in error by several per cent); new values slightly differ. Tables 1 and 2 combine two loadings. Hydrolysis stated to be negligible (pH of samples checked). Osmotic coefficients are stoichiometric, computed by the authors from the molalities; NaCl osmotic coefficients from the Pitzer et al. model. Exact replicate-like entries (e.g. phi 1.0135 twice at 524.12 K with different molalities) kept.",
+ "how_extracted": "pdf_text_layer (genuine journal text layer, pdftotext -bbox with x-position column assignment)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   1328,
+   1329
+  ]
+ },
+ "verification_note": "Earlier interrupted run left no files in the slug folder; extraction done from scratch. Image check: row counts per column group per T block and a spot check of values across all blocks matched; no cell needed correction.",
+ "not_extracted_tables": [
+  "Table 2: SrCl2(aq) and BaCl2(aq) isopiestic molalities against NaCl reference (no in-scope test electrolyte; Sr and Ba chlorides out of scope; the NaCl reference molalities are only partner values)",
+  "Table 3: thermodynamic results for MCl2(aq) (model-derived)",
+  "Table 4: model constants",
+  "Table 5: osmotic coefficients of MgCl2 at 428.67 K computed from the Brendler-Voigt literature molalities with several models/standards (derived/model, literature molalities)",
+  "Tables 6-8: activity coefficients (model-derived)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 192 data rows (blocks: 383.05 K 1, 413.74 K 1, 444.03 K 1, 473.85 K 5, 498.72 K 25, 524.12 K 21, 383.11 K 27, 413.56 K 23, 443.44 K 29, 473.18 K 31, 498.22 K 28), written 192, plus 11 temperature label rows"
+ },
+ "changes_after_image_check": [],
+ "needs_pass2": false,
+ "needs_pass2_reason": "Genuine text layer, positions parsed programmatically, row counts and spot values verified against the images with no corrections; a full cell-by-cell diff was not done.",
+ "status": "verified_pass2",
+ "extraction_notes": "Columns: f, MgCl2 m/m0, NaCl m/m0. Sanity: within each column group f and both molalities increase monotonically top to bottom except small noise (e.g. 498.22 K group 2: phi 0.7863 then 0.7815 at m 1.3241 then 1.3332; 0.8499 after 0.8573; 0.8997 after 0.9044; 473.85 K, 0.9719 vs 0.9711 at 383.11 K), kept as printed. Full T range 383.05-524.12 K.",
+ "pass2_diff": "token diff: 576 numbers per pass, identical (note: five rows at 443.44 K and 498.22 K are the least directly verified)"
+}

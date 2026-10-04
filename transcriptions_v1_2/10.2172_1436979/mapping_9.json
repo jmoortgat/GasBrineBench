@@ -1,0 +1,52 @@
+{
+ "table": "Table 9",
+ "page_journal": 62,
+ "title_as_printed": "New Results for MgCl2 Solutions",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "phi_osm",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Not stated as total or partial in the table. Osmotic coefficients are 'at p = p0' i.e. 'Osmotic coefficients for pressures equal to vapor pressure of pure water at each temperature' (Table 2 Note 1). Solution vapor pressure = p0 - delta p (delta p measured 'corrected to 0 C' for mercury column, per text).",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Osmotic Coefficient phi at p = p0",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Delta p = p0-p (mm Hg)",
+   "unit": "mmHg",
+   "what": "measured vapor pressure lowering"
+  },
+  "P": {
+   "col": "Solvent Vapor Pressure p0 (mm Hg)",
+   "unit": "mmHg",
+   "basis": "saturation"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "Molality at Temperature (moles/1000 g H2O)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Solvent Vapor Pressure p0 (mm Hg) (steam tables)",
+  "Delta p/(m p0) x 10^2 (calculated)"
+ ],
+ "conversion_needs": [],
+ "notes": "Molality is stated 'at Temperature' (changes slightly with T because water evaporates into the vapor space). Temperature and p0 printed once per pair of rows; filled down. The text (section 7) states the 25 C-based nominal concentrations; only the tabulated molalities are used.",
+ "quality_remarks": "audit 2026-10-02: P is the pure-water vapor pressure p0 printed in each row (phi is referred to p = p0)."
+}

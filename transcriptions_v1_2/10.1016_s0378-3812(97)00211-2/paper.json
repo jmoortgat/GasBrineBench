@@ -1,0 +1,44 @@
+{
+ "doi": "10.1016/s0378-3812(97)00211-2",
+ "first_author": "Dhima",
+ "year": 1998,
+ "journal": "Fluid Phase Equilibria 145, 129-150",
+ "source_key": "DHIMA(1998)",
+ "experimental_method": "Static equilibrium cell (about 200 cm3, up to 100 MPa) with magnetic stirrer; water-rich phase sample depressurised and the liberated gas analysed by gas chromatography (TCD) to get total and individual hydrocarbon solubilities in pure water at 71 C.",
+ "uncertainties_stated": "Solubility experimental uncertainty about +-5% (relative); pressure held constant within +-1%; trapped-water hydrocarbon content below 10 ppm mol; neglect of water in the liberated gas overestimates total solubility by about 2%.",
+ "quality_remarks": "Rows marked a (5 and 2.5 MPa, 23.0 and 45.5 % methane, Table 3) were measured most probably in the three-phase region (hydrocarbon-liquid present), so solubility there is nearly independent of gas-phase composition. A solid triangle marker precedes 0.2183 (C1+C2, 20 MPa, 100.0 % methane) in Table 2 and is not explained. Temperature scale not stated. Whether total pressure includes water vapour is not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   9
+  ],
+  "journal_pages": [
+   137
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer was clean (no scan); every cell of Tables 2 and 3 matched the 300 dpi page image. Earlier partial files (CSVs and mappings for tables 2 and 3, from an interrupted run) were treated as unverified, re-checked cell by cell against the image and kept; only mapping edits were made (gas codes, doubled percent signs).",
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "critical properties, acentric factors and binary interaction parameters (model parameters)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "natural gas composition from literature, used for prediction"
+  },
+  {
+   "table": "Table 5",
+   "reason": "predicted solubilities compared with measured values taken from Dodson and Standing (literature), not new measurements; also natural gas mixture"
+  }
+ ],
+ "row_counts": {
+  "table_2": "printed 24 data rows (4 blocks x 6); written 24 + 4 label rows = 28",
+  "table_3": "printed 39 data rows (4 blocks x 6 + 3 blocks x 5); written 39 + 7 label rows = 46"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Stacked side-by-side pressure blocks, one label row per block (P set by group_rows). Dash '-' means no value printed; blank cells (Table 3: 75 MPa C1+C4 at 83.0 %; all three cells at 50 MPa, 83.0 %) were blank in print. Table 3 footnote a recorded in note column. Row labelled 100 printed without decimal in Table 3 and C1 0.466 at 75 MPa printed with three decimals; kept as printed. Mixtures: gas code ch4-c2h6 and ch4-n-c4h10; the first column is the water-free methane content of the hydrocarbon-rich phase in mol %. Pure-gas end rows (0.0 and 100) are binary systems. The alkane-rich phase is gas-like at 71 C except where footnote a applies. Sanity: solubility of methane increases with pressure at fixed composition; total solubility increases with methane content at each pressure; no anomalies except the 5 MPa a-flagged rows.",
+ "pass2_diff": "token diff: 194 numbers per pass, identical"
+}

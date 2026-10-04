@@ -1,0 +1,32 @@
+{
+ "doi": "10.1016/s0360-5442(96)00093-x",
+ "first_author": "Aya, I.",
+ "authors": "I. Aya, K. Yamane, H. Nariai",
+ "year": 1997,
+ "journal": "Energy 22 (2/3), 263-271",
+ "title": "Solubility of CO2 and density of CO2 hydrate at 30 MPa",
+ "source_key": "AYA(1997)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell matched the page image (Table 1, journal p. 267)",
+ "experimental_method": "Loop-type high-pressure facility simulating 3000 m ocean depth; circulating water at 30 MPa cooled until CO2 hydrate precipitated; sample water depressurised into a flexible bag, evaporated gas volume and total weight measured to give CO2 mass fraction.",
+ "uncertainties_stated": "none given in the table",
+ "quality_remarks": "Temperatures in parentheses (Delta T) were measured at a different time from C; test 8 C0 and Delta C are estimated. Temperature scale not stated. Estimated hydrate density (1.09-1.11) is derived, not tabulated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   267
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "9 printed / 9 written"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Concentration C is a mass fraction (printed in the figure axis as CO2 concentration (-)).",
+ "pass2_diff": "Table 1: 61/61 numbers identical."
+}

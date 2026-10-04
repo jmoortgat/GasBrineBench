@@ -1,0 +1,42 @@
+{
+ "doi": "10.1021/je00018a007",
+ "first_author": "Saluja, Preet P. S.",
+ "authors": "Preet P. S. Saluja, David J. Jobe, Jacques C. LeBlanc, Robert J. Lemire",
+ "year": 1995,
+ "journal": "Journal of Chemical and Engineering Data 40(2), 398-406",
+ "title": "Apparent Molar Heat Capacities and Volumes of Mixed Electrolytes: [NaCl(aq) + CaCl2(aq)], [NaCl(aq) + MgCl2(aq)], and [CaCl2(aq) + MgCl2(aq)]",
+ "source_key": "SALUJA(1995)",
+ "experimental_method": "Flow differential heat capacity microcalorimeter in series with a vibrating-tube densimeter, 298.15 to 373.15 K at 0.6 MPa, solutions prepared by weight.",
+ "uncertainties_stated": "Temperature stable to +-0.003 K, accuracy +-0.05 K; pressure +-50 kPa; precision in cp +-4 mJ/(K g); density +-1e-5 g/cm3; concentrations (chloride analyses) +-0.5%.",
+ "quality_remarks": "Table 1 and Table 4 give the measured volume heat-capacity ratio and density difference together with apparent molar quantities calculated by the authors (derived_by_authors). Density temperature differs from the heat-capacity temperature (e.g. 297.05 K vs 298.15 K in Table 1; 296.02 K in Table 4). Concentration of MgCl2 and CaCl2 based on chloride analysis of hydrates. Some of the MgCl2 and CaCl2 binary values were reported previously (Saluja and LeBlanc 1987) according to the text; the table here includes all printed values.",
+ "how_extracted": "pdf_text_layer parsed by script (clean), compared with 200 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   5,
+   6
+  ],
+  "journal_pages": [
+   399,
+   402,
+   403
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (Pitzer fitting parameters for apparent molar heat capacities, model parameters)",
+  "Table 3 (Pitzer fitting parameters for apparent molar volumes, model parameters)",
+  "Table 5 (Pitzer binary and ternary interaction parameters, model parameters)",
+  "Table 6 (Pitzer binary interaction parameters, model parameters)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 44 rows per two-block layout = 88 data points (NaCl 36, MgCl2 28, CaCl2 24); written 88 data rows plus 3 label rows",
+  "Table 4": "printed 108 rows of two-block layout = 216 data points (72 per pair); written 216 data rows plus 3 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Unicode minus signs converted to '-'. Row counts per salt checked against the printed layout. Sanity: heat-capacity-ratio-1 and density difference increase/decrease smoothly with molality; ionic strength I values as printed. Image check was a visual comparison of many rows, not a full cell-by-cell diff.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "dense numeric tables (304 rows x 4 values); the image comparison was visual and sampled, not exhaustive",
+ "pass2_diff": "Tables 1 and 4: every pass-2 number occurs in pass 1; pass-1-only numbers are the block temperatures repeated in each row (counts reconcile)."
+}

@@ -1,0 +1,86 @@
+{
+ "doi": "10.1006/jcht.1993.1013",
+ "first_author": "Crovetto",
+ "year": 1993,
+ "journal": "J. Chem. Thermodynamics 25, 127-138",
+ "source_key": "CROVETTO(1993)",
+ "experimental_method": "Vibrating-tube flow densimeter (Delta rho between pure water and solution) modified to detect phase boundaries: bubble pressures and density differences of NaCl, KCl and CaCl2 solutions near saturation at 623 K (CaCl2 also at 643 K), molalities 0.225-3.234 mol/kg.",
+ "uncertainties_stated": "vapour pressure +-0.004 p; Delta rho +-(0.0005 + 1e-4 Delta p/MPa) g/cm3; molality +-0.002 m (0.25 mol/kg NaCl +-0.005 m); temperature accuracy 0.15-0.20 K, stability 0.01-0.02 K; pressure transducer calibrated to 0.01 per cent.",
+ "quality_remarks": "Pure-water check: average of p_a and p_d was 0.002-0.006 p below literature at 633 and 643 K. NaCl 3.000 and 1.000 mol/kg bubble pressures taken from reference 2 (footnote a, also printed on two KCl rows). Printed oddities kept as printed (see mapping notes): rho 0.97349 (CaCl2 3.234, 623.13 K) and 0.56648 (CaCl2 0.225, 642.89 K) inconsistent with neighbouring rows by about 4.5e-4; integer kappa values 20, 18, 1800, 11, 10; Vphi '-243 9'; T 623.090. Scanned PDF, temperature scale not stated. Temperatures in Tables 1 and 2 are mean values per block.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "journal_pages": [
+   130,
+   131,
+   132,
+   133,
+   134
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 45,
+   "written_data_rows": 45,
+   "label_rows": 3
+  },
+  "table_2": {
+   "printed_data_rows": 165,
+   "written_data_rows": 165,
+   "label_rows": 3
+  }
+ },
+ "changes_after_image_check": [
+  "Process: no text layer; tesseract (300 dpi, numeric whitelist, x-position column assignment) gave a draft, every table page was then compared with zoomed page crops; Table 1 was transcribed from the image and checked against OCR.",
+  "Table 1: none beyond transcription (OCR '0,00' -> 0.00, footnote letters moved to note column)",
+  "table_2 (pdf page 4, OCR line y=2179) column kappa: OCR '16' -> 7.6",
+  "table_2 (pdf page 4, OCR line y=2310) column kappa: OCR '46' -> 4.6",
+  "table_2 (pdf page 4, OCR line y=2348) column drho: OCR '0.0643t' -> 0.06431",
+  "table_2 (pdf page 4, OCR line y=2348) column kappa: OCR '49' -> 4.9",
+  "table_2 (pdf page 5, OCR line y=694) column kappa: OCR '29' -> 2.9",
+  "table_2 (pdf page 5, OCR line y=1072) column kappa: OCR '28' -> 2.8",
+  "table_2 (pdf page 5, OCR line y=1203) column kappa: OCR '11' -> 1.1",
+  "table_2 (pdf page 5, OCR line y=1391) column Vphi: OCR '-919' -> -91.9",
+  "table_2 (pdf page 5, OCR line y=1391) column kappa: OCR '13' -> 1.3",
+  "table_2 (pdf page 5, OCR line y=1466) column Vphi: OCR '-914' -> -91.4",
+  "table_2 (pdf page 5, OCR line y=2066) column Vphi: OCR '--318.5' -> -318.5",
+  "table_2 (pdf page 5, OCR line y=2066) column kappa: OCR '17' -> 7.7",
+  "table_2 (pdf page 5, OCR line y=2140) column drho: OCR '003887' -> 0.03887",
+  "table_2 (pdf page 5, OCR line y=2140) column rho: OCR '(0.61604' -> 0.61604",
+  "table_2 (pdf page 5, OCR line y=2235) column Vphi: OCR '-2448' -> -244.8",
+  "table_2 (pdf page 5, OCR line y=2514) column kappa: OCR '48' -> 4.8",
+  "table_2 (pdf page 6, OCR line y=474) column Vphi: OCR '-2439' -> -243.9",
+  "table_2 (pdf page 6, OCR line y=550) column m: OCR '6.500' -> 0.500",
+  "table_2 (pdf page 6, OCR line y=550) column Vphi: OCR '-2446' -> -244.0",
+  "table_2 (pdf page 6, OCR line y=626) column m: OCR '6.500' -> 0.500",
+  "table_2 (pdf page 6, OCR line y=626) column kappa: OCR '$.1' -> 5.1",
+  "table_2 (pdf page 6, OCR line y=1135) column Vphi: OCR '-8C.3' -> -80.3",
+  "table_2 (pdf page 7, OCR line y=511) column rho: OCR '-0.97474' -> 0.97474",
+  "table_2 (pdf page 7, OCR line y=1341) column Vphi: OCR '-14178' -> -1417.8",
+  "table_2 (pdf page 7, OCR line y=1884) column kappa: OCR '91' -> 9.1",
+  "table_2 (pdf page 7, OCR line y=1921) column kappa: OCR '96' -> 9.6",
+  "table_2 (pdf page 8, OCR line y=477) column p1: OCR '.22.05' -> 22.05",
+  "table_2 (pdf page 8, OCR line y=477) column Vphi: OCR '-1773' -> -177.3",
+  "table_2 (pdf page 8, OCR line y=667) column p1: OCR '.22.03' -> 22.03",
+  "table_2 (pdf page 8, OCR line y=667) column Vphi: OCR '-1771' -> -177.1",
+  "table_2 CaCl2 3.234 642.85 K rows with p2 19.015 and 19.96: OCR column Vphi -> kappa_T for 0.056 and 0.0024 (printed shifted left)"
+ ],
+ "extraction_notes": "Table 1 stacked: KCl left group, NaCl right group, CaCl2 left then right group; label rows at index 0, 13, 27. Table 2 label rows (NaCl, KCl, CaCl2) at index 0, 48, 89; T written only on the first row of each block, as printed. Footnote letters on Table 2 column headers (a on Vphi, b on kappa_T) are recorded in the mapping, not in the CSV header. Figure 1 (bubble pressures of NaCl vs literature) not tabulated.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned PDF without text layer; OCR draft with about 30 corrected cells; blind second reading advised",
+ "changes_after_second_pass": [
+  "table_1 csv line 42: CaCl2 3.234 mol/kg, 642.85 K, 18.60 MPa, dp 0.08 -> 0.03 (500 dpi crop reads 0.03 with a speck; pass 2 agrees; medium confidence)",
+  "table_2 csv line 92: Vphi -453.5 -> -458.5 (glyph 3/8 ambiguous at 500 dpi; pass 2 reads 458; apparent molar volume recomputed from the printed density and density change gives -459.6, supporting 458)",
+  "table_2 csv line 94: Vphi -453.9 -> -458.9 (same reasoning; recomputed value -458.8)"
+ ],
+ "pass2_diff": "1665 cells compared, 3 disagreements, all settled in favour of pass 2 (see changes_after_second_pass); remaining uncertainty: the NaCl dp column of Table 1 is degraded in the scan (pass 2 lists alternatives for 8 cells at medium confidence, pass 1 agreed with pass 2 on all of them)"
+}

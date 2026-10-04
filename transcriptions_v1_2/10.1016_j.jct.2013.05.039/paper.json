@@ -1,0 +1,34 @@
+{
+ "doi": "10.1016/j.jct.2013.05.039",
+ "first_author": "Marinakis",
+ "year": 2013,
+ "journal": "J. Chem. Thermodynamics 65, 100-105",
+ "source_key": "MARINAKIS(2013)",
+ "experimental_method": "Hydrates formed from gas mixture and water in a 100 cm3 stirred Parr reactor for three days with excess water injected to remove the vapour phase; aqueous phase sampled, flashed to ambient and gas analysed volumetrically and by GC.",
+ "uncertainties_stated": "u(T)=0.03 K, u(p)=0.01 MPa, u(Xc1)=0.1e-3, u(Xc2)=0.012e-3, u(Xc3)=0.007e-3, u(W_NaCl)=0.01e-2.",
+ "quality_remarks": "Data are for hydrate-aqueous equilibrium under vapour-unsaturated conditions; authors report C2/C3 concentrations still creeping up at seven days (3-day equilibration a compromise). Data are compared with CSMGem predictions. Footnote letter 'a' printed on T of row 293.15 is probably a typesetting slip for the uncertainty footnote.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   103
+  ]
+ },
+ "not_extracted_tables": {
+  "Table 1": "literature survey of ranges, no data",
+  "Table 2": "chemicals list"
+ },
+ "row_counts": {
+  "table_1": "printed 43 data rows; written 43",
+  "table_2": "printed 11 data rows; written 11"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 3 stacked as one table, T order as printed (20 MPa isobar first, then isotherms at 278, 285, 287, 289 K varying p). Table 4 is table_2 here. Text layer parsed by script; all values matched the page image.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Clean text layer; every cell matched the image.",
+ "pass2_diff": "Tables 3 and 4: 43 and 11 rows, all numbers identical (215/215, 44/44)."
+}

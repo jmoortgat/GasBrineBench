@@ -1,0 +1,34 @@
+{
+ "doi": "10.1021/je00027a014",
+ "first_author": "Rogers, P. S. Z.",
+ "authors": "P. S. Z. Rogers, Daniel J. Bradley, Kenneth S. Pitzer",
+ "year": 1982,
+ "journal": "J. Chem. Eng. Data 27(1), 47-50",
+ "title": "Densities of Aqueous Sodium Chloride Solutions from 75 to 200 C at 20 bar",
+ "source_key": "ROGERS(1982)",
+ "experimental_method": "High-pressure dilatometer: change in mercury-column height with temperature of a ~9 cm3 solution at 20.27 bar, calibrated with pure water.",
+ "uncertainties_stated": "Precision +-2e-4 g/cm3 at 100 C rising to +-5e-4 g/cm3 at 200 C; temperature +-0.005 K; pressure +-0.1 bar; calibration standard deviation 4e-5 g/cm3 for pure water.",
+ "quality_remarks": "The PDF begins with the end of another article (page 47, acetamide/potassium formate) and ends with the start of another (excess volume of binary solvents, page 50); neither extracted. The 30 C column is from literature (footnote a), not measured. Raw data and calibration runs are only in the cited dissertation (Rogers 1981). Densities reduce with reference-state densities from literature analysis.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   49
+  ]
+ },
+ "not_extracted_tables": [
+  "Figure 3 apparent molal volumes (graph, derived from the densities); no other tables in the paper (pages 47 and 50 content belongs to other articles)"
+ ],
+ "row_counts": {
+  "Table I": "printed 9 rows x 7 temperature columns = 63 values; written 63 long rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the 200 dpi image (and a 1.5x zoom of the table) in every cell. Thin spaces inside numbers removed. Pure-water rows kept.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image; only restacking done",
+ "pass2_diff": "Table 1: all 63 density values identical to the pass-2 wide table (pass-1-only numbers are molality and temperature keys of the restacked rows)."
+}

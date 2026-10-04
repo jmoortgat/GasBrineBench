@@ -1,0 +1,49 @@
+{
+  "page_journal": "J. Chem. Eng. Data 60 (2015)",
+  "footnotes_as_printed": {
+    "a": "m is the molality of solute (NaCl or Na2SO4) in the water solvent; Delta rho represents the measured difference in density of a solution with respect to water. Standard uncertainties u are u(T) = 0.01 K, u(p) = 0.0005*p, u(mi) = 0.005*mi. The combined uncertainty U(Delta rho) = (2.8e-5, 2.9e-5, 3.7e-5, 6.1e-5, and 1.03e-4) g cm-3 at T = (298.15, 373.15, 423.15, 473.15, and 523.15) K, respectively. The combined uncertainty is based on the standard deviation of the mean density difference of solutions evaluated from the repeated measurements of the solution at every temperature."
+  },
+  "property": "rho_diff",
+  "rho_diff_reference": "pure water at the same T and p (Hill equation of state for water; consistent Archer equation for aqueous NaCl as reference)",
+  "gas": "",
+  "regime": "",
+  "temperature_scale": "not stated",
+  "pressure_note": "p printed in MPa; not stated whether absolute or gauge",
+  "volume_basis": "not_applicable",
+  "table": "Table 2 (Na2SO4-NaCl-H2O block)",
+  "title_as_printed": "Results of Experimental Measurements of Density Difference Delta rho ... ; block 'Na2SO4-NaCl-H2O'",
+  "columns": {
+    "T": {
+      "col": "T K",
+      "unit": "K"
+    },
+    "P": {
+      "col": "p MPa",
+      "unit": "MPa",
+      "basis": "unspecified"
+    },
+    "value": {
+      "col": "10^3 Delta rho g cm-3",
+      "unit": "g_per_cm3",
+      "scale": 0.001
+    }
+  },
+  "composition": {
+    "basis": "molality",
+    "per_row": {
+      "NaCl": {
+        "col": "m(NaCl) mol kg-1",
+        "unit": "mol/kg"
+      },
+      "Na2SO4": {
+        "col": "m(Na2SO4) mol kg-1",
+        "unit": "mol/kg"
+      }
+    },
+    "constant": {},
+    "other_species": "none"
+  },
+  "skip_rows": [],
+  "group_rows": [],
+  "notes": "Ternary block. Printed as left and right half side by side (5 columns each, an empty spacer column dropped); stacked left half first, then right half."
+}

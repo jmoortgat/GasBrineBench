@@ -1,0 +1,52 @@
+{
+ "doi": "10.1021/je0200766",
+ "first_author": "Marliacy",
+ "year": 2003,
+ "journal": "J. Chem. Eng. Data 48 (2), 241-248 (online December 2002)",
+ "source_key": "MARLIACY(2003)",
+ "title": "Vapor Pressure and Dissolution Enthalpy Measurements in Ternary {H2O + NaCl + Na2SO4} System between 298 K and 363 K",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "experimental_method": "Vapor pressure: nonisothermal static device (Pt100, MKS Baratron absolute manometer) at constant composition; dissolution enthalpy: Setaram C80D differential calorimeter.",
+ "uncertainties_stated": "T +-0.01 K; pressure accuracy +-0.1%; composition +-0.001 mol/kg (vibrating-tube densimeter); calorimeter accuracy of masses +-0.1 mg; reproducibility NaCl series 1.5% relative mean deviation.",
+ "tables": {
+  "table_1.csv": 225,
+  "table_2.csv": 98
+ },
+ "row_counts": {
+  "Table 1": {
+   "printed": "210 data points in 15 blocks (14 per block) + 15 label rows",
+   "written": "225 rows incl. 15 label rows"
+  },
+  "Table 2": {
+   "printed": "89 data points in 9 blocks + 9 label rows",
+   "written": "98 rows incl. 9 label rows"
+  }
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 3",
+   "reason": "Appelblat fit coefficients A, B, C for each composition (fitted correlation, not measured data)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "Pitzer model parameters and dissolution enthalpies at infinite dilution (model parameters)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "Chen NRTL model parameters (model parameters)"
+  },
+  {
+   "table": "Table 6",
+   "reason": "deviations of Pitzer and NRTL calculations from literature data (model comparison)"
+  }
+ ],
+ "quality_remarks": "(1) Text says the m1=m2 solutions span 0.2625 to 1.04915 mol/kg; Table 1 label has 1.0495 (and Table 3 also 1.0495): likely a text/table rounding difference. (2) Text says the 1/10 solutions have m2 = 0.2448 to 1.3596; Table 1 and Table 3 have lowest m2 = 0.2484 (digits transposed in the text). (3) Abstract and Section 2.2 say the dissolution enthalpies were measured at 297.8, 317.5, 332.4 K 'respectively' for ratios 1/10, 1, 10/1, but Table 2 contains every ratio at all three temperatures (297.75, 317.45, 332.35 K). (4) Table 2 caption carries a stray closing quote. (5) Table 2 10/1 block at 317.45 K has 7 points in the left group and 8 in the right. (6) T range of Table 1 298.31-362.26 K, matches 298-363 K in text. (7) Temperature scale not stated. (8) The 'aw' column is derived by the authors from Pexp; 'aw Appelblat' is calculated from their fit.",
+ "changes_after_image_check": [],
+ "extraction_notes": "Captured table list contained 52 fragments: Table 1 split in 31 pieces (header, label, data), Table 2 split in 13 pieces (T labels missing for blocks 4-9, recovered from wrapper_text), Tables 4 and 5 repeated 3 times. Fragments concatenated in order by script; side-by-side column groups stacked. Checks: Table 1 block count equals 8 (m1=m2) + 7 (1/10) as stated in the text; Table 2 data count equals the 45 printed lines x 2 groups - 1 empty cell = 89. Only Unicode minus normalised (Table 2 enthalpies); thin spaces in labels normalised to ASCII spaces.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

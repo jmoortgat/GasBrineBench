@@ -1,0 +1,46 @@
+{
+ "slug": "10.1007_bf00972761",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer parsed by script and checked against page images; 24 cells needed correction (comma decimals, OCR letters), so a blind second pass is required.",
+ "doi": "10.1007/BF00972761",
+ "first_author": "Brendler",
+ "year": 1996,
+ "journal": "Journal of Solution Chemistry 25(1), 83-93 (11 pdf pages)",
+ "source_key": "BRENDLER(1996)",
+ "experimental_method": "Isopiestic method (apparatus after Grjotheim et al., updated) with MgCl2 as reference electrolyte, KCl-MgCl2-H2O at 155.5 C, 12 constant salt mole fractions y_KCl.",
+ "uncertainties_stated": "Overall standard error of Pitzer fit of osmotic coefficients 0.0177 (model, not experiment). MgCl2 stock analysed by EDTA titration and AgCl precipitation (+-0.07 percent); KCl stock +-0.03 percent.",
+ "quality_remarks": "Solubility limits were exceeded in several runs (Table II estimates). Largest residuals vs Pitzer in border regions of high MgCl2 or KCl. Temperature scale not stated. Individual run temperatures vary 428.12-428.73 K around nominal 155.5 C (428.65 K).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   86,
+   87,
+   88,
+   89
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (solubilities estimated by the authors from the isopiestic experiments, with solid phases): estimated/derived",
+  "Table III (Pitzer parameters): model parameters",
+  "Table IV (modified B.E.T. parameters r and Delta E): fitted/derived"
+ ],
+ "row_counts": {
+  "table_1": "printed 127 data rows in 12 y_KCl blocks (10,19,11,26,5,10,19,5,10,2,7,3), written 127 data rows + 12 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 row 27 (y=0.10) m Total: 4.556I -> 4.5561",
+  "table_1 y=0.25 reference: 5.282t -> 5.2821",
+  "table_1 y=0.80 reference: 3A396 -> 3.4396",
+  "comma decimals in text layer -> full stops (about 20 cells, e.g. 9,7145 -> 9.7145)"
+ ],
+ "extraction_notes": "Values checked per block count and spot values against the image; replicate rows (identical reference m and a_w) are genuine duplicates in the print.",
+ "pass2_diff": "127 rows, 508 numbers, identical."
+}

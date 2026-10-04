@@ -1,0 +1,88 @@
+{
+ "doi": "10.1016/0021-9614(88)90224-8",
+ "first_author": "Majer",
+ "year": 1988,
+ "journal": "J. Chem. Thermodynamics 20, 949-968",
+ "source_key": "MAJER(1988)",
+ "experimental_method": "Vibrating-tube (Hastelloy U-tube, flow, injection-valve) densimeter measuring the density difference between NaCl(aq) and water, 0.0025-5.0 mol/kg, 322-600 K, 0.1-40 MPa; two series (Set I with water and N2 calibration, Set II with water and D2O calibration).",
+ "uncertainties_stated": "T accurate to 0.05 K at 300 K rising to about 0.2 K at 600 K; pressure gauge 0.3 MPa (set I), 0.1 MPa after calibration (set II); molality better than 0.1 per cent; random error in Delta rho about 0.050 kg/m3 below 450 K and 0.140 kg/m3 above 550 K (set I); set II sigma_r(Delta rho)/(kg/m3) = 0.020 + 0.0011 Delta rho below 400 K, 0.040 + 0.0010 Delta rho above; calibration constant error 0.2 to 0.35 per cent.",
+ "quality_remarks": "Authors report plateau slopes and adsorption/desorption effects on the tube wall above 400 K for set II (graphical extrapolation of periods used); 600 K set II results not reported; 38 values inconsistent with the rest were excluded from Table 2 by the authors; nine rows at 548.05 K, 24.58-24.72 MPa carry footnote a (excluded from the spline fit, systematic differences). Printed misprints kept as printed (see mapping_2 notes): m = 0.1016 at 597.45 K 20.65 MPa (likely 0.0106), delta_w value 0.05 with two decimals. Temperature scale not stated. Table 2 gives only density differences, not absolute densities.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "journal_pages": [
+   954,
+   955,
+   956,
+   957,
+   958
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "calibration constants K and literature densities of calibration fluids (H2O, N2, D2O), not measured NaCl(aq) data"
+  },
+  {
+   "table": "Table 3",
+   "reason": "spline knot values (model parameters)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "Chebyshev coefficients of Debye-Hueckel slope (model parameters)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "specific volumes generated from the authors' spline surface (derived, smoothed)"
+  },
+  {
+   "table": "Table 6",
+   "reason": "apparent molar volumes generated from the spline surface (derived, smoothed)"
+  },
+  {
+   "table": "Table 7",
+   "reason": "apparent molar volumes at infinite dilution from the spline surface (derived)"
+  }
+ ],
+ "row_counts": {
+  "table_2": {
+   "printed_data_rows": 443,
+   "written_data_rows": 443,
+   "label_rows": 2,
+   "set_I": 280,
+   "set_II": 163
+  }
+ },
+ "changes_after_image_check": [
+  "Process: the text layer (pdftotext/bbox) dropped whole columns and some rows and mis-OCRed digits; a second independent reading (tesseract, 300 dpi, numeric whitelist) was aligned row by row; every cell where the two readings disagreed or one source lacked the row was decided against the page image (all five table pages were also viewed as images and row counts per pressure block were counted against the image).",
+  "table_2 (p8 L) 548.05 K 10.86 MPa m 0.0564 Delta rho 3.90 col6: text 0.751 -> 0.757",
+  "table_2 548.05 K 10.86 MPa m 0.2516: text 15.12 -> 15.72",
+  "table_2 548.05 K 10.93 MPa m 1.0111: text 54.27 -> 56.27",
+  "table_2 548.05 K m 0.0564 Delta rho 3.39: text p 24.12 -> 24.72",
+  "table_2 548.05 K m 2.0190 Delta rho 96.88: text p 24.12 -> 24.72",
+  "table_2 548.05 K 24.58 MPa Delta rho 27.62: text m 0.5cQO -> 0.5000",
+  "table_2 321.57 K 0.83 MPa m 0.02715 Delta rho 1.086: text T 321.51 -> 321.57",
+  "table_2 597.45 K 20.65 MPa (4 rows, Delta rho 5.46, 125.60, 193.34, 248.85): text T 591.45 -> 597.45",
+  "table_2 597.45 K 38.58 MPa m 0.0106: text Delta rho 0.71 -> 0.77",
+  "table_2 321.63 K 0.63 MPa m 2.05600: text Delta rho 74.126 -> 74.726",
+  "table_2 448.29 K 32.58 MPa m 0.010390 Delta rho 0.409: OCR delta_w -1.285 vs text -1.289 -> -1.289",
+  "table_2 449.75 K 38.16 MPa m 0.1051 Delta rho 4.45 (2 rows): text delta_w -0.150 -> -0.159",
+  "table_2 many rows (about 90 cells): rows missing in one of the two readings or cells with dropped column/decimal/sign filled from the other reading; typical text-layer errors: delta column dropped in Set II (e.g. 321.67 K 32.16 MPa 0.01039 delta 0.002), glued footnote letters and stray quotation marks on delta_w, 'il.34' for 11.34, '3.09OOOa' for 3.090000"
+ ],
+ "extraction_notes": "ASCII headers: Delta rho/rho0, delta(Delta rho)/rho0, delta_w Delta rho. Table printed as two side-by-side column groups; stacked left group then right group per page. Label rows Set I (index 0) and Set II (index 281). Trailing zeros kept as printed (m has 4 decimals in Set I, 5-6 in Set II with the same state printed as 0.01039 and 0.010390 in different places). needs_pass2 remains true because many cells needed correction after the image check.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer dropped columns/rows and about 15 cells plus many glitches needed correction; two-source (text + OCR) agreement and image viewing used, but a blind second extraction is advised for 443 rows",
+ "changes_after_second_pass": [
+  "table_2 csv line 196: 0.072 -> -0.072 (minus sign lost in pass 1; page image 300 dpi, journal p. 957)",
+  "table_2 csv line 197: 0.382 -> -0.382 (minus sign lost in pass 1; page image 300 dpi, journal p. 957)"
+ ],
+ "pass2_diff": "2658 cells compared, 2 disagreements, both resolved from the page image in favour of pass 2"
+}

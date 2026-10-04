@@ -1,0 +1,107 @@
+{
+ "table": "Table I",
+ "page_journal": 959,
+ "title_as_printed": "Experimental Intermediate Heats of Dilution of Aqueous Sodium Sulfate Solutions",
+ "footnotes_as_printed": {
+  "text": "Text: first two columns give initial and final concentrations of a dilution; column 4 experimental heat effects calculated per mole diluted in the left half of the calorimeter; quantities in parentheses in column 5 are the smoothed probable errors of the intermediate heats of dilution."
+ },
+ "property": "dh_dilution",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (calorimetric measurement; no pressure printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set by label rows"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "dH cal/mole Na2SO4",
+   "unit": "cal_per_mol_Na2SO4",
+   "note": "calorie type (thermochemical or 15 C) not stated; intermediate heat of dilution from m1 to m2"
+  },
+  "uncertainty": {
+   "col": "dH error",
+   "unit": "cal/mol",
+   "note": "the +- value after the heat effect"
+  },
+  "q": {
+   "col": "q cal",
+   "unit": "cal",
+   "what": "measured heat effect, mean of the runs, left half of calorimeter"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "m1",
+    "unit": "mol/kg",
+    "what": "initial molality"
+   },
+   "Na2SO4_final": {
+    "col": "m2",
+    "unit": "mol/kg",
+    "what": "final molality after dilution"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (conductance 3e-6 mho or less); Na2SO4 only. Solutions made up on a volume basis at 25 C and converted to a weight basis with Gibson's densities; the word molality is not printed in the table"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    24
+   ],
+   "reason": "temperature label row"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "20",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Runs (number of duplicate runs)",
+  "dH smoothed probable error (in parentheses, derived)"
+ ],
+ "conversion_needs": [
+  "cal to J (calorie definition not stated)"
+ ],
+ "notes": "Concentration columns m1, m2 are headed m1, m2 only; the text says they are the initial and final concentrations of a dilution. 25 C rows have no parenthesized smoothed error (empty cell). Printed '+-.000' for q error in the 15 C 0.4014/.005366 row kept as printed."
+}

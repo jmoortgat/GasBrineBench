@@ -1,0 +1,53 @@
+{
+ "table": "Table 1",
+ "page_journal": 66,
+ "title_as_printed": "CO2 solubility (mol kg-1 w) at 65 C in pure H2O calculated from the calibration line in Fig. 3 as a function of pressure (bar), and difference with the EOS of Duan and Sun (2003) (Delta model, %). The values are the mean of 5-10 measurements at a given pressure.",
+ "footnotes_as_printed": {
+  "a": "+-0.2 bar.",
+  "b": "At 95% confidence."
+ },
+ "property": "solubility_molality",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure of autoclave (IMAGES device, CO2 pressure ; +-0.2 bar); pressure-transducer; exact basis (total vs CO2 partial) not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "65"
+  },
+  "P": {
+   "col": "Pressure (bar)",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "mCO2 (mol kg-1 H2O)",
+   "unit": "mol_per_kg_water",
+   "scale": 1,
+   "note": "Raman peak-intensity ratio converted with a calibration line fitted to Duan and Sun (2003) model values at 100 C (not an independent measurement of molality)"
+  },
+  "uncertainty": {
+   "col": "u(mCO2)",
+   "unit": "mol_per_kg_water",
+   "note": "95% confidence"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "I_CO2/I_H2O (measured Raman peak-intensity ratio)",
+  "Delta model (%) (difference to Duan and Sun EOS, calculated by authors)"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed '%' signs retained in Delta model column; printed minus signs written as '-'.",
+ "quality": "U",
+ "quality_reason": "mole fraction derived through a Raman calibration anchored to an equation of state (audit 2026-10-02)"
+}

@@ -1,0 +1,65 @@
+{
+ "table": "Table 1",
+ "page_journal": 315,
+ "title_as_printed": "Chemically determined values of oxygen solubility in ml/l. (from an atmosphere of 20.94 % O2 and 100 % relative humidity) and corresponding smooth curve values and differences, together with interpolated values from smoothed data of CARPENTER (1966) and GREEN and CARRITT (1967).",
+ "footnotes_as_printed": "none",
+ "property": "gas_volume_solubility",
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibration with air (20.94 % O2, 100 % relative humidity) at atmospheric pressure; barometric pressure measured but total pressure not given in this paper (760 mm in the Part I definition)",
+ "columns": {
+  "T": {
+   "col": "Temp. (C)",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Oxygen solub. (ml/l)",
+   "unit": "ml_O2_per_litre_water_from_air_20.94pct_O2_100pct_RH",
+   "reference_state": "STP gas volume per litre of water at T, air saturated with water vapour; see notes"
+  },
+  "value2": {
+   "col": "CARPENTER (1966)",
+   "unit": "same",
+   "what": "interpolated from Carpenter's smoothed tables",
+   "from_literature": true
+  },
+  "value3": {
+   "col": "GREEN and CARRITT (1967)",
+   "unit": "same",
+   "what": "interpolated from Green and Carritt's tables",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {
+   "salinity": {
+    "col": "Salinity (permil)",
+    "unit": "permil"
+   }
+  },
+  "constant": {},
+  "other_species": "natural sea water of the stated salinity (chlorinity = salinity/1.80655); sea-water matrix, not a six-ion composition"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Chlorinity (permil) (salinity/1.80655)",
+  "Smoothed curve value (authors' smoothed fit; model-generated)",
+  "Difference (measured minus smoothed)"
+ ],
+ "conversion_needs": [
+  "ml/l to mole fraction or molality needs STP molar volume, water density and O2 partial pressure (20.94 % of (760 mm - water vapour pressure))",
+  "salinity per mil to molality needs composition assumption"
+ ],
+ "notes": "Chemical (Winkler) determinations, each the average of triplicate measurements (average SD 0.008 ml/l); includes the correction of 0.011 ml/l for O2 dissolved in Winkler reagents. Temperature printed once per block beside the middle row; filled down. Two rows (9.95 C, 40.201 permil S; 29.80 C, 39.120 permil S) have no smoothed value or difference printed (left empty). Block sizes 5,5,5,6,6,5,5,5,6,5.",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "Murray and Riley 1969 (O2): solubility in ml/l; the paper does not say whether the litre is of seawater or of water."
+}

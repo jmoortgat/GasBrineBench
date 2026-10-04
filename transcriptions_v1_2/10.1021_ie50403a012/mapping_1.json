@@ -1,0 +1,126 @@
+{
+ "table": "Table I",
+ "page_journal": 792,
+ "title_as_printed": "Experimental Data on Composition of Dew-Point Gas in Ethane-Water System",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "y_h2o",
+ "gas": "c2h6",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure held constant within 1 lb/sq in. during gas withdrawal; 'Pressure, Lb./Sq. In. Abs.'; total pressure of heterogeneous (water + ethane gas) system",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "F",
+   "constant": "set by label rows"
+  },
+  "P": {
+   "col": "Pressure Lb./Sq. In. Abs.",
+   "unit": "psia",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "Mole Fraction Water x 10^3",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (redistilled, degassed); no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    13,
+    18,
+    27,
+    34,
+    42
+   ],
+   "reason": "temperature label rows (100-460 F)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "100",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "160",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "220",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "280",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "340",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "400",
+     "unit": "F"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "460",
+     "unit": "F"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "F to K; psia to Pa"
+ ],
+ "notes": "Three side-by-side column blocks in print (100/160/220 F left; 280/340 F middle; 400/460 F right) stacked in temperature order 100..460 F. Row order within each block as printed (not sorted by pressure). Dew-point gas phase in equilibrium with aqueous liquid. Standard conditions for gas volumes not applicable.",
+ "quality_remarks": "Suspected misprint in the original, cell kept: 220 F, 536.6 psia, y_H2O x10^3 = 3.362. Water vapour pressure at 220 F is about 17.2 psia, so y is about 0.032 at that pressure; the printed value is about a factor 10 too low and probably should read 33.62 (compare 160 F, 320.8 psia: 15.57 against Psat/P = 14.8). Rows at 400 F are printed in non-monotonic pressure order."
+}

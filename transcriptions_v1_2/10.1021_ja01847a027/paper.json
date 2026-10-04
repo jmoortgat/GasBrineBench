@@ -1,0 +1,40 @@
+{
+ "doi": "10.1021/ja01847a027",
+ "title": "The Solubility of Carbon Dioxide and Nitrous Oxide in Aqueous Salt Solutions",
+ "first_author": "Markham",
+ "authors": "Aaron E. Markham and Kenneth A. Kobe",
+ "year": 1941,
+ "journal": "J. Am. Chem. Soc. 63 (2), 449-454 (this PDF begins with the last page of another article, p. 449, on specific volumes of NaCl and NaBr solutions; the Markham-Kobe paper starts on p. 449 bottom and runs to p. 454)",
+ "source_key": "MARKHAM(1941)",
+ "experimental_method": "Ostwald-type volumetric method: a measured volume of gas at 760 mm partial pressure is shaken with a measured quantity of gas-free solution in a two-bulb oscillating flask in a thermostat, and the volume remaining in a mercury buret is read by cathetometer.",
+ "uncertainties_stated": "Probable experimental error 0.2 %; temperature variation up to 0.1 C at 0.2 C and never more than 0.03 C at other temperatures; pure-water average deviations of alpha x 1000 listed in Table I.",
+ "quality_remarks": "Authors state solubilities as measured are low by several hundredths, possibly up to 0.1 %, from solution expansion; gas impurity (CO2 99.8 %, N2O 99.7 %) not corrected; vapour pressures of solutions taken from the literature; ideal-gas molar volume used for the Bunsen coefficient although apparent CO2 molecular weight deviates 0.2 % from ideal. Some footnoted cells (a, b, c) are at salt molalities different from the m column. Table values transcribed from the scan; the OCR text layer was consistent with the image.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   451,
+   452
+  ]
+ },
+ "not_extracted_tables": [
+  "Table IV: predicted vs experimental alpha for CO2 in NaNO3 (additivity test, derived/model-predicted)",
+  "Table V: constants a and b of the authors' equation (model parameters)",
+  "log gamma / m ratio table in text (derived)"
+ ],
+ "row_counts": {
+  "Table I": "6 data rows + 2 label rows printed, 6+2 written",
+  "Table II": "19 printed, 19 written",
+  "Table III": "13 printed, 13 written"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Tables II and III are written wide with salt blocks as columns (alpha and S per salt); the mapping gives value_columns (S, derived_by_authors) and value2_columns (alpha). KNO3, NaNO3 and Mg(NO3)2 columns are outside the six-ion set but kept as printed. Two physical oddities as printed: Table II m=4 / 8-molal NaNO3 rows are footnote a (molality 8) and the 40 C Na2SO4 0.25 molal value sits on a separate line with m blank. Sanity: alpha and S fall with m and with T in every column checked. Text layer only partly parsed (columns interleaved); all digits read from the 220-330 dpi image.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned old print with sparse wide tables whose text layer scrambles columns; all values were entered by hand from the image",
+ "pass2_diff": "Tables I-III: every pass-2 number occurs in pass 1; pass-1-only numbers are t and m values filled down where pass 2 left them blank."
+}

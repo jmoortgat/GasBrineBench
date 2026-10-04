@@ -1,0 +1,47 @@
+{
+ "table": "Table 5.2",
+ "page_journal": 102,
+ "title_as_printed": "Experimental and calculated water content for H2S liquid in equilibrium with a hydrate phase.",
+ "footnotes_as_printed": {
+  "a": "Stability during temperature measurements was calculated to be +-0.1K (well within the 95% confidence uncertainty of the PRT).",
+  "b": "Expanded uncertainty for pressure measurements calculated to be +-0.001 MPa (95% confidence).",
+  "c": "Uncertainty for water content measurements is 2% relative and reproducibility for triplicate measurements was within a standard deviation of 25 ppm"
+ },
+ "property": "y_h2o",
+ "gas": "h2s",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "p / MPa with footnote letters swapped relative to text (a refers to temperature stability, b to pressure); total vs partial not stated; liquid H2S + hydrate.",
+ "columns": {
+  "T": {
+   "col": "T / K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p / MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "yH2O(exp.)",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure H2S (liquid, 99.6 mol% per thesis Table 2.3) + hydrate; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "yH2O(calc.) (model)",
+  "yH2O(exp.) - yH2O(calc.) (residual)"
+ ],
+ "conversion_needs": [],
+ "volume_basis": "not applicable",
+ "volume_basis_evidence": "printed as yH2O mole fraction (decimal, not ppm)",
+ "notes": "Mole fraction as printed (no ppm). Isotherm blocks (298, 288, 278, 268, 257.5, 248 K nominal, 4 rows each). H2S is outside the seven target gases; kept per SPEC v2.1. Thesis footnote c gives a 2% relative uncertainty."
+}

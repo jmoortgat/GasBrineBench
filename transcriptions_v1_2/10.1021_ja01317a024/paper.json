@@ -1,0 +1,41 @@
+{
+ "doi": "10.1021/ja01317a024",
+ "first_author": "Saddington",
+ "year": 1934,
+ "journal": "J. Am. Chem. Soc. 56, 353-361",
+ "source_key": "SADDINGTON(1934)",
+ "experimental_method": "Compressed N2 saturated with water in a thermostatted high-pressure apparatus (dead-weight piston gage); liquid samples expanded to measure dissolved N2 volume, gas-phase water content by condensation in liquid-air traps and weighing, gas density from expansion of a closed pipet.",
+ "uncertainties_stated": "Average deviation of replicate experiments tabulated per row (liquid mostly ~0.75%, 1-2% at high T; gas phase about 0.4-3.5%); weighing error under 0.3 mg per tube.",
+ "quality_remarks": "Table III heading prints 'Press., cm.' (evident misprint for atm.). Authors note gas-phase density at 230 C shows larger variation. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   356,
+   357
+  ]
+ },
+ "not_extracted_tables": [
+  "Table III (gas phase density and compressibility factors): gas-phase density, not an in-scope property",
+  "Table IV (Henry's law constants): derived by authors"
+ ],
+ "row_counts": {
+  "Table I": "printed 18, written 18",
+  "Table II": "printed 18, written 18"
+ },
+ "changes_after_image_check": [
+  "table_2 row 17 (230.0, 300) Wc: 10.400 -> 16.400 (text layer misread)",
+  "table_2 rows 15-17: text layer garbled (3,24(1 / .1(15.0 etc.) -> re-read from image: 145.0 3.240 .0155 .9835 3 2.4; 165.0 5.320 .0259 .9741 4 1.0; 230.0 16.400 .0933 .9067 3 2.2",
+  "table_2 row 8 (85.0, 200): text layer '5116' -> .5116",
+  "table_2 row 17 (230.0,300) No. of expts. and Av. dev.: text layer garbled -> 3, 2.2"
+ ],
+ "extraction_notes": "Sanity: Table II H2O + N2 columns sum to 1 in every row; water content increases with T at fixed P. Table I X is non-monotonic in T at fixed P (minimum near 70-80 C), as in Fig. 2.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed corrections in Table II and scan of last rows is blurry",
+ "pass2_diff": "Tables I and II: 36 rows, 215/215 numbers identical. Blurred last rows (145, 165, 230 C at 300 atm) read identically by both passes; the 145 C row sums to 0.9990 (H2O .0155 + N2 .9835), printed so, flagged."
+}

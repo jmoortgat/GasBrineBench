@@ -1,0 +1,93 @@
+{
+ "table": "Table II",
+ "page_journal": 292,
+ "title_as_printed": "Solubility of Krypton and Oxygen - Solvent, Uranyl Sulfate B",
+ "footnotes_as_printed": "none printed; '...' in a cell means no value given",
+ "property": "henry",
+ "gas": "kr",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure and krypton / oxygen partial pressures in p.s.i.a. (absolute) at the test temperature; Kr tagged with Kr-85 at tracer level, O2 overpressure; partial pressures derived from the vapor-phase sample analysis",
+ "columns": {
+  "T": {
+   "col": "Temp., C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Kr Partial Pressure, P.S.I.A. x 10^-4",
+   "unit": "psia",
+   "basis": "gas_partial",
+   "scale": 0.0001,
+   "gas": "kr"
+  },
+  "P2": {
+   "col": "O2 Partial Pressure, P.S.I.A.",
+   "unit": "psia",
+   "basis": "gas_partial",
+   "gas": "o2"
+  },
+  "P_total": {
+   "col": "Total Pressure, P.S.I.A.",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "K Krypton, P.S.I.A. per mole fraction x 10^5",
+   "unit": "psia_per_mole_fraction",
+   "scale": 100000.0,
+   "gas": "kr",
+   "derived_by_authors": true,
+   "what": "Henry's law constant K = Kr partial pressure / Kr mole fraction in liquid; the Kr mole fraction (tracer measurement) is not printed"
+  },
+  "value2": {
+   "col": "Mole Fraction O2 in Liquid x 10^-4",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001,
+   "gas": "o2",
+   "what": "measured mole fraction of O2 in the liquid sample (not measured in rows with an empty cell)"
+  },
+  "value3": {
+   "col": "K Oxygen, P.S.I.A. per mole fraction x 10^5",
+   "unit": "psia_per_mole_fraction",
+   "scale": 100000.0,
+   "gas": "o2",
+   "derived_by_authors": true,
+   "what": "Henry's law constant K = O2 partial pressure / O2 mole fraction in liquid"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {},
+  "constant": {
+   "UO2SO4": {
+    "value": "0.04",
+    "unit": "mol/L"
+   },
+   "CuSO4": {
+    "value": "0.01",
+    "unit": "mol/L"
+   },
+   "H2SO4": {
+    "value": "0.01",
+    "unit": "mol/L"
+   }
+  },
+  "other_species": "uranyl sulfate solution (UO2SO4, with CuSO4 and H2SO4), all out of the six-ion set; concentrations from Table I of the paper (chemical composition, mole/liter); volume basis not stated"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "Run",
+  "Sample",
+  "Length of Test, Hours"
+ ],
+ "conversion_needs": [
+  "psia to Pa",
+  "K in psia per mole fraction, so x = p / K for Henry's law; the Kr mole fraction itself is not reported",
+  "oxygen mole fraction basis (with or without dissolved Kr, salts) not stated; gas volumes at STP are mentioned only in the text for Figs. 2-4 ('milliliters of krypton at STP per gram of solvent'), STP not defined"
+ ],
+ "notes": "Table II was split into three files, one per solvent (group files), because the exponent of the Kr partial pressure differs (10^-4 for H2O and uranyl sulfate B, 10^-3 for uranyl sulfate A). Run name filled down from the first row of each run (printed once per run); run printed '13' (without 'Kr-') in the source. Empty cells = '...' printed (not determined). Solvent not in the six-ion set (kept per brief).",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "Table I: 'Chemical composition, mole/liter' (no statement whether per liter of solution or solvent)",
+ "gas_basis": "not_stated",
+ "gas_basis_evidence": "mole fraction O2 in liquid; no statement of salt-free or total basis"
+}

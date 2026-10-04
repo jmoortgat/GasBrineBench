@@ -1,0 +1,41 @@
+{
+ "doi": "10.1016/0146-6291(77)90563-x",
+ "first_author": "Gordon",
+ "year": 1977,
+ "journal": "Deep-Sea Research 24, 937-941",
+ "source_key": "GORDON(1977)",
+ "experimental_method": "Gas-extraction Bunsen-coefficient method of Ben-Naim and Baer as modified by Murray, Riley and Wilson (1969), with hydrogen saturated with water vapour at nominally 1 atm total pressure.",
+ "uncertainties_stated": "rms deviation of individual points from the combined fit: 0.7 percent for this data set, 0.35 percent for Crozier and Yamamoto, 0.4 percent combined (stated as percent of mean beta); no per-point uncertainties",
+ "quality_remarks": "Authors' results average about 0.5 percent higher than Crozier and Yamamoto (1974). Text says 36 points from this set were used in the fit after replicates were averaged. Table 2 (beta at integral T and S) is constructed from the fitted equation, not measured.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   938
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "beta at selected integral T and S, constructed from the fitted equation (derived)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 39,
+   "written": 39
+  }
+ },
+ "changes_after_image_check": [
+  "29.25 C / 17.154: beta text-layer '16.0~' -> 16.07 (image glyph damaged, best reading; flagged in note column)",
+  "text layer also had OCR errors in other cells (e.g. 10.02 printed as 'lO. OZ', 23.62 as 'Z3.62', 12.260 as 'l Z . Z60', 15.23 as '15. 23', 32.284 with space) which were not carried into the CSV; CSV written from the image reading with all other cells matching the image"
+ ],
+ "extraction_notes": "Scanned journal note with OCR text layer; the table was read from a 200 dpi page image, and the OCR text was used only as a cross-check. Table 2 page (939/940) holds the fit and figure only.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scan with unreliable OCR text layer and one damaged digit",
+ "pass2_diff": "117 cells, 0 disagreements"
+}

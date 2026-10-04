@@ -1,0 +1,55 @@
+{
+ "doi": "10.1007/s42452-025-07557-2",
+ "first_author": "Mohammadi, Shahram",
+ "authors": "Shahram Mohammadi, William Kobby Jones, Philip Jaeger, Hanin Samara",
+ "year": 2025,
+ "journal": "Discover Applied Sciences 7:984",
+ "title": "Experimental investigation of thermophysical properties in CO2-saturated brine under variable temperatures (303 to 333 K), pressures (0.1 to 30 MPa), and salt types and concentrations",
+ "source_key": "MOHAMMADI(2025)",
+ "experimental_method": "Density by vibrating-tube densimeter (Anton Paar DMA-HPM) with 24 h CO2 saturation under syringe-pump pressure; viscosity by capillary (Hagen-Poiseuille) viscometry on CO2-saturated or CO2-free brine; pH by indicator strips.",
+ "uncertainties_stated": "Density combined relative uncertainty about 2.75E-3 g/cm3 on average (expanded 5.50E-3, k=2); pressure transducer 0.25% full scale; T 0.1 K (density) and 0.15 K (viscosity); resolution of densimeter 0.0001 g/cm3. Per-point uncertainty columns are tabulated and kept.",
+ "quality_remarks": "Text and Table 4 disagree on compositions: Sec. 2.1 text says S4 has NaCl 3.42 and CaCl2 0.23 mol/kg (Table 4: 2.42/0.23) and S5/S6 4.25 mol/kg (Table 4: 4.28); Table 4 values used. Compositions of S7/S8 (3.25 NaCl + 0.09 CaCl2) are 19 + 1 wt%. Table 5 uncertainties 2.97E-06 and 2.96E-06 (S1 303 K, 15 and 25 MPa) are two orders of magnitude below neighbours, probably misprints; kept as printed. Uncertainty cells for S1 333 K at 20 and 30 MPa are blank. Viscosity values given to only 2 decimals. CO2 amount dissolved is not reported (saturation assumed), and nominal saturation pressure equals the table pressure. S1 vs S3 and S2 vs S4 do not pair on equal salt content so CaCl2 effect is confounded with salinity. Paper says data available on request.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   15,
+   18,
+   22,
+   24
+  ],
+  "journal_pages": [
+   15,
+   18,
+   22,
+   24
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 4",
+   "reason": "concentration notation of the solutions (used as composition), not measured data"
+  },
+  {
+   "table": "Table 10",
+   "reason": "pH of CaCO3 solutions at 0.1 and 10 MPa CO2, indicator-strip pH of a CaCO3 system, out of scope"
+  },
+  {
+   "table": "Tables 1-3",
+   "reason": "literature surveys"
+  }
+ ],
+ "row_counts": {
+  "table_5": "22 data rows printed, 22 written (+4 label rows)",
+  "table_6": "20 printed, 20 written (+4 label)",
+  "table_7": "12 printed, 12 written (+4 label)",
+  "table_8": "12 printed, 12 written (+4 label)",
+  "table_9": "6 printed, 6 written (+2 label)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Tables 5-7 are printed landscape; text layer matched the image in every cell. Uncertainty column in Table 8 S6 at 8 MPa wraps in print (2.82E- / 04); joined. Table 8 columns carry both P=5.00 and 8.00 MPa blocks; pressure set by label rows. Header in CSV: 'Uncertainty g/cm3' kept as printed. Block label rows carry property/gas/T/composition overrides via group_rows.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean and every cell matched the page image; no corrections",
+ "pass2_diff": "Tables 5-9: 72 rows, 214/214 numbers identical."
+}

@@ -1,0 +1,39 @@
+{
+ "doi": "10.1016/j.fluid.2006.12.018",
+ "first_author": "Folas",
+ "year": 2007,
+ "journal": "Fluid Phase Equilibria 252, 162-174",
+ "source_key": "FOLAS(2007)",
+ "experimental_method": "Flow saturator (gas saturated at T+20 C in two cylinders) then condensed at the dew-point temperature in three cylinders; water measured by Karl Fischer coulometric titration with gas-clock volume; mean of five samples.",
+ "uncertainties_stated": "Pressure transducer 0.05 bar; pressure variation +-0.1 bar during experiment; bath stability +-0.01 C; mirror dew point within +-0.5 C of bath; samples accepted when max/min within 5%; gas clock <0.2%.",
+ "quality_remarks": "Authors compare with literature (Table 8 spread; Althaus 283.15 K/100 bar 175.6 vs this work 182.3 ppm). Gases: N2 99.999%, CH4 99.964%. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   164
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell matched the rendered page image; no corrections",
+ "not_extracted_tables": {
+  "Table 4-5": "model parameters",
+  "Table 6,7": "data-set deviation summaries (derived)",
+  "Table 8": "literature spread comparison, other authors' data (examples)",
+  "Table 9": "derived bias comparison",
+  "Table 10": "derived/compared model values",
+  "Table 11": "model prediction summary"
+ },
+ "row_counts": {
+  "Table 1": "printed data rows 8 x 6 cols = 48 cells, 16 dashes, written data rows 32 + 6 label rows",
+  "Table 2": "printed data rows 5 x 6 cols = 30 cells, 10 dashes, written data rows 20 + 6 label rows",
+  "Table 3": "printed data rows 4 x 3 cols = 12 cells, 2 dashes, written data rows 10 + 3 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "No prior files existed in the folder. Wide tables stacked by pressure; dashes omitted (documented in mapping).",
+ "pass2_diff": "token diff: every pass-2 number found in pass 1 (wide table stacked by pressure in pass 1; extras are replicated temperatures)"
+}

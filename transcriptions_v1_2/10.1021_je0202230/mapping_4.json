@@ -1,0 +1,60 @@
+{
+ "table": "Table 4",
+ "page_journal": "J. Chem. Eng. Data 48, 957-966",
+ "title_as_printed": "Water Mole Fraction in the Gas Phase of the Ethane + Water System",
+ "footnotes_as_printed": "not captured (the table has no footnotes in the capture)",
+ "property": "y_h2o",
+ "gas": "c2h6",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "pressure_note": "Pexp = measured total pressure of the isothermal run (two Druck transducers calibrated against a dead-weight balance); up to the ethane vapour pressure. Total or partial: the paper says only 'pressures up to the ethane vapour pressure'.",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "Pexp/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "10^3 yw,exp",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "10^3 yw,cal(HV) (PR-EoS/MC-HV-NRTL model value)",
+  "Dy/% (relative deviation, calculated)"
+ ],
+ "volume_basis": "not_applicable",
+ "conversion_needs": [],
+ "notes": "Temperature scale: the 25 ohm reference thermometer was calibrated on ITS-90 (paper text). The paper states that the data cover both vapour-liquid and vapour-hydrate equilibria near hydrate-forming conditions but does not mark which rows are in the hydrate region; no per-row regime assigned (regime not stated). Isotherms 278.08, 283.11, 288.11, 293.11, 298.11, 303.11 K; the highest pressure of each isotherm is close to the ethane vapour pressure (which is below the ethane critical T of 305.32 K, so the liquid ethane phase appears near saturation: row 278.08 K/2.71 MPa is above the Table 3 value 2.69 MPa).",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    17,
+    18,
+    19,
+    20
+   ],
+   "regime": "hydrate",
+   "reason": "inferred, not stated: points above the pressure range of the paper Table 7 (aqueous composition below the hydrate-forming conditions, up to 0.756 MPa at 278.08 K and 1.82 MPa at 283.11 K) lie in the vapour-hydrate region (audit 2026-10-02)"
+  }
+ ]
+}

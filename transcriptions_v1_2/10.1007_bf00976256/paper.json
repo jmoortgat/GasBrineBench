@@ -1,0 +1,37 @@
+{
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one text-layer correction (428,70 -> 428.70) was needed after the image check; also all PDF tables get a blind second pass",
+ "doi": "10.1007/BF00976256",
+ "first_author": "Brendler",
+ "year": 1994,
+ "journal": "Journal of Solution Chemistry 23(10), 1061-1074",
+ "source_key": "BRENDLER(1994)",
+ "experimental_method": "Isopiestic method at 155 C (stainless-steel autoclave, 12 vitreous-carbon cups: 3 MgCl2 reference and 9 test solutions, 48 h heating plus 48 h equilibration, mass loss by weighing) with MgCl2(aq) as reference; CaCl2 measured to test the apparatus, LiCl and CsCl as the target systems.",
+ "uncertainties_stated": "Molality accuracy better than 0.2 percent; reference triplicates max deviation 0.10 percent (mean 0.04 percent); duplicate means 0.06 percent (CaCl2), 0.03 percent (LiCl), 0.17 percent (CsCl); temperature control precision 0.025 K; stock analyses +-0.07 percent.",
+ "quality_remarks": "Authors adopt the Valyashko et al. MgCl2 compilation for the reference water activity; equilibrium molalities are given as the primary data so aw can be recomputed with a better reference. CsCl osmotic coefficients disagree with the Holmes-Mesmer extrapolation. Hydrolysis of MgCl2 checked by pH, none found. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   7,
+   8
+  ],
+  "journal_pages": [
+   1067,
+   1068
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I: mean deviations between calculated and literature osmotic coefficients (derived/comparison)",
+  "Table III: regression (Pitzer-type) coefficients of Eq. (2) (model parameters)"
+ ],
+ "row_counts": {
+  "table_2": "printed 43 rows (37 on p.1067, 6 on p.1068); written 43"
+ },
+ "changes_after_image_check": [
+  "table_2 row 16 (m(MgCl2)=4.8812) T: 428,70 -> 428.70 (comma in text layer)"
+ ],
+ "extraction_notes": "Blank cells assigned by character position in the pdftotext layout and each row confirmed on the 200 dpi page images. LiCl and CsCl columns kept (out-of-scope salts, same table).",
+ "pass2_diff": "42-43 rows, 143 numbers, identical."
+}

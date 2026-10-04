@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/ja01242a022",
+ "first_author": "Gordon, A. R.",
+ "authors": "A. R. Gordon",
+ "year": 1943,
+ "journal": "Journal of the American Chemical Society 65, 221-224",
+ "title": "Isopiestic Measurements in Dilute Solutions; the System Potassium Chloride-Sodium Chloride at 25 deg at Concentrations from 0.03 to 0.10 Molal",
+ "source_key": "GORDON(1943)",
+ "experimental_method": "Isopiestic method in a new apparatus (silver dishes in a glass vessel, rocked in a Dewar-insulated thermostat controlled to 0.003 K; careful removal of air by repeated pumping, 7 to 18 days equilibration); KCl and NaCl solutions made gravimetrically from twice recrystallized salts, final concentrations by weighing.",
+ "uncertainties_stated": "error in the isopiestic ratio from weighing losses not more than 0.03 percent; thermostat 0.003 deg.",
+ "quality_remarks": "Author states that the performance of the apparatus was disappointing; the 4 starred rows (Q = 0.9951, 1.0059, 1.0037, 1.0036) deviate markedly from unity and are attributed to unattained equilibrium (inadequately out-gassed solutions). Osmotic coefficients are interpolated from literature e.m.f.-based tables, not computed from these runs. The PDF pages 1-3 are this paper (journal pp. 221-223); page 4 starts with a different article (Olynyk and Gordon, vapour pressure of NaCl 2 m to saturation at 20, 25, 30 C, p. 224) whose table is not part of this DOI and was not extracted. PDF page 1 begins with the end of a preceding article (Added Nov. 16, 1942 note and Summary).",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   223
+  ]
+ },
+ "not_extracted_tables": [
+  "Olynyk and Gordon NaCl vapour pressure table on PDF page 4 belongs to another article (a separate DOI), and only its start is in this PDF"
+ ],
+ "row_counts": {
+  "Table I": "printed 14 / written 14"
+ },
+ "changes_after_image_check": [
+  "Table I: text layer garbled star marks (V, quote characters) and subscript digits -> 5 values rechecked; star marks recorded in note column (rows 3,6,7,10); no numeric cell changed"
+ ],
+ "extraction_notes": "Text layer was clean for numerics; table checked against 300 dpi crop. Sanity: m KCl and m NaCl both increase monotonically down the table; phi decreases monotonically with m; Q recomputed not done (printed values kept). Table is ordered by m KCl.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer numerics matched the image in every cell; only the star symbols were garbled",
+ "pass2_diff": "Table 1: 14 rows, 70/70 numbers identical."
+}

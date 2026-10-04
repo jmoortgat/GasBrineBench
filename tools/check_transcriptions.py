@@ -71,6 +71,28 @@ def main() -> int:
                 continue
             bad.append(f"UNLISTED  {rel}")
 
+    # v1.2 tables: transcriptions_v1_2/HASHES.csv lists every file
+    v12 = os.path.join(os.path.dirname(DEST), "transcriptions_v1_2")
+    hashes = os.path.join(v12, "HASHES.csv")
+    n12 = 0
+    if os.path.isfile(hashes):
+        import csv
+        listed12 = set()
+        with open(hashes, newline="") as fh:
+            for r in csv.DictReader(fh):
+                p12 = os.path.join(v12, r["path"])
+                listed12.add(r["path"])
+                if not os.path.isfile(p12):
+                    bad.append(f"MISSING   transcriptions_v1_2/{r['path']}")
+                elif sha256(p12) != r["sha256"]:
+                    bad.append(f"DRIFTED   transcriptions_v1_2/{r['path']}")
+                n12 += 1
+        for dirpath, _dn, fns in os.walk(v12):
+            for fn in fns:
+                rel = os.path.relpath(os.path.join(dirpath, fn), v12)
+                if rel not in listed12 and rel not in ("HASHES.csv", "MANIFEST.csv"):
+                    bad.append(f"UNLISTED  transcriptions_v1_2/{rel}")
+
     if bad:
         print("TRANSCRIPTION CHECK FAILED:")
         for b in sorted(bad):
@@ -79,7 +101,8 @@ def main() -> int:
 
     print(f"transcriptions: {len(rows)} files, {total_bytes:,} bytes, "
           f"{total_rows:,} data rows, {len(headers)} source headers -- "
-          "all match MANIFEST.tsv")
+          "all match MANIFEST.tsv"
+          + (f"; transcriptions_v1_2: {n12} files match HASHES.csv" if n12 else ""))
     return 0
 
 

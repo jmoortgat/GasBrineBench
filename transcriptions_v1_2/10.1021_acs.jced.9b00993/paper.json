@@ -1,0 +1,46 @@
+{
+ "doi": "10.1021/acs.jced.9b00993",
+ "first_author": "Chen",
+ "year": 2020,
+ "journal": "J. Chem. Eng. Data 65 (2), 766-",
+ "source_key": "CHEN(2020)",
+ "title": "Measurements of Vapor Pressures of Aqueous Solutions in the NaCl-KCl-H2O System from 493.15 to 693.25 K in a Fused Silica Capillary High-Pressure Optical Cell",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "experimental_method": "capillary nonmixing method in a fused silica capillary high-pressure optical cell (Linkam CAP500 stage): sample pressurized with CH4 to a set pressure, heated until a vapor bubble appears (TB), then cooled at 0.5 K/min; the bubble-disappearance temperature TM is taken as the saturation temperature of the set pressure",
+ "uncertainties_stated": "u(TB) = u(TM) = 0.5 K (473-693 K), u(PS) = 0.097 MPa, u(m) = 0.01 mol/kg; temperature sensor accurate to 0.1 K, +/-0.5 K near 673 K",
+ "tables_written": {
+  "table_2": "30 rows",
+  "table_3": "44 rows (2 label rows + 42 data rows)",
+  "table_4": "44 rows (2 label rows + 42 data rows)",
+  "table_5": "66 rows (3 label rows + 63 data rows)"
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "sources and purities of compounds, no measured data"
+  }
+ ],
+ "row_counts": {
+  "table_2": "printed 30 data rows; written 30",
+  "table_3": "printed 42 data rows + 2 label rows; written 44",
+  "table_4": "printed 42 data rows + 2 label rows; written 44",
+  "table_5": "printed 3 groups x 21 rows; written 3 label rows + 63 rows"
+ },
+ "quality_remarks": [
+  "Abstract: 493.15 to 693.25 K, NaCl and KCl at 1 and 3 mol/kg, NaCl+KCl mixtures 0.5+0.5, 1+1, 2+2 mol/kg. Table ranges: TM 496.65-650.65 K (Table 2), 499-690 K (Tables 3-4), 497.65-693.25 K (Table 5), PS 2.49-30.1 MPa: consistent with the text.",
+  "Table 2: rows with PS above the water critical pressure (22.064 MPa) and TM marked j are critical homogenization temperatures of the H2O-SiO2 (dissolved fused silica) system, not pure-water saturation temperatures; the authors state the pure-water critical point shifts to a critical line Pc = 0.2465 Tc - 137.51. Row 22.0640 (k) is the IAPWS-95 critical point, not a measurement; row 23.0828 (l) is a set pressure with no phase separation. Both have empty TM.",
+  "Table 2 rows at PS = 21.2069 MPa have TM 0.4-0.7 K below TC (Delta T negative, positive Delta P) near the critical region.",
+  "Table 4: TC and PC cells carry footnotes j/k flagging values extrapolated from Shibue's model (reference-model values, not measured).",
+  "Printed TB is superheat temperature (footnote c), larger than TM; not an equilibrium temperature.",
+  "Molality of NaCl and KCl printed as mol/kg; per kg of water is not stated. Temperature scale (IPTS-68 or ITS-90) not stated. Water was boiled to remove dissolved gases; pressure medium CH4 (no dissolved CH4 detected by Raman).",
+  "Exact duplicate rows (same PS and TM) occur within replicate triplets and are kept.",
+  "Footnote k letter is printed on both the PS and TC cell of the critical-point row of Table 2."
+ ],
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML capture only, no PDF page image"
+ },
+ "extraction_notes": "Redo of the pilot: footnotes now captured and applied. CSVs written by script from the captured DOM cells. Each printed table appears once in the capture (no popup duplicates in this record). Header footnote letters were stripped from the headers and repeated in the note column of every row as <column>:<letter>; cell letters (j, k) stripped from the cells and appended to the note. En dash minus converted to ASCII '-' (headers, cells). Delta and Omega transliterated: Delta T, Delta P. No thin or no-break spaces occur in the cells. Table 5 is now stacked in one CSV with three label rows (left, middle, right group), replacing table_5_group1-3 of the pilot (deleted).",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

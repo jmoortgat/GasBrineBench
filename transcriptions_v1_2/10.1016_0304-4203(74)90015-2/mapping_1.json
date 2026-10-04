@@ -1,0 +1,50 @@
+{
+ "table": "Table IV",
+ "page_journal": 211,
+ "title_as_printed": "Experimental CO2 solubilities: microgasometric determinations of K0 in moles/l atm",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "k0_molar_per_atm",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated as a column; K0 is defined per atmosphere of CO2 FUGACITY (K0 = [CO2]/f_CO2, mol per litre of solution per atm; text eq. 2/5) and was obtained from microgasometric equilibration of degassed water with pure CO2; measured total pressure not tabulated. Values corrected by the author for CO2 non-ideality (virial EOS) and for dissociation (distilled water measurements). Constant P is the normalisation (K0 per 1 atm CO2 fugacity, p.205: 'when the total pressure and the fugacity are both 1 atm'; measurements 'at pressures near 1 atm'), not a measured total pressure.",
+ "columns": {
+  "T": {
+   "col": "t (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "K0 * 10^2 (mol/L atm)",
+   "unit": "mol_per_L_per_atm_fugacity",
+   "scale": 0.01,
+   "what": "CO2 solubility coefficient K0 = [CO2]/f_CO2, mol per litre of solution at the measurement temperature per atm fugacity; printed value is K0 x 10^2"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "gas_partial"
+  }
+ },
+ "composition": {
+  "basis": "salinity_permil",
+  "per_row": {
+   "salinity": {
+    "col": "Salinity (permil)",
+    "unit": "permil"
+   }
+  },
+  "constant": {},
+  "other_species": "salinity > 0 rows are evaporated La Jolla surface seawater, filtered, HgCl2-poisoned, acidified with H2SO4 to pH 2.2 (acid neglected in salinity); salinity measured by inductive salinometer (+-0.004 permil) and adjusted gravimetrically; salinity 0.0 rows are distilled water, not acidified"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "K0 in mol/L solution/atm fugacity to mole fraction or molality needs solution density and CO2 fugacity/total pressure basis (not tabulated)",
+  "salinity in permil of seawater matrix (printed as per-mille sign)"
+ ],
+ "notes": "Header in the printed table is K0 * 10^2 (the text layer printed 10^5, which is wrong). The table caption says K0 in moles/l atm; with x10^2 the values (e.g. 3.84e-2 mol/L atm at 20.6 C) agree with the paper's Table II. Property set to other: K0 = [CO2]/f_CO2 in mol per litre of solution per atm fugacity is not a Henry constant f/x (Table IV caption p.211; p.205); needs a dedicated converter (K0 -> molality via solution density).",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "p.205: K0 'referring to a liter of solution at the temperature of the measurement and an atmosphere fugacity'"
+}

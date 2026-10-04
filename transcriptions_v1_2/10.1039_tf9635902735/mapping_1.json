@@ -1,0 +1,49 @@
+{
+ "table": "Table 1",
+ "page_journal": 2738,
+ "title_as_printed": "Ostwald coefficients of argon solubility in water in the temperature range 3-28 C",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "ostwald",
+ "gas": "ar",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Ostwald coefficient defined 'cm3 of gas at T / cm3 of water at T (at total pressure 1 atm)'; gas saturated with solvent vapour by bubbling through water, pressure brought to 1 atm",
+ "columns": {
+  "T": {
+   "col": "t C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "total"
+  },
+  "value": {
+   "col": "gamma x 10^3",
+   "unit": "ostwald",
+   "scale": 0.001,
+   "what": "Ostwald coefficient of argon in pure water; printed value is gamma x 10^3",
+   "volume_basis": "solvent",
+   "volume_basis_evidence": "cm3 of gas at T / cm3 of water at T (at total pressure 1 atm); pure water so solvent and solution volumes coincide"
+  }
+ },
+ "volume_basis": "solvent",
+ "volume_basis_evidence": "cm3 of gas at T / cm3 of water at T (at total pressure 1 atm)",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water, no salt",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (distilled, gas-free); no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Ostwald coefficient to mole fraction needs water density and the gas molar volume at T; the paper does not define 'standard conditions' for gas volumes (the Ostwald coefficient uses gas volume at T and 1 atm, so none is needed)",
+  "pressure 1 atm total (includes water vapour per the text); partial pressure of argon not given"
+ ],
+ "notes": "Wide layout in the paper (t row and gamma row, 9 columns); restacked to long form, one row per temperature, left to right. Printed mid-dot decimals (2-9, 34-7 etc. in the scan text layer) written with full stop. Solvent outgassed thoroughly; stated overall precision 0.2 %."
+}

@@ -1,0 +1,53 @@
+{
+ "table": "Table 2",
+ "page_journal": 1631,
+ "title_as_printed": "Solubility of methane in water",
+ "footnotes_as_printed": "none",
+ "property": "ostwald",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "atmospheric pressure in the cell (gas pre-saturated with water vapour, total pressure adjusted to atmospheric); col 'L2,1(T,P)' is the Ostwald coefficient at this experimental pressure; mole fraction column is at gas partial pressure 101.325 kPa (derived by authors)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "L2,1(T,P)",
+   "unit": "ostwald",
+   "scale": 1,
+   "what": "Ostwald coefficient L=c_liquid/c_vapour at equilibrium (eq. 10), directly from the measured gas volume"
+  },
+  "value2": {
+   "col": "10^5 x_N2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1e-05,
+   "what": "mole fraction of methane in liquid at gas partial pressure 101.325 kPa, calculated by the authors from the Henry coefficient (iterative procedure)",
+   "from_literature": false
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure distilled water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "L2,1 inf (T,Ps,1) (Ostwald coefficient at infinite dilution, calculated)",
+  "10^-9 H2,1(T,Ps,1)/Pa (Henry coefficient at solvent vapour pressure, calculated by authors from eq. 12)"
+ ],
+ "conversion_needs": [
+  "Ostwald coefficient definition needs the vapour-phase concentration (ideal-gas assumption used by authors)"
+ ],
+ "notes": "Directly measured quantity is the Ostwald coefficient; x and H are calculated by the authors. Row 315.15 K H = 6.149 is printed so but breaks the monotonic trend (neighbours 5.022 and 5.331); likely a misprint, kept as printed. Phase non-ideality neglected by the authors (deviation < 0.3%).",
+ "mapping_fix": "P basis set to gas_partial on 2026-10-02: the paper states x is the mole fraction at a gas partial pressure of 101.325 kPa (abstract); the printed column 10^5 x_N2 is methane (typo for x_2 in the paper)"
+}

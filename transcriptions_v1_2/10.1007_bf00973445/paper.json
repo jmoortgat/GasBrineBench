@@ -1,0 +1,34 @@
+{
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "all PDF-derived tables get a blind second pass; text layer was clean (every value matched) but blank cells printed as dashes mean column positions had to be taken from the image",
+ "doi": "10.1007/BF00973445",
+ "first_author": "Brendler",
+ "year": 1995,
+ "journal": "Journal of Solution Chemistry 24(9), 917-925",
+ "source_key": "BRENDLER(1995)",
+ "experimental_method": "Isopiestic method at 155.5 C with MgCl2(aq) as the reference electrolyte, mixtures of LiCl and MgCl2 at constant LiCl salt mole fraction y = 0.1-0.7 equilibrated simultaneously with the reference.",
+ "uncertainties_stated": "Stock-solution analyses agree within +-0.07 percent; LiCl by drying within +-0.05 percent. No uncertainty on isopiestic molalities or aw is stated.",
+ "quality_remarks": "Authors state the y_LiCl = 0.8 data show an evidently wrong mixture composition and exclude them (they do not appear in the printed table). Water activity is computed from MgCl2 reference molality with Valyashko et al. Pitzer parameters, so aw is derived. Temperature scale not stated. Two odd values in the y=0.6 column are kept (see mapping notes).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   920
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: Pitzer parameters (model parameters)",
+  "Table III: modified B.E.T. fit parameters for MgCl2-H2O (fitted)",
+  "Table IV: modified B.E.T. fit parameters for LiCl-MgCl2-H2O (fitted)"
+ ],
+ "row_counts": {
+  "table_1": "printed 18 runs x 7 y-columns, 101 non-dash m(Total) cells; written 101 data rows + 7 label rows = 108 rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Every written m(Total) value was checked as present in the pdftotext layer; column assignment taken from the 300 dpi image. Stacked layout, see mapping.",
+ "pass2_diff": "101 (y, m_ref, aw, m_total, T) tuples identical between long (pass 1) and wide (pass 2) layouts. Possible printed misprint copied as printed: m_ref 5.5882, y=0.6, m_total 6.9878."
+}

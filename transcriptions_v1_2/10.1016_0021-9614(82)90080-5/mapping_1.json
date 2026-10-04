@@ -1,0 +1,342 @@
+{
+ "table": "Table 1",
+ "page_journal": 651,
+ "title_as_printed": "Values of Delta rho = (rho - rho*) as a function of temperature and molality ratio m/m0, where m0 = 1 mol.kg-1, for aqueous solutions of NaCl, MgCl2, Na2SO4, and MgSO4",
+ "footnotes_as_printed": "not captured (none printed); continued on journal pages 652-653",
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "Table 1 states no pressure; Table 2 caption refers to densities 'at 101325 Pa'; vibrating-tube flow densimeter at atmospheric pressure presumed by authors, not stated for Table 1",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "per block label"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^3 Delta rho g.cm-3",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "rho - rho*, solution density minus density of pure water at the same temperature (rho* from Kell)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m/m0 (m0 = 1 mol.kg-1)",
+    "unit": "mol/kg",
+    "scale": 1.0
+   }
+  },
+  "constant": {},
+  "other_species": "salt per block label: NaCl, MgCl2, Na2SO4 or MgSO4 (all four inside the six-ion set)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    16,
+    38,
+    46,
+    51,
+    71,
+    95,
+    150,
+    186,
+    200,
+    211,
+    233,
+    256,
+    269,
+    287,
+    306,
+    353,
+    375
+   ],
+   "reason": "block label rows (salt and temperature)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    },
+    {
+     "path": "T.constant",
+     "value": "278.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    },
+    {
+     "path": "T.constant",
+     "value": "288.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    },
+    {
+     "path": "T.constant",
+     "value": "298.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 46,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "278.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 71,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "288.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 95,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "298.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 150,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 186,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 200,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "288.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 211,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "298.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 233,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 256,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 269,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "278.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 287,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "288.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 306,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "298.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 353,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "308.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 375,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    },
+    {
+     "path": "T.constant",
+     "value": "318.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "density of solution = Delta rho + rho*(T); rho* from Kell as given in the paper's Eq. 4",
+  "m/m0 is dimensionless molality ratio with m0 = 1 mol/kg, so molality = printed value mol/kg"
+ ],
+ "notes": "Blocks printed as 5 side-by-side (m, Delta rho) column pairs; stacked column-major (leftmost column pair first, top to bottom, then next pair). Row order within a block therefore differs from the printed reading order. Exact replicate rows kept (MgCl2 278.15 K m/m0 3.80722 twice; MgCl2 298.15 K 5.27571 twice, with Delta rho 313.817 and 313.815). Temperatures as printed to 0.01 K; bath IPTS-68."
+}

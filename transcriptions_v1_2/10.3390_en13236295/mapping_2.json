@@ -1,0 +1,54 @@
+{
+ "table": "Table 2",
+ "page_journal": 5,
+ "title_as_printed": "Experimental and calculated water content for liquid C3H8 in equilibrium with a hydrate.",
+ "footnotes_as_printed": {
+  "a": "Precision of pressure measurements calculated to be +-0.001 MPa.",
+  "b": "Precision of temperature measurements was calculated to be +-0.1K.",
+  "c": "Reproducibility for water content measurements is estimated to be 12 ppm at the 95% confidence interval."
+ },
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "hydrate",
+ "temperature_scale": "ITS-90",
+ "pressure_note": "p/MPa; not further defined (system pressure of the equilibrium loop, Keller calibrated transducer); pressure is total",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "yH2O(exp.)/ppm",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "what": "water content of the liquid propane phase in equilibrium with sII hydrate, ppm (the text calls the TDLAS stability ppmv); mole or volume basis not explicitly stated, gas-phase symbol y",
+   "scale": 1e-06
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "ppm",
+   "constant": "12"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure propane + water, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "yH2O(calc.)/ppm (calculated from authors' thermodynamic model)",
+  "yH2O(exp.) - yH2O(calc.)/ppm (difference, derived)"
+ ],
+ "conversion_needs": [
+  "ppm to mole fraction x1e-6 (assumed mole basis; not stated explicitly)"
+ ],
+ "notes": "Rows 0-5 at about 242-243 K, 6-11 at about 253 K, 12-16 at 263 K, 17-21 at 273 K, 22-26 at 276 K. Rows at 273.10-273.12 K are marginally below 273.15 K (below_273K). Phase is liquid propane (lle) in equilibrium with sII hydrate: regime hydrate applied to all rows. Horizontal rules separate temperature groups; no label rows. Uncertainty 12 ppm (95 %) is a general statement applying to every row. Temperatures drift 241.95-243.05 K within the nominal 242 K isotherm.",
+ "quality_remarks": "ppm taken as a mole-fraction basis (x1e-6); the paper never states mole vs volume basis (text says ppmv only for the TDLAS signal stability). Basis adopted because the companion thesis (10.11575_prism_38486 Table 2.5) compares the same instrument readings with gravimetric mole fractions; this table is the journal copy of thesis Table 6.1, which is marked duplicate_of this table."
+}

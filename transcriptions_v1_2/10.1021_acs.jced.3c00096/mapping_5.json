@@ -1,0 +1,145 @@
+{
+ "table": "Table 5",
+ "page_journal": 2350,
+ "title_as_printed": "Solubility of the Methane + Ethane Gas Mixture in Water with/without Hydrate",
+ "footnotes_as_printed": {
+  "a": "u(T) = +/- 0.05 K, u(p) = +/- 0.01 MPa."
+ },
+ "property": "solubility_x",
+ "gas": "ch4-c2h6",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated whether total or partial; 'gas pressure in the cylinder was kept unchanged' (experimental pressure p, MPa, u(p)=0.01 MPa); gauge/absolute not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "set per block by group_rows"
+  },
+  "P": {
+   "col": "p, MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "s x 10^3, mol %",
+   "unit": "mole_fraction_gas_mixture_in_aqueous_phase",
+   "scale": 0.001,
+   "what": "s = solubility of the CH4 + C2H6 (95.0/5.0 mol %) feed gas mixture in water; printed s x 10^3 in mol %, value = printed x 1e-3 mol %"
+  }
+ },
+ "gas_basis": "not_applicable",
+ "gas_basis_note": "pure water, no salt",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure deionized water; gas is 95.0 mol % CH4 / 5.0 mol % C2H6 feed mixture (water-displacement method, total dissolved gas)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    12,
+    23,
+    33
+   ],
+   "reason": "temperature block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "288.15",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "289.45",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "290.55",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 33,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "292.15",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "regime": "hydrate",
+   "reason": "at and above the hydrate formation pressure of the block (10.67 MPa); three-phase gas-liquid-hydrate equilibrium per the paper"
+  },
+  {
+   "rows": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ],
+   "regime": "hydrate",
+   "reason": "at and above the hydrate formation pressure of the block (12.43 MPa); three-phase gas-liquid-hydrate equilibrium per the paper"
+  },
+  {
+   "rows": [
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "regime": "hydrate",
+   "reason": "at and above the hydrate formation pressure of the block (14.59 MPa); three-phase gas-liquid-hydrate equilibrium per the paper"
+  },
+  {
+   "rows": [
+    40,
+    41,
+    42,
+    43
+   ],
+   "regime": "hydrate",
+   "reason": "at and above the hydrate formation pressure of the block (18.14 MPa); three-phase gas-liquid-hydrate equilibrium per the paper"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "unit label question: printed unit is mol % with factor 10^3; see paper.json quality_remarks"
+ ],
+ "notes": "Four side-by-side T blocks stacked left to right. The header of block 2 prints 289.15 K but Table 3, Table 6 and Figure 8 give 289.45 K and its 12.43 MPa row equals the 289.45 K hydrate formation pressure; so 289.15 is probably a misprint of 289.45 (printed value kept). Rows before the hydrate formation pressure are gas-liquid (no hydrate); the row at the formation pressure is taken as hydrate-onset. Dissolved gas composition not reported (total gas); no gas_basis applicable. The printed unit label 'mol %' with factor 10^3 is judged a mislabel on physical grounds (value x 1e-3 is a mole fraction of the right magnitude for CH4 in water at 293 K, 6-21 MPa; the same label appears in the authors' Figure 7/8 and Table 6); the number is used as a mole fraction x 1e-3, not corrected by a factor 100. Block 2 label is printed 289.15 K; set to 289.45 K because Table 3 (p.2349) lists 289.45 K with p(exp) 12.43 MPa (the block's hydrate-onset row), and Table 6 and the Figure 8/9 legends print 289.45 K; printed 289.15 K judged a misprint."
+}

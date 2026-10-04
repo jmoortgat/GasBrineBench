@@ -1,0 +1,94 @@
+{
+ "page_journal": null,
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Total pressure of the equilibrium cell (paper Figure 2 caption: 'total pressure'); absolute (Keller transducer, accuracy +/-0.01 MPa). Gas phase is CO2 + water vapour only.",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "P(expt)/MPa +/- 0.01",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x1(expt) /molar fraction +/- 4 %",
+   "unit": "mole_fraction_gas_in_aqueous_phase"
+  }
+ },
+ "property": "solubility_x",
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "table": "Table 3",
+ "title_as_printed": "Experimental Results for Carbon Dioxide (1) Solubility in Aqueous Solution Containing Sodium Hydroxide (3) at 1 mol of Sodium Hydroxide/kg of Water (2)",
+ "footnotes_as_printed": "none captured",
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "NaOH (outside the six-ion set), 1 mol per kg of water, as printed in the title. Not a NaCl/KCl/CaCl2/MgCl2/Na2SO4 system."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    16
+   ],
+   "reason": "block label rows 'T = ... K +/- 0.06 K'"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "293.15",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaOH",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "313.15",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaOH",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "333.15",
+     "unit": "K"
+    },
+    {
+     "path": "composition.constant.NaOH",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "notes": "Stacked blocks as in Table 2 (293.15|313.15, then 333.15). x1 comes from ion chromatography of total dissolved CO2 in a reactive NaOH solution (carbonate/bicarbonate formed); whether x1 counts all CO2 species as CO2 is not stated, and the mole fraction basis (ions counted or not) is not stated. Mean uncertainty 4 %."
+}

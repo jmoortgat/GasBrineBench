@@ -1,0 +1,160 @@
+{
+ "table": "Table 1",
+ "page_journal": "1044-1046",
+ "title_as_printed": "Results of calorimetric measurements of molar enthalpies of solution of oxygen, rare gases, and C1 to C4 n-alkanes at three different temperatures",
+ "footnotes_as_printed": "none on Table 1",
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "total pressure p in the calorimetric system during a series of experiments (gas saturated with water vapour; ~1.06e5 Pa, i.e. ambient atmospheric pressure)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "10^-5 p Pa",
+   "unit": "Pa",
+   "scale": 100000.0,
+   "basis": "total"
+  },
+  "value": {
+   "col": "-<dH_sol,m> kJ.mol-1",
+   "unit": "kJ/mol",
+   "scale": -1,
+   "what": "molar enthalpy of solution of the gas in water at infinite dilution, mean of N injections of the series; printed column is the NEGATIVE of the enthalpy (header -<A_sol H_m>), so value = -1 x printed (positive printed numbers are exothermic, negative enthalpy)"
+  },
+  "uncertainty": {
+   "col": "s kJ.mol-1",
+   "unit": "kJ/mol",
+   "what": "reproducibility, estimated standard deviation of the individual enthalpy values within the series"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (de-aerated), no salt"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    20,
+    37,
+    51,
+    60,
+    69,
+    79,
+    88,
+    98,
+    111
+   ],
+   "reason": "gas label rows (O2, He, Ne, Ar, Kr, Xe, CH4, C2H6, C3H8, C4H10)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "o2"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "he"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ne"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ar"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "kr"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "xe"
+    }
+   ]
+  },
+  {
+   "label_row": 79,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 88,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 111,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Series (identification number yymmdd)",
+  "N (number of injections in the series)",
+  "10^6 n_g mol (amount of gas injected per experiment)",
+  "<Q> J (mean heat evolved)"
+ ],
+ "conversion_needs": [
+  "none; value = -printed (sign) only"
+ ],
+ "notes": "Temperature T is printed only on the first row of each sub-block; here carried forward to every row of the sub-block (not printed on those rows). Gases He, Ne, Ar, Kr, Xe and n-butane are outside the gas scope; their blocks are kept with gas codes he, ne, ar, kr, xe, n-c4h10. Printed pressure is the pressure in the calorimeter, not a gas partial pressure. Flow calorimeter: gas is injected into flowing de-aerated water; concentrations are very low (infinite dilution assumed by authors).",
+ "mapping_fix": "label_row indices for Ne..C4H10 corrected by +1 on 2026-10-02 (lint: rows are label rows of the CSV); before the fix the last row of each preceding gas block was dropped and the next-gas label row was read as data"
+}

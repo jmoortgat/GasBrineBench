@@ -1,0 +1,37 @@
+{
+ "doi": "10.1021/ja01871a025",
+ "first_author": "Wiebe, R.",
+ "authors": "R. Wiebe, V. L. Gaddy",
+ "year": 1939,
+ "journal": "Journal of the American Chemical Society 61, 315-318",
+ "title": "The Solubility in Water of Carbon Dioxide at 50, 75 and 100 degrees, at Pressures to 700 Atmospheres",
+ "source_key": "WIEBE(1939)",
+ "experimental_method": "Static saturation of water with CO2 in a thermostatted bomb; saturated samples expanded into a buret system at barometric pressure and 25 C, gas and water measured, with a correction for gas left in the water.",
+ "uncertainties_stated": "none stated",
+ "quality_remarks": "Traces of iron dissolved from the apparatus (Table I), assumed not to affect solubility. CO2 purity 99.98%. Table III 'Exptl.' mole fractions are recalculated by the authors from Table II to partial pressure of CO2 (accounting for water vapour pressure change with total pressure). PDF begins with the last page of another article (cadmium bromide) and ends with another article (calcium hydride).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   316
+  ]
+ },
+ "not_extracted_tables": [
+  "Table I (iron content of the saturated water: not in scope)",
+  "Table III (mole fraction of CO2 in water at 75 and 100 C vs 'partial pressure'; Exptl column derived by the authors from Table II, Calcd from theory: derived)",
+  "Table IV (comparison with Zelvinskii's equations; cc per cc of water at 20 C, derived and literature)",
+  "Table VI on pdf page 1 belongs to another article (CdBr2)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 11 pressures x 3 temperatures, 27 values (6 blanks); written 33 data rows (6 with empty value) plus 3 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the page image in every cell. Sanity: solubility increases with P in every block; 100 C values cross 75 C and 50 C values at 300-700 atm as the authors describe (minimum of T trend); no duplicates.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the image",
+ "pass2_diff": "Table II: 29 (P, T, value) tuples identical (structured comparison); six printed blanks agree."
+}

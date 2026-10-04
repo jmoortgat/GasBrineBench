@@ -1,0 +1,93 @@
+{
+ "table": "Table 1",
+ "page_journal": 1439,
+ "title_as_printed": "Temperature, pressure and NaCl content of vapors and liquid in equilibrium with liquid NaCl solutions near the critical temperature of water.",
+ "footnotes_as_printed": {
+  "*": "Liquid composition"
+ },
+ "property": "other",
+ "property_description": "NaCl content (printed %NaCl, presumably weight percent; the paper never says weight or mole) of the vapor sampled from the top of the vessel at pressures on the vapor side of the two-phase boundary; rows marked * (note column) are the liquid composition (starting liquid), not the vapor",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated whether gauge or absolute; pressure measured with transducers on the vessel; given in bars; sampling lowered the pressure along the phase boundary",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P/bars",
+   "unit": "bar",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "%NaCl",
+   "unit": "percent_NaCl_in_vapor_basis_not_stated"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary NaCl-H2O; the measured quantity is the NaCl content of the coexisting vapor (or the liquid on * rows); starting liquid composition is given in the block label rows (0.1, 9.2, 8.8 %NaCl by weight)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    17,
+    42,
+    66
+   ],
+   "reason": "block label row (isotherm and starting liquid)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl_starting_liquid",
+     "value": "0.1",
+     "unit": "percent"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl_starting_liquid",
+     "value": "9.2",
+     "unit": "percent"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl_starting_liquid",
+     "value": "0.1",
+     "unit": "percent"
+    }
+   ]
+  },
+  {
+   "label_row": 66,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl_starting_liquid",
+     "value": "8.8",
+     "unit": "percent"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "%NaCl basis (weight presumably; abstract says '% NaCl' and the starting solutions 'by weight') to mole fraction or molality needs the basis confirmed"
+ ],
+ "notes": "Four side-by-side blocks (A left, A right, B left, B right) stacked in that order. Rows marked * are liquid compositions (the first sample of each starting liquid) and are kept; they are not vapor values. Rows are in sampling order as printed."
+}

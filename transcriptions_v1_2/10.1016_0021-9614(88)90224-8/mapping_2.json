@@ -1,0 +1,66 @@
+{
+ "table": "Table 2",
+ "page_journal": "954-958",
+ "title_as_printed": "Experimental density differences for NaCl(aq) and deviations {absolute, delta Delta rho; weighted, delta_w Delta rho = delta Delta rho / sigma(Delta rho)} from the cubic-spline surface: m0 = 1 mol kg^-1; rho0 = 1 kg m^-3",
+ "footnotes_as_printed": {
+  "a": "These values were not included in the least-squares fit because of systematic differences from the rest of the results. See text for discussion."
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the flow system read on an in-line test gauge (0.3 MPa accuracy set I, 0.1 MPa set II); absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Delta rho/rho0",
+   "unit": "kg/m3",
+   "scale": 1,
+   "what": "density of NaCl(aq) minus density of pure water at the same T and p (relative vibrating-tube densimeter, water reference); rho0 = 1 kg m^-3 so printed number is in kg m^-3"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m/m0",
+    "unit": "mol/kg",
+    "scale": 1
+   }
+  },
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    281
+   ],
+   "reason": "label rows 'Set I' and 'Set II' (two independent series of measurements)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "delta(Delta rho)/rho0 (absolute deviation from the authors' cubic-spline surface, kg m^-3, derived)",
+  "delta_w Delta rho (weighted deviation, derived)"
+ ],
+ "conversion_needs": [],
+ "notes": "Printed layout is two side-by-side column groups per page with the same headers; they are written as one long table, left group top to bottom then right group, page by page (journal pp. 954-958). Rows 1-280 are Set I (T 323-597 K, pressures 0.1-40 MPa, 2 decimals in Delta rho), rows 282-444 are Set II (T 322-550 K, 3 decimals in Delta rho, m given to 5-6 digits). Footnote a (not used in the fit) is printed on the last column of nine rows at 548.05 K, 24.58-24.72 MPa; recorded in the note column. Printed oddities kept as is: m = 0.1016 with Delta rho = 0.99 at 597.45 K, 20.65 MPa (all neighbouring rows at that state give 0.0564, 0.1051, ...; 0.1016 is probably a misprint for 0.0106, which is the molality used in the 38.58 MPa block); 'delta_w Delta rho' printed as 0.05 (two decimals) at 323.16 K, 20.24 MPa, 5.0464; m 5.0460 (not 5.0464) at 548.05 K, 24.72 MPa. Table 1 (calibration constants), Tables 3-7 (spline knots, Debye-Hueckel coefficients, spline-generated recommended values) are not extracted.",
+ "row_held": [
+  {
+   "rows": [
+    251
+   ],
+   "reason": "m printed 0.1016 at 597.45 K, 20.65 MPa; neighbours imply 0.0102-0.0106; likely misprint of 0.0106; held (mapping audit 2026-10-02)"
+  }
+ ]
+}

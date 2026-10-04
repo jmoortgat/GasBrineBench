@@ -1,0 +1,68 @@
+{
+ "doi": "10.1002/aic.14885",
+ "first_author": "Fouad",
+ "year": 2015,
+ "journal": "AIChE J. 61 (9), 3038-3052",
+ "source_key": "FOUAD(2015)",
+ "title": "High pressure measurements and molecular modeling of the water content of acid gas containing mixtures",
+ "authors": "Wael A. Fouad, Matt Yarrison, Kyoo Y. Song, Kenneth R. Cox, Walter G. Chapman",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean; every cell of Table 3 matched the 200 dpi page image (checked in three zoomed crops)",
+ "experimental_method": "Dynamic saturation (flow) method: dry gas mixture bubbled through water in a 1300 cm3 saturation cell in an air bath, throttled and analysed by a GE Panametrics moisture analyzer (below 333 K) or desiccant U-tubes weighed on a balance.",
+ "uncertainties_stated": "Accuracy better than 5 % (mole) of water content in the gas phase; temperature within 0.5 C of set point; pressure within 0.01 % of full scale (high temperature apparatus); gas composition uncertainty 0.05 to 0.01 mol %; air bath controlled within 0.3 K.",
+ "quality_remarks": "Temperature scale and absolute/gauge pressure not stated. Thermocouple (J-type) calibrated by supplier and checked against NIST-traceable PRT. Some points at lower pressure may lie in the dew-line region of the mixture; not discussed in the table. Gas phase composition is the dry feed gas, not corrected for water.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   3041
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "PC-SAFT pure component parameters (model parameters)"
+  },
+  {
+   "table": "Table 2",
+   "reason": "cross-association parameters (model parameters)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "fitted binary interaction parameters"
+  },
+  {
+   "table": "Table 5",
+   "reason": "model comparison against literature water-content data (Lukacs), derived"
+  },
+  {
+   "table": "Table 6",
+   "reason": "model comparison against GPSA data book values, derived/literature"
+  },
+  {
+   "table": "Table 7",
+   "reason": "model performance for a quaternary natural gas, model comparison"
+  }
+ ],
+ "row_counts": {
+  "Table 3 group1": {
+   "printed": 36,
+   "written": 36
+  },
+  "Table 3 group2": {
+   "printed": 21,
+   "written": 21
+  },
+  "Table 3 group3": {
+   "printed": 15,
+   "written": 15
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Table 3 split into three CSVs by dry-gas composition (CH4 90/CO2 10; C2 5/CO2 95; CH4 30/CO2 70). Column header 'C2' read as ethane from the introduction (5% ethane + 95% carbon dioxide). Pressure rows 3.45 to 103.42 MPa. Sanity: 72 rows written from text layer = 72 counted in image (9x4 + 7x3 + 15).",
+ "pass2_diff": "Table 3: 72 rows, 360/360 numbers identical."
+}

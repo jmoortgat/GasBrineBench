@@ -1,0 +1,35 @@
+{
+ "doi": "10.1021/j100854a012",
+ "first_author": "Covington, A. K.",
+ "authors": "A. K. Covington, T. H. Lilley, R. A. Robinson",
+ "year": 1968,
+ "journal": "The Journal of Physical Chemistry 72(8), 2759-2763",
+ "title": "Excess Free Energies of Aqueous Mixtures of Some Alkali Metal Halide Salt Pairs",
+ "source_key": "COVINGTON(1968)",
+ "experimental_method": "Isopiestic vapour-pressure method at 25 +/- 0.02 C: silver dishes on aluminium blocks in rocked desiccators, four duplicate determinations on the mixture with the pure component salts in the other four dishes, 1-4 days equilibration.",
+ "uncertainties_stated": "None for the molalities; standard deviation of beta'/m-based phi deviation estimated 0.0010 (delta of phi), i.e. 0.6 cal/kg at 2 m and 2.4 cal/kg at 4 m in the excess free energy.",
+ "quality_remarks": "Sodium bromide was prepared in-house by neutralising HBr with Na2CO3; other salts twice recrystallised. Temperature scale not stated. The osmotic coefficients in Tables II/III are interpolated from Robinson and Stokes tables for the reference salt. The NaBr-KBr block pair and all bromide mixtures are outside the six-ion set; kept because the table mixes in-scope (NaCl, KCl) and out-of-scope salts.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   2760
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (NaCl-NaBr) and Table III (KCl-NaBr): derived (osmotic coefficients, deviation function, beta'/m, calculated) from the Table I data; m and yB duplicate Table I",
+  "Table IV (beta'/m), Table V (b01, b02), Table VI (excess free energies): fitted/derived model quantities"
+ ],
+ "row_counts": {
+  "Table I": "printed 84 data rows (14 blocks x 6), written 84 data rows plus 14 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image in every cell (checked all 84 data rows on 1.6x crops). Sanity: within each block m varies monotonically from pure A to pure B as expected for isopiestic series; yB values are at 0 and 1.0 at block ends; yB of block-3 NaBr-KBr and KCl-KBr differ from block 1-2 (as printed).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the image",
+ "pass2_diff": "Table I: 84 rows, 168/168 numbers identical (label-number differences are block headings)."
+}
