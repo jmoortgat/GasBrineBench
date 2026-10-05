@@ -13,7 +13,7 @@ Examples
 >>> import gasbrinebench as gbb
 >>> df = gbb.load()                      # every family, lle-regime excluded
 >>> len(df)
-23300
+23090
 >>> gbb.load("solubility", gas="co2", T=(320, 330)).shape[0]
 824
 """
@@ -220,7 +220,7 @@ def load(
     75
     >>> everything = gbb.load(exclude_tags=None, exclude_flags=None)
     >>> len(everything)
-    27025
+    26815
     """
     root = Path(where) if where is not None else data_dir()
     if family == "all":

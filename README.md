@@ -10,7 +10,7 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**27,025 rows · 255 published sources · 7 benchmark gases (plus 24 further
+**26,815 rows · 255 published sources · 7 benchmark gases (plus 24 further
 gases, flagged) · 6 ions · 238–773 K · 0.1–3,500 bar, and a separate
 supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 
@@ -45,7 +45,7 @@ the snapshot it used.
 
 | family | rows | sources | gases | T [K] | P [bar] | R/T/U |
 |---|---:|---:|---|---|---|---|
-| `data/solubility.csv` | 14,682 | 155 | 23 gases, 7 of them the benchmark gases | 273–773 | 0.10–3500 | 1430 / 13050 / 202 |
+| `data/solubility.csv` | 14,472 | 148 | 23 gases, 7 of them the benchmark gases | 273–773 | 0.10–3500 | 1396 / 12874 / 202 |
 | `data/y_h2o.csv` | 1,972 | 51 | CO2, CH4, H2, N2, C2H6, C3H8 and 4 others | 238–623 | 1.0–3500 | 105 / 1810 / 57 |
 | `data/ternary.csv` | 93 | 3 | CO2 + CH4 together | 323–423 | 19–1000 | 0 / 93 / 0 |
 | `data/rho.csv` | 6,180 | 23 | — | 274–643 | 1.0–700 | 0 / 6180 / 0 |
@@ -56,18 +56,18 @@ the snapshot it used.
 | `data/dh_sol.csv` | 238 | 7 | 18 gases | 273–373 | 0.89–202 | 0 / 238 / 0 |
 | `data/psat_ratio.csv` | 1,402 | 19 | — | 292–647 | n/a | 21 / 1381 / 0 |
 | `data/eps_r.csv` | 13 | 1 | — | 298 | 1 | 0 / 13 / 0 |
-| **total** | **27,025** | **255** | | **238–773** | **0.10–3500** | **1556 / 25210 / 259** |
+| **total** | **26,815** | **249** | | **238–773** | **0.10–3500** | **1522 / 25034 / 259** |
 
 `sources` counts distinct *published works* per family, after the several
 curation spellings of one paper collapse onto one citation (`SOURCES.md`); the
-255 total is the number of distinct works in the whole database.
+249 total is the number of distinct works in the whole database.
 
 17,256 rows carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
 ionic strength); 9,810 are salt-free.
 
 ### What changed in v1.2
 
-v1.1.1 held 11,537 rows from 111 papers. v1.2 adds 15,488 rows (net) from 146 further
+v1.1.1 held 11,537 rows from 111 papers. v1.2 adds 15,278 rows (net) from 146 further
 papers (one v1.1.1 citation, Chapoy 2004, was also split in two; see `CHANGELOG.md`), extracted from the tables of the papers themselves (every table read
 twice, independently, the two readings compared by
 script and every disagreement settled against the page image;
@@ -96,9 +96,9 @@ meaning. `gbb.load()` drops, by default, rows that carry any of
 `gas-out-of-scope` (a gas outside the seven), `hydrate-regime`,
 `condensed-phase-uncertain`, `fugacity-as-pressure`, `subfreezing`,
 `volume-basis-uncertain` (per-litre composition the paper does not settle) and
-`pressure-unstated`, together with the `lle-regime` rows. That leaves **23,300
+`pressure-unstated`, together with the `lle-regime` rows. That leaves **23,090
 rows** in the default view. `exclude_flags=None, exclude_tags=None` returns all
-27,025; `SCHEMA.md` defines every flag.
+26,815; `SCHEMA.md` defines every flag.
 
 ### Supplementary tier
 
@@ -116,15 +116,15 @@ as printed otherwise. See `supplementary/README.md`. These rows are **not**
 part of the benchmark; they are published so that nothing extracted and
 verified is lost.
 
-**Scored rows.** Of the 27,025 benchmark rows, 23,300 are in the default view
+**Scored rows.** Of the 26,815 benchmark rows, 23,090 are in the default view
 (scored as gas–brine equilibrium and brine-property targets); the rest are
 kept and flagged.
 
 ## Verification
 
 Every row was compared with its paper (see `CHANGELOG.md`, "Full row-by-row audit"). `data/provenance/audit_status.csv` gives each row one status:
-`verified` (17,539 rows: printed digits equal the stored ones after the documented conversion), `corrected` (8,016: the audit changed at
-least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (874: no paper or table available, or the paper does not settle the basis)
+`verified` (17,539 rows: printed digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
+least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (522: no paper or table available, or the paper does not settle the basis)
 and `residual-difference` (596: a known difference from the paper that was not corrected, such as a brine composition adjusted for
 electroneutrality or a paper whose own columns disagree). A blind random audit of the corrected data found 8 major errors in 531 verifiable readings (1.5 %,
 95 % interval 0.8-2.9 %); after adjudication 2 of them (0.4 %) are not already disclosed by a flag or a documented convention. The column `data_origin` says whether a
@@ -134,7 +134,7 @@ number is printed in a table, read off a figure or calculated by the authors' mo
 
 ```python
 import gasbrinebench as gbb
-fit = gbb.load(reliable=True)            # 20,329 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
+fit = gbb.load(reliable=True)            # 20,471 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
 only_checked = gbb.load(audit_status="verified")      # or 'corrected', 'not-verifiable', 'residual-difference' (any of them, as a list)
 ```
 
@@ -183,7 +183,7 @@ default-excluded flag.** The `lle-regime` points (144 propane rows of v1.1.1
 and 210 added in v1.2) are liquid–liquid mutual solubilities, not gas
 solubilities (`data/QUALITY.md` Sec. 7); scoring them as the latter is a
 category error. The flagged rows are listed above. Pass
-`exclude_tags=None, exclude_flags=None` for all 27,025 rows.
+`exclude_tags=None, exclude_flags=None` for all 26,815 rows.
 
 The data directory is found beside the package, or from the working directory
 upward, or from `$GASBRINEBENCH_DATA`.
@@ -300,7 +300,7 @@ Every number in this repository can be walked back to the page it was printed
 on, and the chain is inspectable at each link:
 
 ```
-transcriptions/EoS/.../EXP*.txt      hand-typed source tables, 710 files,
+transcriptions/EoS/.../EXP*.txt      hand-typed source tables, 700 files,
         |                            each headed #AUTHOR(YEAR) (v1.0-v1.1)
 transcriptions_v1_2/<doi>/           v1.2 tables as extracted (table_N.csv),
         |                            with the mapping that converts each
@@ -322,7 +322,7 @@ transcriptions; those intermediates are not in this repository, but the
 transcriptions they came from are, and `data/README.md` names the route for
 each block.
 
-- **`transcriptions/`** — 710 hand transcriptions, 7,637 data rows, 122 source
+- **`transcriptions/`** — 700 hand transcriptions, 7,607 data rows, 120 source
   headers, with a `MANIFEST.tsv` giving each file's size, row count, source
   header and SHA-256. This is the bottom of the chain: it cannot be
   regenerated from anything, because it is somebody's typing checked against
@@ -339,7 +339,7 @@ each block.
 - **`data/QUALITY.md`** — the R/T/U justification record: what was checked
   against what, which rows were removed, and which apparent defects turned out
   to be in our own pipeline rather than in the source.
-- **`SOURCES.md`** — the source manifest. **All 27,025 rows resolve to a real
+- **`SOURCES.md`** — the source manifest. **All 26,815 rows resolve to a real
   published source (100 %).** It also carries each paper's OpenAlex citation
   count (`data/provenance/citation_counts.csv`) as metadata, not as a quality
   measure.
@@ -420,7 +420,7 @@ so the coverage figures cannot drift away from the data. Re-run it after any
 change and commit the diff. It never invents a citation: sources without a
 bibliographic record are listed by name under *Needs citation*.
 
-All 27,025 rows resolve to a real published source, and all but a few of
+All 26,815 rows resolve to a real published source, and all but a few of
 those works carry a DOI (`SOURCES.md` lists them). Six have none because none was ever issued — two
 doctoral theses, two research reports, and two papers in journals that were
 never retrospectively registered. The seventh is Sultanov et al. 1972, a

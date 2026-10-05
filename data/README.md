@@ -1,5 +1,7 @@
 # Benchmark database v0 — per-dataset provenance
 
+> **v1.2 note.** Blocks of rows named below were removed in version 1.2 because their papers could not be obtained: `c2h6_water` (Culberson and co-workers 1950, 150 rows) and the DEVANEY(1978) and IPATEV(1934) blocks of `h2_water_binaries` (60 rows). The blocks `c3h8_water` (KOBAYASHI(1951)) and the SULTANOV(1972) block of `ch4_water_binary` now carry the source labels KOBAYASHI(1953) and PRICE(1979); see `LEDGER.md`.
+
 > **Where this file came from.** This is the build log of the database,
 > written inside the model-comparison harness the data was assembled for
 > (`EoS_Benchmark`), and it is reproduced here verbatim because it is the

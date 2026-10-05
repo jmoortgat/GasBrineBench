@@ -5,7 +5,7 @@ abstract: >-
   gas-brine systems: gas solubility, brine density, osmotic coefficients,
   vapor-pressure lowering, gas-phase water content, enthalpy of dissolution
   and brine permittivity, in single- and mixed-salt aqueous electrolyte
-  solutions. 27,025 rows from 255 published sources in 11 families, covering
+  solutions. 26,815 rows from 249 published sources in 11 families, covering
   seven benchmark gases (CO2, CH4, H2, N2, O2, C2H6, C3H8; 24 further gases
   are flagged) and six ions (Na+, K+, Ca2+, Mg2+, Cl-, SO4 2-) over 238-773 K
   and 0.1-3,500 bar, including a CO2 + CH4 + water ternary family, and a

@@ -18,7 +18,7 @@ Examples
 >>> df = gbb.load()
 >>> hot = gbb.select(df, property='solubility_molality', T=(400, None))
 >>> sorted(hot['gas'].unique())
-['c2h6', 'c3h8', 'ch4', 'co2', 'h2', 'n2', 'o2']
+['c3h8', 'ch4', 'co2', 'h2', 'n2', 'o2']
 >>> gbb.select(df, salt_system='single-salt', gas='co2').shape[0]
 4044
 """
@@ -179,7 +179,7 @@ def select(
     >>> gbb.select(df, ions_exactly=['Na', 'Cl'], family='rho').shape[0]
     1175
     >>> gbb.select(df, gas='h2', quality='R').shape[0]
-    74
+    76
     """
     mask = pd.Series(True, index=df.index)
 

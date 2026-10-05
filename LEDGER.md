@@ -344,11 +344,13 @@ Every row was compared with its paper (see `CHANGELOG.md`). Corrections applied,
 | paper (citation id) | lines | fields |
 |---|---:|---|
 | ALGHAFRI2012 | 787 | T_K 779, value 8 |
+| ALGHAFRI2012_unc | 779 | uncertainty 779 |
 | RUMPF1993B | 660 | T_K 180, value 180, m_Na 150, m_SO4 150 |
 | TAKENOUCHI1964 | 648 | T_K 324, flags_add 324 |
 | SUSAK1980 | 645 | T_K 502, value 143 |
 | TODHEIDE1963 | 633 | T_K 315, flags_add 315, P_bar 3 |
 | GUO2016 | 624 | T_K 312, value 312 |
+| GUO | 524 | value 262, T_K 262 |
 | TEYMOURI2017 | 522 | T_K 382, m_Cl 70, m_K 34, m_Na 18, m_Mg 12, m_Ca 6 |
 | OU2015 | 378 | T_K 378 |
 | KIEPE2002 | 358 | T_K 278, P_bar 36, m_K 22, m_Cl 22 |
@@ -360,33 +362,36 @@ Every row was compared with its paper (see `CHANGELOG.md`). Corrections applied,
 | KOBAYASHI1951 | 272 | flags_add 272 |
 | ALGHAFRI2013 | 252 | T_K 126, m_Na 63, m_SO4 63 |
 | KAMPS2007 | 214 | value 170, m_K 22, m_Cl 22 |
+| REMOVED_obscure_sources | 210 | __remove__ 210 |
 | SANTOS2020 | 192 | T_K 96, value 96 |
 | NIGHSWANDER1989 | 178 | T_K 72, m_Na 36, m_Cl 36, value 34 |
 | MULLER | 176 | T_K 123, P_bar 52, value 1 |
-| MESSABEB2016 | 144 | T_K 72, value 72 |
-| YAN2011 | 144 | T_K 72, value 72 |
+| SULTANOV1972 | 171 | T_K 142, value 29 |
 | MESSABEB2017 | 144 | T_K 72, value 72 |
+| YAN2011 | 144 | T_K 72, value 72 |
+| MESSABEB2016 | 144 | T_K 72, value 72 |
 | ZHAO2015B | 144 | value 108, m_Cl 12, m_Ca 6, m_Mg 6, m_Na 6, m_SO4 6 |
 | BAMBERGER2000 | 143 | T_K 87, P_bar 54, value 2 |
 | DUFFY1961 | 134 | T_K 82, P_bar 50, value 2 |
 | SANTOS2021 | 132 | T_K 66, value 66 |
 | PRICE1979 | 128 | T_K 126, P_bar 2 |
 | HOU2013 | 123 | T_K 105, P_bar 18 |
+| ALGHAFRI2013_unc | 116 | uncertainty 116 |
 | VALTZ | 112 | T_K 92, flags_add 15, P_bar 5 |
 | CULBERSON1951 | 110 | T_K 96, P_bar 14 |
-| TAKENOUCHI1965 | 108 | T_K 54, flags_add 54 |
 | POULAIN2019 | 108 | value 96, P_bar 12 |
+| TAKENOUCHI1965 | 108 | T_K 54, flags_add 54 |
 | STOESSELL1982 | 91 | T_K 63, P_bar 21, value 7 |
 | WIEBE1934 | 90 | T_K 80, P_bar 10 |
 | CARROLL1998 | 88 | T_K 72, __remove__ 14, P_bar 2 |
 | ZHAO2015 | 72 | T_K 36, value 36 |
 | YARRISON2006B | 71 | T_K 54, __remove__ 10, value 6, P_bar 1 |
 | MEYER | 64 | T_K 58, P_bar 6 |
-| KING1992 | 62 | T_K 62 |
 | MICHELS1936 | 62 | T_K 60, P_bar 2 |
+| KING1992 | 62 | T_K 62 |
 | CORTI1990 | 60 | T_K 20, m_Na 20, m_SO4 20 |
-| BOTGER2016 | 56 | T_K 28, value 28 |
 | OLDS1942 | 56 | T_K 56 |
+| BOTGER2016 | 56 | T_K 28, value 28 |
 | ALGHAFRI2014 | 54 | T_K 30, P_bar 24 |
 | WANG1995 | 52 | T_K 42, P_bar 10 |
 | CHABAB2024 | 48 | T_K 45, P_bar 2, value 1 |
@@ -396,40 +401,45 @@ Every row was compared with its paper (see `CHANGELOG.md`). Corrections applied,
 | PORTIER2005 | 34 | T_K 34 |
 | WANG2003 | 34 | T_K 34 |
 | CHAPOY2004 | 32 | T_K 32 |
-| BASTAMI2014 | 32 | T_K 32 |
 | AMIRIJAFARI1972 | 32 | T_K 16, flags_add 16 |
+| BASTAMI2014 | 32 | T_K 32 |
+| LEKVAM1997 | 30 | T_K 30 |
+| BLANCO1978 | 30 | T_K 30 |
 | CAMPOS2010 | 30 | T_K 30 |
 | SACHS1995 | 30 | T_K 22, P_bar 8 |
-| BLANCO1978 | 30 | T_K 30 |
-| LEKVAM1997 | 30 | T_K 30 |
-| TONG2013 | 28 | T_K 28 |
 | GAO1997 | 28 | T_K 28 |
+| TONG2013 | 28 | T_K 28 |
 | KOSCHEL2006 | 28 | T_K 28 |
 | ELMAGHRABY2012 | 24 | T_K 12, value 12 |
 | YANG2001 | 22 | T_K 22 |
-| HAAS1976 | 21 | flags_add 21 |
 | BRIONES | 21 | T_K 21 |
-| TORIN2021 | 20 | T_K 20 |
+| HAAS1976 | 21 | flags_add 21 |
 | FOX1909 | 20 | flags_add 20 |
+| TORIN2021 | 20 | T_K 20 |
+| KLING1991 | 18 | T_K 18 |
 | DHIMA1999 | 18 | T_K 18 |
 | YOKOYAMA1988 | 18 | T_K 18 |
-| KLING1991 | 18 | T_K 18 |
 | SCHLAIKJER2018 | 16 | flags_add 16 |
 | CHAPOY2005 | 15 | T_K 15 |
-| DSOUZA | 12 | T_K 12 |
 | KIM2003 | 12 | T_K 12 |
+| DSOUZA | 12 | T_K 12 |
 | SAVARY2012 | 12 | T_K 12 |
-| TONG | 10 | T_K 10 |
 | QIN2008 | 10 | T_K 10 |
+| TONG | 10 | T_K 10 |
 | DOHRN1993 | 9 | T_K 9 |
-| ADDICKS2002 | 8 | T_K 8 |
 | AWAN2010 | 8 | T_K 8 |
 | SAKO1991 | 8 | T_K 8 |
+| ADDICKS2002 | 8 | T_K 8 |
 | MILLERO2002B | 5 | P_bar 5 |
 | KOBAYASHI1953 | 2 | flags_add 2 |
 | JACOB2016 | 2 | P_bar 2 |
-| OAKES1995 | 1 | __remove__ 1 |
 | REAMER1943 | 1 | __remove__ 1 |
+| OAKES1995 | 1 | __remove__ 1 |
 | LEOPOLD1927 | 1 | flags_add 1 |
 
-Row status after the audit: {'verified': 17539, 'corrected': 7754, 'not-verifiable': 1136, 'residual-difference': 596}.
+Row status after the audit: {'verified': 17539, 'corrected': 8158, 'residual-difference': 596, 'not-verifiable': 522}.
+
+## 2026-10-05 — sources of papers that could not be obtained [auto]
+
+* Removed (rows deleted; all were `test-only`, none in the reliable set): CULBERSONMCKETTA(1950) 90 rows and CULBERSONHORN(1950) 60 rows (ethane in water, taken from compilation sheets; paper not obtainable), IPATEV(1934) 42 rows and DEVANEY(1978) 18 rows (hydrogen in water; no DOI, not obtainable), 210 rows in all, with their 10 hand-transcription files. The row removals are lines of `data/provenance/audit_corrections.csv` (field `__remove__`).
+* Relabelled: KOBAYASHI(1951) (272 rows, propane in water) to KOBAYASHI(1953): the rows are Table VI of Kobayashi and Katz (1953), with which they were compared in the audit; the label had named a thesis that is not obtainable. SULTANOV(1972) (142 rows, methane in water, 423-633 K) to PRICE(1979): the rows were compared with Table 2 of Price (1979), which gives the Sultanov et al. data converted to SCF/bbl and psi; their temperatures and 29 values were set to the printed digits of that table.

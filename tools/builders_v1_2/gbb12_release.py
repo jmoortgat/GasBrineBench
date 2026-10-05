@@ -251,6 +251,15 @@ def main():
     # ---- corrections from the full row-by-row audit (positions of the audited release; guarded by the old value) ---------------
     import gbb12_audit_fixes as AF  # noqa: E402
     AF.apply(merged, os.path.join(a.rel, "full_audit", "fixes"), ledger, os.path.join(a.rel, "full_audit", "fix_apply_report.csv"))
+    # source labels that named a paper we do not hold, while the rows were verified against a paper we do hold
+    RELABEL = {"KOBAYASHI(1951)": ("KOBAYASHI(1953)", "the rows are Table VI of Kobayashi and Katz (1953), with which they were compared in the audit; the label named the thesis"),
+               "SULTANOV(1972)": ("PRICE(1979)", "the rows are Table 2 of Price (1979), which reprints the data of Sultanov et al.; compared with that table in the audit")}
+    for fam, df in merged.items():
+        for old_lab, (new_lab, why) in RELABEL.items():
+            m = df["source"] == old_lab
+            if m.any():
+                df.loc[m, "source"] = new_lab
+                ledger.append({"dataset_id": old_lab, "rows": int(m.sum()), "action": f"source relabelled to {new_lab}", "reason": why})
 
     # ---- quality: cross-source rules on the solubility rows -----------------------------------------------------------------
     sol = merged["solubility"]
@@ -321,7 +330,11 @@ def main():
             lines += [f"@misc{{{bk},", f"  author  = {{{bibtex_escape(p.get('authors', p.get('first_author', '')))}}},",
                       f"  title   = {{{bibtex_escape(p.get('title', ''))}}},", f"  year    = {{{inf['year']}}},",
                       f"  note    = {{{bibtex_escape(str(p.get('journal', ''))[:200])}}}", "}", ""]
-    open(os.path.join(a.repo, "bib", "references_v1_2.bib"), "w").write("\n".join(lines))
+    txt = "\n".join(lines)
+    # a thesis whose title page was not captured in paper.json: filled from the title page of the PDF (checked 2026-10-04)
+    txt = txt.replace("@misc{Adeniyi2020,\n  author  = {Adeniyi},\n  title   = {},",
+                      "@phdthesis{Adeniyi2020,\n  author  = {Adeniyi, Kayode Israel},\n  school  = {University of Calgary},\n  title   = {Water content of liquid acid gas and liquid propane in the presence of a hydrate phase},")
+    open(os.path.join(a.repo, "bib", "references_v1_2.bib"), "w").write(txt)
     # ---- supplementary tier -----------------------------------------------------------------------------------------------
     old_ds = list(supp["dataset_id"])
     supp["source"] = supp["slug"].map(lambda s_: source_map[s_]["source"])

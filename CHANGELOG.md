@@ -4,8 +4,8 @@
 
 **Not yet archived.** The Zenodo version DOI is minted at release.
 
-v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **27,025 rows from 255
-published sources** (+15,488 rows, +146 papers, -1 v1.1.1 source whose only point was removed) in 11 families, and a separate
+v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **26,815 rows from 249
+published sources** (+15,278 rows, +146 papers, -8 sources of v1.1.1 that no longer count: 5 removed, 3 merged or relabelled) in 11 families, and a separate
 supplementary tier of 5,174 measurements from 107 tables.
 
 **How the new rows were made.** The papers were found by a documented
@@ -29,28 +29,30 @@ density or an assumed pressure; of 477 extracted tables, 353 contribute rows.
 
 Source labels: the bare labels `Guo` (262 rows of Guo et al. 2014, CO2 in pure water) and `TONG` are pinned to their papers in `tools/make_sources.py` (`Guo` had resolved to the 2016 NaCl paper); this removes two duplicate bibliography lines, so the database cites 255 distinct works.
 
+Sources whose papers could not be obtained: the rows of four of them (Culberson and McKetta 1950, Culberson, Horn and McKetta 1950, Ipatev 1934, Devaney 1978; 210 rows, all test-only and none in the reliable set) were removed, and the two others were re-cited to the paper that was compared with them (KOBAYASHI(1951) to Kobayashi and Katz 1953, Table VI; SULTANOV(1972) to Price 1979, Table 2). `LEDGER.md` has the entries.
+
 ### Full row-by-row audit (2026-10-04)
 
 Every one of the 27,051 rows then in the data was compared with its paper: 48 independent audit passes, one packet of papers each, read the printed
 tables (page images and PDF text layers) and compared each row digit by digit with a script they wrote from their own transcription. Verdict per row:
 correct, minor (a printed temperature or pressure that differs from the stored one by up to 1 K or 2 %), major, or unverifiable (paper or table not
-available, or the paper does not settle the basis). 19,170 rows were correct, 6,464 minor, 501 major and 916 unverifiable. The same passes then wrote a
+available, or the paper does not settle the basis). 19,170 rows were correct, 6,606 minor, 501 major and 774 unverifiable. The same passes then wrote a
 correction list: every stored temperature re-keyed to the printed one (the older blocks stored nominal whole-kelvin isotherm temperatures), pressures
 that were rounded to 0.1 bar re-keyed, nominal compositions replaced by printed ones where the paper prints them, molalities set to the printed
-digits where the stored value sat 0.09 % low, and every unambiguous major corrected. 12771 field corrections and 26 row removals were applied (rows
+digits where the stored value sat 0.09 % low, and every unambiguous major corrected. 12,916 field corrections and 26 row removals were applied (and, separately, the 210 rows of four unobtainable sources removed; see above) (rows
 that no printed point supports, or paper misprints that make a stored value physically wrong); each line is in `data/provenance/audit_corrections.csv`
 with its reason, and `data/provenance/audit_status.csv` gives every row its status: `verified`, `corrected`, `not-verifiable` or `residual-difference`.
 Corrections the paper does not settle (per kg solution against per kg water, nominal against actual composition) were not made.
-The inter-source consensus statistic was recomputed afterwards: rows more than three robust scales from the other laboratories fell from 338 to 177.
+The inter-source consensus statistic was recomputed afterwards: rows more than three robust scales from the other laboratories fell from 338 to 170.
 A second, blind random audit of the corrected data (500 points, 540 independent readings, fresh, independent readers that had seen no earlier result) found 8 majors in 531 verifiable readings (1.5 %, 95 % interval 0.8-2.9 %; the first round, before the corrections, found 6.1 %); six of the eight are rows that already carry a flag or follow a documented derived-pressure convention, the other two are a paper that gives no concentration basis and a paper whose own mole-fraction and molality columns disagree (0.4 % after adjudication).
-`gbb.load(reliable=True)` returns the rows that passed the audit (status verified or corrected, quality not U, no unsettled-convention flag; 20,329 rows), and the column `audit_status` is attached by `load` so that `audit_status=` works as a filter.
+`gbb.load(reliable=True)` returns the rows that passed the audit (status verified or corrected, quality not U, no unsettled-convention flag; 20,471 rows), and the column `audit_status` is attached by `load` so that `audit_status=` works as a filter.
 A new informational flag, `smoothed-values`, marks tables the authors state are smoothed or graphically interpolated.
 
 ### Added
 
 * **Three families**: `rho_gas.csv` (density of CO2-loaded solutions, 951 rows),
   `visc.csv` (viscosity, 85 rows), `thermo_brine.csv` (apparent molar heat
-  capacity, 692 rows); and 15,488 rows in total over the 11 families.
+  capacity, 692 rows); and 15,278 rows in total over the 11 families.
 * **An optional `flags` column** on every family, `;`-separated, and an optional
   `m_gas` column in `rho_gas.csv` and `visc.csv`. `SCHEMA.md` defines the 16
   flags. `tag` is unchanged.
@@ -79,12 +81,12 @@ A new informational flag, `smoothed-values`, marks tables the authors state are 
 
 ### Changed
 
-* **Defaults.** `load()` returns 23,300 rows: it drops the 354 `lle-regime` rows
+* **Defaults.** `load()` returns 23,090 rows: it drops the 354 `lle-regime` rows
   (144 propane rows of v1.1.1, 210 added: propane, butanes, ethane, and CO2 below
   its critical temperature) and every row carrying `gas-out-of-scope`,
   `hydrate-regime`, `condensed-phase-uncertain`, `fugacity-as-pressure`,
   `subfreezing`, `volume-basis-uncertain` or `pressure-unstated`. Pass
-  `exclude_tags=None, exclude_flags=None` for all 27,025.
+  `exclude_tags=None, exclude_flags=None` for all 26,815.
 * **Quality codes** of solubility rows were recomputed over the enlarged set with
   the v1.1.1 rules (`data/QUALITY.md`, *v1.2 addendum*): 166 rows rose T to R
   because a new independent source agrees with them, and 44 rows fell R to T

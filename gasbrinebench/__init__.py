@@ -14,11 +14,11 @@ Load everything. The 354 ``lle-regime`` rows -- points whose heavy phase is a
 liquid, so they are mutual solubilities and not gas solubilities -- and the
 rows carrying a default-excluded flag (``gas-out-of-scope``, ``hydrate-regime``,
 ``pressure-unstated``, ...) are dropped by default; pass ``exclude_tags=None,
-exclude_flags=None`` for all 27,025:
+exclude_flags=None`` for all 26,815:
 
 >>> df = gbb.load()
 >>> len(df)
-23300
+23090
 
 Filter on any axis, in one call or several:
 
@@ -45,7 +45,7 @@ Both mole-fraction siblings of a solubility, joined onto one row:
 What a selection contains:
 
 >>> int(gbb.inventory(df, by='gas').loc['h2', 'rows'])
-614
+554
 
 Export. CSV always works; Parquet and HDF5 raise
 :class:`~gasbrinebench.export.MissingDependencyError` naming the one package

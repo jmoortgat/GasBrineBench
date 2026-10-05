@@ -7651,6 +7651,216 @@ QIN2008,y_h2o,174,T_K,375,375.6,printed T of the model point (Table 2 p.1247),hi
 QIN2008,y_h2o,175,T_K,375,375.8,printed T of the model point (Table 2 p.1247),high
 QIN2008,y_h2o,176,T_K,375,375.8,printed T of the model point (Table 2 p.1247),high
 REAMER1943,y_h2o,1367,__remove__,0.003362,,printed 3.362e-3 at 220 F/536.6 psia is an obvious misprint (ideal Psat/P ~0.032; neighbours imply ~33.6e-3); correct value not printed,medium
+REMOVED_obscure_sources,solubility,7599,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7600,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7601,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7602,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7603,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7604,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7605,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7606,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7607,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7608,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7609,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7610,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7611,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7612,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7613,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7614,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7615,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7616,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7617,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7618,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7619,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7620,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7621,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7622,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7623,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7624,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7625,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7626,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7627,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7628,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7629,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7630,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7631,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7632,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7633,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7634,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7635,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7636,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7637,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7638,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7639,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7640,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7641,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7642,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7643,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7644,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7645,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7646,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7647,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7648,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7649,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7650,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7651,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7652,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7653,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7654,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7655,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7656,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7657,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7658,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7659,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7660,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7661,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7662,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7663,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7664,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7665,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7666,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7667,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7668,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7669,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7670,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7671,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7672,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7673,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7674,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7675,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7676,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7677,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7678,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7679,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7680,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7681,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7682,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7683,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7684,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7685,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7686,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7687,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7688,__remove__,,,"Culberson and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7539,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7540,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7541,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7542,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7543,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7544,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7545,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7546,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7547,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7548,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7549,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7550,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7551,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7552,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7553,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7554,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7555,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7556,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7557,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7558,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7559,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7560,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7561,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7562,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7563,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7564,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7565,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7566,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7567,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7568,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7569,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7570,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7571,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7572,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7573,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7574,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7575,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7576,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7577,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7578,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7579,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7580,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7581,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7582,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7583,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7584,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7585,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7586,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7587,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7588,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7589,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7590,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7591,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7592,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7593,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7594,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7595,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7596,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7597,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,7598,__remove__,,,"Culberson, Horn and McKetta (1950): paper not obtainable; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8591,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8592,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8593,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8594,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8595,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8596,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8597,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8598,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8609,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8610,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8611,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8612,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8613,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8614,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8633,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8634,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8635,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8636,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8637,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8638,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8639,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8640,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8641,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8642,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8659,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8660,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8661,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8662,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8671,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8672,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8673,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8674,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8675,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8676,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8677,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8678,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8679,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8680,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8701,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8702,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8703,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8704,__remove__,,,"Ipatev and Teodorovich (1934): paper not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8547,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8548,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8549,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8550,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8551,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8552,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8553,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8554,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8687,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8688,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8689,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8690,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8691,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8692,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8725,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8726,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8735,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
+REMOVED_obscure_sources,solubility,8736,__remove__,,,"Devaney et al. (1978): report not obtainable and no DOI; rows removed from the public data set (test-only, never a fit target)",high
 RUMPF1993,solubility,442,T_K,313.0,313.16,Table II: printed T,high
 RUMPF1993,solubility,442,P_bar,4.7,4.67,Table II: printed p 0.467 MPa,high
 RUMPF1993,solubility,442,value,0.0008938004062,0.000894559,Table II: printed m_CO2 0.0497 mol/kg (stored ~0.9991 of it),high
@@ -9088,6 +9298,177 @@ STOESSELL1982,solubility,5629,T_K,298.0,298.15,Table 1 prints 25 C,high
 STOESSELL1982,solubility,5629,value,0.00111,0.0011103093,Table 1 prints distilled-water molality 0.0617 directly; stored derived from 2-sig-fig x,high
 STOESSELL1982,solubility,5630,T_K,298.0,298.15,Table 1 prints 25 C,high
 STOESSELL1982,solubility,5630,value,0.06168283086,0.0617,Table 1 prints distilled-water molality 0.0617 directly; stored derived from 2-sig-fig x,high
+SULTANOV1972,solubility,6463,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6463,value,0.0008,0.000803643,"printed 6.13 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6464,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6464,value,0.04444230189,0.0446448,"printed 6.13 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6465,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6465,value,0.00149,0.00149454,"printed 11.4 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6466,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6466,value,0.08283098641,0.0830837,"printed 11.4 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6467,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6467,value,0.00229,0.00229425,"printed 17.5 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6468,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6468,value,0.1274060762,0.127643,"printed 17.5 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6469,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6469,value,0.003,0.00300219,"printed 22.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6470,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6470,value,0.1670263843,0.167149,"printed 22.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6471,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6471,value,0.0034,0.00339549,"printed 25.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6472,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6472,value,0.1893725459,0.18912,"printed 25.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6473,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6474,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6474,value,0.2117366525,0.211843,"printed 29 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6475,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6475,value,0.00471,0.00470649,"printed 35.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6476,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6476,value,0.2626819612,0.262485,"printed 35.9 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6477,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6477,value,0.00541,0.00541443,"printed 41.3 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6478,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6478,value,0.3019340971,0.302182,"printed 41.3 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6479,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6480,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6481,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6482,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6483,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6484,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6485,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6486,T_K,423.0,423.15,printed 150 C in Price 1979 Table 2 (p.1532) = 423.15 K; stored nominal,high
+SULTANOV1972,solubility,6593,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6593,value,0.001,0.00099636,"printed 7.6 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6594,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6594,value,0.05556399906,0.0553615,"printed 7.6 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6595,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6595,value,0.0022,0.00220248,"printed 16.8 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6596,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6596,value,0.1223878103,0.122526,"printed 16.8 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6597,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6598,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6599,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6599,value,0.00461,0.00461472,"printed 35.2 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6600,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6600,value,0.2570790199,0.257343,"printed 35.2 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6601,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6601,value,0.00572,0.00571596,"printed 43.6 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6602,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6602,value,0.3193348439,0.319108,"printed 43.6 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6603,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6604,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6605,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6605,value,0.00805,0.00804561,"printed 61.37 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6606,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6606,value,0.4504691791,0.450221,"printed 61.37 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6607,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6608,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6609,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6610,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6611,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6612,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6613,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6614,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6615,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6616,T_K,473.0,473.15,printed 200 C in Price 1979 Table 2 (p.1532) = 473.15 K; stored nominal,high
+SULTANOV1972,solubility,6757,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6757,value,0.0026,0.00259578,"printed 19.8 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6758,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6758,value,0.1446981463,0.144463,"printed 19.8 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6759,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6760,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6761,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6762,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6763,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6764,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6765,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6766,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6767,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6768,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6769,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6770,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6771,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6772,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6773,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6774,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6775,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6776,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6777,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6778,T_K,523.0,523.15,printed 250 C in Price 1979 Table 2 (p.1532) = 523.15 K; stored nominal,high
+SULTANOV1972,solubility,6869,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6869,value,0.0012,0.00119825,"printed 9.14 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6870,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6870,value,0.06669015025,0.066593,"printed 9.14 SCF/bbl x 1.311e-4 (Price Table 1 footnote, same unit) = x; m=x/(1-x)*55.5084; stored derived from x rounded to 2-3 digits",high
+SULTANOV1972,solubility,6871,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6872,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6873,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6874,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6875,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6876,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6877,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6878,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6879,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6880,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6881,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6882,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6883,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6884,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6885,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6886,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6887,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6888,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6889,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6890,T_K,573.0,573.15,printed 300 C in Price 1979 Table 2 (p.1532) = 573.15 K; stored nominal,high
+SULTANOV1972,solubility,6935,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6936,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6937,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6938,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6939,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6940,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6941,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6942,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6943,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6944,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6945,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6946,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6947,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6948,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6949,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6950,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6951,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6952,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6953,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6954,T_K,603.0,603.15,printed 330 C in Price 1979 Table 2 (p.1532) = 603.15 K; stored nominal,high
+SULTANOV1972,solubility,6981,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6982,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6983,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6984,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6985,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6986,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6987,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6988,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6989,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6990,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6991,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6992,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6993,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6994,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6995,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6996,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6997,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,6998,T_K,623.0,623.15,printed 350 C in Price 1979 Table 2 (p.1532) = 623.15 K; stored nominal,high
+SULTANOV1972,solubility,7019,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7020,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7021,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7022,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7023,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7024,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7025,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7026,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7027,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7028,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7029,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
+SULTANOV1972,solubility,7030,T_K,633.0,633.15,printed 360 C in Price 1979 Table 2 (p.1532) = 633.15 K; stored nominal,high
 SUSAK1980,solubility,3038,T_K,298.0,298.15,printed 25 C = 298.15 K (Susak table),high
 SUSAK1980,solubility,3039,T_K,298.0,298.15,printed 25 C = 298.15 K (Susak table),high
 SUSAK1980,solubility,3040,T_K,298.0,298.15,printed 25 C = 298.15 K (Susak table),high
