@@ -123,9 +123,9 @@ kept and flagged.
 ## Verification
 
 Every row was compared with its paper (see `CHANGELOG.md`, "Full row-by-row audit"). `data/provenance/audit_status.csv` gives each row one status:
-`verified` (17,539 rows: printed digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
-least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (522: no paper or table available, or the paper does not settle the basis)
-and `residual-difference` (596: a known difference from the paper that was not corrected, such as a brine composition adjusted for
+`verified` (17,967 rows: printed digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
+least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (90: no paper or table available, or the paper does not settle the basis)
+and `residual-difference` (600: a known difference from the paper that was not corrected, such as a brine composition adjusted for
 electroneutrality or a paper whose own columns disagree). A blind random audit of the corrected data found 8 major errors in 531 verifiable readings (1.5 %,
 95 % interval 0.8-2.9 %); after adjudication 2 of them (0.4 %) are not already disclosed by a flag or a documented convention. The column `data_origin` says whether a
 number is printed in a table, read off a figure or calculated by the authors' model, and the flag `smoothed-values` marks tables the authors state are smoothed.
@@ -134,7 +134,7 @@ number is printed in a table, read off a figure or calculated by the authors' mo
 
 ```python
 import gasbrinebench as gbb
-fit = gbb.load(reliable=True)            # 20,471 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
+fit = gbb.load(reliable=True)            # 20,899 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
 only_checked = gbb.load(audit_status="verified")      # or 'corrected', 'not-verifiable', 'residual-difference' (any of them, as a list)
 ```
 

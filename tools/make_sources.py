@@ -267,12 +267,6 @@ SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
                   "was assigned to J. Chem. Eng. Data 61(1), 466-474 (2016); "
                   "the 24 rows -- 373 K, 100-400 bar, 1/3/5 mol/kg NaCl -- are "
                   "on its 10/20/30/40 MPa grid."),
-    "FROST(2013)": ("FROST(2014)",
-                    "the key carries the ASAP year. Frost, Karakatsani, von "
-                    "Solms, Richon & Kontogeorgis appeared online in December "
-                    "2013 but was assigned to J. Chem. Eng. Data 59(4), "
-                    "961-967 (2014); the 21 rows span 283-323 K and 47.8-194.9 "
-                    "bar, inside that paper's 5-20 MPa methane + water set."),
     "BLANCO(1977)": ("BLANCO(1978)",
                      "wrong year. Blanco & Smith's high-pressure methane in "
                      "aqueous CaCl2 paper is J. Phys. Chem. 82(2), 186-191 "

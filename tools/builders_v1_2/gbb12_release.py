@@ -253,6 +253,7 @@ def main():
     AF.apply(merged, os.path.join(a.rel, "full_audit", "fixes"), ledger, os.path.join(a.rel, "full_audit", "fix_apply_report.csv"))
     # source labels that named a paper we do not hold, while the rows were verified against a paper we do hold
     RELABEL = {"KOBAYASHI(1951)": ("KOBAYASHI(1953)", "the rows are Table VI of Kobayashi and Katz (1953), with which they were compared in the audit; the label named the thesis"),
+               "FROST(2013)": ("FROST(2014)", "the label carried the year of the online publication (December 2013); the paper is J. Chem. Eng. Data 59(4), 961-967 (2014)"),
                "SULTANOV(1972)": ("PRICE(1979)", "the rows are Table 2 of Price (1979), which reprints the data of Sultanov et al.; compared with that table in the audit")}
     for fam, df in merged.items():
         for old_lab, (new_lab, why) in RELABEL.items():

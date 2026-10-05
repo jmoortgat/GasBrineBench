@@ -45,7 +45,7 @@ with its reason, and `data/provenance/audit_status.csv` gives every row its stat
 Corrections the paper does not settle (per kg solution against per kg water, nominal against actual composition) were not made.
 The inter-source consensus statistic was recomputed afterwards: rows more than three robust scales from the other laboratories fell from 338 to 170.
 A second, blind random audit of the corrected data (500 points, 540 independent readings, fresh, independent readers that had seen no earlier result) found 8 majors in 531 verifiable readings (1.5 %, 95 % interval 0.8-2.9 %; the first round, before the corrections, found 6.1 %); six of the eight are rows that already carry a flag or follow a documented derived-pressure convention, the other two are a paper that gives no concentration basis and a paper whose own mole-fraction and molality columns disagree (0.4 % after adjudication).
-`gbb.load(reliable=True)` returns the rows that passed the audit (status verified or corrected, quality not U, no unsettled-convention flag; 20,471 rows), and the column `audit_status` is attached by `load` so that `audit_status=` works as a filter.
+`gbb.load(reliable=True)` returns the rows that passed the audit (status verified or corrected, quality not U, no unsettled-convention flag; 20,899 rows), and the column `audit_status` is attached by `load` so that `audit_status=` works as a filter.
 A new informational flag, `smoothed-values`, marks tables the authors state are smoothed or graphically interpolated.
 
 ### Added
