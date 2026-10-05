@@ -4,7 +4,7 @@
 
 **Not yet archived.** The Zenodo version DOI is minted at release.
 
-v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **27,025 rows from 256
+v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **27,025 rows from 255
 published sources** (+15,488 rows, +146 papers, -1 v1.1.1 source whose only point was removed) in 11 families, and a separate
 supplementary tier of 5,174 measurements from 107 tables.
 
@@ -27,12 +27,14 @@ byte for byte from this repository (`python3 tools/builders_v1_2/gbb12_build.py
 reason on record, whenever its conversion would need a model, an assumed
 density or an assumed pressure; of 477 extracted tables, 353 contribute rows.
 
+Source labels: the bare labels `Guo` (262 rows of Guo et al. 2014, CO2 in pure water) and `TONG` are pinned to their papers in `tools/make_sources.py` (`Guo` had resolved to the 2016 NaCl paper); this removes two duplicate bibliography lines, so the database cites 255 distinct works.
+
 ### Full row-by-row audit (2026-10-04)
 
 Every one of the 27,051 rows then in the data was compared with its paper: 48 independent audit passes, one packet of papers each, read the printed
 tables (page images and PDF text layers) and compared each row digit by digit with a script they wrote from their own transcription. Verdict per row:
 correct, minor (a printed temperature or pressure that differs from the stored one by up to 1 K or 2 %), major, or unverifiable (paper or table not
-available, or the paper does not settle the basis). 18,908 rows were correct, 6,464 minor, 501 major and 1,178 unverifiable. The same passes then wrote a
+available, or the paper does not settle the basis). 19,170 rows were correct, 6,464 minor, 501 major and 916 unverifiable. The same passes then wrote a
 correction list: every stored temperature re-keyed to the printed one (the older blocks stored nominal whole-kelvin isotherm temperatures), pressures
 that were rounded to 0.1 bar re-keyed, nominal compositions replaced by printed ones where the paper prints them, molalities set to the printed
 digits where the stored value sat 0.09 % low, and every unambiguous major corrected. 12771 field corrections and 26 row removals were applied (rows

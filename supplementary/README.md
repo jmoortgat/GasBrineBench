@@ -1,6 +1,6 @@
 # Supplementary tier
 
-`supplementary_measurements.csv` holds **5,159 verified measurements from 104
+`supplementary_measurements.csv` holds **5,174 verified measurements from 107
 tables** that the benchmark families (`data/*.csv`) cannot store without a
 model, an assumed density or an assumed pressure. They were extracted, checked
 and mapped by the same pipeline as the benchmark rows (see `CHANGELOG.md`,

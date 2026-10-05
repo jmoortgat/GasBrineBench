@@ -36,7 +36,7 @@ def inventory(df: pd.DataFrame, by: str = "family") -> pd.DataFrame:
     --------
     >>> import gasbrinebench as gbb
     >>> int(gbb.inventory(gbb.load('solubility'), by='gas').loc['co2', 'rows'])
-    6490
+    6362
     """
     key = by if isinstance(by, str) else list(by)
     T = pd.to_numeric(df["T_K"], errors="coerce")

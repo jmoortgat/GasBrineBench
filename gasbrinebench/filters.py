@@ -179,7 +179,7 @@ def select(
     >>> gbb.select(df, ions_exactly=['Na', 'Cl'], family='rho').shape[0]
     1175
     >>> gbb.select(df, gas='h2', quality='R').shape[0]
-    76
+    74
     """
     mask = pd.Series(True, index=df.index)
 

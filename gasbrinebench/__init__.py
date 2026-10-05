@@ -18,23 +18,23 @@ exclude_flags=None`` for all 27,025:
 
 >>> df = gbb.load()
 >>> len(df)
-23687
+23300
 
 Filter on any axis, in one call or several:
 
 >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
 >>> len(co2)
-3597
+3533
 >>> hot_brine = gbb.select(co2, T=(373, 425), ionic_strength=(2, None))
 >>> len(hot_brine)
-500
+482
 
 Derived composition quantities:
 
 >>> float(gbb.ionic_strength(co2).max())
 18.0
 >>> gbb.salt_system_kind(co2).value_counts().to_dict()
-{'single-salt': 2002, 'water': 1228, 'mixed-salt': 367}
+{'single-salt': 2002, 'water': 1228, 'mixed-salt': 303}
 
 Both mole-fraction siblings of a solubility, joined onto one row:
 
@@ -45,7 +45,7 @@ Both mole-fraction siblings of a solubility, joined onto one row:
 What a selection contains:
 
 >>> int(gbb.inventory(df, by='gas').loc['h2', 'rows'])
-690
+614
 
 Export. CSV always works; Parquet and HDF5 raise
 :class:`~gasbrinebench.export.MissingDependencyError` naming the one package

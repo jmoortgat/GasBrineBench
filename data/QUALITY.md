@@ -502,8 +502,8 @@ stated where they are used.
 
 ## v1.2 addendum: quality codes over the enlarged set
 
-The cross-source rules of v1.1.1 were rerun over the 14,696 solubility rows
-(`tools/builders_v1_2/gbb12_quality.py`, which reproduces them): points of
+The cross-source rules of v1.1.1 were rerun over the 14,682 solubility rows
+(`tools/builders_v1_2/gbb12_quality.py`, which reproduces them), after the corrections of the row-by-row audit (`CHANGELOG.md`) had been applied: points of
 different sources with the same gas, |dT| <= 1 K, |dP| <= 2 % and every ion
 molality within 2 % form a cluster; a cluster of two or more sources whose
 values span at most 5 % of their median gives every row of the cluster `R`;
@@ -512,14 +512,11 @@ more than max(3 x the span, 5 %) in at least three clusters is `U`. A code of
 `U` given by an author flag or by a mapping is never upgraded. The
 `xc_saltfree` sibling of a point follows its `solubility_molality` row.
 
-Starting every non-`U` row from `T` and applying the rules gives, for the 9,367
-v1.1.1 solubility rows: 485 stay `R`, 166 rise `T` to `R` (a v1.2 source agrees
-with them), 44 fall `R` to `T` (a v1.2 source lies outside the 5 % band around
-them, or a corrected value changed a cluster), 7,970 stay `T`, and the 32 `U` stay
-`U`. No row became `U` by the cluster rule; 62 rows (old solubility and water-content rows, and the low-pressure MOHAMMADIAN(2015) rows) were set to `U` by hand after
-the check against the papers (the sources and reasons are in `LEDGER.md`: TODHEIDE complement values, the copied CARROLL
-block, CAMPOS, OLDS, AWAN, SABIRZYANOV(2002), FROST, HOU), and 2 of them were `R`. Of the 5,953 solubility rows added in v1.2,
-778 are `R`, 5,037 `T` and 138 `U`; the `U` rows carry an author flag or an
+Starting every non-`U` row from `T` and applying the rules gives, in the final data, for the 8,729
+solubility rows that come from v1.1.1 datasets: 639 `R`, 8,026 `T` and 64 `U`; and for the 5,953 solubility rows added in v1.2:
+785 `R`, 5,030 `T` and 138 `U`. No row became `U` by the cluster rule. Rows of old solubility and water-content datasets were set to `U`
+by hand after the check against the papers (the sources and reasons are in `LEDGER.md`: TODHEIDE complement values, the copied CARROLL
+block, CAMPOS, OLDS, AWAN, SABIRZYANOV(2002), FROST, HOU, and the low-pressure MOHAMMADIAN(2015) rows); the `U` rows of v1.2 carry an author flag or an
 unresolved doubt recorded in their mapping (`caution`, `quality_remarks`).
 
 Rows of the other families keep the code their builder assigned: `T`, or `U`

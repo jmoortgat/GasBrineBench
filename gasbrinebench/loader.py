@@ -13,9 +13,9 @@ Examples
 >>> import gasbrinebench as gbb
 >>> df = gbb.load()                      # every family, lle-regime excluded
 >>> len(df)
-23687
+23300
 >>> gbb.load("solubility", gas="co2", T=(320, 330)).shape[0]
-856
+824
 """
 
 from __future__ import annotations
@@ -217,7 +217,7 @@ def load(
     >>> import gasbrinebench as gbb
     >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
     >>> int(co2['source'].nunique())
-    76
+    75
     >>> everything = gbb.load(exclude_tags=None, exclude_flags=None)
     >>> len(everything)
     27025

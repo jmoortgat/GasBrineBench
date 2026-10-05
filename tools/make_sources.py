@@ -161,6 +161,14 @@ _HOU_JSCF78 = (
 )
 
 SOURCE_KEY_FIXES: dict[str, tuple[str, str]] = {
+    "Guo": ("GUO(2014)",
+            "a bare surname that resolved, by being the only 'Guo' record, to Guo et al. (2016, NaCl solutions, J. Chem. Eng. Data). The 262 rows "
+            "(131 points in solubility.csv, each as a molality row and its mole-fraction sibling) are CO2 in PURE WATER at 273-573 K and 10-120 MPa, which is "
+            "Table 3 of Guo, Chen, Hu, Lu, Ou & Geng (2014), Fluid Phase Equilib. 382, 70-79 (the transcription tree names it); found when the row-by-row "
+            "audit read the 2016 paper and could not find the rows."),
+    "TONG": ("TONG(2013)",
+             "no year in the key. The 10 rows are Table 1 (CO2 in pure water, validation) of Tong, Trusler & Vega-Maza (2013), J. Chem. Eng. Data 58, 2116-2124, "
+             "the same paper as TONG(2013); the bare surname resolved to it as the only 'Tong' record and is pinned here."),
     "king": ("KING(1992)",
              "no year and a lower-case surname in the key. The 62 rows (36 in solubility.csv, 26 in y_h2o.csv) are the King, Mubarak, Kim & Bott (1992) "
              "binary named in data/README.md (yh2o_co2_binary lists 'King 1992'); the v1.2 bibliography added further King records, "

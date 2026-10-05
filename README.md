@@ -10,9 +10,9 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**27,025 rows · 256 published sources · 7 benchmark gases (plus 24 further
+**27,025 rows · 255 published sources · 7 benchmark gases (plus 24 further
 gases, flagged) · 6 ions · 238–773 K · 0.1–3,500 bar, and a separate
-supplementary tier of 5,159 measurements the benchmark families cannot hold.**
+supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 
 > **New here?** Look at the data in your browser first. Each notebook opens in Colab with one click, installs nothing, needs no account
 > beyond a Google login, and downloads this repository itself.
@@ -56,11 +56,11 @@ the snapshot it used.
 | `data/dh_sol.csv` | 238 | 7 | 18 gases | 273–373 | 0.89–202 | 0 / 238 / 0 |
 | `data/psat_ratio.csv` | 1,402 | 19 | — | 292–647 | n/a | 21 / 1381 / 0 |
 | `data/eps_r.csv` | 13 | 1 | — | 298 | 1 | 0 / 13 / 0 |
-| **total** | **27,025** | **256** | | **238–773** | **0.10–3500** | **1556 / 25210 / 259** |
+| **total** | **27,025** | **255** | | **238–773** | **0.10–3500** | **1556 / 25210 / 259** |
 
 `sources` counts distinct *published works* per family, after the several
 curation spellings of one paper collapse onto one citation (`SOURCES.md`); the
-256 total is the number of distinct works in the whole database.
+255 total is the number of distinct works in the whole database.
 
 17,256 rows carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
 ionic strength); 9,810 are salt-free.
@@ -102,7 +102,7 @@ rows** in the default view. `exclude_flags=None, exclude_tags=None` returns all
 
 ### Supplementary tier
 
-`supplementary/supplementary_measurements.csv` (5,159 rows from 104 tables)
+`supplementary/supplementary_measurements.csv` (5,174 rows from 107 tables)
 holds in-scope measurements that no benchmark family can store without a
 model: apparent molar volumes, enthalpies of dilution and dissolution,
 isopiestic molality pairs (stored as printed, so users can convert them with
