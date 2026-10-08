@@ -2,7 +2,7 @@
 
 ## 1.2.1 — 146 further papers, three new families, a supplementary tier
 
-**Not yet archived.** The Zenodo version DOI is minted at release.
+Archived on Zenodo: doi 10.5281/zenodo.23243941.
 
 **Relation to 1.2.0.** Release 1.2.0 is the snapshot of 4 October 2026 (commit
 `a2ed9a7`: 27,025 rows from 256 sources, 23,300 in the default view, 20,329 in
@@ -184,6 +184,8 @@ These are defects of the first v1.2 build, not of v1.1.1; none was in a publishe
   twice, or a thesis and its paper) are not repeated.
 
 ## 1.2.0 — snapshot of 4 October 2026 (archived unchanged)
+
+Zenodo doi 10.5281/zenodo.23243932.
 
 27,025 rows from 256 published sources in 11 families plus the supplementary
 tier, after the row-by-row audit against the papers (commit `a2ed9a7`). This is

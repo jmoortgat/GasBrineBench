@@ -32,10 +32,12 @@ supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 >
 > They are also committed with their figures, so GitHub shows them without running anything. `python3 tools/make_notebooks.py` rebuilds them.
 
-**Status: v1.2.1 in preparation (this branch).** The last archived release is
-v1.1.1, [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22898153.svg)](https://doi.org/10.5281/zenodo.22898153)
-(11,537 rows from 111 sources); the version DOIs of v1.2.0 and v1.2.1 are assigned when it
-is archived. Cite the original experimental sources for the numbers (see
+**Status: v1.2.1 released.** v1.2.1,
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23243941.svg)](https://doi.org/10.5281/zenodo.23243941)
+(26,815 rows from 249 works), supersedes v1.2.0
+([10.5281/zenodo.23243932](https://doi.org/10.5281/zenodo.23243932), the 4 October snapshot
+with 27,025 rows) and v1.1.1 (11,537 rows from 111 sources,
+[10.5281/zenodo.22898153](https://doi.org/10.5281/zenodo.22898153)). Cite the original experimental sources for the numbers (see
 *Citation* below) and the version DOI for the compilation. The row schema of
 v1.1.1 is unchanged except for one optional column (`flags`, below); the row
 set grows, and each release gets its own version DOI so a result always names
@@ -461,7 +463,7 @@ cite this repository for the compilation:
 > gas–brine thermodynamic data* (v1.1.1) [Data set]. Zenodo.
 > https://doi.org/10.5281/zenodo.22898153
 
-(v1.2.0 and v1.2.1: use the DOI printed here once the release is archived.) Use the
+v1.2.1: https://doi.org/10.5281/zenodo.23243941 (v1.2.0: https://doi.org/10.5281/zenodo.23243932). Use the
 **version** DOI, not the concept DOI, which always resolves to the newest
 release. A
 benchmark number is only reproducible if the citation names the snapshot it

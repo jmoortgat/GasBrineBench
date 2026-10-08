@@ -29,9 +29,17 @@ identifiers:
     value: 10.5281/zenodo.22834145
     description: >-
       Concept DOI. Always resolves to the newest version, so it names the
-      project rather than any particular row set. The version DOIs of v1.2.0 and v1.2.1
-      is added here when the release is archived; until then cite the
-      v1.1.1 version DOI below for the 11,537-row snapshot.
+      project rather than any particular row set. Cite a version DOI.
+  - type: doi
+    value: 10.5281/zenodo.23243941
+    description: >-
+      Version DOI for v1.2.1 (26,815 rows, 249 works), the version
+      described in the data descriptor.
+  - type: doi
+    value: 10.5281/zenodo.23243932
+    description: >-
+      Version DOI for v1.2.0 (27,025 rows, 256 sources), the snapshot of
+      4 October 2026 cited by the benchmark manuscript.
   - type: doi
     value: 10.5281/zenodo.22898153
     description: >-
