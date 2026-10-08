@@ -8,7 +8,7 @@ Five-minute tour
 ----------------
 >>> import gasbrinebench as gbb
 >>> gbb.__version__
-'1.2.0'
+'1.2.1'
 
 Load everything. The 354 ``lle-regime`` rows -- points whose heavy phase is a
 liquid, so they are mutual solubilities and not gas solubilities -- and the

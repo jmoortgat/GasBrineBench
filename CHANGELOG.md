@@ -1,10 +1,23 @@
 # Changelog
 
-## 1.2.0 — 146 further papers, three new families, a supplementary tier
+## 1.2.1 — 146 further papers, three new families, a supplementary tier
 
 **Not yet archived.** The Zenodo version DOI is minted at release.
 
-v1.1.1 held 11,537 rows from 111 papers. v1.2.0 holds **26,815 rows from 249
+**Relation to 1.2.0.** Release 1.2.0 is the snapshot of 4 October 2026 (commit
+`a2ed9a7`: 27,025 rows from 256 sources, 23,300 in the default view, 20,329 in
+the reliable set) that the benchmark manuscript cites; it is archived unchanged.
+1.2.1 differs from it as follows: 210 rows from sources that could not be
+obtained or traced were removed (Culberson x2, Ipatev, Devaney); Kobayashi 1951
+is cited as Kobayashi and Katz 1953, Sultanov 1972 as Price 1979, and the Frost
+rows are dated 2014; the Guo 2014 and Tong labels are pinned to their papers;
+the Liu 2021, Guo 2014 and Sultanov rows were re-verified against the papers
+(Liu 2021 supplement); the Umano and Adeniyi records were completed; stale
+test and hash fixtures were repaired; the obsolete `data/benchmark_v0.parquet`
+was deleted. Counts: 26,815 rows, 249 works, 23,090 in the default view,
+20,899 in the reliable set.
+
+v1.1.1 held 11,537 rows from 111 papers. v1.2.1 holds **26,815 rows from 249
 published sources** (+15,278 rows, +146 papers, -8 sources of v1.1.1 that no longer count: 5 removed, 3 merged or relabelled) in 11 families, and a separate
 supplementary tier of 5,174 measurements from 107 tables.
 
@@ -169,6 +182,14 @@ These are defects of the first v1.2 build, not of v1.1.1; none was in a publishe
   without a gas-phase composition column; they are in `LEDGER.md`.
 * **1 v1.1.1 row removed** (DOHRN(1986), above) and **172 exact duplicates** of rows from the same source (the same table printed
   twice, or a thesis and its paper) are not repeated.
+
+## 1.2.0 — snapshot of 4 October 2026 (archived unchanged)
+
+27,025 rows from 256 published sources in 11 families plus the supplementary
+tier, after the row-by-row audit against the papers (commit `a2ed9a7`). This is
+the release cited by the benchmark manuscript (18,558 audited points in its six
+scored families). It is superseded by 1.2.1, which is the version described in
+the data descriptor; see the 1.2.1 entry for the differences.
 
 ## 1.1.1 — three corrected mixed-brine ion vectors
 

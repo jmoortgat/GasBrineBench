@@ -7,7 +7,7 @@ read. The string is therefore kept identical to the ``version:`` field of
 ``CITATION.cff`` and to the heading of the current ``CHANGELOG.md`` section,
 and ``tests/test_version.py`` fails if the three ever drift apart.
 
-``1.2.0`` adds 146 papers (26,815 rows in 11 families), an optional ``flags``
+``1.2.1`` adds 146 papers (26,815 rows in 11 families), an optional ``flags``
 column and a supplementary tier; see ``CHANGELOG.md``. Some v1.1.1 rows were corrected after checking them against their papers; see ``CHANGELOG.md``.
 
 ``1.1.1`` corrects three mixed-brine ion vectors (TEYMOURI_2017 magnesium,
@@ -24,4 +24,4 @@ added to ``CITATION.cff`` when it exists; it is not a precondition for the
 tag, and the tag is what a reader needs in order to name their snapshot.
 """
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"

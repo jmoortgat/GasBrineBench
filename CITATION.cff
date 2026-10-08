@@ -21,7 +21,7 @@ message: >-
   snapshot it was computed against. A data-descriptor reference will be
   added here if one is published.
 type: dataset
-version: 1.2.0
+version: 1.2.1
 date-released: 2026-10-03
 doi: 10.5281/zenodo.22834145
 identifiers:
@@ -29,7 +29,7 @@ identifiers:
     value: 10.5281/zenodo.22834145
     description: >-
       Concept DOI. Always resolves to the newest version, so it names the
-      project rather than any particular row set. The version DOI of v1.2.0
+      project rather than any particular row set. The version DOIs of v1.2.0 and v1.2.1
       is added here when the release is archived; until then cite the
       v1.1.1 version DOI below for the 11,537-row snapshot.
   - type: doi

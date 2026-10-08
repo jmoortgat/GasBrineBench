@@ -4,7 +4,7 @@
 tables** that the benchmark families (`data/*.csv`) cannot store without a
 model, an assumed density or an assumed pressure. They were extracted, checked
 and mapped by the same pipeline as the benchmark rows (see `CHANGELOG.md`,
-v1.2.0) and are published so that nothing verified is lost. **They are not
+v1.2.1) and are published so that nothing verified is lost. **They are not
 benchmark data**: they are not scored, carry no fit/test tag, and are not read
 by the `gasbrinebench` loader.
 
