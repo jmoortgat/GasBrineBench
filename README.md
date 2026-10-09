@@ -1,5 +1,11 @@
 # GasBrineBench
 
+[![Documentation website](https://img.shields.io/badge/Documentation-website-0072B2?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jmoortgat.github.io/GasBrineBench/)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23243941-blue?style=for-the-badge)](https://doi.org/10.5281/zenodo.23243941)
+
+> **Read the documentation website: [jmoortgat.github.io/GasBrineBench](https://jmoortgat.github.io/GasBrineBench/)**
+> (schema, quality codes, provenance, and the notebooks with their figures).
+
 A curated, community-extensible benchmark dataset of experimental
 thermodynamic data for **gas–brine systems**: gas solubility, brine
 density, water activity (osmotic coefficients, vapor-pressure lowering),

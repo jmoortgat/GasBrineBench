@@ -37,13 +37,14 @@ BANNED_DIRS = {
 ALLOWED_TOP = {
     "data", "bib", "tools", "transcriptions", ".github",
     "gasbrinebench", "tests", "notebooks",
-    "supplementary", "transcriptions_v1_2",
+    "supplementary", "transcriptions_v1_2", "scripts",
 }
 
 #: files permitted at the repository root
 ALLOWED_ROOT_FILES = {
     "README.md", "SCHEMA.md", "LEDGER.md", "CHANGELOG.md", "CONTRIBUTING.md",
     "LICENSE", "CITATION.cff", "SOURCES.md", "SOURCES.bib", ".gitignore",
+    "_quarto.yml", "index.qmd", "site_styles.css",
 }
 
 

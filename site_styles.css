@@ -1,0 +1,9 @@
+/* Make the way back to the GitHub repository as visible as the way here. */
+#quarto-announcement, #quarto-announcement.alert-primary { background-color: #0072B2 !important; color: #ffffff !important; font-size: 1rem; }
+#quarto-announcement a, #quarto-announcement .quarto-announcement-content { color: #ffffff !important; font-weight: 700; text-decoration: underline; }
+#quarto-announcement .quarto-announcement-icon, #quarto-announcement i { color: #ffffff !important; }
+.navbar .nav-link[href="https://github.com/jmoortgat/GasBrineBench"]:not([aria-label]) {
+  background-color: #24292f; color: #ffffff !important; border-radius: 6px;
+  padding: 0.35rem 0.8rem !important; font-weight: 600; margin-left: 0.6rem;
+}
+.navbar .nav-link[href="https://github.com/jmoortgat/GasBrineBench"]:not([aria-label]):hover { background-color: #0072B2; }

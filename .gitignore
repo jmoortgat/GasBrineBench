@@ -36,6 +36,7 @@
 !/.github/workflows/*.yml
 !/_quarto.yml
 !/index.qmd
+!/site_styles.css
 !/scripts/quarto-cleanup.sh
 
 # ---------------------------------------------------------------------------

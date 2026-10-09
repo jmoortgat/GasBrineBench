@@ -34,11 +34,21 @@ execute:
 
 website:
   title: "GasBrineBench"
+  announcement:
+    icon: github
+    dismissable: false
+    type: primary
+    position: above-navbar
+    content: "**Data, code and issues are on GitHub:** [github.com/jmoortgat/GasBrineBench](https://github.com/jmoortgat/GasBrineBench) &nbsp;·&nbsp; Cite version 1.2.1: [doi:10.5281/zenodo.23243941](https://doi.org/10.5281/zenodo.23243941)"
   repo-url: https://github.com/jmoortgat/GasBrineBench
   repo-actions: [source, issue]
   page-navigation: true
   navbar:
     background: light
+    left:
+      - text: "GitHub repository →"
+        icon: github
+        href: https://github.com/jmoortgat/GasBrineBench
     right:
       - icon: github
         href: https://github.com/jmoortgat/GasBrineBench
@@ -113,5 +123,6 @@ format:
       light: cosmo
       dark: darkly
     toggle: true
+    css: site_styles.css
     toc: true
     toc-depth: 3
