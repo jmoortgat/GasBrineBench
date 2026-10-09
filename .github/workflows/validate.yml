@@ -40,7 +40,7 @@ jobs:
 
       - name: install (pandas only)
         if: matrix.deps == 'minimal'
-        run: pip install pandas pytest
+        run: pip install pandas pytest numpy iapws gsw
 
       - name: install (with optional export backends)
         if: matrix.deps == 'full'

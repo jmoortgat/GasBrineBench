@@ -62,6 +62,12 @@
 !/tools/builders/README.md
 !/tools/builders_v1_2/*.py
 !/tools/builders_v1_2/*.md
+!/tools/search/*.py
+!/tools/search/*.md
+!/tools/search/*.csv
+!/tools/audit/*.py
+!/tools/audit/*.md
+!/tools/audit/README.md
 
 # ---------------------------------------------------------------------------
 # The raw hand transcriptions. Only files named EXP*.txt, only under
