@@ -4,7 +4,7 @@ Every correction, deduplication, quality-code upgrade/downgrade, and
 removal is recorded here with its justification. Regenerated entries
 from automated passes are marked [auto].
 
-The per-row justification record that this ledger summarises lives in
+The per-row justification record that this ledger summarizes lives in
 `data/QUALITY.md`, which is reproduced verbatim from the pass that assigned
 the codes.
 
@@ -213,7 +213,7 @@ Corrections to the first v1.2 build (no v1.1.1 row involved): MARCUS(1988) row 3
 | removed (duplicate copy) | 38 | Millero, Huang & Laferiere GCA 66 (2002) 2349 (25 C) and Mar. Chem. 78 (2002) 217 (5-45 C) report the same oxygen measurements: the GCA values equal those the Marine Chemistry paper tabulates at 25.35-25.7 C, to the last digit; the copy with the printed measur |
 | removed (duplicate copy) | 8 | the Yarrison thesis (2007) repeats values of the journal data of Yarrison et al. (2006) to the last digit; the journal copy is kept |
 | removed (v1.1.1 row) | 2 | DOHRN(1986): the paper (Dohrn & Brunner 1986, hexadecane-water-hydrogen, Table 1) has no 523 K data: its temperatures are 200, 300 and 350 degC. The stored state (200 bar, aqueous x_H2 = 0.0020) is the aqueous composition of both the 200 degC and the 350 degC  |
-| removed (v1.1.1 row) | 612 | WANG(2014): mislabelled copy of Wang, Junliang et al. 2019 (J. Chem. Eng. Data 64, 2484), Tables 6-8: the 306 points are CO2 in 1, 2 and 3 mol/kg NaCl at 303-353 K and 3-30 MPa, the grid of that paper, and every one agrees with its printed molality to rounding |
+| removed (v1.1.1 row) | 612 | WANG(2014): mislabeled copy of Wang, Junliang et al. 2019 (J. Chem. Eng. Data 64, 2484), Tables 6-8: the 306 points are CO2 in 1, 2 and 3 mol/kg NaCl at 303-353 K and 3-30 MPa, the grid of that paper, and every one agrees with its printed molality to rounding |
 | source corrected | 78 | CHAPOY(2004) -> CHAPOY(2004d): the 78 propane-water rows were cited as the methane paper Chapoy 2004 (10.1016/j.fluid.2004.02.010); they are Chapoy, Mokraoui, Valtz, Richon, Mohammadi & Tohidi, Fluid Phase Equilib. 226 (2004) 213-220, 10.1016/j.fluid.2004.08.0 |
 | state corrected | 16 | 206 C = 479.15 K, stored 478.0 |
 | state corrected | 2 | 300 F = 422.04 K, stored as the 423.0 K label |
@@ -275,7 +275,7 @@ Per dataset block:
 | `yh2o_ch4_binary` | 1 | quality set to U: OLDS(1942): 35 % above the authors' own smoothed table value |
 | `ch4_water_binary` | 2 | quality set to U: AWAN(2010) Table 8 prints x2 = 2.1e-4 and m2 = 0.013 mol/kg for one point, which disagree by 11 % |
 | `yh2o_ch4_binary` | 1 | quality set to U: FROST(2013) 4.78 MPa, y = 0.441e-3 is 40 % off the authors' own y.P trend; a misprint is likely but not provable |
-| `co2_part1` | 612 | removed (v1.1.1 row): WANG(2014): mislabelled copy of Wang, Junliang et al. 2019 (J. Chem. Eng. Data 64, 2484), Tables 6-8: the 306 points are CO2 in 1, 2 and 3 mol/kg NaCl at 303-353 K and 3- |
+| `co2_part1` | 612 | removed (v1.1.1 row): WANG(2014): mislabeled copy of Wang, Junliang et al. 2019 (J. Chem. Eng. Data 64, 2484), Tables 6-8: the 306 points are CO2 in 1, 2 and 3 mol/kg NaCl at 303-353 K and 3- |
 | `h2_water_binaries` | 2 | removed (v1.1.1 row): DOHRN(1986): the paper (Dohrn & Brunner 1986, hexadecane-water-hydrogen, Table 1) has no 523 K data: its temperatures are 200, 300 and 350 degC. The stored state (200 bar |
 | `c3h8_water` | 78 | source corrected: CHAPOY(2004) -> CHAPOY(2004d): the 78 propane-water rows were cited as the methane paper Chapoy 2004 (10.1016/j.fluid.2004.02.010); they are Chapoy, Mokraoui, Valtz, Rich |
 | `adeniyi2020_10.11575_prism_38486_tA.3.1` | 21 | excluded: gas-phase mixture 'h2s-co2': the gas-phase composition has no column in the database |
@@ -335,7 +335,7 @@ Per dataset block:
 | `rogers1981_10.1021_j150620a008_t1` | 1 | removed: exact duplicate of a row of the same source (same state, same value) |
 | `white1987_10.1016_0021-9614(87)90132-7_t1` | 9 | removed: exact duplicate of a row of the same source (same state, same value) |
 
-v1.1.1 rows removed: DOHRN(1986) (2 rows), the mislabelled WANG(2014) copy (612 rows) and five CHABAB(2020) points that duplicate Chabab 2021 (10 rows). 78 rows had their `source` corrected (Chapoy 2004). All other v1.1.1 rows keep their order; those whose value, temperature, pressure, flag or quality was corrected after checking them against the paper are listed above.
+v1.1.1 rows removed: DOHRN(1986) (2 rows), the mislabeled WANG(2014) copy (612 rows) and five CHABAB(2020) points that duplicate Chabab 2021 (10 rows). 78 rows had their `source` corrected (Chapoy 2004). All other v1.1.1 rows keep their order; those whose value, temperature, pressure, flag or quality was corrected after checking them against the paper are listed above.
 
 ## 2026-10-04 — full row-by-row audit of v1.2-dev [auto]
 

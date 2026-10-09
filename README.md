@@ -23,7 +23,7 @@ supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 >   <a href="https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/02_gas_solubility.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
 > - **water content mixtures enthalpy**: Water content of the gas phase, the CO2 + CH4 + water family, enthalpies of solution.  
 >   <a href="https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/03_water_content_mixtures_enthalpy.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
-> - **brine properties**: Density, osmotic coefficient, vapour-pressure ratio, heat capacity, viscosity, density of CO2-loaded water.  
+> - **brine properties**: Density, osmotic coefficient, vapor-pressure ratio, heat capacity, viscosity, density of CO2-loaded water.  
 >   <a href="https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/04_brine_properties.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
 > - **uncertainty and variance**: Stated uncertainties, agreement between independent sources, the bias of each source, spread at one state.  
 >   <a href="https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/05_uncertainty_and_variance.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
@@ -86,7 +86,7 @@ families (`rho_gas`, `visc`, `thermo_brine`), and a separate
   densities and viscosities whose paper states no pressure are left out
   entirely. The exceptions are properties that are conventionally measured
   without a pressure — enthalpies of dissolution, osmotic coefficients
-  (isopiestic equilibrium at the solution's own vapour pressure) and apparent
+  (isopiestic equilibrium at the solution's own vapor pressure) and apparent
   molar heat capacities. Those 522 datapoints are kept, carry an empty `P_bar`, are
   flagged `pressure-unstated`, and are excluded by the default loader.
 
@@ -273,7 +273,7 @@ The other half does not map. Reproducing one of these measurements requires
 the gas-phase boundary condition — a fugacity — and the database stores the
 **total** pressure, as the sources report it. Converting one to the other
 needs a water-content model and an equation of state, which are exactly the
-modelling steps a gas-solubility benchmark exists to test. An exporter would
+modeling steps a gas-solubility benchmark exists to test. An exporter would
 have to choose both, bake the choice into the file, and hand you a number that
 looks like data; any later disagreement between the code and the measurement
 would be partly an artefact of the converter's own assumptions, with nothing
@@ -474,7 +474,7 @@ was computed against. Machine-readable metadata is in `CITATION.cff`.
 The numerical values in `data/`, `supplementary/`, `transcriptions/` and `transcriptions_v1_2/` are **measurements made
 and published by the authors cited in `SOURCES.md`**. They are redistributed
 here as transcribed data, with full attribution to those authors, who are the
-people to credit. What is ours, and what the CC-BY-4.0 licence covers, is the
+people to credit. What is ours, and what the CC-BY-4.0 license covers, is the
 compilation: the transcription, the unit conversions, the uniform schema, the
 quality coding, the deduplication, and the provenance apparatus. Code under
 `tools/` is MIT. See `LICENSE`.

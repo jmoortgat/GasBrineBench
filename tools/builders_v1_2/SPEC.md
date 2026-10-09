@@ -127,7 +127,7 @@ stays valid; the builder reads both.
 8. **Unit strings the builder will map:** `mol_per_kg_water`, `mol_per_kg_solution`, `bunsen_cm3STP_per_cm3_per_atm`, `bar` (also for 10^5 Pa), `Pa`, `torr`,
    `psia`, `mole_fraction_gas_in_aqueous_phase`, `salinity_permil`. A pressure of 1 atm for atmospheric equilibration: constant P 101.325 kPa with basis `unspecified`
    and the wording from the paper in `pressure_note`.
-9. **Pressure basis:** bubble-point (synthetic method) tables: `basis: saturation`; dew-point tables: `saturation`; add a vapour-pressure `P` column only
+9. **Pressure basis:** bubble-point (synthetic method) tables: `basis: saturation`; dew-point tables: `saturation`; add a vapor-pressure `P` column only
    if it is not already the `value`.
 10. **Label rows and summary rows.** Every label row and every summary row ("Mean deviation", "Overall") is listed in `skip_rows`. Where a label is printed beside the first data
     row, write it as its own label row.

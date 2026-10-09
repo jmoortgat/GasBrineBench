@@ -1,6 +1,6 @@
 # Transcriptions — the hand-typed source tables
 
-These are the hand-typed digitisations of the experimental tables in the
+These are the hand-typed digitizations of the experimental tables in the
 primary literature. They sit underneath every row of `../data/`: the builders
 in `../tools/builders/` read them, convert units, and emit the family CSVs.
 They are the bottom of the provenance chain, and unlike everything above them

@@ -1,7 +1,7 @@
 # Notebooks
 
 Executed, with outputs, so they can be read without running anything. Each has an **Open in Colab** badge: the first code cell clones the repository on Colab (or any machine with `GBB_FORCE_BOOTSTRAP=1`), so nothing has to be installed or downloaded first. Set `GBB_REPO_URL` and `GBB_BRANCH` to use a fork or a branch. Rebuild with `python3 tools/make_notebooks.py` (needs
-nbformat, nbconvert, matplotlib, pandas). Shared plotting code is in `gbb_viz.py`. Figures use colour and marker (and line style)
+nbformat, nbconvert, matplotlib, pandas). Shared plotting code is in `gbb_viz.py`. Figures use color and marker (and line style)
 together, bold text and thick frames, so they can be read in grayscale.
 
 | notebook | what it shows |
@@ -15,4 +15,4 @@ together, bold text and thick frames, so they can be read in grayscale.
 | `06_supplementary_tier.ipynb`<br><a href="https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/06_supplementary_tier.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a> | the measurements the benchmark families cannot hold: isopiestic pairs, apparent molar volumes, enthalpies of dilution, Ostwald and Bunsen coefficients |
 
 Notebooks 04 uses two views of the data: the default view, and the same view with the rows that have no stated pressure kept
-(osmotic coefficients, heat capacities and some vapour-pressure data are conventionally reported without one).
+(osmotic coefficients, heat capacities and some vapor-pressure data are conventionally reported without one).

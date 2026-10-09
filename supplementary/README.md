@@ -54,7 +54,7 @@ a user may want to choose.
 | `compression` | 164 | bulk compression and dv/dP |
 | `enthalpy_of_dissolution` | 87 | enthalpies of dissolution of salts in water |
 | `heat_capacity` | 74 | specific and apparent molar heat capacities, in the paper's units |
-| `water_activity` | 39 | water activities and vapour pressures of salt solutions at high temperature |
+| `water_activity` | 39 | water activities and vapor pressures of salt solutions at high temperature |
 | `henry_constant` | 37 | Henry constants as pressure per mole fraction |
 | `water_vapour_enhancement` | 14 | enhancement factor of water in a gas |
 

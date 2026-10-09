@@ -22,7 +22,7 @@ published sources** (+15,278 measurements, +146 papers, -8 sources of v1.1.1 tha
 supplementary tier of 5,174 measurements from 107 tables.
 
 **How the new datapoints were made.** The papers were found by a documented
-literature search (`search/` in the maintainers' work area; summarised in the
+literature search (`search/` in the maintainers' work area; summarized in the
 data descriptor). **No v1.2 value was typed by hand.** Each table was
 transcribed from the paper twice, independently, from the page image and the PDF text layer
 (the full statement of the tools used is added at release); the two
@@ -139,7 +139,7 @@ code in `tools/builders_v1_2/gbb12_corrections.py`, each guarded by the value it
   for the paper's S.T.P.); MICHELS(1936) and MULLER one pressure each.
 * **Wrong states:** nominal isotherm temperatures stored instead of the published ones for FROST(2013), AWAN(2010), OU(2015),
   PRICE(1979), SAKO, GILLESPIE(1980) and CHAPOY(2005) (0.1 to 1.3 K). The same pattern, at 0.1 to 0.8 K, remains in other
-  hand-transcribed isotherms (for example LEKVAM(1997)); the effect on a solubility is a few per cent at most and no datapoint was
+  hand-transcribed isotherms (for example LEKVAM(1997)); the effect on a solubility is a few percent at most and no datapoint was
   found whose flag it caused.
 * **The same data twice:** CHABAB(2020) five points (the 303 K label hid six-digit copies of Chabab 2021, which the v1.1.1 duplicate pass
   missed); the Millero, Huang and Laferiere oxygen data at 25 C, published in both the Geochimica (2002) and the Marine Chemistry (2002) paper
@@ -148,12 +148,12 @@ code in `tools/builders_v1_2/gbb12_corrections.py`, each guarded by the value it
 * **Calculated references, not measurements:** the salt-free density datapoints of KUMAR(1986), ROGERS(1982) and ROMANKIW(1983) (the pure-water
   density used for apparent molar volumes; Kumar and Rogers print identical values at six states, and Romankiw states they were taken from Kell);
   34 measurements held.
-* **A ternary system built as binary:** BRUNNER(1994) water + n-hexadecane + CO2: the 14 datapoints whose vapour also contains hexadecane are held;
+* **A ternary system built as binary:** BRUNNER(1994) water + n-hexadecane + CO2: the 14 datapoints whose vapor also contains hexadecane are held;
   only the four binary water-CO2 points remain.
 * **Not measurements:** SUSAK(1980) (output of a USGS program extrapolated beyond its validity) and SACHS(1995) (calculated
   from literature correlations) are flagged `calculated-not-measured` and dropped by the default loader.
-* **Removed:** the DOHRN(1986) point at 523 K and 200 bar, whose temperature does not exist in the paper; and the 612 measurements labelled
-  `WANG(2014)` in `co2_part1`, which are a mislabelled copy of Wang, J. et al. 2019 (J. Chem. Eng. Data 64, 2484) Tables 6-8 (306 points of CO2 in
+* **Removed:** the DOHRN(1986) point at 523 K and 200 bar, whose temperature does not exist in the paper; and the 612 measurements labeled
+  `WANG(2014)` in `co2_part1`, which are a mislabeled copy of Wang, J. et al. 2019 (J. Chem. Eng. Data 64, 2484) Tables 6-8 (306 points of CO2 in
   1, 2 and 3 m NaCl, 303-353 K, 3-30 MPa, agreeing with the published molalities to rounding). Wang, Shen, Hu & Yu 2014 measured synthetic formation
   brines at 318-348 K and 80-110 bar. The two had been counted as independent sources, which inflated the R code: with the copy removed, the
   solubility R count falls from 591 to 503 retained plus 166 newly corroborated.
@@ -175,7 +175,7 @@ These are defects of the first v1.2 build, not of v1.1.1; none was in a publishe
 
 ### Not in the database, on purpose
 
-* **One datapoint held after a report from a model-comparison study:** MARCUS(1988), 25 degC, the datapoint published as 0.34 m NaCl + 0.99 m MgCl2 "saturated with halite", p = 1.35 kPa (ratio 0.43). Five models give about 0.92 for that composition. The composition cannot be halite-saturated, and the pressure fits a solution of about 4 m MgCl2 like its neighbours, so the MgCl2 molality is probably misprinted (3.99?). The datapoint is held with the reason on record, not corrected.
+* **One datapoint held after a report from a model-comparison study:** MARCUS(1988), 25 degC, the datapoint published as 0.34 m NaCl + 0.99 m MgCl2 "saturated with halite", p = 1.35 kPa (ratio 0.43). Five models give about 0.92 for that composition. The composition cannot be halite-saturated, and the pressure fits a solution of about 4 m MgCl2 like its neighbors, so the MgCl2 molality is probably misprinted (3.99?). The datapoint is held with the reason on record, not corrected.
 * **Any measurement without a stated pressure** is excluded: no liquid density,
   density difference or viscosity whose paper gives no pressure, unless the
   property is conventionally measured without one (see `pressure-unstated`).
@@ -341,7 +341,7 @@ applied, and `LEDGER.md` carries the per-item justification.
 - **Nine isotherms carried the wrong temperature.** Temperature came from the
   name of the directory holding a file, which is an integer kelvin: it cannot
   represent 351.65 K, and it collapses a Fahrenheit-grid source onto its
-  Celsius-grid neighbour. A file may now declare its own temperature on the
+  Celsius-grid neighbor. A file may now declare its own temperature on the
   source line, audited against the paper. Corrected: Portier (291.15, 310.15),
   Jacob (297), Bastami (351.65, 375.15), Culberson and Olds (344.26, 444.26),
   O'Sullivan (324.65, 375.65, 398.15).

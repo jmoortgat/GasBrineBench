@@ -71,7 +71,7 @@ the scored scope, so that a user can decide.
 |---|---|---|
 | `gas-out-of-scope` | a single gas outside the seven benchmark gases (`ar, he, ne, kr, xe, c2h4, c2h2, c3h6, c-c3h6, 1-c4h8, n-c4h10, i-c4h10, neo-c5h12, c-c6h12, n-c6h14, i-c8h18, cf4, sf6, n2o, h2s, chf3, chclf2, c2h2f4, c2h4f2`) | dropped |
 | `hydrate-regime` | the paper states a gas-hydrate-forming state or hydrate equilibrium | dropped |
-| `condensed-phase-uncertain` | the paper does not settle whether the gas-rich phase is a liquid or a vapour | dropped |
+| `condensed-phase-uncertain` | the paper does not settle whether the gas-rich phase is a liquid or a vapor | dropped |
 | `fugacity-as-pressure` | the quantity is defined per unit fugacity (Weiss K0) and the fugacity is carried as the pressure | dropped |
 | `subfreezing` | `T` is below a cryoscopic estimate (1.86 x 0.93 x total molality) of the brine's freezing point | dropped |
 | `volume-basis-uncertain` | a per-volume concentration or coefficient whose volume basis (solution or solvent) the paper does not state; converted as per volume of solution, which can shift seawater values by up to about 2.6 % | dropped |
@@ -80,11 +80,11 @@ the scored scope, so that a user can decide.
 | `source-caution` | the extraction recorded a caution about the values (misprint suspected, authors' own flag, adjusted values, ...); the text is in `data/provenance/provenance_v1_2.csv` | kept |
 | `stp-assumed` | a gas volume per mass of water was converted to moles with 0 degC, 1 atm, 22.414 L/mol, because the paper does not define its standard conditions | kept |
 | `solution-basis-converted` | a solubility given per mass of solution was converted to per kg of water from the stated composition | kept |
-| `differential-pressure-converted` | a vapour-pressure lowering given as water minus solution was converted to the ratio with the IAPWS-95 vapour pressure of water | kept |
-| `vapour-nonideality-by-authors` | a water activity above 373 K that the authors themselves corrected for vapour non-ideality | kept |
+| `differential-pressure-converted` | a vapor-pressure lowering given as water minus solution was converted to the ratio with the IAPWS-95 vapor pressure of water | kept |
+| `vapour-nonideality-by-authors` | a water activity above 373 K that the authors themselves corrected for vapor non-ideality | kept |
 | `calculated-not-measured` | the source's values are output of an equation or a program, or are calculated from literature correlations, not measurements (SUSAK 1980: USGS program output extrapolated beyond its stated validity; SACHS 1995) | dropped |
 | `smoothed-values` | the paper states that the tabulated values are smoothed, graphically interpolated or read from smoothed curves (Kobayashi and Katz 1953 Table VI, Todheide and Franck 1963, Takenouchi and Kennedy 1964-65, Amirijafari 1972); a table value, so informational | kept |
-| `figure-digitized` | the values were read off a figure or smoothed curves because the paper prints no table (Jung 1971, Schlaikjer 2018); the reading accuracy is at best a few per cent | dropped |
+| `figure-digitized` | the values were read off a figure or smoothed curves because the paper prints no table (Jung 1971, Schlaikjer 2018); the reading accuracy is at best a few percent | dropped |
 | `minor-species-omitted` | a composition given in g per kg of solution with minor species not carried by the six ions | kept |
 
 Flags are the way a convention enters the database; none of them is applied

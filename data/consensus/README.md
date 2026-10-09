@@ -18,9 +18,9 @@ property and gas. A *source* is the citation id of `SOURCES.md`; rows of the sam
 other.
 
 **Strict statistic** (columns `reference`, `mean_other`, `sd_other`, `n_other_sources`, `spread_other`, `rel_dev`).
-The neighbours of a row are the rows of other sources with |dT| <= 1 K, |dP| <= 2 % (ignored if a pressure is blank) and
-every ion molality within 2 % (gas-loaded families: also `m_gas`). Each neighbouring source counts once, through the
-median of its own neighbouring rows. `reference` is the median over those sources, `mean_other` and `sd_other` their mean
+The neighbors of a row are the rows of other sources with |dT| <= 1 K, |dP| <= 2 % (ignored if a pressure is blank) and
+every ion molality within 2 % (gas-loaded families: also `m_gas`). Each neighboring source counts once, through the
+median of its own neighboring rows. `reference` is the median over those sources, `mean_other` and `sd_other` their mean
 and sample standard deviation (`sd_other` needs two sources), `spread_other` their (max - min) / |reference|, and
 `rel_dev = (value - reference) / |reference|`. These are the tolerances of the cross-source quality rule in
 `data/QUALITY.md`.
@@ -45,7 +45,7 @@ signed relative deviation** (a source that reads high or low), the robust scale 
 Pooled robust scale of the strict relative deviation (sources agree to about this): solubility 3.8 %, `psat_ratio`
 1.0 %, `rho` 0.1 %, `dh_sol` 0.6 %, gas-phase water content 9 %, apparent molar heat capacity 28 %.
 
-Of the 17,942 rows in the comparison, 1,830 (10.2%) have an independent neighbour source under the strict rule and 3,691 (21%)
+Of the 17,942 rows in the comparison, 1,830 (10.2%) have an independent neighbor source under the strict rule and 3,691 (21%)
 under at least one of the two statistics: different laboratories rarely measure the same salt at the same molality and state.
 Coverage by family is in the table the script prints. `phi_osm`,
 `visc` and the gas-loaded densities have no overlap at all; their quality rests on the cross-checks made at extraction.
@@ -64,11 +64,11 @@ Coverage by family is in the table the script prints. `phi_osm`,
 
 The 330 rows it listed in a first pass were each checked against the printed tables of their papers: 258 matched (genuine
 inter-laboratory scatter, or a comparator that was itself wrong), 21 could not be checked (paper unavailable), and about 50
-were defects of the database, corrected as listed in `CHANGELOG.md` and `LEDGER.md`. After those corrections (and the removal of a mislabelled duplicate, below) 175 rows remain
-listed. Rows coded quality U are compared with their neighbours but never used as neighbours.
+were defects of the database, corrected as listed in `CHANGELOG.md` and `LEDGER.md`. After those corrections (and the removal of a mislabeled duplicate, below) 175 rows remain
+listed. Rows coded quality U are compared with their neighbors but never used as neighbors.
 
-Further defects of v1.1.1 and v1.2 found by it: five CHABAB(2020) points, the Millero oxygen data printed in two papers (19 states) and eight Yarrison thesis values that repeat published values to the last digit; the salt-free reference densities of three density papers; and water + hexadecane + CO2 rows of Brunner et al. (1994) built as binary (all in `LEDGER.md`). One more defect of v1.1.1: 612 rows labelled WANG(2014) agreed with Wang, J. et al. (2019) to rounding at 306 states, which two
-independent laboratories cannot do; they are a mislabelled copy of the 2019 tables and were removed (`LEDGER.md`).
+Further defects of v1.1.1 and v1.2 found by it: five CHABAB(2020) points, the Millero oxygen data printed in two papers (19 states) and eight Yarrison thesis values that repeat published values to the last digit; the salt-free reference densities of three density papers; and water + hexadecane + CO2 rows of Brunner et al. (1994) built as binary (all in `LEDGER.md`). One more defect of v1.1.1: 612 rows labeled WANG(2014) agreed with Wang, J. et al. (2019) to rounding at 306 states, which two
+independent laboratories cannot do; they are a mislabeled copy of the 2019 tables and were removed (`LEDGER.md`).
 
 Two defects of the first v1.2 build were found by the comparison alone:
 
