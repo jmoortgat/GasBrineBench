@@ -24,7 +24,7 @@ collaborators. Almost none of it belongs in version control:
   310 KB  25 .tex                            not redistributable
   6.4 KB  private correspondence             not redistributable
 
-The irreplaceable part is the set of files named `EXP*.txt`: hand-typed
+The irreplaceable part is the set of files named `EXP*.txt`: manually extracted
 digitisations of experimental tables out of the primary literature. Each one
 opens with a `#AUTHOR(YEAR)` provenance header and holds a small tab-separated
 block of measured points. They are the provenance root of the benchmark

@@ -1,6 +1,6 @@
-# Transcriptions — the hand-typed source tables
+# Transcriptions — the manually extracted source tables
 
-These are the hand-typed digitizations of the experimental tables in the
+These are the manual extractions of the experimental tables in the
 primary literature. They sit underneath every row of `../data/`: the builders
 in `../tools/builders/` read them, convert units, and emit the family CSVs.
 They are the bottom of the provenance chain, and unlike everything above them
@@ -29,7 +29,7 @@ not report.
 
 The `#AUTHOR(YEAR)` header is the same string that appears in the `source`
 column of the CSVs, so any row of the database can be traced back to the file
-it was typed into. `SOURCES.md` then maps that string to the full
+it was entered into. `SOURCES.md` then maps that string to the full
 bibliographic record.
 
 ## Layout
@@ -98,6 +98,6 @@ copyrighted page.
 ## On what these numbers are
 
 The values in these files are measurements published by the authors named in
-each header. We typed them; we do not own them. They are redistributed here as
+each header. We extracted them; we do not own them. They are redistributed here as
 transcribed data with attribution to the original experimentalists, who are
 the people to cite — see `../SOURCES.md`.

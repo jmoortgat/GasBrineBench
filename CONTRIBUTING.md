@@ -17,7 +17,7 @@ csvs under `data/` (or a new family csv following `SCHEMA.md`).
    which paper, which table or figure, which page, what unit conversion was
    applied, and what you deliberately skipped.
 4. The raw transcription under `transcriptions/`, headed `#AUTHOR(YEAR)`, if
-   the rows were typed from a printed table. Add it to
+   the datapoints were extracted from a published table. Add it to
    `transcriptions/MANIFEST.tsv`.
 5. A one-paragraph note in the PR description: what the data are,
    how they were transcribed (table vs digitized), and any known

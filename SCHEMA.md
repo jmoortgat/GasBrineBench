@@ -146,7 +146,7 @@ has its own schema, documented in `supplementary/README.md`.
 1. `data/README.md`, *Provenance per dataset_id*: one row per block, naming
    the paper, the table or figure number, the page, the covered T/P/molality
    grid, the unit convention applied, and what was deliberately skipped.
-2. `transcriptions/`: the 710 hand-typed source tables the curated blocks were
+2. `transcriptions/`: the 710 manually extracted source tables the curated blocks were
    built from, each opening with the `#AUTHOR(YEAR)` header that appears in
    the `source` column.
 

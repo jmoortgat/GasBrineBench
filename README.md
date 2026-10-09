@@ -302,7 +302,7 @@ Every number in this repository can be walked back to the page it was published
 on, and the chain is inspectable at each link:
 
 ```
-transcriptions/EoS/.../EXP*.txt      hand-typed source tables, 700 files,
+transcriptions/EoS/.../EXP*.txt      manually extracted source tables, 700 files,
         |                            each headed #AUTHOR(YEAR) (v1.0-v1.1)
 transcriptions_v1_2/<doi>/           v1.2 tables as extracted (table_N.csv),
         |                            with the mapping that converts each

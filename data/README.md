@@ -17,7 +17,7 @@
 >
 > Row-level provenance in this database is **per `dataset_id`**, and the table
 > under *Provenance per dataset_id* below is where it lives. The raw
-> hand-transcription each curated block was typed from is in
+> manual extraction from which each curated block was made is in
 > `../transcriptions/`, keyed by its `#AUTHOR(YEAR)` header.
 
 Built by `build_v0.py` (run: `PYTHONPATH=<repo>/code python3

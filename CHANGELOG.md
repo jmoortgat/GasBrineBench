@@ -23,7 +23,7 @@ supplementary tier of 5,174 measurements from 107 tables.
 
 **How the new datapoints were made.** The papers were found by a documented
 literature search (`search/` in the maintainers' work area; summarized in the
-data descriptor). **No v1.2 value was typed by hand.** Each table was
+data descriptor). **No v1.2 value was entered manually.** Each table was
 transcribed from the paper twice, independently, from the page image and the PDF text layer
 (the full statement of the tools used is added at release); the two
 transcriptions were compared number by number by a script, every disagreement
@@ -32,7 +32,7 @@ of it), and a separate mapping file per table
 (`transcriptions_v1_2/<doi>/mapping_N.json`) records how each column becomes a
 schema column. A further, separate pass then audited every mapping
 against the paper, and its proposals were applied to the mappings under written
-rules. The v1.0-v1.1 transcriptions (`transcriptions/`) were typed by hand and
+rules. The v1.0-v1.1 transcriptions (`transcriptions/`) were manually extracted and
 are untouched. Measurements are built by `tools/builders_v1_2/` from
 those files alone, with no hand-edited value, and the build is reproducible
 byte for byte from this repository (`python3 tools/builders_v1_2/gbb12_build.py
@@ -139,7 +139,7 @@ code in `tools/builders_v1_2/gbb12_corrections.py`, each guarded by the value it
   for the paper's S.T.P.); MICHELS(1936) and MULLER one pressure each.
 * **Wrong states:** nominal isotherm temperatures stored instead of the published ones for FROST(2013), AWAN(2010), OU(2015),
   PRICE(1979), SAKO, GILLESPIE(1980) and CHAPOY(2005) (0.1 to 1.3 K). The same pattern, at 0.1 to 0.8 K, remains in other
-  hand-transcribed isotherms (for example LEKVAM(1997)); the effect on a solubility is a few percent at most and no datapoint was
+  manually extracted isotherms (for example LEKVAM(1997)); the effect on a solubility is a few percent at most and no datapoint was
   found whose flag it caused.
 * **The same data twice:** CHABAB(2020) five points (the 303 K label hid six-digit copies of Chabab 2021, which the v1.1.1 duplicate pass
   missed); the Millero, Huang and Laferiere oxygen data at 25 C, published in both the Geochimica (2002) and the Marine Chemistry (2002) paper
@@ -321,7 +321,7 @@ version DOI, so a result names the snapshot it was computed against.
 
 The database arrived at 5,846 measurements from 82 sources and is released at 11,444
 from 109. Almost none of that is new transcription: it is data that had been
-typed, checked and sitting in the source tree, which the builders were not
+extracted, checked and sitting in the source tree, which the builders were not
 reading. Each item below was verified against the primary paper before it was
 applied, and `LEDGER.md` carries the per-item justification.
 
@@ -439,7 +439,7 @@ It now holds the database.
   measurements, 122 source headers, with `MANIFEST.tsv` carrying each file's size, datapoint
   count, source header and SHA-256. All 710 verified against those hashes.
   (819 on arrival, before the superseded SRK tree and the `(copy)` artifacts
-  were excluded; see *Data corrections*.) This closes the provenance chain: typed source table -> built CSV
+  were excluded; see *Data corrections*.) This closes the provenance chain: manually extracted source table -> built CSV
   -> source manifest.
 - **The builder scripts** under `tools/builders/` (`build_v0.py`,
   `build_y_h2o.py`, `hou2013.py`, `yh2o_sources_2026.py`, `quality_pass.py`)

@@ -89,7 +89,7 @@ rather than a description of one. What is recorded here is the set of
   existed and guessed wrong. It has been corrected to describe the column that
   exists, and to say where provenance actually lives: per `dataset_id`, in the
   provenance table of `data/README.md` (paper, table or figure, page, unit
-  convention, deliberate omissions) and in `transcriptions/`, the typed source
+  convention, deliberate omissions) and in `transcriptions/`, the manually extracted source
   tables themselves. **No data was reshaped to fit the schema**; the schema was
   corrected to describe the data.
 - **`eps_r` was an undeclared property.** Thirteen rows of NaCl static

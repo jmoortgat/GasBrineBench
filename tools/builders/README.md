@@ -21,5 +21,5 @@ If you want to check a value, the shortest path is not to run these. It is:
 
 1. find the row's `dataset_id` in `../../data/README.md`, which names the
    paper, table and page;
-2. find the `source` header in `../../transcriptions/` to see what was typed;
+2. find the `source` header in `../../transcriptions/` to see what was extracted;
 3. find the citation in `../../SOURCES.md` and obtain the paper.
