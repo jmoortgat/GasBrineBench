@@ -43,12 +43,12 @@ signed relative deviation** (a source that reads high or low), the robust scale 
 ## What it shows
 
 Pooled robust scale of the strict relative deviation (sources agree to about this): solubility 3.8 %, `psat_ratio`
-1.0 %, `rho` 0.1 %, `dh_sol` 0.6 %, gas-phase water content 9 %, apparent molar heat capacity 28 %.
+0.6 %, `rho` 0.1 %, `dh_sol` 0.6 %, gas-phase water content 8.7 %, apparent molar heat capacity 28 % (11 rows only).
 
-Of the 17,942 rows in the comparison, 1,830 (10.2%) have an independent neighbor source under the strict rule and 3,691 (21%)
+Of the 17,587 rows in the comparison, 1,794 (10.2%) have an independent neighbor source under the strict rule and 3,473 (20%)
 under at least one of the two statistics: different laboratories rarely measure the same salt at the same molality and state.
-Coverage by family is in the table the script prints. `phi_osm`,
-`visc` and the gas-loaded densities have no overlap at all; their quality rests on the cross-checks made at extraction.
+Coverage by family is in the table the script prints. `phi_osm` and
+`visc` have no overlap at all and the gas-loaded densities almost none (9 rows with a smooth comparator); their quality rests on the cross-checks made at extraction.
 
 ## Limits
 
@@ -62,9 +62,9 @@ Coverage by family is in the table the script prints. `phi_osm`,
 
 ## What it found while it was built
 
-The 330 rows it listed in a first pass were each checked against the printed tables of their papers: 258 matched (genuine
-inter-laboratory scatter, or a comparator that was itself wrong), 21 could not be checked (paper unavailable), and about 50
-were defects of the database, corrected as listed in `CHANGELOG.md` and `LEDGER.md`. After those corrections (and the removal of a mislabeled duplicate, below) 175 rows remain
+The 330 rows it listed in a first pass, and one further row sharing the cause of a listed one, were each checked against the published tables of their papers: 258 matched (genuine
+inter-laboratory scatter), 6 were correct and their comparators wrong, 46
+were defects of the database, and for 21 the check was completed in the later row-by-row audit (their sources were since removed, re-cited or checked against the paper); corrected as listed in `CHANGELOG.md` and `LEDGER.md`. After those corrections (and the removal of a mislabeled duplicate, below) 170 rows in 55 sources remain
 listed. Rows coded quality U are compared with their neighbors but never used as neighbors.
 
 Further defects of v1.1.1 and v1.2 found by it: five CHABAB(2020) points, the Millero oxygen data printed in two papers (19 states) and eight Yarrison thesis values that repeat published values to the last digit; the salt-free reference densities of three density papers; and water + hexadecane + CO2 rows of Brunner et al. (1994) built as binary (all in `LEDGER.md`). One more defect of v1.1.1: 612 rows labeled WANG(2014) agreed with Wang, J. et al. (2019) to rounding at 306 states, which two

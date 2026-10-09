@@ -38,11 +38,11 @@ those files alone, with no hand-edited value, and the build is reproducible
 byte for byte from this repository (`python3 tools/builders_v1_2/gbb12_build.py
 --extract transcriptions_v1_2 --out OUT`). A datapoint is held back, with the
 reason on record, whenever its conversion would need a model, an assumed
-density or an assumed pressure; of 477 extracted tables, 353 contribute datapoints.
+density or an assumed pressure; of 477 extracted tables, 353 contribute datapoints to the build, and 329 tables of 198 papers remain in the released data after the removals and deduplication at release (229 tables of 144 papers in the property families, 107 tables of 70 papers in the supplementary tier).
 
 Code for the search and the audits: `tools/search/` holds the literature-search script, the query log, the screening criteria and the class given to each work screened; `tools/audit/` holds the scripts and the written instructions of the audit and the random audits, as they were run; `tests/test_builder_core.py` tests the unit and composition conversions of the builder.
 
-Source labels: the bare labels `Guo` (262 measurements of Guo et al. 2014, CO2 in pure water) and `TONG` are pinned to their papers in `tools/make_sources.py` (`Guo` had resolved to the 2016 NaCl paper); this removes two duplicate bibliography lines, so the database cites 255 distinct works.
+Source labels: the bare labels `Guo` (262 measurements of Guo et al. 2014, CO2 in pure water) and `TONG` are pinned to their papers in `tools/make_sources.py` (`Guo` had resolved to the 2016 NaCl paper); this removes two duplicate bibliography lines, so the database cited 255 distinct works at that point, and 249 after the removals and re-citations below.
 
 Sources whose papers could not be obtained: the datapoints of four of them (Culberson and McKetta 1950, Culberson, Horn and McKetta 1950, Ipatev 1934, Devaney 1978; 210 measurements, all test-only and none in the reliable set) were removed, and the two others were re-cited to the paper that was compared with them (KOBAYASHI(1951) to Kobayashi and Katz 1953, Table VI; SULTANOV(1972) to Price 1979, Table 2). `LEDGER.md` has the entries.
 

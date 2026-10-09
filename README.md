@@ -10,7 +10,7 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**26,815 datapoints · 255 published sources · 7 benchmark gases (plus 24 further
+**26,815 datapoints · 249 published works · 7 benchmark gases (plus 24 further
 gases, flagged) · 6 ions · 238–773 K · 0.1–3,500 bar, and a separate
 supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 
@@ -64,8 +64,8 @@ the snapshot it used.
 curation spellings of one paper collapse onto one citation (`SOURCES.md`); the
 249 total is the number of distinct works in the whole database.
 
-17,256 measurements carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
-ionic strength); 9,810 are salt-free.
+17,240 datapoints carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
+ionic strength); 9,575 are salt-free.
 
 ### What changed in v1.2
 

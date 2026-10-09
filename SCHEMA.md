@@ -132,10 +132,10 @@ has its own schema, documented in `supplementary/README.md`.
   out of, so it is training data rather than an independent test for that
   model; usable as training data by anyone refitting any model.
 - `test-only` — never used as a fit target here.
-- `lle-regime` — a condensable-hydrocarbon row measured below the
-  hydrocarbon's critical temperature and at or above its own vapor pressure,
-  so the hydrocarbon-rich phase is a **liquid**: the point is a liquid–liquid
-  mutual solubility, not a gas solubility. 144 rows, all propane. They are
+- `lle-regime` — a row of a condensable gas (CO2 or a hydrocarbon) measured below
+  the gas's critical temperature and at or above its own vapor pressure,
+  so the gas-rich phase is a **liquid**: the point is a liquid–liquid
+  mutual solubility, not a gas solubility. 354 rows (270 propane, 50 CO2, 26 butanes, 8 ethane). They are
   kept because they are good data about a different property, and consumers
   are expected to exclude them from gas-solubility scoring by default
   (`data/QUALITY.md` Sec. 7).
@@ -146,7 +146,7 @@ has its own schema, documented in `supplementary/README.md`.
 1. `data/README.md`, *Provenance per dataset_id*: one row per block, naming
    the paper, the table or figure number, the page, the covered T/P/molality
    grid, the unit convention applied, and what was deliberately skipped.
-2. `transcriptions/`: the 710 manually extracted source tables the curated blocks were
+2. `transcriptions/`: the 700 manually extracted source tables the curated blocks were
    built from, each opening with the `#AUTHOR(YEAR)` header that appears in
    the `source` column.
 

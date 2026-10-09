@@ -1,8 +1,8 @@
-GasBrineBench dual license (pre-release; finalized at v1.0):
+GasBrineBench dual license:
 
 - Data and documentation (data/, transcriptions/, bib/, SOURCES.*, and the
   ledgers): Creative Commons Attribution 4.0 International (CC-BY-4.0).
-- Code (tools/): MIT License.
+- Code (gasbrinebench/, tools/, tests/ and the code in notebooks/): MIT License.
 
 WHAT IS BEING LICENSED, AND WHAT IS NOT
 
@@ -24,7 +24,7 @@ so that it does not need to be: it gives a full reference, a DOI and a
 resolvable URL for every source, so that any row can be checked against the
 original obtained through the reader's own library.
 
-MIT License (applies to the code under tools/)
+MIT License (applies to the code under gasbrinebench/, tools/, tests/ and notebooks/)
 
 Copyright (c) 2026 Joachim Moortgat
 
