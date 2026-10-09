@@ -10,7 +10,7 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**26,815 rows · 255 published sources · 7 benchmark gases (plus 24 further
+**26,815 datapoints · 255 published sources · 7 benchmark gases (plus 24 further
 gases, flagged) · 6 ions · 238–773 K · 0.1–3,500 bar, and a separate
 supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 
@@ -34,18 +34,18 @@ supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 
 **Status: v1.2.1 released.** v1.2.1,
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23243941.svg)](https://doi.org/10.5281/zenodo.23243941)
-(26,815 rows from 249 works), supersedes v1.2.0
+(26,815 measurements from 249 works), supersedes v1.2.0
 ([10.5281/zenodo.23243932](https://doi.org/10.5281/zenodo.23243932), the 4 October snapshot
-with 27,025 rows) and v1.1.1 (11,537 rows from 111 sources,
+with 27,025 datapoints) and v1.1.1 (11,537 measurements from 111 sources,
 [10.5281/zenodo.22898153](https://doi.org/10.5281/zenodo.22898153)). Cite the original experimental sources for the numbers (see
-*Citation* below) and the version DOI for the compilation. The row schema of
-v1.1.1 is unchanged except for one optional column (`flags`, below); the row
+*Citation* below) and the version DOI for the compilation. The datapoint schema of
+v1.1.1 is unchanged except for one optional column (`flags`, below); the datapoint
 set grows, and each release gets its own version DOI so a result always names
 the snapshot it used.
 
 ## What is here
 
-| family | rows | sources | gases | T [K] | P [bar] | R/T/U |
+| family | datapoints | sources | gases | T [K] | P [bar] | R/T/U |
 |---|---:|---:|---|---|---|---|
 | `data/solubility.csv` | 14,472 | 148 | 23 gases, 7 of them the benchmark gases | 273–773 | 0.10–3500 | 1396 / 12874 / 202 |
 | `data/y_h2o.csv` | 1,972 | 51 | CO2, CH4, H2, N2, C2H6, C3H8 and 4 others | 238–623 | 1.0–3500 | 105 / 1810 / 57 |
@@ -64,12 +64,12 @@ the snapshot it used.
 curation spellings of one paper collapse onto one citation (`SOURCES.md`); the
 249 total is the number of distinct works in the whole database.
 
-17,256 rows carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
+17,256 measurements carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
 ionic strength); 9,810 are salt-free.
 
 ### What changed in v1.2
 
-v1.1.1 held 11,537 rows from 111 papers. v1.2 adds 15,278 rows (net) from 146 further
+v1.1.1 held 11,537 datapoints from 111 papers. v1.2 adds 15,278 measurements (net) from 146 further
 papers (one v1.1.1 citation, Chapoy 2004, was also split in two; see `CHANGELOG.md`), extracted from the tables of the papers themselves (every table read
 twice, independently, the two readings compared by
 script and every disagreement settled against the page image;
@@ -77,60 +77,60 @@ script and every disagreement settled against the page image;
 families (`rho_gas`, `visc`, `thermo_brine`), and a separate
 **supplementary tier** (below). Two principles decided what entered:
 
-* a row enters a benchmark family only if its conversion to the schema needs
+* a datapoint enters a benchmark family only if its conversion to the schema needs
   nothing the paper does not print: no model, no assumed density, no assumed
   composition. Where a convention is unavoidable it is applied by the builder
   and **flagged** (`stp-assumed`: gas volumes per gram of water are converted
   with 0 degC and 1 atm; `solution-basis-converted`, `salinity-matrix`, ...);
-* **a measurement with no stated pressure is not a benchmark row.** Liquid
+* **a measurement with no stated pressure is not a benchmark datapoint.** Liquid
   densities and viscosities whose paper states no pressure are left out
   entirely. The exceptions are properties that are conventionally measured
   without a pressure — enthalpies of dissolution, osmotic coefficients
   (isopiestic equilibrium at the solution's own vapour pressure) and apparent
-  molar heat capacities. Those 522 rows are kept, carry an empty `P_bar`, are
+  molar heat capacities. Those 522 datapoints are kept, carry an empty `P_bar`, are
   flagged `pressure-unstated`, and are excluded by the default loader.
 
 ### Modifier flags and what the default loader drops
 
 The optional column `flags` holds `;`-separated modifier flags (empty on all
-v1.1.1 rows except where v1.2 rows were added). `tag` keeps its v1.1.1
-meaning. `gbb.load()` drops, by default, rows that carry any of
+v1.1.1 measurements except where v1.2 datapoints were added). `tag` keeps its v1.1.1
+meaning. `gbb.load()` drops, by default, measurements that carry any of
 `gas-out-of-scope` (a gas outside the seven), `hydrate-regime`,
 `condensed-phase-uncertain`, `fugacity-as-pressure`, `subfreezing`,
 `volume-basis-uncertain` (per-litre composition the paper does not settle) and
-`pressure-unstated`, together with the `lle-regime` rows. That leaves **23,090
-rows** in the default view. `exclude_flags=None, exclude_tags=None` returns all
+`pressure-unstated`, together with the `lle-regime` datapoints. That leaves **23,090
+measurements** in the default view. `exclude_flags=None, exclude_tags=None` returns all
 26,815; `SCHEMA.md` defines every flag.
 
 ### Supplementary tier
 
-`supplementary/supplementary_measurements.csv` (5,174 rows from 107 tables)
+`supplementary/supplementary_measurements.csv` (5,174 datapoints from 107 tables)
 holds in-scope measurements that no benchmark family can store without a
 model: apparent molar volumes, enthalpies of dilution and dissolution,
-isopiestic molality pairs (stored as printed, so users can convert them with
+isopiestic molality pairs (stored as published, so users can convert them with
 the reference model of their choice), mixture volumes, compressions, Henry
 constants on a molality basis, gas solubilities in bases that need a density
 or a partial pressure the paper does not give (Ostwald and Bunsen
 coefficients, mass per litre), and salt solutions outside the six-ion set
-(NaBr, LiCl, KBr, SrCl2, ...). Rows carry the value and unit as printed, the
+(NaBr, LiCl, KBr, SrCl2, ...). Measurements carry the value and unit as published, the
 solutes in mol/kg water where the paper's basis allows it, and the composition
-as printed otherwise. See `supplementary/README.md`. These rows are **not**
+as published otherwise. See `supplementary/README.md`. These datapoints are **not**
 part of the benchmark; they are published so that nothing extracted and
 verified is lost.
 
-**Scored rows.** Of the 26,815 benchmark rows, 23,090 are in the default view
+**Scored measurements.** Of the 26,815 benchmark datapoints, 23,090 are in the default view
 (scored as gas–brine equilibrium and brine-property targets); the rest are
 kept and flagged.
 
 ## Verification
 
-Every row was compared with its paper (see `CHANGELOG.md`, "Full row-by-row audit"). `data/provenance/audit_status.csv` gives each row one status:
-`verified` (17,967 rows: printed digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
+Every datapoint was compared with its paper (see `CHANGELOG.md`, "Full row-by-row audit"). `data/provenance/audit_status.csv` gives each datapoint one status:
+`verified` (17,967 measurements: published digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
 least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (90: no paper or table available, or the paper does not settle the basis)
 and `residual-difference` (600: a known difference from the paper that was not corrected, such as a brine composition adjusted for
 electroneutrality or a paper whose own columns disagree). A blind random audit of the corrected data found 8 major errors in 531 verifiable readings (1.5 %,
 95 % interval 0.8-2.9 %); after adjudication 2 of them (0.4 %) are not already disclosed by a flag or a documented convention. The column `data_origin` says whether a
-number is printed in a table, read off a figure or calculated by the authors' model, and the flag `smoothed-values` marks tables the authors state are smoothed.
+number is published in a table, read off a figure or calculated by the authors' model, and the flag `smoothed-values` marks tables the authors state are smoothed.
 
 ## Fitting on the audited data only
 
@@ -140,8 +140,8 @@ fit = gbb.load(reliable=True)            # 20,899 rows: verified or corrected ag
 only_checked = gbb.load(audit_status="verified")      # or 'corrected', 'not-verifiable', 'residual-difference' (any of them, as a list)
 ```
 
-`reliable=True` keeps the rows whose stored digits equal the printed ones (audit status `verified` or `corrected`), drops quality U, everything the default
-view drops, and the rows flagged `source-caution`, `stp-assumed`, `salinity-matrix` or `solution-basis-converted`, whose paper does not settle a convention.
+`reliable=True` keeps the datapoints whose stored digits equal the published ones (audit status `verified` or `corrected`), drops quality U, everything the default
+view drops, and the measurements flagged `source-caution`, `stp-assumed`, `salinity-matrix` or `solution-basis-converted`, whose paper does not settle a convention.
 It is the strictest set we can defend; it does not mean that a paper has no systematic error of its own (see Verification).
 
 ## Using it from Python
@@ -176,16 +176,16 @@ density, the quality-code mix — and it runs from a fresh clone.
 
 `load()` applies the two conventions a hand-rolled `read_csv` gets wrong: it
 reads with `keep_default_na=False`, so the legitimately empty `gas` cell of a
-brine-only row stays an empty string, and then coerces the numeric columns, so
-the genuinely blank cells (`P_bar` on the `psat_ratio` rows, `uncertainty`
+brine-only datapoint stays an empty string, and then coerces the numeric columns, so
+the genuinely blank cells (`P_bar` on the `psat_ratio` datapoints, `uncertainty`
 where the source stated none) become `NaN` rather than `''`.
 
-**`load()` excludes the 354 `lle-regime` rows and every row carrying a
-default-excluded flag.** The `lle-regime` points (144 propane rows of v1.1.1
+**`load()` excludes the 354 `lle-regime` measurements and every datapoint carrying a
+default-excluded flag.** The `lle-regime` points (144 propane datapoints of v1.1.1
 and 210 added in v1.2) are liquid–liquid mutual solubilities, not gas
 solubilities (`data/QUALITY.md` Sec. 7); scoring them as the latter is a
-category error. The flagged rows are listed above. Pass
-`exclude_tags=None, exclude_flags=None` for all 26,815 rows.
+category error. The flagged measurements are listed above. Pass
+`exclude_tags=None, exclude_flags=None` for all 26,815 datapoints.
 
 The data directory is found beside the package, or from the working directory
 upward, or from `$GASBRINEBENCH_DATA`.
@@ -197,16 +197,16 @@ upward, or from `$GASBRINEBENCH_DATA`.
 
 | argument | selects |
 |---|---|
-| `gas=` | `'co2'`, `['ch4', 'h2']`, …; `''` for the brine-only rows |
+| `gas=` | `'co2'`, `['ch4', 'h2']`, …; `''` for the brine-only measurements |
 | `family=`, `property=` | property family, or specific `property` values |
 | `source=`, `dataset_id=` | a named source or dataset block |
 | `quality=` | `'R'` / `'T'` / `'U'` |
 | `tag=`, `exclude_tags=` | the fit/test partition |
-| `flags=`, `exclude_flags=` | rows carrying (or not carrying) modifier flags |
+| `flags=`, `exclude_flags=` | datapoints carrying (or not carrying) modifier flags |
 | `T=(lo, hi)`, `P=(lo, hi)` | inclusive windows [K], [bar]; `None` leaves a side open |
 | `ionic_strength=`, `total_molality=` | inclusive windows [mol/kg water] |
 | `salt_system=` | `'water'` / `'single-salt'` / `'mixed-salt'`, or a label like `'Na-Cl'` |
-| `ions=`, `ions_exactly=` | rows containing these ions, or exactly these |
+| `ions=`, `ions_exactly=` | measurements containing these ions, or exactly these |
 | `salt_free=` | `True` for the binaries, `False` for the brines |
 
 A value outside the vocabulary **raises**, naming the valid set, rather than
@@ -220,14 +220,14 @@ Not stored in the CSVs, because they follow from what is:
 |---|---|
 | `gbb.ionic_strength(df)` | ½ Σ mᵢzᵢ² [mol/kg water] |
 | `gbb.total_molality(df)` | Σ mᵢ [mol/kg water] |
-| `gbb.charge_imbalance(df)` | Σ mᵢzᵢ [eq/kg]; ≤ 2 × 10⁻³ across the database, from rounded printed molalities |
+| `gbb.charge_imbalance(df)` | Σ mᵢzᵢ [eq/kg]; ≤ 2 × 10⁻³ across the database, from rounded published molalities |
 | `gbb.salt_system(df)`, `gbb.salt_system_kind(df)`, `gbb.ions_present(df)` | ion-set label, single/mixed classification, ion tuple |
 | `gbb.with_derived(df)` | all of the above as columns (`load()` does this for you) |
-| `gbb.solubility_pairs(df)` | one row per solubility point with both mole-fraction siblings |
+| `gbb.solubility_pairs(df)` | one datapoint per solubility point with both mole-fraction siblings |
 
 `solubility_pairs()` is the one worth knowing about. `data/solubility.csv`
 stores a solubility twice where the source reported both conventions —
-`solubility_molality` and `xc_saltfree` as separate rows at the same state.
+`solubility_molality` and `xc_saltfree` as separate datapoints at the same state.
 It joins them, recomputes the salt-free fraction so the gaps are filled, and
 adds the **salt-inclusive** fraction with the ions counted as species. That
 last one is derived and not measured: nobody reports it, many models expect
@@ -235,9 +235,9 @@ it, and doing the conversion here makes the convention explicit.
 
 ### Inventory
 
-`gbb.inventory(df, by=...)`, `gbb.coverage(df)`, `gbb.sources(df)` — rows,
+`gbb.inventory(df, by=...)`, `gbb.coverage(df)`, `gbb.sources(df)` — measurements,
 distinct sources, gases, T/P range and R/T/U mix for any selection; the
-(gas × salt system) rectangle, holes included; and one row per contributing
+(gas × salt system) rectangle, holes included; and one datapoint per contributing
 source.
 
 ### Export
@@ -264,7 +264,7 @@ python3 -m gasbrinebench --family solubility -o solubility.parquet
 
 ### Speciation codes: PHREEQC, Geochemist's Workbench
 
-**No native exporter is provided, deliberately.** The brine half of a row maps
+**No native exporter is provided, deliberately.** The brine half of a datapoint maps
 onto a PHREEQC `SOLUTION` block cleanly, and `gasbrinebench/interop.py`
 tabulates that mapping — `m_Na → Na`, `m_SO4 → S(6)`, `temp = T_K − 273.15`
 (°C), `pressure = P_bar / 1.01325` (atm), `units mol/kgw`, `-water 1.0`.
@@ -298,7 +298,7 @@ skipped.
 
 ## The provenance chain
 
-Every number in this repository can be walked back to the page it was printed
+Every number in this repository can be walked back to the page it was published
 on, and the chain is inspectable at each link:
 
 ```
@@ -324,24 +324,24 @@ transcriptions; those intermediates are not in this repository, but the
 transcriptions they came from are, and `data/README.md` names the route for
 each block.
 
-- **`transcriptions/`** — 700 hand transcriptions, 7,607 data rows, 120 source
-  headers, with a `MANIFEST.tsv` giving each file's size, row count, source
+- **`transcriptions/`** — 700 hand transcriptions, 7,607 data datapoints, 120 source
+  headers, with a `MANIFEST.tsv` giving each file's size, datapoint count, source
   header and SHA-256. This is the bottom of the chain: it cannot be
   regenerated from anything, because it is somebody's typing checked against
-  the printed page.
-- **`transcriptions_v1_2/`** — the tables of the 207 papers that contribute rows to
+  the published page.
+- **`transcriptions_v1_2/`** — the tables of the 207 papers that contribute measurements to
   the v1.2 families or the supplementary tier, as extracted and verified, each with the mapping file that says how its columns
   become schema columns, and a `MANIFEST.csv` tying every DOI to its `source`
   key. `data/provenance/provenance_v1_2.csv` lists, for every v1.2
-  `dataset_id`, the paper, table, row count, verification status, the
+  `dataset_id`, the paper, table, datapoint count, verification status, the
   experimental method and any caution recorded for it.
 - **`data/README.md`** — the per-`dataset_id` provenance table: which paper,
   which table or figure, which page, which unit convention, and what was
-  deliberately skipped, for every block of rows.
+  deliberately skipped, for every block of datapoints.
 - **`data/QUALITY.md`** — the R/T/U justification record: what was checked
-  against what, which rows were removed, and which apparent defects turned out
+  against what, which measurements were removed, and which apparent defects turned out
   to be in our own pipeline rather than in the source.
-- **`SOURCES.md`** — the source manifest. **All 26,815 rows resolve to a real
+- **`SOURCES.md`** — the source manifest. **All 26,815 datapoints resolve to a real
   published source (100 %).** It also carries each paper's OpenAlex citation
   count (`data/provenance/citation_counts.csv`) as metadata, not as a quality
   measure.
@@ -358,7 +358,7 @@ from maintainer-local paths that will not exist on your machine. They are
 included because they are documentation — `hou2013.py` and
 `yh2o_sources_2026.py` in particular carry the transcribed tables themselves,
 in source, with the page and table numbers they came from, and all five record
-exactly which rows were skipped and why. Read them; don't expect to run them.
+exactly which measurements were skipped and why. Read them; don't expect to run them.
 The same is true of `tools/extract_transcriptions.py`, which selected
 `transcriptions/` out of a private trove.
 
@@ -387,16 +387,16 @@ column convention, molality/mole-fraction sibling consistency to 1e-9,
 same-source exact duplicates, the quality and tag vocabularies, and that every
 `source` cell resolves to a real bibliographic record. It reports — but does
 not reject — exact value coincidences between *different* sources at the same
-state, because two labs agreeing to the precision they printed is a fact about
+state, because two labs agreeing to the precision they published is a fact about
 the data, not a defect. There are three such coincidences.
 
 ## Design principles
 
-1. **Facts with provenance.** Every row carries its source; data points are
+1. **Facts with provenance.** Every datapoint carries its source; data points are
    literature facts, the curation is ours, the credit is the original
    experimentalists'. Cite them.
-2. **One schema.** All properties share one row format (see `SCHEMA.md`); new
-   salts and gases are new rows, not new formats.
+2. **One schema.** All properties share one datapoint format (see `SCHEMA.md`); new
+   salts and gases are new datapoints, not new formats.
 3. **Immutable citable versions.** GitHub is the living resource; every
    release is archived on Zenodo with a version DOI. Papers cite version DOIs,
    so results stay reproducible while the dataset grows.
@@ -409,7 +409,7 @@ the data, not a defect. There are three such coincidences.
 
 `SOURCES.md` is the source manifest: for every source contributing data it
 records the bibliographic reference, DOI, resolvable URL, the property
-families and row counts it contributes, the gas/salt/T/P/molality ranges it
+families and datapoint counts it contributes, the gas/salt/T/P/molality ranges it
 covers, and its quality-code mix.
 
 The manifest exists so that the primary literature never has to be
@@ -422,7 +422,7 @@ so the coverage figures cannot drift away from the data. Re-run it after any
 change and commit the diff. It never invents a citation: sources without a
 bibliographic record are listed by name under *Needs citation*.
 
-All 26,815 rows resolve to a real published source, and all but a few of
+All 26,815 measurements resolve to a real published source, and all but a few of
 those works carry a DOI (`SOURCES.md` lists them). Six have none because none was ever issued — two
 doctoral theses, two research reports, and two papers in journals that were
 never retrospectively registered. The seventh is Sultanov et al. 1972, a
@@ -439,7 +439,7 @@ checked against the primary paper.
 
 Contributions of additional experimental data — new sources for existing
 systems, new salt compositions, new gases, new properties — are welcome via
-pull request. See `CONTRIBUTING.md` for the row schema, mandatory fields, and
+pull request. See `CONTRIBUTING.md` for the datapoint schema, mandatory fields, and
 the validation CI every PR must pass.
 
 Note that `.gitignore` is an **allowlist**: it ignores everything by default
@@ -484,7 +484,7 @@ copyrighted by their publishers; we hold copies locally in order to transcribe
 them and we cannot pass them on. That is precisely why `SOURCES.md` exists in
 the form it does: with a reference, a DOI and a resolvable URL for every
 source, a reader can obtain each paper through their own library and check any
-row against the original. Nothing in this repository depends on redistributing
+datapoint against the original. Nothing in this repository depends on redistributing
 a single copyrighted page.
 
 Nothing under a `source_materials/`, `papers/`, `paper/` or `emails/` path,
