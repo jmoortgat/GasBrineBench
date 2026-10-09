@@ -34,6 +34,9 @@
 !/SOURCES.bib
 !/.gitignore
 !/.github/workflows/*.yml
+!/_quarto.yml
+!/index.qmd
+!/scripts/quarto-cleanup.sh
 
 # ---------------------------------------------------------------------------
 # The database and its documentation
@@ -176,3 +179,6 @@ env/
 *~
 *.bak
 *.log
+
+/.quarto/
+**/*.quarto_ipynb

@@ -1,0 +1,54 @@
+---
+title: "GasBrineBench"
+subtitle: "Experimental thermodynamic data for gases in water and brines, standardized and checked against the source papers"
+toc: false
+---
+
+GasBrineBench is a curated compilation of published experimental data for
+seven gases (CO~2~, CH~4~, H~2~, N~2~, O~2~, C~2~H~6~ and C~3~H~8~) in water and in brines of
+Na^+^, K^+^, Ca^2+^, Mg^2+^, Cl^−^ and SO~4~^2−^, from 238 to 773 K and 0.1 to 3,500 bar.
+
+* **26,815 datapoints from 249 published works** in eleven property families: gas
+  solubility, water content of the gas phase, a CO~2~ + CH~4~ + water family, brine
+  density, density of CO~2~-loaded brine, viscosity, apparent molar heat capacity,
+  osmotic coefficient, vapor-pressure ratio, enthalpy of dissolution and permittivity.
+* **One format.** Every datapoint is converted to one set of units and to molalities of
+  six ions per kilogram of water, and carries its source, a quality code, flags for every
+  convention or caution, and the result of a comparison with its paper.
+* **A supplementary tier** of 5,174 verified measurements that cannot be converted
+  without a model, kept in the units of the paper.
+
+::: {.callout-tip icon=false}
+## Quickest start
+
+```python
+import gasbrinebench as gbb
+df  = gbb.load()               # default selection
+fit = gbb.load(reliable=True)  # audited subset
+```
+
+Or open the [tour notebook in Colab](https://colab.research.google.com/github/jmoortgat/GasBrineBench/blob/main/notebooks/gasbrinebench_tour.ipynb);
+the first cell sets everything up.
+:::
+
+## Where to look
+
+* **The data.** [Schema and conventions](SCHEMA.md), the [property families and
+  their provenance](data/README.md), the [quality codes](data/QUALITY.md), the
+  [comparison of sources](data/consensus/README.md), the [supplementary
+  tier](supplementary/README.md) and the full list of [sources](SOURCES.md).
+* **How it was made.** The [builder of version 1.2](tools/builders_v1_2/README.md)
+  and its [mapping-file format](tools/builders_v1_2/SPEC.md), the [manually extracted
+  tables](transcriptions/README.md) of the earlier versions, the [literature
+  search](tools/search/README.md) and the [audits](tools/audit/README.md).
+* **Worked examples.** Seven [notebooks](notebooks/README.md), shown here with their
+  stored outputs.
+* **History.** The [changelog](CHANGELOG.md) and the [ledger of
+  corrections](LEDGER.md).
+
+## Citation
+
+Cite the primary papers for the data you use ([sources](SOURCES.md)) and the version
+of the compilation: version 1.2.1,
+[doi:10.5281/zenodo.23243941](https://doi.org/10.5281/zenodo.23243941). The data are
+licensed CC-BY-4.0 and the code MIT.

@@ -1,0 +1,117 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "index.qmd"
+    - "README.md"
+    - "SCHEMA.md"
+    - "data/README.md"
+    - "data/QUALITY.md"
+    - "data/consensus/README.md"
+    - "supplementary/README.md"
+    - "SOURCES.md"
+    - "LEDGER.md"
+    - "CHANGELOG.md"
+    - "CONTRIBUTING.md"
+    - "transcriptions/README.md"
+    - "tools/builders_v1_2/README.md"
+    - "tools/builders_v1_2/SPEC.md"
+    - "tools/search/README.md"
+    - "tools/search/CRITERIA.md"
+    - "tools/audit/README.md"
+    - "notebooks/README.md"
+    - "notebooks/gasbrinebench_tour.ipynb"
+    - "notebooks/01_overview_and_coverage.ipynb"
+    - "notebooks/02_gas_solubility.ipynb"
+    - "notebooks/03_water_content_mixtures_enthalpy.ipynb"
+    - "notebooks/04_brine_properties.ipynb"
+    - "notebooks/05_uncertainty_and_variance.ipynb"
+    - "notebooks/06_supplementary_tier.ipynb"
+  post-render: scripts/quarto-cleanup.sh
+
+execute:
+  enabled: false
+
+website:
+  title: "GasBrineBench"
+  repo-url: https://github.com/jmoortgat/GasBrineBench
+  repo-actions: [source, issue]
+  page-navigation: true
+  navbar:
+    background: light
+    right:
+      - icon: github
+        href: https://github.com/jmoortgat/GasBrineBench
+        aria-label: GitHub
+      - text: Zenodo
+        href: https://doi.org/10.5281/zenodo.23243941
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - index.qmd
+      - text: "Repository README"
+        href: README.md
+      - section: "The data"
+        contents:
+          - text: "Schema and conventions"
+            href: SCHEMA.md
+          - text: "Property families and provenance"
+            href: data/README.md
+          - text: "Quality codes"
+            href: data/QUALITY.md
+          - text: "Comparison of sources"
+            href: data/consensus/README.md
+          - text: "Supplementary tier"
+            href: supplementary/README.md
+          - text: "Sources"
+            href: SOURCES.md
+      - section: "How it was made"
+        contents:
+          - text: "Manually extracted tables (v1.0-v1.1.1)"
+            href: transcriptions/README.md
+          - text: "Builder (v1.2)"
+            href: tools/builders_v1_2/README.md
+          - text: "Mapping-file format"
+            href: tools/builders_v1_2/SPEC.md
+          - text: "Literature search"
+            href: tools/search/README.md
+          - text: "Screening criteria"
+            href: tools/search/CRITERIA.md
+          - text: "Audits"
+            href: tools/audit/README.md
+      - section: "Notebooks"
+        contents:
+          - text: "Overview of the notebooks"
+            href: notebooks/README.md
+          - text: "Tour"
+            href: notebooks/gasbrinebench_tour.ipynb
+          - text: "01 Overview and coverage"
+            href: notebooks/01_overview_and_coverage.ipynb
+          - text: "02 Gas solubility"
+            href: notebooks/02_gas_solubility.ipynb
+          - text: "03 Water content, mixtures, enthalpy"
+            href: notebooks/03_water_content_mixtures_enthalpy.ipynb
+          - text: "04 Brine properties"
+            href: notebooks/04_brine_properties.ipynb
+          - text: "05 Uncertainty and variance"
+            href: notebooks/05_uncertainty_and_variance.ipynb
+          - text: "06 Supplementary tier"
+            href: notebooks/06_supplementary_tier.ipynb
+      - section: "Project"
+        contents:
+          - text: "Changelog"
+            href: CHANGELOG.md
+          - text: "Ledger of corrections"
+            href: LEDGER.md
+          - text: "Contributing"
+            href: CONTRIBUTING.md
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toggle: true
+    toc: true
+    toc-depth: 3
