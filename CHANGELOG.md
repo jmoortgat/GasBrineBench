@@ -2,7 +2,7 @@
 
 ## 1.2.2 — CH4 in brines, ternary data, room-pressure brine properties
 
-Released 22 October 2026. v1.2.1 is the version described in the data descriptor.
+Released 22 October 2026, Zenodo version DOI 10.5281/zenodo.23569457. v1.2.1 is the version described in the data descriptor.
 
 **Counts.** 32,355 datapoints from 274 works (v1.2.1: 26,815 from 249); 26,160 returned by default (23,090); 22,062 in the
 reliable set (20,899); supplementary tier 7,803

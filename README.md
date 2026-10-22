@@ -38,7 +38,7 @@ supplementary tier of 7,803 measurements the benchmark families cannot hold.**
 >
 > They are also committed with their figures, so GitHub shows them without running anything. `python3 tools/make_notebooks.py` rebuilds them.
 
-**Current release: v1.2.2** (32,355 datapoints from 274 works, 22 October 2026; see `CHANGELOG.md`). It supersedes v1.2.1,
+**Current release: v1.2.2** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23569457.svg)](https://doi.org/10.5281/zenodo.23569457) (32,355 datapoints from 274 works, 22 October 2026; see `CHANGELOG.md`). It supersedes v1.2.1,
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23243941.svg)](https://doi.org/10.5281/zenodo.23243941)
 (26,815 measurements from 249 works, the version described in the data descriptor), which supersedes v1.2.0
 ([10.5281/zenodo.23243932](https://doi.org/10.5281/zenodo.23243932), the 4 October snapshot
@@ -467,7 +467,7 @@ cite this repository for the compilation:
 > gas–brine thermodynamic data* (v1.1.1) [Data set]. Zenodo.
 > https://doi.org/10.5281/zenodo.22898153
 
-v1.2.1: https://doi.org/10.5281/zenodo.23243941 (v1.2.0: https://doi.org/10.5281/zenodo.23243932). Use the
+v1.2.2: https://doi.org/10.5281/zenodo.23569457 (v1.2.1: https://doi.org/10.5281/zenodo.23243941; v1.2.0: https://doi.org/10.5281/zenodo.23243932). Use the
 **version** DOI, not the concept DOI, which always resolves to the newest
 release. A
 benchmark number is only reproducible if the citation names the snapshot it

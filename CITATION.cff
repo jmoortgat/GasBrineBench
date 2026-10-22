@@ -31,6 +31,10 @@ identifiers:
       Concept DOI. Always resolves to the newest version, so it names the
       project rather than any particular row set. Cite a version DOI.
   - type: doi
+    value: 10.5281/zenodo.23569457
+    description: >-
+      Version DOI for v1.2.2 (32,355 datapoints, 274 works).
+  - type: doi
     value: 10.5281/zenodo.23243941
     description: >-
       Version DOI for v1.2.1 (26,815 rows, 249 works), the version
