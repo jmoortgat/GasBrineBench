@@ -1,0 +1,116 @@
+{
+ "property": "ostwald",
+ "ostwald_definition": "Ostwald solubility coefficient alpha' = c_fl / c_gas = v_gas / v_fl (eq 1), dimensionless: ratio of the gas concentration in the liquid to that in the gas phase, equivalently the gas volume, measured at the equilibrium conditions (temperature of the experiment), absorbed by the liquid volume v_fl; text: 'v_gas und v_fl auf die gleiche Molzahl zu beziehen sind'. v_fl is the volume of the liquid (the salt solution for c' > 0). Accuracy about 1 %.",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (gas-burette absorption measurement, presumably near atmospheric pressure; the Ostwald coefficient is reported without a pressure). Section 3 refers its absorption coefficient beta to constant pressure p = 1 Atm.",
+ "table": "Tabelle 1 b",
+ "page_journal": 6,
+ "pdf_page": 6,
+ "title_as_printed": "Tabelle 1. b) Loeslichkeit verschiedener Gase in NaCl-Loesungen.",
+ "footnotes_as_printed": "none printed",
+ "gas": "",
+ "columns": {
+  "T": {
+   "col": "theta C",
+   "unit": "C",
+   "fill_down_note": "printed only on the first row of each temperature sub-block; carried forward"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified",
+   "constant": "not stated"
+  },
+  "value": {
+   "col": "alpha'",
+   "unit": "ostwald_dimensionless",
+   "what": "Ostwald coefficient alpha' (see ostwald_definition)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "c' mol/1000 g H2O",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl only; rows with c' = 0 are pure water. 'X' is the authors' symbol for xenon."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    21,
+    34
+   ],
+   "reason": "gas label rows (CH4, C2H6, Ar, X = xenon), printed beside the first data row, written as own rows"
+  },
+  {
+   "rows": [
+    5,
+    9,
+    15,
+    20,
+    28,
+    33,
+    39,
+    44
+   ],
+   "reason": "summary rows 'Mittel' (mean k' of the block)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ar"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "xe"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "log alpha'_0/alpha' (derived_by_authors)",
+  "k' Setschenow coefficient (derived_by_authors)",
+  "Mittel rows (mean k')"
+ ],
+ "conversion_needs": [
+  "Ostwald coefficient to mole fraction or molality needs the gas molar volume at T and the solution density/volume (v_fl is the solution volume); the builder must apply the Ostwald convention.",
+  "Pressure not stated: Ostwald coefficient conversion to a solubility at a given partial pressure assumes ideal gas and Henry's law.",
+  "theta in C (the printed unit '0 deg C' moved to the header)."
+ ],
+ "notes": "Gas from label rows (ch4, c2h6, ar, xe). C2H6 0 C, c' 1.10 row: k' 0.198 (text layer read 0.498; the '1' is damaged in print; 0.218/1.10 = 0.198).",
+ "csv": "table_1b.csv"
+}

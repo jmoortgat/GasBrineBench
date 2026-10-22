@@ -1,0 +1,38 @@
+{
+ "doi": "10.1006/jcht.1996.0044",
+ "first_author": "Fenghour",
+ "year": 1996,
+ "journal": "J. Chem. Thermodynamics 28 (1996) 447-458",
+ "source_key": "FENGHOUR(1996)",
+ "experimental_method": "Automated isochoric apparatus (spherical vessel of mercury-calibrated volume in an air thermostat): CH4 charged at about 323 K (mass from the Setzmann-Wagner EoS), a weighed mass of liquid water injected by a calibrated screw injector, then (p, T) recorded along a quasi-isochore through the two-phase and single-phase gas regions; dew points from the break in the (p, T) curve.",
+ "uncertainties_stated": "T: PRT calibrated on ITS-90 by NPL, better than 0.01 K. p: quartz transducer 0.02 %. rho: '+/-0.8 per cent' for the lowest water content and '+/-0.14 per cent' for the highest (text p. 448); the abstract gives '+/-0.0008 rho' (0.08 %) and '+/-0.0014 rho'. Dew points: dTd, dpd, drho_d listed per row in Table 2 (Td generally better than 1 K).",
+ "quality_remarks": "Text and abstract disagree on the density uncertainty at the lowest water content (0.8 % vs 0.08 %); 0.08 % is more consistent with the abstract and with the stated agreement within 0.7 % with Joffrion and Eubank. Table 1 row x = 0.1739, 465.95 K, 8.958 MPa lies below that mixture's dew point (Td 467.9 K, pd 9.04 MPa), so it may be in the two-phase region. Table 1 densities are gas-phase (homogeneous vapour/supercritical) mixture densities, not liquid. Authors find Abdulagatov et al. (1993) and Shmonov et al. (1993) data inaccurate.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   9
+  ],
+  "journal_pages": [
+   449,
+   455
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Figures 1-7",
+   "reason": "deviation plots and model comparisons; no further data"
+  }
+ ],
+ "row_counts": {
+  "TABLE 1": "printed 87 data rows (two side-by-side blocks: 42 left + 45 right; nine x blocks of 16, 14, 12, 11, 9, 8, 6, 5, 6 rows), written 87 (stacked)",
+  "TABLE 2": "printed 9, written 9"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Script-parsed from the text layer by splitting each line into the left and right block at a fixed character column; blocks stacked left then right. Headers made ASCII: rho for the Greek letter, 'mol.m-3' for mol\u00b7m^-3 (printed mid-dot written as full stop), d for delta. Every cell compared with the 250 dpi page images of journal pp. 449 and 455: no corrections. Sanity: within each x block T and p strictly increase and rho strictly decreases (isochore with vessel expansion). Table 1 property set to rho_gas_loaded with the overall water mole fraction as the composition column 'x' (mapped as columns.x_h2o_mixture, fill_down); Table 2 mapped as y_h2o at the dew point (basis saturation) with the saturated-vapour density as value2.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page image",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1006_jcht.1996.0044, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical apart from values one pass fills down (T, mixture x) or keeps in label text (Masterton averages), whose counts match the block sizes. Pei brine compositions (mapping constants vs pass-2 table_1): identical."
+}

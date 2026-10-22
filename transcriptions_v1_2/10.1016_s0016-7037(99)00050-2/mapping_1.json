@@ -1,0 +1,50 @@
+{
+ "table": "Table 1",
+ "page_journal": 1561,
+ "title_as_printed": "Experimentally determined densities (rho) of pure CO2 at 400C. The numbers in column 3 are differences between densities obtained in this study and those previously determined by Seitz and Blencoe (1996) at the same P-T conditions",
+ "footnotes_as_printed": "none",
+ "property": "rho",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure P (MPa) given in the tables, isobaric-isothermal conditions; paper states accuracy +-0.02 MPa; not otherwise defined (flow-through cell, no vapour phase; total pressure presumed but not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "400"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho (g cm^-3)",
+   "unit": "g/cm3"
+  },
+  "value2": {
+   "col": "delta rho_exp (g cm^-3)",
+   "unit": "g/cm3",
+   "what": "this study minus Seitz and Blencoe (1996) density at same P,T; comparison with the authors' earlier measurement, not a density",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure CO2 fluid at 400 C; contains no water and no salt (not an aqueous system)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "delta rho_exp (blank cells where no earlier measurement at that P)"
+ ],
+ "conversion_needs": [
+  "MPa to Pa",
+  "g/cm3 to kg/m3"
+ ],
+ "notes": "Pure CO2 density at 400 C. Blank cells in delta rho_exp are printed blanks. Standard conditions not applicable (density).",
+ "hold_table": "pure CO2 density at 400 C, no water component: not a brine/water density; the rho converter would store it as pure water (audit 2026-10-02; title 'densities (rho) of pure CO2 at 400C')"
+}

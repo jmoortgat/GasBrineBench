@@ -1,0 +1,168 @@
+{
+ "table": "Table 2",
+ "page_journal": 1056,
+ "title_as_printed": "Experimental values of Ps/Pw, and calculated values of cp,s/cp,w and Cp,phi for NaCl solutions at 17.7 MPa",
+ "footnotes_as_printed": {
+  "a": "Calculated from equation (6).",
+  "b": "Calculated from equation (4).",
+  "c": "T is the initial temperature of the experiment. In all experiments DeltaT calculated from the power input, the heat capacity of water, and the heat losses (f) is (2.0+/-0.2) K."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter at 17.7 MPa (title); pressures read to +/-0.17 MPa",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "from block label",
+   "note": "T is the initial (inlet) temperature of the experiment; the temperature rise in the cell is (2.0+/-0.2) K (footnote c)"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "17.7"
+  },
+  "value": {
+   "col": "Cp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of NaCl from cp,s/cp,w via eq (4) with cp,w of water at T and 17.7 MPa from Haar, Gallagher and Kell (listed in Table 1)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "cp,s/cp,w",
+   "unit": "dimensionless",
+   "what": "ratio of specific (massic) heat capacity of solution to that of water at T and 17.7 MPa, eq (6) from Ps/Pw, the heat-loss factor f and the 298.15 K density ratio (water density from Fine and Millero, solution density from Chen, Emmet and Millero)",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "Ps/Pw",
+   "unit": "dimensionless",
+   "what": "measured heater power ratio, solution to water (primary measured quantity)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl in water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48
+   ],
+   "reason": "temperature label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "320.60",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "358.40",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "397.97",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "452.56",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "491.05",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "497.73",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "549.11",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "572.14",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "603.39",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Two side-by-side blocks per temperature (left: 0.0996, 0.2433, 0.4940 mol/kg; right: 1.0060, 3.0000 mol/kg) stacked left block first, then right. Footnote c is printed on the first temperature label (320.60 K) and applies to all; recorded as note T/K:c on that label row. Footnote letters a, b are on the column headers only."
+}

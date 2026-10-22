@@ -1,0 +1,140 @@
+{
+ "table": "Table I",
+ "page_journal": 357,
+ "title_as_printed": "The Density of Aqueous Sodium Chloride Solutions",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (densities measured with a magnetic float densitometer; no pressure printed, presumably atmospheric)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "from label row"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "-1000(d0 - d)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "1000 x (density of pure water d0 minus density of solution d); the printed sign is minus so values are 1000(d - d0) positive for denser-than-water solutions. Water reference d0 from Kell (J. Chem. Eng. Data 12, 66 (1967))"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "Molality",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "pure water (doubly distilled, degassed); NaCl only"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    20,
+    29,
+    42,
+    57,
+    69,
+    80
+   ],
+   "reason": "temperature block labels"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 80,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "density unit of the table not printed; check Kell water densities in g/cm3"
+ ],
+ "notes": "Layout: three printed column-stacks; blocks 0,5,15,25 down the left column, 25 C continues at the top of the second column (0.052243 ... 0.963647), then 35, 45, 55 C. Written in block order with the 25 C rows contiguous. Whether molality is per kg water is not explicitly stated ('solutions made by weight').",
+ "quality_remarks": "Density unit is not printed; g/cm3 follows from eq 3 of the paper, phi_V = 1000(d0 - d)/(d d0 m) + M/d (cm3/mol only for d in g/cm3), and a numerical check at 25 C, 0.309342 m (d about 1.0096 g/cm3). Pressure is never stated. Suspected misprint, cell kept: 0 C, m = 0.684443, printed 40.8267 is out of line (0 C, 0.505906: 22.0264; 5 C at the same molality: 28.8041), expected near 30; a density error of roughly 10 kg/m3 if taken as printed.",
+ "row_held": [
+  {
+   "rows": [
+    19
+   ],
+   "reason": "printed 40.8267 at 0 C and m 0.684443 is inconsistent with the 5 C value (28.8041) and the neighbouring molalities (expected near 30); probable misprint in the source (audit 2026-10-02)"
+  }
+ ]
+}

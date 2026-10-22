@@ -1,0 +1,32 @@
+{
+ "doi": "10.1021/ie50256a015",
+ "first_author": "Goodman",
+ "year": 1931,
+ "journal": "Ind. Eng. Chem. 23, 401-404",
+ "source_key": "GOODMAN(1931)",
+ "experimental_method": "Analytic: water presaturated with nitrogen is brought to temperature and pressure in a high-pressure solubility pipet in a copper-block thermostat, stirred, and a sample withdrawn through a needle valve into a weighed trap; evolved gas dried through CaCl2 and measured in a gas buret over mercury.",
+ "uncertainties_stated": "None stated in the text for the solubility values.",
+ "quality_remarks": "Authors say Henry constants calculated from the data show wide variations and no significant trend. Pressures measured with a dead-weight piston gage. Nitrogen purified over hot copper wire and soda lime. 1931 scan, no temperature scale given, standard conditions for the gas volume not defined.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   403
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (Henry's law constant, derived by authors from Table I with fugacities): derived"
+ ],
+ "row_counts": {
+  "Table I": "printed 4 data rows x 7 temperature columns = 28 values (plus a 1/T row); written 28 rows in long form"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the zoomed page image in every cell (checked at about 2.5x enlargement). The scan is somewhat noisy but legible. The PDF is a 4-page article with no foreign pages. Sanity: at each pressure the coefficient has a minimum near 80-100 C; increases with pressure at each temperature.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, all 28 cells matched the zoomed image",
+ "pass2_diff": "Table I: 28 (P, T, value) tuples identical; 1/T row (pass 2 only) not used."
+}

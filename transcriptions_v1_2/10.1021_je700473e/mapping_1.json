@@ -1,0 +1,51 @@
+{
+ "table": "Table 1",
+ "csv": "table_1.csv",
+ "page_journal": 1246,
+ "pdf_page": 1,
+ "title_as_printed": "Vapor-Liquid Equilibria in the H2O (1) + CO2 (2) System",
+ "footnotes_as_printed": {
+  "a": "Calculated from Duan and Sun.2 x2 is the mole fraction of CO2 in liquid, and y2 is the mole fraction of CO2 in the vapor of the binary H2O (1) + CO2 (2) system."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the reaction cell, Heise gauge/transducer calibrated by dead weights (uncertainty 0.1 MPa); absolute vs gauge not stated; total pressure of the equilibrium cell",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x2 (new data)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "what": "measured CO2 mole fraction in the liquid, pure water (salt-free)"
+  },
+  "value2": {
+   "col": "x2 model",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "from_literature": true,
+   "what": "calculated with the Duan and Sun (2003) model (footnote a); not a measurement"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "y2 model (CO2 vapour mole fraction calculated with the Duan and Sun model; not measured)"
+ ],
+ "conversion_needs": [],
+ "notes": "Header footnote letter 'a' stripped from 'x2 model' and 'y2 model'. 5 rows near 375 K, 2 rows near 324 K. Only x2 (new data) is measured."
+}

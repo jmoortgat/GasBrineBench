@@ -100,6 +100,12 @@ def main():
     ap.add_argument("--meta", default=os.path.join(HERE, "..", "release", "meta_cache.json"))
     ap.add_argument("--supp", default=os.path.join(HERE, "..", "release", "supp", "supplementary_measurements.csv"))
     ap.add_argument("--ref", default="main")
+    ap.add_argument("--keep-replicates", action="store_true",
+                    help="v1.2.2 on: keep same-source rows that repeat another row of the SAME table exactly (replicate measurements whose printed values coincide); "
+                         "rows of datasets already built for v1.2.1 (--legacy-rows) follow the v1.2.1 rule, and identical rows of DIFFERENT tables are still removed")
+    ap.add_argument("--legacy-rows", default="", help="source_map.csv of v1.2.1: its papers keep the v1.2.1 duplicate rule")
+    ap.add_argument("--dump-pre-audit2", default="", help="pickle the merged frames just before the v1.2.2 audit corrections (for remapping row ids)")
+    ap.add_argument("--pin-source-map", default="", help="source_map.csv of the previous release: its slugs keep their source keys (keys never change between versions)")
     ap.add_argument("--rel", default=os.path.join(HERE, "..", "release"))
     a = ap.parse_args()
     meta = json.load(open(a.meta))
@@ -149,7 +155,8 @@ def main():
         return "mixture"
 
     new["gas_class"] = new["gas"].map(gas_class)
-    mix = new["gas_class"] == "mixture"
+    # CO2 + CH4 water contents of the ternary family (conv_ternary, with y_co2_dry) are the one gas mixture the database stores
+    mix = (new["gas_class"] == "mixture") & ~((new["family"] == "ternary") & (new["gas"] == "co2-ch4"))
     for _, r in new[mix].groupby(["dataset_id", "gas"]).size().reset_index(name="n").iterrows():
         ledger.append({"dataset_id": r["dataset_id"], "rows": r["n"], "action": "excluded", "reason": f"gas-phase mixture {r['gas']!r}: the gas-phase composition has no column in the database"})
     new = new[~mix].copy()
@@ -190,6 +197,14 @@ def main():
             info[slug] = {"doi": doi if doi.startswith("10.") else "", "fam": sn, "year": yr or str(p.get("year", "")), "crossref": None}
         groups[(info[slug]["fam"], info[slug]["year"])].append(slug)
     source_map = {}
+    if a.pin_source_map:
+        for r in csv.DictReader(open(a.pin_source_map)):
+            m = re.match(r"^(.*)\((\d{4})([a-z]?)\)$", r["source"])
+            if m:
+                occupied.add(f"{m.group(1)}{m.group(2)}{m.group(3).upper()}")
+            if r["slug"] in info:
+                source_map[r["slug"]] = {"source": r["source"], "bibkey": r["bibkey"]}
+        groups = defaultdict(list, {k: [s for s in v if s not in source_map] for k, v in groups.items()})
     for (fam, yr), slugs in sorted(groups.items()):
         slugs.sort(key=lambda s: info[s]["doi"] or s)
         letters = [""] + list("bcdefghij")
@@ -243,6 +258,14 @@ def main():
         for c in ["T_K", "P_bar", *ION, "value"]:
             num[c] = pd.to_numeric(num[c], errors="coerce").round(8)
         dup = num.duplicated(keep="first") & df["dataset_id"].isin(set(new["dataset_id"]))  # v1.1.1 rows are never removed
+        if a.keep_replicates:
+            # papers already in the v1.2.1 source map keep the v1.2.1 rule (their row positions are fixed by the full audit)
+            legacy_slugs = set(pd.read_csv(a.legacy_rows, usecols=["slug"], dtype=str).slug) if a.legacy_rows else set()
+            legacy_ids = set(new.loc[new["slug"].isin(legacy_slugs), "dataset_id"])
+            is_legacy = df["dataset_id"].isin(legacy_ids)
+            within = num.assign(_ds=df["dataset_id"]).duplicated(keep="first")      # identical row of the same table: a replicate
+            first_of_key = ~num.duplicated(keep="first")
+            dup = dup & (is_legacy | ~within | first_of_key)
         if dup.any():
             for ds, k in df[dup].groupby("dataset_id").size().items():
                 ledger.append({"dataset_id": ds, "rows": int(k), "action": "removed", "reason": "exact duplicate of a row of the same source (same state, same value)"})
@@ -251,6 +274,15 @@ def main():
     # ---- corrections from the full row-by-row audit (positions of the audited release; guarded by the old value) ---------------
     import gbb12_audit_fixes as AF  # noqa: E402
     AF.apply(merged, os.path.join(a.rel, "full_audit", "fixes"), ledger, os.path.join(a.rel, "full_audit", "fix_apply_report.csv"))
+    # corrections from the v1.2.2 audit of the datapoints added after the full audit: their row ids are positions in the files as released
+    # (after the v1.2 corrections and removals above), which is the state of `merged` at this point
+    a2 = os.path.join(a.rel, "audit_v1_2_2", "fixes")
+    if a.dump_pre_audit2:
+        import pickle
+        pickle.dump({f: d[["dataset_id", "source", "property", "gas", "T_K", "P_bar", "m_Na", "m_K", "m_Ca", "m_Mg", "m_Cl", "m_SO4", "value"]].copy()
+                     for f, d in merged.items()}, open(a.dump_pre_audit2, "wb"))
+    if os.path.isdir(a2):
+        AF.apply(merged, a2, ledger, os.path.join(a.rel, "audit_v1_2_2", "fix_apply_report.csv"))
     # source labels that named a paper we do not hold, while the rows were verified against a paper we do hold
     RELABEL = {"KOBAYASHI(1951)": ("KOBAYASHI(1953)", "the rows are Table VI of Kobayashi and Katz (1953), with which they were compared in the audit; the label named the thesis"),
                "FROST(2013)": ("FROST(2014)", "the label carried the year of the online publication (December 2013); the paper is J. Chem. Eng. Data 59(4), 961-967 (2014)"),

@@ -1,0 +1,127 @@
+{
+ "table": "Table IV",
+ "page_journal": 230,
+ "title_as_printed": "Single-Mixing Experiments",
+ "footnotes_as_printed": {
+  "a": "Calculated, Equation 4 and constants in Table I (3)."
+ },
+ "property": "other",
+ "property_description": "D' = volume change in ml per equivalent observed on mixing two solutions of ionic strength 4 (salt 2 + salt 3) to give equivalent fraction E2 of salt 2; direct single-mixing dilatometer experiments",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated",
+ "columns": {
+  "T": {
+   "col": "t C",
+   "unit": "C"
+  },
+  "value": {
+   "col": "D' Ml./Eq.",
+   "unit": "mL/equivalent"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "equivalent_fraction_salt2": {
+    "col": "E2",
+    "unit": "1"
+   }
+  },
+  "constant": {
+   "ionic_strength": {
+    "value": "4",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "salt pairs are Li2SO4+LiCl, Na2SO4+NaCl, Li2SO4+Na2SO4, LiCl+NaCl, Li2SO4+NaCl, Na2SO4+LiCl (labels set composition.salt); E2 = (weight) equivalent fraction of salt 2 printed per row; lithium salts are out of the six-ion set"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "volume change per equivalent on mixing",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40
+   ],
+   "reason": "salt-pair label rows"
+  },
+  {
+   "rows": [
+    5,
+    13,
+    21,
+    29,
+    37,
+    45
+   ],
+   "reason": "25.0 C rows with footnote a are calculated from Equation 4 and the Table I constants, not measured"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Li2SO4 + LiCl"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4 + NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Li2SO4 + Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "LiCl + NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Li2SO4 + NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4 + LiCl"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "equivalent fraction E2 would need salt-specific equivalent weights to convert; not converted"
+ ],
+ "notes": "Salt 2 / salt 3 printed in two columns beside the first row of each pair; written here as a label row 'salt2 + salt3'. Last digit of D' is printed as a subscript; written as a full number (e.g. 0.225 with subscript 1 -> 0.2251). Several tiny subscripts (3 vs 5 vs 8, 0 vs 6) are hard to read on the scan; flagged for pass 2. Salt-pair order follows the table; the 25.0 C rows marked a are calculated."
+}

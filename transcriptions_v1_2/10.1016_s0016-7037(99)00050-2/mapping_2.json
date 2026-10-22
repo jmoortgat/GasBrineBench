@@ -1,0 +1,48 @@
+{
+ "table": "Table 2",
+ "page_journal": 1561,
+ "title_as_printed": "Experimentally determined densities (rho, g cm^-3) for CO2-H2O mixtures at 400C",
+ "footnotes_as_printed": "none",
+ "property": "rho",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure P (MPa) given in the tables, isobaric-isothermal conditions; paper states accuracy +-0.02 MPa; not otherwise defined (flow-through cell, no vapour phase; total pressure presumed but not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "400"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho (g cm^-3)",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {
+   "CO2": {
+    "col": "X_CO2",
+    "unit": "mole_fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "balance H2O (deionized, He-sparged); no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "MPa to Pa",
+  "g/cm3 to kg/m3"
+ ],
+ "gas_basis": "not_applicable",
+ "notes": "Printed as a wide table (X_CO2 in column headers, P in rows, 11 pressures x 9 compositions), restacked here to long form, ordered by X_CO2 then P. Four printed blank cells (X=0.10, 0.20, 0.90 at 9.94 MPa; X=0.10 at 19.94 MPa) are kept as rows with empty value. Single-phase supercritical mixture (flow-through densimeter); density of the mixture as a whole, not gas-loaded water. Densities of the pure endmembers: CO2 in Table 1, H2O from Hill (1990) equation (calculated, not measured). Standard conditions not applicable.",
+ "hold_table": "homogeneous supercritical CO2 + H2O fluid mixtures at 400 C with X_CO2 = 0.10-0.90: not an aqueous phase loaded with gas, no database slot for the composition (audit 2026-10-02)"
+}

@@ -1,0 +1,46 @@
+{
+ "doi": "10.1007/bf00646294",
+ "first_author": "Millero",
+ "authors": "Frank J. Millero, Leslie M. Connaughton, Faina Vinokurova, Peter V. Chetirkin",
+ "year": 1985,
+ "journal": "Journal of Solution Chemistry 14(12), 837-851",
+ "title": "PVT Properties of Concentrated Aqueous Electrolytes. III. Volume Changes for Mixing the Major Sea Salts at I = 1.0 and 3.0 at 25 C",
+ "source_key": "MILLERO(1985)",
+ "experimental_method": "Densities of binary and mixed solutions of NaCl, Na2SO4, MgSO4, MgCl2 at constant molal ionic strength (1.0 and 3.0) at 25 C measured with a Picker vibrating flow densimeter and a Mettler/Paar vibrating densimeter as differences from pure water.",
+ "uncertainties_stated": "Temperature controlled to +-0.005 C (set to +-0.002 C); estimated densities agree with the measured values within +-30 ppm (I = 1.0) and +-125 ppm (I = 3.0), a statement about the model comparison, not a stated measurement uncertainty.",
+ "quality_remarks": "Only one of the duplicate or triplicate measured sets is printed for each mixture (footnote a). Ionic strengths of the actual end-point stock solutions deviate from the nominal value (I(2), I(3), Mean I printed under each block; worst: MgSO4-MgCl2 I(3) = 0.98976, MgCl2-Na2SO4 I(2) = 0.99009). Odd value kept as printed: MgCl2 (2)-Na2SO4 (3), I = 1.0, y3 = 0 has 10^3 Delta d = 35.342, while the next row (y3 = 0.09642) is 26.744 and the pure MgCl2 end points of the other MgCl2 series at I = 1.0 are 25.582 (MgCl2-NaCl); the 35.342 is probably a misprint for 25.342 but this is a guess, not a correction. Molalities of the stock solutions come from the 25 C density equations of state. The pure-salt end points of the same binary at the same I differ slightly between series (e.g. NaCl at I = 1.0: 39.170, 39.185, 39.194), reflecting stock-solution differences.",
+ "how_extracted": "pdf_text_layer (OCR layer, parsed with a script) corrected against the page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "journal_pages": [
+   840,
+   841
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: fitting parameters of the volume-of-mixing equation (fitted)",
+  "Table III: cross-square-rule verification (derived)",
+  "Table IV, V, VI: comparisons of measured with Young-rule / Reilly-Wood calculated densities (derived; the measured column repeats Table I data)"
+ ],
+ "row_counts": {
+  "table_1": "printed 127 data rows (12 blocks; 6 mixtures x I = 1.0 and 3.0), written 127, plus 12 label rows and 36 summary rows"
+ },
+ "changes_after_image_check": [
+  "MgSO4-MgCl2 I=1.0 y3=0.09878: 0.09878|29,206 -> 0.09878|29.206",
+  "MgSO4-MgCl2 I=1.0 y3=0.29980: 0.29980|28,292 -> 0.29980|28.292",
+  "MgSO4-MgCl2 I=1.0 y3=0.69540: 0.69540|26,584 -> 0.69540|26.584",
+  "MgSO4-MgCl2 I=3.0 y3=0.09679: 0.09679|84,435 -> 0.09679|84.435",
+  "MgSO4-MgCl2 I=3.0 y3=0.89952: 0.89952|74,586 -> 0.89952|74.586",
+  "summary row MgCl2-Na2SO4 I=3.0: 'I(2) -- 3.00111' -> 'I(2) = 3.00111'; other text-layer garbles of the summary labels ('1(2)' for 'I(2)', 'Mean I -') normalised to 'I(2) =' / 'Mean I ='",
+  "Na2SO4-NaCl ... one endpoint line with y3 '1.O' in the text layer -> 1.0 (letter O for zero)"
+ ],
+ "extraction_notes": "Stacked blocks: for each mixture first the I = 1.0 block then the I = 3.0 block. Sanity checks: 10^3 Delta d monotonic in y3 within every block (increasing or decreasing consistently); pure-salt end points agree between series to within about 0.03 (I = 1.0) and 0.04 (I = 3.0) except the MgCl2-Na2SO4 I = 1.0 y3 = 0 row; no duplicates. Tables IV-VI were not read in detail beyond their title lines.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "the text layer is a low-quality OCR layer and several cells (comma decimals, O for zero) needed correction after the image check",
+ "pass2_diff": "Table I: 127 data rows; no number only in pass 1; the extra numbers in pass 2 are the I(2), I(3), Mean I summary lines that pass 1 listed as skipped rows; 35.342 (MgCl2-Na2SO4, I=1.0, y3=0) probable misprint kept."
+}

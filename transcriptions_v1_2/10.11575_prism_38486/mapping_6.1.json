@@ -1,0 +1,53 @@
+{
+ "table": "Table 6.1",
+ "page_journal": 118,
+ "title_as_printed": "Experimental and calculated water content for liquid C3H8 in equilibrium with a hydrate.",
+ "footnotes_as_printed": {
+  "a": "Precision of pressure measurements calculated to be +-0.001 MPa.",
+  "b": "Precision of temperature measurements was calculated to be +-0.1K.",
+  "c": "Reproducibility for water content measurements is estimated to be 12 ppm at the 95% confidence interval."
+ },
+ "property": "y_h2o",
+ "gas": "c3h8",
+ "regime": "hydrate",
+ "temperature_scale": "not stated",
+ "pressure_note": "p / MPa, total vs partial not stated; liquid C3H8 + hydrate; precision +-0.001 MPa.",
+ "columns": {
+  "T": {
+   "col": "T / K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p / MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "yH2O(exp.) / ppm",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1e-06
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "ppm",
+   "constant": "12"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure liquid C3H8 + hydrate; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "yH2O(calc.) / ppm (model)",
+  "yH2O(exp.) - yH2O(calc.) / ppm (residual)"
+ ],
+ "conversion_needs": [],
+ "volume_basis": "not applicable",
+ "volume_basis_evidence": "quantity labelled yH2O (mole fraction) in ppm; ppm basis (mole vs volume) not stated",
+ "notes": "Isotherm blocks (243, 253, 263, 273, 276 K nominal; 6,6,5,5,5 rows). All T below 276.2 K; four of five isotherms below 273.15 K (hydrate region). Not the same data as extract 10.1016_j.jngse.2022.104732 Tables 12-14 (those: QCM / SiO hygrometer, 8.274 MPa, 276-313 K, ppmV).",
+ "duplicate_of": "10.3390_en13236295 Table 2 (identical 27 rows of p, T, yH2O; journal paper kept)"
+}

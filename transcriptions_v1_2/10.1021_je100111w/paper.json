@@ -1,0 +1,53 @@
+{
+ "doi": "10.1021/je100111w",
+ "first_author": "Qiblawey",
+ "year": 2010,
+ "journal": "J. Chem. Eng. Data 55 (9), 3322-3326",
+ "source_key": "QIBLAWEY(2010)",
+ "title": "Viscosity and Density of the Ternary Solution of Magnesium Chloride + Sodium Chloride + Water from (298.15 to 318.15) K (H. A. Qiblawey, B. Abu-Jdayil)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean (column-cropped pdftotext); all five table pages compared against page images, no corrections",
+ "experimental_method": "Capillary viscometer and pycnometer density measurements in a thermostatted water bath (+/-0.1 K) of NaCl+MgCl2 solutions at five NaCl/MgCl2 mole ratios, 298.15-318.15 K.",
+ "uncertainties_stated": "Water check: viscosity within 0.008 %, 0.8 %, 0.4 % at 298.15, 303.15, 313.15 K; density within 0.3 % of literature; T control +/-0.1 K.",
+ "quality_remarks": [
+  "Table 5 (318.15 K) 4.10 mole-ratio block has rho and eta identical to Table 4 (313.15 K) 4.10 block; likely a copy error in the paper, kept as printed.",
+  "Text says water was checked at 313.15 K twice (list '313.15, 313.15'); 308.15 K check not mentioned.",
+  "Pressure not stated; molality basis (per kg water) not stated.",
+  "Table 1 label prints 'mole ratio = 4.1', others '4.10'."
+ ],
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4
+  ],
+  "journal_pages": [
+   3323,
+   3324,
+   3325
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 6",
+   "reason": "fitted parameters of eq 2"
+  },
+  {
+   "table": "Table 7",
+   "reason": "regression coefficients of temperature correlation (model parameters)"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 50 data rows + 5 label rows; written 55",
+  "table_2": "printed 50 data rows + 5 label rows; written 55",
+  "table_3": "printed 50 data rows + 5 label rows; written 55",
+  "table_4": "printed 50 data rows + 5 label rows; written 55",
+  "table_5": "printed 50 data rows + 5 label rows; written 55"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text extracted with pdftotext -layout on cropped column halves, 5 rows blocks per table; compared with page images.",
+ "pass2_diff": "Tables 1-5: 250/250 numbers identical in each; Table 5 block 4.10 duplicates Table 4's block in both passes (printed so)."
+}

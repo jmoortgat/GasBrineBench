@@ -1,0 +1,61 @@
+{
+ "doi": "10.1021/j100277a037",
+ "first_author": "Phutela",
+ "year": 1986,
+ "journal": "J. Phys. Chem. 90, 895-901",
+ "source_key": "PHUTELA(1986)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned page with an OCR text layer: the table is interleaved with Table II equations, one row (398.15 K, 0.9906) is split over two text lines and the density ratios carry spurious spaces; the table was re-read in full from the 250 dpi image. All numbers then matched the text layer, but the layout needed reconstruction.",
+ "title": "Heat Capacity and Other Thermodynamic Properties of Aqueous Magnesium Sulfate to 473 K",
+ "authors": "Ramesh C. Phutela, Kenneth S. Pitzer",
+ "experimental_method": "Twin-cell Picker-type flow calorimeter (Hastelloy C-276), equal volumetric flow of water and solution at 298.15 K, heater powers adjusted for equal temperature rise; cp of solution from the power ratio with heat-loss correction (eq 1); 348 to 473 K at 20 bar.",
+ "uncertainties_stated": "phiCp uncertainty from the heat-loss assumption 0.5 to 2.5 J/(K mol) at 348 K, about 4 J/(K mol) at 423 K and 9 J/(K mol) at 473 K; total possible error up to twice these values.",
+ "quality_remarks": "Calibration and tests with water in both units and with NaCl(aq). Replicate runs at 0.5946 mol/kg, 348.15 K scatter by 10 J/(K mol) (-18.5, -9.7, -20.5). The water heat capacity implied by cp and phiCp is constant within each block to 1e-4 J/(g K) (4.1807, 4.2128, 4.2532, 4.3070, 4.3808, 4.4863 J/(g K)), so cp and phiCp are mutually consistent. Temperature scale not stated. Note for checking: the implied water cp at 348.15 K (4.1807 J/(g K)) is about 0.3 % below the usual value for water near 75 C (about 4.19 J/(g K)); the other blocks are closer to steam-table values. Not investigated; printed numbers kept as is.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   896
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "Pitzer equations (no data)"
+  },
+  {
+   "table": "Table III",
+   "reason": "fitted parameters"
+  },
+  {
+   "table": "Tables IV-VII",
+   "reason": "calculated activity coefficients, osmotic coefficients, relative apparent molar enthalpies and apparent molar heat capacities (model-generated)"
+  },
+  {
+   "table": "Table VIII",
+   "reason": "calculated properties of very dilute solutions at 20 bar (model-generated)"
+  },
+  {
+   "table": "Appendix (Cp,2 standard-state values)",
+   "reason": "derived standard-state values for MgCl2 / interpolated from literature, not measured here"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 41,
+   "written": 41,
+   "note": "data rows (9 + 10 + 8 + 8 + 4 + 2 at 348.15 to 473.15 K) plus 6 temperature label rows"
+  }
+ },
+ "changes_after_image_check": [
+  "whole table: typed from the image because the OCR text layer interleaves Table I with the Table II equations; every typed number found in the text layer",
+  "398.15 K row m=0.9906 (first): text layer splits the row over two lines (1.11203 3.8560 on one, 0.9906 ... 63.1 on the next); rejoined from the image",
+  "rho_s/rho_w column: printed digit-group thin spaces (1.029 62) removed -> 1.02962"
+ ],
+ "extraction_notes": "Sanity: implied pure-water cp from (cp(1000+m M) - m phiCp)/1000 with M = 120.37 g/mol is constant within each T block to 1e-4 J/(g K) and rises with T as expected for water at 20 bar; density ratio rises with m. phiCp rises with T and with m (apart from replicate scatter at 0.5946 mol/kg, 348.15 K).",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1021_j100277a037, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical."
+}

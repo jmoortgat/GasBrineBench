@@ -1,0 +1,96 @@
+{
+ "table": "Table 1",
+ "page_journal": 2396,
+ "pdf_page": 2,
+ "title_as_printed": "Table 1. Measured and predicted solubilities and salting coefficients at 25 C and 550 psia*",
+ "footnotes_as_printed": {
+  "*": "Used m_o and k_m_i values from Stoessell and Byrne (1982b)",
+  "**": "Molality",
+  "***": "k_m"
+ },
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "550 psia (table title). Text: 'Gas pressure was read using a Heise CM 31542 gauge having a dead weight accuracy within 1 psia'; saturation at a single pressure of 550 psia and 25 C. Whether this is total pressure including water vapour or methane partial pressure is not stated.",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "psia",
+   "basis": "unspecified",
+   "constant": "550"
+  },
+  "value": {
+   "col": "CH4 Solubility Measured",
+   "unit": "mol_per_kg_water",
+   "what": "measured methane molality (footnote **: Molality); text: molar values converted to molal with pycnometer densities at 25 C, corrected for dissolved-gas volume; each value is the average of at least two measurements"
+  },
+  "value2": {
+   "col": "CH4 Solubility Predicted",
+   "unit": "mol_per_kg_water",
+   "model_prediction": true,
+   "what": "methane molality predicted by the authors with Eqn (4), m_s = m_o 10^(-sum k_m_i I_i), using m_o and single-salt k_m_i from Stoessell and Byrne (1982b); NOT a measurement"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "parsed NaCl mol/kg",
+    "unit": "mol/kg"
+   },
+   "KCl": {
+    "col": "parsed KCl mol/kg",
+    "unit": "mol/kg"
+   },
+   "CaCl2": {
+    "col": "parsed CaCl2 mol/kg",
+    "unit": "mol/kg"
+   },
+   "MgCl2": {
+    "col": "parsed MgCl2 mol/kg",
+    "unit": "mol/kg"
+   },
+   "Na2SO4": {
+    "col": "parsed Na2SO4 mol/kg",
+    "unit": "mol/kg"
+   },
+   "K2SO4": {
+    "col": "parsed K2SO4 mol/kg",
+    "unit": "mol/kg"
+   },
+   "MgSO4": {
+    "col": "parsed MgSO4 mol/kg",
+    "unit": "mol/kg"
+   },
+   "Na2CO3": {
+    "col": "parsed Na2CO3 mol/kg",
+    "unit": "mol/kg"
+   },
+   "K2CO3": {
+    "col": "parsed K2CO3 mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "K2SO4, MgSO4, Na2CO3, K2CO3 are outside the six-ion set (rows 6, 7, 8, 10, 11, 12, 13, 14 contain at least one of them). Solutions made up gravimetrically from analytical reagent grade chemicals; molality per salt as printed in parentheses in the first column."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Salting Coefficient Measured (k_m of the mixture, molal salting coefficient on an ionic-strength basis, log(m_o/m_s) = k_m I; derived_by_authors from the measured molality and m_o of Stoessell and Byrne 1982b)",
+  "Salting Coefficient Predicted (k_m from Eqn (2), model; not a measurement)"
+ ],
+ "conversion_needs": [
+  "psia to MPa x 0.00689476",
+  "The 'parsed <salt> mol/kg' columns are NOT printed as separate columns: they are the molalities printed in parentheses in the first column, split per salt by the extractor so that per_row composition can be read. The printed label column is kept unchanged.",
+  "Molality basis of the mixed salts (mol salt per kg water) is as printed; the text says solutions were made up gravimetrically."
+ ],
+ "notes": "One printed table, 14 data rows. Row 5 (four-salt mixture NaCl-KCl-MgCl2-CaCl2) is printed on two lines with the numbers on the first line; written as one CSV row. Subscripts flattened (CaCl2, Na2SO4). Precision of the measurements within 0.0005 molal (average 0.0003). The measured salting coefficients are recorded as derived_by_authors in extra_unmapped. Text: maximum deviation measured vs predicted is 0.0028 molal for NaCl-MgCl2 (row 3: 0.0264 vs 0.0236), consistent with the table.",
+ "csv": "table_1.csv"
+}

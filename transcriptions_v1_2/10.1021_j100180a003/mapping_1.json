@@ -1,0 +1,54 @@
+{
+ "table": "Table I",
+ "page_journal": 7,
+ "csv": "table_1.csv",
+ "title_as_printed": "Dew Points of Three Mixtures of Carbon Dioxide-Water",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "other",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the sample at the dew point, Heise Bourdon gauge on the water back-up system behind the piston (total pressure)",
+ "columns": {
+  "T": {
+   "col": "temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "press., MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "mole fraction carbon dioxide",
+   "unit": "mole_fraction_co2_overall",
+   "scale": 1,
+   "fill_down": true,
+   "what": "overall (filled) mole fraction CO2 of the binary mixture;  Printed only on the first row of each mixture (filled down)."
+  },
+  "uncertainty": {
+   "col": "press., MPa +-",
+   "unit": "MPa",
+   "what": "pressure uncertainty as printed"
+  },
+  "uncertainty_T": {
+   "col": "temp, C +-",
+   "unit": "C",
+   "what": "temperature uncertainty as printed"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary CO2-H2O, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "y_h2o = 1 - (mole fraction carbon dioxide); composition is the filling composition, known to about 1% (text).",
+  "Mole fraction is printed on the first row of each mixture only; fill down (rows 1-3 = 0.530, 5-8 = 0.625, 10 = 0.789)."
+ ],
+ "notes": "Two pressure uncertainties are printed as '+- 7' (rows 1 and 8: 114.4 +- 7 and 264.5 +- 7), confirmed in the 250 dpi image; other pressure uncertainties are 1.3-5.1 MPa, so these may be misprints for 0.7 or genuine 7 MPa; kept as printed. Synthetic method: transition two phases -> one phase observed visually on isochoric heating (and on cooling), sometimes confirmed by P-T discontinuity. The paper calls all points dew points; three mixtures 53.0, 62.5, 78.9 mol% CO2. 2026-10-11 coordinator: property set to other (phase-boundary point of a mixture of fixed overall composition, synthetic method, near the critical curve); not converted to a gas-phase water content, as for Gehrig 1986 and Blencoe 2001."
+}

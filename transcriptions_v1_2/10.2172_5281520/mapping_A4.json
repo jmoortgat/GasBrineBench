@@ -1,0 +1,83 @@
+{
+ "table": "Table A-4",
+ "page_pdf": [
+  100
+ ],
+ "page_report": [
+  92
+ ],
+ "title_as_printed": "Empirical data for the solubility of methane and ethane at 302oF in aqueous NaCl solutions at a salinity of 107 grams/liter.",
+ "footnotes_as_printed": "none",
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column header 'psi'; absolute or gauge not stated for this table (difference <0.15% at 10,000-22,500 psi). Total system pressure over the CH4+C2H6 gas and brine; gas-phase composition not reported.",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F",
+   "fill_down": true
+  },
+  "P": {
+   "col": "Pressure psi",
+   "unit": "psia",
+   "basis": "total",
+   "fill_down": true,
+   "note": "strip thousands comma",
+   "thousands_separator": ","
+  },
+  "value": {
+   "col": "CH4 SCF/Bbl",
+   "unit": "SCF_per_bbl_brine",
+   "gas": "ch4",
+   "reference_state": "SCF/Bbl: standard cubic feet of gas at 25 C (77 F) and 1 atm per barrel (42 US gal) of brine (report pages 15 and 19; Table A-2 footnote 'SCF at 25 C (77 F)')",
+   "scale": 1
+  },
+  "value2": {
+   "col": "",
+   "gas": "c2h6",
+   "unit": "SCF_per_bbl_brine",
+   "what": "C2H6 dissolved, not printed; = Total Gas x (% C2H6)/100"
+  },
+  "total_gas": {
+   "col": "Total Gas SCF/Bbl",
+   "unit": "SCF_per_bbl_brine",
+   "what": "CH4 + C2H6 dissolved"
+  },
+  "pct_c2h6": {
+   "col": "% C2H6",
+   "unit": "mole percent of the total dissolved gas",
+   "what": "by gas chromatography (text p.51-52: 'mole percent ethane of the dissolved gas in solution'; Figure 14 axis 'MOLE PERCENT ETHANE')"
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {
+   "NaCl": {
+    "col": "Salinity g/l",
+    "unit": "g/L",
+    "fill_down": true
+   }
+  },
+  "constant": {},
+  "other_species": "",
+  "density_rule": "nacl_25C_1atm"
+ },
+ "ditto_fill_down": "Ditto marks (\") written as blank cells = same as the row above; fill down from the nearest printed value. Only row 1 has all values printed; T changes to 302 at sample 7, salinity to 105 at sample 11 and back to 107 at sample 19 (the title says 107 g/L for all), P to 10,000 at sample 15 and 9,980 at sample 25.",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Sample number"
+ ],
+ "conversion_needs": [
+  "Value is gas volume per barrel of brine (SCF at 25 C, 1 atm per 42-US-gal barrel). The authors analysed samples as mol gas per kg of SOLUTION and converted to SCF/Bbl 'using appropriate conversion factors' (report p.13) that are NOT given; the inverse conversion needs the brine density at 25 C (or at the authors' unstated reference) and the molar volume of ideal gas at 25 C, 1 atm (24.465 L/mol; 1 SCF = 28.3168 L; 1 bbl = 158.987 L). Whether 'barrel of brine' means brine volume at 25 C or at another temperature is not stated.",
+  "For orientation only, the report's comparison tables give the factors the authors used to turn literature mole fractions into SCF/Bbl: mole fraction = SCF/Bbl x 0.0001312 for pure water (Tables 4 and 5), 0.0001317 for 1 m NaCl and 0.0001328 for 4 m NaCl (Table 5). Basis of that mole fraction (salt counted or not) is not stated.",
+  "Salinity is g NaCl per litre of solution; conversion to molality needs solution density (not given). Text (report p.33) equates 52, 107, 167 g/L with 5, 10, 15 weight percent NaCl.",
+  "Temperature in F -> K: (F - 32)/1.8 + 273.15. Pressure psi -> MPa x 0.00689476.",
+  "C2H6 dissolved per sample = Total Gas x %C2H6/100 (or Total - CH4)."
+ ],
+ "notes": "26 printed rows, 26 written; page 100 only (page 101 is Appendix B). Text p.51 says 26 measurements at 9 experimental conditions. Blank lines in the printed table (after samples 5, 10, 15, 20, 25) are layout only. Sample 6 is printed with two decimals (50.46, 48.19), kept. Sample 19: CH4 34.5 is inconsistent with Total 38.6 x (1 - 0.060) = 36.3 (all other rows agree within 0.1); kept as printed. Text (p.59) notes difficulty getting reproducible GC results, probably due to injection technique. 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists.",
+ "conversion_rule_note": "Added 2026-10-11 (coordinator, approved by J. Moortgat): composition.density_rule nacl_25C_1atm converts g/L NaCl and SCF per barrel with the NaCl(aq) density at 298.15 K, 1 atm (gbb12_core.NACL_VPHI_25C); rows get the flag density-assumed.",
+ "gas_mixture": true
+}

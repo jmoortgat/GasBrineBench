@@ -1,0 +1,27 @@
+{
+ "table": "TABLE 2", "page_journal": 455, "pdf_page": 9,
+ "title_as_printed": "Experimental dew points for {xH2O+(1-x)CH4} giving the dew point temperature Td, the dew point pressure pd, and the corresponding amount-of-substance density rho_d of the saturated vapour for various amount-of-substance fractions x of H2O. The uncertainties dTd in Td, dpd in pd and drho_d in rho_d are also listed",
+ "footnotes_as_printed": {},
+ "property": "y_h2o",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "pressure_note": "dew-point pressure pd of the mixture (absolute), from the intersection of polynomial fits of the isochoric (p,T) data on the two-phase and single-phase sides",
+ "columns": {
+  "T": {"col": "Td/K", "unit": "K"},
+  "P": {"col": "pd/MPa", "unit": "MPa", "basis": "saturation"},
+  "value": {"col": "x", "unit": "mole_fraction_water_in_gas_phase", "scale": 1,
+            "what": "overall H2O mole fraction of the mixture charged = water mole fraction of the saturated vapour at its dew point (Td, pd)"},
+  "uncertainty_T": {"col": "dTd/K", "unit": "K"},
+  "uncertainty_P": {"col": "dpd/MPa", "unit": "MPa"},
+  "value2": {"col": "rho_d/(mol.m-3)", "unit": "mol_per_m3", "property": "rho_gas_loaded",
+             "what": "amount-of-substance density of the saturated vapour at the dew point, from the break point of fits to (pressure, density) on both sides (two-phase side uses a pseudo-density, overall mass / volume)"},
+  "uncertainty2": {"col": "drho_d/(mol.m-3)", "unit": "mol_per_m3"}
+ },
+ "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": "binary H2O + CH4, no salt"},
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Dew points are located by the authors from the discontinuity in slope of the measured isochoric (p,T) curve: fifth-order polynomial on the two-phase side, fourth-order on the vapour side, intersection = (pd, Td); uncertainties from the statistical uncertainty of the fit parameters. Composition x is known from the charged masses (no separate uncertainty given). The authors compare Td with Peng-Robinson (dij 0.399): maximum deviation about 3.7 K at the lowest water content. Dew-point water content here is at 427-596 K and 7.4-22.5 MPa."
+}

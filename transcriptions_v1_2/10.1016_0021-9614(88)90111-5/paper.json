@@ -1,0 +1,57 @@
+{
+ "doi": "10.1016/0021-9614(88)90111-5",
+ "first_author": "Holmes",
+ "year": 1988,
+ "journal": "J. Chem. Thermodynamics 20, 1049-1060",
+ "source_key": "HOLMES(1988)",
+ "experimental_method": "Isopiestic comparison at 383-523 K of {(1-y)NaCl + yLiCl}(aq) solutions with NaCl(aq) as the isopiestic standard in titanium cups on a copper block in a sealed pressure vessel, molalities obtained by in situ electromagnetic-balance weighing.",
+ "uncertainties_stated": "molalities accurate to better than 0.2 per cent (reproducibility, calibration with standard masses, duplicates); last digit of most molalities not significant",
+ "quality_remarks": "Paper title: Isopiestic studies of aqueous solutions at elevated temperatures IX. {(1-y)NaCl+yLiCl}(aq) (Holmes and Mesmer). The text layer had six misread digits (see changes). A few dilute rows show a slightly non-monotonic dependence on y as printed.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   1050,
+   1051
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "model parameters (Pitzer parameters for LiCl(aq))"
+  },
+  {
+   "table": "Table 3",
+   "reason": "fitted mixing parameters"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_rows": 56,
+   "printed_half_blocks": 110,
+   "written_data_rows": 110,
+   "label_rows_additional": 6,
+   "note": "printed rows by temperature 10,8,9,10,10,9; the right block has one row fewer at 383.19 K (9 vs 10), at 413.22 K 8 vs 8, 523.17 K (8 vs 9)"
+  }
+ },
+ "changes_after_image_check": [
+  "T 473.18 printed row 5 col 9: 6.1212 -> 6.7212",
+  "T 473.18 printed row 7 col 6: 3.1777 -> 3.7777",
+  "T 523.17 printed row 4 col 1: 1.5720 -> 7.5720",
+  "T 523.17 printed row 4 col 9: 1.0674 -> 7.0674",
+  "T 523.17 printed row 7 col 7: 1.1526 -> 1.7526",
+  "T 523.17 printed row 9 col 4: 2.7941 -> 2.7947"
+ ],
+ "extraction_notes": "Text layer parsed by script, then every cell compared with 300 dpi crops of the page images. Stacked layout described in mapping_1.json. Temperature scale not stated; pressure not stated. Mixture compositions are y (mole fraction LiCl in the salt) in the column headers.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "six cells needed correction after the image check (text layer unreliable), so SPEC convention 14 requires a second pass",
+ "changes_after_pass2": [
+  "table 1 rows 50, 82, 84 (file lines): 4.0715->4.0775, 5.3517->5.3577, 4.7193->4.7793; the OCR text layer and pass 1 read 7 as 1, pass 2 and a 600 dpi crop agree on the corrected values"
+ ],
+ "pass2_diff": "Table 1: 110 rows; pass 2 disagreed on 3 cells (4.0715/4.0775, 5.3517/5.3577, 4.7193/4.7793); arbitrated with a 600 dpi crop: pass 2 was right in all three, pass 1 corrected."
+}

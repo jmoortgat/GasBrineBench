@@ -78,3 +78,24 @@ if __name__ == "__main__":
         if name.startswith("test_"):
             fn()
             print("ok", name)
+
+
+def test_nacl_density_25C():
+    close(C.nacl_density_25C_kgm3(0.0), 997.05, 1e-4)
+    close(C.nacl_density_25C_kgm3(4.30838), 1146.29, 2e-4)    # SURDO(1982) in rho.csv, 298.15 K
+    close(C.nacl_density_25C_kgm3(1.0), 1036.13, 2e-4)        # ROMANKIW(1983)
+    for m in (0.5, 2.0, 5.5):                                  # g/L of solution -> molality round trip
+        rho = C.nacl_density_25C_kgm3(m)
+        c = m * C.SALT["NaCl"][0] * rho / (1000.0 + m * C.SALT["NaCl"][0])
+        close(C.nacl_molality_from_g_per_L_25C(c), m, 1e-9)
+    with pytest.raises(ValueError):
+        C.nacl_density_25C_kgm3(7.0)
+
+
+def test_scf_per_barrel_matches_blount_factors():
+    # Blount et al. (1982, Tables 4-5): mole fraction per SCF/Bbl, with NaCl counted as one species in the mole fraction
+    n_scf = 101325.0 * 28.316846592e-3 / (C.R_GAS * 298.15)
+    for m, factor in ((0.0, 0.0001312), (1.0, 0.0001317), (4.0, 0.0001328)):
+        water_kg = 158.987294928 * C.nacl_density_25C_kgm3(m) / 1000.0 / (1.0 + m * C.SALT["NaCl"][0] / 1000.0)
+        mol = n_scf / water_kg
+        close(mol / (mol + 1000.0 / C.M_W + m), factor, 4e-3)

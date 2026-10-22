@@ -6,16 +6,16 @@ toc: false
 
 GasBrineBench is a curated compilation of published experimental data for
 seven gases (CO~2~, CH~4~, H~2~, N~2~, O~2~, C~2~H~6~ and C~3~H~8~) in water and in brines of
-Na^+^, K^+^, Ca^2+^, Mg^2+^, Cl^−^ and SO~4~^2−^, from 238 to 773 K and 0.1 to 3,500 bar.
+Na^+^, K^+^, Ca^2+^, Mg^2+^, Cl^−^ and SO~4~^2−^, from 233 to 773 K and 0.1 to 3,500 bar.
 
-* **26,815 datapoints from 249 published works** in eleven property families: gas
+* **32,355 datapoints from 274 published works** in eleven property families: gas
   solubility, water content of the gas phase, a CO~2~ + CH~4~ + water family, brine
   density, density of CO~2~-loaded brine, viscosity, apparent molar heat capacity,
   osmotic coefficient, vapor-pressure ratio, enthalpy of dissolution and permittivity.
 * **One format.** Every datapoint is converted to one set of units and to molalities of
   six ions per kilogram of water, and carries its source, a quality code, flags for every
   convention or caution, and the result of a comparison with its paper.
-* **A supplementary tier** of 5,174 verified measurements that cannot be converted
+* **A supplementary tier** of 7,803 verified measurements that cannot be converted
   without a model, kept in the units of the paper.
 
 ::: {.callout-tip icon=false}

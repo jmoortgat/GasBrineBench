@@ -1,0 +1,55 @@
+{
+ "table": "Table II",
+ "page_journal": 500,
+ "title_as_printed": "Relative Viscosity and emfs of Concentration Cells for Concentrated Aqueous Magnesium Chloride at 298.15 K (printed 298.15 deg K)",
+ "footnotes_as_printed": {
+  "a": "Cell with transference.",
+  "b": "Cell without transference."
+ },
+ "property": "visc",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (presumably atmospheric)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "constant": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "eta/eta_0",
+   "unit": "mPa_s",
+   "what": "relative viscosity eta/eta_0 times the authors own water viscosity 0.8903 cP (= mPa s) at 298.15 K (p.499) gives absolute viscosity",
+   "scale": 0.8903
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "m (mole-kg^-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "water (doubly distilled)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "eta/eta_0 (calcd.) from the authors' least-squares fit, derived",
+  "E_t (volt) emf of concentration cell with transference (reference 0.4571 m)",
+  "E (volt) emf of cell without transference, calculated from literature activity coefficients"
+ ],
+ "conversion_needs": [
+  "relative viscosity times 0.8903 cP (water viscosity stated in the text) for absolute viscosity"
+ ],
+ "notes": "Row m = 0.4571 has no viscosity (dash) and is the reference solution of the emf cells (E = 0.0); row 0.4623 has no emf. Dashes written empty."
+}

@@ -1,0 +1,47 @@
+{
+ "doi": "10.1002/bbpc.19860900606",
+ "first_author": "Gehrig, M.",
+ "authors": "M. Gehrig, H. Lentz, E. U. Franck",
+ "year": 1986,
+ "journal": "Ber. Bunsenges. Phys. Chem. 90, 525-533",
+ "title": "The System Water - Carbon Dioxide - Sodium Chloride to 773 K and 300 MPa",
+ "source_key": "GEHRIG(1986)",
+ "experimental_method": "Synthetic method in a variable-volume autoclave with sapphire window: known amounts of NaCl solution (weighed, known concentration) and CO2 (weighed storage cylinder) filled at room temperature; temperature raised at constant piston position and the p-T curve recorded; the break point of the isochoric p-T curve (two-phase to one-phase transition), usually confirmed visually, gives a point on the phase boundary surface (isopleth) together with the molar volume.",
+ "uncertainties_stated": "Pressure better than 0.2 MPa; temperature 0.5 K near 373 K rising to 2 K at 773 K; sample composition 0.2 mol%; molar volume about 0.4% (within 1% at higher T and P below 15 MPa); phase separation temperatures at and above 673 K up to +-5 K in the critical ranges.",
+ "quality_remarks": "Composition is the overall filling composition, not an analysed phase composition. Sub-table 20 composition sums to 99.80 mol% (14.61 + 0.29 + 84.90) as printed. Several sub-tables list rows out of monotonic order (kept as printed). 'Weight% relative to water' in the title is numerically consistent with mass fraction of NaCl in the CO2-free salt solution (6 g NaCl per 100 g solution), not g NaCl per 100 g water. Authors report agreement with Takenouchi and Kennedy near 6.7 mol% CO2, and a later repeat of the 4 mol% isopleth by Uematsu confirmed the results.",
+ "how_extracted": "image_read (pdftotext -layout scrambled the three side-by-side blocks and misread digits; every cell typed from the 250 dpi page image, zoomed 2x)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   527
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 2 (journal p. 531, PDF p. 7): molar volumes in the homogeneous region at round T, P and mol% CO2; the text states 'Table 2 gives interpolated results for round values of temperature and carbon dioxide concentrations' (interpolated by the authors, values with asterisk are overall two-phase volumes) - derived, not extracted.",
+  "PDF pages 1 and 9: end of a preceding article (Becker et al., oxirane excess enthalpies) and start of the following article (Natarajan et al., cyanogen decomposition); not part of this paper."
+ ],
+ "row_counts": {
+  "Table 1": {
+   "printed": 114,
+   "written": 114,
+   "label_rows_written": 24
+  }
+ },
+ "changes_after_image_check": [
+  "Table 1 sub-table 1 (97.90 mol% H2O) row 6: T '41 5' -> 415",
+  "Table 1 sub-table 8 (88.57) row 5: P '167.O' -> 167.0",
+  "Table 1 sub-table 11 (70.15) row 2: V '61.O' -> 61.0; row 3: P '18.7' -> 78.7; row 4: T '115' -> 715; label 'NkI' -> NaCl",
+  "Table 1 sub-table 7 (89.29) row 1: P '11.7' -> 71.7",
+  "Table 1 sub-table 6 (91.46) row 8: P '211.7' -> 271.7",
+  "Table 1 sub-table 15 (61.60) row 2: T '618' -> 678",
+  "Table 1 sub-table 12 (65.91) row 4: P 91.0 misplaced in text layer, placed in its row 50.7 697 91.0 from the image"
+ ],
+ "extraction_notes": "PDF starts with the last page of another article (journal p. 525 left column) and ends with the start of Natarajan et al.; Table 1 on journal p. 527 belongs to Gehrig, Lentz and Franck (running head and section IV text refer to it). Three printed column blocks stacked left, middle, right (sub-tables 1-24 in that order), one label row per sub-table holding the printed H2O/NaCl/CO2 mol%. Sanity checks: every sub-table composition sums to 100.00 mol% except sub-table 20 (99.80); NaCl/H2O mole ratio constant within each salinity group (0.0195-0.0199 for '6 weight%', 0.0342-0.0343 for 10 weight%, 0.0771 for 20 weight%); T 408-793 K and P 3.0-281.2 MPa, within the stated 773 K / 300 MPa except one 783 K row pair and the 793 K row (printed as such); V decreases as P increases along most isopleths.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer scrambled the side-by-side blocks and had digit errors (7 corrections); whole table re-read from the image.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1002_bbpc.19860900606, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

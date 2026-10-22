@@ -1,0 +1,78 @@
+{
+ "footnotes_as_printed": "none",
+ "property": "solubility_x",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "mole fraction",
+ "table": "Table 2",
+ "page_journal": 618,
+ "title_as_printed": "Solubility of nitrogen in one-molal NaCl solution",
+ "pressure_note": "'The pressures given are total pressures, since no experimental data are available in the literature for determining the vapor pressure of water at total pressures up to 600 atm.' Unit atm.",
+ "gas_basis": "not_stated",
+ "gas_basis_evidence": "header 'Mole fraction of nitrogen (x 10^4)'; whether salt-free or on a total-species basis is not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure (atm)",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Mole fraction of nitrogen (x 10^4)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "1",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "'one-molal' NaCl (text: weighed NaCl in weighed water)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7
+   ],
+   "reason": "temperature label row of each side-by-side block"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "51.5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "102.5",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "atm to MPa x 0.101325"
+ ],
+ "notes": "Two side-by-side blocks (51.5 C left, 102.5 C right) stacked left first. Temperatures from the block headings. The pressures 100-600 atm are nominal in the 51.5 C block and 101-604 in the 102.5 C block."
+}

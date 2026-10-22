@@ -1,0 +1,175 @@
+{
+ "table": "Table I",
+ "page_journal": 470,
+ "title_as_printed": "Relative Densities (Delta rho = rho - rho0, g cm-3) of the Mixtures at 25 C and I = 1.5 m",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (paper gives no pressure; Picker vibrating-flow densimeter at 25 C)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "10^3 Delta rho",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "rho - rho0, difference from pure water density rho0 (reference: density of pure water at 25 C; paper states Delta rho = rho - rho0)"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "y3": {
+    "col": "y3",
+    "unit": "ionic_strength_fraction_of_salt_3"
+   }
+  },
+  "constant": {
+   "I": {
+    "value": "1.5",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "none beyond the salts named in the label row: binary or two-salt mixtures of NaCl, KCl, Na2SO4, K2SO4 at total ionic strength I = 1.5 m; salt pair (2)-(3) in the label row; y3 = w3 m3/(w2 m2 + w3 m3) with w = 1 for 1-1 and 3 for 2-1 electrolytes; y3 = 0 is pure salt 2 and y3 = 1.0 is pure salt 3",
+  "ionic_strength_rule": {
+   "I": "I",
+   "y": "y3",
+   "salt_y": "salt_y",
+   "salt_other": "salt_other"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    20,
+    32,
+    43,
+    55
+   ],
+   "reason": "label rows: salt pair printed in the mixture column (first data row printed beside the label, written as its own label row)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "K2SO4"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "K2SO4"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "K2SO4"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "composition.constant.salt_other",
+     "value": "KCl"
+    },
+    {
+     "path": "composition.constant.salt_y",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.I",
+     "value": "1.5",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "ionic strength (molality scale) and y3 to molalities of the two salts: m_i = y_i I / w_i style conversion; do not convert here",
+  "Delta rho is relative to pure water; absolute density needs rho0(25 C)"
+ ],
+ "notes": "Note: pairs include 'pure' end points at y3 = 0 and 1.0 which are binary salt solutions at I = 1.5 m (KCl 1.5 m, NaCl 1.5 m, K2SO4 0.5 m, Na2SO4 0.5 m). Values for the same pure solution recur across blocks and differ slightly (e.g. NaCl 57.831, 57.820, 57.428)."
+}

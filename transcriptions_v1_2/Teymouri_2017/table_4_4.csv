@@ -1,0 +1,29 @@
+P-bar,y_w - ppm
+T = 25 C; Hydrate Dissociation Pressure - bar: P_Dissociation >2000,
+35.50,1100
+57.56,1107
+AAD % CPA 6.3; PC-SAFT 8.46,
+T = 15 C; Hydrate Dissociation Pressure - bar: 1300.326,
+38.60,716
+72.74,1801
+111.91,2164
+140.67,2233
+169.98,2274
+238.74,2350
+323.08,2550
+AAD % CPA 14.47; PC-SAFT 25.22,
+T = 9.8 C; Hydrate Dissociation Pressure - bar: 544.98,
+18.25,865
+73.43,1790
+103.70,1886
+201.70,2012
+310.25,2095
+AAD % CPA 11.61; PC-SAFT 22.13,
+T = 5 C; Hydrate Dissociation Pressure - bar: 72.95,
+18.25,580
+27.63,434
+30.25,428
+AAD % CPA 6.99; PC-SAFT 14.71,
+T = 0 C; Hydrate Dissociation Pressure - bar: 20.89,
+17.29,450
+AAD % CPA 9.76; PC-SAFT 15.46,

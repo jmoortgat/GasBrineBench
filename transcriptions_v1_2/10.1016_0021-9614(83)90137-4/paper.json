@@ -1,0 +1,55 @@
+{
+ "doi": "10.1016/0021-9614(83)90137-4",
+ "first_author": "Holmes",
+ "year": 1983,
+ "journal": "J. Chem. Thermodynamics 15, 709-719",
+ "source_key": "HOLMES(1983)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned PDF with an OCR text layer (Acrobat Capture); the text layer drops every printed dash, so the column position of 15 cells had to be restored from the page image. The numbers themselves matched the image.",
+ "title": "Isopiestic studies of aqueous solutions at elevated temperatures VII. MgSO4 and NiSO4",
+ "authors": "H. F. Holmes, R. E. Mesmer",
+ "experimental_method": "High-temperature isopiestic method: solutions in titanium cups equilibrate with a common vapour phase in a sealed pressure vessel; molalities from in-situ weighing with an electromagnetic balance; NaCl(aq) reference; 383.14 K and 413.22 K.",
+ "uncertainties_stated": "Isopiestic molalities accurate to 0.25 per cent or better; for molalities above 1.0 mol/kg the last digit is not significant; masses to +/-0.2 mg.",
+ "quality_remarks": "Irreversible solubility effects (MgSO4 and NiSO4 precipitating) prevented measurements above 413.22 K; at 413.22 K MgSO4 was in solution only at the two highest water activities (2 MgSO4 points). At 383.14 K three loadings agreed well. Rows with a dash in the MgSO4 column are kept but carry no MgSO4 datum. Temperature scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   711
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2",
+   "reason": "ion-interaction (Pitzer) parameters, fitted"
+  },
+  {
+   "table": "Table 3",
+   "reason": "smoothed osmotic coefficients at 383.15 K from equation (2) and table 2 (model-generated)"
+  },
+  {
+   "table": "Table 4",
+   "reason": "temperature-independent constants of equation (10), fitted"
+  },
+  {
+   "table": "Table 5",
+   "reason": "calculated activity coefficients of MgSO4(aq) (model-generated; 298.15 K column from Rard and Miller literature)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 47,
+   "written": 47,
+   "note": "data rows (38 at 383.14 K, 9 at 413.22 K) plus 2 temperature label rows; 36 rows carry a MgSO4 value (34 at 383.14 K, 2 at 413.22 K), 11 rows have MgSO4 printed as a dash"
+  }
+ },
+ "changes_after_image_check": [
+  "383.14 K and 413.22 K blocks: text layer omits all 15 printed em dashes (MgSO4 or NiSO4 not in solution); cells restored as '-' in the correct column from the image (383.14 K: 4 MgSO4 dashes; 413.22 K: 9 MgSO4 dashes and 2 NiSO4 dashes)"
+ ],
+ "extraction_notes": "Rows typed from the 250 dpi page image and checked token by token against the pdftotext -layout text layer (all numbers equal). Side-by-side groups stacked per block left, middle, right. Sanity: within each row m(MgSO4) > m(NaCl), consistent with a 2-2 salt with phi well below NaCl (ratio m_NaCl/m_MgSO4 from 0.47 at low m to 0.89 near 4.5 mol/kg, increasing with m as expected from phi rising). Replicate equilibria (e.g. 1.4902/2.6647 and 1.4874/2.6647) kept.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_0021-9614(83)90137-4, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical."
+}

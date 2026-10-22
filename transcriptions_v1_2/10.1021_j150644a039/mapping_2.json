@@ -1,0 +1,204 @@
+{
+ "table": "Table III",
+ "page_journal": 5506,
+ "title_as_printed": "Experimental Mixture Data (NaCl-CaCl2 mixtures at constant ionic strength I = 5, 2, 1)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "see group_rows"
+  },
+  "value": {
+   "col": "10^3 (d-d0), g cm-3",
+   "unit": "g_per_cm3",
+   "scale": 0.001,
+   "what": "density difference d - d0, reference not defined in table (presumably pure water at same T)"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "y_b": {
+    "col": "y_b",
+    "unit": "fraction"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl + CaCl2 mixture at constant ionic strength I (1, 2 or 5, set by label rows; unit presumably mol/kg, matches the single-salt molalities of Table I); y_b is not defined in the paper's text; y_b = 0 is pure NaCl and 1 is pure CaCl2, and densities match Table I at the corresponding molalities, so y_b is presumably the ionic-strength fraction of CaCl2.",
+  "ionic_strength_rule": {
+   "I": "I",
+   "y": "y_b",
+   "salt_y": "CaCl2",
+   "salt_other": "NaCl"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56
+   ],
+   "reason": "T/I block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "5",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "2",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "1",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "5",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "2",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "1",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "5",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "2",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "composition.constant.I",
+     "value": "1",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "-10^4 phik*, cm3 mol-1 bar-1 (mean apparent molal compressibility, calculated)",
+  "U-U0, cm s-1 (sound-velocity difference from pure water, measured; not a database property)",
+  "phiV, cm3 mol-1 (apparent molal volume, calculated by the authors)"
+ ],
+ "conversion_needs": [
+  "ionic strength (mol/kg presumed) and y_b to salt molalities: NaCl m = I(1-y_b), CaCl2 m = I*y_b/3 if y_b is the ionic-strength fraction"
+ ],
+ "notes": "Label rows: first block of each temperature reads 'T = x C, I = 5', later blocks 'I = 2' and 'I = 1'.",
+ "quality_remarks": "y_b is not defined in the paper text; it is read as the ionic-strength fraction of CaCl2 (NaCl m = I(1-y), CaCl2 m = I*y/3, I in mol/kg water). This is data-supported (Young's-rule densities from Table I reproduce the interior rows to <0.5%) but not quoted from the paper. Reference density d0 is not stated (pure water at the same T, confirmed by recomputing phiV). No pressure is printed."
+}

@@ -1,0 +1,61 @@
+{
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column headers in psia. Pressure in the saturation chamber read via port B on a Heise CM 32507 gauge (dead-weight accuracy within 1 psia); equilibrium pressures maintained within 1 psia of the reported gauge values, estimated accuracy within 2 psia. Whether total pressure (methane + water vapour) or methane partial pressure is not stated.",
+ "layout": "wide: one row per solution/slurry, one CH4-molality column per pressure; one mapping per printed pressure column over the same CSV (key csv)",
+ "table": "Table 3",
+ "page_journal": 70,
+ "pdf_page": 4,
+ "title_as_printed": "Table 3. Measured 25 C CH4 solubilities in Na-saturated SWy-1 dispersed into distilled water.",
+ "footnotes_as_printed": {
+  "1": "The pressure drop on flashing was not sufficient to release bubbles from the gel due to its high viscosity. The increasing viscosity limited the maximum clay content to 2%."
+ },
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "psia",
+   "basis": "unspecified",
+   "constant": "550"
+  },
+  "value": {
+   "col": "Molal solubilities 550 psia",
+   "unit": "mol_per_kg_water",
+   "what": "methane molality relative to the bulk water of the slurry (text: bulk water includes surface-hydrated water on external particle surfaces, not interlayer water; clay wt. % includes the 110 C clay mass plus estimated interlayer water)"
+  },
+  "slurry_solids": {
+   "col": "Clay concentration (wt. %)",
+   "unit": "wt_percent",
+   "what": "solids content of the slurry (clay or sediment), not a dissolved salt"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Na-saturated montmorillonite SWy-1 (Wyoming bentonite, gel) slurry in distilled water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "row_held": [
+  {
+   "rows": [
+    0,
+    1
+   ],
+   "reason": "clay or sediment slurry, not a homogeneous water/brine solution (coordinator instruction: keep in table, hold; builder decides)"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psia to MPa x 0.00689476"
+ ],
+ "notes": "Mapping for the 550 psia column. Row 1 (2.01 wt.%) has no 350 psia value: the cell prints only footnote mark 1 (bubbles not released from the gel); written blank with note.",
+ "csv": "table_3.csv"
+}

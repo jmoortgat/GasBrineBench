@@ -1,0 +1,46 @@
+{
+ "doi": "10.1021/je00035a016",
+ "first_author": "Isono, Toshiaki",
+ "year": 1984,
+ "journal": "Journal of Chemical and Engineering Data 29, 45-52",
+ "title": "Density, viscosity, and electrolytic conductivity of concentrated aqueous electrolyte solutions at several temperatures. Alkaline-earth chlorides, LaCl3, Na2SO4, NaNO3, NaBr, KNO3, KBr, and Cd(NO3)2",
+ "source_key": "ISONO(1984)",
+ "experimental_method": "Density with Weld-type 25 cm3 densitometers calibrated on pure water, viscosity with two Ubbelohde capillary viscometers (kinetic-energy corrected, relative to water and secondary standard solutions), conductivity with a four-electrode cell, in a bath controlled to +-0.001 C; molal-basis solutions from 0.05 mol/kg to near saturation, 15-55 C.",
+ "uncertainties_stated": "density duplicates agree to < 0.01 kg m-3; flow times reproducible within 0.03 s; bath +-0.01 C at each temperature; no overall uncertainty stated",
+ "quality_remarks": "The chunk metadata title mentions NaCl but the paper has no NaCl table. Printed SrCl2 0.100 m density at 15 C has a smudged digit in the scan (text layer 1013.19, OCR 1019.19); kept 1013.19 because the neighbouring rows (+7.05 from 0.05 m, same step as other temperatures) require it. PDF begins with the end of another article (CaSO4/Na2SO4/MgCl2 NRTL paper on p. 45) and ends with other articles; Table II continues across journal pages 46-50.",
+ "how_extracted": "pdf_text_layer (pdftotext -bbox, columns assigned by x position)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "journal_pages": [
+   45,
+   46,
+   47,
+   48,
+   49,
+   50
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II electrolytic conductivity sub-blocks (not in scope)",
+  "Tables III-V (thermal expansivity, thermal coefficients of viscosity and conductivity at 25 C: derived)"
+ ],
+ "row_counts": {
+  "Table 1": "printed 9, written 9",
+  "Table 2 density": "written 645 data rows (7 with empty value) plus 11 label rows",
+  "Table 2 viscosity": "written 645 data rows (7 with empty value) plus 11 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "All pages 1-6 read as images; text layer values consistent with images; independent tesseract OCR at 300 dpi compared token-wise on pages 2-6 and every difference (OCR digit errors) inspected, none a text-layer error except the ambiguous SrCl2 glyph above. Row counts per salt equal for density, viscosity and conductivity. Sanity: density increases with m and decreases with T; viscosity minima for KNO3/KBr solutions as expected.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched the images (one smudged digit kept per text layer)",
+ "pass2_diff": "Tables I and II: all density and viscosity values in pass 1 occur in pass 2 (pass 2 also read conductivity, not extracted by pass 1); one smudged SrCl2 rho cell at 0.100 m, 15 C reads 101?.19 in pass 2 and 1013.19 in pass 1; kept as 1013.19 (neighbouring values), flagged."
+}

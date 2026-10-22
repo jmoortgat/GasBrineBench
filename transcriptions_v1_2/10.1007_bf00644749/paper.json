@@ -1,0 +1,60 @@
+{
+ "doi": "10.1007/BF00644749",
+ "first_author": "Kumar",
+ "year": 1982,
+ "journal": "J. Solution Chem. 11 (12), 857-870",
+ "source_key": "KUMAR(1982)",
+ "title": "Thermodynamics of Concentrated Electrolyte Mixtures. II. Densities and Compressibilities of Aqueous NaCl-CaCl2 at 25 C",
+ "authors": "Anil Kumar, Gordon Atkinson, Robert D. Howell",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed corrections after the image check (decimal commas read as full stops, a dropped decimal point, and glyph misreads); pass-1 rule counts any correction",
+ "experimental_method": "Densities by Sodev 02D vibrating-tube densimeter with a dilution flow technique and relative sound velocities by a Nusonics 6100 sing-around velocimeter, both at 25 C in a bath controlled to 0.001 C; solutions made by weight from dried NaCl and purified CaCl2.2H2O stock analysed by EDTA and AgNO3 titration.",
+ "uncertainties_stated": "Density agrees with Desnoyers to +-8 ppm; uncertainty in relative density about 3 ppm; relative sound velocities precise to 6 ppm; bath +-0.001 C. Sigma of the Pitzer fit given per block.",
+ "quality_remarks": "Compressibility columns are adiabatic apparent molar compressibilities calculated by the authors (not extracted). CaCl2 data described by the authors as less extensive and of lower precision than the NaCl data. Temperature scale and pressure not stated. Printed sound-velocity values at I=0.5,y=0.8504 and I=1,y=0.9510 look out of sequence; kept as printed. The PDF text layer is OCR with many glyph errors.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   9,
+   10,
+   11
+  ],
+  "journal_pages": [
+   862,
+   865,
+   866,
+   867
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table IIa",
+   "reason": "Pitzer coefficients for apparent molar volumes (fitted model parameters)"
+  },
+  {
+   "table": "Table IIb",
+   "reason": "Pitzer coefficients for apparent molar compressibility (fitted model parameters)"
+  }
+ ],
+ "row_counts": {
+  "Table I": {
+   "printed": 19,
+   "written": 19
+  },
+  "Table III": {
+   "printed": "85 data rows + 9 label rows + 8 sigma rows",
+   "written": "102 CSV rows = 85 data + 9 label + 8 sigma"
+  }
+ },
+ "changes_after_image_check": [
+  "Table I m 5.0004 and 3.01 rows: decimal commas -> full stops",
+  "Table III: 16 further decimal-comma cells -> full stops (listed in extraction_notes)",
+  "Table III I=0.5 y=0.1512: I9.44 -> 19.44",
+  "Table III I=0.5 y=0.6512: 0.65t2 -> 0.6512",
+  "Table III I=2 y=0.1036: 7359 -> 73.59"
+ ],
+ "extraction_notes": "Text layer was OCR-quality. Script-parsed, then repaired: decimal commas to full stops (Table I 5,0004 -> 5.0004, 3,01 -> 3.01; Table III 0,7510 -> 0.7510, 17,68 -> 17.68, 0,2510 -> 0.2510, 43,15 -> 43.15, 19,66 -> 19.66, 77,04 -> 77.04, 0,0000 -> 0.0000, 0,0519 -> 0.0519, 19,36 -> 19.36, 19,75 -> 19.75, 45,93 -> 45.93, 54,41 -> 54.41, 0,7573 -> 0.7573, 62,30 -> 62.30, 32,14 -> 32.14, 39,05 -> 39.05), glyph misreads (I9.44 -> 19.44, 0.65t2 -> 0.6512), dropped decimal point (7359 -> 73.59 at I=2 y=0.1036). All values then compared with the page images.",
+ "pass2_diff": "Tables I and III: 112 rows, 536/536 numbers identical; sound-velocity values at I=0.5 (1926) and I=20 (33620) are out of trend but read identically by both passes."
+}

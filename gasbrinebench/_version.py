@@ -7,6 +7,9 @@ read. The string is therefore kept identical to the ``version:`` field of
 ``CITATION.cff`` and to the heading of the current ``CHANGELOG.md`` section,
 and ``tests/test_version.py`` fails if the three ever drift apart.
 
+``1.2.2`` adds 5,540 datapoints (CH4 in brines, the CO2 + CH4 + water family, brine heat capacity, room-pressure brine
+density and viscosity), the flag ``density-assumed``, all audited row by row against the papers; see ``CHANGELOG.md``.
+
 ``1.2.1`` adds 146 papers (26,815 rows in 11 families), an optional ``flags``
 column and a supplementary tier; see ``CHANGELOG.md``. Some v1.1.1 rows were corrected after checking them against their papers; see ``CHANGELOG.md``.
 
@@ -24,4 +27,4 @@ added to ``CITATION.cff`` when it exists; it is not a precondition for the
 tag, and the tag is what a reader needs in order to name their snapshot.
 """
 
-__version__ = "1.2.1"
+__version__ = "1.2.2"

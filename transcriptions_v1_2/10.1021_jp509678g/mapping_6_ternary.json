@@ -1,0 +1,125 @@
+{
+ "table": "Table 6",
+ "csv": "table_6.csv",
+ "page_journal": 14470,
+ "pdf_page": 10,
+ "title_as_printed": "Experimental VLE Data for [CH4 (1) + CO2 (2) + H2O (3)] at Temperatures T and Pressures p, Where xi Denotes the Mole Fraction of Component i and u(xi) Denotes the Standard Uncertainty of xi",
+ "footnotes_as_printed": {
+  "a": "The phases are labeled as II and III for the CO2-rich and water-rich phases respectively"
+ },
+ "temperature_scale": "ITS-90 (PRT calibrated on ITS-90, stated in section 2.3)",
+ "pressure_note": "absolute cell pressure from a calibrated transducer (standard uncertainty 5 kPa); total pressure of the coexisting phases; one pressure per row for both phases",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.15"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.15"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.15"
+    }
+   ]
+  }
+ ],
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12
+   ],
+   "reason": "isotherm label rows"
+  }
+ ],
+ "property": "ternary_state",
+ "gas": "co2",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_label_rows": true
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "phase III x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "co2"
+  },
+  "uncertainty": {
+   "col": "phase III u(x2)",
+   "unit": "mole_fraction"
+  },
+  "value2": {
+   "col": "phase III x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "ch4"
+  },
+  "uncertainty2": {
+   "col": "phase III u(x1)",
+   "unit": "mole_fraction"
+  },
+  "y_co2_gas": {
+   "col": "phase II x2"
+  },
+  "y_ch4_gas": {
+   "col": "phase II x1"
+  },
+  "y_h2o_gas": {
+   "col": "phase II x3"
+  },
+  "u_y_h2o_gas": {
+   "col": "phase II u(x3)"
+  }
+ },
+ "extra_unmapped": [
+  "phase III x3, u(x3)",
+  "phase II x1, x2 and uncertainties (gas composition; dry CO2 fraction = x2/(x1+x2))"
+ ],
+ "conversion_needs": [],
+ "notes": "Two-phase VLE (no CO2-rich liquid: all isotherms above the CO2 critical temperature). Phase II = CO2-rich gas/supercritical phase (CO2:CH4 near 1:1 by design, text section 2.4), phase III = water-rich liquid. Side-by-side column groups phase II | phase III, written as one wide row per state point because both groups share the p column. Isotherms 323.15, 373.15, 423.15 K, 5 + 5 + 6 rows. This mapping: aqueous solubilities. 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists. 2026-10-11 coordinator: ternary mapping (property ternary_state, converter conv_ternary) replacing the per-phase mappings, which are kept as *.json.txt. Al Ghafri numbering: x1 CH4, x2 CO2, x3 H2O. Two-phase VLE: phase II is the CO2+CH4-rich gas.",
+ "row_held": [
+  {
+   "rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    13,
+    15,
+    16,
+    17,
+    18
+   ],
+   "reason": "already in GasBrineBench v1.1.1 ternary family as ALGHAFRI(2014) (values and y_co2_dry matched exactly on 2026-10-11)"
+  }
+ ]
+}

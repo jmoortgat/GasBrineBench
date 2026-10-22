@@ -1,0 +1,56 @@
+{
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (ordinary pressure; pycnometer and dilatometer work at 25 C)",
+ "property": "other",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "concentration column headed 'c/mole l.-1' (mole per litre)",
+ "gas_basis": "not_applicable",
+ "table": "Table 2",
+ "page_journal": 2351,
+ "title_as_printed": "Apparent molar volumes of dilute electrolyte solutions",
+ "footnotes_as_printed": "not captured (none on the table)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "phi_V/ml mole-1",
+   "unit": "cm3_per_mol",
+   "what": "apparent molar volume of the electrolyte phi_V, calculated by the author from the dilatometric volume change",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "-dV/ml",
+   "unit": "cm3",
+   "what": "measured volume contraction on mixing the capsule solution (solution of Table 1, number given in first column) with water in the magnetically operated dilatometer; sign printed as -dV"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "salt_from_column": {
+    "col": "solution in capsule",
+    "parse": "text after the comma gives the salt formula; the number before the comma is the Table 1 stock solution used in the capsule",
+    "conc": {
+     "col": "c_final/mole l.-1",
+     "unit": "mol/L"
+    }
+   }
+  },
+  "constant": {},
+  "other_species": "in-scope salts: Na2SO4, MgCl2, CaCl2; out of the six-ion set: HCl, KNO3, K2SO4, BaCl2, LaCl3 (rows kept). c_final is the final concentration after dilution in the dilatometer"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "mole solute (amount of salt in the capsule, a sample size)"
+ ],
+ "conversion_needs": [
+  "molarity to molality needs the solution density",
+  "mole solute not needed for the datum"
+ ],
+ "notes": "Image read for all 35 rows; image and text layer agree except for OCR slips in spacing/decimal characters. Repeated stock-solution numbers refer to separate dilutions. Table 3 (limiting values from extrapolation) is derived and not extracted."
+}

@@ -1,0 +1,118 @@
+{
+ "table": "Table 1",
+ "page_journal": 338,
+ "title_as_printed": "Experimental methane solubility (m3/m3) in formation water (STP).",
+ "footnotes_as_printed": {
+  "u": "Standard uncertainties on u are u(T) = 0.1 K, u(P) = 0.01 MPa, u(S) = 0.15 m3/m3."
+ },
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Pressure of the PVT cell held constant during sampling (controlled within 0.01 MPa); the paper does not say whether it is total or gas partial pressure; taken as total cell pressure",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "S, methane solubility, m3/m3 (STP)",
+   "unit": "m3_gas_STP_per_m3_formation_water",
+   "what": "volume of dissolved methane at STP (273.2 K, 0.10 MPa) per volume of formation water; reference volume (liquid at cell conditions or at STP) not stated"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "formation water simulated by aqueous NaHCO3, 0.23 mol/kg (molality as stated), density 1.0116 g/cm3 (Anton Paar DMA45); NaHCO3 is outside the six-ion set"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35
+   ],
+   "reason": "pressure block label (P = x MPa)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "30",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "50",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "70",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "110",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "P.constant",
+     "value": "130",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "m3/m3 at STP to mole fraction or mol/kg needs the water volume reference state and density"
+ ],
+ "notes": "Printed as a matrix with T in rows and P (30-130 MPa) in columns; stacked here into one block per pressure (rule: side-by-side blocks stacked), each block a label row then six temperatures 353-453 K. The pressure of each block is set by group_rows (P.constant).",
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "'Methane solubility in formation water (m3/m3) and water content in the coexisting gas phase (g/m3) were calculated under the same temperature and pressure.'; STP defined in Nomenclature as 273.2 K and 0.10 MPa; the denominator volume is not defined (liquid sample volume taken under pressure was recorded, mass of degassed liquid was weighed)",
+ "gas_basis": "not_stated"
+}

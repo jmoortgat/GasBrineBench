@@ -1,0 +1,77 @@
+{
+ "table": "Table 3",
+ "page_journal": 352,
+ "title_as_printed": "Densities rho of the saturated aqueous phase of (CO2 + H2O) measured using the lower VTD at temperatures T_VTD and pressures p. The temperature of the density measurement was equal to the saturation temperature within the experimental uncertainty. Also listed is the combined standard uncertainty of each density measurement u_c(rho), which combines in quadrature the propagated uncertainties associated with T, p, sampling, and the measured resonance period.",
+ "footnotes_as_printed": {
+  "a": "Standard uncertainties in temperature and pressure are u(T) = 0.2 K and u(p) = 0.05 MPa."
+ },
+ "property": "rho_gas_loaded",
+ "gas": "co2",
+ "regime": "",
+ "row_regime_overrides": [
+  {
+   "rows": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "regime": "lle",
+   "reason": "Rows at 292.7 K with p >= 5.65 MPa and at 297.8 K with p >= 6.79 MPa: the CO2-rich phase is liquid at these T,p (judged from the Table 4 densities, vapour 187-218 kg/m3 below and liquid 748-796 kg/m3 above, at the same T). Table 3 rows at 297.8 K with p 6.31-6.65 MPa lie between the Table 4 vapour (6.21 MPa) and liquid (6.79 MPa) points and are left unflagged; the paper does not tabulate the phase state of the CO2-rich phase for Table 3."
+  }
+ ],
+ "temperature_scale": "ITS-90",
+ "pressure_note": "'pressure p' as measured by strain-gauge transducers on the syringe pumps, standard uncertainty 0.05 MPa; system pressure of the saturated two-phase cell (total pressure, not a gas partial pressure)",
+ "columns": {
+  "T": {
+   "col": "T_VTD/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "rho/kg m^-3",
+   "unit": "kg/m3",
+   "what": "density of the CO2-saturated aqueous phase measured in the lower vibrating tube densimeter"
+  },
+  "uncertainty": {
+   "col": "u_c(rho)/kg m^-3",
+   "unit": "kg/m3"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water (MilliPore Q, resistivity > 18 MOhm cm), CO2-saturated; no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Printed in two side-by-side panels (left panel first, then right panel), stacked in that order: 145 rows. Gas-loaded density of the aqueous phase sampled at equilibrium and displaced at constant pressure into the densimeter; the composition of the phase is not measured. No hydrate present (T >= 292.7 K). Row indices in row_regime_overrides are 0-based data rows."
+}

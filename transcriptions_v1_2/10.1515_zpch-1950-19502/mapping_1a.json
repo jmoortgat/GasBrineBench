@@ -1,0 +1,118 @@
+{
+ "property": "ostwald",
+ "ostwald_definition": "Ostwald solubility coefficient alpha' = c_fl / c_gas = v_gas / v_fl (eq 1), dimensionless: ratio of the gas concentration in the liquid to that in the gas phase, equivalently the gas volume, measured at the equilibrium conditions (temperature of the experiment), absorbed by the liquid volume v_fl; text: 'v_gas und v_fl auf die gleiche Molzahl zu beziehen sind'. v_fl is the volume of the liquid (the salt solution for c' > 0). Accuracy about 1 %.",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (gas-burette absorption measurement, presumably near atmospheric pressure; the Ostwald coefficient is reported without a pressure). Section 3 refers its absorption coefficient beta to constant pressure p = 1 Atm.",
+ "table": "Tabelle 1 a",
+ "page_journal": 5,
+ "pdf_page": 5,
+ "title_as_printed": "Tabelle 1. Experimentell ermittelte Gasloeslichkeiten in Salzloesungen und SETSCHENOWscher Koeffizient. a) Sauerstoff in verschiedenen Salzloesungen.",
+ "footnotes_as_printed": "none printed",
+ "gas": "o2",
+ "columns": {
+  "T": {
+   "col": "theta C",
+   "unit": "C",
+   "fill_down_note": "printed only on the first row of each temperature sub-block; carried forward"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified",
+   "constant": "not stated"
+  },
+  "value": {
+   "col": "alpha'",
+   "unit": "ostwald_dimensionless",
+   "what": "Ostwald coefficient alpha' (see ostwald_definition)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "c' mol/1000 g H2O",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "LiCl (outside the six-ion set) in rows of the LiCl block. Concentration c' in mol per 1000 g H2O (text p. 4: 'nicht in mol/l, sondern mol/1000 g H2O auszudruecken (c')'). Rows with c' = 0 are pure water."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    18,
+    27,
+    36
+   ],
+   "reason": "salt label rows (NaCl, KCl, LiCl, MgCl2), printed beside the first data row, written as own rows"
+  },
+  {
+   "rows": [
+    5,
+    9,
+    13,
+    17,
+    22,
+    26,
+    31,
+    35,
+    40,
+    44
+   ],
+   "reason": "summary rows 'Mittel' (mean k' of the block)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "LiCl"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "log alpha'_0/alpha' (derived_by_authors)",
+  "k' Setschenow coefficient, log(alpha'_0/alpha') / c' (derived_by_authors)",
+  "Mittel rows (mean k')"
+ ],
+ "conversion_needs": [
+  "Ostwald coefficient to mole fraction or molality needs the gas molar volume at T and the solution density/volume (v_fl is the solution volume); the builder must apply the Ostwald convention.",
+  "Pressure not stated: Ostwald coefficient conversion to a solubility at a given partial pressure assumes ideal gas and Henry's law.",
+  "theta in C (the printed unit '0 deg C' moved to the header)."
+ ],
+ "notes": "Temperature printed only on the first row of each sub-block (carried forward). KCl, LiCl and MgCl2 blocks print no c' = 0 row; their log(alpha'_0/alpha') use the NaCl-block water values (checked: 0.0490 and 0.0332). The NaCl temperatures are 0, 15, 20, 25 C (text layer read 15 as 35). LiCl 20 C, c' 0.88 row: alpha' printed 0,251 (probably 0.0251, consistent with log 0.121); LiCl 0 C c' 1,64 row: log and k' imply c' about 1.04; both kept as printed with a note. Gas O2 throughout (title).",
+ "csv": "table_1a.csv"
+}

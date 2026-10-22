@@ -1,0 +1,5 @@
+T/K,Pexp/MPa,xexp nC6 x 10^6,xcal nC6 x 10^6,rel dev/%,delta_x x 10^8,note
+298.09,0.4997,2.08,2.08,0.0,9,Pexp/MPa:a;delta_x x 10^8:b
+313.15,0.5028,2.33,2.33,0.0,6,Pexp/MPa:a;delta_x x 10^8:b
+333.15,0.5012,3.08,3.08,0.0,5,Pexp/MPa:a;delta_x x 10^8:b
+353.15,0.5028,4.58,4.58,0.0,13,Pexp/MPa:a;delta_x x 10^8:b

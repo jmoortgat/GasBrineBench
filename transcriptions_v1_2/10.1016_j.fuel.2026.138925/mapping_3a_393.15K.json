@@ -1,0 +1,80 @@
+{
+ "table": "Table 3a",
+ "page_journal": 7,
+ "pdf_page": 7,
+ "csv": "table_3a.csv",
+ "title_as_printed": "Methane gas solubility (Sm3/m3) in LD-1 formation brine (salinity = 10 g/L).",
+ "footnotes_as_printed": {},
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Equilibrium pressure of the vessel (brine + excess CH4 gas) set by a constant-rate/constant-pressure pump; total pressure, water vapour not separated; printed as round target values (5-90 MPa). Pump pressure relative expanded uncertainty about 1 % (k = 2).",
+ "layout": "wide: one row per pressure, one solubility column per temperature (T printed in the column header under 'T (K)'); this mapping reads the 393.15 K column",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "393.15"
+  },
+  "P": {
+   "col": "P (MPa)",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "T (K) 393.15",
+   "unit": "Sm3_CH4_per_m3_brine",
+   "scale": 1,
+   "what": "Methane solubility in standard cubic metres of CH4 per cubic metre of formation brine (Sm3/m3). The standard (reference) T and P of the Sm3 and the state (T, P) of the brine volume are NOT stated. Measured by flashing the saturated solution into a gas collector at reduced pressure and high temperature and determining the CH4 volume by GC against a known volume of reference gas."
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {},
+  "constant": {
+   "Na+ + K+": {
+    "value": "3.303",
+    "unit": "g/L"
+   },
+   "Ca2+": {
+    "value": "0.008",
+    "unit": "g/L"
+   },
+   "Mg2+": {
+    "value": "0.001",
+    "unit": "g/L"
+   },
+   "Cl-": {
+    "value": "3.053",
+    "unit": "g/L"
+   },
+   "SO4 2-": {
+    "value": "0.148",
+    "unit": "g/L"
+   },
+   "HCO3-": {
+    "value": "3.262",
+    "unit": "g/L"
+   },
+   "CO3 2-": {
+    "value": "0.225",
+    "unit": "g/L"
+   },
+   "total_salinity": {
+    "value": "10",
+    "unit": "g/L"
+   }
+  },
+  "other_species": "Synthetic formation water 'LD-1' (Ying-Qiong Basin), composition given as ION contents in g/L of brine (Table 1, journal p. 3): Na+ + K+ printed as one combined value; HCO3- and CO3 2- are outside the six-ion set; total salinity printed 10 g/L. Authors: 'All formation brines are bicarbonate-bearing NaCl solutions.' Not convertible to a salt list without assumptions."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Sm3/m3 to molality needs the standard reference state of the gas volume (not stated; 'S' could be 20 C or 15 C or 0 C at 1 atm) and the brine density / volume state (not stated).",
+  "g/L of ions to molality needs the brine density (not given) and an assignment of the combined Na+ + K+ value; density_rule nacl_25C_1atm does NOT apply (not an NaCl-only brine).",
+  "HCO3- and CO3 2- are outside the six-ion set."
+ ],
+ "notes": "Each printed T column is a separate mapping over the same CSV (v2.2 option 4). All 10 pressure rows are data rows; no label rows. Values in 3b at 413.15 K, 10 MPa printed '1.7' (two significant decimals elsewhere); kept as printed."
+}

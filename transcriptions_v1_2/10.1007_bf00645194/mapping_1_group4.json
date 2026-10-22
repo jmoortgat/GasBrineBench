@@ -1,0 +1,128 @@
+{
+ "table": "Table I",
+ "page_journal": 994,
+ "title_as_printed": "Densities of NaCl, Na2SO4, MgCl2, and MgSO4 Solutions from 35 to 95 C",
+ "footnotes_as_printed": {
+  "a": "Units: g-cm^-3"
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (vibrating-tube densimeter; atmospheric pressure presumed by authors but not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": ""
+  },
+  "value": {
+   "col": "10^3 Delta d (g cm^-3)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density of solution minus density of pure water at the same temperature (Delta d = d - d0), printed as 10^3 Delta d; reference: water density from Kell"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgSO4": {
+    "col": "m mol/(kg H2O)",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    17,
+    31,
+    39,
+    49,
+    59
+   ],
+   "reason": "temperature block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "65",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "85",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 59,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "value is a density difference: needs pure-water density at T (Kell) to get density; scale 1e-3 applied to the printed 10^3 Delta d"
+ ],
+ "notes": "Table I is printed as four column pairs per page with temperature sub-headings; blocks that continue into the next column are stacked into one block per (salt, temperature). The sheet for MgSO4 is table_1_group4. Temperature scale IPTS-68 from the experimental section (HP quartz thermometer calibrated against Pt resistance thermometer, IPTS-68)."
+}

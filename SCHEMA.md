@@ -80,6 +80,7 @@ the scored scope, so that a user can decide.
 | `source-caution` | the extraction recorded a caution about the values (misprint suspected, authors' own flag, adjusted values, ...); the text is in `data/provenance/provenance_v1_2.csv` | kept |
 | `stp-assumed` | a gas volume per mass of water was converted to moles with 0 degC, 1 atm, 22.414 L/mol, because the paper does not define its standard conditions | kept |
 | `solution-basis-converted` | a solubility given per mass of solution was converted to per kg of water from the stated composition | kept |
+| `density-assumed` | a per-volume quantity of an NaCl solution (g NaCl per litre, gas volume per barrel of brine) was converted with the NaCl(aq) density at 25 degC and 1 atm, because the paper gives no density; the density is a fit to the 41 NaCl densities at 25 degC in `rho.csv` (rms 0.009 %), see `tools/builders_v1_2/fit_nacl_density_25C.py` | kept |
 | `differential-pressure-converted` | a vapor-pressure lowering given as water minus solution was converted to the ratio with the IAPWS-95 vapor pressure of water | kept |
 | `vapour-nonideality-by-authors` | a water activity above 373 K that the authors themselves corrected for vapor non-ideality | kept |
 | `calculated-not-measured` | the source's values are output of an equation or a program, or are calculated from literature correlations, not measurements (SUSAK 1980: USGS program output extrapolated beyond its stated validity; SACHS 1995) | dropped |
@@ -135,7 +136,7 @@ has its own schema, documented in `supplementary/README.md`.
 - `lle-regime` — a row of a condensable gas (CO2 or a hydrocarbon) measured below
   the gas's critical temperature and at or above its own vapor pressure,
   so the gas-rich phase is a **liquid**: the point is a liquid–liquid
-  mutual solubility, not a gas solubility. 354 rows (270 propane, 50 CO2, 26 butanes, 8 ethane). They are
+  mutual solubility, not a gas solubility. 485 rows (270 propane, 112 CO2, 38 CH4, 31 CO2 + CH4 water contents, 26 butanes, 8 ethane). They are
   kept because they are good data about a different property, and consumers
   are expected to exclude them from gas-solubility scoring by default
   (`data/QUALITY.md` Sec. 7).

@@ -1,0 +1,51 @@
+{
+ "table": "Table 2",
+ "page_journal": 733,
+ "title_as_printed": "Apparent molar heat capacity Cp,phi of CO2(aq) where cp,s and cp,w denote the massic heat capacity of the solution and pure water, respectively",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "phi_Cp",
+ "property_note": "apparent molar heat capacity of the dissolved gas CO2 in pure water (no salt), Cp,phi = M2 cp,s + (cp,s - cp,w)/m (eq 1), cp,w from Hill's equation of state; the authors use Cp,phi at the lowest molality as an approximation to the partial molar heat capacity Cp,m,2",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter; p printed per row (about 28 MPa, 27.95 to 28.04 MPa); single liquid phase",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K",
+   "note": "average of the temperatures before and after heating; uncertainty 0.05 K below 600 K, 0.2 K above, up to 0.7 K between 658 and 678 K"
+  },
+  "P": {
+   "col": "p MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Cp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of CO2(aq) from eq (1)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "cp,s/cp,w",
+   "unit": "dimensionless",
+   "what": "measured ratio of massic heat capacity of solution to pure water at the same T and p (average of two or more experiments)"
+  },
+  "m_gas": {
+   "col": "m mol/kg",
+   "unit": "mol/kg",
+   "what": "molality of CO2 (mol per kg water)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none; CO2 in pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Molality uncertainty (0.7, 0.5, 0.5, 0.3) per cent for CH4, CO2, H2S, NH3. Cp,phi uncertainty about 1 per cent below 623 K, rising to about 25 per cent of the peak value near the critical region. Ionization corrections ignored by the authors (small; largest for NH3 at 303 K)."
+}

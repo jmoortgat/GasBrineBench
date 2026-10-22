@@ -716,3 +716,13 @@ robinson1968_10.6028_jres.072a.022_t1,ROBINSON(1968),,phi_osm,298.15,,0.0,3.4328
 robinson1968_10.6028_jres.072a.022_t1,ROBINSON(1968),,phi_osm,298.15,,0.0,3.6256,0.0,1.8128,0.0,0.0,1.3094,,T,test-only,pressure-unstated,table
 robinson1968_10.6028_jres.072a.022_t1,ROBINSON(1968),,phi_osm,298.15,,0.0,4.0524,0.0,2.0262,0.0,0.0,1.3871,,T,test-only,pressure-unstated,table
 robinson1968_10.6028_jres.072a.022_t1,ROBINSON(1968),,phi_osm,298.15,,0.0,4.239,0.0,2.1195,0.0,0.0,1.4226,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,0.93298,0.93298,0.5253,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,0.98755,0.98755,0.529,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,1.1286,1.1286,0.5405,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,1.2091,1.2091,0.5478,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,1.308,1.308,0.5578,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,0.88499,0.88499,0.5241,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,0.71541,0.71541,0.5187,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,0.52502,0.52502,0.5196,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,3.0185,3.0185,0.9278,,T,test-only,pressure-unstated,table
+archer1998_10.1021_je980047o_t1,ARCHER(1998),,phi_osm,298.15,,0.0,0.0,0.0,0.0,3.485,3.485,1.0967,,T,test-only,pressure-unstated,table

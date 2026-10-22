@@ -1,0 +1,203 @@
+{
+ "table": "Table II",
+ "page_journal": 452,
+ "title_as_printed": "Solubilities of Carbon Dioxide in Aqueous Salt Solutions",
+ "footnotes_as_printed": {
+  "a": "Salt molality is 8.",
+  "b": "Salt molality is 0.25.",
+  "c": "Salt molality is 1.5."
+ },
+ "property": "gas_volume_solubility",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "gas partial pressure 760 mm of mercury ('the partial pressure of the gas is exactly 760 mm.', allowance made for mercury density, capillarity, barometric pressure and the vapor pressure of the solution)",
+ "columns": {
+  "T": {
+   "col": "t, C",
+   "unit": "C",
+   "fill_down": true
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "basis": "gas_partial",
+   "constant": "760"
+  },
+  "value": {
+   "col": "S of each salt",
+   "unit": "mL_gas_STP_per_g_water_at_760mmHg",
+   "what": "S = alpha divided by (weight fraction of water in the solution x solution density at the run temperature): volume of gas reduced to 0 C and 760 mm Hg dissolved by the quantity of solution of molality m containing one gram of water, at 760 mm Hg gas partial pressure; 'S is proportional to gas molality'",
+   "derived_by_authors": true,
+   "per_column": true
+  },
+  "value2": {
+   "col": "alpha of each salt",
+   "unit": "bunsen_cm3STP_per_cm3_per_atm",
+   "what": "Bunsen coefficient alpha, measured directly; volume of gas dissolved at the specified temperature and partial pressure of 760 mm, per one volume of solvent, gas volume corrected by the ideal gas law to 0 C and 760 mm Hg",
+   "gas_per_column": false,
+   "per_column": true
+  },
+  "value_columns": [
+   {
+    "col": "KCl S",
+    "salt": "KCl",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "NaCl S",
+    "salt": "NaCl",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "KNO3 S",
+    "salt": "KNO3",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "NaNO3 S",
+    "salt": "NaNO3",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "Mg(NO3)2 S",
+    "salt": "Mg(NO3)2",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "MgSO4 S",
+    "salt": "MgSO4",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   },
+   {
+    "col": "Na2SO4 S",
+    "salt": "Na2SO4",
+    "unit": "mL_gas_STP_per_g_water_at_760mmHg"
+   }
+  ],
+  "value2_columns": [
+   {
+    "col": "KCl alpha",
+    "salt": "KCl",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "NaCl alpha",
+    "salt": "NaCl",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "KNO3 alpha",
+    "salt": "KNO3",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "NaNO3 alpha",
+    "salt": "NaNO3",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "Mg(NO3)2 alpha",
+    "salt": "Mg(NO3)2",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "MgSO4 alpha",
+    "salt": "MgSO4",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   },
+   {
+    "col": "Na2SO4 alpha",
+    "salt": "Na2SO4",
+    "unit": "bunsen_cm3STP_per_cm3_per_atm"
+   }
+  ]
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt of the column": {
+    "col": "m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "per_column": {
+   "KCl": {
+    "KCl": "m"
+   },
+   "NaCl": {
+    "NaCl": "m"
+   },
+   "KNO3": {
+    "KNO3": "m"
+   },
+   "NaNO3": {
+    "NaNO3": "m"
+   },
+   "Mg(NO3)2": {
+    "Mg(NO3)2": "m"
+   },
+   "MgSO4": {
+    "MgSO4": "m"
+   },
+   "Na2SO4": {
+    "Na2SO4": "m"
+   }
+  },
+  "other_species": "salts outside the six-ion set (extracted, columns kept): KNO3, NaNO3, Mg(NO3)2",
+  "cell_composition_overrides": [
+   {
+    "row": 6,
+    "col": "NaNO3",
+    "molality": "8",
+    "footnote": "a"
+   },
+   {
+    "row": 8,
+    "col": "Na2SO4",
+    "molality": "0.25",
+    "footnote": "b"
+   },
+   {
+    "row": 11,
+    "col": "Na2SO4",
+    "molality": "1.5",
+    "footnote": "c"
+   },
+   {
+    "row": 13,
+    "col": "NaNO3",
+    "molality": "8",
+    "footnote": "a"
+   },
+   {
+    "row": 14,
+    "col": "Na2SO4",
+    "molality": "0.25",
+    "footnote": "b"
+   },
+   {
+    "row": 17,
+    "col": "Na2SO4",
+    "molality": "1.5",
+    "footnote": "c"
+   }
+  ]
+ },
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "'one volume of solvent' (definition of alpha); but S = 'dividing alpha by the product of the weight fraction of water in the solution and its density', which implies alpha is per volume of solution",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "no gas mole fractions reported",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Table V constants a and b of the authors' equation are fitted parameters, not in this table"
+ ],
+ "conversion_needs": [
+  "S to gas molality: mL STP per g water / 22414 mL/mol x 1000 g/kg (authors warn the real molar volume of CO2 at 0, 25, 40 C is 0.2% off the ideal-gas value: Cooper and Maass apparent molecular weight 44.295, 44.216, 44.182)",
+  "alpha to molality needs the solution density"
+ ],
+ "notes": "Seven salt blocks side by side, each with alpha and S; kept wide (one row per t and m), t filled down from the first row of each temperature block. Empty cell = nothing printed. Footnoted cells (a, b, c) belong to the salt column whose alpha carries the marker; their molality differs from the m column (see composition.cell_composition_overrides; rows 0-based over data rows; 'a' on NaNO3 at row 'm=4' means molality 8). Row 14 (40 C, m blank) is a separate printed line above the m=0.5 row carrying only the Na2SO4 values with footnote b (molality 0.25); m cell left empty as printed. 19 data rows printed and written.",
+ "quality_remarks": "audit 2026-10-02: p.451: the authors quote apparent molecular weights of CO2 of 44.295, 44.216 and 44.182 at 0, 25 and 40 C (0.65, 0.47, 0.39 % above 44.01); an ideal-gas conversion of S (mL STP per g water) to moles therefore underestimates real CO2 moles by up to about 0.6 %."
+}

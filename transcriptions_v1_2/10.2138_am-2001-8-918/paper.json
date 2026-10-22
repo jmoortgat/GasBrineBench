@@ -1,0 +1,37 @@
+{
+ "doi": "10.2138/am-2001-8-918",
+ "first_author": "Blencoe, James G.",
+ "authors": "James G. Blencoe, Michael T. Naney, Lawrence M. Anovitz",
+ "year": 2001,
+ "journal": "American Mineralogist 86, 1100-1111",
+ "title": "The CO2-H2O system: III. A new experimental method for determining liquid-vapor equilibria at high subcritical temperatures",
+ "source_key": "BLENCOE(2001)",
+ "experimental_method": "Vibrating U-tube densimeter: a homogeneous CO2-H2O fluid of pump-set composition is isolated at 300 C and depressurized at 0.05-0.2 MPa/min; the pressure of onset of liquid-vapour separation is the intersection of quadratic P-tau fits above and below the inflection (Table 1).",
+ "uncertainties_stated": "T accurate +-0.05 C, P +-0.02 MPa (read to +-0.01); XCO2 +-0.002; total error of each reaction pressure 0.05-0.13 MPa (printed in Table 2).",
+ "quality_remarks": "Reproducibility shown for XCO2 0.30 (56.61 +- 0.09 vs 56.61 +- 0.07 MPa) and 0.40 (51.68 +- 0.10 vs 51.65 +- 0.09 MPa). Authors' curve nearly coincides with Seitz and Blencoe (1997) and Takenouchi and Kennedy (1964); they argue Todheide and Franck (1963) vapour compositions are too CO2-rich (water loss in analysis) and Sterner and Bodnar (1991) pressures too high. Possible delayed phase separation (metastable persistence) would bias pressures low; authors argue the effect is not significant. Pressure is the fitted intersection, not a direct reading.",
+ "how_extracted": "pdf_text_layer (born-digital PDF), every cell checked against the 250 dpi page image",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6
+  ],
+  "journal_pages": [
+   1105
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (p. 1105): coefficients of quadratic P-tau equations used to compute the reaction pressures (fit parameters, not data)."
+ ],
+ "row_counts": {
+  "Table 2": {
+   "printed": 8,
+   "written": 8
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Only one data table. Sanity check: P increases with XCO2 from 0.05 to 0.25 (27.61 -> 56.69 MPa), then decreases to 51.65 MPa at 0.40, consistent with a maximum (critical region) near XCO2 0.25-0.30 and with the authors' Fig. 8. No temperature scale stated.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Born-digital PDF; text layer clean and all 24 cells matched the page image.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.2138_am-2001-8-918, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

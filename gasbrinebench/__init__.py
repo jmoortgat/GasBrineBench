@@ -8,23 +8,23 @@ Five-minute tour
 ----------------
 >>> import gasbrinebench as gbb
 >>> gbb.__version__
-'1.2.1'
+'1.2.2'
 
-Load everything. The 354 ``lle-regime`` rows -- points whose heavy phase is a
+Load everything. The 485 ``lle-regime`` rows -- points whose heavy phase is a
 liquid, so they are mutual solubilities and not gas solubilities -- and the
 rows carrying a default-excluded flag (``gas-out-of-scope``, ``hydrate-regime``,
 ``pressure-unstated``, ...) are dropped by default; pass ``exclude_tags=None,
-exclude_flags=None`` for all 26,815:
+exclude_flags=None`` for all 32,355:
 
 >>> df = gbb.load()
 >>> len(df)
-23090
+26160
 
 Filter on any axis, in one call or several:
 
 >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
 >>> len(co2)
-3533
+3602
 >>> hot_brine = gbb.select(co2, T=(373, 425), ionic_strength=(2, None))
 >>> len(hot_brine)
 482
@@ -34,7 +34,7 @@ Derived composition quantities:
 >>> float(gbb.ionic_strength(co2).max())
 18.0
 >>> gbb.salt_system_kind(co2).value_counts().to_dict()
-{'single-salt': 2002, 'water': 1228, 'mixed-salt': 303}
+{'single-salt': 2041, 'water': 1258, 'mixed-salt': 303}
 
 Both mole-fraction siblings of a solubility, joined onto one row:
 

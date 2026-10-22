@@ -13,6 +13,7 @@ They need `numpy`, `pandas`, `iapws` (IAPWS-95 water properties) and `gsw`
 | `gbb12_corrections.py` | the corrections to v1.1.1 rows and the quality and flag edits found by checking the consensus outliers against the papers; each guarded by the value it expects | (imported by the release script) |
 | `gbb12_consensus.py` | the inter-source consensus statistic (`data/consensus/`) | yes |
 | `gbb12_release.py` | merges the v1.1.1 CSVs with the new rows, assigns citation keys, applies the quality rules, writes `data/` and `bib/references_v1_2.bib` | needs the maintainers' work area (v1.1.1 from git, Crossref cache) |
+| `fit_nacl_density_25C.py` | refits the NaCl(aq) density at 25 °C and 1 atm (apparent molar volume, 41 rows of `data/rho.csv`) that the `density-assumed` conversions use, and prints the coefficients stored in `gbb12_core.py` | yes |
 | `gbb12_meta.py` | fetches Crossref metadata and OpenAlex citation counts by DOI | needs network |
 | `SPEC.md` | the mapping-file format | |
 

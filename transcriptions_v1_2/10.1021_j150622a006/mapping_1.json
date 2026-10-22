@@ -1,0 +1,51 @@
+{
+ "gas": "o2",
+ "regime": "",
+ "temperature_scale": "not stated (printed as thermodynamic temperature T/K)",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "conversion_needs": [
+  "atm to Pa if the atm columns are used (1 atm = 101325 Pa); GPa column needs none"
+ ],
+ "page_journal": 3234,
+ "table": "Table I",
+ "title_as_printed": "Comparison of Values of Henry's Constant H2,1 for Oxygen Dissolved in Water with Literature Values a,b",
+ "footnotes_as_printed": {
+  "a": "Reference 23 (Benson and Krause).",
+  "b": "T is the thermodynamic temperature."
+ },
+ "property": "henry",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "H21 expt /GPa",
+   "unit": "GPa",
+   "what": "Henry's constant H_2,1 = lim (f2/x2), fugacity over mole fraction of dissolved gas (mole-fraction basis), as defined in the paper's eq 1-2 (equation text not captured in detail); authors' O2 value computed with the Benson-Krause empirical approach (per text) to permit comparison; pressure basis (saturation pressure) not stated in the table"
+  },
+  "value2": {
+   "col": "H21 lit. /GPa",
+   "unit": "GPa",
+   "what": "literature value (Benson and Krause, ref 23) at same T",
+   "from_literature": true
+  }
+ },
+ "extra_unmapped": [
+  "% dev (deviation expt vs lit., calculated)"
+ ],
+ "notes": "Apparatus validation measurements for O2 in water. Replicate T rows kept.",
+ "pressure_note": "not stated (apparatus test; Henry's constant column only)"
+}

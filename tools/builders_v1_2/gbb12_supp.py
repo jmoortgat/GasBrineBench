@@ -30,7 +30,7 @@ from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gbb12_build as B
 import gbb12_core as C
-from gbb12_loader import MappingError, load_table
+from gbb12_loader import MappingError, load_table, table_csv_path
 
 # molar masses (g/mol) of salts outside the six-ion set that occur in the transcribed tables
 EXTRA_SALT_M = {"NaBr": 102.894, "LiCl": 42.394, "KBr": 119.002, "SrCl2": 158.53, "LiBr": 86.845, "CsCl": 168.358, "NaNO3": 84.995,
@@ -41,7 +41,8 @@ SALT_M = {k: v[0] for k, v in C.SALT.items()}
 SALT_M.update(EXTRA_SALT_M)
 
 # properties that are conventionally reported without a pressure
-P_OPTIONAL = {"isopiestic_molality", "dh_sol", "dh_dilution", "aw", "phi_osm", "phi_Cp", "gamma", "activity_coefficient", "psat_brine"}
+P_OPTIONAL = {"isopiestic_molality", "dh_sol", "dh_dilution", "aw", "phi_osm", "phi_Cp", "gamma", "activity_coefficient", "psat_brine",
+              "ostwald", "pmv"}  # Ostwald coefficients and partial molar volumes are conventionally reported at about 1 atm without a pressure
 
 # hold reasons of the main build that make a record eligible for the supplement (anything else stays out)
 ELIGIBLE = (
@@ -53,10 +54,13 @@ ELIGIBLE = (
     "composition basis ionic_strength without an ionic_strength_rule",
     "no converter for property",
     "enthalpy of solution of a salt",
+    "needs the brine density",                         # Henry constants and gas-volume coefficients of salt solutions (kept as printed)
+    "converted with reference seawater ions only",     # salinity of a natural or synthetic formation water (composition kept as printed)
+    "composition not representable",                   # ions outside the six or a composition the schema cannot hold (kept as printed)
 )
 
 COLUMNS = ["dataset_id", "source", "doi", "property_class", "property_native", "gas", "T_K", "P_bar", "solutes_mol_per_kg_water", "composition_as_printed",
-           "value", "value_unit", "value_what", "value2", "value2_unit", "value2_what", "reference_salt", "uncertainty", "quality", "tag",
+           "value", "value_unit", "value_what", "value2", "value2_unit", "value2_what", "reference_salt", "uncertainty", "quality", "tag", "data_origin",
            "src_table", "row"]
 
 
@@ -100,7 +104,7 @@ def solutes_string(rec):
     return ";".join(f"{s}:{float(f'{m:.8g}')}" for s, m in out.items()), printed
 
 
-NOT_A_MEASUREMENT = re.compile(r"critical (pressure|temperature|locus)|fluid-phase boundary|filling composition|\(synthetic|synthetic rows|overall (water )?mole fraction", re.I)
+NOT_A_MEASUREMENT = re.compile(r"critical (pressure|temperature|locus)|fluid-phase boundary|phase[- ]boundary|filling composition|\(synthetic|synthetic rows|overall (water |\(filled\) )?mole fraction", re.I)
 
 
 def property_class(prop, unit, gas, what=""):
@@ -128,6 +132,10 @@ def property_class(prop, unit, gas, what=""):
         return "water_vapour_enhancement"
     if prop in ("phi_Cp",) or re.search(r"j_per_kg_k|j/\(kg|j/\(mol", u):
         return "heat_capacity"
+    if prop == "visc":
+        return "viscosity"
+    if prop == "rho_gas_loaded" and re.search(r"mol/m3|mol_per_m3|mol\.m-3|mol m-3", u):
+        return "mixture_volume"  # molar density of a homogeneous water + gas mixture (Fenghour 1996)
     if prop in ("rho", "rho_diff") or re.search(r"kg/m3|g/cm3", u):
         return "density"
     if prop in ("bunsen", "ostwald"):
@@ -149,6 +157,16 @@ def _reference_salt(mapping, rec):
     return r
 
 
+ALLOW_UNSTATED_P = False
+
+
+def unstated_ok(rec, prop, reason):
+    """Same rule as gbb12_build --allow-unstated-pressure: a density, density difference or viscosity of a liquid solution at
+    T <= 373.15 K whose paper states no pressure is kept with an empty pressure and the flag pressure-unstated."""
+    return (ALLOW_UNSTATED_P and reason == "pressure missing" and prop in B.PRESSURE_FLEX and B.f(rec["T"]) is not None
+            and B.C.to_K(B.f(rec["T"]), rec["T_unit"]) <= 373.15)
+
+
 def build_supp_table(extract_dir, slug, n):
     raw_map = json.load(open(os.path.join(extract_dir, slug, f"mapping_{n}.json")))
     if raw_map.get("hold_table") or raw_map.get("duplicate_of"):
@@ -164,12 +182,17 @@ def build_supp_table(extract_dir, slug, n):
         try:
             conv = B.CONVERTERS.get(prop)
             if conv is not None:
-                T_K, P_bar = B.convert_T_P(rec, need_P=(prop not in B.NO_PRESSURE_OK))
+                try:
+                    T_K, P_bar = B.convert_T_P(rec, need_P=(prop not in B.NO_PRESSURE_OK))
+                except B.Hold as h:
+                    if not unstated_ok(rec, prop, str(h)):
+                        raise
+                    T_K, P_bar = B.C.to_K(B.f(rec["T"]), rec["T_unit"]), 1.01325  # as the main build does with the same option
                 ions, ctags = B.comp_to_ions(rec, None)
                 conv(rec, mapping, T_K, P_bar, ions, ctags)
                 continue  # built by the main database
         except B.Hold as h:
-            if not eligible(str(h)):
+            if not (eligible(str(h)) or (str(h) == "pressure missing" and prop in P_OPTIONAL)):
                 skipped.append((rec["idx"], str(h)))
                 continue
         except (NotImplementedError, ValueError, MappingError):
@@ -178,11 +201,14 @@ def build_supp_table(extract_dir, slug, n):
         if gas == "mixture":
             skipped.append((rec["idx"], "gas-phase mixture"))
             continue
+        unstated = False
         try:
             T_K, P_bar = B.convert_T_P(rec, need_P=(prop not in P_OPTIONAL))
         except B.Hold as h:
-            skipped.append((rec["idx"], str(h)))
-            continue
+            if not unstated_ok(rec, prop, str(h)):
+                skipped.append((rec["idx"], str(h)))
+                continue
+            T_K, P_bar, unstated = B.C.to_K(B.f(rec["T"]), rec["T_unit"]), None, True
         v = B.f(rec["value"])
         if v is None:
             skipped.append((rec["idx"], "value missing"))
@@ -195,6 +221,8 @@ def build_supp_table(extract_dir, slug, n):
         tags = set(mapping.get("row_tag_all") or [])
         if mapping.get("caution"):
             tags.add("source-caution")
+        if unstated:
+            tags.add("pressure-unstated")
         if (rec.get("regime") or "") in ("hydrate", "lle"):
             tags.add(rec["regime"] + "-regime")
         what1 = (cols.get("value") or {}).get("what", "")
@@ -210,7 +238,7 @@ def build_supp_table(extract_dir, slug, n):
                     "value2_unit": rec.get("value2_unit", "") if v2 is not None else "",
                     "value2_what": (cols.get("value2") or {}).get("what", "") if v2 is not None else "",
                     "reference_salt": _reference_salt(mapping, rec),
-                    "uncertainty": "" if unc is None else unc, "tag": ";".join(sorted(tags)), "row": rec["idx"]})
+                    "uncertainty": "" if unc is None else unc, "tag": ";".join(sorted(tags)), "data_origin": "table", "row": rec["idx"]})
         rows.append(row)
     return rows, skipped
 
@@ -220,7 +248,11 @@ def main():
     here = os.path.dirname(os.path.abspath(__file__))
     ap.add_argument("--extract", default=os.path.join(here, "..", "extract"))
     ap.add_argument("--out", default=os.path.join(here, "out"))
+    ap.add_argument("--allow-unstated-pressure", action="store_true",
+                    help="keep densities and viscosities of liquid solutions (T <= 373.15 K) whose paper states no pressure, flagged pressure-unstated")
     a = ap.parse_args()
+    global ALLOW_UNSTATED_P
+    ALLOW_UNSTATED_P = a.allow_unstated_pressure
     os.makedirs(a.out, exist_ok=True)
     all_rows, report = [], []
     for pj in sorted(os.listdir(a.extract)):
@@ -232,7 +264,7 @@ def main():
             continue
         for fn in sorted(os.listdir(base)):
             m = re.match(r"mapping_(.+)\.json$", fn)
-            if not m or not os.path.exists(os.path.join(base, f"table_{m.group(1)}.csv")):
+            if not m or not os.path.exists(table_csv_path(base, m.group(1))):
                 continue
             try:
                 rows, skipped = build_supp_table(a.extract, pj, m.group(1))

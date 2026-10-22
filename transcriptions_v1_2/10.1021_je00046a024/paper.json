@@ -1,0 +1,39 @@
+{
+ "doi": "10.1021/je00046a024",
+ "first_author": "Millero",
+ "year": 1986,
+ "journal": "J. Chem. Eng. Data 31, 470-472",
+ "title": "PVT Properties of Concentrated Aqueous Electrolytes. 7. The Volumes of Mixing of the Reciprocal Salt Pairs KCl, K2SO4, NaCl, and Na2SO4 at 25 C and I = 1.5 m",
+ "authors": "Frank J. Millero, Sara Sotolongo",
+ "source_key": "MILLERO(1986)",
+ "experimental_method": "Picker vibrating-flow densimeter at 25 C (thermostat +-0.001 C), calibrated with water and seawater; solutions made by weight, stock molalities checked from density.",
+ "uncertainties_stated": "Standard errors of the mixing-volume fits given as density errors of 1e-6 to 8e-6 g/cm3 (Table II, not extracted); density measurement precision not otherwise stated for Table I.",
+ "quality_remarks": "Temperature on IPTS-68. Pressure not stated. Relative densities Delta rho = rho - rho0 with rho0 taken as pure-water density (reference not further specified). Ionic-strength fraction y3 as the composition measure; the pure end points (y3 = 0 and 1.0) of different pairs are repeated and differ slightly. The text layer printed y3 = 0 as '5' for the first row; the image shows 0.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1
+  ],
+  "journal_pages": [
+   470
+  ]
+ },
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "All 61 Delta rho values and y3 values were read from the page image and agree with the text layer numbers (only the y3 = 0 glyph of the first row was garbled in the text layer, and that was never used).",
+ "not_extracted_tables": [
+  "Table II: parameters v0, v1 of the mixing-volume equation (model parameters)",
+  "Table III: verification of the cross-square rule (derived mixing volumes)",
+  "Table IV (journal p. 472): maximum errors in density of the Wood-Reilly equation (model comparison, derived)"
+ ],
+ "row_counts": {
+  "Table I": {
+   "printed": "61 data rows in 6 mixture blocks (+6 label rows)",
+   "written": "61 data rows + 6 label rows"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Label rows written for each mixture; the mixture name printed beside the first data row was split into its own label row. Sanity: within each block Delta rho varies smoothly between the end points.",
+ "pass2_diff": "Table I: 61 rows, 122/122 numbers identical."
+}

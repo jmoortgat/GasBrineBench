@@ -1,0 +1,242 @@
+{
+ "table": "Table 2",
+ "page_journal": "604-605",
+ "title_as_printed": "Apparent molar heat capacity of NaCl(aq)",
+ "footnotes_as_printed": {
+  "a": "One standard deviation in the apparent molar heat capacity divided by R."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter; p printed in each block label (6.85 to 36.17 MPa); pressure read to +/-0.01 MPa with a transducer calibrated to 0.1 MPa against a Heise gauge",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "from block label",
+   "note": "listed T is the midpoint between the measured temperature rise DeltaT and DeltaT_max (text, eq 23)"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "from block label"
+  },
+  "value": {
+   "col": "Cp,phi/R",
+   "unit": "J/(K mol)",
+   "scale": 8.314,
+   "what": "apparent molar heat capacity of NaCl divided by R, from eq (22) Cp,phi = M cp,s + (cp,s - cp,w)/m with water cp from Haar et al. (cp,w printed in the block label)",
+   "derived_by_authors": true,
+   "scale_note": "printed Cp,phi/R; the paper does not state R; its printed numbers reproduce eq. 22 with R = 8.314 J/(K mol) (pass 1 check)",
+   "unit_as_printed": "dimensionless (Cp,phi divided by the gas constant R)"
+  },
+  "value2": {
+   "col": "cp,s/cp,w",
+   "unit": "dimensionless",
+   "what": "specific heat capacity ratio of solution to water at T and p",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "cp,s rho_s/(cp,w rho_w)",
+   "unit": "dimensionless",
+   "what": "heat-loss-corrected power ratio, solution to water (volumetric heat capacity ratio; the measured quantity)"
+  },
+  "uncertainty": {
+   "col": "s",
+   "unit": "dimensionless (one standard deviation of Cp,phi divided by R)",
+   "scale": 8.314,
+   "scale_note": "printed Cp,phi/R; the paper does not state R; its printed numbers reproduce eq. 22 with R = 8.314 J/(K mol) (pass 1 check)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl in water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    14,
+    20,
+    33,
+    50,
+    64,
+    83,
+    102,
+    119,
+    136
+   ],
+   "reason": "T/p/DeltaT/cp,w block label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "323.04",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "7.06",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.07",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "7.05",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "423.09",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "6.92",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 33,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "452.85",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "20.22",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.73",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "19.71",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "522.79",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "6.85",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "522.77",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "36.17",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 102,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "548.19",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "19.06",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 119,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "573.17",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "19.45",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 136,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "598.01",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "20.10",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "f (calibration correction factor applied to the power ratio, column 2)",
+  "DeltaT and cp,w of pure water (block labels)"
+ ],
+ "conversion_needs": [
+  "Cp,phi = printed Cp,phi/R x R; the value of R is not stated; the printed numbers reproduce eq (22) with R = 8.314 J/(K mol) (implied R 8.31 to 8.32 for all rows away from Cp,phi near 0)",
+  "s likewise multiplies by R"
+ ],
+ "notes": "Two side-by-side column groups per block, stacked left group first, then right group. Blank lines inside a block (series of injections) are not printed labels and are not written. The 573.17 K block prints two 3.0072 mol/kg rows in the right group that nearly repeat the two left-group 3.0072 rows (0.8082/0.7302/-30.15 appears in both); printed, kept."
+}

@@ -1,0 +1,52 @@
+{
+ "table": "Table 4",
+ "page_journal": 1632,
+ "title_as_printed": "Solubility of methane in the fermentation media of methanotrophs bacteria",
+ "footnotes_as_printed": "none",
+ "property": "ostwald",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "atmospheric pressure in the cell (gas pre-saturated with water vapour, total pressure adjusted to atmospheric); col 'L2,1(T,P)' is the Ostwald coefficient at this experimental pressure; mole fraction column is at gas partial pressure 101.325 kPa (derived by authors)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "L2,1(T,P)",
+   "unit": "ostwald",
+   "scale": 1,
+   "what": "Ostwald coefficient L=c_liquid/c_vapour at equilibrium (eq. 10), directly from the measured gas volume"
+  },
+  "value2": {
+   "col": "10^5 x_N2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1e-05,
+   "what": "mole fraction of methane in liquid at gas partial pressure 101.325 kPa, calculated by the authors from the Henry coefficient (iterative procedure)",
+   "from_literature": false
+  }
+ },
+ "composition": {
+  "basis": "g_per_kg",
+  "per_row": {},
+  "constant": {},
+  "other_species": "aqueous fermentation medium of methane-utilizing bacteria (Table 1A, concentrations in g/dm3: MgSO4 1, CaCl2 0.05, KNO3 1, Na2MoO4.2H2O printed 5.54 (sic, as printed in Table 1A), FeEDTA solution, trace elements, phosphate stock Na2HPO4+KH2PO4); very dilute, treated as water by the authors; not mappable to the six-ion set without conversion"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "L2,1 inf (T,Ps,1) (Ostwald coefficient at infinite dilution, calculated)",
+  "10^-9 H2,1(T,Ps,1)/Pa (Henry coefficient at solvent vapour pressure, calculated by authors from eq. 12)"
+ ],
+ "conversion_needs": [
+  "Ostwald coefficient definition needs the vapour-phase concentration (ideal-gas assumption used by authors)"
+ ],
+ "notes": "Fermentation medium, five temperatures; same conventions as Table 2."
+}

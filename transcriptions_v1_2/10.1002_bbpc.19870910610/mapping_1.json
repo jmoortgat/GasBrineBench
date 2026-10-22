@@ -1,0 +1,198 @@
+{
+ "table": "Table 1",
+ "page_journal": 628,
+ "pdf_page": 2,
+ "title_as_printed": "Table 1 (no caption printed; text: experimentally determined temperature-pressure-molar volume combinations at the boundary surface between the heterogeneous and the homogeneous one-phase region, at constant composition ('isopleths'))",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "property_description": "ternary fluid-phase boundary (isopleth) points by the synthetic method: for a mixture of fixed overall composition (mol% H2O, CH4, NaCl), the (T, P) at which the heterogeneous two-fluid system becomes a homogeneous single phase on heating at constant volume (break point of the PT isochore, with visual and electrolytic-resistance indication), and the molar volume V of the homogeneous fluid at that point. The paper does not say which side of the boundary (bubble or dew, water-rich or methane-rich) each point is, and the points are close to the critical region; the overall composition is therefore NOT a coexisting-phase composition except at the boundary of the bulk phase.",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "absolute pressure of the homogeneous fluid at the phase boundary (strain-gauge transducers calibrated against a dead-weight gauge; back-up fluid behind the piston); synthetic method, basis saturation (boundary point)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "V/cm3 mol-1",
+   "unit": "cm3_per_mol",
+   "scale": 1,
+   "what": "molar volume of the homogeneous ternary fluid at the phase-boundary point, per mole of mixture (H2O + CH4 + salt as printed in mol%)"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "composition of the whole ternary mixture in mol% (H2O + CH4 + NaCl = 100, salt counted as one formula unit), set per block from the label rows; text: 0.6 weight percent of NaCl relative to water for all isopleths of this table"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    17,
+    25,
+    29,
+    37,
+    44
+   ],
+   "reason": "isopleth label rows: composition printed beside the first three data rows, written as its own label row (v2.1 rule 10)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "87.19",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "12.65",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.160",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 8,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "77.00",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "22.85",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.150",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 17,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "64.42",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "35.46",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.120",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "60.89",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "39.00",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.110",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "52.50",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "47.41",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.090",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "37.43",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "62.50",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.070",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "28.64",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CH4",
+     "value": "71.31",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.050",
+     "unit": "mol%"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "mol% of the ternary mixture to salt molality: m_salt = x_salt / (x_H2O * 0.018015); CH4 content as overall mole fraction, or salt-free x_CH4 = CH4/(CH4+H2O)",
+  "the boundary point is a homogenisation (phase-disappearance) point: the overall composition equals the composition of the remaining phase, but the incipient phase composition is unknown"
+ ],
+ "notes": "Scanned page (1-bit CCITT image, OCR text layer); every number transcribed from the page image and diffed against the OCR text layer (corrections listed in paper.json). Temperatures are printed to 1 K. Each block is one isopleth; T is not monotonic along a block (it passes through a temperature minimum as P rises), as in the paper's Figs. 1-4."
+}

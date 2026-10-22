@@ -1,0 +1,103 @@
+{
+ "table": "Table 3",
+ "csv": "table_3.csv",
+ "page_journal": 1248,
+ "pdf_page": 3,
+ "title_as_printed": "Vapor-Liquid Equilibria Measurements for the Ternary System H2O (1) + CO2 (2) + CH4 (3)",
+ "footnotes_as_printed": {
+  "a": "x2 and x3 are the measured CO2 and CH4 mole fractions in the liquid, respectively. y1, y2, and y3 are H2O, CO2, and CH4 mole fractions in vapor, respectively, and y1 is calculated from binary data, according to eq 1, where x2a = y2.x2(H2O + CO2) and x3a = y3 . x3(H2O + CH4)."
+ },
+ "property": "ternary_state",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the reaction cell, Heise gauge/transducer calibrated by dead weights (uncertainty 0.1 MPa); absolute vs gauge not stated; total pressure of the equilibrium cell",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "gas": "co2",
+   "what": "measured CO2 mole fraction in the aqueous liquid (ternary, salt-free)"
+  },
+  "value2": {
+   "col": "x3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "gas": "ch4",
+   "what": "measured CH4 mole fraction in the aqueous liquid"
+  },
+  "y_co2_gas": {
+   "col": "y2"
+  },
+  "y_ch4_gas": {
+   "col": "y3"
+  },
+  "y_h2o_gas": {
+   "col": "y1",
+   "unit": "mole_fraction",
+   "derived_by_authors": true,
+   "what": "H2O mole fraction in the vapour CALCULATED by the authors from binary data / Duan models (eq 1: y1 = y1(H2O+CO2 binary) y2 + y1(H2O+CH4 binary) y3); NOT measured"
+  },
+  "x2a": {
+   "col": "x2a",
+   "unit": "mole_fraction",
+   "derived_by_authors": true,
+   "what": "CO2 solubility predicted by Henry-law interpolation from the binary, x2a = y2 x2(H2O+CO2); model value, not measured"
+  },
+  "x3a": {
+   "col": "x3a",
+   "unit": "mole_fraction",
+   "derived_by_authors": true,
+   "what": "CH4 solubility predicted from the binary, x3a = y3 x3(H2O+CH4); model value, not measured"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "y2, y3 (vapour CO2/CH4 fractions, normalised with calculated y1): needed for the dry CO2 fraction of the gas = y2/(y2+y3)",
+  "y1 (derived_by_authors, calculated not measured)",
+  "x2a, x3a (derived_by_authors, model predictions)"
+ ],
+ "conversion_needs": [
+  "dry CO2 fraction of the vapour = y2/(y2+y3)"
+ ],
+ "notes": "Header superscript 'a' on x2 and x3 (written x2a, x3a) is part of the symbol: the footnote defines x2^a and x3^a as distinct calculated quantities, so the letter is kept in the column name rather than stripped. 21 rows: 15 near 375 K (three feed CO2:CH4 ratios, 5 pressures each) then 6 near 324 K (three ratios, about 50 and 30 MPa). Do NOT build y_h2o rows from y1 as measured data. 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists. 2026-10-11 coordinator: ternary mapping (property ternary_state, converter conv_ternary) replacing the per-phase mappings, which are kept as *.json.txt. Qin: y2/(y2+y3) is the measured CO2:CH4 ratio of the vapour (y1 is calculated by the authors, so no water-content row is built).",
+ "row_held": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "reason": "already in GasBrineBench v1.1.1 ternary family as QIN(2008) (values and y_co2_dry matched exactly on 2026-10-11)"
+  }
+ ]
+}

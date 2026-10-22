@@ -1,0 +1,60 @@
+{
+ "table": "Table I",
+ "page_journal": 12,
+ "title_as_printed": "Comparison of Experimental Solubility of Carbon Dioxide in Pure Water with Literature Values (Ostwald Coefficient)",
+ "footnotes_as_printed": {
+  "a": "This means the average deviation of individual observed values from their averaged values."
+ },
+ "property": "ostwald",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated in this table; experiments at 1 atm (abstract; Table II title says 760 mmHg)",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "pure water; L = 'ratio of the volume of gas absorbed at the observed temperature and pressure, VG, to the volume of the absorbing liquid, VL'",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "pure water",
+ "columns": {
+  "T": {
+   "col": "temp, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "torr",
+   "constant": "760",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "av value",
+   "unit": "ostwald_cm3_per_cm3",
+   "what": "average of the replicate experimental Ostwald coefficients of CO2 in pure water"
+  },
+  "value2": {
+   "col": "lit. (6)",
+   "unit": "ostwald_cm3_per_cm3",
+   "what": "literature value (Markham and Kobe, ref 6)",
+   "from_literature": true
+  },
+  "uncertainty": {
+   "col": "av dev, %",
+   "unit": "percent",
+   "what": "average deviation of individual values from their average"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "no. of determinations (4, 10, 5)"
+ ],
+ "conversion_needs": [
+  "pressure 760 mmHg taken from the Table II title / '1 atm' of the abstract"
+ ],
+ "notes": "Each row is an average over 4, 10 or 5 determinations (individual values not given)."
+}

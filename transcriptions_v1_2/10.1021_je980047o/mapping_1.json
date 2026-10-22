@@ -1,0 +1,40 @@
+{
+ "table": "Table 1",
+ "page_journal": 793,
+ "title_as_printed": "Isopiestic Molalities m and Osmotic Coefficients phi of MgSO4(aq) and m* and phi* of the KCl(aq) and NaCl(aq) Isopiestic Reference Standard Solutions at 298.15 K, and the Equilibration Times t",
+ "footnotes_as_printed": {
+  "a": "Osmotic coefficients for the reference standard solutions of KCl(aq) and NaCl(aq) were calculated from the equations given by Archer (1992a, 1997).",
+  "b": "A fanlike device was added to the chamber after it was opened for this experiment; it provided some stirring of the vapor phase as the chamber was rocked back-and-forth during the equilibrations, which aided in the transport of water between the different sample cups.",
+  "c": "Saturated solution of MgSO4(aq) equilibrated with a reservoir solution containing excess MgSO4.7H2O(cr)."
+ },
+ "property": "isopiestic_molality",
+ "property_note": "value = MgSO4 molality, value2 = reference-salt molality m*; reference salt KCl for Series 1 rows, NaCl for Series 2 rows (set by group_rows)",
+ "reference_salt": "from block label (KCl for Series 1, NaCl for Series 2)",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (isopiestic equilibrium at the solution vapour pressure; chambers evacuated of air, for the two Series 2 experiments air removal was less complete)",
+ "columns": {
+  "T": {"col": "", "unit": "K", "constant": "298.15"},
+  "value": {"col": "m(MgSO4) mol/kg", "unit": "mol_per_kg_water", "what": "MgSO4 isopiestic molality (mean of duplicate samples)"},
+  "uncertainty": {"col": "u(m(MgSO4)) mol/kg", "unit": "mol/kg", "what": "printed +/- after m(MgSO4): agreement between duplicate samples, excludes ~0.03 % stock-solution analysis uncertainty"},
+  "value2": {"col": "m* mol/kg", "unit": "mol_per_kg_water", "what": "reference-salt (KCl or NaCl) isopiestic molality m* (measured)"},
+  "uncertainty2": {"col": "u(m*) mol/kg", "unit": "mol/kg", "what": "printed +/- after m*"},
+  "phi": {"col": "phi(MgSO4)", "unit": "osmotic_coefficient_stoichiometric", "derived_by_authors": true, "what": "phi = m* phi* / m (eq 2, nu = nu* = 2), molality-based practical osmotic coefficient"},
+  "phi_ref": {"col": "phi*", "unit": "osmotic_coefficient_stoichiometric", "derived_by_authors": true, "what": "reference-salt osmotic coefficient from Archer (1992a, 1997) equations (footnote a)"}
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {"MgSO4": {"col": "m(MgSO4) mol/kg", "unit": "mol/kg"}},
+  "constant": {},
+  "other_species": "KCl(aq) (Series 1) or NaCl(aq) (Series 2) reference solution in the partner cups"
+ },
+ "skip_rows": [{"rows": [0, 9], "reason": "series label rows (also carried by group_rows)"}],
+ "group_rows": [
+  {"label_row": 0, "sets": [{"path": "reference_salt", "value": "KCl"}]},
+  {"label_row": 9, "sets": [{"path": "reference_salt", "value": "NaCl"}]}
+ ],
+ "extra_unmapped": ["t d (equilibration time in days)"],
+ "conversion_needs": [],
+ "notes": "Each printed cell 'x +/- u' split into a value column and an uncertainty column. Footnote b is glued to the uncertainty of row 2 and footnote c to the uncertainty of row 9 (saturated MgSO4 solution in equilibrium with MgSO4.7H2O(cr); the row 10 MgSO4 molality 3.4850 is supersaturated per the text). Row 9 doubles as the epsomite solubility determination (3.0185 +/- 0.0007 mol/kg). Temperature (298.15 +/- 0.005) K, IPTS-68, from the experimental section."
+}

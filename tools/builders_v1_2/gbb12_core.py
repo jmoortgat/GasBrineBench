@@ -176,6 +176,48 @@ def seawater_density_gcm3(T_K: float, SA: float) -> float:
     return float(gsw.rho_t_exact(SA, T_K - 273.15, 0.0)) / 1000.0
 
 
+# Apparent molar volume of NaCl(aq) at 298.15 K and 1 atm, V_phi = a + b m^0.5 + c m + d m^1.5 (cm3/mol, m in mol/kg water).
+# Least-squares fit to the 41 NaCl densities at 298.15 K and P < 2 bar in GasBrineBench v1.2.1 data/rho.csv (GATES(1985), ROMANKIW(1983),
+# SURDO(1982), ZEZIN(2014); 0.058-6.1 mol/kg), with the IAPWS-95 water density at 1.01325 bar: rms deviation 0.009 %, largest 0.017 %.
+# Refit with tools/builders_v1_2/fit_nacl_density_25C.py. Used only where a mapping sets composition.density_rule = "nacl_25C_1atm".
+NACL_VPHI_25C = (16.53162725, 1.65863116, 0.36529831, -0.09705351)
+NACL_25C_M_MAX = 6.15
+
+
+def nacl_density_25C_kgm3(m: float) -> float:
+    """Density of aqueous NaCl at 298.15 K and 1 atm (kg/m3) from the apparent molar volume fit NACL_VPHI_25C."""
+    if not 0.0 <= m <= NACL_25C_M_MAX:
+        raise ValueError(f"NaCl molality {m} outside the fitted range 0-{NACL_25C_M_MAX}")
+    a, b, c, d = NACL_VPHI_25C
+    rho_w = water_rho_kgm3(298.15, 1.01325)
+    if m == 0.0:
+        return rho_w
+    v_phi = a + b * m ** 0.5 + c * m + d * m ** 1.5
+    return (1000.0 + m * SALT["NaCl"][0]) / (1000.0 / rho_w + m * v_phi / 1000.0)
+
+
+def nacl_molality_from_g_per_L_25C(c_gL: float) -> float:
+    """g NaCl per litre of solution at 298.15 K and 1 atm -> mol NaCl per kg water, solved with nacl_density_25C_kgm3 (bisection)."""
+    if c_gL <= 0.0:
+        return 0.0
+    M = SALT["NaCl"][0]
+
+    def g_per_L(m):
+        rho = nacl_density_25C_kgm3(m)  # kg/m3 = g/L
+        return m * M * rho / (1000.0 + m * M)
+
+    lo, hi = 0.0, NACL_25C_M_MAX
+    if c_gL > g_per_L(hi):
+        raise ValueError(f"{c_gL} g/L NaCl beyond the fitted density range")
+    for _ in range(80):
+        mid = 0.5 * (lo + hi)
+        if g_per_L(mid) < c_gL:
+            lo = mid
+        else:
+            hi = mid
+    return 0.5 * (lo + hi)
+
+
 # ---------------------------------------------------------------------------------------------
 # gas solubility conversions
 # ---------------------------------------------------------------------------------------------

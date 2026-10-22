@@ -13,9 +13,9 @@ Examples
 >>> import gasbrinebench as gbb
 >>> df = gbb.load()                      # every family, lle-regime excluded
 >>> len(df)
-23090
+26160
 >>> gbb.load("solubility", gas="co2", T=(320, 330)).shape[0]
-824
+844
 """
 
 from __future__ import annotations
@@ -180,7 +180,7 @@ def load(
     where : path, optional
         Directory holding the CSVs. Defaults to :func:`data_dir`.
     exclude_tags : sequence of str or None, default ``('lle-regime',)``
-        Tags dropped before anything else. **The default matters.** The 354
+        Tags dropped before anything else. **The default matters.** The 485
         ``lle-regime`` rows are points whose heavy phase is a liquid:
         they are liquid-liquid mutual solubilities, not gas solubilities, and
         scoring them as the latter is a category error
@@ -199,7 +199,7 @@ def load(
     reliable : bool, default False
         Keep only the rows that passed the row-by-row audit against the papers: audit status ``verified`` or ``corrected``
         (the stored digits equal the printed ones), quality code not ``U``, none of the default-excluded flags, and none of the
-        flags ``source-caution``, ``stp-assumed``, ``salinity-matrix`` or ``solution-basis-converted`` (a convention or caution the paper does not settle).
+        flags ``source-caution``, ``stp-assumed``, ``salinity-matrix``, ``solution-basis-converted`` or ``density-assumed`` (a convention or caution the paper does not settle).
         It is the set to fit on when no doubt is acceptable; it needs ``data/provenance/audit_status.csv``. The audit status of every
         row is attached as the column ``audit_status``, so ``audit_status='verified'`` also works as a filter.
     **filters
@@ -217,10 +217,10 @@ def load(
     >>> import gasbrinebench as gbb
     >>> co2 = gbb.load('solubility', gas='co2', property='solubility_molality')
     >>> int(co2['source'].nunique())
-    75
+    78
     >>> everything = gbb.load(exclude_tags=None, exclude_flags=None)
     >>> len(everything)
-    26815
+    32355
     """
     root = Path(where) if where is not None else data_dir()
     if family == "all":

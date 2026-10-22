@@ -1,0 +1,91 @@
+{
+ "table": "Table A-3",
+ "page_pdf": [
+  96,
+  97,
+  98,
+  99
+ ],
+ "page_report": [
+  88,
+  89,
+  90,
+  91
+ ],
+ "title_as_printed": "Original empirical data for the solubility of methane and carbon dioxide at 302oF in aqueous NaCl solutions. The symbol sigma is the standard deviation for averaged experimental data.",
+ "footnotes_as_printed": "none (only the sigma definition in the title)",
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column header 'psi'; absolute or gauge not stated for this table (Table A-2 footnote says psi absolute; 14.7 psi is <0.3% of the 5,000-22,610 psi here). Total system pressure over the CH4+CO2 gas and brine; gas-phase composition not reported (text p.42: gas phase much poorer in CO2 than the dissolved gas, e.g. 2% CO2 gas over 80% CO2 dissolved gas).",
+ "columns": {
+  "T": {
+   "col": "Temp. F",
+   "unit": "F",
+   "fill_down": true
+  },
+  "P": {
+   "col": "Pressure psi",
+   "unit": "psia",
+   "basis": "total",
+   "fill_down": true,
+   "note": "printed with thousands comma (22,340): strip the comma",
+   "thousands_separator": ","
+  },
+  "value": {
+   "col": "CH4 SCF",
+   "unit": "SCF_per_bbl_brine",
+   "gas": "ch4",
+   "reference_state": "SCF/Bbl: standard cubic feet of gas at 25 C (77 F) and 1 atm per barrel (42 US gal) of brine (report pages 15 and 19; Table A-2 footnote 'SCF at 25 C (77 F)')",
+   "scale": 1
+  },
+  "value2": {
+   "col": "",
+   "gas": "co2",
+   "unit": "SCF_per_bbl_brine",
+   "what": "CO2 dissolved, not printed per sample; = Total Gas SCF x (% CO2)/100 (equivalently Total Gas - CH4 SCF); the authors print CO2 SCF only in the averaged block",
+   "derived_by_authors": false
+  },
+  "total_gas": {
+   "col": "Total Gas SCF",
+   "unit": "SCF_per_bbl_brine",
+   "what": "CH4 + CO2 dissolved, measured volumetrically (pressure of exsolved gas)"
+  },
+  "pct_co2": {
+   "col": "% CO2",
+   "unit": "mole percent of the total dissolved gas",
+   "what": "by gas chromatography of the exsolved gas (report p.43: 'The ratio of carbon dioxide to methane (expressed as mole percent carbon dioxide) was determined by quantitative gas chromatography'); CH4 SCF = Total Gas x (1 - %CO2/100) holds within 0.3 SCF in 79 of 84 rows (within 0.1 in 75); the 4 rows off by more than 0.6 are listed in notes, plus 23-1 off by 0.4"
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {
+   "NaCl": {
+    "col": "Salinity g/l",
+    "unit": "g/L",
+    "fill_down": true
+   }
+  },
+  "constant": {},
+  "other_species": "",
+  "density_rule": "nacl_25C_1atm"
+ },
+ "ditto_fill_down": "Printed ditto marks (\") in Temp., Pressure and Salinity are written as blank cells and mean 'same as the row above'. Fill down from the nearest non-blank row above, INCLUDING across the dashed condition separators (e.g. 7-1 takes 302 F and 13,050 psi from row 6-3; 12-1 takes 13,080 psi from 11-4; 19-1 takes 22,500 psi from 18-6). The first row (1-1) has all values printed. The Cond. column prints 'N-1' for the first sample of condition N and only the sample index for later samples: the condition number is carried down until the next 'N-1'.",
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Cond. (experimental condition and sample index)",
+  "Total Gas SCF and % CO2 (kept as companion columns, see columns.total_gas / pct_co2)"
+ ],
+ "conversion_needs": [
+  "Value is gas volume per barrel of brine (SCF at 25 C, 1 atm per 42-US-gal barrel). The authors analysed samples as mol gas per kg of SOLUTION and converted to SCF/Bbl 'using appropriate conversion factors' (report p.13) that are NOT given; the inverse conversion needs the brine density at 25 C (or at the authors' unstated reference) and the molar volume of ideal gas at 25 C, 1 atm (24.465 L/mol; 1 SCF = 28.3168 L; 1 bbl = 158.987 L). Whether 'barrel of brine' means brine volume at 25 C or at another temperature is not stated.",
+  "For orientation only, the report's comparison tables give the factors the authors used to turn literature mole fractions into SCF/Bbl: mole fraction = SCF/Bbl x 0.0001312 for pure water (Tables 4 and 5), 0.0001317 for 1 m NaCl and 0.0001328 for 4 m NaCl (Table 5). Basis of that mole fraction (salt counted or not) is not stated.",
+  "Salinity is g NaCl per litre of solution; conversion to molality needs solution density (not given). Text (report p.33) equates 52, 107, 167 g/L with 5, 10, 15 weight percent NaCl.",
+  "Temperature in F -> K: (F - 32)/1.8 + 273.15. Pressure psi -> MPa x 0.00689476.",
+  "CO2 dissolved amount per sample must be computed as Total Gas x %CO2/100 (or Total - CH4)."
+ ],
+ "notes": "Left block 'Experimental Results' only (84 sample rows, 27 conditions, matching the text p.43 '84 data points ... at 27 experimental conditions'). The right block 'Averaged Experimental Data' (Total Gas, % CO2, CO2 SCF, CH4 SCF per condition, sigma rows for some) is derived by the authors and is written separately to table_A3_avg.csv (not for ingestion). Dashed separator lines between conditions are layout only (no label rows written). Rows inconsistent with the printed averages or with Total x (1-%CO2), kept as printed: 9-1 Total Gas 51.1 (CH4 16.6 and %CO2 72.0 imply 59.3; the printed condition-9 average 58.5 is reproduced only with ~59.1, so 51.1 is probably a misprint of 59.1); 17-1 CH4 43.2 (Total 72.7 x 0.58 = 42.2; the printed average 42.6 is reproduced with 42.2); 21-1 and 21-2 CH4 45.2 and 45.2 (Total x (1-%CO2) = 48.1 and 46.5, whose mean 47.3 equals the printed average CH4 47.3). Temperatures 298-305 F per row (title says 302 F). 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists.",
+ "conversion_rule_note": "Added 2026-10-11 (coordinator, approved by J. Moortgat): composition.density_rule nacl_25C_1atm converts g/L NaCl and SCF per barrel with the NaCl(aq) density at 298.15 K, 1 atm (gbb12_core.NACL_VPHI_25C); rows get the flag density-assumed.",
+ "gas_mixture": true
+}

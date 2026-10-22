@@ -1,0 +1,173 @@
+{
+ "table": "Table I",
+ "page_journal": "30-32",
+ "title_as_printed": "Enthalpy of Solution of Hydrocarbon Gases into Water at 25 C and Atmospheric Pressure",
+ "footnotes_as_printed": {
+  "a": "Calibration factor; units, watts-volt^-1.",
+  "b": "Steady state voltage, units, volts.",
+  "c": "Gas flow rate; units m3-s^-1.",
+  "d": "Gas partial pressure; units kPa.",
+  "e": "Heat of solution; units kJ-mol^-1."
+ },
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "partial pressure of the gas p_G in kPa (footnote d); title says 'atmospheric pressure'; total minus water vapour pressure per text of the paper",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "p_G kPa",
+   "unit": "kPa",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "dH_sol kJ/mol",
+   "unit": "kJ/mol",
+   "scale": -1,
+   "what": "heat of solution under experimental conditions (Eq. 1 dH_sol). Printed values are positive (e.g. 13.289 for methane) whereas Table II lists the standard values as negative (-13.18), so the printed number is treated as heat evolved (-dH); scale -1 is an inference from comparison with Table II and should be checked in pass 2"
+  },
+  "extra": {
+   "col": "10^6 E V",
+   "what": "steady-state thermopile voltage (volts), printed as 10^6 E"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water; water flow rate printed in each block label"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    24,
+    38,
+    50,
+    58,
+    63,
+    68,
+    77,
+    94,
+    103
+   ],
+   "reason": "gas / water-flow-rate block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "n-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 50,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "i-c4h10"
+    }
+   ]
+  },
+  {
+   "label_row": 58,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "neo-c5h12"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c-c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h4"
+    }
+   ]
+  },
+  {
+   "label_row": 77,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h6"
+    }
+   ]
+  },
+  {
+   "label_row": 94,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "1-c4h8"
+    }
+   ]
+  },
+  {
+   "label_row": 103,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "epsilon (calorimeter calibration factor, W/V)",
+  "10^6 E +- (voltage and its uncertainty)",
+  "10^10 dV/dt (gas flow rate, m3/s)",
+  "water flow rate in block label"
+ ],
+ "conversion_needs": [],
+ "notes": "Exponent in each block label: methane/ethane/propane/butane/2-methylpropane/2,2-dimethylpropane 2.7e-8 m3/s; cyclopropane 8.7e-9; ethene 6.9e-9; propene 7.3e-9; 1-butene 7.4e-9; ethyne 8.8e-9. The block labelled 'Butane' is n-butane per the experimental section (listed gases). Blocks have per-trial rows with the printed +- value attached to the voltage cell, written as a separate '+- E' column (printed '+-' sign omitted). Propane trial 5 p_G = 83.53 as printed (others 86.1-86.9, likely misprint, kept).",
+ "duplicate_of": "table_2 (per-trial enthalpies at the trial pressure; Table II gives the standard-state values dH0 with uncertainties, comparable to the 1985 tables; mapping audit 2026-10-02)"
+}

@@ -1,0 +1,43 @@
+{
+ "table": "Table 5",
+ "page_journal": 57,
+ "title_as_printed": "Values of lambda",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "ostwald",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pi = initial CO2 pressure (atm) in the dry vessel before water injection; lambda obtained from the slope of y (water injected) vs 1/pc over the two-phase region, with pc = P - pw (P total, pw saturated water vapour pressure), so each value covers a range of pc of the order of pi.",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pi (atm)",
+   "unit": "atm",
+   "basis": "unspecified",
+   "what": "initial CO2 pressure; not the equilibrium CO2 partial pressure"
+  },
+  "value": {
+   "col": "lambda",
+   "unit": "ostwald_mass_conc_ratio",
+   "scale": 1,
+   "what": "Ostwald coefficient lambda = (g CO2/cc liquid)/(g CO2/cc vapour) at the experimental CO2 pressures (not the limiting lambda0); liquid and vapour water densities interpolated from Tables 3 and 4 (pure-water densities below 250 C)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Printed transposed (T, pi, lambda as rows; two printed row-blocks of 10 and 8 columns); written one CSV row per printed column, first block then second.",
+  "Conversion of lambda to mole fraction needs CO2 vapour density at T and pc (authors used pure-CO2 z from Sweigert et al.) and the liquid water density; pc itself is not printed."
+ ],
+ "notes": "pvt (volumetric) method, Section 4. Authors prefer the liquid-analysis values of Table 2; the two methods differ by at most 0.05 in lambda at 300 C. 244 C lambda printed '0 31' with a faint decimal point, read 0.31."
+}

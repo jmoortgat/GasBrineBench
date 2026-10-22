@@ -1,0 +1,65 @@
+{
+ "table": "Table 2",
+ "csv": "table_2.csv",
+ "page_journal": 1247,
+ "pdf_page": 2,
+ "title_as_printed": "Vapor-Liquid Equilibria in the H2O (1) + CH4 (3) System",
+ "footnotes_as_printed": {
+  "a": "Calculated from Duan and Mao.1 x3 is the mole fraction of CH4 in liquid, and y3 is the mole fraction of CH4 in vapor of the binary H2O (1) + CH4 (3) system."
+ },
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the reaction cell, Heise gauge/transducer calibrated by dead weights (uncertainty 0.1 MPa); absolute vs gauge not stated; total pressure of the equilibrium cell",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x3 (new data)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "what": "measured CH4 mole fraction in the liquid, pure water (salt-free)"
+  },
+  "value2": {
+   "col": "x3 model",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "from_literature": true,
+   "what": "calculated with the Duan and Mao (2006) model; not a measurement"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "y3 model (CH4 vapour mole fraction from the Duan and Mao model; not measured)"
+ ],
+ "conversion_needs": [],
+ "notes": "Header footnote letter 'a' stripped. 5 rows near 375.7 K, 2 rows near 324.3 K.",
+ "row_held": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "reason": "already in GasBrineBench v1.1.1 as QIN(2008) (7 values matched exactly on 2026-10-11)"
+  }
+ ]
+}

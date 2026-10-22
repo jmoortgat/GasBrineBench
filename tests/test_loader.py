@@ -86,10 +86,11 @@ def test_lle_regime_excluded_by_default(default_rows, all_rows):
     """The default that matters: lle-regime rows are not gas solubilities."""
     assert "lle-regime" not in set(default_rows["tag"])
     only_tags = gbb.load(exclude_flags=None)
-    assert len(all_rows) - len(only_tags) == (all_rows["tag"] == "lle-regime").sum() == 354
+    assert len(all_rows) - len(only_tags) == (all_rows["tag"] == "lle-regime").sum() == 485
     dropped = all_rows[all_rows["tag"] == "lle-regime"]
-    # the 144 propane rows of v1.1.1 plus 210 rows added in v1.2 (propane, butanes, ethane, CO2 below its critical temperature)
-    assert {"c3h8", "c2h6", "n-c4h10", "i-c4h10", "co2"} == set(dropped["gas"])
+    # the 144 propane rows of v1.1.1, 210 rows added in v1.2 (propane, butanes, ethane, CO2 below its critical temperature) and 131 in
+    # v1.2.2 (CO2 + CH4 + water with a CO2-rich liquid, Al Ghafri 2014; liquid-CO2 water contents, Teymouri 2017)
+    assert {"c3h8", "c2h6", "n-c4h10", "i-c4h10", "co2", "ch4", "co2-ch4"} == set(dropped["gas"])
     assert (dropped[dropped["dataset_id"] == "c3h8_water"]).shape[0] == 144
 
 

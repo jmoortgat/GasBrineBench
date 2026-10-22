@@ -1,0 +1,46 @@
+{
+ "table": "Table I",
+ "page_journal": 403,
+ "title_as_printed": "Solubility of Nitrogen in Water at Various Temperatures",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "gas_volume_solubility",
+ "gas": "n2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "actual total pressures measured with a dead-weight piston gage (Bourdon gage not accurate enough); atmospheres, gauge/absolute not stated",
+ "gas_basis": "not_applicable",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "absorption coefficient is 'cubic centimeters of gas at standard conditions per gram of water' (mass of water, no solution or solvent volume involved); standard conditions not numerically defined",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "Pressure Atm.",
+   "unit": "atm",
+   "basis": "total"
+  },
+  "value": {
+   "col": "absorption coefficient Cc.",
+   "unit": "cm3_gas_STP_per_g_water",
+   "what": "absorption coefficient: cc of gas at standard conditions per gram of water, as stated in the text discussing Figure 4; 'standard conditions' not defined numerically"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "distilled water, presaturated with nitrogen at room temperature"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "1/T, K printed row below the table (0.00366 ... 0.00226), a calculated companion of the column temperatures, not written to the CSV"
+ ],
+ "conversion_needs": [
+  "standard conditions (T, p) need to be assumed by the builder: not stated in the paper",
+  "gas partial pressure vs total pressure: paper reports only total pressure; water vapour pressure not subtracted"
+ ],
+ "notes": "Printed as a wide table (pressures 100,125,200,300 atm as rows; 0,25,50,80,100,144,169 C as columns). Written stacked in long form: for each temperature (in column order) the four pressures. 28 values. Table II (Henry's law constants) is derived and not extracted."
+}

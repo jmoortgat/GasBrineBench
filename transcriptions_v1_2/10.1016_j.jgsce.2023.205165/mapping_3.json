@@ -1,0 +1,44 @@
+{
+ "table": "Table 3",
+ "page_journal": 9,
+ "pdf_page": 9,
+ "title_as_printed": "VLE measurements of temperature (T), pressure (p), and mole fraction of water (ywater) for the vapor phase of methane + water mixtures.",
+ "footnotes_as_printed": {
+  "*": "not captured: the header 'p/MPa *' carries an asterisk but no footnote text is printed on the page (checked on the page image)"
+ },
+ "property": "y_h2o",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p = pressure of the equilibrated sample: transducer reading taken just before sealing the NMR cell, corrected by Eq. (1) for water evaporation and CH4 dissolution. Total pressure. Relative combined standard uncertainty 0.16 % to 0.52 % (Table S2 of Appendix A). The header asterisk has no printed footnote.",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K",
+   "fill_down": true
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "y_water",
+   "unit": "mole_fraction_water_in_gas_phase",
+   "scale": 1,
+   "what": "mole fraction of water in the CH4-rich vapour phase from in situ 1H NMR spectra (separate sample with the vapour filling the active volume)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "T printed only on the first row of each isotherm and carried forward. Rows 9-13 (307.98 K, 6.93/6.89/6.90/6.93/6.93 MPa) are repeats at a nominal 6.9 MPa; the authors call one an apparent outlier (row 9, y = 0.000704) but keep it. QUALITY: the authors state that these y_water values are systematically lower than all published data and about half of the GERG-2008 and Herrig (2018) model values, likely from peak overlap / baseline subtraction in the vapour spectra (abstract, Sec. 3.4). A quick check agrees: at 299.73 K and 0.76 MPa the Raoult estimate p_sat/p is about 0.0046 vs printed 0.002538. Builder should flag or hold this table. Relative combined standard uncertainty of y by setpoint (Table 1, as printed): 0.76 MPa 8.27 %, 1.78 8.27 %, 3.46 8.41 %, 6.97 8.60 %, 10.41 9.99 %, 13.80 22.77 %.",
+ "caution": "The authors state that their gas-phase water fractions are systematically about half of literature and model values (probably NMR peak overlap); a Raoult check in pass 1 agrees. Kept, flagged source-caution."
+}

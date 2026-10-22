@@ -1,0 +1,206 @@
+{
+ "table": "Table 2",
+ "page_journal": 341,
+ "title_as_printed": "Relative density measurements of {H2O(1) in CO2(2)}, rho, with their respective difference in density from pure CO2, Drho = rho - rho2, and partial molar volumes approaching infinite dilution, V1inf from T = (318 to 369) K and up to p = 35 MPa (m1 = 0.053 to 0.065 mol kg-1).",
+ "footnotes_as_printed": {
+  "table_note": "All expanded uncertainties are reported at a 95% confidence interval. The average uncertainty of the density differences was calculated to be dDrho2 = 0.21 kg m-3."
+ },
+ "property": "rho",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Cell pressure measured at the vibrating-tube densimeter (Paroscientific Digiquartz transducer); not stated whether gauge or absolute; single-phase sub-saturated H2O in CO2, so total pressure",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "see group_rows"
+  },
+  "P": {
+   "col": "p MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "rho kg m-3",
+   "unit": "kg/m3",
+   "what": "density of the {H2O(1) in CO2(2)} mixture (wet CO2)"
+  },
+  "uncertainty": {
+   "col": "rho unc kg m-3",
+   "unit": "kg/m3",
+   "what": "expanded uncertainty, 95% confidence"
+  },
+  "value2": {
+   "col": "Drho kg m-3",
+   "unit": "kg/m3",
+   "what": "density difference from pure CO2 at the same T,p (pure CO2 density interpolated with a Wagner-type equation), rho - rho2",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "V1inf cm3 mol-1",
+   "unit": "cm3/mol",
+   "what": "partial molar volume of H2O at infinite dilution in CO2, assumed equal to apparent molar volume (eq. 5)",
+   "derived_by_authors": true
+  },
+  "uncertainty3": {
+   "col": "V1inf unc cm3 mol-1",
+   "unit": "cm3/mol"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Water (component 1) dissolved in CO2 (component 2), gravimetric: molality of H2O m1 in mol per kg CO2 and x1 in mol% are printed in the block label (0.05325 mol/kg = 0.2338 mol%; 0.06468 = 0.2838; 0.06597 = 0.2895); carried into group_rows as water_molality_in_co2 and water_mole_percent_in_co2. m1 uncertainty printed in label: 0.00092, 0.00057, 0.00068 mol/kg. Mixtures are sub-saturated (single CO2-rich phase)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    24,
+    25,
+    48,
+    49,
+    80,
+    81,
+    107,
+    108,
+    132,
+    133
+   ],
+   "reason": "block label rows (T and m1)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "318.279",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.05325",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2338",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "322.904",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.06468",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2838",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "346.236",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.06468",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2838",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 80,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "346.720",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.06597",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2895",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 107,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "346.776",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.06597",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2895",
+     "unit": "mol%"
+    }
+   ]
+  },
+  {
+   "label_row": 132,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "369.406",
+     "unit": "K"
+    },
+    {
+     "path": "water_molality_in_co2",
+     "value": "0.06468",
+     "unit": "mol/kg_CO2"
+    },
+    {
+     "path": "water_mole_percent_in_co2",
+     "value": "0.2838",
+     "unit": "mol%"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "none"
+ ],
+ "conversion_needs": [
+  "water content given as molality (mol H2O per kg CO2) and mol%; mole fraction y_H2O = x1/100"
+ ],
+ "volume_basis_note": "No volume-defined quantity except density (kg/m3 of the mixture). volume_basis: not_applicable",
+ "notes": "Each T block has two label rows (T line, then m1 line); group_rows are attached to the T label row and set T and composition for all following data rows until the next T label row. Data rows come in near-replicate pairs at nominal pressures. Printed T 346.236, 346.720, 346.776 K are separate loadings (figure legend merges them). Negative Drho and negative V1inf are printed. Uncertainties split from printed 'value +/- unc' cells; the plus-minus sign is the only change. Printed Drho cells carry no uncertainty (average 0.21 kg/m3). Printed T given as (T +/- 0.005) K."
+}

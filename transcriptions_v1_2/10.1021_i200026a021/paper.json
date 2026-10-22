@@ -1,0 +1,76 @@
+{
+ "doi": "10.1021/i200026a021",
+ "first_author": "Cramer, Stephen D.",
+ "authors": "Stephen D. Cramer",
+ "year": 1984,
+ "journal": "Industrial & Engineering Chemistry Process Design and Development 23, 533-538",
+ "title": "Solubility of Methane in Brines From 0 to 300 C",
+ "source_key": "CRAMER(1984)",
+ "experimental_method": "Gas extraction: methane dissolved in brine in a high-pressure heated/cooled stirred reactor (to 13.2 MPa); 4-8 methane-saturated liquid samples per condition cooled to room temperature and degassed into a constant-temperature gas buret for PVT measurement of vapour and residual dissolved methane (Cramer 1980). Reagent-grade salts in demineralized water.",
+ "uncertainties_stated": "Experimental error in the modified Henry's law constant 5.8 % (worst-case analysis of measurement errors, Cramer 1980). Relative standard errors of the smoothing fit (Table IV) 5.1-10.5 %.",
+ "quality_remarks": "Results are printed only as mean modified Henry's law constants k (MPa) with total reactor pressure; mole fractions are not printed, and k uses the author's computed methane partial pressure and a chart fugacity coefficient. Six water-block values (footnote b) are recomputed from Culberson and McKetta (1951), not measured here (held). Some rows show large scatter (NaCl-3 at 203.7 C 7430 vs 205.3 C 10870; NaCl-4 112.6 C 21110 vs 115.7 C 27470). The abstract and text say measurements 0-300 C; lowest printed T is 0.5 C. Paper is printed directly after another article (pages 533 top: end of a previous paper's references) and before Fan et al. on p. 538; tables checked to belong to this paper. Temperature scale not stated.",
+ "how_extracted": "pdf_text_layer (clean, born-digital typeset scan with text layer) as layout aid; every cell compared with the 250 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   534,
+   535
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table IV",
+   "reason": "solubility constants (fit coefficients of eq 4); model parameters"
+  },
+  {
+   "table": "Table V",
+   "reason": "smoothed Henry's law constants generated from eq 4"
+  },
+  {
+   "table": "Table VI",
+   "reason": "salting-out coefficients from a least-squares fit of eq 9 to the smoothed values"
+  },
+  {
+   "table": "Table I",
+   "reason": "brine compositions, written as table_I.csv (hold_table: composition reference), not a data table"
+  },
+  {
+   "table": "Table II",
+   "reason": "SSGB element composition, written as table_II.csv (hold_table: composition reference), not a data table"
+  }
+ ],
+ "row_counts": {
+  "Table III": {
+   "printed": 94,
+   "written": 94,
+   "label_rows": 6,
+   "per_block": {
+    "water": 22,
+    "NaCl-1": 12,
+    "NaCl-2": 15,
+    "NaCl-3": 21,
+    "NaCl-4": 12,
+    "SSGB": 12
+   },
+   "footnote_b_rows_held": 6
+  },
+  "Table I": {
+   "printed": 5,
+   "written": 5
+  },
+  "Table II": {
+   "printed": 17,
+   "written": 17
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer matched the image for every cell of Tables I-III (thin-space thousands separators removed in the CSV, e.g. '2 580' -> 2580; recorded here as a format change, not a correction). Sanity checks (script): within each block k rises with T to a maximum near 80-100 C and then falls (author: maxima 83.5-96 C), with scatter; at matched T, k increases with salinity water < NaCl-1 < NaCl-2 < NaCl-3 < NaCl-4 (e.g. ~3-5 C: 2580, 3620, 5870, 8160, 17560); SSGB lies between NaCl-3 and NaCl-4 at low T and flatter in T; P range 1.1-13.2 MPa (text: up to 13.2 MPa); T range 0.5-301.1 C. NaCl-4 at 3.5 C (17560) is above the value at 13.3 C (14650), opposite to the trend in the other blocks; kept as printed.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Clean text layer; every cell matched the page image; no correction needed (only thin-space thousands separators removed).",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1021_i200026a021, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

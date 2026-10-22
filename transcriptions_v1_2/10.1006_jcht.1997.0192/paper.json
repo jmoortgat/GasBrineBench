@@ -1,0 +1,59 @@
+{
+ "doi": "10.1006/jcht.1997.0192",
+ "first_author": "Hnedkovsky",
+ "year": 1997,
+ "journal": "J. Chem. Thermodynamics 29, 731-747",
+ "source_key": "HNEDKOVSKY(1997)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Typeset PDF with a clean text layer; all four tables matched the 200 dpi page images cell by cell with no correction.",
+ "title": "Apparent molar heat capacities of aqueous solutions of CH4, CO2, H2S, and NH3 at temperatures from 304 K to 704 K at a pressure of 28 MPa",
+ "authors": "Lubomir Hnedkovsky, Robert H. Wood",
+ "experimental_method": "Differential flow heat-capacity calorimeter (Carter and Wood design) measuring cp,s/cp,w of dilute gas solutions relative to water at about 28 MPa, 304 to 704 K; Cp,phi from eq (1) with water cp from Hill's equation of state.",
+ "uncertainties_stated": "Molality (0.7, 0.5, 0.5, 0.3) per cent for CH4, CO2, H2S, NH3; T 0.05 K below 600 K, 0.2 K above, up to 0.7 K at 658-678 K; Cp,phi about 1 per cent below 623 K, up to about 25 per cent of the peak value near and between the extrema.",
+ "quality_remarks": "Values are averages of two or more experiments. Very large positive and negative Cp,phi near the critical region of water (661 to 675 K). Temperature scale not stated. Note: in the text layer the plus-minus sign is encoded as '2' and the copyright sign as '7' (text only; tables unaffected).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   732,
+   733,
+   734,
+   735
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 5",
+   "reason": "Cp,m,2 of NH3(aq) extrapolated to infinite dilution (derived)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed": 15,
+   "written": 15
+  },
+  "table_2": {
+   "printed": 15,
+   "written": 15
+  },
+  "table_3": {
+   "printed": 15,
+   "written": 15
+  },
+  "table_4": {
+   "printed": 74,
+   "written": 74,
+   "note": "five molality series on two pages"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "CSVs by script from pdftotext -layout (unicode minus to '-'), every cell compared with the page images. Scope: CH4 and CO2 are target gases; H2S and NH3 tables kept with gas keys h2s and nh3 for the builder to decide. Sanity: Cp,phi passes through a sharp maximum near 662 K and a minimum near 670 K for every solute, as the authors describe.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1006_jcht.1997.0192, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical."
+}

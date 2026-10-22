@@ -1,0 +1,67 @@
+{
+ "table": "Table A-2",
+ "page_pdf": [
+  93,
+  94,
+  95
+ ],
+ "page_report": [
+  85,
+  86,
+  87
+ ],
+ "title_as_printed": "Empirical data for the solubility of methane in NaCl solutions at low temperature and pressure",
+ "footnotes_as_printed": {
+  "1": "Temperature in oF.",
+  "2": "Psi is absolute.",
+  "3": "Salinity in grams/liter.",
+  "4": "SCF at 25oC (77oF)."
+ },
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "psi absolute (footnote); system pressure read on a Heise Bourdon gauge (+/-45 psi, report p.7); whether water vapour is included is not stated (it is the total system pressure over CH4 + brine)",
+ "columns": {
+  "T": {
+   "col": "TDEGF",
+   "unit": "F"
+  },
+  "P": {
+   "col": "PSI",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "SCF",
+   "unit": "SCF_per_bbl_brine",
+   "reference_state": "SCF/Bbl: standard cubic feet of gas at 25 C (77 F) and 1 atm per barrel (42 US gal) of brine (report pages 15 and 19; Table A-2 footnote 'SCF at 25 C (77 F)')",
+   "scale": 1
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {
+   "NaCl": {
+    "col": "SAL",
+    "unit": "g/L"
+   }
+  },
+  "constant": {},
+  "other_species": "",
+  "density_rule": "nacl_25C_1atm"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "NUMBER (sample serial number 1-128)"
+ ],
+ "conversion_needs": [
+  "Value is gas volume per barrel of brine (SCF at 25 C, 1 atm per 42-US-gal barrel). The authors analysed samples as mol gas per kg of SOLUTION and converted to SCF/Bbl 'using appropriate conversion factors' (report p.13) that are NOT given; the inverse conversion needs the brine density at 25 C (or at the authors' unstated reference) and the molar volume of ideal gas at 25 C, 1 atm (24.465 L/mol; 1 SCF = 28.3168 L; 1 bbl = 158.987 L). Whether 'barrel of brine' means brine volume at 25 C or at another temperature is not stated.",
+  "For orientation only, the report's comparison tables give the factors the authors used to turn literature mole fractions into SCF/Bbl: mole fraction = SCF/Bbl x 0.0001312 for pure water (Tables 4 and 5), 0.0001317 for 1 m NaCl and 0.0001328 for 4 m NaCl (Table 5). Basis of that mole fraction (salt counted or not) is not stated.",
+  "Salinity is g NaCl per litre of solution; conversion to molality needs solution density (not given). Text (report p.33) equates 52, 107, 167 g/L with 5, 10, 15 weight percent NaCl.",
+  "Temperature in F -> K: (F - 32)/1.8 + 273.15. Pressure psi -> MPa x 0.00689476."
+ ],
+ "notes": "128 printed rows over three pages (NUMBER 1-50, 51-95, 96-128), all written. Each row is one sample (replicates at the same nominal conditions are separate rows; 17 rows are exact repeats of another row's T, P, SAL and SCF and are kept). Text (report p.33) says 129 samples at 34 conditions at 77, 122 and 160 F and 52, 107, 167 g/L; the table prints 128 rows, temperatures 74-161 F plus a 212 F block (rows 115-128) not mentioned in that sentence, and salinities 46, 49, 51, 52, 105, 106, 107, 163, 166 g/L as measured per sample. Authors state analytical uncertainty at these conditions is usually +/-10 to +/-25 percent of the mean (std. dev. of repeats 0.2-0.5 SCF/Bbl). Authors rejected some points before tabulation; their Table 6 is a graphical interpolation of these data (not extracted).",
+ "conversion_rule_note": "Added 2026-10-11 (coordinator, approved by J. Moortgat): composition.density_rule nacl_25C_1atm converts g/L NaCl and SCF per barrel with the NaCl(aq) density at 298.15 K, 1 atm (gbb12_core.NACL_VPHI_25C); rows get the flag density-assumed."
+}

@@ -1,0 +1,43 @@
+{
+ "page_journal": null,
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (p is the measured pressure of the magnetic suspension balance cell; presumably absolute)",
+ "volume_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Tianjin reservoir brine (mol/kg): Ca 0.000045, Na 0.020025, Mg 0.000143, K 0.000410, Fe 0.000004, Cl 0.012667, SO4 0.002094, HCO3 0.001967; pH 8.44 at 290.55 K (paper Table 1; basis of mol/kg not stated beyond the unit mol/kg). Natural formation brine of very low salinity (Na 0.020 mol/kg); not a NaCl/KCl/CaCl2/MgCl2/Na2SO4 solution of stated molality."
+ },
+ "extra_unmapped": [
+  "st dev(T)/mK (standard deviation of temperature)",
+  "st dev(p)/kPa (standard deviation of pressure)",
+  "rho_EOS (calculated from Duan et al. EOS, not measured)",
+  "100*(rho - rho_EOS)/rho (deviation from EOS, derived)"
+ ],
+ "conversion_needs": [],
+ "table": "Table 2",
+ "title_as_printed": "Experimental Densities rho of CO2-Free Brine from Tianjin Reservoir and Deviations from the Values rho_EOS Calculated from EOS of Zhenhao Duan et al. (8)",
+ "footnotes_as_printed": "none captured (no footnotes in the HTML table)",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho/g.cm^-3",
+   "unit": "g/cm3"
+  }
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "notes": "Each data point is the average of ten or more measurements. Uncertainty: 0.01 % (from T and p) for CO2-free brine; total MSB uncertainty 0.1 % (technical specification). Instrument validated with N2 and deionized water (max deviation 0.05 % N2, 0.03 % water vs NIST)."
+}

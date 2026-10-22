@@ -1,0 +1,12 @@
+{"table":"Table 4","page_journal":160,"title_as_printed":"Water solubility of saturated CaCl2 solutions in scCO2 at 90 atm and different temperatures determined from NIR absorption spectroscopic measurements.",
+"footnotes_as_printed":{"a":"Based on triplicate measurements, the error of the data is +/-10%.","b":"Corresponding to CaCl2 saturation at 25 C and 1 atm."},
+"property":"y_h2o","gas":"co2","regime":"","temperature_scale":"not stated",
+"pressure_note":"90 atm stated in title; total vs partial not stated",
+"columns":{"T":{"col":"T C","unit":"C"},"P":{"col":"","unit":"atm","constant":"90","basis":"unspecified"},
+"value":{"col":"H2O solubility mol% Sat. CaCl2","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"what":"over CaCl2 solution saturated at 25 C (solution may be undersaturated at higher T)"},
+"value2":{"col":"H2O solubility mol% Sat. CaCl2 + 2.16 g solid","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"what":"saturated solution plus 2.16 g extra CaCl2.2H2O solid in the reactor (solid present, so saturated at T)"},
+"value3":{"col":"H2O solubility mol% H2O only","unit":"mole_fraction_water_in_gas_phase","scale":0.01,"what":"pure water, repeat of Table 3"}},
+"composition":{"basis":"none","per_row":{},"constant":{},"other_species":"CaCl2 saturated at 25 C and 1 atm in column 1; molality not stated in this table; column 2 saturated with solid present at T, molality not stated; column 3 pure water"},
+"skip_rows":[],"group_rows":[],"extra_unmapped":[],
+"conversion_needs":["atm to kPa","mol% to mole fraction","CaCl2 molality at saturation needed from external source"],
+"notes":"Three composition states sit in three columns (builder must split them). Error +/-10% relative."}

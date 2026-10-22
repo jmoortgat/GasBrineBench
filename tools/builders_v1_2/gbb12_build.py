@@ -19,11 +19,11 @@ from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gbb12_core as C
-from gbb12_loader import MappingError, load_table
+from gbb12_loader import MappingError, load_table, table_csv_path
 
 SEVEN = {"co2", "ch4", "h2", "n2", "o2", "c2h6", "c3h8"}
 COLUMNS = ["dataset_id", "source", "gas", "property", "T_K", "P_bar", "m_Na", "m_Cl", "m_K", "m_Ca", "m_Mg", "m_SO4",
-           "value", "uncertainty", "quality", "tag", "m_gas", "src_table", "family"]
+           "value", "uncertainty", "quality", "tag", "m_gas", "src_table", "family", "y_co2_dry"]
 
 # plausibility ranges of converted values (inclusive); a value outside raises a hold-back with the reason
 RANGE = {
@@ -35,7 +35,7 @@ RANGE = {
     "phi_osm": (0.1, 6.0),
     "visc": (0.02, 100.0),                   # mPa s
     "dh_sol": (-100.0, 100.0),               # kJ/mol
-    "Cp_app": (-3000.0, 1000.0),             # J/(K mol)
+    "Cp_app": (-12000.0, 1000.0),            # J/(K mol); dilute NaCl near the critical point of water reaches about -7400 (Hnedkovsky 2002, 623 K)
 }
 
 
@@ -157,6 +157,18 @@ def comp_to_ions(rec, notes):
             ions = C.add_ions(ions, C.salt_to_ions(salt, (x / C.SALT[salt][0]) * 1000.0 / wg))
         tags.add("minor-species-omitted")
         return ions, tags
+    if basis in ("g_per_L", "molarity", "normality") and rec.get("comp_density_rule") == "nacl_25C_1atm":
+        # g NaCl (or mol, or equivalents; NaCl is 1:1) per litre of solution, density from the NaCl(aq) fit at 298.15 K and 1 atm
+        # (gbb12_core.NACL_VPHI_25C); only when the mapping asks for it, and every row gets the flag density-assumed
+        if set(vals) != {"NaCl"}:
+            raise Hold("density rule nacl_25C_1atm applies to NaCl-only solutions")
+        c_gL = vals["NaCl"] if basis == "g_per_L" else vals["NaCl"] * C.SALT["NaCl"][0]
+        try:
+            m = C.nacl_molality_from_g_per_L_25C(c_gL)
+        except ValueError as e:
+            raise Hold(str(e))
+        tags.add("density-assumed")
+        return C.add_ions(ions, C.salt_to_ions("NaCl", m)), tags
     if basis in ("normality", "g_per_kg", "g_per_L", "molarity", "ionic_strength"):
         raise Hold(f"composition basis {basis} needs a solution density that the paper does not give")
     if basis not in ("molality", "mass_percent", "mass_fraction", "mole_fraction"):
@@ -443,6 +455,8 @@ def conv_gas_volume(rec, mapping, T_K, P_bar, ions, tags):
     unit = rec["value_unit"] or ""
     if re.search(r"(cm3|ml)_?(gas_)?stp.*per_g_?(of_)?water", unit.lower().replace(" ", "")):
         return conv_gas_volume_per_mass(rec, mapping, T_K, P_bar, ions, tags)
+    if re.match(r"^scf_(\w+_)?per_bbl_brine", unit.lower()):
+        return conv_scf_per_bbl(rec, mapping, T_K, P_bar, ions, tags)
     SA = ions.get("_SA", 0.0)
     if SA == 0 and any(ions[k] > 0 for k in C.IONS):
         raise Hold("ml/l of a single-salt solution needs the solution density")
@@ -462,6 +476,94 @@ def conv_gas_volume(rec, mapping, T_K, P_bar, ions, tags):
         rho = C.water_rho_kgm3(T_K, P_atm) / 1000.0  # kg per litre
     m = (v / 1000.0 / 22.414) / rho
     return [(pn, fam, val, unc, p_o2 + ps) for pn, fam, val, unc in two_x_rows(m)]
+
+
+def _xval(rec, key, scale=1.0):
+    v = rec["x"].get(key)
+    return None if v is None else (f(v) * scale if f(v) is not None else None)
+
+
+def conv_ternary(rec, mapping, T_K, P_bar, ions, tags):
+    """CO2 + CH4 + water (ternary family). One printed state point -> up to three rows, each carrying y_co2_dry, the CO2 mole fraction of
+    the gas phase on a water-free basis: dissolved CO2 and dissolved CH4 (xc_saltfree, salt-free mole fractions as printed) and, when
+    measured, the water mole fraction of the gas phase (gas co2-ch4, property y_h2o).
+    Mapping columns: value = x(CO2) and value2 = x(CH4) in the aqueous phase (each with its `gas` key), uncertainty / uncertainty2,
+    y_co2_gas and y_ch4_gas (or y_co2_dry) for the coexisting gas, y_h2o_gas and u_y_h2o_gas (omit when not measured).
+    When each phase is printed as its own row (mapping key gas_phase_row = {"phase_col_key": ..., "gas": "I", "aqueous": "III"}), the
+    aqueous row takes the gas-phase values from the nearest preceding gas row of the same block, whose pressure must agree within 1 %."""
+    gp = mapping.get("gas_phase_row")
+    src = rec
+    if gp:
+        phase = (rec["x"].get(gp["phase_col_key"]) or "").strip()
+        if phase != gp["aqueous"]:
+            raise Hold(f"phase {phase!r} row: only the aqueous-phase row of a state point is built (gas values are taken from the {gp['gas']} row)")
+        recs = mapping["_recs"]
+        i = recs.index(rec)
+        src = None
+        for r in reversed(recs[max(0, i - 4):i]):
+            if (r["x"].get(gp["phase_col_key"]) or "").strip() == gp["gas"]:
+                src = r
+                break
+        if src is None or f(src["P"]) is None or abs(f(src["P"]) / f(rec["P"]) - 1.0) > 0.01:
+            raise Hold("gas-phase row of this state point not found within 1 % in pressure")
+    cols = mapping["columns"]
+    yd = _xval(src, "y_co2_dry")
+    if yd is None:
+        yc, ym = _xval(src, "y_co2_gas"), _xval(src, "y_ch4_gas")
+        if yc is None or ym is None or yc + ym <= 0:
+            raise Hold("gas-phase CO2 and CH4 fractions missing: y_co2_dry cannot be formed")
+        yd = yc / (yc + ym)
+    out = []
+    for vkey, ukey in (("value", "uncertainty"), ("value2", "uncertainty2")):
+        g = (cols.get(vkey) or {}).get("gas")
+        x = f(rec.get(vkey)) if vkey != "value" else f(rec["value"])
+        if g not in ("co2", "ch4") or x is None:
+            continue
+        u = _xval(rec, ukey) if ukey == "uncertainty2" else (f(rec["uncertainty"]) if rec["uncertainty"] is not None else None)
+        out.append(("xc_saltfree", "ternary", x, u, None, {"gas": g, "y_co2_dry": round(yd, 6)}))
+    yw = _xval(src, "y_h2o_gas")
+    if yw is not None and not (cols.get("y_h2o_gas") or {}).get("derived_by_authors"):
+        P_gas = C.to_bar(f(src["P"]) * src["P_scale"], src["P_unit"]) if gp else None
+        out.append(("y_h2o", "ternary", yw, _xval(src, "u_y_h2o_gas"), P_gas, {"gas": "co2-ch4", "y_co2_dry": round(yd, 6)}))
+    if not out:
+        raise Hold("no measured ternary quantity in this row")
+    return out
+
+
+def conv_mole_ratio(rec, mapping, T_K, P_bar, ions, tags):
+    """Moles of gas per mole of water (printed scale applied) -> mol gas per kg water: m = r x 1000 / M_W. Exact; no density needed."""
+    r = f(rec["value"])
+    if r is None:
+        raise Hold("value missing")
+    if "per_mol_h2o" not in (rec["value_unit"] or "").lower():
+        raise Hold(f"unit {rec['value_unit']!r} is not a gas-to-water mole ratio")
+    return two_x_rows(r * rec["value_scale"] * 1000.0 / C.M_W)
+
+
+SCF_L = 28.316846592  # litres per cubic foot
+BBL_L = 158.987294928  # litres per US petroleum barrel (42 US gallons)
+
+
+def conv_scf_per_bbl(rec, mapping, T_K, P_bar, ions, tags):
+    """Standard cubic feet of gas (ideal gas at 25 C and 1 atm) per barrel of gas-free brine -> mol gas per kg water.
+    NaCl brine or pure water only; the barrel is taken as brine volume at 298.15 K and 1 atm (density from gbb12_core.NACL_VPHI_25C,
+    IAPWS-95 for water). Requires composition.density_rule = nacl_25C_1atm; tagged density-assumed. Checked against the factors printed by
+    Blount et al. (1982, Tables 4 and 5): 0.0001312, 0.0001317 and 0.0001328 mole fraction per SCF/Bbl for water, 1 and 4 mol/kg NaCl;
+    this conversion gives 0.0001315, 0.0001316 and 0.0001327 when NaCl is counted as one species in the mole fraction, as the authors did."""
+    if rec.get("comp_density_rule") != "nacl_25C_1atm":
+        raise Hold("SCF per barrel needs composition.density_rule = nacl_25C_1atm in the mapping")
+    if any(ions[k] > 0 for k in ("m_K", "m_Ca", "m_Mg", "m_SO4")):
+        raise Hold("SCF per barrel is converted only for NaCl brine or pure water")
+    v = f(rec["value"])
+    if v is None:
+        raise Hold("value missing")
+    v *= rec["value_scale"]
+    m_s = ions["m_Na"]
+    rho = C.nacl_density_25C_kgm3(m_s) / 1000.0  # kg per litre of brine
+    water_kg_per_bbl = BBL_L * rho / (1.0 + m_s * C.SALT["NaCl"][0] / 1000.0)
+    n_per_scf = 101325.0 * SCF_L / 1000.0 / (C.R_GAS * 298.15)  # mol per standard cubic foot
+    tags.add("density-assumed")
+    return two_x_rows(v * n_per_scf / water_kg_per_bbl)
 
 
 STP_MOLAR_VOLUME_L = 22.414  # litres per mole at 0 C and 1 atm; old papers rarely define "S.T.P." and this convention is tagged `stp-assumed`
@@ -614,7 +716,9 @@ def conv_dh_sol(rec, mapping, T_K, P_bar, ions, tags):
 
 
 def conv_phi_cp(rec, mapping, T_K, P_bar, ions, tags):
-    """Apparent molar heat capacity of a salt solution (thermo_brine family)."""
+    """Apparent molar heat capacity of a salt solution (thermo_brine family). A dissolved gas (rows with a gas key) has no family yet."""
+    if (rec.get("gas") or "").strip():
+        raise Hold("apparent molar heat capacity of a dissolved gas: no converter for property in the brine family")
     v = f(rec["value"])
     if v is None:
         raise Hold("value missing")
@@ -721,6 +825,8 @@ CONVERTERS = {
     "bunsen": conv_bunsen,
     "ostwald": conv_ostwald,
     "gas_volume_solubility": conv_gas_volume,
+    "solubility_mole_ratio": conv_mole_ratio,
+    "ternary_state": conv_ternary,
     "rho_diff": conv_rho_diff,
     "isopiestic_molality": conv_phi_osm,
     "dh_sol": conv_dh_sol,
@@ -752,6 +858,7 @@ def build_table(extract_dir, slug, n):
         return raw_map, paper, [], [(None, f"not built: duplicate of {raw_map['duplicate_of'][:40]}")]
     mapping, paper, recs = load_table(extract_dir, slug, n)
     paper["slug_"] = slug
+    mapping["_recs"] = recs  # conv_ternary looks up the gas-phase row of a state point printed one phase per row
     prop = mapping.get("property")
     rows, held = [], []
     if prop not in CONVERTERS and not any(r.get("property") in CONVERTERS for r in recs):
@@ -841,7 +948,7 @@ def main():
             continue
         for fn in sorted(os.listdir(base)):
             m = re.match(r"mapping_(.+)\.json$", fn)
-            if not m or not os.path.exists(os.path.join(base, f"table_{m.group(1)}.csv")):
+            if not m or not os.path.exists(table_csv_path(base, m.group(1))):
                 continue
             n = m.group(1)
             try:

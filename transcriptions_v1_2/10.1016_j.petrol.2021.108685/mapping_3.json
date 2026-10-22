@@ -1,0 +1,89 @@
+{
+ "table": "Table 3",
+ "page_journal": 5,
+ "title_as_printed": "Experimental data of CO2 solubility in NaCl solution with different mass fractions at 323.15 K.",
+ "footnotes_as_printed": {
+  "": "u(x) is the standard uncertainties of CO2 solubility."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed P/MPa; paper does not say whether total or CO2 partial; cell was pressurised with CO2 only; text refers to 'pressure' and to the water saturated vapour pressure only in the modelling section",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xCO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "note": "salt-free basis not stated"
+  },
+  "uncertainty": {
+   "col": "u(x)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "what": "standard uncertainty"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {},
+  "other_species": "NaCl mass fraction printed as '5% NaCl' etc. in label rows; whether percent of brine mass is not stated"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    12
+   ],
+   "reason": "label rows with NaCl mass fraction"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5",
+     "unit": "mass_percent"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "10",
+     "unit": "mass_percent"
+    }
+   ]
+  },
+  {
+   "label_row": 12,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "15",
+     "unit": "mass_percent"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "mass percent to molality for builder"
+ ],
+ "notes": "Label row holds the salt mass fraction beside the first data row in the print; written as its own label row. T printed on every row. Mole fraction of CO2 relative to total moles in sampled liquid (n_g/(n_l+n_g)); n_l computed from liquid volume as ideal gas P0*Vl/(R*293.15) (eq. 4), i.e. salt treated as in the liquid mole count; salt-free basis not stated.",
+ "volume_basis": "not_applicable"
+}

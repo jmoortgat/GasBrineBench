@@ -58,12 +58,20 @@ def _split_value_unit(v):
     return s, ""
 
 
+def table_csv_path(base: str, n: str, mapping=None) -> str:
+    """CSV read by mapping_<n>.json: table_<n>.csv, or the file named by the mapping key `csv` when several mappings share one printed
+    table (one mapping per phase or per pressure column, SPEC v2.2)."""
+    if mapping is None:
+        mapping = json.load(open(os.path.join(base, f"mapping_{n}.json")))
+    return os.path.join(base, mapping.get("csv") or f"table_{n}.csv")
+
+
 def load_table(extract_dir: str, slug: str, n: str):
     """Return (mapping, paper, records). n is the table suffix as in table_<n>.csv (e.g. '3', '1a', '5_group2')."""
     base = os.path.join(extract_dir, slug)
     mapping = json.load(open(os.path.join(base, f"mapping_{n}.json")))
     paper = json.load(open(os.path.join(base, "paper.json")))
-    rows = list(csv.reader(open(os.path.join(base, f"table_{n}.csv"), newline="", encoding="utf-8")))
+    rows = list(csv.reader(open(table_csv_path(base, n, mapping), newline="", encoding="utf-8")))
     header, data = rows[0], rows[1:]
 
     cols = mapping.get("columns") or {}
@@ -168,6 +176,7 @@ def load_table(extract_dir: str, slug: str, n: str):
                 xcols[key] = None
     records = []
     last_T = last_P = None
+    last_comp = {}
     for i, r in enumerate(data):
         if i in skip or i in label_rows:
             continue
@@ -209,6 +218,12 @@ def load_table(extract_dir: str, slug: str, n: str):
                 P = gs["P"][0]
             elif c.get("constant") not in (None, ""):
                 P = str(c["constant"])
+            elif c.get("fill_down") and last_P is not None:
+                P = last_P  # printed ditto mark, filled down only when the mapping says so
+        if P is not None and c.get("thousands_separator") == ",":
+            P = P.replace(",", "")
+        if P is not None:
+            last_P = P
         rec["P"], rec["P_unit"], rec["P_basis"] = P, (c.get("unit") or ""), (c.get("basis") or "unspecified")
         rec["P_scale"] = parse_scale(c.get("scale"))
         # value
@@ -251,7 +266,10 @@ def load_table(extract_dir: str, slug: str, n: str):
             if isinstance(spec, dict) and spec.get("col"):
                 j = _find_col(header, spec["col"])
                 v = cells[j] if j is not None and j < len(cells) else ""
+                if v == "" and spec.get("fill_down"):
+                    v = last_comp.get(salt, "")  # printed ditto mark, filled down only when the mapping says so
                 if v != "":
+                    last_comp[salt] = v
                     comp_vals[salt] = (v, spec.get("unit", ""))
         for salt, spec in (comp.get("constant") or {}).items():
             comp_vals.setdefault(salt, _split_value_unit(spec))
@@ -303,6 +321,7 @@ def load_table(extract_dir: str, slug: str, n: str):
         rec["comp_basis"] = comp.get("basis") or "none"
         rec["comp_rule"] = comp.get("ionic_strength_rule")
         rec["comp_water_g"] = comp.get("water_g_per_kg_solution")
+        rec["comp_density_rule"] = comp.get("density_rule")
         rec["other_species"] = comp.get("other_species") or ""
         records.append(rec)
     return mapping, paper, records

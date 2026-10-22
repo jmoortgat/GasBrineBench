@@ -1,5 +1,75 @@
 # Changelog
 
+## 1.2.2 — CH4 in brines, ternary data, room-pressure brine properties
+
+Released 22 October 2026. v1.2.1 is the version described in the data descriptor.
+
+**Counts.** 32,355 datapoints from 274 works (v1.2.1: 26,815 from 249); 26,160 returned by default (23,090); 22,062 in the
+reliable set (20,899); supplementary tier 7,803
+measurements from 175 tables (5,174 from 107). Every v1.2.1 datapoint is unchanged except 14 solubility quality codes, which the
+cross-source rules recomputed with the new sources.
+
+**New data (5,540 datapoints).**
+
+* CH4 in water and NaCl brines: Blount, Price, Wenger and Tarullo 1982 (DOE report, 1,596 rows: CH4 in water and NaCl to 5.7 mol/kg,
+  297-513 K, 9-1,572 bar); Michels, Gerver and Bijl 1936 (194 rows: the NaCl tables of a paper whose water data were already in);
+  Miller et al. 2023 (42 solubility and 22 water-content rows; the authors state their water contents are about half of earlier
+  data, flagged `source-caution`); Byrne and Stoessell 1982 (11, CH4 in mixed-salt solutions with K, Mg, Ca and SO4); Stoessell 1982
+  (6, CH4 in K2SO4); Stoessell and Byrne 1982 (3, CH4 in seawater at 24-52 bar).
+* Water content of CH4: Fenghour, Wakeham and Watson 1996 (9 dew points, 427-596 K, the first CH4 water contents above 511 K);
+  Teymouri 2017 thesis (110 rows: CH4 over water to 827 bar and CO2 over NaCl brines).
+* CO2: Ellis and Golding 1963 (108 rows, CO2 in water and 0.5-2 mol/kg NaCl, 445-607 K); Al Ghafri et al. 2014 (16) and Qin et al. 2008
+  (14), CO2 + water tables of papers whose ternary data were already in.
+* CO2 + CH4 + water (ternary family, 93 -> 230 rows): Al Ghafri et al. 2014 (31 three-phase points with a CO2-rich liquid, the 373 K
+  isotherm, one 423 K point and 7 upper-critical-end points) and Qin et al. 2008 (6 points at 324 K).
+* Brine heat capacity (692 -> 1,661): Gates et al. 1987, Rogers and Duffy 1989, Hnedkovsky et al. 2002 and Smith-Magowan and Wood 1981
+  (NaCl to 632 K), Phutela and Pitzer 1986 (MgSO4).
+* Brine density and viscosity at room pressure (see the rule change below): 1,870 densities and 423 viscosities from 14 papers
+  (Dedick 1990, Connaughton 1986, Fabuss 1966, Isono 1984, Kumar 1982 and 1983, Millero 1970, 1973, 1985 and 1986, Phang 1980,
+  Qiblawey 2010, Wirth 1968, Pearce 1937), and Archer and Rard 1998 osmotic coefficients of MgSO4.
+
+**Rule change: room-pressure densities and viscosities.** v1.2.1 left out liquid densities and viscosities whose paper states no
+pressure. From v1.2.2 those measured at T <= 373.15 K are kept with an empty `P_bar` and the flag `pressure-unstated`, like the
+enthalpies, osmotic coefficients and heat capacities before them, and the default loader drops them. They add the first
+viscosities of CaCl2, MgCl2, NaCl + MgCl2 and Na2SO4 brines and the first densities of K2SO4, Na + K + SO4 and Na + Mg + SO4 brines.
+The same rows of salts outside the six ions go to the supplementary tier, which has a new class `viscosity`.
+
+**New flag `density-assumed`.** Blount et al. print NaCl in g per litre of solution and CH4 in standard cubic feet per barrel of
+brine, and Michels et al. print normality. These are converted with the density of NaCl(aq) at 298.15 K and 1 atm, fitted to the 41
+NaCl densities at 298.15 K in `rho.csv` (rms 0.009 %; `tools/builders_v1_2/fit_nacl_density_25C.py`). The conversion reproduces
+the factors Blount et al. print for water, 1 and 4 mol/kg NaCl within 0.2 %. The flagged rows are returned by default and left out
+of `reliable=True`.
+
+**Audit of the new datapoints.** The 5,471 datapoints added in this version were transcribed twice, blind, and then audited row by row
+against the papers, including the conversion, as v1.2.1 was (8 auditors; brief, results and corrections in `release/audit_v1_2_2/` of the
+maintainers' work area). Verdicts: 5,237 correct, 82 minor, 152 major (the 79 replicates kept afterwards share the verdict of their identical twin). Corrected: the standard deviations of Rogers and Duffy 1989
+(printed in units of R and stored without the factor 8.314, all 151 rows), two Hnedkovsky et al. 2002 rows printed at 632.20 K (623.20 K by the
+water heat capacity they imply and the paper's stated range) and one printed at m = 0.4000 (0.2002), one Kumar 1983 point stored at the wrong
+isotherm, and eight Al Ghafri 2014 molality uncertainties. Removed: one Millero 1985 density misprinted by 10 kg/m3 and the nine water
+densities that Isono 1984 took from the literature to calibrate his densimeter. Flagged `source-caution` where the paper's own columns disagree
+(Dedick 1990, Millero 1973, Qiblawey 2010, Smith-Magowan and Wood 1981, Hnedkovsky 2002) or the authors left the point out of their fit
+(Gates 1987). Not corrected: Ellis and Golding 1963 print the CO2 partial pressure, and the stored total pressure adds the vapour pressure of
+pure water while the authors subtracted a Raoult-lowered one; the stored pressures are 0.3-2 % high, up to 5 % for ten brine points above
+300 C (audit status `residual-difference`). Audit status of the whole database: 23,231 verified, 8,350 corrected, 684 residual-difference,
+90 not-verifiable. The vocabulary also gains the status `not-audited`, for datapoints added in a later version before their audit; no
+datapoint of 1.2.2 carries it.
+
+**Builder (SPEC v2.2).** Mapping options for printed ditto marks (pressure and composition), thousands separators, several mappings
+over one printed table, gas-to-water mole ratios, the NaCl density rule, and a converter for the CO2 + CH4 + water family
+(`ternary_state`), which reproduces the ternary rows of Al Ghafri 2014 and Qin 2008 already in the database exactly. The release
+script keeps the source keys of earlier versions (a new paper that collides gets the suffix) and orders the input so that the audit
+corrections, which address rows by position, apply to the same rows. Two mapping errors in Isono 1984 (salt column, viscosity unit)
+were fixed.
+
+**Checked and not added.** Abdi 2017 and Aljeban 2026 print data only in figures; Ma and Huang 2017 use a NaHCO3 solution; Pei et
+al. 2026 (CH4 in bicarbonate formation waters, 240 values) and Cramer 1984 (CH4 Henry constants in NaCl and a synthetic geothermal
+brine) need a model or a density and are in the supplementary tier; phase-boundary isopleths (Krader and Franck 1987, Gehrig et al.
+1986, Blencoe et al. 2001, Mather and Franck 1992) are transcribed but neither converted nor put in the supplementary tier, which excludes
+phase boundaries (the exclusion pattern was extended to catch their wording). **Replicates are kept.** Until v1.2.1 the release removed a row that repeats another row of the same source exactly (same state, same
+value). For papers added in v1.2.2 a row that repeats another row of the SAME printed table is kept: it is a separate measurement whose
+printed value happens to coincide (Blount 1982: 30 samples; Rogers and Duffy 1989: 13; Hnedkovsky 2002: 4; Gates 1987: 2). Identical rows
+of different tables are still removed, and the datasets of v1.2.1 keep the v1.2.1 rule, so no v1.2.1 datapoint changes.
+
 ## 1.2.1 — 146 further papers, three new families, a supplementary tier
 
 Archived on Zenodo: doi 10.5281/zenodo.23243941.

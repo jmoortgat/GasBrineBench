@@ -1,0 +1,87 @@
+{
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column headers in psia. Pressure in the saturation chamber read via port B on a Heise CM 32507 gauge (dead-weight accuracy within 1 psia); equilibrium pressures maintained within 1 psia of the reported gauge values, estimated accuracy within 2 psia. Whether total pressure (methane + water vapour) or methane partial pressure is not stated.",
+ "layout": "wide: one row per solution/slurry, one CH4-molality column per pressure; one mapping per printed pressure column over the same CSV (key csv)",
+ "table": "Table 1",
+ "page_journal": 69,
+ "pdf_page": 3,
+ "title_as_printed": "Table 1. Measured and predicted 25 C CH4 solubilities in distilled water and in sea water of 34.84 permil salinity.",
+ "footnotes_as_printed": {
+  "1": "Precision and estimated error limits are within 0.0005 and 0.001 molal units, respectively."
+ },
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "psia",
+   "basis": "unspecified",
+   "constant": "550"
+  },
+  "value": {
+   "col": "Molal solubilities 550 psia",
+   "unit": "mol_per_kg_water",
+   "what": "methane molality (mol CH4 per kg water); header footnote 1 on 'Molal solubilities'"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Distilled water (rows 0-2); Sea water of 34.84 permil salinity (table title); matrix composition not given (natural sea water)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    3
+   ],
+   "reason": "label rows (Distilled water, Sea water)"
+  },
+  {
+   "rows": [
+    2,
+    5
+   ],
+   "reason": "'Predicted' rows: model values from the O'Sullivan and Smith (1970) equation m = (chi P) exp(ln m* - V(P-1)/RT) with Din (1961) fugacity coefficients, m* from the Bunsen coefficients of Yamamoto et al. (1976), V = 35.5 cm3/mol; not measurements"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "none"
+    }
+   ]
+  },
+  {
+   "label_row": 3,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "salinity_permil"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "34.84",
+     "unit": "permil"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psia to MPa x 0.00689476",
+  "Sea-water row: salinity 34.84 permil; ionic composition of the sea water not given (builder needs a standard sea-water matrix if it wants molalities)."
+ ],
+ "notes": "Mapping for the 550 psia column. Measured rows are 1 and 4. The sea-water measured row (0.0263, 0.0400, 0.0514) equals the 'Seawater 34.84 o/oo' row of Stoessell and Byrne 1982b (GCA, extract/10.1016_0016-7037(82)90268-x, footnote ** 'Stoessell and Byrne (1982)'), i.e. this paper is the source of that row. The distilled-water measured row (0.0318, 0.0473, 0.0623) differs from the distilled-water row of 1982b (0.0319, 0.0483, 0.0617).",
+ "csv": "table_1.csv"
+}

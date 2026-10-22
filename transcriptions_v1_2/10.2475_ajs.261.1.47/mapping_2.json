@@ -1,0 +1,123 @@
+{
+ "table": "Table 2",
+ "page_journal": "52-53",
+ "title_as_printed": "Solubility of CO2 by analysis of the liquid phase",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "solubility_mole_ratio",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pc = partial pressure of CO2 (atm): total vessel pressure measured just before sampling minus the saturated water vapour pressure of water (Dorsey 1940) or of the NaCl solution (Raoult's-law corrected); above 300 C a further ~1 percent Raoult correction for dissolved CO2 was applied (text p. 50).",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pc (atm)",
+   "unit": "atm",
+   "basis": "gas_partial"
+  },
+  "value": {
+   "col": "CO2 in liquid 10^3 (moles/mole H2O)",
+   "unit": "mol_CO2_per_mol_H2O",
+   "scale": 0.001,
+   "what": "moles CO2 per mole H2O in the liquid phase, from weighed CO2 (Carbosorb) and water/salt solution in a ~2 g liquid sample; printed x10^3"
+  },
+  "fugacity_coefficient": {
+   "col": "alpha",
+   "unit": "dimensionless",
+   "from_literature": true,
+   "what": "fugacity coefficient of CO2 from Majumdar and Roy (1956)"
+  },
+  "henry": {
+   "col": "10^-3 K",
+   "unit": "atm",
+   "scale": 1000.0,
+   "derived_by_authors": true,
+   "what": "Henry's law coefficient K = fc/x = pc*alpha/x, x = nCO2/(nCO2+nH2O) in the solution; printed x10^-3"
+  },
+  "z": {
+   "col": "z",
+   "unit": "dimensionless",
+   "from_literature": true,
+   "what": "compressibility factor of pure CO2 at T and pc, from graphs of Sweigert, Weber and Allen (1946)"
+  },
+  "ostwald": {
+   "col": "lambda",
+   "unit": "dimensionless",
+   "derived_by_authors": true,
+   "what": "Ostwald coefficient = g CO2/cc liquid / g CO2/cc vapour, using the Table 1 solution densities and pure-CO2 vapour density"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none (water and NaCl solutions; molal = moles of salt per 1000 g water, text p. 47)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    16,
+    28,
+    46
+   ],
+   "reason": "solvent block labels"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 46,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "alpha (literature fugacity coefficient)",
+  "10^-3 K (derived)",
+  "z (literature)",
+  "lambda (derived)"
+ ],
+ "conversion_needs": [
+  "value x 1e-3 = mol CO2 per mol H2O (salt-free ratio); to mol/kg water multiply by 1000/18.015",
+  "pc atm -> MPa x 0.101325; pc is a CO2 partial pressure, total pressure = pc + water (or brine) vapour pressure, not printed"
+ ],
+ "notes": "Table spans p. 52 (Water, 0.5m, 1 m NaCl) and p. 53 (Table 2 continued, 2 m NaCl); blocks written in printed order. Water block NaCl = 0 set by group row. Replicate rows at the same T are separate samples at different pc."
+}

@@ -1,0 +1,135 @@
+{
+ "table": "Table 4.2",
+ "page_journal": 149,
+ "page_pdf": 180,
+ "title_as_printed": "Measured and calculated methane water content in the presence of hydrates/water at different conditions",
+ "footnotes_as_printed": {
+  "1 (text footnote on p.148 to 'VHE')": "Vapour-Liquid-Hydrate Equilibrium"
+ },
+ "property": "y_h2o",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium cell pressure (strain gauge transducer checked with a dead weight tester); absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set by group_rows (block label rows '15 C', '5 C', ...)"
+  },
+  "P": {
+   "col": "Pressure bar",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Measured water content ppm",
+   "unit": "ppm_mole_fraction_water_in_gas",
+   "scale": 1e-06,
+   "what": "water content of the methane-rich gas phase, printed in 'ppm' (mole/volume/mass basis not stated in this table; see notes)",
+   "unit_as_printed": "ppm_basis_not_stated_water_in_gas"
+  },
+  "model_cpa": {
+   "col": "Model Calculation CPA ppm",
+   "derived_by_authors": true,
+   "what": "CPA EoS calculation"
+  },
+  "model_pcsaft": {
+   "col": "Model Calculation PC-SAFT ppm",
+   "derived_by_authors": true,
+   "what": "PC-SAFT EoS calculation"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "text",
+   "constant": "+-1 % of reading or 4 ppm, whichever is greater (text p.148)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "distilled water (aqueous or hydrate phase present)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    10,
+    20,
+    21,
+    31
+   ],
+   "reason": "temperature block label rows and 'AAD %' summary rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "-5",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ],
+   "regime": "hydrate",
+   "reason": "Equilibrium state column 'VHE' (methane in equilibrium with hydrate; assignment by the authors from a CALCULATED hydrate dissociation pressure)"
+  }
+ ],
+ "extra_unmapped": [
+  "Equilibrium state (VLE/VHE) as printed",
+  "Deviations CPA % / PC-SAFT % (authors' model deviations)"
+ ],
+ "conversion_needs": [
+  "ppm to mole fraction (x1e-6) once the ppm basis is settled"
+ ],
+ "notes": "Method: low-temperature rig (T <= 25 C): rocking titanium equilibrium cell; gas sampled through a heated line (100 C) to a Yokogawa TDLAS (tunable diode laser absorption spectrometer, operated at 50 C and 0.34 barg, range to 3000 ppm, stated accuracy +-1 % of reading). The table header says only 'ppm'. Tables 4.4-4.6 (same rig, same TDLAS) label the quantity 'y_w - ppm' and Table 4.7 (GC) 'y_w - ppmV', so a mole (volume) basis is likely, but this table does not state it. Temperature is printed only in the grey block rows (filled by group_rows). '101' bar printed without decimals. VLE rows below 0 C: [22] (authors call these VLE; at -5 C the condensed water phase would be ice or supercooled water; note below_273K). All rows below 273.15 K are kept (builder tags them). 2026-10-11 coordinator: 'ppm' read as ppm by mole. Check against other laboratories in the database at the same T and P (interpolated in ln P): Table 4.13 CO2 over water, 100 and 150 C, 16-138 bar: ratio Teymouri/others 0.79-0.99 (Hou 2013b, Zawisza 1981, Caumon 2016, Tabasinejad 2011, King 1971); a mass basis would make the mole fractions 2.44 times larger (ratio about 2-2.4). Table 4.2 CH4 over water, 5 and 15 C: ratio 0.91-1.12 against Chapoy 2003/2005. Same instruments as Tables 4.4-4.7, printed 'y_w - ppm' and 'ppmV'."
+}

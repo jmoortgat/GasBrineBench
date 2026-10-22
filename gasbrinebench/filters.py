@@ -20,7 +20,7 @@ Examples
 >>> sorted(hot['gas'].unique())
 ['c3h8', 'ch4', 'co2', 'h2', 'n2', 'o2']
 >>> gbb.select(df, salt_system='single-salt', gas='co2').shape[0]
-4044
+4141
 """
 
 from __future__ import annotations
@@ -131,7 +131,7 @@ def select(
     data_origin : str or sequence of str, optional
         ``table``, ``figure`` and/or ``calculated``: where the number comes from (``SCHEMA.md``).
     audit_status : str or sequence of str, optional
-        ``verified``, ``corrected``, ``not-verifiable`` and/or ``residual-difference``: the result of the row-by-row audit
+        ``verified``, ``corrected``, ``not-verifiable``, ``residual-difference`` and/or ``not-audited``: the result of the row-by-row audit
         (needs the ``audit_status`` column that :func:`gasbrinebench.load` attaches).
     flags : str or sequence of str, optional
         Keep only rows carrying at least one of these modifier flags.

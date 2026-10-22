@@ -1,0 +1,22 @@
+{
+ "table": "Table 2", "page_journal": 8, "pdf_page": 8,
+ "title_as_printed": "VLE measurements of temperature (T), pressure (p), and mole fraction of methane (xmethane) for the liquid phase of methane + water mixtures.",
+ "footnotes_as_printed": {},
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "p = pressure of the equilibrated sample: transducer reading (Paroscientific, 21.7 MPa full scale) taken during preparation just before sealing the NMR cell, corrected by Eq. (1) for water evaporation (+p*y_water) and CH4 dissolution (-p*x_methane*mol_water/mol_methane). Total pressure of the two-phase sample. Relative combined standard uncertainty 0.16 % to 0.52 % (Table S2 of Appendix A).",
+ "columns": {
+  "T": {"col": "T/K", "unit": "K", "fill_down": true},
+  "P": {"col": "p/MPa", "unit": "MPa", "basis": "total"},
+  "value": {"col": "x_methane", "unit": "mole_fraction_gas_in_aqueous_phase", "scale": 1,
+            "what": "mole fraction of CH4 in the liquid (aqueous) phase from in situ 1H NMR spectra; binary CH4 + water, salt-free by construction"}
+ },
+ "composition": {"basis": "none", "per_row": {}, "constant": {}, "other_species": ""},
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "T printed only on the first row of each isotherm (299.73, 307.98, 323.25 K) and carried forward (v2.1 rule 3). Rows 9-12 (307.98 K, 6.94/6.84/6.82/6.81 MPa) are repeat measurements at a nominal 6.9 MPa; the authors call one of them (row 9, x = 0.001302) an apparent outlier but keep it. Relative combined standard uncertainty of x by pressure setpoint from Table 1: 0.69 MPa 21.41 %, 1.73 MPa 6.31 %, 3.52 MPa 3.74 %, 6.84 MPa 3.28 %, 10.32 MPa 2.90 %, 13.71 MPa 2.89 %. T standard uncertainty 0.36-0.46 K (Table S1). The authors report good agreement with literature and with Henry's law at low pressure."
+}

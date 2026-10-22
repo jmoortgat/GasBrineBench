@@ -115,6 +115,7 @@ FLAGS = (
     "solution-basis-converted", "differential-pressure-converted",
     "vapour-nonideality-by-authors", "minor-species-omitted",
     "calculated-not-measured", "figure-digitized", "smoothed-values",
+    "density-assumed",
 )
 
 #: Flags whose rows the default loader drops: rows outside the seven gases or
@@ -129,7 +130,7 @@ DEFAULT_EXCLUDED_FLAGS = (
     "pressure-unstated", "calculated-not-measured", "figure-digitized",
 )
 
-#: Tags excluded by the default loader. ``lle-regime`` marks 354 rows (144 of them
+#: Tags excluded by the default loader. ``lle-regime`` marks 485 rows (270 of them
 #: propane) measured below the gas's critical temperature at or above its own
 #: vapour pressure: the hydrocarbon-rich phase is a *liquid*, so the point is
 #: a liquid-liquid mutual solubility and not a gas solubility
@@ -158,12 +159,13 @@ OPTIONAL_COLUMNS = ["flags", "data_origin"]
 
 #: Audit status of a row (``data/provenance/audit_status.csv``): the result of the row-by-row comparison with the papers.
 #: ``verified`` the printed digits equal the stored ones after the documented conversion; ``corrected`` the audit changed a field to the printed value;
-#: ``not-verifiable`` no paper or table available, or the paper does not settle the basis; ``residual-difference`` a known difference that was not corrected.
-AUDIT_STATUSES = ("verified", "corrected", "not-verifiable", "residual-difference")
+#: ``not-verifiable`` no paper or table available, or the paper does not settle the basis; ``residual-difference`` a known difference that was not corrected;
+#: ``not-audited`` added after the full audit (v1.2.2 on): transcribed twice, blind, and the readings compared, but not yet compared with the paper row by row.
+AUDIT_STATUSES = ("verified", "corrected", "not-verifiable", "residual-difference", "not-audited")
 
 #: ``load(reliable=True)`` keeps rows with audit status verified or corrected, quality not U, and without these informational flags in addition to
 #: the default exclusions: each of them records a convention or caution that the paper does not settle.
-RELIABLE_EXCLUDED_FLAGS = ("source-caution", "stp-assumed", "salinity-matrix", "solution-basis-converted")
+RELIABLE_EXCLUDED_FLAGS = ("source-caution", "stp-assumed", "salinity-matrix", "solution-basis-converted", "density-assumed")
 
 #: Where a number comes from: ``table`` (printed in a table of the paper, possibly converted by a documented rule),
 #: ``figure`` (read off a figure or smoothed curves because the paper prints no table) or ``calculated`` (computed

@@ -1,0 +1,75 @@
+{
+ "doi": "10.1515/zpch-1950-19502",
+ "first_author": "Eucken, A.",
+ "authors": "A. Eucken, G. Hertzberg",
+ "year": 1950,
+ "journal": "Zeitschrift fuer physikalische Chemie 195, 1-23",
+ "title": "Aussalzeffekt und Ionenhydratation",
+ "source_key": "EUCKEN(1950)",
+ "experimental_method": "Gas burette connected by a 2 m coiled glass capillary to a shaken absorption vessel; gas volume taken up by thoroughly degassed water or salt solution after equilibration (Ostwald-Luther method); measured mostly at 0 and 20 C.",
+ "uncertainties_stated": "Ostwald coefficient accuracy about 1 % (text p. 4).",
+ "quality_remarks": "Directly reported quantity is the Ostwald coefficient alpha' = c_fl/c_gas = v_gas/v_fl (eq 1). Pressure not stated. Salt concentration c' in mol per 1000 g water. Table 1 a LiCl 20 C row c' 0.88 prints alpha' 0,251, inconsistent with its own log column (implies 0.0251); kept as printed. Tabelle 1 a LiCl 0 C c' 1,64 is inconsistent with its own log and k' columns (imply c' about 1.04); kept as printed. Text says the agreement with older data is generally satisfactory except Akerloef's argon salting out (smaller); a discrepancy with v. Antropoff's xenon water value. LiCl is outside the six-ion set; Ar and Xe outside the seven gases. Text layer misread the NaCl/O2 15 C block as 35 C. Stoessell and Byrne (1982, Clays Clay Miner.) cite this paper as 'Eucker and Hertzberg (1950)'.",
+ "how_extracted": "image_read (pages rendered at 250 dpi and read from the image; text layer used as layout aid; decimal commas written as full stops)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6
+  ],
+  "journal_pages": [
+   5,
+   6
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Tabelle 2",
+   "reason": "hydration numbers H'0 calculated by eq (6); derived"
+  },
+  {
+   "table": "unnumbered table p. 13",
+   "reason": "mole fractions of water aggregates from an earlier paper; model quantities"
+  },
+  {
+   "table": "Tabelle 3 a, b",
+   "reason": "corrected hydration numbers and model parameters; derived"
+  },
+  {
+   "table": "Tabelle 4",
+   "reason": "hydration enthalpies of dissolved gases from fitted constants; derived"
+  },
+  {
+   "table": "Tabelle 5",
+   "reason": "evaluation of older literature salting-out data (H2, N2O, CO2, CCl4); derived from other authors' data"
+  },
+  {
+   "table": "unnumbered ion hydration number table p. 19 (footnote)",
+   "reason": "derived ionic hydration numbers"
+  }
+ ],
+ "row_counts": {
+  "Tabelle 1 a": {
+   "printed_data_rows": 31,
+   "written": 45,
+   "label_rows": 4,
+   "Mittel_rows": 10
+  },
+  "Tabelle 1 b": {
+   "printed_data_rows": 33,
+   "written": 45,
+   "label_rows": 4,
+   "Mittel_rows": 8
+  }
+ },
+ "changes_after_image_check": [
+  "Tabelle 1 a NaCl second temperature block: text layer '35 C' -> 15",
+  "Tabelle 1 b C2H6 0 C, c' 1.10: k' text layer '0,498' -> 0.198",
+  "Tabelle 1 b gas label of the C2H6 block: missing in text layer -> C2H6 (from image)",
+  "Tabelle 1 a/b: decimal commas -> full stops (format, all cells); '0 deg C' unit moved to the header"
+ ],
+ "extraction_notes": "Sanity checks (script): within each block alpha' decreases with c' (except the LiCl 20 C misprint 0,251); alpha' of water decreases with temperature for every gas (O2 0.0490, 0.0365, 0.0332, 0.0307 at 0, 15, 20, 25 C); log(alpha'_0/alpha') recomputed from the printed alpha' (blocks without a c' = 0 row use the NaCl-block water value) agrees with the printed log within 0.003 for every row except: Tabelle 1 a LiCl 20 C c' 0.88 (alpha' 0,251; agrees only with 0.0251), Tabelle 1 b Xe 0 C c' 2.68 (recomputed 0.490 vs printed 0.496), Xe 20 C c' 0.285 (recomputed 0.049 vs printed 0.045). k' = log/c' agrees within 0.003 except: Tabelle 1 a LiCl 0 C c' 1,64 (0.167/1.64 = 0.102 vs printed k' 0.161; the printed k' implies c' about 1.04, and alpha' 0.0334 also fits c' about 1.0 between the 0.58 and 2.32 rows: c' 1,64 is probably a misprint for 1,04; kept as printed, confirmed against the image) and Xe 20 C c' 0.285 (0.158 vs 0.164). All these cells were re-read on the image and are printed as written. 'Mittel' rows are means of the k' column. Out of scope but kept: O2 (in seven-gas list), Ar, Xe; LiCl block.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Old typeset scan; text layer needed corrections (15 C read as 35 C; k' 0.198 read as 0.498; missing gas label).",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1515_zpch-1950-19502, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

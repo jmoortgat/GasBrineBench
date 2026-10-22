@@ -1,0 +1,96 @@
+{
+ "page_journal": null,
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (p is the measured pressure of the magnetic suspension balance cell; presumably absolute)",
+ "volume_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Tianjin reservoir brine (mol/kg): Ca 0.000045, Na 0.020025, Mg 0.000143, K 0.000410, Fe 0.000004, Cl 0.012667, SO4 0.002094, HCO3 0.001967; pH 8.44 at 290.55 K (paper Table 1; basis of mol/kg not stated beyond the unit mol/kg). Natural formation brine of very low salinity (Na 0.020 mol/kg); not a NaCl/KCl/CaCl2/MgCl2/Na2SO4 solution of stated molality."
+ },
+ "extra_unmapped": [
+  "st dev(T)/mK (standard deviation of temperature)",
+  "st dev(p)/kPa (standard deviation of pressure)",
+  "rho_EOS (calculated from Duan et al. EOS, not measured)",
+  "100*(rho - rho_EOS)/rho (deviation from EOS, derived)"
+ ],
+ "conversion_needs": [
+  "CO2 loading is a mass fraction w of CO2 in the solution (w' = 100 w), set by the label rows; custom path gas_loading.w_CO2 is used because SPEC has no standard path for it"
+ ],
+ "table": "Table 3",
+ "title_as_printed": "Experimental Densities rho of CO2 + Brine Solution from Tianjin Reservoir and Deviations from the Values rho_EOS Calculated from EOS of Zhenhao Duan et al. (8)",
+ "footnotes_as_printed": "none captured (no footnotes in the HTML table)",
+ "property": "rho_gas_loaded",
+ "gas": "co2",
+ "regime": "",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho/g.cm^-3",
+   "unit": "g/cm3"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    26,
+    52,
+    78
+   ],
+   "reason": "block label rows 'w = ...' (CO2 mass fraction in solution)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas_loading.w_CO2",
+     "value": "0.010",
+     "unit": "mass_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "gas_loading.w_CO2",
+     "value": "0.021",
+     "unit": "mass_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "gas_loading.w_CO2",
+     "value": "0.030",
+     "unit": "mass_fraction_CO2_in_solution"
+    }
+   ]
+  },
+  {
+   "label_row": 78,
+   "sets": [
+    {
+     "path": "gas_loading.w_CO2",
+     "value": "0.040",
+     "unit": "mass_fraction_CO2_in_solution"
+    }
+   ]
+  }
+ ],
+ "notes": "Uncertainty of solution density (p, T and CO2 mass fraction analysis) estimated 0.025 %; total MSB uncertainty 0.1 %. Label row text is 'w = 0.010' etc. Blocks at w=0.040 are incomplete (343 K block lacks 10 MPa; 353 K block has only 14, 16, 18 MPa) as printed."
+}

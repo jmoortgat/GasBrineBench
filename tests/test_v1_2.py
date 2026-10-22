@@ -56,8 +56,10 @@ def test_other_gases_are_selectable_and_flagged(all_rows):
 def test_no_row_without_a_pressure_unless_flagged(all_rows):
     blank = all_rows["P_bar"].isna() & (all_rows["property"] != "psat_ratio")
     assert all_rows.loc[blank, "flags"].str.contains("pressure-unstated").all()
-    # density, density difference and viscosity never go in without a pressure
-    assert not all_rows.loc[blank, "property"].isin(["rho", "rho_gas_loaded", "visc"]).any()
+    # density and viscosity go in without a pressure only when measured at room pressure at T <= 373.15 K (v1.2.2 decision), flagged
+    dv = blank & all_rows["property"].isin(["rho", "rho_gas_loaded", "visc"])
+    assert (all_rows.loc[dv, "T_K"] <= 373.15 + 1e-6).all()
+    assert not all_rows.loc[blank, "property"].isin(["rho_gas_loaded"]).any()
 
 
 def test_provenance_covers_every_new_dataset(repo_root, all_rows):
@@ -73,11 +75,13 @@ def test_provenance_covers_every_new_dataset(repo_root, all_rows):
 
 def test_supplementary_file_schema(repo_root):
     s = pd.read_csv(repo_root / "supplementary" / "supplementary_measurements.csv", keep_default_na=False)
-    assert len(s) == 5174
+    assert len(s) == 7803
     assert pd.to_numeric(s["value"], errors="coerce").notna().all()
     optional_p = {"isopiestic_pair", "enthalpy_of_dilution", "enthalpy_of_dissolution", "water_activity", "heat_capacity"}
     blank = s["P_bar"].astype(str) == ""
-    assert s.loc[blank, "property_class"].isin(optional_p).all()
+    unstated = (s["tag"].str.contains("pressure-unstated") & s["property_class"].isin({"density", "viscosity"})) \
+        | s["property_native"].isin({"ostwald", "pmv"})  # room-pressure densities and viscosities; 1-atm Ostwald coefficients and molar volumes
+    assert s.loc[blank & ~unstated, "property_class"].isin(optional_p).all()
     assert (s["value_unit"] != "").all()
 
 
@@ -104,7 +108,7 @@ def test_audit_status_column_and_filter(repo_root):
     st = pd.read_csv(repo_root / "data" / "provenance" / "audit_status.csv", keep_default_na=False)
     everything = gbb.load(exclude_tags=None, exclude_flags=None)
     assert len(st) == len(everything)
-    assert set(everything["audit_status"]) == {"verified", "corrected", "not-verifiable", "residual-difference"}
+    assert {"verified", "corrected", "not-verifiable", "residual-difference"} <= set(everything["audit_status"]) <= set(vocab.AUDIT_STATUSES)
     ver = gbb.load(exclude_tags=None, exclude_flags=None, audit_status="verified")
     assert len(ver) == int((st["status"] == "verified").sum())
     with pytest.raises(ValueError):
@@ -117,7 +121,7 @@ def test_reliable_shortcut():
     assert 0 < len(r) < len(d)
     assert set(r["audit_status"]) <= {"verified", "corrected"}
     assert (r["quality"] != "U").all()
-    bad = {"source-caution", "stp-assumed", "salinity-matrix", "solution-basis-converted"}
+    bad = {"source-caution", "stp-assumed", "salinity-matrix", "solution-basis-converted", "density-assumed"}
     assert not r["flags"].map(lambda f: bool(bad & set(f.split(";")))).any()
     # reliable keeps the default exclusions even when the caller passes exclude_flags=None
     assert len(gbb.load(reliable=True, exclude_flags=None)) == len(r)

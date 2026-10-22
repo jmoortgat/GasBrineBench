@@ -1,0 +1,62 @@
+{
+ "doi": "10.1016/0016-7037(82)90268-x",
+ "first_author": "Stoessell, R. K.",
+ "authors": "R. K. Stoessell, P. A. Byrne",
+ "year": 1982,
+ "journal": "Geochimica et Cosmochimica Acta 46, 1327-1332",
+ "title": "Salting-out of methane in single-salt solutions at 25 C and below 800 psia",
+ "source_key": "STOESSELL(1982)",
+ "experimental_method": "Titanium-lined saturation chamber rocked 3 h at 25 C and set methane pressure; liquid sample flashed in a sample loop and released gas measured on a mercury manometer; moles from ideal gas law, molar converted to molal with solution densities.",
+ "uncertainties_stated": "Precision within 0.0005 molal, average 0.0003; pressure gauge within 1 psia; distilled-water values differ by +0.0002 to +0.0014 molal from estimates of their Eqn (3); agreement with Culberson and McKetta (1951) smoothed values -0.0002 to +0.0006 molal.",
+ "quality_remarks": "Bicarbonate (HCO3) solutions required CO2 corrections and are less accurate; carbonate salts are outside the six-ion set. Seawater row is from the authors' earlier paper (footnote **), not a new measurement in this paper. Table 2 (salting-out constants) is derived.",
+ "how_extracted": "image_read (scanned PDF with OCR text layer; every cell read from the 500 dpi page image; text layer matched except OCR glitches 'II.0206', 'il. 0545', 'u.0574', 'n.0514', '0 0400')",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   1328
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 2 (molal salting-out constants of CH4)",
+   "reason": "derived by the authors from Table 1 (fitted)"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 33,
+   "written_data_rows": 33,
+   "label_rows": 13,
+   "values": 99,
+   "per_salt": "NaCl 4, KCl 4, CaCl2 3, MgCl2 3, Na2SO4 2, K2SO4 2, MgSO4 3, Na2CO3 3, K2CO3 3, NaHCO3 2, KHCO3 2, seawater 1, distilled water 1"
+  }
+ },
+ "salts_not_in_database": [
+  "K2SO4 (0.25, 0.5 m)",
+  "Na2CO3 (0.5, 1.0, 1.5 m)",
+  "K2CO3 (0.5, 1.0, 2.0 m)",
+  "NaHCO3 (0.25, 0.5 m)",
+  "KHCO3 (0.25, 0.5 m)",
+  "seawater 34.84 permil (from the earlier Stoessell and Byrne 1982 paper)",
+  "distilled water row: status in database not known to this agent; coordinator to check"
+ ],
+ "salts_already_in_database": [
+  "NaCl",
+  "KCl",
+  "CaCl2",
+  "MgCl2",
+  "Na2SO4",
+  "MgSO4"
+ ],
+ "changes_after_image_check": [
+  "text-layer OCR glitches only (NaCl 4.0 750 psia 'II.0206' -> 0.0206; KCl 0.5 750 'il. 0545' -> 0.0545; KHCO3 0.25 750 'u.0574' -> 0.0574; seawater 550/750 '0 0400','n.0514' -> 0.0400, 0.0514); all cells read from image"
+ ],
+ "extraction_notes": "Sanity (script): CH4 molality rises with P for every solution and falls with salt molality within every salt at every P. NaHCO3 and KHCO3 0.25 m both 0.0296 at 350 psia (different salts, as printed). Na2SO4 0.5 m and Na2CO3 0.5 m both 0.0211/0.0311 at 350/550 psia, and Na2SO4 1.0 and Na2CO3 1.0 both 0.0135 at 350 psia (as printed; checked on image).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned PDF with OCR text layer that needed corrections",
+ "pass2_diff": "2026-10-11: blind pass 2 diffed with diff_passes.py: 132 cells, 0 disagreements."
+}

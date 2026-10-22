@@ -1,0 +1,40 @@
+{
+ "table": "Table 13",
+ "page_journal": 78,
+ "title_as_printed": "Experimental Results of Boiling Point Elevation of Simulated Sea Water (SSW)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "bpe",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Boiling point elevation at the vapor pressure of the solution (equal to vapor pressure of pure water at 'Boiling Temperature for Pure Water'); pressure not tabulated; text example: 6.3279-fold SSW at 200 C has vapor pressure 197.1942 psia, equal to that of pure water at 193.668 C.",
+ "columns": {
+  "T": {
+   "col": "Solution Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Boiling Point Elevation (C)",
+   "unit": "C",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Boiling Temperature for Pure Water Tb (C)",
+   "unit": "C",
+   "what": "saturation temperature of pure water at the solution vapor pressure (steam tables)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Simulated sea water of Na+, Mg2+, Cl-, SO4 2- only. Concentrate multiple f of the Table 11 composition (molal basis, per kg H2O; unit concentration ratio): NaCl 0.42663, Na2SO4 0.02976, MgCl2 0.06726 mol/kg H2O (ions: Na+ 0.48615, Mg2+ 0.06726, Cl- 0.56115, SO4 2- 0.02976). Molality of each salt = f x the Table 11 value. Table 11 itself is the composition used experimentally (analysed; MgCl2 about 4% above the intended Table 10 value)."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality = multiple x Table 11 salt molalities"
+ ],
+ "notes": "Derived by the authors from the Table 12 vapor pressure lowerings with steam-table interpolation (Keenan and Keyes); same 27 solutions as Table 12. Solution temperature filled down."
+}

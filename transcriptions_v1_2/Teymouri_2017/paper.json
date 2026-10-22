@@ -1,0 +1,109 @@
+{
+ "doi": "none (PhD thesis, Heriot-Watt University, handle 10399/3409)",
+ "first_author": "Mousavi Belfeh Teymouri",
+ "year": 2017,
+ "journal": "PhD thesis, Heriot-Watt University (https://www.ros.hw.ac.uk/handle/10399/3409): Phase equilibria measurements and modelling of CO2-rich fluids/brine systems",
+ "source_key": "TEYMOURI(2017)",
+ "experimental_method": "Water content of the gas-rich (or liquid-CO2-rich) phase sampled at constant cell pressure: T <= 25 C (Tables 4.2-4.6) rocking titanium cell + heated line to a Yokogawa TDLAS (tunable diode laser absorption spectrometer); T >= 50 C (Tables 4.7, 4.13, 4.15, 4.16) titanium piston cell in a Chandler PVT oven + heated line/valve to an HP 5890 GC (TCD for water). No table extracted here used the chilled-mirror hygrometer (that was used only for the SYNGAS 'CM' rows of Tables 4.9-4.10, not extracted).",
+ "uncertainties_stated": "T +-0.1 C (both rigs); P +-0.4 bar (Tables 4.4-4.6), +-0.7 bar (Tables 4.7, 4.13); not printed for 4.2/4.3/4.15/4.16 (strain gauge transducer checked against a dead weight tester). Low-T water content: +-1 % of reading or 4 ppm, whichever is greater (TDLAS, stated accuracy +-1 % of reading). High-T GC: per-point relative uncertainties printed in Tables 4.7, 4.15, 4.16; none printed in 4.13.",
+ "quality_remarks": "1) The ppm basis is printed as 'y_w - ppm' (4.4-4.6, y_w = water mole fraction) and 'y_w - ppmV' (4.7); Tables 4.2, 4.3, 4.13, 4.15, 4.16 print only 'ppm' and are mapped with unit ppm_basis_not_stated_water_in_gas (builder holds them). Evidence for a mole basis: same TDLAS rig as 4.4-4.6 (for 4.2/4.3) and same GC rig as 4.7, GC calibrated in number of moles (for 4.13/4.15/4.16). Coordinator to decide. 2) Hydrate: Tables 4.2/4.3 label rows VLE or VHE from a CALCULATED methane hydrate dissociation pressure; VHE rows get regime hydrate. The thesis footnote defines VHE as 'Vapour-Liquid-Hydrate Equilibrium' while the text says methane is 'in equilibrium with hydrate'. Tables 4.4-4.6: all points stated to lie below the authors' calculated hydrate dissociation pressure (printed per temperature block; e.g. 15 C / 10 wt% NaCl: 1300.326 bar). 3) Rows above the pure-CO2 vapour pressure at 0-25 C are liquid CO2 (regime lle), consistent with the jump in printed water content. 4) Rows below 273.15 K kept: 4.2 (-5 C), 4.3 (-20, -40 C, all VHE), 4.6 (-5 C, 20 wt% NaCl brine, liquid). 5) Minor oddities as printed: Table 4.4 25 C and Table 4.5 25 C water contents rise slightly with P in the vapour region (1100->1107, 968->970); Table 4.3 -40 C values are non-monotonic (1.7 at 101 bar, 2.8, 3.3 above), within the stated 4 ppm floor; Table 4.6 0 C rows printed out of pressure order (22.19 then 20.32 bar); Table 4.6 5 C first value printed with two decimals (494.19). 6) The authors note the measured liquid-CO2 brine data deviate considerably from their models and argue the data are correct (p.157). 7) The CO2 solubility tables of this thesis are already in GasBrineBench as TEYMOURI(2017); this folder holds only gas-phase water content.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   180,
+   181,
+   184,
+   185,
+   194,
+   200,
+   203,
+   204
+  ],
+  "journal_pages": [
+   149,
+   150,
+   153,
+   154,
+   163,
+   169,
+   172,
+   173
+  ],
+  "note": "journal_pages are the thesis printed page numbers"
+ },
+ "tables_written": {
+  "table_4_2": "Table 4.2, pdf p.180 (printed 149): CH4 + water/hydrate, 15, 5, -5 C, TDLAS",
+  "table_4_3": "Table 4.3, pdf p.181 (printed 150): CH4 + hydrate, -20, -40 C, TDLAS",
+  "table_4_4": "Table 4.4, pdf p.184 (printed 153): CO2 + 10 wt% NaCl, 0-25 C, TDLAS",
+  "table_4_5": "Table 4.5, pdf p.185 (printed 154): CO2 + 20 wt% NaCl, 10-25 C, TDLAS",
+  "table_4_6": "Table 4.6, pdf p.185 (printed 154): CO2 + 20 wt% NaCl, -5-5 C, TDLAS",
+  "table_4_7": "Table 4.7, pdf p.194 (printed 163): CH4 + water, 50-150 C, GC",
+  "table_4_13": "Table 4.13, pdf p.200 (printed 169): CO2 + water, 100 and 150 C, GC",
+  "table_4_15": "Table 4.15, pdf p.203 (printed 172): MIX6 (70 % CO2 + CH4, C2-C4, N2) + water, 150 C, GC",
+  "table_4_16": "Table 4.16, pdf p.204 (printed 173): MIX1 (95.6 % CO2 + N2, Ar, H2, CH4, CO, O2) + water, 150 C, GC"
+ },
+ "not_extracted_tables": [
+  "Chapter 2 tables 2.1-2.21: model parameters, AAD summaries and literature data lists (no measurements of this work)",
+  "Tables 3.1-3.5, 3.24 and 3.19: literature dataset lists or AAD summaries",
+  "Tables 3.6-3.18, 3.20-3.23, 3.25-3.30: measured CO2 solubility in water/brine; already in GasBrineBench as TEYMOURI(2017), not re-extracted per the task",
+  "Table 4.1: list of literature datasets for CO2 water content (ranges only)",
+  "Table 4.8: rough compositions of SYNGAS1/SYNGAS2 (only '>70%', '<1%' bounds)",
+  "Tables 4.9-4.12: measured water content of synthetic reservoir gases SYNGAS1/SYNGAS2 (with and without recombined stabilized condensate) at 150 C, GC and chilled mirror: out of scope, the gas composition is only given as rough bounds (methane >60-70 %, C2-C4, N2, CO2) and the condensate composition not at all, so no model can be evaluated",
+  "Table 4.14: compositions of MIX1/MIX6 (mole %); copied into mapping_4_15.json and mapping_4_16.json as gas_composition_mole_percent_as_printed"
+ ],
+ "row_counts": {
+  "table_4_2": {
+   "printed": 26,
+   "written": 26,
+   "csv_rows_incl_label_and_AAD_rows": 32
+  },
+  "table_4_3": {
+   "printed": 15,
+   "written": 15,
+   "csv_rows_incl_label_and_AAD_rows": 19
+  },
+  "table_4_4": {
+   "printed": 18,
+   "written": 18,
+   "csv_rows_incl_label_and_AAD_rows": 28
+  },
+  "table_4_5": {
+   "printed": 15,
+   "written": 15,
+   "csv_rows_incl_label_and_AAD_rows": 21
+  },
+  "table_4_6": {
+   "printed": 10,
+   "written": 10,
+   "csv_rows_incl_label_and_AAD_rows": 16
+  },
+  "table_4_7": {
+   "printed": 12,
+   "written": 12,
+   "csv_rows_incl_label_and_AAD_rows": 18
+  },
+  "table_4_13": {
+   "printed": 14,
+   "written": 14,
+   "csv_rows_incl_label_and_AAD_rows": 18
+  },
+  "table_4_15": {
+   "printed": 6,
+   "written": 6,
+   "csv_rows_incl_label_and_AAD_rows": 7
+  },
+  "table_4_16": {
+   "printed": 6,
+   "written": 6,
+   "csv_rows_incl_label_and_AAD_rows": 7
+  }
+ },
+ "changes_after_image_check": [],
+ "ascii_changes": "Degree sign written as 'C'; '+-' for the printed plus-minus; the subscript header 'y_w' written as 'y_w'; printed '%' and '+-' on uncertainty/deviation entries moved into the column header (e.g. '+-2.00%' -> header 'y_w uncertainty +- %', cell '2.00'; '27.28%' -> header 'Deviation CPA %', cell '27.28'). AAD summary values written into the AAD label row text (4.4-4.7) or into the deviation columns (4.2, 4.3, 4.13, 4.15, 4.16).",
+ "extraction_notes": "Text layer (Word-generated PDF) is clean; cells transcribed from pdftotext -layout into a script and every cell checked against 250 dpi page images (pdftoppm -r 250): all numbers matched, no corrections. Side-by-side temperature blocks of 4.4-4.7 are stacked left to right, each with a label row (T, plus the authors' calculated hydrate dissociation pressure in 4.4-4.6) and an AAD summary row, both in skip_rows. LLE row flags use pure-CO2 vapour pressures (approx. Span-Wagner values) and are confirmed by the step in printed water content. Pressure basis 'total' = equilibrium cell pressure; absolute vs gauge not stated anywhere. Temperature scale not stated. NaCl given as wt% (mass percent of solution assumed by the label '10 wt% NaCl aqueous solution'; the thesis does not define it further). The task note said the low-T CO2-brine data were chilled-mirror dew points; the thesis says TDLAS (p.141-144).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "born-digital thesis PDF with a clean text layer; every cell matched the 250 dpi page image, no corrections",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/Teymouri_2017, simplified layout T_C,P,water_content) compared row by row in printed order on pressure and measured water content: 9 tables, 122 rows, 0 disagreements (text layer was clean; second pass run so that every new table is read twice)."
+}

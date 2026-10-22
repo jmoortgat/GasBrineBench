@@ -1,0 +1,25 @@
+{
+ "table": "TABLE 1", "page_journal": 449, "pdf_page": 3,
+ "title_as_printed": "Amount-of-substance densities rho at various temperatures T (ITS-90) and pressures p for {xH2O+(1-x)CH4} for nine values of the amount-of-substance fraction x",
+ "footnotes_as_printed": {},
+ "property": "rho_gas_loaded",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "pressure_note": "absolute pressure of the homogeneous fluid in the isochoric vessel (oscillating quartz crystal transducer, 0.02 %); single-phase (vapour/supercritical) mixture of fixed overall composition",
+ "columns": {
+  "T": {"col": "T/K", "unit": "K"},
+  "P": {"col": "p/MPa", "unit": "MPa", "basis": "total"},
+  "value": {"col": "rho/(mol.m-3)", "unit": "mol_per_m3", "scale": 1,
+            "what": "amount-of-substance (molar) density of the HOMOGENEOUS gas-phase mixture {x H2O + (1-x) CH4}, NOT a liquid brine density: water-rich gas mixtures of fixed overall composition measured along quasi-isochores above the dew point"},
+  "x_h2o_mixture": {"col": "x", "unit": "mole_fraction_H2O_in_mixture", "fill_down": true,
+            "what": "overall amount-of-substance fraction of H2O in the binary mixture (from the masses of CH4 and water charged); printed only on the first row of each isochore"}
+ },
+ "composition": {"basis": "none", "per_row": {}, "constant": {},
+   "other_species": "binary H2O + CH4, no salt; composition is the overall mole fraction of water x in the gas-phase mixture (column x), NOT a salt composition"},
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": ["mol/m3 to kg/m3 needs M = x*18.015 + (1-x)*16.043 g/mol per row", "x is printed only on the first row of each block: fill down"],
+ "notes": "Side-by-side blocks stacked: left block (x = 0.0760, 0.1739, 0.2634; rows 0-41) first, then right block (x = 0.3377, 0.4009, 0.4573, 0.5391, 0.6007, 0.6761; rows 42-86) (v2.1 rule 11). Each x block is one isochoric run (density falls slowly with T from the elastic and thermal expansion of the vessel). No label rows. CHECK: row 16 (x = 0.1739, 465.95 K, 8.958 MPa) lies below that mixture's dew point in Table 2 (Td = 467.9 +/- 0.7 K, pd = 9.04 MPa), so it may be a two-phase pseudo-density (overall mass / volume) rather than a homogeneous-gas density; kept as printed, flag 'below_dew_point'. All other blocks start above their Td. Uncertainty in rho: text p. 448 '+/-0.8 per cent' (lowest water content) and '+/-0.14 per cent' (highest), abstract '+/-0.0008 rho' and '+/-0.0014 rho' (0.08 % and 0.14 %); the two statements disagree for the lowest water content."
+}

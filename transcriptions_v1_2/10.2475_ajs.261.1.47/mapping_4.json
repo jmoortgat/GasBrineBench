@@ -1,0 +1,56 @@
+{
+ "table": "Table 4",
+ "page_journal": 56,
+ "title_as_printed": "(no caption; text: values obtained for the water density of the carbon dioxide solutions over a range of temperatures)",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "other",
+ "property_description": "Mass of water per unit volume of the CO2-saturated aqueous liquid (g H2O per cc solution) at the liquid fill-point of the pvt experiments; not the full solution density (CO2 mass excluded). pi = initial CO2 pressure (atm). Overall composition about 5 mol% CO2 (text).",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pi = initial CO2 pressure charged into the dry vessel at T (atm); the pressure at the fill point is not printed.",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pi (atm)",
+   "unit": "atm",
+   "basis": "unspecified",
+   "what": "initial CO2 pressure, not the equilibrium pressure"
+  },
+  "value": {
+   "col": "Water density of liquid (g H2O/cc)",
+   "unit": "g_H2O_per_cm3_solution",
+   "scale": 1
+  },
+  "value2": {
+   "col": "Density pure water (g/cc)",
+   "unit": "g/cm3",
+   "from_literature": true,
+   "what": "pure (saturated) liquid water density at T"
+  },
+  "ratio": {
+   "col": "Ratio of densities",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water + CO2, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Density pure water (literature)",
+  "Ratio (derived)"
+ ],
+ "conversion_needs": [
+  "Not a solution density: grams of water per cm3 of CO2 solution; the CO2 content at the fill point is not printed (overall ~5 mol% CO2)."
+ ],
+ "notes": "Authors: fill-point less precise with CO2 present than for salt solutions or water alone. Not mapped to rho_gas_loaded because the CO2 mass is not included."
+}

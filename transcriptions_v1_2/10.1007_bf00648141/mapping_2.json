@@ -1,0 +1,669 @@
+{
+ "table": "Table VII",
+ "page_journal": "365-366",
+ "title_as_printed": "Experimental Densities of the Mixtures of Sea Salts at I = 1.95",
+ "footnotes_as_printed": {
+  "a": "Units: g-cm-3."
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (open densimeter cells; no pressure given in the paper)",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density difference in g/cm3 against pure water; ionic strength on molal basis ('I = 1.95m'), no per-volume concentration",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^3 Delta rho g/cm3",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density difference rho - rho0 (rho0 pure water) of the mixture at constant ionic strength"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "ionic_strength_fraction_of_salt3": {
+    "col": "y3",
+    "unit": "fraction"
+   }
+  },
+  "constant": {
+   "ionic_strength": {
+    "value": "1.95",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "binary salt mixture; salts named in label rows as electrolyte (2) and electrolyte (3); y3 = w3 m3/(w3 m3 + w2 m2), w = 1 for 1-1 and 3 for 2-1 electrolytes (ionic strength fraction of electrolyte 3), I = 1.95 molal fixed (abstract says I = 2.0; text and table title say 1.95)",
+  "ionic_strength_rule": {
+   "I": "ionic_strength",
+   "y": "ionic_strength_fraction_of_salt3",
+   "salt_y": "salt3",
+   "salt_other": "salt2"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    9,
+    18,
+    30,
+    40,
+    41,
+    48,
+    60,
+    71,
+    83,
+    84,
+    92,
+    102,
+    113,
+    124,
+    125,
+    133,
+    144,
+    156,
+    165,
+    166,
+    175,
+    187,
+    199,
+    208,
+    209,
+    217,
+    229,
+    241
+   ],
+   "reason": "mixture label rows and temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 41,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 71,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "K2SO4",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 84,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "K2SO4",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 92,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "K2SO4",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 102,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "K2SO4",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 113,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "K2SO4",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 124,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "KCl",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 125,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "KCl",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 133,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "KCl",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 144,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "KCl",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 156,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "KCl",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 165,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 166,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 175,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 187,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 199,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "KCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "Na2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 208,
+   "sets": [
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 209,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 217,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 229,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  },
+  {
+   "label_row": 241,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.salt2",
+     "value": "NaCl",
+     "unit": ""
+    },
+    {
+     "path": "composition.constant.salt3",
+     "value": "K2SO4",
+     "unit": ""
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "y3 and I = 1.95 mol/kg give molalities: m2, m3 from I = 0.5 sum m z^2 with the valence factors stated; printed value is 10^3 Delta rho (scale 1e-3)"
+ ],
+ "notes": "Six mixtures printed with four side-by-side temperature blocks (5, 25, 55, 95 C); stacked per mixture in the order 5, 25, 55, 95 C. y3 = 0 and 1.0 rows are the pure salts at I = 1.95 and are kept. First row of 5 C NaCl-Na2SO4 block prints 'y3 = 1.' (full stop) kept as '1.'; KCl-K2SO4 5 C 0.34484 prints 85.42 (two decimals), kept. 55 C KCl(2)-Na2SO4(3) prints y3 0.51389 followed by 0.5028 (four decimals, out of order) kept as printed.",
+ "quality_remarks": "Table VII 55 C KCl(2)-Na2SO4(3) block prints y3 0.51389 followed by 0.5028 (four decimals, out of order): a suspected misprint, kept as printed."
+}

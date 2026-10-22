@@ -1,0 +1,372 @@
+{
+ "table": "Table I",
+ "page_journal": 800,
+ "pdf_page": 4,
+ "title_as_printed": "TABLE I. Solubility of methane (mol CH4/mol H2O x 10^3) in water and aqueous solutions",
+ "footnotes_as_printed": "none printed",
+ "property": "solubility_mole_ratio",
+ "property_description": "mole ratio of dissolved CH4 to water, n_CH4/n_H2O (mol CH4 per mol H2O), printed x10^3 in column alpha. Not a mole fraction. In the salt solutions the denominator is stated as mol H2O (water only; salt moles not included); x_CH4 (salt-free basis) = r/(1+r); molality of CH4 per kg water = r/0.0180153.",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "P column has no unit in the table; text and figures use atmospheres ('pressures up to 200 atm', manometer accuracy 0.02/0.1/1 atm, figure axes 'P Atm'). Synthetic pressure-decline method; whether P is total or CH4 partial pressure is not stated. For 100-150 C an estimated correction for water in the gas phase was applied to the amount of undissolved gas (text p. 804).",
+ "columns": {
+  "T": {
+   "col": "t",
+   "unit": "C",
+   "fill_down": true,
+   "note": "printed only on the first row of each temperature sub-block (degree sign stripped); blocks with no printed t get T.constant 25 from group_rows"
+  },
+  "P": {
+   "col": "P",
+   "unit": "atm",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "alpha",
+   "unit": "mol_CH4_per_mol_H2O",
+   "scale": 0.001
+  }
+ },
+ "composition": {
+  "basis": "normality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "LiCl, NaBr, NaJ (= NaI) at 2.7 n; non-electrolytes cane sugar, glucose (1 and 2 gr. m. per L) and formaldehyde (2 gr. m. per L) as gram-molecules per litre (molarity). 'n' (italic) = normal, written '2,7 N' in the text.",
+  "density_rule": "nacl_25C_1atm"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6,
+    11,
+    20,
+    25,
+    30,
+    35,
+    44,
+    49,
+    54,
+    59,
+    64,
+    69,
+    74,
+    80,
+    85,
+    91,
+    96,
+    121,
+    128
+   ],
+   "reason": "block label rows (solute and concentration); printed beside the first data row, written as own label rows (v2.1 rule 10)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.5",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.2",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5.4",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "composition.constant.LiCl",
+     "value": "2.7",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "composition.constant.KCl",
+     "value": "2.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 54,
+   "sets": [
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "2.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 59,
+   "sets": [
+    {
+     "path": "composition.constant.NaBr",
+     "value": "2.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 64,
+   "sets": [
+    {
+     "path": "composition.constant.NaI",
+     "value": "2.7",
+     "unit": "N"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "composition.constant.cane_sugar",
+     "value": "1",
+     "unit": "gram-molecule per L"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 74,
+   "sets": [
+    {
+     "path": "composition.constant.cane_sugar",
+     "value": "2",
+     "unit": "gram-molecule per L"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 80,
+   "sets": [
+    {
+     "path": "composition.constant.glucose",
+     "value": "1",
+     "unit": "gram-molecule per L"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 85,
+   "sets": [
+    {
+     "path": "composition.constant.glucose",
+     "value": "2",
+     "unit": "gram-molecule per L"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "composition.constant.formaldehyde",
+     "value": "2",
+     "unit": "gram-molecule per L"
+    },
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C",
+     "note": "no temperature printed in this block; 25 C is the temperature printed at the head of the 25-degree column series (H2O 25 / LiCl 25) and carried forward by column layout"
+    }
+   ]
+  },
+  {
+   "label_row": 96,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.5",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 121,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.5",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 128,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "5.4",
+     "unit": "N"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "alpha x 1e-3 = mol CH4 per mol H2O; convert to mole fraction (salt-free: r/(1+r); with salt the builder must add the salt moles) or to CH4 molality per kg water (r/0.0180153).",
+  "Normality to molality needs solution density (not given). CaCl2 2.7 n = 1.35 mol/L CaCl2; the 1-1 salts 2.7 n = 2.7 mol/L.",
+  "Non-electrolyte solutions in gram-molecules per litre (molarity).",
+  "Pressure atm (unit from text, not table) to MPa x 0.101325.",
+  "Temperature C to K."
+ ],
+ "notes": "Table I is printed as four side-by-side column groups (t | P | alpha). Stacked in printed order: column 1 (NaCl series at 25 C), column 2 (LiCl, KCl, CaCl2, NaBr, NaJ at 2.7 n, then the non-electrolyte solutions, all 25 C), column 3 (NaCl 2.5 n at 50-125 C), column 4 (NaCl 2.5 n at 150 C, then NaCl 5.4 n at 50-150 C). The H2O blocks (column 1 at 25 C, 9 rows; column 3 at 50, 75, 100, 125, 150 C, 30 rows) are NOT written: water rows already in GasBrineBench (MICHELS(1936)). Only the H2O and LiCl block labels print 25 deg; the other 25 C blocks in columns 1 and 2 carry no temperature and are set to 25 C by column layout. NaCl 2.5 n at 50-125 C (column 3) and at 150 C (column 4) belong to the same 2.5 n temperature series; the label 'NaCl 2.5 n' is printed again at the head of column 4 and written as its own label row. The 25 C NaCl 2.5 n block (column 1) is a separate measurement series. 2026-10-11 coordinator: property set to solubility_mole_ratio (alpha x 1e-3 = mol CH4 per mol H2O, converted exactly to molality); NaCl normality converted with density_rule nacl_25C_1atm (flag density-assumed; the paper does not state at which temperature the normality is defined, presumably room temperature). Other salts and the non-electrolytes stay held."
+}

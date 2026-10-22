@@ -1,0 +1,48 @@
+{
+ "table": "Table 2",
+ "page_journal": 1105,
+ "title_as_printed": "Experimentally determined pressures for the reaction F -> L + V in the CO2-H2O system at 300 C",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "other",
+ "property_description": "High-pressure liquid-vapour boundary (synthetic, vibrating U-tube) at 300 C: P at which a one-phase CO2-H2O fluid of known overall composition XCO2 begins to separate into liquid + vapour on isothermal depressurization (first major break in slope of P vs. tau, located by intersecting quadratic fits of Table 1). XCO2 is the mole fraction of CO2 in the homogeneous fluid of predetermined (pumped) composition, i.e. the composition of the phase at the boundary; whether a point is bubble (liquid) or dew (vapour) side is not stated in the table. P rises to a maximum near XCO2 = 0.25-0.30, so the critical composition at 300 C lies between about 0.25 and 0.30 (the paper does not give it).",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "system pressure at the phase-separation point, primary pressure transducer (accuracy +-0.02 MPa); total pressure; the printed +- is a total error including the 2 sigma standard errors of the two quadratic fits",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "300"
+  },
+  "P": {
+   "col": "P(MPa)",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "XCO2",
+   "unit": "mole_fraction",
+   "scale": 1,
+   "what": "mole fraction CO2 of the overall (homogeneous) CO2-H2O fluid at the phase boundary; stated accurate to +-0.002"
+  },
+  "uncertainty": {
+   "col": "P(MPa) +-",
+   "unit": "MPa",
+   "what": "total error of the reaction pressure (printed after +-)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "binary CO2-H2O, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Pressure is the measured dependent variable; XCO2 is the set composition. For use as solubility (x_CO2 in liquid at the bubble point) or as y_H2O = 1 - XCO2 at the dew point, the builder must decide the phase side; the table does not state it."
+ ],
+ "notes": "Printed as four side-by-side XCO2/P pairs in two rows; stacked block by block (block 1: 0.05, 0.25; block 2: 0.10, 0.30; block 3: 0.15, 0.35; block 4: 0.20, 0.40). The printed 'value +- unc' cell is split into two CSV columns. T is the nominal isothermal-zone temperature (RTD), accuracy +-0.05 C. Text (p. 1104-1105) also reports preliminary replicate runs not in the table: XCO2 0.30, 56.61 +- 0.09 MPa; XCO2 0.40, 51.68 +- 0.10 MPa (the table lists the follow-up runs)."
+}

@@ -1,0 +1,62 @@
+{
+ "doi": "10.1021/je700473e",
+ "first_author": "Qin",
+ "year": 2008,
+ "journal": "J. Chem. Eng. Data 53, 1246-1249",
+ "source_key": "QIN(2008)",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean; every cell of Tables 1-3 matched the 250 dpi page images; no correction made.",
+ "experimental_method": "Rocking titanium-lined 200 cm3 autoclave (USGS Menlo Park); liquid sampled into gastight syringes with NaOH solution; dissolved CO2 by coulometric titration, dissolved CH4 by gas volume in an inverted water-filled tube (ideal gas); vapour sampled into syringes with NaOH solution to obtain the CO2:CH4 ratio.",
+ "uncertainties_stated": "T +/- 1 K (type K thermocouples calibrated with a Pt RTD); P +/- 0.1 MPa; overall +/- 3 % in gas solubility; replicate CO2 analyses within 1 to 2 %; vapour H2O estimate uncertainty < 1 % for (y2 + y3)/(y1 + y2 + y3).",
+ "quality_remarks": "Table 3 vapour-phase water mole fractions y1 are NOT measured: the authors calculated them from binary data with their eq 1 (Duan models for the binaries); the column is marked derived_by_authors and must not enter the database as measured y_h2o (the existing database rows already carry the flag calculated-not-measured). y2 and y3 are normalised with this calculated y1, so only their ratio is a measurement. Columns x2a and x3a are model predictions (Henry-law interpolation from binaries), also derived_by_authors. Tables 1 and 2 'model' columns (x and y) come from the Duan and Sun / Duan and Mao models (from_literature). Table 3 row 375.6 K / 20.6 MPa: y1 + y2 + y3 = 1.0018 (all other rows sum to 1.0000 within 2e-5); kept as printed (y1 0.02296 looks high next to 0.02317 at 30.4 MPa and 0.02080 at 10.7 MPa; possibly 0.02116, not changed). Temperatures in Table 3 vary by up to 1.4 K within a nominal isotherm (374.8-376.2 K; 324.0-324.8 K). Temperature scale not stated; gauge vs absolute pressure not stated (cell pressures 10-50 MPa, so the difference is small).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   1,
+   2,
+   3
+  ],
+  "journal_pages": [
+   1246,
+   1247,
+   1248
+  ]
+ },
+ "supporting_information": "Only the main PDF is available; the paper does not mention Supporting Information.",
+ "tables_written": {
+  "table_1.csv": "Table 1, pdf p1 / journal 1246, CO2 + H2O binary (mapping_1)",
+  "table_2.csv": "Table 2, pdf p2 / journal 1247, CH4 + H2O binary (mapping_2)",
+  "table_3.csv": "Table 3, pdf p3 / journal 1248, CO2 + CH4 + H2O ternary VLE (mapping_3; y1, x2a, x3a derived_by_authors)"
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows": 7,
+   "written_data_rows": 7
+  },
+  "table_2": {
+   "printed_data_rows": 7,
+   "written_data_rows": 7
+  },
+  "table_3": {
+   "printed_data_rows": 21,
+   "written_data_rows": 21
+  }
+ },
+ "changes_after_image_check": [],
+ "probably_new_blocks": {
+  "basis": "compared with code/bench/data/ternary.csv, solubility.csv and y_h2o.csv (source QIN(2008))",
+  "new": [
+   "Table 3, last 6 rows near 324 K (324.8/49.3, 324.8/30.6, 324.6/50.3, 324.0/30.8, 324.2/49.9, 324.3/30.4): absent from ternary.csv, which holds only the 15 rows near 375 K",
+   "Table 1 (7 measured CO2 + H2O binary solubilities): no QIN(2008) CO2 rows found in solubility.csv"
+  ],
+  "already_present": [
+   "Table 2 (7 CH4 + H2O rows in solubility.csv as ch4_water_binary; y_h2o.csv also holds 7 binary CH4 y_h2o rows flagged calculated-not-measured, apparently 1 - y3 model)",
+   "Table 3 rows near 375 K (15 state points)"
+  ]
+ },
+ "extraction_notes": "CSVs scripted from pdftotext -layout and checked against 250 dpi page renders (scratch p1_g2). Tables 1 and 2 headers are two-line (symbol over unit); joined as 'T K', 'P MPa', 'x2 (new data)', 'x2 model', 'y2 model'. Sanity: binary x rises with P along each isotherm; ternary x2 and x3 rise with P within each feed-ratio series; the 6 rows near 324 K are three feed-ratio pairs (about 50 and 30 MPa each).",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1021_je700473e, different layout: T_block and phase columns instead of label rows) compared as multisets of numeric cells per table: identical (Al Ghafri Tables 4, 5, 6, 8: 997 cells; Qin Tables 1-3: 259 cells). Both passes also checked mole-fraction sums per phase row."
+}

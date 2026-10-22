@@ -1,0 +1,45 @@
+{
+ "doi": "10.1021/j100697a022",
+ "first_author": "Millero",
+ "year": 1970,
+ "journal": "J. Phys. Chem. 74 (2), 356-362",
+ "source_key": "MILLERO(1970)",
+ "title": "The Apparent and Partial Molal Volume of Aqueous Sodium Chloride Solutions at Various Temperatures",
+ "authors": "Frank J. Millero",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer scrambled the column order, so the table was transcribed from the page image and cross-checked by a second read against the text-layer numbers; no cell corrections arose",
+ "how_extracted": "image_read",
+ "experimental_method": "magnetic float densitometer (precision ~1 ppm), weight-dilution and single stock solution methods, 0.01-1.0 m NaCl, 0-55 C",
+ "uncertainties_stated": "density precision about 1 ppm; bath set to +/-0.02 C, regulated to better than +/-0.001 C",
+ "quality_remarks": [
+  "Table I 0 C, m = 0.684443, 1000(d0-d) printed 40.8267: out of line with neighbours (0.505906 -> 22.0264; 5 C at the same molality gives 28.8041); apparent misprint in the source, kept as printed.",
+  "Printed header is -1000(d0 - d); sign as printed; values are positive.",
+  "Pressure not stated. PDF pages 3-7 hold text, Table II (apparent molal volume at infinite dilution and deviation constants, derived/fitted) and Table III (association constants, derived)."
+ ],
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   357
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table II",
+   "reason": "partial molal volume at infinite dilution and deviation constants: fitted/derived"
+  },
+  {
+   "table": "Table III",
+   "reason": "calculated stoichiometric association constants: derived"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 84 data rows in 7 temperature blocks; written 84 data rows + 7 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Apparent molal volumes were calculated by the authors but not tabulated per concentration.",
+ "pass2_diff": "Table I: 84 rows, 168/168 numbers identical."
+}

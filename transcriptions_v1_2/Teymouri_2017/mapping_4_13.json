@@ -1,0 +1,86 @@
+{
+ "table": "Table 4.13",
+ "page_journal": 169,
+ "page_pdf": 200,
+ "title_as_printed": "Measured and calculated water content of pure CO2 at 100 and 150 C",
+ "footnotes_as_printed": "none",
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium cell pressure (+-0.7 bar); absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set by group_rows (grey rows '150 C +- 0.1', '100 C +- 0.1')"
+  },
+  "P": {
+   "col": "P bar +- 0.7",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "Measured water content ppm",
+   "unit": "ppm_mole_fraction_water_in_gas",
+   "scale": 1e-06,
+   "what": "water content of the CO2-rich phase in 'ppm' (basis not printed in this table; see notes)",
+   "unit_as_printed": "ppm_basis_not_stated_water_in_gas"
+  },
+  "model_cpa": {
+   "col": "Model calculation CPA ppm",
+   "derived_by_authors": true
+  },
+  "model_pcsaft": {
+   "col": "Model calculation PC-SAFT ppm",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "DM (demineralised) water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    8,
+    9,
+    17
+   ],
+   "reason": "temperature label rows and 'AAD %' summary rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "150",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "100",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "Deviation CPA % / PC-SAFT % (authors' model deviations)"
+ ],
+ "conversion_needs": [
+  "ppm to mole fraction (x1e-6) once basis settled"
+ ],
+ "notes": "Measured by GC with the same high-temperature set-up as Table 4.7 (whose header reads 'y_w - ppmV'; GC calibrated in number of moles of water and CO2), so a mole basis is likely; this table prints only 'ppm'. No per-point uncertainty printed. Both temperatures are above the CO2 critical temperature; regime empty. Printed '%' signs moved to the deviation headers. 2026-10-11 coordinator: 'ppm' read as ppm by mole. Check against other laboratories in the database at the same T and P (interpolated in ln P): Table 4.13 CO2 over water, 100 and 150 C, 16-138 bar: ratio Teymouri/others 0.79-0.99 (Hou 2013b, Zawisza 1981, Caumon 2016, Tabasinejad 2011, King 1971); a mass basis would make the mole fractions 2.44 times larger (ratio about 2-2.4). Table 4.2 CH4 over water, 5 and 15 C: ratio 0.91-1.12 against Chapoy 2003/2005. Same instruments as Tables 4.4-4.7, printed 'y_w - ppm' and 'ppmV'."
+}

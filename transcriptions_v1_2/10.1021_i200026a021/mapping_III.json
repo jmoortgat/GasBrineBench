@@ -1,0 +1,159 @@
+{
+ "table": "Table III",
+ "page_journal": 535,
+ "pdf_page": 3,
+ "title_as_printed": "Table III. Mean Values of the Experimental Henry's Law Constant, k, for Methane",
+ "footnotes_as_printed": {
+  "a": "Total reactor pressure.",
+  "b": "Culberson and McKetta (1951)."
+ },
+ "property": "henry",
+ "henry_definition": "Modified Henry's law constant k = phi P / x = gamma k0 (eq 2), in MPa. phi = fugacity coefficient of methane at reactor temperature and TOTAL reactor pressure (generalized chart, Smith and Van Ness 1959); P = methane partial pressure = reactor pressure minus the vapour pressure of water over the brine (Haas 1976 reference-substance technique, used for SSGB as well); x = mole fraction of methane in the brine at reactor conditions, eq 3: x = m / (m + sum_j m_j sum_i nu_ij + 1000/M), m = methane molality, m_j = molality of salt j, nu_ij = moles of ionic species i per mole of salt j (salts counted as dissociated ions), M = molecular weight of water. For pure water k equals the true Henry constant k0 = f/a (eq 1, standard state methane at infinite dilution in water); for brines k includes the methane activity coefficient gamma. Each printed k is the mean of four to eight experimental values at one test condition.",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Printed P column is the total reactor pressure (footnote a). The methane partial pressure used in k was computed by the author as reactor pressure minus water vapour pressure over the brine (not printed).",
+ "columns": {
+  "T": {
+   "col": "T, C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "P, MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "k, MPa",
+   "unit": "MPa",
+   "what": "modified Henry's law constant k = phi*P_CH4/x (see henry_definition); mean of 4-8 determinations"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Blocks: water (salt-free); NaCl-1..NaCl-4 (NaCl only, molality from Table I); SSGB = synthetic Salton Sea geothermal brine (alkali and alkaline-earth metal chlorides; composition in ppm by weight in Table II: Ba 207, B 324, Ca 23900, Cs 17, Cl 129000, Fe 1660, Pb 66, Li 174, Mg 8, Mn 1140, K 13700, Rb 58, silica 332, Na 44000, Sr 365, S 25, Zn 415; total molality 4.05 m, molarity 3.55 M, ionic strength 6.18 per Table I; salt concentrations 17 % lower than the unflashed IID-2 brine, Cu and Ag omitted, pH adjusted to neutral with small additions of NaOH).",
+  "table_I_molarity_also_printed": {
+   "NaCl-1": "0.79 M",
+   "NaCl-2": "1.86 M",
+   "NaCl-3": "2.97 M",
+   "NaCl-4": "4.26 M",
+   "SSGB": "3.55 M"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    23,
+    36,
+    52,
+    74,
+    87
+   ],
+   "reason": "block label rows (water, NaCl-1, NaCl-2, NaCl-3, NaCl-4, SSGB)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "none"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "molality"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.81",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "molality"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.95",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "molality"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.18",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 74,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "molality"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.70",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 87,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "none"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "SSGB synthetic Salton Sea geothermal brine: Table I molality 4.05 m, molarity 3.55 M, ionic strength 6.18 (molal); element composition in ppm by weight in Table II (table_II.csv)"
+    }
+   ]
+  }
+ ],
+ "row_held": [
+  {
+   "rows": [
+    3,
+    4,
+    7,
+    9,
+    11,
+    13
+   ],
+   "reason": "footnote b: k values computed by Cramer from the published solubility data of Culberson and McKetta (1951), not measured in this work (text: 'Six additional values, computed from published methane solubility data (Culberson and McKetta, 1951) for water at temperatures from 25 to 171.1 C'); from_literature"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "k to mole fraction: x = phi * P_CH4 / k needs the methane fugacity coefficient at T and total P and the methane partial pressure (total P minus water vapour pressure over the brine); neither is printed. x is on a dissociated-ion basis (eq 3).",
+  "C to K: + 273.15 (lowest printed T 0.5 C, NaCl-2; no row below 273.15 K).",
+  "SSGB composition is given as element ppm by weight (Table II), not as salts; conversion to salt molalities needs an ion-to-salt assignment and is not given by the author."
+ ],
+ "notes": "Six side-by-side blocks printed in two bands of three (water, NaCl-1, NaCl-2 / NaCl-3, NaCl-4, SSGB); stacked in reading order, one label row per block. Thousands separators printed as thin spaces (e.g. '2 580') are removed in the CSV (2580). Rows are not in strictly increasing T in some blocks (NaCl-2 12.6 then 13.0; NaCl-3 205.3 after 203.7 with higher k); kept as printed. Footnote-b rows (water block, 6 rows) are from the literature and held.",
+ "csv": "table_III.csv"
+}

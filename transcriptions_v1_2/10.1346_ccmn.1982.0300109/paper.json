@@ -1,0 +1,56 @@
+{
+ "doi": "10.1346/CCMN.1982.0300109",
+ "first_author": "Stoessell, Ronald K.",
+ "authors": "Ronald K. Stoessell, Patricia A. Byrne",
+ "year": 1982,
+ "journal": "Clays and Clay Minerals 30(1), 67-72",
+ "title": "Methane solubilities in clay slurries",
+ "source_key": "STOESSELL(1982A)",
+ "experimental_method": "Methane equilibrated with 400 ml of solution or slurry in a rocking 500 cm3 titanium-lined Tem-Pres vessel at 25 C (bath control within 0.1 C) for 3 h; isobaric sampling into a 13.22 cm3 loop, flashing into an evacuated expansion loop, gas amount from the manometric pressure change (Meriam manometer), residual dissolved gas corrected; water mass of slurry samples from the slurry water content and density (flocculation checked). Matheson ultra-high-purity methane, 99.97 mole %.",
+ "uncertainties_stated": "Pressure: maintained within 1 psia of the reported gauge value, estimated accuracy within 2 psia. Temperature within 0.1 C. Solubility precision within 0.0005 molal, estimated accuracy within 0.001 molal (3.2 % at 350 psia, 1.6 % at 750 psia in distilled water; 3.9 % and 2.0 % in sea water).",
+ "quality_remarks": "Table 1 'Predicted' rows are model values (O'Sullivan and Smith 1970 equation), not measurements. Authors cannot explain the 2-4 % gap between measured and predicted sea-water values (a 2 % increase in the Yamamoto et al. 1976 sea-water Bunsen coefficient would close it). Sea-water composition not given beyond salinity 34.84 permil. Tables 2-4 are clay or sediment slurries (held: not homogeneous solutions); solubilities in clay slurries are relative to bulk water (excluding interlayer water), sediment slurries relative to total water. Table 3 2.01 wt.% at 350 psia has no value (bubbles in the gel). Pressure basis (total vs partial) not stated. The sea-water measured row equals the sea-water row reprinted in Stoessell and Byrne 1982b (GCA 46, 1327) with footnote 'Stoessell and Byrne (1982)'; the distilled-water row differs from the 1982b distilled-water row (0.0319/0.0483/0.0617 there).",
+ "how_extracted": "pdf_text_layer (OCR layer, Paper Capture) as layout aid; every cell read from the 250 dpi page images",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   69,
+   70
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "Table 1": {
+   "printed_data_rows": 4,
+   "written_rows": 6,
+   "label_rows": 2,
+   "note": "2 measured + 2 predicted (model) rows; 3 pressure columns each"
+  },
+  "Table 2": {
+   "printed_data_rows": 4,
+   "written_rows": 4
+  },
+  "Table 3": {
+   "printed_data_rows": 2,
+   "written_rows": 2
+  },
+  "Table 4": {
+   "printed_data_rows": 2,
+   "written_rows": 4,
+   "label_rows": 2
+  }
+ },
+ "changes_after_image_check": [
+  "Table 4 row 3 (Sea water 9.7), 550 psia: text layer '0.03%' -> 0.0396",
+  "Table 4 row 1: text layer '7. 1' -> 7.1",
+  "Table 3 header: text layer 'Cl.y' -> Clay"
+ ],
+ "extraction_notes": "Wide tables (one column per pressure) mapped with one mapping per pressure over the same CSV (key csv), as in extract/10.1016_0016-7037(82)90268-x. psi printed as 'psia' in the image column headers. Clay/sediment slurry rows (Tables 2-4) are kept and listed under row_held per coordinator instruction. Sanity checks (script): solubility increases with pressure in every row; sea-water values below distilled-water values at each pressure (0.0263 < 0.0318 etc.); slurry values within 0.0007-0.0027 molal of the Table 1 distilled-water values (authors: minor decreases, < 0.002 with one exception: Table 2 1.09 wt.% at 750 psia 0.0596 vs 0.0623, difference 0.0027); Table 4 sea-water slurry 0.0250/0.0396/0.0517 vs sea water 0.0263/0.0400/0.0514.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned PDF with OCR text layer; one cell (0.03% -> 0.0396) needed correction after the image check.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1346_ccmn.1982.0300109, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

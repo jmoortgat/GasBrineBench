@@ -16,9 +16,9 @@ Built to give equation-of-state and correlation developers one verified,
 uniformly formatted, quality-coded target set — so model comparisons stop
 depending on who curated which data.
 
-**26,815 datapoints · 249 published works · 7 benchmark gases (plus 24 further
-gases, flagged) · 6 ions · 238–773 K · 0.1–3,500 bar, and a separate
-supplementary tier of 5,174 measurements the benchmark families cannot hold.**
+**32,355 datapoints · 274 published works · 7 benchmark gases (plus 24 further
+gases, flagged) · 6 ions · 233–773 K · 0.1–3,500 bar, and a separate
+supplementary tier of 7,803 measurements the benchmark families cannot hold.**
 
 > **New here?** Look at the data in your browser first. Each notebook opens in Colab with one click, installs nothing, needs no account
 > beyond a Google login, and downloads this repository itself.
@@ -38,9 +38,9 @@ supplementary tier of 5,174 measurements the benchmark families cannot hold.**
 >
 > They are also committed with their figures, so GitHub shows them without running anything. `python3 tools/make_notebooks.py` rebuilds them.
 
-**Status: v1.2.1 released.** v1.2.1,
+**Current release: v1.2.2** (32,355 datapoints from 274 works, 22 October 2026; see `CHANGELOG.md`). It supersedes v1.2.1,
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23243941.svg)](https://doi.org/10.5281/zenodo.23243941)
-(26,815 measurements from 249 works), supersedes v1.2.0
+(26,815 measurements from 249 works, the version described in the data descriptor), which supersedes v1.2.0
 ([10.5281/zenodo.23243932](https://doi.org/10.5281/zenodo.23243932), the 4 October snapshot
 with 27,025 datapoints) and v1.1.1 (11,537 measurements from 111 sources,
 [10.5281/zenodo.22898153](https://doi.org/10.5281/zenodo.22898153)). Cite the original experimental sources for the numbers (see
@@ -53,25 +53,25 @@ the snapshot it used.
 
 | family | datapoints | sources | gases | T [K] | P [bar] | R/T/U |
 |---|---:|---:|---|---|---|---|
-| `data/solubility.csv` | 14,472 | 148 | 23 gases, 7 of them the benchmark gases | 273–773 | 0.10–3500 | 1396 / 12874 / 202 |
-| `data/y_h2o.csv` | 1,972 | 51 | CO2, CH4, H2, N2, C2H6, C3H8 and 4 others | 238–623 | 1.0–3500 | 105 / 1810 / 57 |
-| `data/ternary.csv` | 93 | 3 | CO2 + CH4 together | 323–423 | 19–1000 | 0 / 93 / 0 |
-| `data/rho.csv` | 6,180 | 23 | — | 274–643 | 1.0–700 | 0 / 6180 / 0 |
+| `data/solubility.csv` | 16,462 | 154 | 23 gases, 7 of them the benchmark gases | 273–773 | 0.10–3500 | 1406 / 14854 / 202 |
+| `data/y_h2o.csv` | 2,113 | 54 | CO2, CH4, H2, N2, C2H6, C3H8 and 4 others | 233–623 | 1.0–3500 | 105 / 1951 / 57 |
+| `data/ternary.csv` | 230 | 3 | CO2 + CH4 together | 285–423 | 19–1000 | 0 / 230 / 0 |
+| `data/rho.csv` | 8,050 | 36 | — | 273–643 | 1.0–700 | 0 / 8050 / 0 |
 | `data/rho_gas.csv` | 951 | 4 | CO2 | 274–726 | 99–1008 | 0 / 951 / 0 |
-| `data/visc.csv` | 85 | 2 | — and CO2 | 294–449 | 50–965 | 0 / 85 / 0 |
-| `data/thermo_brine.csv` | 692 | 8 | — | 278–603 | 1.0–200 | 0 / 692 / 0 |
-| `data/phi_osm.csv` | 717 | 11 | — | 298–573 | 0.39–86 | 0 / 717 / 0 |
+| `data/visc.csv` | 508 | 5 | — and CO2 | 288–449 | 50–965 | 0 / 508 / 0 |
+| `data/thermo_brine.csv` | 1,661 | 13 | — | 278–623 | 1.0–362 | 0 / 1661 / 0 |
+| `data/phi_osm.csv` | 727 | 12 | — | 298–573 | 0.39–86 | 0 / 727 / 0 |
 | `data/dh_sol.csv` | 238 | 7 | 18 gases | 273–373 | 0.89–202 | 0 / 238 / 0 |
 | `data/psat_ratio.csv` | 1,402 | 19 | — | 292–647 | n/a | 21 / 1381 / 0 |
 | `data/eps_r.csv` | 13 | 1 | — | 298 | 1 | 0 / 13 / 0 |
-| **total** | **26,815** | **249** | | **238–773** | **0.10–3500** | **1522 / 25034 / 259** |
+| **total** | **32,355** | **274** | | **233–773** | **0.10–3500** | **1532 / 30564 / 259** |
 
 `sources` counts distinct *published works* per family, after the several
 curation spellings of one paper collapse onto one citation (`SOURCES.md`); the
-249 total is the number of distinct works in the whole database.
+274 total is the number of distinct works in the whole database. Densities and viscosities measured at room pressure have an empty `P_bar` and are not in the P ranges.
 
-17,240 datapoints carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
-ionic strength); 9,575 are salt-free.
+22,392 datapoints carry salt (Na+, K+, Ca2+, Mg2+, Cl−, SO4 2−, to 58 mol/kg of
+ionic strength); 9,963 are salt-free.
 
 ### What changed in v1.2
 
@@ -88,13 +88,11 @@ families (`rho_gas`, `visc`, `thermo_brine`), and a separate
   composition. Where a convention is unavoidable it is applied by the builder
   and **flagged** (`stp-assumed`: gas volumes per gram of water are converted
   with 0 degC and 1 atm; `solution-basis-converted`, `salinity-matrix`, ...);
-* **a measurement with no stated pressure is not a benchmark datapoint.** Liquid
-  densities and viscosities whose paper states no pressure are left out
-  entirely. The exceptions are properties that are conventionally measured
-  without a pressure — enthalpies of dissolution, osmotic coefficients
-  (isopiestic equilibrium at the solution's own vapor pressure) and apparent
-  molar heat capacities. Those 522 datapoints are kept, carry an empty `P_bar`, are
-  flagged `pressure-unstated`, and are excluded by the default loader.
+* **a measurement with no stated pressure is not a default benchmark datapoint.** Properties that are conventionally
+  measured without a pressure — enthalpies of dissolution, osmotic coefficients (isopiestic equilibrium at the solution's
+  own vapor pressure) and apparent molar heat capacities — and, from v1.2.2, liquid densities and viscosities measured at
+  room pressure at T <= 373.15 K are kept with an empty `P_bar`, flagged `pressure-unstated`, and excluded by the default
+  loader (2,809 datapoints).
 
 ### Modifier flags and what the default loader drops
 
@@ -104,13 +102,13 @@ meaning. `gbb.load()` drops, by default, measurements that carry any of
 `gas-out-of-scope` (a gas outside the seven), `hydrate-regime`,
 `condensed-phase-uncertain`, `fugacity-as-pressure`, `subfreezing`,
 `volume-basis-uncertain` (per-litre composition the paper does not settle) and
-`pressure-unstated`, together with the `lle-regime` datapoints. That leaves **23,090
-measurements** in the default view. `exclude_flags=None, exclude_tags=None` returns all
-26,815; `SCHEMA.md` defines every flag.
+`pressure-unstated`, together with the `lle-regime` datapoints. That leaves **26,160
+measurements** returned by default. `exclude_flags=None, exclude_tags=None` returns all
+32,355; `SCHEMA.md` defines every flag.
 
 ### Supplementary tier
 
-`supplementary/supplementary_measurements.csv` (5,174 datapoints from 107 tables)
+`supplementary/supplementary_measurements.csv` (7,803 datapoints from 175 tables)
 holds in-scope measurements that no benchmark family can store without a
 model: apparent molar volumes, enthalpies of dilution and dissolution,
 isopiestic molality pairs (stored as published, so users can convert them with
@@ -124,17 +122,17 @@ as published otherwise. See `supplementary/README.md`. These datapoints are **no
 part of the benchmark; they are published so that nothing extracted and
 verified is lost.
 
-**Scored measurements.** Of the 26,815 benchmark datapoints, 23,090 are in the default view
+**Scored measurements.** Of the 32,355 benchmark datapoints, 26,160 are returned by default
 (scored as gas–brine equilibrium and brine-property targets); the rest are
 kept and flagged.
 
 ## Verification
 
-Every datapoint was compared with its paper (see `CHANGELOG.md`, "Full row-by-row audit"). `data/provenance/audit_status.csv` gives each datapoint one status:
-`verified` (17,967 measurements: published digits equal the stored ones after the documented conversion), `corrected` (8,158: the audit changed at
+Every datapoint was compared with its paper: the v1.2.1 datapoints in the full audit of October 2026 (see `CHANGELOG.md`, "Full row-by-row audit"), the 5,540 added in v1.2.2 in a second audit of the same kind (`CHANGELOG.md`, 1.2.2). `data/provenance/audit_status.csv` gives each datapoint one status:
+`verified` (23,231 measurements: published digits equal the stored ones after the documented conversion), `corrected` (8,350: an audit changed at
 least one field, listed in `data/provenance/audit_corrections.csv`), `not-verifiable` (90: no paper or table available, or the paper does not settle the basis)
-and `residual-difference` (600: a known difference from the paper that was not corrected, such as a brine composition adjusted for
-electroneutrality or a paper whose own columns disagree). A blind random audit of the corrected data found 8 major errors in 531 verifiable readings (1.5 %,
+and `residual-difference` (684: a known difference from the paper that was not corrected, such as a brine composition adjusted for
+electroneutrality, a paper whose own columns disagree, or a partial-pressure convention the paper does not fully state). A blind random audit of the corrected data found 8 major errors in 531 verifiable readings (1.5 %,
 95 % interval 0.8-2.9 %); after adjudication 2 of them (0.4 %) are not already disclosed by a flag or a documented convention. The column `data_origin` says whether a
 number is published in a table, read off a figure or calculated by the authors' model, and the flag `smoothed-values` marks tables the authors state are smoothed.
 
@@ -142,12 +140,12 @@ number is published in a table, read off a figure or calculated by the authors' 
 
 ```python
 import gasbrinebench as gbb
-fit = gbb.load(reliable=True)            # 20,899 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
-only_checked = gbb.load(audit_status="verified")      # or 'corrected', 'not-verifiable', 'residual-difference' (any of them, as a list)
+fit = gbb.load(reliable=True)            # 22,062 rows: verified or corrected against the paper, quality not U, no unsettled-convention flag
+only_checked = gbb.load(audit_status="verified")      # or 'corrected', 'not-verifiable', 'residual-difference', 'not-audited' (any of them, as a list)
 ```
 
 `reliable=True` keeps the datapoints whose stored digits equal the published ones (audit status `verified` or `corrected`), drops quality U, everything the default
-view drops, and the measurements flagged `source-caution`, `stp-assumed`, `salinity-matrix` or `solution-basis-converted`, whose paper does not settle a convention.
+view drops, and the measurements flagged `source-caution`, `stp-assumed`, `salinity-matrix`, `solution-basis-converted` or `density-assumed`, whose paper does not settle a convention.
 It is the strictest set we can defend; it does not mean that a paper has no systematic error of its own (see Verification).
 
 ## Using it from Python
@@ -186,12 +184,12 @@ brine-only datapoint stays an empty string, and then coerces the numeric columns
 the genuinely blank cells (`P_bar` on the `psat_ratio` datapoints, `uncertainty`
 where the source stated none) become `NaN` rather than `''`.
 
-**`load()` excludes the 354 `lle-regime` measurements and every datapoint carrying a
-default-excluded flag.** The `lle-regime` points (144 propane datapoints of v1.1.1
-and 210 added in v1.2) are liquid–liquid mutual solubilities, not gas
+**`load()` excludes the 485 `lle-regime` measurements and every datapoint carrying a
+default-excluded flag.** The `lle-regime` points (144 propane datapoints of v1.1.1,
+210 added in v1.2 and 131 in v1.2.2, mostly CO2 + CH4 + water with a CO2-rich liquid) are liquid–liquid mutual solubilities, not gas
 solubilities (`data/QUALITY.md` Sec. 7); scoring them as the latter is a
 category error. The flagged measurements are listed above. Pass
-`exclude_tags=None, exclude_flags=None` for all 26,815 datapoints.
+`exclude_tags=None, exclude_flags=None` for all 32,355 datapoints.
 
 The data directory is found beside the package, or from the working directory
 upward, or from `$GASBRINEBENCH_DATA`.
@@ -347,7 +345,7 @@ each block.
 - **`data/QUALITY.md`** — the R/T/U justification record: what was checked
   against what, which measurements were removed, and which apparent defects turned out
   to be in our own pipeline rather than in the source.
-- **`SOURCES.md`** — the source manifest. **All 26,815 datapoints resolve to a real
+- **`SOURCES.md`** — the source manifest. **All 32,355 datapoints resolve to a real
   published source (100 %).** It also carries each paper's OpenAlex citation
   count (`data/provenance/citation_counts.csv`) as metadata, not as a quality
   measure.
@@ -428,7 +426,7 @@ so the coverage figures cannot drift away from the data. Re-run it after any
 change and commit the diff. It never invents a citation: sources without a
 bibliographic record are listed by name under *Needs citation*.
 
-All 26,815 measurements resolve to a real published source, and all but a few of
+All 32,355 measurements resolve to a real published source, and all but a few of
 those works carry a DOI (`SOURCES.md` lists them). Six have none because none was ever issued — two
 doctoral theses, two research reports, and two papers in journals that were
 never retrospectively registered. The seventh is Sultanov et al. 1972, a

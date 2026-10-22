@@ -1,0 +1,172 @@
+{
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "No pressure column is printed. Text: 25-75 C in Lipkin pycnometers; 75-175 C in sealed glass dilatometer tubes 'under the combined pressure of the air trapped in the dilatometer and the water that evaporated from the solution' (air partial pressure about 3 atm at 175 C); i.e. the solution's own saturation pressure plus trapped air, not controlled.",
+ "page_journal": 327,
+ "table": "Table I",
+ "title_as_printed": "Comparison of Measured and Calculated Densities of NaCl Solutions [the printed table also holds Na2SO4 and MgSO4 blocks]",
+ "footnotes_as_printed": {
+  "a": "(7)  [attached to ICT in Table I = International Critical Tables, ref. 7]"
+ },
+ "columns": {
+  "T": {
+   "col": "Temp., C",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Exptl. density g/cc",
+   "unit": "g/cm3"
+  },
+  "value2": {
+   "col": "ICT density g/cc",
+   "unit": "g/cm3",
+   "what": "International Critical Tables value interpolated to the same T and m (blank where not given)",
+   "from_literature": true
+  },
+  "value3": {
+   "col": "Calcd. density g/cc",
+   "unit": "g/cm3",
+   "what": "density calculated by the authors from their apparent-molal-volume correlation (eq 3-5)",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water as solvent (distilled water implied; purity not stated); single salt per block, set from the label row"
+ },
+ "skip_rows": [],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.1",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.01",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.05",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 54,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.10",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.15",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 72,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.00972",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 81,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.09722",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 90,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.19444",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 99,
+   "sets": [
+    {
+     "path": "composition.constant.MgSO4",
+     "value": "0.29165",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Calcd. density (authors' correlation) mapped as value3"
+ ],
+ "conversion_needs": [
+  "density in g/cc (printed as 'Grams per cc.'), no conversion needed",
+  "composition molality: mol of salt per 1000 g water as printed ('molality'); the paper defines apparent molal volume with 'V is the volume of a solution containing 1000 grams of water and m moles of solute'"
+ ],
+ "notes": "Printed side-by-side blocks (NaCl 25-175 C; Na2SO4 25-75 C at left and 100-175 C at right; MgSO4 25-175 C) were restacked: one label row per salt and molality, then 8 temperature rows (25,45,65,75,100,125,150,175 C). Na2SO4 temperature rows from the two printed halves were merged by script. Printed '...' (or blank) ICT cells (T >= 125 C for NaCl, Na2SO4 and MgSO4; MgSO4 100 C) written as empty. MgSO4 molalities 0.00972..0.29165 as printed. One ICT cell (MgSO4 0.00972 m, 65 C) is smudged in the text layer ('0.98*18') and was read as 0.9818 from the image."
+}

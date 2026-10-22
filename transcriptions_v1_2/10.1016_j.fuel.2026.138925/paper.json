@@ -1,0 +1,97 @@
+{
+ "doi": "10.1016/j.fuel.2026.138925",
+ "first_author": "Pei",
+ "year": 2026,
+ "journal": "Fuel 420 (2026) 138925",
+ "source_key": "PEI(2026)",
+ "experimental_method": "Static equilibrium cell (titanium vessel, 500 mL synthetic formation water + excess CH4, 16 h stirring + 1 h settling at set T and P); the saturated solution is transferred to a gas collector, depressurised at high temperature, and the evolved CH4 volume is determined by gas chromatography (FID, TCD check) against a known volume of reference gas.",
+ "uncertainties_stated": "Temperature control +/- 0.1 K. Relative expanded uncertainty of the pressure pump about 1 % (k = 2) and of the GC measurement about 14 % (k = 2); relative expanded uncertainty of the final solubility results about 14 % (k = 2).",
+ "quality_remarks": "Solubility reported only as Sm3 of CH4 per m3 of brine; neither the standard reference state of the gas volume nor the state of the brine volume is defined. Pressures are round nominal values (5-90 MPa). Text says 'a total of 90 experiments were conducted' but Tables 3a-3c hold 70 + 90 + 80 = 240 values; the relation is not explained (90 matches the DF-1 table alone). Reported solubility shows a minimum between 333.15 and 353.15 K at all pressures and then increases with T; the 14 % (k = 2) uncertainty is large. Brine composition is printed as ion contents (Na+ and K+ combined) in g/L; synthetic formation water. A comparison with NaCl solution, NaHCO3 solution and pure water is shown only in Fig. 8b (no table). Data otherwise 'available on request'. No supplementary material is mentioned.",
+ "brine_composition_as_printed": {
+  "table": "Table 1, journal p. 3 (PDF p. 3): Ionic composition of formation water. Ion content of formation brine (g/L).",
+  "header": [
+   "Member",
+   "Na+ + K+",
+   "Ca2+",
+   "Mg2+",
+   "Cl-",
+   "SO4 2-",
+   "HCO3-",
+   "CO3 2-",
+   "Total salinity(g/L)"
+  ],
+  "rows": [
+   [
+    "LD-1",
+    "3.303",
+    "0.008",
+    "0.001",
+    "3.053",
+    "0.148",
+    "3.262",
+    "0.225",
+    "10"
+   ],
+   [
+    "DF-1",
+    "4.939",
+    "0.0033",
+    "0.009",
+    "5.834",
+    "0.082",
+    "3.103",
+    "0",
+    "14"
+   ],
+   [
+    "DF-2",
+    "12.099",
+    "0.0032",
+    "0.0027",
+    "17.218",
+    "0.262",
+    "2.362",
+    "0",
+    "32"
+   ]
+  ],
+  "check": "ion sums 10.00, 13.97, 31.95 g/L vs printed totals 10, 14, 32."
+ },
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   7
+  ],
+  "journal_pages": [
+   3,
+   7
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "brine ion composition, not a property table; copied into brine_composition_as_printed and into every mapping's composition block"
+  },
+  {
+   "table": "Table 2",
+   "reason": "core petrophysical properties (length, diameter, porosity, permeability), out of scope"
+  },
+  {
+   "table": "Figs. 6-8 and core/micromodel exsolution figures",
+   "reason": "figures only; Fig. 8b NaCl / NaHCO3 / pure-water comparison has no table"
+  }
+ ],
+ "row_counts": {
+  "Table 3a": "printed 10 pressure rows x 7 temperature columns = 70 values; written 10 rows x 7 columns (7 mappings)",
+  "Table 3b": "printed 10 x 9 = 90 values; written 10 rows x 9 columns (9 mappings)",
+  "Table 3c": "printed 10 x 8 = 80 values; written 10 rows x 8 columns (8 mappings)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Wide tables (P rows x T columns) written as printed, one CSV per printed table; one mapping per temperature column (v2.2 option 4, key csv), file names mapping_<table>_<T>K.json. CSV headers 'T (K) <value>' join the spanning 'T (K)' header with each column temperature. Text layer script-parsed; every cell compared with the 250 dpi page images (PDF p. 3 and p. 7): all cells match, no corrections. Sanity: every T column strictly increases with P; at each P the value has a minimum at 333.15 or 353.15 K, as the authors state. Table 3b 413.15 K / 10 MPa printed '1.7' (one decimal) kept as printed. Table 3c has no 473.15 K column; Table 3a stops at 433.15 K.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page image with no correction",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_j.fuel.2026.138925, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical apart from values one pass fills down (T, mixture x) or keeps in label text (Masterton averages), whose counts match the block sizes. Pei brine compositions (mapping constants vs pass-2 table_1): identical."
+}

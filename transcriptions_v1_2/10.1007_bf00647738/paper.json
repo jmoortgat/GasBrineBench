@@ -1,0 +1,50 @@
+{
+ "doi": "10.1007/BF00647738",
+ "first_author": "Phang",
+ "year": 1980,
+ "journal": "J. Solution Chem. 9(7), 497-505",
+ "source_key": "PHANG(1980)",
+ "title": "Density, Viscosity, Conductance, and Transference Number of Concentrated Aqueous Magnesium Chloride at 25 C",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer needed corrections after the image check (subscript digits misread, comma decimals, O/0, I/1); journal scan",
+ "experimental_method": "density (details referenced to earlier work; concentrations by gravimetric AgCl analysis), capillary viscometer with electronic stopwatch (relative viscosity), conductance cell, emf of Ag/AgCl concentration cells with and without transference at 298.15 K",
+ "uncertainties_stated": "duplicate analyses agree to 0.02 % (density and conductance part) and about 0.05 % (others); no explicit uncertainty for density or viscosity",
+ "quality_remarks": [
+  "Authors note their densities for concentrated solutions are slightly higher than Dunn and Perron et al., and consistently larger than Wirth and Bangert.",
+  "Table I printed temperature as 298.15 deg K (sic); treated as 298.15 K.",
+  "Densities exist for only 20 compositions of the 28 rows; the other rows are conductance-only."
+ ],
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   499,
+   500
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table III",
+   "reason": "transference numbers of Mg ion constituent (derived by differentiation of a fitted polynomial; not in scope)"
+  }
+ ],
+ "row_counts": {
+  "table_1": "printed 28 rows; written 28",
+  "table_2": "printed 18 rows; written 18"
+ },
+ "changes_after_image_check": [
+  "table_1 row m=0.1825(3): text layer '0.1825 a' -> 0.18253",
+  "table_1 row m=0.2341(8): text layer '0.234l 8' -> 0.23418",
+  "table_1 m '0.3982' (text layer 'O.3982') -> 0.3982",
+  "table_1 m '4.216' (text layer '4.2I 6') -> 4.216",
+  "table_1 subscript digits merged into numbers (e.g. '0.01056 3' -> 0.010563; '219.5 o' -> 219.50; '182.9 o' -> 182.90)",
+  "table_2 rows 1-2 m: '0,09239' -> 0.09239 ; '0,2871' -> 0.2871 (comma decimal in text layer)"
+ ],
+ "extraction_notes": "Tables written by script from values transcribed against the page images. Parenthesised literature phi_v values (Wirth and Bangert) split into their own column. Sanity: density increases monotonically with m; relative viscosity monotonic.",
+ "pass2_diff": "Tables I and II: 124/124 and 86/86 numbers identical."
+}

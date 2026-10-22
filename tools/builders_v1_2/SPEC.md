@@ -135,3 +135,26 @@ stays valid; the builder reads both.
 12. **Tables with out-of-scope test salts and an NaCl reference** (e.g. SrCl2 or BaCl2 against NaCl): skipped, with the reason in `not_extracted_tables`.
 13. **Sub-273 K rows and hydrate rows** are kept; mark `regime: hydrate` or note `below_273K`; the builder tags them.
 14. **Second pass** is mandatory when `needs_pass2` is true. Any paper whose pass 1 had even one correction after the image check counts.
+
+---
+
+# Mapping options added in v2.2 (2026-10-11, first used for Blount et al. 1982)
+
+1. **Ditto marks for pressure and composition.** `columns.P.fill_down: true` and `composition.per_row.<salt>.fill_down: true` fill a blank cell
+   from the nearest non-blank row above (temperature is always carried forward, rule 3 of v2.1). Without the key a blank stays blank.
+2. **Thousands separator.** `columns.P.thousands_separator: ","` removes printed thousands commas (22,340 -> 22340) before parsing. The CSV keeps
+   the number as printed (quoted).
+3. **Assumed NaCl density.** `composition.density_rule: "nacl_25C_1atm"` lets the builder convert an NaCl-only `g_per_L`, `molarity` or `normality` composition, and a
+   gas volume in `SCF_..._per_bbl_brine` (standard cubic feet at 25 C, 1 atm, per 42-gallon barrel of brine), with the NaCl(aq) density at
+   298.15 K and 1 atm (`gbb12_core.NACL_VPHI_25C`, fitted by `fit_nacl_density_25C.py`). Every such row gets the flag `density-assumed`.
+   Set it only when the paper gives no density and the volume basis is the solution at room conditions; say why in the mapping.
+4. **Several mappings over one printed table.** A mapping may name its CSV with the key `csv` (e.g. `"csv": "table_1.csv"`), so one printed
+   table can be read by several mappings (one per phase, or one per pressure column printed as a header) without copying the CSV.
+5. **Native property `solubility_mole_ratio`.** Moles of gas per mole of water (value unit containing `per_mol_H2O`, printed scale in `scale`);
+   converted exactly to mol per kg water.
+6. **Native property `ternary_state` (CO2 + CH4 + water).** One printed state point -> dissolved CO2 and CH4 (`xc_saltfree`) and, if
+   measured, the gas-phase water content (gas `co2-ch4`, `y_h2o`), each with `y_co2_dry` = CO2 / (CO2 + CH4) of the gas phase. Columns:
+   `value` and `value2` (aqueous CO2 and CH4, each with its `gas`), `uncertainty`, `uncertainty2`, `y_co2_gas` and `y_ch4_gas` (or
+   `y_co2_dry`), `y_h2o_gas` and `u_y_h2o_gas` (omit, or mark `derived_by_authors`, when the water content is calculated). When each phase is
+   printed as its own row, set `gas_phase_row: {"phase_col_key": "phase", "gas": "I", "aqueous": "III"}` and map a `phase` column; the
+   aqueous row takes the gas values from the preceding gas row of the same state point (pressures within 1 %). Do not set `gas_mixture`.

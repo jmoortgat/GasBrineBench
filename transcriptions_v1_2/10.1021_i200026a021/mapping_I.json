@@ -1,0 +1,32 @@
+{
+ "table": "Table I",
+ "page_journal": 534,
+ "pdf_page": 2,
+ "title_as_printed": "Table I. Brines Used for Methane Solubility Measurements",
+ "footnotes_as_printed": {
+  "a": "Based on molal concentrations.",
+  "b": "Composition given in Table II."
+ },
+ "property": "other",
+ "property_description": "composition of the brines used in Table III (not a data table)",
+ "hold_table": "composition reference for Table III; values are copied into mapping_III.json group_rows",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable",
+ "columns": {},
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "see mapping_III"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "all columns"
+ ],
+ "conversion_needs": [],
+ "notes": "Footnote a sits on the 'ionic strength' header; footnote b on 'SSGB'.",
+ "csv": "table_I.csv"
+}

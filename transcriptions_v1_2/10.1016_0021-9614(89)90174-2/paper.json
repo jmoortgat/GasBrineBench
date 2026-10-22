@@ -1,0 +1,62 @@
+{
+ "doi": "10.1016/0021-9614(89)90174-2",
+ "first_author": "Rogers",
+ "year": 1989,
+ "journal": "J. Chem. Thermodynamics 21, 595-614",
+ "source_key": "ROGERS(1989)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned PDF with OCR text layer; 9 cells needed correction after the image check beyond letter/digit fixes (two missing s values, one lost minus sign, wrong digits 4.9847, 0.9079, 1.210).",
+ "title": "Comparison of calibration methods for flow heat-capacity calorimeters and heat capacities of concentrated NaCl(aq) to 598 K",
+ "authors": "P. S. Z. Rogers, C. J. Duffy",
+ "experimental_method": "Twin-cell flow heat-capacity calorimeter of Pt-Rh capillary, calibrated by flow withdrawal with one or both heaters on (flow-rate-dependent correction factor f); NaCl(aq) 1 to 6 mol/kg, 323 to 598 K at about 7 and 20 MPa and at 523 K to 36 MPa.",
+ "uncertainties_stated": "Per-point one standard deviation s (in units of R) printed; pressure +/-0.01 MPa read, transducer calibrated to 0.1 MPa; block temperature controlled to 0.01 K.",
+ "quality_remarks": "Cp,phi printed divided by R (R value not stated; implied 8.314). Temperatures are midpoints of the temperature rise. Repeated injections of the same solution are listed individually. All values internally consistent with eq (22) and the printed cp,w after correction.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   10,
+   11
+  ],
+  "journal_pages": [
+   604,
+   605
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "calibration parameters of the calorimeter (no solution data)"
+  },
+  {
+   "table": "Table 3",
+   "reason": "recommended (smoothed, from weighted fits) Cp,phi/R and cp ratios at round molalities"
+  },
+  {
+   "table": "Table 4",
+   "reason": "fit parameters of eq (24)"
+  }
+ ],
+ "row_counts": {
+  "table_2": {
+   "printed": 151,
+   "written": 151,
+   "note": "data rows in 10 T/p blocks, plus 10 block label rows"
+  }
+ },
+ "changes_after_image_check": [
+  "Systematic OCR character fixes checked on the image (about 25 cells): O->0, Y->9, I/l->1, b->6, ! ->5, X->8, doubled minus, dropped decimal points in f (1I10, II14, 1110 -> 1.110, 1.114)",
+  "pdf p10 right group row m=3.1310, s: (blank) -> 0.03",
+  "pdf p10 right group row m=3.1310, s: (blank) -> 0.04",
+  "pdf p10 right group row m=3.0059, Cp,phi/R: 3.78 -> -3.78",
+  "pdf p10 left group row m=1.0015, m: lsnI15 -> 1.0015",
+  "pdf p10 right group row m=4.9867, m: 4.9847 -> 4.9867",
+  "pdf p11 left group row m=0.9979, m: 0.9079 -> 0.9979",
+  "pdf p11 right group row m=4.9867, f: IO81 -> 1.081",
+  "pdf p11 left group row m=1.8579, m: I.8!79 -> 1.8579",
+  "pdf p11 right group row m=4.9867, f: 1.210 -> 1.110"
+ ],
+ "extraction_notes": "pdftotext -bbox words assigned to columns by x position, OCR characters cleaned by script, every row compared with 250 dpi images. Check: Cp,phi/R recomputed from m, cp,s/cp,w and the printed cp,w with eq (22) gives an implied R of 8.31 to 8.32 for all rows (except rows with Cp,phi/R near 0 where rounding dominates); the ratio of column 3 to column 4 (density ratio) is constant for each molality within a block.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_0021-9614(89)90174-2) compared as multisets of numeric cells (diff_multiset.py): identical; Gates footnote markers d (26) and e (2) identical."
+}

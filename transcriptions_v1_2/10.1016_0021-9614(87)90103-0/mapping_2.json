@@ -1,0 +1,431 @@
+{
+ "table": "Table 2",
+ "page_journal": "135-139",
+ "title_as_printed": "Apparent molar heat capacity C_p,phi of NaCl(aq); m0 = 1 mol kg-1; C0 = 1 J K-1 mol-1",
+ "footnotes_as_printed": {
+  "a": "The apparent molar heat capacity was calculated from equation (1) using the heat-loss correction factor f calculated from the 2.9836 mol kg-1 value at 17.70 MPa and the calibration results of White and Wood. The f values at 373.38 K were calculated by a two-stage process as described in the text. The densities were from the equation of Gates and Wood.",
+  "b": "The estimated accuracy delta of each C_p,phi/C0 value was calculated assuming absolute errors of +/-0.00015 and relative errors of 1 per cent in DeltaP/P.",
+  "c": "Delta is the value of {C_p,phi(calculated) - C_p,phi(observed)}/C0. The calculated value is from the spline interpolation of the knots in table 1.",
+  "d": "These values were not included in the least-squares fit because the initial molality is outside the range of the fit.",
+  "e": "These values were not included in the fit because the square of the residual was greater than 20 per cent of the sum of the squares of all the residuals."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter with Grove back-pressure regulator; p printed in each block label (1.87 to 17.90 MPa); gauge calibrated against a Heise gauge, reported pressures accurate to +/-0.25 MPa",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "from block label",
+   "note": "temperature of the experiment = block temperature plus one half of the temperature rise (typically 1.5 K)"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "from block label"
+  },
+  "value": {
+   "col": "Cp,phi/C0",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of NaCl calculated by the authors from Ps/Pw via eq (1) with f, densities and water cp",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Ps/Pw",
+   "unit": "dimensionless",
+   "what": "measured electric power ratio, solution to water (primary measured quantity)"
+  },
+  "value3": {
+   "col": "cp/cp*",
+   "unit": "dimensionless",
+   "what": "specific heat capacity ratio of solution to pure water at T and p, eq (1)",
+   "derived_by_authors": true
+  },
+  "uncertainty": {
+   "col": "delta",
+   "unit": "J/(mol K)",
+   "what": "estimated accuracy (footnote b)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m/m0",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl in water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    16,
+    36,
+    52,
+    75,
+    94,
+    113,
+    131,
+    159,
+    178,
+    198,
+    213,
+    232,
+    250,
+    278,
+    303,
+    322,
+    343,
+    364,
+    384,
+    404,
+    423
+   ],
+   "reason": "T/p/f block label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.02",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "2.33",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.07",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "4.96",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "349.01",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.10",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 52,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "348.90",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 75,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.38",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.87",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 94,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.38",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "5.05",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 113,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "373.38",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.30",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 131,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "398.74",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "2.33",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 159,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "398.59",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "4.96",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 178,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "398.77",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.10",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 198,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "398.87",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 213,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "451.99",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.87",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 232,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "451.99",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "5.05",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 250,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "451.99",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.30",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 278,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "451.99",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.40",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 303,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.74",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "4.96",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 322,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.70",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.10",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 343,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "498.79",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 364,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "549.13",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10.10",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 384,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "548.98",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 404,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "573.42",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 423,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "597.81",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "17.90",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Delta (deviation of the authors' cubic-spline surface from the observation, footnote c)",
+  "f (heat-loss correction factor printed in the block labels)"
+ ],
+ "conversion_needs": [],
+ "notes": "Two side-by-side column groups per block, stacked left group first, then right group; the 398.77 K / 10.10 MPa block continues from page 136 to page 137: its left rows of both pages come first, then its right rows of both pages. Delta cells printed only as footnote letter d (26 rows, molality 3.97 to 4.99 mol/kg outside the fit range) or e (2 rows: 373.38 K/10.30 MPa m=0.0503 Cp,phi -8.49 and 451.99 K/5.05 MPa m=0.0503 Cp,phi -269.29) are written empty with note Delta:d or Delta:e. The e mark is printed very small and could also read c; e is the only footnote that fits. Block label for 349.01 K is printed without the unit K; the 349.07 K label prints f = 1.06 (other 349 K blocks 1.046). Molalities printed as m/m0 with m0 = 1 mol/kg. Exact replicate rows kept (e.g. 498.70 K: 0.4260 / -202.62 printed in both column groups). The 451.99 K/1.87 MPa block has one row with m = 0.4868 (all other rows of that solution read 0.4968); printed value kept; its Cp,phi is consistent with 0.4868 being the molality the authors used."
+}

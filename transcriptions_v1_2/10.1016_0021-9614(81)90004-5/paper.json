@@ -1,0 +1,74 @@
+{
+ "doi": "10.1016/0021-9614(81)90004-5",
+ "first_author": "Smith-Magowan",
+ "year": 1981,
+ "journal": "J. Chem. Thermodynamics 13, 1047-1073",
+ "source_key": "SMITH-MAGOWAN(1981)",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned PDF with OCR text layer; 16 cells and labels needed correction after the image check (0/O/c/X confusions in 3.0000 and 1.0060, two temperature labels, two numbers).",
+ "title": "Heat capacity of aqueous sodium chloride from 320 to 600 K measured with a new flow calorimeter",
+ "authors": "David Smith-Magowan, Robert H. Wood",
+ "experimental_method": "New differential flow heat-capacity calorimeter (thermistor bridge, shunt-controlled heater powers), heat-loss factor f from a physical calibration by flow bleeding; NaCl(aq) 0.1 to 3.0 mol/kg, 320 to 603 K at 17.7 MPa, plus 320.55 K / 1.0 MPa and 572.14 K / 10 MPa.",
+ "uncertainties_stated": "Ps/Pw readable to +/-0.0001; repeatability a little better than 1 per cent of (Ps/Pw - 1); accuracy about 1 per cent at 320 K, about 5 per cent of (Ps/Pw - 1) at 600 K (heat-loss correction up to 14 per cent at 603 K); pressures +/-0.17 MPa; thermometer 0.11 K at 323 K to 0.36 K at 573 K; molalities +/-0.1 per cent.",
+ "quality_remarks": "Physical calibration not reproducible to better than 5 per cent at high T; correction factor at 600 K larger than expected. Fit residual largest (7 per cent) at 497.73 K, 0.0996 mol/kg. Internal checks (Cp,phi recomputed from cp,s/cp,w with eq (4) and the water cp of Table 1): Table 2 agrees to within 0.2 J/(K mol) at all T up to 572.14 K, but at 603.39 K the printed Cp,phi values imply a water cp of about 6.07 J/(g K) instead of the 6447 J/(K kg) printed in Table 1 for 603.4 K (Cp,phi would be 35 to 131 J/(K mol) more negative with 6.447); the cp ratios themselves are consistent with Ps/Pw and f = 1.14. Table 3: printed cp,s/cp,w 0.07330 (572.14 K, 3.0000 mol/kg) is a misprint for 0.70330; printed ratio 0.97925 (572.14 K, 0.0996 mol/kg) lacks the density division (Cp,phi corresponds to 0.97534). At 320.55 K / 1.0 MPa the implied water cp scatters (4.137 to 4.148, 3.958 at 3 mol/kg). All values kept as printed. Temperatures are the initial (inlet) temperatures; cell temperature rise (2.0 +/- 0.2) K. Temperature scale not stated.",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   10,
+   11
+  ],
+  "journal_pages": [
+   1056,
+   1057
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "physical calibration: heat-loss correction factor f and water heat capacity from Haar, Gallagher and Kell (instrument calibration and literature values, no solution data); used only for the consistency check"
+  },
+  {
+   "table": "Table 4",
+   "reason": "least-squares coefficients of eq (7) (fitted)"
+  },
+  {
+   "table": "Table 5",
+   "reason": "Cp,phi at round temperatures and molalities from the fit (smoothed)"
+  },
+  {
+   "table": "Table 6",
+   "reason": "(d2V/dT2)p derived from these results and literature volumetric data (derived)"
+  },
+  {
+   "table": "Table 7",
+   "reason": "infinite-dilution Cp,phi extrapolated from the experiments and Born-equation predictions (derived/model)"
+  }
+ ],
+ "row_counts": {
+  "table_2": {
+   "printed": 45,
+   "written": 45,
+   "note": "9 temperatures x 5 molalities, plus 9 temperature label rows"
+  },
+  "table_3": {
+   "printed": 10,
+   "written": 10,
+   "note": "2 T/p blocks x 5 molalities, plus 2 label rows"
+  }
+ },
+ "changes_after_image_check": [
+  "table_2 all 3.0000 mol/kg cells: OCR 3.OocO / 3.oOOO / 3.cOOO / 3.Oooo / 3.OOOo / 3.oOoo / 3.04X0 / 3.ccQo -> 3.0000",
+  "table_2 1.0060 at 491.05 K and 603.39 K: 1Xl060, l.DOfJO -> 1.0060",
+  "table_2 label 391.97 -> 397.97",
+  "table_2 label '49 1.05' -> 491.05",
+  "table_2 320.60 K, 1.0060 Cp,phi: -14.41) -> -14.40",
+  "table_2 572.14 K, 1.0060 Cp,phi: -453.21 -> -453.27 (500 dpi zoom; also matches the eq (4) recomputation -453.28)",
+  "table_2 572.14 K, 0.4940 cp ratio: '0.9203 1' -> 0.92031",
+  "table_3 320.55 K, 0.0996 Ps/Pw: 0.99123 -> 0.99723 (500 dpi zoom)",
+  "table_3 320.55 K, 0.0996 cp ratio: '0.993 11' -> 0.99311"
+ ],
+ "extraction_notes": "Table 2 CSV by script from pdftotext -layout with the listed fixes, then each cell compared with the 250 dpi images (500 dpi zooms for doubtful cells); Table 3 typed from the image. Sanity: Cp,phi more negative with T and less negative with m in every block; consistency with eq (4) as described in quality_remarks.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_0021-9614(81)90004-5, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical."
+}

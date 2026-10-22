@@ -1,0 +1,193 @@
+{
+ "table": "Table 3",
+ "page_journal": 27,
+ "pdf_page": 5,
+ "title_as_printed": "Table 3. Solubility of methane in aqueous calcium chloride at 25C and 30C, and in a solution both 1.53 N in NaCl and 6.0 N in CaCl2 at 30C",
+ "footnotes_as_printed": {
+  "*": "Solution saturated with CaCl2.6H2O."
+ },
+ "property": "solubility_x",
+ "property_note": "mole fraction of methane in the liquid; basis (salt counted as undissociated or as ions) not stated",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "psia as printed; total pressure of the cell; the paper's text calls it 'pressure of methane' when quoting Michels; water-vapour correction not stated in this table",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set per block by group_rows (25 or 30, from the '25C temp.' / '30C temp.' section headings)"
+  },
+  "P": {
+   "col": "Pressure (psia)",
+   "unit": "psia",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Mole fraction of methane (x 10^4)",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.0001
+  }
+ },
+ "composition": {
+  "basis": "normality",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    6,
+    13,
+    20,
+    25,
+    26,
+    29,
+    34,
+    38
+   ],
+   "reason": "section labels ('25C temp.', '30C temp.') and salt-concentration block labels"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "0.5",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "1.0",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "2.7",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "5.0",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "30",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "2.7",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "30",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "9.5",
+     "unit": "N"
+    }
+   ]
+  },
+  {
+   "label_row": 34,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "30",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "14.7",
+     "unit": "N"
+    },
+    {
+     "path": "note",
+     "value": "solution saturated with CaCl2.6H2O (footnote *)"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "30",
+     "unit": "C"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.53",
+     "unit": "N"
+    },
+    {
+     "path": "composition.constant.CaCl2",
+     "value": "6.0",
+     "unit": "N"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "normality to molality needs solution density (not given); CaCl2 normality counts equivalents (1 N CaCl2 = 0.5 mol/L); mixed block: 1.53 N NaCl = 1.53 mol/L NaCl, 6.0 N CaCl2 = 3.0 mol/L CaCl2",
+  "psia to MPa x 0.00689476",
+  "mole fraction printed x 10^4"
+ ],
+ "notes": "Table printed as two side-by-side column pairs in two temperature sections. Stacked per v2.1 rule 11: within each temperature section the left column blocks first, then the right. Order as written: 25C: 0.5 N, 1.0 N (left), 2.7 N, 5.0 N (right); 30C: 2.7 N, 9.5 N (left), 14.7 N*, mixed NaCl+CaCl2 (right). The section heading rows set nothing; every salt label row sets T and composition. The CaCl2-only blocks (29 rows) are already in GasBrineBench (DUFFY(1961)); the coordinator asked for the table complete as printed, so they are written here for reconciliation; only the last block (1.53 N NaCl + 6.0 N CaCl2, 30 C, 2 rows) is new. The 14.7 N block footnote * (saturated with CaCl2.6H2O) is stripped from the label and recorded in the note column as label:*."
+}

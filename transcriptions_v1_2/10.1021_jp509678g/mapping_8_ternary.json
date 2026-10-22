@@ -1,0 +1,64 @@
+{
+ "table": "Table 8",
+ "csv": "table_8.csv",
+ "page_journal": 14471,
+ "pdf_page": 11,
+ "title_as_printed": "Experimental LLE Data for [CH4 (1) + CO2 (2) + H2O (3)] at the Upper Critical End Point at Temperatures T and Pressures p, Where xi Denotes the Mole Fraction of Component i and u(xi) Denotes Standard Uncertainty of xi",
+ "footnotes_as_printed": {
+  "a": "The phases are labeled as II and III for the CO2-rich liquid and water-rich phases, respectively."
+ },
+ "temperature_scale": "ITS-90 (PRT calibrated on ITS-90, stated in section 2.3)",
+ "pressure_note": "UCEP pressure; compositions sampled at about 0.01 to 0.02 MPa above the UCEP pressure (section 2.4)",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "group_rows": [],
+ "skip_rows": [],
+ "property": "ternary_state",
+ "gas": "co2",
+ "regime": "lle",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "phase III x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "co2"
+  },
+  "uncertainty": {
+   "col": "phase III u(x2)",
+   "unit": "mole_fraction"
+  },
+  "value2": {
+   "col": "phase III x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "ch4"
+  },
+  "uncertainty2": {
+   "col": "phase III u(x1)",
+   "unit": "mole_fraction"
+  },
+  "y_co2_gas": {
+   "col": "phase II x2"
+  },
+  "y_ch4_gas": {
+   "col": "phase II x1"
+  }
+ },
+ "extra_unmapped": [
+  "phase III x3, u(x3)",
+  "phase II columns"
+ ],
+ "conversion_needs": [],
+ "notes": "Upper critical end point Lw + LCO2 = V: two liquids (CO2-rich liquid II, at its critical point with the vapour, and water-rich liquid III). Printed rotated (landscape) on the page; 7 rows, one per temperature 287.65-303.50 K. In the printed header the phase-II rule extends over the first x1 column of phase III; the column order (II: x1..u(x3), III: x1..u(x3)) is unambiguous from the 12 headers and the mole-fraction sums. This mapping: aqueous phase III. 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists. 2026-10-11 coordinator: ternary mapping (property ternary_state, converter conv_ternary) replacing the per-phase mappings, which are kept as *.json.txt. Al Ghafri numbering: x1 CH4, x2 CO2, x3 H2O. UCEP points: phase II is the CO2-rich liquid (regime lle); its printed water content (6.9e-5 to 2.6e-4) is 10-30 times below Table 5 phase II at nearby states and is not built."
+}

@@ -1,0 +1,378 @@
+{
+ "table": "Table I",
+ "page_journal": "356-357",
+ "title_as_printed": "Experimental Densities of KCl and K2SO4 Solutions from 5 to 95 C",
+ "footnotes_as_printed": {
+  "a": "not captured (footnote letter a is in the title; no footnote text is printed on pages 356-357)"
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (open densimeter cells; no pressure given in the paper)",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density difference in g/cm3 against pure water; molality basis, no per-volume concentration",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "10^3 Delta rho g/cm3",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density difference rho - rho0, rho0 = density of pure water (taken from Kell); text: 'The density (g-cm-3) differences, Delta rho = rho - rho0, where rho0 is the density of water, are tabulated in Table I'"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none (salt in degassed ion-exchanged water)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    10,
+    20,
+    42,
+    55,
+    67,
+    85,
+    95,
+    106,
+    117,
+    129,
+    130,
+    139,
+    148,
+    156,
+    169,
+    182,
+    193,
+    204,
+    220,
+    232
+   ],
+   "reason": "salt label rows (KCl, K2SO4) and temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 67,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 85,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "65",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 95,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 106,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "85",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 117,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 129,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 130,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 139,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 148,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 156,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 169,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 182,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 193,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "65",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 204,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 220,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "85",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 232,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "printed value is 10^3 Delta rho: multiply by 1e-3; molality is mol per kg H2O (text: 'm is the solution molality [mol (kg H2O)-1]')"
+ ],
+ "notes": "Printed as four side-by-side temperature blocks (5,15,25,35 / 45,55,65,75 / 85,95 C) for KCl on page 356 and K2SO4 on page 357. Stacked in printed order: left to right, top to bottom. The column header 'm' carries no unit in print; unit taken from the text (mol/(kg H2O)). Rows kept as printed although odd (not corrected): K2SO4 45 C rows 0.16143 -> 8.343 (out of m order, between 0.12751 and 0.01015) and 0.01015 -> 4.130 (density difference high for that m); K2SO4 65 C 0.02912 -> 7.825 (high for that m); K2SO4 75 C 0.56016 -> 81.194 (out of sequence with neighbours). Possible misprints in the paper; not verified. Near-replicate m values occur at KCl 25 C (4.40058/4.40004, 3.95785/3.93177 etc.).",
+ "quality_remarks": "Possible printed misprints kept as printed (rows not skipped): K2SO4 45 C m 0.16143 (out of m order) and 0.01015 (density difference high for that m), K2SO4 65 C m 0.02912 (high), K2SO4 75 C m 0.56016 (out of sequence). Not verified against the authors."
+}

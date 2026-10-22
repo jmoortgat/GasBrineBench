@@ -1,0 +1,135 @@
+{
+ "table": "Table I",
+ "page_journal": 993,
+ "title_as_printed": "Densities of NaCl, Na2SO4, MgCl2, and MgSO4 Solutions from 35 to 95 C",
+ "footnotes_as_printed": {
+  "a": "Units: g-cm^-3"
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (vibrating-tube densimeter; atmospheric pressure presumed by authors but not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": ""
+  },
+  "value": {
+   "col": "10^3 Delta d (g cm^-3)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density of solution minus density of pure water at the same temperature (Delta d = d - d0), printed as 10^3 Delta d; reference: water density from Kell"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "m mol/(kg H2O)",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    21,
+    32,
+    42,
+    53,
+    63
+   ],
+   "reason": "temperature block label rows"
+  },
+  {
+   "rows": [
+    52
+   ],
+   "reason": "printed misprint: MgCl2 75 C, m 4.48055, 10^3 Delta d 226.818 duplicates the value printed for m 3.50112 and is below the value for m 3.98681 (252.557); a fit of the other 75 C points predicts about 277"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 11,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "45",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "55",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "65",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 42,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "75",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 53,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "85",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "95",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "value is a density difference: needs pure-water density at T (Kell) to get density; scale 1e-3 applied to the printed 10^3 Delta d"
+ ],
+ "notes": "Table I is printed as four column pairs per page with temperature sub-headings; blocks that continue into the next column are stacked into one block per (salt, temperature). The sheet for MgCl2 is table_1_group3. Temperature scale IPTS-68 from the experimental section (HP quartz thermometer calibrated against Pt resistance thermometer, IPTS-68).",
+ "quality_remarks": "audit 2026-10-02: CSV data row 52 (MgCl2, 75 C, m 4.48055, 226.818) is a printed misprint (duplicate of the m 3.50112 value, below the m 3.98681 value 252.557); kept in the CSV as printed and skipped."
+}

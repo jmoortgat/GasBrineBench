@@ -1,0 +1,68 @@
+{
+ "doi": "10.2475/ajs.261.1.47",
+ "first_author": "Ellis, A. J.",
+ "authors": "A. J. Ellis, R. M. Golding",
+ "year": 1963,
+ "journal": "American Journal of Science 261, 47-60",
+ "title": "The solubility of carbon dioxide above 100 C in water and in sodium chloride solutions",
+ "source_key": "ELLIS(1963)",
+ "experimental_method": "(1) Liquid analysis: CO2 over water or 0.5, 1, 2 molal NaCl in a ~100 cc vessel equilibrated at least 24 h; ~2 g liquid sampled through a capillary into a weighed water trap and anhydrone/Carbosorb tubes (CO2 swept with N2); CO2 partial pressure = total pressure minus water (Raoult-corrected) vapour pressure. (2) pvt method: water injected into a vessel pre-charged with CO2 at T; condensation and fill points from P vs injected water give vapour and liquid water densities and the Ostwald coefficient.",
+ "uncertainties_stated": "Volume meter 0.05 percent; vessel temperature ends within +-1 C of centre; steam densities unlikely better than +-5 percent; highest-T solubilities in 2 m NaCl may be low by 5-10 percent (water vapour pressure uncertainty); lambda from the two methods differs by up to 0.05 at 300 C.",
+ "quality_remarks": "K values (Table 2) are calculated with literature fugacity coefficients (Majumdar and Roy 1956) and lambda with literature CO2 z values (Sweigert et al. 1946) and the Table 1 interpolated densities. Water vapour pressures of NaCl solutions estimated by Raoult's law (authors note it overcorrects at high T, so 2 m runs kept near or below 300 C). Earlier Ellis (1959a) K values corrected (Table 6). Table 3 text mentions 'CO2-H2' (misprint for CO2-H2O). Temperature scale not stated.",
+ "how_extracted": "image_read (scan with no text layer; every cell typed from the 250 dpi page images, zoomed 1.5x)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   6,
+   7,
+   10,
+   11
+  ],
+  "journal_pages": [
+   52,
+   53,
+   56,
+   57
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1 (p. 48): densities of NaCl solutions 175-350 C at round molalities - 'Interpolated results from the series of density determinations', adjusted by the difference between measured and accepted (Dorsey 1940) water density; Water* column from Dorsey (1940). Derived/interpolated.",
+  "Table 6 (p. 57): 10^-3 K at round temperatures, present results vs recalculated Ellis (1959) values - smoothed/derived.",
+  "Table 7 (p. 58): recommended K0, -log A0, lambda0 for water at round T - derived.",
+  "Table 8 (p. 58): thermodynamic functions of solution (dG, dS, dH) from K0, plus Himmelblau (1959) literature O2 and Xe enthalpies - derived.",
+  "Table 9 (p. 59): Setschenow salting-out coefficients at round T - derived from Fig. 2 curves.",
+  "Table 10 (p. 60): limiting solubility coefficients (pw, K0, -log A0, lambda0) for 0.5, 1, 2 m NaCl at round T - derived."
+ ],
+ "row_counts": {
+  "Table 2": {
+   "printed": 54,
+   "written": 54,
+   "label_rows_written": 4,
+   "per_block": {
+    "Water": 15,
+    "0.5m NaCl": 11,
+    "1 m NaCl": 17,
+    "2 m NaCl": 11
+   }
+  },
+  "Table 3": {
+   "printed": 9,
+   "written": 9
+  },
+  "Table 4": {
+   "printed": 5,
+   "written": 5
+  },
+  "Table 5": {
+   "printed": 18,
+   "written": 18,
+   "layout": "transposed in print"
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Scanned PDF without text layer; all values typed directly from the images, so there is no text-layer-to-image correction list. Sanity checks: Table 2 within each block CO2 ratio rises with pc at fixed T (e.g. water 309 C: 68.1/72.1/75.5 atm -> 18.6/19.6/21.6), alpha rises with T from ~0.94-0.99 to 1.02, lambda rises with T above ~200 C and falls with salt; K of water passes a maximum near 200 C as in Fig. 2. pc range 15.7-91.9 atm consistent with the stated 15-90 atm (91.9 marginally above). Table 3 ratio = rho_v/rho_v0 checks (0.315/0.199 = 1.58). Table 4 ratio checks (0.32/0.447 = 0.72 printed 0.71; rounding). Table 5 lambda increases with T above ~150 C. Temperatures written as printed in C. Internal check (script): for all 54 Table 2 rows the printed 10^-3 K equals pc*alpha/x with x = r/(1+r), r = printed ratio x1e-3, within 0.15 (rounding), which supports every pc, alpha and ratio reading.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned page images with no text layer; every number read by eye.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.2475_ajs.261.1.47, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

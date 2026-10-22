@@ -1,0 +1,40 @@
+{
+ "doi": "10.1016/j.jct.2015.07.013",
+ "first_author": "Deering",
+ "year": 2016,
+ "journal": "J. Chem. Thermodynamics 93, 337-346",
+ "source_key": "DEERING(2016)",
+ "experimental_method": "Optically coupled vibrating-tube densimeter on gravimetrically prepared sub-saturated H2O + CO2 mixtures, with density differences from pure CO2 used to compute apparent/partial molar volumes of H2O.",
+ "uncertainties_stated": "Expanded 95% uncertainties per row for p, rho and V1inf; average rho uncertainty 0.07 kg/m3, average Drho uncertainty 0.21 kg/m3; smoothed CO2 density 0.20 kg/m3; T +/- 0.005 K.",
+ "quality_remarks": "Density differences are tiny (often within uncertainty) so V1inf has very large uncertainties at low pressure; V1inf is calculated assuming apparent = partial molar volume. Authors note disagreement with Zhang et al. and attribute to gravimetric concentration or purity. Text says the journal pressure range is to 35 MPa and the abstract speaks of m = 0.053 to 0.065 mol/kg.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5,
+   6,
+   7
+  ],
+  "journal_pages": [
+   341,
+   342,
+   343
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: material sources and purities (not data)"
+ ],
+ "row_counts": {
+  "Table 2": {
+   "printed_data_rows": 151,
+   "written_data_rows": 151,
+   "label_rows": 12
+  }
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer encodes the minus sign as control character 0x03 and the dot in 'mol . kg-1' as 0x02; both converted by script (minus -> -). Page images were read for all three table pages; negative signs and digits agreed on all rows inspected, with no cell corrected. The page 343 rows were compared visually to the text. Printed mid-dot in unit text dropped. Page 5 begins with a blank-height gap in block T=346.776 K between 22.309 and 22.465 MPa (layout only).",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "Text layer clean, no cell needed correction after the image check.",
+ "pass2_diff": "Table 2: 151 rows, 1057/1057 numbers identical."
+}

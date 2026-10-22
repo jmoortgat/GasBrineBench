@@ -1,0 +1,56 @@
+{
+ "table": "Table A-1",
+ "page_journal": "report pages 71-84 (PDF pages 79-92)",
+ "title_as_printed": "ORIGINAL EMPIRICAL DATA OF AQUEOUS METHANE SOLUBILITY AS DETERMINED IN THIS STUDY",
+ "footnotes_as_printed": {
+  "unlabelled": "Temerature in oF. Psi is absolute Salinity in grams/liter. SCF at 25oC (77oF)"
+ },
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Footnote: 'Psi is absolute'. Pressure of the methane-charged equilibrium cell; whether it is total pressure including water vapour is not stated explicitly, read as total cell pressure.",
+ "columns": {
+  "T": {
+   "col": "TDEGF",
+   "unit": "F"
+  },
+  "P": {
+   "col": "PSI",
+   "unit": "psia",
+   "basis": "total"
+  },
+  "value": {
+   "col": "SCF",
+   "unit": "SCF_CH4_per_bbl_brine",
+   "scale": 1,
+   "what": "Methane solubility in standard cubic feet per petroleum barrel (SCF/Bbl). Reference state stated on report p. 15: standard cubic feet of methane at 25 C (77 F), one atmosphere, per barrel (42 US gallons) of brine. Footnote: 'SCF at 25oC (77oF)'. Basis is per barrel of SOLUTION (brine), not per barrel of water. The temperature/pressure state of the barrel of brine (e.g. 25 C, 1 atm, or degassed brine at standard conditions) is not stated."
+  }
+ },
+ "composition": {
+  "basis": "g_per_L",
+  "per_row": {
+   "NaCl": {
+    "col": "SAL",
+    "unit": "g/L of solution"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl only. SAL printed as .0 for the pure-water rows (rows 1-25).",
+  "density_rule": "nacl_25C_1atm"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "NUMBER (running index 1.0 to 670.0 as printed)",
+  "note (extraction remarks: smudges, handwritten marks, odd values)"
+ ],
+ "conversion_needs": [
+  "SCF/Bbl to a molar quantity: the authors measured moles CH4 per kg of solution and 'converted to standard cubic feet per petroleum barrel (SCF/Bbl) using appropriate conversion factors' (report p. 13); the factors (molar volume of CH4 at 25 C and 1 atm, brine density used, temperature of the barrel volume) are NOT given. Back-conversion needs: 1 bbl = 42 US gal = 0.158987 m3; 1 scf = 0.0283168 m3 at 25 C and 1 atm (ideal-gas molar volume 24.465 L/mol at 298.15 K, 101.325 kPa, assumed); brine density at the barrel reference condition (not stated; presumably 25 C, 1 atm) to go from per-volume-of-solution to per-kg-solution, then salt content to per-kg-water.",
+  "Salinity g/L of solution to molality needs the NaCl solution density at the reference temperature (not stated, presumably room temperature).",
+  "Temperature F to K: (F - 32)/1.8 + 273.15.",
+  "Pressure psia to MPa: x 0.00689476."
+ ],
+ "notes": "Single table, 14 pages, 670 numbered rows; column header row repeated on every page (only the first header kept in the CSV). Every row is written as printed. Report text (p. 15) states that the 10.0 percent NaCl data at 401 and 464 F were deleted and 'occasional other data points which fell far off the linear plots' were removed before this table, leaving 670 points; also that erratic results (bubbles, leaks) were discarded (p. 13). The p. 15 text calls the plotted values 'averaged' over repeat measurements, but the table title and text call Table A-1 'raw data'; the table rows are individual replicate samples (many exact repeats of T/P/SAL with different SCF). SAL drifts within a run (e.g. 293.5 -> 294.6, 227.8 -> 218.6) because sampling depleted the cell and NaCl solution was re-injected when the content dropped about 0.5 wt% below target (p. 12). Rows 283-284 print TDEGF 271.0 inside a run otherwise at 277.0 F; kept as printed. Printed SAL clusters: 0, ~3, ~50, ~105, ~160, ~225, ~290 g/L; TDEGF clusters near 212, 275, 338, 401, 462 F (range 209.8-464.0). At 401 and 462-464 F no ~105 g/L block is present, consistent with the stated deletion of the 10.0 percent NaCl runs.",
+ "conversion_rule_note": "Added 2026-10-11 (coordinator, approved by J. Moortgat): composition.density_rule nacl_25C_1atm converts g/L NaCl and SCF per barrel with the NaCl(aq) density at 298.15 K, 1 atm (gbb12_core.NACL_VPHI_25C); rows get the flag density-assumed."
+}

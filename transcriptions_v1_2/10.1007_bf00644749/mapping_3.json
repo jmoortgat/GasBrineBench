@@ -1,0 +1,183 @@
+{
+ "table": "Table III",
+ "page_journal": 865,
+ "title_as_printed": "Experimental Apparent Molar Volumes and Compressibilities for NaCl-CaCl2 Mixtures at 25 C",
+ "footnotes_as_printed": {
+  "a": "Units: g-cm^-3",
+  "b": "Units: cm3-mol^-1",
+  "c": "Units: cm-sec^-1",
+  "d": "Units: cm3-mol^-1"
+ },
+ "property": "rho_diff",
+ "property_description": "density of the solution minus density of pure water at 25 C (measured, vibrating-tube densimeter); value = printed 10^3 (d - d0) times 0.001 in g/cm3; d0 not tabulated, the builder uses IAPWS-95 water density",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "10^3 (d - d0) g-cm^-3 [a]",
+   "unit": "g_per_cm3",
+   "scale": 0.001,
+   "what": "measured density difference d - d0 (printed as 10^3 (d - d0), g-cm^-3)"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "y_CaCl2": {
+    "col": "y",
+    "unit": "dimensionless",
+    "note": "y_B = 3 m_B/(m_A + 3 m_B) with B = CaCl2 and A = NaCl (y=1 reproduces the pure CaCl2 values of Table I at the same ionic strength)"
+   }
+  },
+  "constant": {},
+  "other_species": "NaCl + CaCl2 at constant ionic strength I = m_A + 3 m_B, I printed in the block label rows (units mol/kg, molal basis implied by Eq. 1 and I = m_A + 3 m_B, not spelled out)",
+  "ionic_strength_rule": {
+   "I": "ionic_strength",
+   "y": "y_CaCl2",
+   "salt_y": "CaCl2",
+   "salt_other": "NaCl"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    14,
+    28,
+    36,
+    43,
+    66,
+    80,
+    90,
+    96
+   ],
+   "reason": "block label rows (Ionic Strength = ...)"
+  },
+  {
+   "rows": [
+    13,
+    27,
+    42,
+    65,
+    79,
+    89,
+    95,
+    101
+   ],
+   "reason": "printed summary rows: standard deviation sigma of fitted vs measured (d-d0) and (u-u0)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "0.3",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "0.5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "2",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 66,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "5",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 80,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "10",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 90,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "15",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 96,
+   "sets": [
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "20",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "-10^4 K_phi* (apparent molar adiabatic compressibility, calculated by authors)",
+  "sigma summary rows",
+  "V_phi* cm^3-mol^-1 [b] (V_phi, apparent molar volume, derived by the authors from d via Eq. 3)",
+  "(u - u0) cm-sec^-1 [c] (sound-velocity difference, not a density)"
+ ],
+ "conversion_needs": [
+  "molalities: m_NaCl = I (1 - y), m_CaCl2 = I y / 3 (from y_B = 3 m_B/(m_A+3 m_B) and I = m_A + 3 m_B)",
+  "value2 = d - d0 scale 1e-3; absolute density needs pure-water density at 25 C (not tabulated)"
+ ],
+ "notes": "Block 'Ionic Strength = 1' is split over two printed pages (labels 'Ionic Strength = 1.0' and 'Ionic Strength = 1 (cont)'; both set I = 1.0). Blocks at I = 10, 15, 20 contain only the high-y rows because pure NaCl solutions do not exist at those concentrations (author's text). Sigma values for I = 10, 15, 20 are flagged by the authors as not to be taken seriously. Printed values at I=0.5, y=0.8504 (u-u0 = 1926) and I=1, y=0.9510 (u-u0 = 3526) look out of sequence in the sound-velocity column; kept as printed (not density columns).",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (no pressure given for the vibrating-tube densimeter or sound-velocity measurements)",
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "apparent molar volume Vphi = V - n1 V1(0) with n1 = moles of H2O per kg of H2O (Eq. 2); density is reported as the difference d - d0 in g cm^-3, no per-volume concentration is tabulated",
+ "quality_remarks": "audit 2026-10-02: Primary measured quantity is the density difference (d - d0), p.862 'primary experimental property (d - do)'; V_phi is derived by the authors. The paper states no pressure, so the rows stay held on 'pressure missing'."
+}

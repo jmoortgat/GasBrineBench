@@ -1,0 +1,155 @@
+{
+ "table": "Table 2",
+ "page_journal": null,
+ "title_as_printed": "Molal Dissolution Enthalpies DeltasolH of NaCl (1) and Na2SO4 (2) in Water at 297.75 K, 317.45 K, and 332.35 K with m1/m2 = 1/10, m1/m2 = 1, and m1/m2 = 10/1",
+ "footnotes_as_printed": "none captured",
+ "property": "dh_sol",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable (calorimetry, pressure not stated)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "set by group_rows"
+  },
+  "value": {
+   "col": "dsolH J.kg-1",
+   "unit": "J/kg_water",
+   "what": "molal dissolution enthalpy of anhydrous NaCl and Na2SO4 dissolving in water, in J per kg of water (as stated in text: 'Molal dissolution enthalpies (in J/kg of water)')"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m1 mol.kg-1",
+    "unit": "mol/kg"
+   },
+   "Na2SO4": {
+    "col": "m2 mol.kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "m1/m2 ratio column printed as 1/10, 1, 10/1 (kept as printed, not mapped)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45,
+    54,
+    67,
+    83
+   ],
+   "reason": "temperature label rows 'T = ... K'"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.75",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "317.45",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "332.35",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.75",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "317.45",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "332.35",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 54,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.75",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 67,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "317.45",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "332.35",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "volume_basis": "not_applicable",
+ "extra_unmapped": [
+  "m1/m2 (ratio, redundant)"
+ ],
+ "conversion_needs": [
+  "molality in the final solution assumed (mol per kg of water); the paper does not say explicitly whether m1, m2 refer to final solution -- not stated"
+ ],
+ "notes": "Printed layout: two column groups side by side (left, right) under each T label; stacked left group first, then right group, within each label block. Nine label blocks (3 ratios x 3 temperatures; ratio 1/10 first, then 1, then 10/1). The T labels for the 1 and 10/1 blocks were absent from the captured cell fragments and were taken from the wrapper_text (printed table text), in the same order. Rows with empty left group (10/1 at 317.45 K: right group has 8 points, left 7) are not padded. Calorimeter: Setaram C80D. 89 data points.",
+ "hold_table": "enthalpy of dissolution in J per kg of water of a two-salt (NaCl + Na2SO4) mixture; the database holds kJ per mole of a single salt (audit 2026-10-02)"
+}

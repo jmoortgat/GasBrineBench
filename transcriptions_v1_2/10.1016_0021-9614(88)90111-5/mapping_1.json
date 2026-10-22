@@ -1,0 +1,137 @@
+{
+ "table": "Table 1",
+ "page_journal": "1050-1051",
+ "title_as_printed": "Isopiestic molalities m of {(1 - y)NaCl + yLiCl}(aq)",
+ "footnotes_as_printed": "not captured (no footnotes on the table; text: last digit of most molalities is not significant but given for consistency and to avoid round-off error; molalities accurate to better than 0.2 per cent)",
+ "property": "isopiestic_molality",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium with a common vapour phase at constant temperature and pressure; pressure not reported)",
+ "reference_salt": "NaCl",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_label_rows": true
+  },
+  "value": {
+   "col": "NaCl m/(mol kg-1) (y=0)",
+   "unit": "mol_per_kg_water",
+   "what": "isopiestic molality of the pure NaCl(aq) reference solution in equilibrium with the four mixed solutions of the same printed row; the paper uses it as the isopiestic standard"
+  },
+  "mixture_columns": [
+   {
+    "col": "y=0.3023 m/(mol kg-1)",
+    "y_LiCl": "0.3023",
+    "unit": "mol_per_kg_water",
+    "what": "isopiestic molality of {(1-y)NaCl + yLiCl}(aq) at that y, equilibrated with the NaCl reference of the same row"
+   },
+   {
+    "col": "y=0.4565 m/(mol kg-1)",
+    "y_LiCl": "0.4565",
+    "unit": "mol_per_kg_water",
+    "what": "isopiestic molality of {(1-y)NaCl + yLiCl}(aq) at that y, equilibrated with the NaCl reference of the same row"
+   },
+   {
+    "col": "y=0.5751 m/(mol kg-1)",
+    "y_LiCl": "0.5751",
+    "unit": "mol_per_kg_water",
+    "what": "isopiestic molality of {(1-y)NaCl + yLiCl}(aq) at that y, equilibrated with the NaCl reference of the same row"
+   },
+   {
+    "col": "y=0.7142 m/(mol kg-1)",
+    "y_LiCl": "0.7142",
+    "unit": "mol_per_kg_water",
+    "what": "isopiestic molality of {(1-y)NaCl + yLiCl}(aq) at that y, equilibrated with the NaCl reference of the same row"
+   }
+  ]
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "mixture {(1-y)NaCl + yLiCl}: y is the mole fraction of LiCl in the dissolved salt, printed in the column header; the molality m is that of the mixed solution as printed (total salt molality per kg water, as the table caption m of {(1-y)NaCl+yLiCl}(aq)). LiCl is outside the six-ion set; NaCl is in scope. The y=0 column is pure NaCl(aq), the isopiestic reference. Each mixture column's composition is the header y (y_LiCl in mixture_columns)."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    20,
+    37,
+    56,
+    77,
+    98
+   ],
+   "reason": "temperature label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T",
+     "value": "383.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T",
+     "value": "413.22",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 37,
+   "sets": [
+    {
+     "path": "T",
+     "value": "443.19",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 56,
+   "sets": [
+    {
+     "path": "T",
+     "value": "473.18",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 77,
+   "sets": [
+    {
+     "path": "T",
+     "value": "498.16",
+     "unit": "K"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "T",
+     "value": "523.17",
+     "unit": "K"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "osmotic coefficient of the mixture = phi_NaCl(m_ref) * m_ref / m_mix (Pitzer-Peiper-Busey NaCl reference; not given in the table, not converted here)",
+  "molality of a mixture of 1-1 salts: ion molality = total salt molality, so nu is 2 for both NaCl and LiCl"
+ ],
+ "notes": "Printed as two side-by-side blocks of five columns (y=0 NaCl reference, then y=0.3023, 0.4565, 0.5751, 0.7142) per row. Stacked here: within each temperature, all left-block rows in printed order, then all right-block rows. Each written row is one isopiestic equilibrium: the five molalities of a row were in equilibrium with each other. Rows per temperature, left/right: 383.19 K 10/9, 413.22 K 8/8, 443.19 K 9/9, 473.18 K 10/10, 498.16 K 10/10, 523.17 K 9/8. The column header 'y=0' above the first left column and '0' above the first right column both denote pure NaCl. Small non-monotonic orderings across y in a few dilute rows (e.g. 473.18 K 2.0726 2.0586 2.0368 2.0379 2.0006) are as printed. Temperatures given as printed to two decimals (K)."
+}

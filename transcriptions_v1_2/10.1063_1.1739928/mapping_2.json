@@ -1,0 +1,224 @@
+{
+ "table": "TABLE II",
+ "page_journal": 1832,
+ "pdf_page": 4,
+ "title_as_printed": "TABLE II. Apparent molal volumes of aliphatic hydrocarbons in water solution.",
+ "footnotes_as_printed": {
+  "a": "Value omitted in obtaining average."
+ },
+ "property": "pmv",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated: solutions saturated with the gas at a 'desired pressure' read on a manometer (gas partial pressure = final minus initial pressure; value not printed); the property is an infinite-dilution-type apparent molal volume, approximately at atmospheric pressure",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "",
+   "note": "constant per block, set by the T label rows (group_rows T.constant)"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified",
+   "note": "not stated; gas partial pressure near atmospheric"
+  },
+  "value": {
+   "col": "psi cc",
+   "unit": "cm3_per_mol",
+   "scale": 1,
+   "what": "apparent molal volume psi of the dissolved hydrocarbon (cc per mole), stated by the author to be identical with the partial molal volume in these very dilute solutions; from Eq. (1) with the measured specific gravity and the concentration y"
+  },
+  "y": {
+   "col": "y x10^5",
+   "unit": "g_per_cm3",
+   "scale": 1e-05,
+   "derived_by_authors": true,
+   "what": "hydrocarbon concentration in g/cc, calculated from the measured gas partial pressure with Henry's law and the solubility data of Claussen and Polglase (1952), not analysed directly"
+  },
+  "one_minus_d_over_d0": {
+   "col": "1-d/d0 x10^5",
+   "unit": "dimensionless",
+   "scale": 1e-05,
+   "what": "1 - specific gravity of the solution relative to air-free conductivity water at the same T (measured, communicating-tube copper-block apparatus)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    1,
+    9,
+    18,
+    23,
+    30,
+    31,
+    33,
+    39,
+    43,
+    44,
+    49,
+    55
+   ],
+   "reason": "gas label rows and temperature label rows"
+  },
+  {
+   "rows": [
+    8,
+    17,
+    22,
+    29,
+    38,
+    42,
+    48,
+    54,
+    59
+   ],
+   "reason": "summary rows 'Av.=' (authors' averages)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "ch4"
+    }
+   ]
+  },
+  {
+   "label_row": 1,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "16.8",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "23.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "29.1",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 23,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35.1",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 30,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c2h6"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "16.9",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 33,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "23.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "29.1",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 43,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "c3h8"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "16.9",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 49,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "23.0",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "29.1",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Av. rows (authors' averages, the footnote-a values excluded)"
+ ],
+ "conversion_needs": [
+  "T label in C: add 273.15",
+  "psi rows with note 'psi cc:a' (rows 5 and 27) were omitted by the author from the averages; builder may flag them"
+ ],
+ "notes": "Printed layout: per gas, side-by-side temperature sub-blocks (methane: 16.8, 23.0, 29.1 C in one band, then 35.1 C in a second band; ethane and propane: 16.9, 23.0, 29.1 C). Stacked: gas label row, then for each temperature a label row 'T=..C', its data rows, and its 'Av.=' row (left block first). The ethane 16.9 C block has a single row and no printed average. Row indices 0-based after the header. Precision for the aliphatics is lower than for benzene (author: concentration data less accurate). Gases ch4, c2h6, c3h8 set by group_rows."
+}

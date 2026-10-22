@@ -1,0 +1,69 @@
+{
+ "table": "Table 4",
+ "page_journal": 163,
+ "title_as_printed": "Comparison between experimental activity of water aw (exp.), and those calculated aw (calc.) and the corresponding relative deviation for m=4.086 mol kg-1",
+ "footnotes_as_printed": "none printed",
+ "property": "aw",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; vapour pressures measured in a nonstatic static apparatus (water activity = p/p0 of pure water presumed, definition not restated in this table)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "value": {
+   "col": "a_w (exp.)",
+   "unit": "dimensionless"
+  },
+  "value2": {
+   "col": "a_w (calc.)",
+   "unit": "dimensionless",
+   "what": "Pitzer-model calculated value, not measured",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "4.086",
+    "unit": "mol/kg"
+   }
+  },
+  "other_species": "water; per kg water not explicitly stated"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "a_w (calc.) (model)",
+  "|Delta a_w/a_w| (percent presumably; unit not printed)"
+ ],
+ "conversion_needs": [],
+ "row_from_literature": [
+  {
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "reason": "a_w (exp.) are the authors' own earlier vapour-pressure measurements (ref. 10, Hubert et al., J. Chem. Eng. Data 40 (1995) 891-894), reproduced here for validation of the Pitzer model; not new measurements of this paper"
+  }
+ ],
+ "notes": "16 temperatures, 294.42-367.93 K, at one molality."
+}

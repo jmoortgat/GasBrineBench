@@ -1,0 +1,44 @@
+{
+ "doi": "10.1021/ef030146u",
+ "first_author": "Jarne",
+ "year": 2004,
+ "journal": "Energy Fuels 18, 396-404",
+ "source_key": "JARNE(2004)",
+ "experimental_method": "Gas (CH4 or C2H6 + CO2 gravimetric mixture) saturated with water and partly condensed at a set temperature; water content of the gas measured by Karl Fischer titration at the condenser outlet at atmospheric pressure; dew-point temperature at set pressure then measured with a chilled-mirror instrument (MBW DP3-D-HP-K2).",
+ "uncertainties_stated": "dew-point temperature better than 0.1 K; pressure transmitter max error 0.1 % in calibrated range; wet gasmeter 0.2 %; gas mixture compositions +/- 1 mol %; no uncertainty stated for the water content.",
+ "quality_remarks": "Water content unit kg m-3(n) is not defined in the paper (normal conditions and dry/humid basis not stated). Dew points below 273.15 K are included (ice/liquid not stated). Hydrate and liquid hydrocarbon+CO2 phase avoided according to the authors. Paper concludes dew point depends on water concentration, not on CH4(C2H6)/CO2 ratio.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3
+  ],
+  "journal_pages": [
+   398
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "gas mixture composition (carried into mapping notes)"
+  },
+  {
+   "table": "Tables 4-7",
+   "reason": "model parameters"
+  },
+  {
+   "table": "Table 8",
+   "reason": "summary of water content, T/p ranges and calculated AAD, derived"
+  }
+ ],
+ "row_counts": {
+  "Table 2": "printed 132 data rows in 7 blocks (each block two column pairs), written 132 plus 7 label rows",
+  "Table 3": "printed 56 data rows in 4 blocks, written 56 plus 4 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text read with pdftotext cropped to the left (Table 2) and right (Table 3) half; block row counts and spot values (all blocks) compared with the page image; no differences found. Within each block T and P rise monotonically across the stack (left pair then right pair). Header printed with rho_water symbol; water content appears only in block labels. Header text in CSV: 'pressure, P (10^5 Pa)' with bar mapping.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells matched image",
+ "pass2_diff": "Tables 2 and 3: 188 data rows, 376/376 numbers identical."
+}

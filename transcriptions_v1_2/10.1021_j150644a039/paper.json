@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/j150644a039",
+ "first_author": "Kumar",
+ "year": 1983,
+ "journal": "J. Phys. Chem. 87(26), 5504-5507 (Kumar and Atkinson)",
+ "source_key": "KUMAR(1983)",
+ "experimental_method": "Densities with a Sodev vibrating-tube densimeter and sound velocities with a Nusonics sing-around velocimeter; apparent molal volumes and compressibilities derived; temperatures controlled to +-0.005 C.",
+ "uncertainties_stated": "Relative densities precise to 3 ppm, relative sound velocities to 6 ppm.",
+ "quality_remarks": "Instruments calibrated with NaCl solutions using Desnoyers and Millero data. Authors note poorer Pitzer fits for CaCl2. Reference density d0 and the definition of y_b are not given in the tables or text; interpretations are recorded in the mappings as presumed. Pressure not stated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3
+  ],
+  "journal_pages": [
+   5505,
+   5506
+  ]
+ },
+ "not_extracted_tables": "Table II (Pitzer coefficients), Table IV (mixing parameters, RMSD), Table V (Pitzer coefficients for expansibility) and Table VI (mean apparent molal expansibilities, calculated from derived quantities) are fitted or derived and were not extracted.",
+ "row_counts": {
+  "table_1": "printed 70 data rows (33 NaCl + 37 CaCl2) in 6 blocks; written 70 plus 6 label rows",
+  "table_2 (Table III)": "printed 54 data rows in 9 blocks; written 54 plus 9 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 CaCl2 5 C row m=1.6663: U-U0 missing in text layer -> 15819 (read from image)",
+  "table_2 rows 0.2063, 0.8038 (I=2, 5 C) and 0.8010 (I=1, 35 C): cells split across text lines, reassembled from image"
+ ],
+ "extraction_notes": "Thin-space thousands separators in U-U0 removed. Table I side-by-side blocks stacked (NaCl then CaCl2). The sound-velocity difference is carried as value2 and phiV (derived) as value3.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one cell and three rows needed correction after the image check",
+ "pass2_diff": "Tables I and III: every pass-1 number occurs in pass 2; pass-2-only numbers are block-label temperatures."
+}

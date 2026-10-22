@@ -1,0 +1,48 @@
+{
+ "table": "Table V",
+ "page_journal": 2690,
+ "title_as_printed": "Apparent and Partial Molal Volumes of Aqueous Solutions of Sodium Sulfate at 25 deg",
+ "footnotes_as_printed": {
+  "a": "Saturated."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (densities at 25 C, pressure not printed)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "d",
+   "unit": "g/cm3",
+   "what": "density of solution at 25 C, pycnometer"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "Na2SO4": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "water (source of water not stated beyond 'distilled water' used for recrystallization); salt c.p. grade recrystallized",
+  "volume_basis": "not_applicable",
+  "volume_basis_evidence": "Solutions of the desired molality were made by adding the necessary weight of water to a known weight of anhydrous salt (molality per kg water)."
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "c^1/2 (square root of molar concentration, calculated)",
+  "phi_obsd cc (apparent molal volume, calculated)",
+  "phi_calcd cc (from least-squares fit, empirical)",
+  "v2 cc (partial molal volume of solute, calculated)",
+  "v1 cc (partial molal volume of water, calculated)"
+ ],
+ "conversion_needs": [],
+ "notes": "Density d is the measured quantity; all other columns derived. m = 0.0 row is pure water (0.997074), kept. Last row 1.9641 saturated."
+}

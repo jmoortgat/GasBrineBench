@@ -1,0 +1,22 @@
+P-bar,y_w - ppm
+T = 25 C; Hydrate Dissociation Pressure - bar: P_Dissociation >2000 (one cell spanning all three blocks),
+35.50,968
+50.67,970
+104.46,2360
+AAD % CPA 10.00; PC-SAFT 12.78,
+T = 15 C; Hydrate Dissociation Pressure - bar: P_Dissociation >2000 (one cell spanning all three blocks),
+19.50,945
+34.94,637
+82.12,1923
+133.01,2067
+192.67,2171
+239.98,2209
+305.84,2365
+392.46,2399
+AAD % CPA 8.85; PC-SAFT 19.52,
+T = 10 C; Hydrate Dissociation Pressure - bar: P_Dissociation >2000 (one cell spanning all three blocks),
+24.19,595
+30.53,471
+207.50,1821
+332.60,1908
+AAD % CPA 9.59; PC-SAFT 18.97,

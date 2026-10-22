@@ -1,0 +1,211 @@
+{
+ "table": "Table 1",
+ "page_journal": 1328,
+ "pdf_page": 2,
+ "title_as_printed": "Table 1. 25C methane solubilities in single-salt solutions, distilled water and seawater",
+ "footnotes_as_printed": {
+  "*": "Unless otherwise indicated.",
+  "**": "Stoessell and Byrne (1982)."
+ },
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "psia; system pressure of the methane headspace set by gas input/output, read on a Heise gauge (dead-weight accuracy 1 psia); total pressure (gas phase is methane + water vapour; no partial-pressure correction stated)",
+ "layout": "wide: one row per solution, one CH4-molality column per pressure",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "psia",
+   "basis": "total",
+   "constant": "550"
+  },
+  "value": {
+   "col": "CH4 Molalities 550 psia",
+   "unit": "mol_per_kg_water"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "Salt Molality",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "Na2CO3, K2CO3, NaHCO3, KHCO3, K2SO4 (outside the six-ion set); seawater 34.84 permil (row from the authors' earlier paper)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    5,
+    10,
+    14,
+    18,
+    21,
+    24,
+    28,
+    32,
+    36,
+    39,
+    42,
+    44
+   ],
+   "reason": "salt and section label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 5,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 18,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 24,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2CO3"
+    }
+   ]
+  },
+  {
+   "label_row": 32,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "K2CO3"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaHCO3"
+    }
+   ]
+  },
+  {
+   "label_row": 39,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KHCO3"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psia to MPa x 0.00689476",
+  "Seawater row: salinity 34.84 permil, data from Stoessell and Byrne (1982), footnote **",
+  "Salt molality header carries footnote * 'Unless otherwise indicated' (the seawater row is in permil)"
+ ],
+ "notes": "The builder must melt the three pressure columns into three rows per solution (P = 350, 550, 750 psia). Label rows set the salt name for the following molality rows (path composition.per_row_salt). 'Distilled' and 'water' are printed on two lines with the data on the 'water' line; written as label row 'Distilled water' plus one data row with empty Salt Molality. CH4 molalities were obtained from molar values using solution densities interpolated from 20 C densities (Weast); not corrected for dissolved-gas volume (< 0.0001 molal). Distilled-water values are averages of several measurements. Bicarbonate solutions needed CO2 corrections (CO2 5-50 % of flashed gas), lowering accuracy. 2026-10-11 coordinator: the wide table (one value column per pressure) is mapped by three mappings over the same CSV (key csv), one per printed pressure; the original wide mapping is kept as mapping_1_wide_original.json.txt.",
+ "csv": "table_1.csv",
+ "row_held": [
+  {
+   "rows": [
+    43
+   ],
+   "reason": "seawater row taken from the authors' earlier paper (footnote **), salinity basis; not a measurement of this table"
+  },
+  {
+   "rows": [
+    45
+   ],
+   "reason": "distilled-water reference row; the database already holds STOESSELL(1982) pure-water values"
+  },
+  {
+   "rows": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    20,
+    25,
+    26,
+    27
+   ],
+   "reason": "already in GasBrineBench v1.1.1 as STOESSELL(1982) (57 values matched exactly on 2026-10-11); only the K2SO4 rows are new"
+  }
+ ]
+}

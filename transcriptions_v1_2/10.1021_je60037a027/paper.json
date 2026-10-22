@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/je60037a027",
+ "first_author": "Wirth",
+ "year": 1968,
+ "journal": "J. Chem. Eng. Data 13(2), 226-231",
+ "title": "Temperature Dependence of Volume Changes on Mixing Electrolyte Solutions (H. E. Wirth and A. LoSurdo)",
+ "source_key": "WIRTH(1968)",
+ "experimental_method": "Densities of 4-ionic-strength solutions of Li2SO4, LiCl, Na2SO4, NaCl and their mixtures measured 5-45 C with a Vycor mercury-filling dilatometer in a thermostated bath; volume changes on mixing from single-mixing unequal-volume dilatometers near 12, 25 and 38 C.",
+ "uncertainties_stated": "Absolute densities believed reliable to +-3e-5 g/mL; bath constant to +-0.005 C; thermometers calibrated against a platinum resistance thermometer.",
+ "quality_remarks": "The PDF begins with another article (relative adsorptivities of paraffins on molecular sieves) on its first page, and ends with an unrelated ceramics article; Wirth and LoSurdo run on PDF pages 2-6. Densities were adjusted to match 25 C values of an earlier paper (ref 3); t = 0 C densities are least-squares extrapolations. Table IV rows at 25.0 C marked a are calculated. Temperature scale and pressure not stated. Subscript last digits of temperatures and D' are tiny on the scan. Table 1 densities were adjusted to agree with the authors' earlier 25 C values (p.227). Mixture molalities in the mapping are derived from the printed equivalent fraction E.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   5
+  ],
+  "journal_pages": [
+   228,
+   230
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (constants of the density equation, fitted)",
+  "Table III (constants of the apparent equivalent volume equation, fitted)",
+  "Table V (cross-square rule application, derived)"
+ ],
+ "row_counts": {
+  "table_1": "printed 98 data rows (+13 block labels); written 98 (+13 labels)",
+  "table_2": "printed 42 data rows (+6 salt-pair labels); written 42 (+6 labels)"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer garbles subscripts, so all values were re-read from 260-400 dpi crops of the page images. Table 2 in the output folder = paper Table IV. Table I dobsd at 0 C in skip_rows. Pure-salt block labels give m with a subscript last digit. No columns were dropped.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "text layer unusable for subscripted digits; every cell read from the scan, several tiny subscripts in Table IV (3/5/8, 0/6) ambiguous",
+ "pass2_diff": "Tables I and IV: 442/442 identical; pass-2-only numbers in Table IV are digits of salt names."
+}

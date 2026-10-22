@@ -1,0 +1,40 @@
+{
+ "doi": "10.1039/tf9666202348",
+ "first_author": "Dunn",
+ "year": 1966,
+ "journal": "Trans. Faraday Soc. 62, 2348-2354",
+ "source_key": "DUNN(1966)",
+ "experimental_method": "Densities of concentrated solutions by two 50 ml Ostwald pycnometers (concentrations checked conductimetrically); apparent molar volumes of very dilute solutions from volume changes on dilution in a magnetically operated dilatometer; 25 C.",
+ "uncertainties_stated": "Duplicate densities agree to 3 parts in 1e5 g/ml; temperature control better than 0.0001 C peak-to-trough (estimated); KCl tests agree to 0.02 ml/mole with Geffcken and Price; conductimetric and weight concentrations agree within 0.02 % (KNO3).",
+ "quality_remarks": "phi_V values in Tables 1 and 2 are the author's calculations from measured densities or volume changes; the author notes only limited agreement for MgCl2 and CaCl2 with Shedlovsky and Brown at low concentration. LaCl3 used without further purification. Temperature scale not stated.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4
+  ],
+  "journal_pages": [
+   2350,
+   2351
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 3 (limiting apparent molar volumes at infinite dilution and ionic values; obtained by extrapolation, derived)"
+ ],
+ "row_counts": {
+  "table_1": "printed 27, written 27",
+  "table_2": "printed 35, written 35"
+ },
+ "changes_after_image_check": [
+  "table_1 row 11 (MgCl2, 12): c 0.69282 -> 0.69182",
+  "table_1 row 16 (CaCl2, 17): phi_V 22.46 -> 21.46",
+  "table_1: density column absent from the text layer, added from the image (all 27 rows; subscript last digits written as ordinary digits)",
+  "table_1: garbled text-layer cells (e.g. 0420298, Owl 8031, 2691, 39-28 style hyphens) read from the image as 0.20298, 0.18031, 26.91, 39.28"
+ ],
+ "extraction_notes": "Table 1 densities printed with subscript last digit. Pressure not stated. Only Na2SO4, MgCl2, CaCl2 rows are in the six-ion set; other rows kept and listed in mapping.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Text layer had misread cells and a missing column; corrections made after the image check.",
+ "pass2_diff": "Tables 1 and 2: 62 rows, 350/350 numbers identical."
+}

@@ -1,0 +1,33 @@
+{
+ "doi": "10.1080/08120099.2017.1294108",
+ "first_author": "Ma",
+ "authors": "J. Ma, Z. Huang",
+ "title": "Experiments of methane gas solubility in formation water under high temperature and high pressure and their geological significance",
+ "year": 2017,
+ "journal": "Australian Journal of Earth Sciences 64(3), 335-342",
+ "source_key": "MA(2017)",
+ "experimental_method": "Ultra-high-pressure PVT cell with sapphire window and stirring; after 2 h stirring and 4 h rest, liquid and gas samples withdrawn at constant pressure and flashed at ambient conditions; gas volume measured in a gas meter (0.01 mL), condensed water and degassed liquid weighed (0.01 g).",
+ "uncertainties_stated": "u(T) = 0.1 K, u(P) = 0.01 MPa, u(S) = 0.15 m3/m3, u(yH2O) = 0.00012",
+ "quality_remarks": "Liquid is a 0.23 mol/kg NaHCO3 solution (density 1.0116 g/cm3) mimicking South China Sea formation water, not pure water or NaCl brine. Solubility unit m3/m3 at STP (273.2 K, 0.10 MPa) with the denominator volume undefined. Paper states solubility in formation water is below the Duan and Mao (2006) model and below Blount and Price pure-water data; water content in gas agrees with Olds et al. (1942) at low pressure. Methane purity over 99.99 %. The solubility values rise monotonically with T from 353 K, unlike the usual minimum near 350 K in pure water; they are listed to only three significant figures.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   338
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "table_1": "printed 36 values (6 T x 6 P), written 36 data rows plus 6 label rows",
+  "table_2": "printed 36 values (6 T x 6 P), written 36 data rows plus 6 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Both tables are printed as T (rows) by P (columns) matrices; stacked into pressure blocks with a label row per block, pressure supplied by group_rows (P.constant). Text layer matched the page image in every cell. Sanity: S increases monotonically with T and P in every row and column; yH2O decreases with P and increases with T everywhere. The PDF begins with a journal cover page (pp. 1-2), article is pp. 3-9.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the image",
+ "pass2_diff": "Tables 1 and 2: 36 (P,T,value) triples each identical to the pass-2 matrices."
+}

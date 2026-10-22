@@ -1,0 +1,127 @@
+{
+ "doi": "10.2172/5281520",
+ "first_author": "Blount, C. W.",
+ "authors": "C. W. Blount, L. C. Price, L. M. Wenger, M. Tarullo",
+ "year": 1982,
+ "journal": "U.S. DOE final report DOE/ET/12145-1 (OSTI), 'Solubility of methane in water under natural conditions: a laboratory study'",
+ "source_key": "BLOUNT(1982)",
+ "experimental_method": "Hydrothermal solution equipment (rocked pressure vessel holding a teflon sample cell, after Dickson, Blount and Tunell 1963) equilibrated with 99.99% CH4 (or CH4+CO2 / CH4+C2H6 mixtures) for up to two days; liquid samples withdrawn above the run pressure into pre-weighed evacuated flasks, exsolved gas measured by pressure (ideal gas law, with compression correction Pc) and, for mixtures, composition by gas chromatography.",
+ "uncertainties_stated": "Experimental results 'nearly +/-7% of the value' (report p.13); T +/-4 F gives +/-1%; P +/-60 psi gives about +/-2%; NaCl concentration +/-0.1% gives about +/-0.5% (p.14); combined T/P/NaCl effect < +/-2.5%; uncertainty unlikely below +/-6%. Equipment section (p.7) states T controlled and measured to +/-3 F and P measured to +/-45 psi (Heise Bourdon gauge); flask gas pressure +/-0.05 psi. Duplicate/triplicate samples usually within +/-5% of their mean (p.11). Low-P/low-T data (Table A-2): usually +/-10 to +/-25 percent of the mean, std. dev. of repeats 0.2-0.5 SCF/Bbl (p.33).",
+ "quality_remarks": "Samples analysed as moles CH4 per kg of solution and converted to SCF/Bbl (standard cubic feet at 25 C and 1 atm per 42-gallon barrel of brine) 'using appropriate conversion factors' that are not given (p.13, p.15). The 10.0 percent NaCl runs at 401 and 464 F (all pressures) were deleted as erroneous (lower than 15 percent NaCl values; suspected thermocouple malfunction) before Table A-1 was compiled, together with occasional other points far off linear plots; 670 points remain (p.15). Erratic results (gas bubbles in the exit tube, leaks) were discarded and are not in the report (p.13). Values in the earlier conference paper (Blount et al. 1979, 4th Geopressured-Geothermal Conference) were 5-20% high because the solution-compression correction Pc was omitted; recalculated values appeared in Price et al. 1981 (p.13; conclusions p.66). The teflon cell was permeable to CH4, CO2 and C2H6 and slightly to water, so NaCl concentration drifted (diluted) and was re-measured and reloaded when it dropped about 0.5 wt% (p.9, p.12); per-row salinities in Tables A-2 to A-4 reflect this. In the CO2 runs a constant CO2 content could not be held; the gas phase was much poorer in CO2 than the dissolved gas (p.42). Ethane runs had GC reproducibility problems (p.51). Table A-2: text says 129 samples at 34 conditions at 77/122/160 F and 52/107/167 g/L; table prints 128 rows, T 74-161 F plus a 212 F block, salinities 46-166 g/L. Table A-3: 84 rows / 27 conditions as stated; four rows disagree with Total x (1 - %CO2) and with the printed averages (9-1 total 51.1, probably 59.1; 17-1 CH4 43.2, probably 42.2; 21-1 and 21-2 CH4 45.2, implied 48.1 and 46.5); kept as printed. Table A-4: sample 19 CH4 34.5 vs implied 36.3, kept. Temperature scale not stated anywhere. Pressures in Table A-2 are psi absolute (footnote); Tables A-3/A-4 say only psi. Table A-1: rows 283-284 print 271.0 F inside a 277 F run (both passes read 271.0; probably a typing slip in the report, kept as printed). Exact repeats at the same T, P and salinity differ by up to about 12-15% (e.g. rows 365/366: 80.9 vs 91.5; 661/662: 52.7 vs 59.7), confirmed on the page image: scatter in the data, consistent with the stated +/-7%. Salinity drifts within runs because sampling depleted the cell and NaCl solution was re-injected. The text calls the analysed values averaged, but Table A-1 is titled and described as raw data; its rows are individual samples.",
+ "how_extracted": "image_read: every cell of Tables A-2, A-3 and A-4 transcribed from 250 dpi page renders with PIL crops; the text layer (scan OCR) is garbled and was not used for any number",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100
+  ],
+  "report_pages": [
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92
+  ]
+ },
+ "tables_written": {
+  "table_A1.csv / mapping_A1.json": "Table A-1 (670 points, PDF pages 79-92) is extracted by a separate agent; not touched here.",
+  "table_A2.csv / mapping_A2.json": "Table A-2, low T and P, CH4 in NaCl.",
+  "table_A3.csv / mapping_A3.json": "Table A-3 left block (Experimental Results), CH4 + CO2 at 302 F.",
+  "table_A3_avg.csv / mapping_A3_avg.json": "Table A-3 right block (Averaged Experimental Data): authors' means, derived, do_not_ingest; for cross-checks only.",
+  "table_A4.csv / mapping_A4.json": "Table A-4, CH4 + C2H6 at 302 F, 107 g/L.",
+  "table_A1.csv": "Table A-1, 670 rows (separate pass-1 agent)"
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1 (PDF p.27)",
+   "reason": "two empirical regression equations for ln CH4 (SCF/Bbl) vs t, S, p fitted to Table A-1; model, not data"
+  },
+  {
+   "table": "Table 2 (PDF p.28)",
+   "reason": "values calculated from equation 1 (212-464 F, 0-300 g/L, 3,500-22,500 psi); model-generated"
+  },
+  {
+   "table": "Table 3 (PDF p.32)",
+   "reason": "comparison of interpolated (calculated) values of this study with literature data of Sultanov et al. (1972) and Price (1979); literature values and calculated values only"
+  },
+  {
+   "table": "Table 4 (PDF p.34)",
+   "reason": "comparison of calculated values with Culberson and McKetta (1951) literature data converted to SCF/Bbl (factor 0.0001312); not this study's measurements"
+  },
+  {
+   "table": "Table 5 (PDF p.35)",
+   "reason": "comparison of calculated values with O'Sullivan and Smith (1970) literature data converted to SCF/Bbl; not this study's measurements"
+  },
+  {
+   "table": "Table 6 (PDF p.46)",
+   "reason": "graphically interpolated (and some extrapolated, in parentheses) values from Table A-2; derived"
+  },
+  {
+   "table": "Table 7 (PDF p.54)",
+   "reason": "graphically interpolated values from Table A-3 at 0-80 mole percent CO2; derived (0 percent column from Table 1 equations)"
+  },
+  {
+   "table": "Table 8 (PDF p.57)",
+   "reason": "compiled field data (CO2 in geothermal-well brines, personal communications/literature); not laboratory measurements of this study"
+  },
+  {
+   "table": "Table 9 (PDF p.62)",
+   "reason": "smoothed values from Table A-4; derived"
+  },
+  {
+   "table": "Table 10 (PDF p.67)",
+   "reason": "methane solubility in Pleasant Bayou No. 2 well brine (196-303 F, 104-12,300 psi) with calculated values for an 'equivalent NaCl concentration (130,000 mg/l)'; the brine composition is not given and the authors state (p.58) the brines contained a reddish-brown precipitate that continued to form, 'so that this brine certainly had changed from its original composition'; out of scope (natural brine of unknown composition)"
+  },
+  {
+   "table": "Table 11 (PDF pp.69-70)",
+   "reason": "compiled analyses of geopressured well brines vs calculated saturation; field data from other sources"
+  },
+  {
+   "table": "Appendix C (PDF pp.102+)",
+   "reason": "solubility of crude oil (and water) in methane; out of scope"
+  }
+ ],
+ "row_counts": {
+  "Table A-2": {
+   "printed": 128,
+   "written": 128,
+   "label_rows": 0
+  },
+  "Table A-3 (left block)": {
+   "printed": 84,
+   "written": 84,
+   "label_rows": 0,
+   "note": "27 conditions"
+  },
+  "Table A-3 averaged block": {
+   "printed": 27,
+   "written": 27,
+   "note": "derived, table_A3_avg.csv, not for ingestion"
+  },
+  "Table A-4": {
+   "printed": 26,
+   "written": 26,
+   "label_rows": 0
+  },
+  "Table A-1": {
+   "printed": 670,
+   "written": 670,
+   "label_rows": 0
+  }
+ },
+ "changes_after_image_check": "none: no text-layer draft was used; all cells read directly from the images",
+ "extraction_notes": "ASCII only: degree signs dropped ('Temp. F'), sigma written 'sigma'. Thousands commas in Tables A-3/A-4 pressures kept as printed (CSV-quoted); strip before parsing. Ditto marks written as blank cells with fill-down rules in the mappings. Two-gas tables: CH4 SCF is `value`; the second gas (CO2 in A-3, C2H6 in A-4) is not printed per sample and is given by Total Gas x mole percent / 100, documented as value2 with col ''. Sanity checks (scratch script): A-2 NUMBER runs 1-128 without gaps; SCF increases with P within each T/salinity group apart from replicate scatter at nearly equal pressures (e.g. 74 F/52 g/L 255 psi 3.1 vs 258 psi 2.25 mean); 17 rows are exact repeats of another row (replicates, kept); T 74-212 F, P 125-2045 psia, SCF 0.2-11.5. A-3: per-condition means of the transcribed rows reproduce the printed averages and sigmas for 21 of 27 conditions to rounding; mismatches listed in mapping_A3_avg.json. A-4: CH4 = Total x (1 - %C2H6/100) within 0.07 for 25 of 26 rows (exception sample 19). Uncertain readings: none judged ambiguous; slightly faint glyphs confirmed by zoom at A-2 row 101 SCF '3.5' (top of the 3 faint), A-2 row 27 PSI '130' (speck over the 3), A-2 rows 76 and 80 T (specks over '120.5' and '121.0'), A-3 8-1 Total Gas '61.6' (the 6 is typed raised; average block confirms 61.6).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned typewritten report with no usable text layer; every number read from page images",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.2172_5281520) diffed with diff_passes.py after removing printed thousands commas: A-1 3350 cells, A-2 640, A-3 532, A-4 182; 0 disagreements. Row 217 SCF (48.2 vs 46.2 query) checked by the coordinator at 300 dpi: 48.2. table_A3_avg is derived (do_not_ingest), not diffed."
+}

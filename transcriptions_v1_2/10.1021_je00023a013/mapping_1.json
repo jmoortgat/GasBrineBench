@@ -1,0 +1,90 @@
+{
+ "table": "Table I",
+ "page_journal": 34,
+ "title_as_printed": "Isopiestic Molalities of Na2SO4, MgSO4, Na2SO4-MgSO4, and KCl at 25 C",
+ "footnotes_as_printed": {
+  "a": "Saturated solution in equilibrium with solid KCl.",
+  "b": "Saturated solution in equilibrium with MgSO4.7H2O.",
+  "c": "Saturated solution in equilibrium with Na2SO4.10H2O."
+ },
+ "property": "isopiestic_molality",
+ "reference_salt": "KCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated (isopiestic equilibrium at the equilibrium water vapour pressure; no pressure reported)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25.00"
+  },
+  "value": {
+   "col": "each test-salt column",
+   "unit": "mol_per_kg_water",
+   "per_column": true,
+   "what": "molality of the test solution isopiestic with the KCl standard in the same row"
+  },
+  "value_columns": [
+   {
+    "col": "m, Na2SO4",
+    "unit": "mol_per_kg_water",
+    "salt": "Na2SO4"
+   },
+   {
+    "col": "m, MgSO4",
+    "unit": "mol_per_kg_water",
+    "salt": "MgSO4"
+   },
+   {
+    "col": "m, Na2SO4-MgSO4",
+    "unit": "mol_per_kg_water",
+    "salt": "Na2SO4+MgSO4 equimolal mixture"
+   }
+  ],
+  "value2": {
+   "col": "m, KCl",
+   "unit": "mol_per_kg_water",
+   "what": "molality of the KCl isopiestic reference solution",
+   "reference_salt": "KCl"
+  },
+  "phi": {
+   "col": "Phi, KCl",
+   "derived_by_authors": true,
+   "what": "osmotic coefficient of the KCl standard calculated by the authors from published equations (refs 6, 7)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "per_column": {
+   "m, Na2SO4": {
+    "Na2SO4": "m"
+   },
+   "m, MgSO4": {
+    "MgSO4": "m"
+   },
+   "m, Na2SO4-MgSO4": {
+    "Na2SO4": "m",
+    "MgSO4": "m"
+   }
+  },
+  "other_species": "mixture column: equimolal Na2SO4 + MgSO4 (ratio of molalities 1/0.999998); the printed m is taken as the molality of each salt (nu = 5 ions per formula pair in eq 1, inferred); water is the solvent"
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "molalities, no volume quantity",
+ "gas_basis": "not_applicable",
+ "gas_basis_evidence": "no gas",
+ "skip_rows": [],
+ "group_rows": [],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "Phi, KCl is the standard's osmotic coefficient (authors' calculation from literature equations)"
+ ],
+ "conversion_needs": [
+  "molality-of-mixture convention (each salt vs total) should be confirmed from eq 1"
+ ],
+ "notes": "62 data rows printed and written. Each row is one isopiestic equilibrium; empty cells = that test solution not present in that equilibrium. Rows 0 (KCl, a), 20 (MgSO4, b) and 42 (Na2SO4, c) are saturated-solution (solubility) points: KCl 4.8088, MgSO4.7H2O 3.0211, Na2SO4.10H2O 1.9526 mol/kg; footnote letters moved to the note column. Measurements for Na2SO4 and MgSO4 extend into the supersaturated region.",
+ "hold_table": "the table prints no osmotic coefficient of the test salts (Phi, KCl is the standard's literature-derived coefficient); test-salt phi is derivable only by eq 1, phi = nu* m* phi*/(nu m); wide per-column layout not readable by the builder (audit 2026-10-02)"
+}

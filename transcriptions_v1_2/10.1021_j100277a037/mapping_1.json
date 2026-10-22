@@ -1,0 +1,36 @@
+{
+ "table": "Table I",
+ "page_journal": 896,
+ "title_as_printed": "Experimental Heat Capacity of Aqueous MgSO4 at 20 bar Pressure",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter; pump pressure kept above the water vapour pressure so there is no vapour phase; 'All of the present results are for 20 bar' (title and text)",
+ "columns": {
+  "T": {"col": "", "unit": "K", "constant": "from block label"},
+  "P": {"col": "", "unit": "bar", "basis": "unspecified", "constant": "20"},
+  "value": {"col": "phiCp J/mol/K", "unit": "J/(mol K)", "what": "apparent molar heat capacity of MgSO4 calculated by the authors from the measured specific heat capacity of the solution and that of pure water", "derived_by_authors": true},
+  "value2": {"col": "cp J/g/K", "unit": "J/(g K)", "what": "massic (specific) heat capacity of the solution at T and 20 bar, from the measured heater-power ratio Ps/Pw with heat-loss correction and the 298 K density ratio (eq 1)"},
+  "value3": {"col": "rho_s/rho_w", "unit": "dimensionless", "what": "density ratio of solution to water at 298 K used in eq 1 (flow rates equal by volume at 298.15 K); source of the densities not stated in the table"}
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {"MgSO4": {"col": "m mol/kg", "unit": "mol_per_kg_water"}},
+  "constant": {},
+  "other_species": "none; MgSO4 in water"
+ },
+ "skip_rows": [{"rows": [0, 10, 21, 30, 39, 44], "reason": "temperature label rows (also carried by group_rows)"}],
+ "group_rows": [
+  {"label_row": 0, "sets": [{"path": "T.constant", "value": "348.15", "unit": "K"}]},
+  {"label_row": 10, "sets": [{"path": "T.constant", "value": "373.15", "unit": "K"}]},
+  {"label_row": 21, "sets": [{"path": "T.constant", "value": "398.15", "unit": "K"}]},
+  {"label_row": 30, "sets": [{"path": "T.constant", "value": "423.15", "unit": "K"}]},
+  {"label_row": 39, "sets": [{"path": "T.constant", "value": "448.15", "unit": "K"}]},
+  {"label_row": 44, "sets": [{"path": "T.constant", "value": "473.15", "unit": "K"}]}
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Block labels printed as 'T = 348.15 K (75.0 degC)'; the degree sign is written as 'C'. Replicate rows (same m, repeated runs) kept. Authors' uncertainty in phiCp from the heat-loss assumption: 0.5 J/(K mol) at 2 mol/kg to 2.5 J/(K mol) below 0.5 mol/kg at 348 K, rising to 4 J/(K mol) at 423 K and 9 J/(K mol) at 473 K; total possible error up to double these values."
+}

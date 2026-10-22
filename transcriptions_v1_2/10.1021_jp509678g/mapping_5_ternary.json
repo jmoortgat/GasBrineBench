@@ -1,0 +1,187 @@
+{
+ "table": "Table 5",
+ "csv": "table_5.csv",
+ "page_journal": [
+  14468,
+  14469
+ ],
+ "pdf_page": [
+  8,
+  9
+ ],
+ "title_as_printed": "Experimental VLLE Data for [CH4 (1) + CO2 (2) + H2O (3)] at Temperatures T and Pressures p, Where xi Denotes the Mole Fraction of Component i and u(xi) Denotes Standard Uncertainty of xi",
+ "footnotes_as_printed": {
+  "a": "The phases are labeled as I, II, and III for the gas, CO2-rich liquid, and water-rich phases, respectively."
+ },
+ "temperature_scale": "ITS-90 (PRT calibrated on ITS-90, stated in section 2.3)",
+ "pressure_note": "absolute cell pressure from a calibrated transducer (standard uncertainty 5 kPa); total pressure of the coexisting phases; each phase was sampled at its own recorded pressure, so p differs slightly between the I, II and III rows of one state point",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "285.15"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "287.65"
+    }
+   ]
+  },
+  {
+   "label_row": 29,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "290.15"
+    }
+   ]
+  },
+  {
+   "label_row": 51,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "292.65"
+    }
+   ]
+  },
+  {
+   "label_row": 60,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "292.65"
+    }
+   ]
+  },
+  {
+   "label_row": 68,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "295.15"
+    }
+   ]
+  },
+  {
+   "label_row": 81,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "297.65"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "300.15"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "300.50"
+    }
+   ]
+  }
+ ],
+ "property": "ternary_state",
+ "gas": "co2",
+ "regime": "lle",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "from_label_rows": true
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "phase": {
+   "col": "phase"
+  },
+  "value": {
+   "col": "x2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "co2",
+   "what": "CO2 in the aqueous phase III"
+  },
+  "uncertainty": {
+   "col": "u(x2)",
+   "unit": "mole_fraction"
+  },
+  "value2": {
+   "col": "x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "gas": "ch4",
+   "what": "CH4 in the aqueous phase III"
+  },
+  "uncertainty2": {
+   "col": "u(x1)",
+   "unit": "mole_fraction"
+  },
+  "y_co2_gas": {
+   "col": "x2",
+   "what": "CO2 in the gas phase I"
+  },
+  "y_ch4_gas": {
+   "col": "x1",
+   "what": "CH4 in the gas phase I"
+  },
+  "y_h2o_gas": {
+   "col": "x3",
+   "what": "H2O in the gas phase I"
+  },
+  "u_y_h2o_gas": {
+   "col": "u(x3)"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    29,
+    51,
+    60,
+    68,
+    81,
+    91,
+    98
+   ],
+   "reason": "isotherm label rows (T = ... K); the T = 292.65 K label is printed twice (page break)"
+  }
+ ],
+ "extra_unmapped": [
+  "phase (row label)",
+  "x3, u(x3) (H2O mole fraction of phase III)"
+ ],
+ "conversion_needs": [],
+ "notes": "Three fluid phases coexist (VLLE): I = gas, II = CO2-rich liquid, III = water-rich (aqueous) liquid; rows come in I/II/III triplets, one triplet per state point (31 state points on 8 isotherms 285.15-300.50 K). Temperature set per block from the label rows. No hydrate present (the authors place these states between the Lw+LCO2+V curve and the UCEP or quadruple locus). This mapping: aqueous-phase solubilities (phase III rows). regime lle because a CO2-rich liquid coexists. 2026-10-11 coordinator: gas_mixture true (two dissolved gases); these rows belong to the ternary family, which the v1.2 builder cannot yet write, so the release excludes them until a ternary converter exists. 2026-10-11 coordinator: ternary mapping (property ternary_state, converter conv_ternary) replacing the per-phase mappings, which are kept as *.json.txt. Al Ghafri numbering: x1 CH4, x2 CO2, x3 H2O. Three-phase VLLE (gas I, CO2-rich liquid II, aqueous III): the aqueous composition and the gas-phase water content are stored with y_co2_dry from phase I; phase II (liquid) has no column and is not built.",
+ "gas_phase_row": {
+  "phase_col_key": "phase",
+  "gas": "I",
+  "aqueous": "III"
+ }
+}

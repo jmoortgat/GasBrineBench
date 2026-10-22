@@ -1,0 +1,53 @@
+{
+ "doi": "10.1021/je101214e",
+ "first_author": "Zhang",
+ "year": 2011,
+ "journal": "J. Chem. Eng. Data 56(3), 565-573",
+ "source_key": "ZHANG(2011)",
+ "status": "verified_html",
+ "how_extracted": "publisher HTML table capture",
+ "experimental_method": "Magnetic suspension balance (Rubotherm) densimetry of Tianjin reservoir brine, CO2-free and CO2-loaded, 313-353 K, 10-18 MPa.",
+ "uncertainties_stated": "CO2-free brine 0.01 % (p,T); CO2 + brine 0.025 %; total MSB 0.1 %; T control +/-0.01 K; pressure sensor reproducibility 0.08 %",
+ "tables": {
+  "table_2.csv": 25,
+  "table_3.csv": 101
+ },
+ "row_counts": {
+  "Table 2": {
+   "printed": 25,
+   "written": 25
+  },
+  "Table 3": {
+   "printed": "97 data rows + 4 label rows",
+   "written": 101
+  }
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "brine composition analysis (not a property table); the composition is copied into the composition.other_species field of mapping_2 and mapping_3"
+  },
+  {
+   "table": "Table 4",
+   "reason": "regression coefficients of eqs 3 and 4 (model parameters)"
+  }
+ ],
+ "quality_remarks": [
+  "Brine is a dilute natural formation water (Na 0.020 mol/kg); no composition in the six-ion basis, composition basis set to none with full analysis in other_species.",
+  "Table 3 w nominal 0.010/0.021/0.030/0.040: the second level is 0.021 as printed (not 0.020).",
+  "Nominal pressures 10-18 MPa but several actual values deviate slightly (e.g. 10.19 MPa at 333.22 K, w=0.010) and temperatures scatter (e.g. 332.95 K in Table 2); kept as printed.",
+  "st dev(p) outliers as printed: 6.038 kPa (313.24 K, 18.00 MPa, w=0.010), 7.743 and 7.013 kPa (353 K, w=0.010).",
+  "Table 3 w = 0.040 block has 4 rows at 343 K and 3 rows at 353 K (missing 10-12 MPa points as printed).",
+  "Text/abstract ranges (313-353 K, 10-18 MPa, w up to 0.040) agree with tables; text deviation maxima (0.053 % Table 2, 0.17 % Table 3) agree with the last column (max 0.053, 0.169).",
+  "Temperature scale and pressure type not stated.",
+  "Table 2 caption in HTML is a combined caption; all cells are from the HTML DOM and were not retyped."
+ ],
+ "verified_against_page_image": {
+  "verified": false,
+  "reason": "HTML-only source"
+ },
+ "changes_after_image_check": [],
+ "needs_pass2": false,
+ "extraction_notes": "Unicode minus sign in headers transliterated; mid-dot in 'g.cm^-3' and '100*(...)' written as ASCII. Label rows kept.",
+ "mapping_audit": "independent mapping audit 2026-10-02 (audit.json); cell-for-cell match with the captured HTML rows"
+}

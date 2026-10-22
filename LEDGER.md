@@ -8,6 +8,31 @@ The per-row justification record that this ledger summarizes lives in
 `data/QUALITY.md`, which is reproduced verbatim from the pass that assigned
 the codes.
 
+## 2026-10-11 — v1.2.2
+
+No v1.2.1 datapoint was removed or changed except 14 solubility quality codes recomputed by the cross-source rules with the new
+sources. New entries of the release ledger (`release/ledger.csv` in the maintainers' work area):
+
+| dataset | rows | action | reason |
+|---|---:|---|---|
+| `blount1982_10.2172_5281520_tA3` | 168 | excluded | mixed-gas table (CH4 + CO2 dissolved): the gas-phase composition was not measured |
+| `blount1982_10.2172_5281520_tA4` | 52 | excluded | mixed-gas table (CH4 + C2H6 dissolved) |
+| `teymouri2017_Teymouri_2017_t4_15`, `_t4_16` | 12 | excluded | water content of multicomponent CO2-rich gas mixtures |
+| `kumar1983_10.1021_j150644a039_t2`, `pearce1937_10.1021_ja01291a061_t4` | 2 | removed | exact duplicate of a row of the same source |
+
+Replicates of the same printed table are kept for papers added in v1.2.2 (79 rows: Blount 60, Rogers 13, Hnedkovsky 4, Gates 2); the
+removals listed above are identical rows of different tables, or v1.2.1 datasets that keep the v1.2.1 rule.
+
+Row-by-row audit of the added datapoints (`release/audit_v1_2_2/`; 204 correction lines after the replicates were kept, all applied, none skipped):
+151 uncertainty corrections (Rogers and Duffy 1989, printed in units of R), 8 uncertainty corrections (Al Ghafri 2014), 2 temperatures and
+1 composition (Hnedkovsky 2002 misprints), 1 temperature and value (Kumar 1983, wrong isotherm), 29 `source-caution` flags, and 10 removals:
+`millero1985_10.1007_bf00646294` 1 row (density misprinted by 10 kg/m3) and `isono1984_10.1021_je00035a016_t1` 9 rows (literature water
+densities used for calibration, not measurements).
+
+Mapping corrections before the build: Isono 1984 (the per-row salt column was not paired with its block label, so all 1,290 rows
+were held; the viscosity unit string was not recognised); Stoessell 1982, Qin 2008 and Al Ghafri 2014 rows that duplicate datapoints
+already in the database are held by their mappings (values matched exactly); Miller 2023 water contents flagged `source-caution`.
+
 ## 2026-09-18 — corrections carried into v1.0
 
 Data values changed in this entry, which the 2026-09-14 entry could not say.

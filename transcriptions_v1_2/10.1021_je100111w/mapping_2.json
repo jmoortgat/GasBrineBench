@@ -1,0 +1,73 @@
+{
+ "table": "Table 2",
+ "page_journal": 3323,
+ "title_as_printed": "Density rho, Viscosity eta, and Calculated Viscosity eta_c at 303.15 K for the NaCl-MgCl2-Water System",
+ "footnotes_as_printed": "not captured (none printed); each table ends with an AAD % line for the fit of eq 2",
+ "property": "visc",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (open Ubbelohde-type capillary viscometer and pycnometer, presumably atmospheric; the paper gives no pressure)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "303.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "eta mPa s",
+   "unit": "mPa s"
+  },
+  "value2": {
+   "col": "rho g cm-3",
+   "unit": "g/cm3",
+   "what": "measured density of the solution (header printed 'g cm-3'; g/cm3 presumed)",
+   "gas": ""
+  },
+  "value3": {
+   "col": "eta_c mPa s",
+   "unit": "mPa s",
+   "what": "viscosity calculated from the authors' fit of eq 2",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m1 (NaCl) mol kg-1",
+    "unit": "mol/kg"
+   },
+   "MgCl2": {
+    "col": "m2 (MgCl2) mol kg-1",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none; molality printed mol kg-1, whether per kg of water is not stated"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    11,
+    22,
+    33,
+    44
+   ],
+   "reason": "label rows 'mole ratio = x' (NaCl/MgCl2 mole ratio of each series)"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "eta_c (calculated from eq 2)"
+ ],
+ "conversion_needs": [],
+ "notes": "Property is both density and viscosity: value = viscosity eta, value2 = density rho (also a measured quantity; builder may emit rho rows from value2). Wording 'mole ratio' printed '4.1' in Table 1 and '4.10' elsewhere; label kept as printed. Block labels 'mole ratio = 0.46/0.69/1.38/2.75/4.10' are the NaCl/MgCl2 molal ratio (1.2439/2.7076 = 0.459), redundant with the per-row molalities; not mapped as a composition constant."
+}

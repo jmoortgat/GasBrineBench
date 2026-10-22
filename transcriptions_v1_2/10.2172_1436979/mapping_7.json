@@ -1,0 +1,41 @@
+{
+ "table": "Table 7",
+ "page_journal": 50,
+ "title_as_printed": "Experimental Boiling Point Elevations of Concentrated NaCl Solutions at Higher Temperatures",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "bpe",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Boiling point elevation at constant pressure = vapor pressure of the solution at the isotherm; the 'Pure Water Boiling Temperature' column is the saturation temperature of pure water at that pressure (Keenan and Keyes tables, text section 5.3.7/8.4). Pressure itself is not tabulated.",
+ "columns": {
+  "T": {
+   "col": "Pure Water Boiling Temperature (C)",
+   "unit": "C",
+   "role": "pure_water_boiling_temperature_at_solution_vapor_pressure"
+  },
+  "value": {
+   "col": "B.P.E. (C)",
+   "unit": "C",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "Salt Concentration (molality)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "solution temperature = pure-water boiling temperature + B.P.E. (equals the nominal isotherm 75, 100,... 300 C); pressure = vapor pressure of water at the pure-water boiling temperature (steam tables)"
+ ],
+ "notes": "BPE values were derived by the authors from the vapor pressure lowering measurements (same measurements as Table 2, concentrations agree to 3-4 digits). Printed as two side-by-side blocks (left 70-188 C, right 185-288 C); stacked left then right. Row 115.396 / 6.9350 / 9.726: the sum 125.122 differs from the 125 C isotherm of the neighbouring rows (all other rows sum to the isotherm within 0.001): probable misprint in BPE (125 - 115.396 = 9.604), kept as printed."
+}

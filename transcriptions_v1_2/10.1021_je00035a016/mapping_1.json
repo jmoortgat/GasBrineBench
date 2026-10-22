@@ -1,0 +1,50 @@
+{
+ "table": "Table I",
+ "page_journal": 45,
+ "title_as_printed": "Density and Viscosity of Water",
+ "footnotes_as_printed": {
+  "a": "Reference 4.",
+  "b": "Reference 5."
+ },
+ "footnote_letter_note": "footnote marks a and b belong to the column headers density and viscosity; stripped, note column empty",
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated",
+ "columns": {
+  "T": {
+   "col": "temp/ C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "not stated",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "density/ (kg m-3)",
+   "unit": "kg/m3",
+   "from_literature": true,
+   "what": "pure-water density from Marshall and Slusher (ref 4), used for calibration, not measured here"
+  },
+  "value2": {
+   "col": "viscosity/ (mN s m-2)",
+   "unit": "mN s/m2 (= mPa s)",
+   "from_literature": true,
+   "what": "pure-water viscosity from Bock (ref 5), used as standard, not measured here"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Reference values taken by the author from the literature; both columns from_literature."
+}

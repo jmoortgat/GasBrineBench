@@ -1,0 +1,35 @@
+{
+ "table": "Table 1",
+ "page_journal": 711,
+ "title_as_printed": "Isopiestic molalities m (column header m/(mol kg-1); columns NaCl, MgSO4, NiSO4 printed three times side by side; blocks 383.14 K and 413.22 K)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "isopiestic_molality",
+ "property_note": "reference salt NaCl; value = MgSO4 molality in isopiestic equilibrium, value2 = NaCl reference molality of the same equilibrium. NiSO4 (out of scope, not in the six-ion set) was equilibrated in the same vessel and is printed in the same row: kept in the CSV, not mapped.",
+ "reference_salt": "NaCl",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (isopiestic equilibrium with a common vapour phase in a sealed pressure vessel; pressure not tabulated)",
+ "columns": {
+  "T": {"col": "", "unit": "K", "constant": "from block label"},
+  "value": {"col": "MgSO4 m mol/kg", "unit": "mol_per_kg_water", "what": "MgSO4 isopiestic molality"},
+  "value2": {"col": "NaCl m mol/kg", "unit": "mol_per_kg_water", "what": "NaCl reference-electrolyte molality in the same isopiestic equilibrium (measured)"}
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {"MgSO4": {"col": "MgSO4 m mol/kg", "unit": "mol/kg"}},
+  "constant": {},
+  "other_species": "NaCl reference solution in the partner isopiestic cup (column 'NaCl m mol/kg'); NiSO4 test solution in a third cup (column 'NiSO4 m mol/kg', out of scope)"
+ },
+ "skip_rows": [
+  {"rows": [0, 39], "reason": "temperature label rows (also carried by group_rows)"},
+  {"rows": [10, 11, 29, 30, 40, 41, 42, 43, 45, 46, 47], "reason": "MgSO4 cell printed as a dash (MgSO4 precipitated, no MgSO4 datum); the row holds only the NaCl-NiSO4 pair, which is out of scope"}
+ ],
+ "group_rows": [
+  {"label_row": 0, "sets": [{"path": "T.constant", "value": "383.14", "unit": "K"}]},
+  {"label_row": 39, "sets": [{"path": "T.constant", "value": "413.22", "unit": "K"}]}
+ ],
+ "extra_unmapped": ["NiSO4 m mol/kg (NiSO4 isopiestic molality; NiSO4 outside the six-ion set)"],
+ "conversion_needs": [],
+ "notes": "Three side-by-side column groups (NaCl, MgSO4, NiSO4) per temperature block; stacked per block left group first (top to bottom), then middle, then right. A printed em dash means the salt was not in solution (precipitated); written as '-'. Rows 44 and 48 (413.22 K, NiSO4 '-') are MgSO4-NaCl pairs with no NiSO4 value. Authors: for molalities above 1.0 mol/kg the last digit is not significant; molalities accurate to 0.25 per cent or better. The 383.14 K results come from three separate loadings of the apparatus. The authors compute phi from eq. (1) phi_x = m_r phi_r / m_x (both salts taken to give two ions) with phi_r of NaCl from Silvester and Pitzer (1977); phi is not printed in the table."
+}

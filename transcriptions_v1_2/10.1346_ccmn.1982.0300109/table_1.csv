@@ -1,0 +1,7 @@
+Solution,Molal solubilities 350 psia,Molal solubilities 550 psia,Molal solubilities 750 psia,note
+Distilled water,,,,
+Measured,0.0318,0.0473,0.0623,
+Predicted,0.0313,0.0469,0.0615,
+Sea water,,,,
+Measured,0.0263,0.0400,0.0514,
+Predicted,0.0255,0.0384,0.0502,

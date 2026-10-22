@@ -75,7 +75,7 @@ GASES = GASES_MAIN | GASES_OTHER | {"co2-ch4"}
 FLAGS = {"salinity-matrix", "volume-basis-uncertain", "source-caution", "gas-out-of-scope", "stp-assumed", "hydrate-regime",
          "solution-basis-converted", "differential-pressure-converted", "subfreezing", "condensed-phase-uncertain",
          "vapour-nonideality-by-authors", "fugacity-as-pressure", "pressure-unstated", "minor-species-omitted",
-         "calculated-not-measured", "figure-digitized", "smoothed-values"}
+         "calculated-not-measured", "figure-digitized", "smoothed-values", "density-assumed"}
 
 #: properties for which `P_bar` is legitimately blank. `psat_ratio` is a ratio
 #: of saturation pressures at one temperature: the pressure is the measured
@@ -286,8 +286,12 @@ def check_family(fpath, resolve, msgs, notes):
     if len(d):
         exempt = d.apply(
             lambda r: (r["source"], r["gas"], round(float(r["T_K"]), 2),
-                       round(float(r["P_bar"]), 3)) in DOCUMENTED_REPLICATES,
+                       round(float(r["P_bar"]) if str(r["P_bar"]).strip() not in ("", "nan") else -1.0, 3)) in DOCUMENTED_REPLICATES,
             axis=1)
+        # v1.2.2 on: a row repeated within ONE printed table (same dataset_id) is a replicate measurement whose printed value coincides
+        if "dataset_id" in d.columns:
+            one_table = d.groupby(same_src, dropna=False)["dataset_id"].transform("nunique") == 1
+            exempt = exempt | one_table
         ok, bad = d[exempt], d[~exempt]
         if len(ok):
             n = len(ok) - ok.groupby(same_src).ngroups
@@ -316,7 +320,7 @@ SUPP_COLUMNS = ["dataset_id", "source", "doi", "property_class", "property_nativ
                 "uncertainty", "quality", "tag", "data_origin", "src_table", "row"]
 SUPP_CLASSES = {"apparent_molar_volume", "mixture_volume", "enthalpy_of_dilution", "enthalpy_of_dissolution", "isopiestic_pair", "water_activity", "henry_constant",
                 "heat_capacity", "density", "compression", "water_vapour_enhancement", "gas_solubility_coefficient",
-                "gas_solubility_other_basis", "other"}
+                "gas_solubility_other_basis", "viscosity", "other"}
 #: classes conventionally reported without a pressure
 SUPP_P_OPTIONAL = {"isopiestic_pair", "enthalpy_of_dilution", "enthalpy_of_dissolution", "water_activity", "heat_capacity"}
 
@@ -340,8 +344,12 @@ def check_supplementary(resolve, msgs, notes):
     blank = df["P_bar"].astype(str).str.strip() == ""
     if (p.isna() & ~blank).any() or (p < 0).any():
         msgs.append(f"{name}: P_bar not numeric or negative")
-    if (blank & ~df["property_class"].isin(SUPP_P_OPTIONAL)).any():
-        msgs.append(f"{name}: {int((blank & ~df['property_class'].isin(SUPP_P_OPTIONAL)).sum())} rows without a pressure in a class that needs one")
+    # densities and viscosities measured at room pressure without a stated pressure carry the flag pressure-unstated
+    unstated = (df["tag"].astype(str).str.contains("pressure-unstated") & df["property_class"].isin({"density", "viscosity"})) \
+        | df["property_native"].isin({"ostwald", "pmv"})  # conventionally reported at about 1 atm without a pressure
+    nop = blank & ~df["property_class"].isin(SUPP_P_OPTIONAL) & ~unstated
+    if nop.any():
+        msgs.append(f"{name}: {int(nop.sum())} rows without a pressure in a class that needs one")
     if pd.to_numeric(df["value"], errors="coerce").isna().any():
         msgs.append(f"{name}: non-numeric value")
     if (df["value_unit"].astype(str).str.strip() == "").any():

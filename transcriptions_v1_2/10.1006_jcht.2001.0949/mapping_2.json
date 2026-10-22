@@ -1,0 +1,62 @@
+{
+ "table": "Table 2",
+ "page_journal": "770-778",
+ "title_as_printed": "Experimental values of massic heat capacities c_p and calculated and literature (43) values of apparent molar heat capacities C_p,phi for NaCl(aq). Here c_p,s and c_p,w denotes the massic heat capacities of solution and water",
+ "footnotes_as_printed": {
+  "a": "deltaC_p,phi represents the estimated uncertainty as determined by the error propagation method."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter; p printed per row (0.1 to 30.6 MPa)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "Cp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of NaCl from eq (8) Cp,phi = cp,w [(M + 1/m) cp,s/cp,w - 1/m]",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "cp,s/cp,w",
+   "unit": "dimensionless",
+   "what": "ratio of massic heat capacity of solution to that of water at T and p (measured, heat-loss corrected)"
+  },
+  "uncertainty": {
+   "col": "dCp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "estimated uncertainty by error propagation (footnote a)"
+  },
+  "value3": {
+   "col": "Cp,phi (literature) J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "Cp,phi from Archer's global NaCl(aq) fit (ref 43) at the same T, p, m",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl in water"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Table printed over 9 pages with repeated headers (not written). Row 122 (573.39 K, 10.1 MPa) is printed with m = 0.4000 but its cp ratio, Cp,phi and literature value (-1077.42, the 0.2002 mol/kg literature value) belong with the two 0.2002 rows above it; the implied water cp of that row is inconsistent with m = 0.4000; likely a misprint of m; kept as printed. The last two rows (300, 301) are printed with T = 632.20 K; their implied water cp (6.375 J/(K g)) equals that of the 623.20 K / 30.2 MPa rows, so 632.20 is probably a misprint of 623.20; kept as printed. Row 68 (524.37 K, 0.0150 mol/kg) has deltaCp,phi printed 0.00 and Cp,phi -632.58, far from its replicates (-455 to -468); kept. At 623 K the literature column holds values (e.g. -10086.39) far from the measured ones; copied as printed."
+}

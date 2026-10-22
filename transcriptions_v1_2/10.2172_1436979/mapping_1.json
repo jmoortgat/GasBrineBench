@@ -1,0 +1,71 @@
+{
+ "table": "Table 1",
+ "page_journal": 18,
+ "title_as_printed": "Results for Saturated NaCl Solutions",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "psat_brine",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Vapor pressure of the saturated NaCl solution (value, in atm; also given in mm Hg). Pressure reported is the solution's own vapor pressure p = p0 - delta p, with delta p measured differentially against pure water; text: 'solution vapor pressure readings are well within +-0.02% of the total pressure measured', 'corrected to 0 C' for mm Hg.",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Vapor Pressure of Saturated NaCl Solution p (atm)",
+   "unit": "atm"
+  },
+  "value2": {
+   "col": "Vapor Pressure of Saturated NaCl Solution p (mm Hg)",
+   "unit": "mmHg",
+   "what": "same quantity in mm Hg (reduced to 0 C)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "NaCl saturated solution; saturation molality NOT tabulated here (derived solubilities are in Table 5, not extracted); the solid NaCl is present (saturated).",
+  "row_composition_proposed": {
+   "NaCl": {
+    "unit": "mol/kg",
+    "basis": "saturation molality of the same temperature from Table 2 '(sat.)' rows / Table 5",
+    "by_csv_row": {
+     "0": "6.460",
+     "2": "6.935",
+     "3": "7.198",
+     "4": "7.573",
+     "5": "7.973",
+     "6": "8.435",
+     "7": "8.990",
+     "8": "9.640",
+     "9": "10.418"
+    },
+    "tag": "solubility-from-authors-extrapolation",
+    "note": "not read by the current loader (per_row takes a column only); CSV has no such column"
+   }
+  }
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "Solvent Vapor Pressure p0 (mm Hg) (pure-water vapor pressure from Keenan & Keyes / Smith-Keyes-Gerry equation per text; not measured here)",
+  "Delta p = p0 - p (mm Hg) (measured differential)"
+ ],
+ "conversion_needs": [
+  "atm to Pa (101325); mm Hg to Pa"
+ ],
+ "notes": "T=75 C row printed as 75 (text layer misread as 15). Saturation molality is implicit (saturated); the 108.81 C row is the temperature at which the saturated solution vapor pressure is about 1 atm (boiling point at 760 mm Hg).",
+ "row_held": [
+  {
+   "rows": [
+    1
+   ],
+   "reason": "108.81 C: saturation molality not printed in Table 2 or Table 5 (only 75, 100, 125 ... 300 C); basis unknown; held (mapping audit 2026-10-02)"
+  }
+ ],
+ "quality_remarks": "audit 2026-10-02: Solid NaCl is present (saturated solution). Saturation molality is not in Table 1; the authors tabulate it at 75, 125, 150 ... 300 C in Table 2 '(sat.)' rows and Table 5 (6.460, 6.935, 7.198, 7.573, 7.973, 8.435, 8.990, 9.640, 10.418 mol/kg). Saturation molalities are the authors' own derived solubilities (section 5.1.4: obtained by extrapolation of phi to the intersection with the line phi*m = constant), model-dependent and not measured. Row 1 (108.81 C, the temperature at which the saturated solution reaches about 1 atm) has no printed molality and is held.",
+ "caution": "Saturation molality of NaCl at each temperature is the authors' extrapolated solubility (Table 2 '(sat.)' / Table 5), not a measured value; the 108.81 C row has no printed molality."
+}

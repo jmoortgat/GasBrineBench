@@ -1,0 +1,164 @@
+{
+ "page_journal": "46-50",
+ "footnotes_as_printed": "none on Table II",
+ "temperature_scale": "not stated",
+ "gas": "",
+ "regime": "",
+ "pressure_note": "not stated (presumably ambient; no pressure given in the paper)",
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m/ (mol kg-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "salt named in label row (set via composition.salt): MgCl2, CaCl2, Na2SO4 are in scope; SrCl2, BaCl2, LaCl3, NaNO3, NaBr, KNO3, KBr, Cd(NO3)2 are outside the six-ion set and kept as printed"
+ },
+ "conversion_needs": [
+  "molality as printed is taken as mol per kg of water (text: 'Solutions were on the molal basis'); no solution densities needed"
+ ],
+ "notes": "Printed wide (nine temperature columns 15-55 C, step 5 C). Restructured to long form: one label row per salt, then rows of (m, T, value) for each temperature column. Temperature columns that are blank for the whole salt block (40 and 50 C for most salts) are not written; blanks inside a written column (Na2SO4, KNO3) are written as rows with empty value. Property sub-blocks of the printed Table II (density, viscosity, conductivity) are split into separate tables; conductivity not extracted. Cadmium nitrate viscosity continues on journal page 50. 2026-10-11 coordinator: per_row key renamed salt -> salt_from_label_row so the loader pairs the label-row salt with the molality column (was held as salt 'salt'). Value unit set to mPa_s (printed mN s m-2, identical); printed string kept in unit_as_printed.",
+ "table": "Table II (viscosity sub-blocks)",
+ "title_as_printed": "Density rho, Viscosity eta, and Electrolytic Conductivity kappa of Several Aqueous Electrolyte Solutions",
+ "property": "visc",
+ "columns": {
+  "T": {
+   "col": "T/ C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "not stated",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "eta/ (mN s m-2)",
+   "unit": "mPa_s",
+   "what": "absolute viscosity, Ubbelohde viscometers, relative to pure water (Table I) and secondary standards",
+   "unit_as_printed": "mN s/m2 (= mPa s)"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    57,
+    114,
+    164,
+    214,
+    271,
+    321,
+    385,
+    467,
+    524,
+    574
+   ],
+   "reason": "salt label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 57,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 114,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "SrCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 164,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "BaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 214,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "LaCl3"
+    }
+   ]
+  },
+  {
+   "label_row": 271,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 321,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaNO3"
+    }
+   ]
+  },
+  {
+   "label_row": 385,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "NaBr"
+    }
+   ]
+  },
+  {
+   "label_row": 467,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KNO3"
+    }
+   ]
+  },
+  {
+   "label_row": 524,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "KBr"
+    }
+   ]
+  },
+  {
+   "label_row": 574,
+   "sets": [
+    {
+     "path": "composition.salt",
+     "value": "Cd(NO3)2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": []
+}

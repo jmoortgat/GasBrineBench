@@ -1,0 +1,50 @@
+{
+ "table": "Table 4",
+ "csv": "table_4.csv",
+ "page_journal": 14466,
+ "pdf_page": 6,
+ "title_as_printed": "Experimental Solubility Data in the Water-Rich Phase for (CO2 + H2O) at Temperature of 323.15 K",
+ "footnotes_as_printed": {},
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "ITS-90 (PRT calibrated on ITS-90, stated in section 2.3)",
+ "pressure_note": "absolute cell pressure from a calibrated transducer (standard uncertainty 5 kPa); total pressure of the coexisting phases",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "323.15"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "total"
+  },
+  "value": {
+   "col": "x1",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1,
+   "what": "mole fraction of CO2 in the water-rich liquid; binary CO2 + H2O, salt-free"
+  },
+  "uncertainty": {
+   "col": "u(x1)",
+   "unit": "mole_fraction",
+   "what": "standard uncertainty (k=1)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": ""
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "x2 (H2O mole fraction in the same phase, = 1 - x1)",
+  "u(x2)"
+ ],
+ "conversion_needs": [],
+ "notes": "In this table component 1 is CO2 and component 2 is H2O (binary validation measurements); in Tables 5, 6 and 8 component 1 is CH4, 2 is CO2, 3 is H2O. Temperature printed only in the title."
+}

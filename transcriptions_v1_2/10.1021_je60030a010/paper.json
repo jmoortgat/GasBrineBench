@@ -1,0 +1,47 @@
+{
+ "doi": "10.1021/je60030a010",
+ "first_author": "Fabuss",
+ "year": 1966,
+ "journal": "J. Chem. Eng. Data 11(3), 325-330",
+ "source_key": "FABUSS(1966)",
+ "title": "Densities of Binary and Ternary Aqueous Solutions of NaCl, Na2SO4, and MgSO4, of Sea Waters, and Sea Water Concentrates",
+ "authors": "B. M. Fabuss, A. Korosi, A. K. M. Shamsul Huq",
+ "experimental_method": "Densities from the volume of a known mass of solution: Lipkin pycnometers at 25-75 C and sealed glass dilatometer tubes (capillary stem read with a cathetometer) at 75-175 C in an oil thermostat.",
+ "uncertainties_stated": "Temperature +-0.05 C; precision of parallel measurements 0.9e-4 g/cc; calibration with benzene and water better than 0.01% in density; standard deviation calculated vs measured: 2.9e-4 (NaCl), 5.3e-4 (Na2SO4), 2.9e-4 (MgSO4) binaries; 6.1e-4, 4.3e-4, 6.2e-4 for the three ternary systems.",
+ "quality_remarks": "Experimental densities at 150 and 175 C were adjusted by the authors for air compression and water evaporation in the sealed tube (175 C: ~0.01% volume compression, 0.03% concentration increase). Pressure is not controlled or printed. Table IV is headed 'NaSO4' in the printed title (typo for Na2SO4). Table I title says 'NaCl Solutions' but holds NaCl, Na2SO4 and MgSO4 blocks. Calcd columns are the authors' correlation (value3), ICT columns are literature (value2). KCl densities were measured per the text but are not tabulated.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   3,
+   4,
+   5
+  ],
+  "journal_pages": [
+   327,
+   328,
+   329
+  ]
+ },
+ "not_extracted_tables": {
+  "Table II": "constants of apparent molal volume equations (fitted model parameters)",
+  "Table III": "standard deviations (derived)",
+  "Table VII": "sea water density literature data summary (ranges only, no values)",
+  "Table VIII": "k0/alpha fit constants and deviations (derived/model)",
+  "Table IX": "selected sea water concentrate densities, calculated from the correlation (derived/smoothed), not measured; Cl per mille composition only"
+ },
+ "row_counts": {
+  "table_1": "printed 12 blocks x 8 temps = 96 data rows (x3 sources per row); written 96 data rows + 12 label rows",
+  "table_2": "printed 72 data rows; written 72 + 9 label rows",
+  "table_3": "printed 72; written 72 + 9 label rows",
+  "table_4": "printed 72; written 72 + 9 label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 MgSO4 0.00972 m, 65 C, ICT: 0.98*18 -> 0.9818 (text-layer glitch; image shows 0.9818)"
+ ],
+ "extraction_notes": "Text layer was clean; values parsed by script from half-page crops and tables IV-VI by line; image pages 3-5 read and compared (spot and block checks, all digits agreed). Page 7 of the PDF is another article (ethyl ketone azeotrope) and was ignored.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "one text-layer cell needed correction after the image check (SPEC conv. 14)",
+ "pass2_diff": "Tables I, IV-VI: every measured value identical (pass-1-only numbers are temperature keys; pass-2-only numbers are molality headers)."
+}

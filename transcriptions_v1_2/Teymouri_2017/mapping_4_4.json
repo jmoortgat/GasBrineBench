@@ -1,0 +1,142 @@
+{
+ "table": "Table 4.4",
+ "page_journal": 153,
+ "page_pdf": 184,
+ "title_as_printed": "Measured water content of CO2 in equilibrium with 10 wt% NaCl aqueous solution. (Temperature error is +-0.1 C and pressure error is +- 0.4 bar)",
+ "footnotes_as_printed": "none (caption carries: Temperature error is +-0.1 C and pressure error is +- 0.4 bar)",
+ "property": "y_h2o",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium cell pressure, held constant during sampling by brine injection; +-0.4 bar; absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set by group_rows (block header 'T = .. C')"
+  },
+  "P": {
+   "col": "P-bar",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "y_w - ppm",
+   "unit": "ppm_mole_fraction_water_in_gas",
+   "scale": 1e-06,
+   "what": "water content of the CO2-rich phase (vapour, or liquid CO2 for rows above the CO2 vapour pressure), printed as y_w in ppm; y_w is the authors' symbol for the water mole fraction in the CO2-rich phase"
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "text",
+   "constant": "+-1 % of reading or 4 ppm, whichever is greater (text p.153)"
+  }
+ },
+ "composition": {
+  "basis": "mass_percent",
+  "per_row": {},
+  "constant": {
+   "NaCl": {
+    "value": "10",
+    "unit": "wt%"
+   }
+  },
+  "other_species": "none; NaCl 99 % purity (Aldrich / Fisher), deionized water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    3,
+    4,
+    12,
+    13,
+    19,
+    20,
+    24,
+    25,
+    27
+   ],
+   "reason": "block label rows (temperature + authors' calculated hydrate dissociation pressure) and 'AAD %' summary rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "25",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 4,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "9.8",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 20,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "row_regime_overrides": [
+  {
+   "rows": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    18
+   ],
+   "regime": "lle",
+   "reason": "P above the pure-CO2 vapour pressure at the block temperature (Span-Wagner, approx. 64.3/50.9/45.0/39.7/34.9 bar at 25/15/10/5/0 C): CO2-rich phase is liquid; water content jumps at the same pressure in the printed data"
+  }
+ ],
+ "extra_unmapped": [
+  "Hydrate dissociation pressure per block (authors' model calculation, in the label rows)",
+  "AAD % CPA / PC-SAFT per block (authors' model deviations)"
+ ],
+ "conversion_needs": [
+  "ppm to mole fraction (x1e-6)",
+  "NaCl 10 or 20 wt% to molality"
+ ],
+ "notes": "Printed as side-by-side temperature blocks (P-bar, y_w - ppm pairs); stacked left block first. Temperature filled from the block header. Degree signs written as 'C'. Method: rocking titanium cell (300 ml), gas sampled via heated line (100 C) to a Yokogawa TDLAS (NOT a chilled-mirror hygrometer); brine of the same concentration pumped into the cell base during sampling. All points measured below the authors' calculated hydrate dissociation pressure (text p.153), so no hydrate rows. "
+}

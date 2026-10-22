@@ -1,0 +1,59 @@
+{
+ "table": "Table 3",
+ "page_journal": 238,
+ "title_as_printed": "Experimental Values of Density, Viscosity, and Speed of Sound of the Geothermal Fluids as a Function of Temperature at Atmospheric Pressure",
+ "footnotes_as_printed": {
+  "a": "DMA4500.",
+  "b": "SVM3000.",
+  "c": "DSA 5000M; standard uncertainties, u, are (DMA4500) u(T) = 0.01 K; u(rho) = 0.00025%; (SVM3000) u(T) = 0.005 K; u(rho) = 0.01%; u(eta) = 0.17%; (DSA 5000M) u(rho) = 0.005% (or 0.002 kg m-3); u(c) = 0.05% (or 0.5 m s-1), (level of confidence = 95%)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "ITS-90",
+ "temperature_scale_evidence": "measured using a (ITS-90) PRT100 thermometer",
+ "pressure_note": "atmospheric pressure, P0 = 0.101 MPa (text p.237; table title 'at Atmospheric Pressure')",
+ "columns": {
+  "T": {
+   "col": "T (K)",
+   "unit": "K"
+  },
+  "P": {
+   "col": "",
+   "unit": "kPa",
+   "constant": "101.325",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho (kg.m-3) DSA5000M",
+   "unit": "kg/m3",
+   "what": "density of the geothermal brine (DSA 5000M sound-speed analyser)"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Natural geothermal brine, Kayakent/Kizlyar field (Dagestan, south Russia); composition by ICP-OES and ion chromatography, Table 1 (mg/L), 'mineralization' from the text 0.89 (No. 4), 1.07 (No. 5), 0.89 (No. 6), 6.34 (No. 17T) g/L is total dissolved solids, not practical salinity of seawater. Not seawater: sulfate/bicarbonate-type natural brine, analyses not charge balanced (no alkalinity); composition not representable in the six-ion set. No. 4 (pH 8.2): Na 228, K 11.2, Ca 56.7, Mg 18.7, Si 18.4, S 118, Cl 67, SO4 369.0, NO3 <0.1. No. 5 (pH 8.2): Na 458, K 3.4, Ca 1.2, Mg 0.4, Si 13.9, S 124, Cl 68.5, SO4 391.5. No. 6 (pH 7.2): Na 556, K 9.27, Ca 8.3, Mg 5.7, Si 12.1, S 1.4, Cl 280, NO3 9.3, SO4 <0.1. No. 17T (pH 7.7): Na 2410, K 71.7, Ca 50.7, Mg 9.5, Si 32.4, S 62.6, Cl 3507, NO3 6.1, SO4 175. Also B, Ba, Li, Sr, Se traces and dissolved gases (N2, CO2, CH4) in the live fluids; samples filtered (2 um), collected at 332-335 K; sample 6 and 17T gas mostly N2, 4 and 5 ~44% N2 and ~53% CO2."
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    9,
+    18,
+    26
+   ],
+   "reason": "sample label rows"
+  }
+ ],
+ "group_rows": [],
+ "extra_unmapped": [
+  "c (m.s-1) DSA5000M: speed of sound (outside scope, kept in CSV)"
+ ],
+ "conversion_needs": [],
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density in kg m-3; no per-volume concentration quantity",
+ "notes": "Table 3 prints three side-by-side blocks (a DMA4500; b SVM3000; c DSA 5000M) per sample with own temperature columns; written as table_3_group1..3 (one per instrument), each stacked with one label row per sample (No. 4, 5, 6, 17T). Footnote letters a/b/c (instrument) removed from headers and the instrument added to the header text instead. Salinity values in label-row sets are the 'mineralization' from the text (0.89, 1.07, 0.89, 6.34 g/L), not a table column.",
+ "quality_remarks": "Composition held: the earlier salinity sets (g/L mineralization) were removed because the builder would read them as reference-seawater salinity, which is wrong for these natural Na-SO4 / Na-Cl brines. Dissolved native gas (N2, CO2, CH4) present; no gas release below 343 K (text), so gas is left blank. Suspect value: No. 4 DSA 343.15 K rho = 974.20 kg/m3 (printed; confirmed on page image) is about 4 kg/m3 below pure water at that temperature and breaks the trend (983.80 at 333.15 K); cell kept."
+}

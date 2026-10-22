@@ -1,0 +1,225 @@
+{
+ "table": "Table I",
+ "page_journal": 408,
+ "title_as_printed": "Densities and Apparent Molal Volumes of Aqueous KCl, NaF, Na2SO4, K2SO4, MgCl2, and MgSO4 Solutions at 0 and 50 C",
+ "footnotes_as_printed": {
+  "a": "Densities are in units of g/ml, and Phi_V is in units of ml/mol."
+ },
+ "property": "rho_diff",
+ "property_description": "density of the solution minus density of pure water at the same T (Kell tabulation), g/ml, measured by magnetic-float densitometry; value = 1000 Delta_d x 1e-3. Apparent molal volume Phi_V is calculated by the authors and not used",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (atmospheric pressure implied by an open densitometer; paper gives no pressure)",
+ "volume_basis": "not_applicable",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "0 or 50 (set per block by group_rows)"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "1000 Delta_d g/ml",
+   "unit": "g/ml",
+   "scale": 0.001,
+   "what": "Delta_d = d - d0, density of solution minus density of pure water at the same T (Kell tabulation); printed as 1000 Delta_d"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m mol/kg",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "single salt per block, named in the label row (composition.salt set by group_rows); only the NaF blocks are outside the six-ion set and are kept"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    46,
+    69,
+    77,
+    97,
+    113,
+    124,
+    145,
+    168,
+    186
+   ],
+   "reason": "block label rows (salt, temperature)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaF"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 46,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "KCl"
+    }
+   ]
+  },
+  {
+   "label_row": 77,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 97,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 113,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaF"
+    }
+   ]
+  },
+  {
+   "label_row": 124,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 145,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "0",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "MgSO4"
+    }
+   ]
+  },
+  {
+   "label_row": 168,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "Na2SO4"
+    }
+   ]
+  },
+  {
+   "label_row": 186,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "K2SO4"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Phi_V ml/mol (apparent molal volume, calculated by the authors from the measured density difference)"
+ ],
+ "conversion_needs": [
+  "molality is mol per kg of water (paper: solutions made by weight)"
+ ],
+ "notes": "Page printed in four columns; blocks stacked in reading order: NaF 0C, Na2SO4 0C, MgCl2 0C (continues from column 1 into column 2 without a new label), KCl 50C, MgCl2 50C, MgSO4 50C, NaF 50C, K2SO4 0C, MgSO4 0C, Na2SO4 50C, K2SO4 50C. Column heading m is molality (units not printed in the heading; text says 'molal concentrations (m)'). Two values are printed with a subscript last digit and are written as one number: 0.57774(5) in KCl 50C -> 0.577745, 0.44699(8) in MgCl2 50C -> 0.446998. Replicate or near-replicate rows kept (e.g. 1.01833/1.01840 MgCl2 0C, 0.89006/0.89033 MgSO4 0C, 1.00476 twice Na2SO4 50C)."
+}

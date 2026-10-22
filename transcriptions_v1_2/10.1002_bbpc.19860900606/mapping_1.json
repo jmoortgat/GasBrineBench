@@ -1,0 +1,676 @@
+{
+ "table": "Table 1",
+ "page_journal": 527,
+ "title_as_printed": "Experimentally determined VTP-data at the phase boundary for the ternary system H2O-CO2-NaCl. The first 20 sub-tables are for a constant weight percentage of NaCl (6 weight% relative to water). Sub-table 21 and 22 are for 10 weight% NaCl relative to water. The last sub-tables, 23 and 24 are for 20 weight%. NaCl relative to water",
+ "footnotes_as_printed": {},
+ "property": "other",
+ "property_description": "Synthetic-method phase-boundary (homogenization) points: T and P at which a mixture of known overall composition (H2O, NaCl, CO2 mol% of the filling) passes from two fluid phases to one homogeneous phase (break point of the isochoric p-T curve, usually confirmed visually), with the molar volume V of the mixture at that point. Phase identity (bubble vs dew side) is not stated in the table; at the transition the overall composition equals the composition of the remaining homogeneous fluid phase.",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pressure of the sample at the phase-boundary point (total pressure; measured via the back-up water pressure with Bourdon gauges and a strain gauge, calibrated against a dead-weight gauge)",
+ "columns": {
+  "T": {
+   "col": "T K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "V cm3 mol-1",
+   "unit": "cm3/mol",
+   "scale": 1,
+   "what": "molar volume of the whole ternary mixture (per mole of H2O+NaCl+CO2, NaCl counted as one species) at the phase-boundary point"
+  }
+ },
+ "composition": {
+  "basis": "mole_fraction",
+  "per_row": {},
+  "constant": {},
+  "set_by_group_rows": "H2O, NaCl, CO2 mol% of the overall filling for each sub-table (NaCl counted as one undissociated species); salinity as weight% NaCl 'relative to water' from the table title",
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    7,
+    9,
+    14,
+    26,
+    31,
+    40,
+    45,
+    53,
+    55,
+    63,
+    72,
+    78,
+    81,
+    86,
+    91,
+    98,
+    104,
+    110,
+    119,
+    123,
+    126,
+    132,
+    136
+   ],
+   "reason": "sub-table composition label rows (24 sub-tables)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "97.90",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.93",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "0.18",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 7,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "96.89",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.91",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "1.21",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 9,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "94.39",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.86",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "3.75",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "94.15",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.85",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "4.00",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "93.03",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.83",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "5.14",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 31,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "91.46",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.80",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "6.74",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "89.29",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.76",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "8.95",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 45,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "88.57",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.74",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "9.69",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 53,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "83.05",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.63",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "15.32",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "77.47",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.52",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "21.01",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 63,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "70.15",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.38",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "28.47",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 72,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "65.91",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.30",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "32.80",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 78,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "63.47",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.25",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "35.28",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 81,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "63.44",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.25",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "35.31",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 86,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "61.60",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.21",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "37.19",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 91,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "50.79",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.00",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "48.21",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 98,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "40.30",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.80",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "58.90",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 104,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "28.50",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.56",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "70.94",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 110,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "19.99",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.39",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "79.62",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 119,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "14.61",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.29",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "84.90",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "6",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 123,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "94.63",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.24",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "2.13",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 126,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "92.52",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "3.17",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "4.31",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "10",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 132,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "92.59",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "7.14",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "0.27",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "20",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  },
+  {
+   "label_row": 136,
+   "sets": [
+    {
+     "path": "composition.constant.H2O",
+     "value": "86.78",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "6.69",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.CO2",
+     "value": "6.54",
+     "unit": "mol%"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "20",
+     "unit": "weight% NaCl relative to water (table title)"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "Overall composition mol% (H2O, NaCl, CO2) per sub-table; to get x_CO2 on a salt-free basis use CO2/(CO2+H2O); molality of NaCl = NaCl/(H2O*0.018015) mol/kg.",
+  "'6 weight% relative to water' is consistent with the printed mol% only if read as 6 g NaCl per 100 g of the CO2-free NaCl solution (NaCl/H2O mole ratio 1.93/97.90 = 0.0197, = 0.06/0.94 x 18.015/58.44); likewise 10 and 20 weight% (mass fraction in the salt solution). The printed mol% values are the primary composition.",
+  "V cm3/mol -> m3/mol x 1e-6."
+ ],
+ "notes": "Side-by-side blocks (three printed columns) stacked in printed order: left column top to bottom (sub-tables 1-7), middle column (8-15), right column (16-24); numbering 1-24 assigned by this order, which matches the title (last four = 10 and 20 weight%). Each label row carries the three printed mol% values. Rows within a sub-table kept in printed order (not monotonic in places, e.g. sub-table 4 rows 19.0/423 then 20.0/456; sub-table 17 rows 55.4/621/95.0 then 58.5/621/82.5). Not a direct phase-composition measurement: water-rich isopleths are bubble-point-like (solubility of CO2 in brine at the boundary), CO2-rich isopleths dew-point-like; above the critical curve the side is undefined. Builder should treat as 'other' unless a phase-side rule is added."
+}

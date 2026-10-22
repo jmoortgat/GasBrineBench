@@ -1,0 +1,145 @@
+{
+ "table": "Table I",
+ "page_journal": 5505,
+ "title_as_printed": "TABLE I (densities, sound velocities of NaCl and CaCl2 solutions at 5, 15, 35 C)",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (ambient pressure presumably; paper gives no pressure for the densimeter/velocimeter measurements)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "see group_rows"
+  },
+  "value": {
+   "col": "d-d0 (x 10^3), g cm-3",
+   "unit": "g_per_cm3",
+   "scale": 0.001,
+   "what": "density difference d - d0; reference d0 not defined in the table (presumably pure water at same T)"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "salt": "from label rows (NaCl or CaCl2)",
+  "per_row": {
+   "salt_from_label_row": {
+    "col": "m",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "none besides water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    10,
+    21,
+    36,
+    47,
+    58
+   ],
+   "reason": "block label rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 10,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 21,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "NaCl"
+    }
+   ]
+  },
+  {
+   "label_row": 36,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "5",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 47,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "15",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  },
+  {
+   "label_row": 58,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "35",
+     "unit": "C"
+    },
+    {
+     "path": "composition.salt",
+     "value": "CaCl2"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "-phik (x 10^4), cm3 mol-1 bar-1 (apparent molal compressibility, calculated by authors)",
+  "U-U0, cm s-1 (sound-velocity difference from pure water, measured; not a database property)",
+  "phiV, cm3 mol-1 (apparent molal volume, calculated by the authors)"
+ ],
+ "conversion_needs": [
+  "molality basis (mol per kg water) assumed; not explicitly stated"
+ ],
+ "notes": "Side-by-side blocks (NaCl left, CaCl2 right) stacked: NaCl at 5, 15, 35 C then CaCl2 at 5, 15, 35 C. The label row text is printed 'NaCl, 5 C' etc. Units of -phik: the sign is minus (printed '-phik').",
+ "quality_remarks": "Reference density d0 is not stated in the paper; pure water at the same T is confirmed by recomputing phiV for NaCl 5 C m=1.0 (16.33 vs printed 16.32). No pressure is printed."
+}

@@ -1,0 +1,31 @@
+{
+ "table": "Table II",
+ "page_journal": 534,
+ "pdf_page": 2,
+ "title_as_printed": "Table II. Composition of Salton Sea Geothermal Brine",
+ "footnotes_as_printed": "none printed",
+ "property": "other",
+ "property_description": "composition (element ppm by weight) of the synthetic Salton Sea geothermal brine SSGB used in Table III",
+ "hold_table": "composition reference for the SSGB block of Table III",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not applicable",
+ "columns": {},
+ "composition": {
+  "basis": "mass_fraction",
+  "per_row": {},
+  "constant": {},
+  "other_species": "ppm by weight of solution (presumably); 'chlorine' = chloride, 'silica' as printed (SiO2 basis not stated)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "all columns"
+ ],
+ "conversion_needs": [
+  "ppm by wt -> mass fraction x 1e-6; whether per mass of solution or of water is not stated"
+ ],
+ "notes": "Text: concentrations 17 % lower than those of the unflashed brine from well IID-2 (Helgeson 1968); copper and silver not included; pH adjusted to neutral with NaOH. Thousands separators printed as thin spaces removed (23 900 -> 23900, 129 000 -> 129000, 1 660 -> 1660, 1 140 -> 1140, 13 700 -> 13700, 44 000 -> 44000).",
+ "csv": "table_II.csv"
+}

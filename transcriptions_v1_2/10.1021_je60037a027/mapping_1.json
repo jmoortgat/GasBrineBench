@@ -1,0 +1,271 @@
+{
+ "table": "Table I",
+ "page_journal": 228,
+ "title_as_printed": "Observed Densities as a Function of Temperature",
+ "footnotes_as_printed": {
+  "a": "Calculated by least squares from the data given at higher temperatures. These values are adjusted (Table II) to make the densities at 25 C agree with those previously determined (3)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated; dilatometer capillary end enclosed in a box 'in which the pressure is kept constant in order to prevent errors due to pressure changes'; no pressure value printed",
+ "columns": {
+  "T": {
+   "col": "t C",
+   "unit": "C"
+  },
+  "value": {
+   "col": "d_obsd G./Ml.",
+   "unit": "g/mL"
+  },
+  "value2": {
+   "col": "(d0 - dt) x 10^3 Obsd.",
+   "unit": "g/mL",
+   "scale": 0.001,
+   "what": "density of pure water at 0 C minus density at t, observed (d0 here is the adjusted constant)",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "(D0 - dt) x 10^3 Calcd.",
+   "unit": "g/mL",
+   "scale": 0.001,
+   "what": "from least-squares equation (3); calculated",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Li2SO4 and LiCl are present in 8 of the 13 blocks (Li2SO4, LiCl and their mixtures with each other, NaCl or Na2SO4); the blocks are Na2SO4, Li2SO4, NaCl, LiCl (pure, ionic strength 4.000) and 9 mixtures at ionic strength 4.000 given by equivalent fraction of the first salt. Pure-salt molalities are set per block (1.333_4 m for the sulphates, 4.000_0 and 3.999_8 m for the chlorides). Ionic strength mu = 4.000 mol per kg water (Nomenclature) for all blocks; recorded here only."
+ },
+ "volume_basis": "not_applicable",
+ "volume_basis_evidence": "density in g/mL of the solution",
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    25,
+    35,
+    48,
+    55,
+    62,
+    69,
+    76,
+    83,
+    90,
+    97,
+    104
+   ],
+   "reason": "block label rows"
+  },
+  {
+   "rows": [
+    1,
+    7,
+    14,
+    20,
+    26,
+    36,
+    42,
+    49,
+    56,
+    63,
+    70,
+    77,
+    84,
+    91,
+    98,
+    105
+   ],
+   "reason": "t = 0 C density is a least-squares extrapolation adjusted to 25 C densities (footnote a), not measured"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "1.3334",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "1.3334",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 25,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "4.0000",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 35,
+   "sets": [
+    {
+     "path": "composition.constant.LiCl",
+     "value": "3.9998",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 48,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "1.09091",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.LiCl",
+     "value": "0.72727",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "0.80000",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.LiCl",
+     "value": "1.60000",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 62,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "0.44444",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.LiCl",
+     "value": "2.66667",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 69,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "1.01882",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.94354",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 76,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.69216",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.92351",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 83,
+   "sets": [
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.35286",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.94142",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 90,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "0.99627",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.33707",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 97,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "0.66173",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "0.67160",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 104,
+   "sets": [
+    {
+     "path": "composition.constant.Li2SO4",
+     "value": "0.32973",
+     "unit": "mol/kg"
+    },
+    {
+     "path": "composition.constant.Na2SO4",
+     "value": "1.00360",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [
+  "Ad x 10^6 (d_obsd - d_calcd, residual of the least-squares fit)"
+ ],
+ "conversion_needs": [
+  "mixture molalities are not printed; they are derived from mu = 4.000 and the equivalent fraction E (not an ionic-strength fraction; p = 2 for sulfates): sulfate+chloride m_S = 4E/(2+E), m_C = 4 - 3 m_S; Li2SO4+Na2SO4 m1 = 4E/3, m2 = 4(1-E)/3. Verified by the auditor against Table III Young-rule means (p.230)"
+ ],
+ "notes": "Temperatures are printed with the last digit as a subscript (e.g. 5.12 with subscript 2); written here as a full number 5.122. Each block has 1 or 2 series of runs (two Na2SO4, Li2SO4, NaCl and LiCl series are replicate fillings). Pure-salt block labels print m with a subscript last digit (written 1.3334 etc.). Block labels in the CSV are normalised ASCII (E_Li2SO4 etc.). Table II, III (constants), Table V (cross-square rule) not extracted. Mixture blocks are mapped as the two derived salt molalities (see conversion_needs); Li-containing blocks are outside the six-ion set and are held by the builder.",
+ "caution": "Densities were adjusted to match the authors' earlier 25 C values (ref 3): 'The determined densities were, therefore, adjusted to match the values at 25 C given by the equations in reference (3)' (p.227); not independent of ref 3. Absolute reliability +-3e-5 g/mL."
+}

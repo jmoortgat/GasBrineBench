@@ -1,0 +1,91 @@
+{
+ "property": "solubility_molality",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Column headers in psia. Pressure in the saturation chamber read via port B on a Heise CM 32507 gauge (dead-weight accuracy within 1 psia); equilibrium pressures maintained within 1 psia of the reported gauge values, estimated accuracy within 2 psia. Whether total pressure (methane + water vapour) or methane partial pressure is not stated.",
+ "layout": "wide: one row per solution/slurry, one CH4-molality column per pressure; one mapping per printed pressure column over the same CSV (key csv)",
+ "table": "Table 4",
+ "page_journal": 70,
+ "pdf_page": 4,
+ "title_as_printed": "Table 4. Measured 25 C CH4 solubilities in Mississippi delta sediment dispersed in distilled water and in sea water of 34.84 permil salinity.",
+ "footnotes_as_printed": "none printed",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "P": {
+   "col": "",
+   "unit": "psia",
+   "basis": "unspecified",
+   "constant": "750"
+  },
+  "value": {
+   "col": "Molal solubilities 750 psia",
+   "unit": "mol_per_kg_water",
+   "what": "methane molality relative to the TOTAL water content of the sediment slurry (text: interlayer water could not be estimated); sediment wt. % on the 110 C dried sediment mass"
+  },
+  "slurry_solids": {
+   "col": "Sediment concentration (wt. %)",
+   "unit": "wt_percent",
+   "what": "solids content of the slurry (clay or sediment), not a dissolved salt"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Mississippi delta argillaceous sediment slurry in distilled water (row 1) and in sea water of 34.84 permil salinity (row 3; sediment washed twice with sea water and dispersed in sea water)"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    2
+   ],
+   "reason": "label rows (Distilled water, Sea water)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "none"
+    }
+   ]
+  },
+  {
+   "label_row": 2,
+   "sets": [
+    {
+     "path": "composition.basis",
+     "value": "salinity_permil"
+    },
+    {
+     "path": "composition.constant.salinity",
+     "value": "34.84",
+     "unit": "permil"
+    }
+   ]
+  }
+ ],
+ "row_held": [
+  {
+   "rows": [
+    1,
+    3
+   ],
+   "reason": "clay or sediment slurry, not a homogeneous water/brine solution (coordinator instruction: keep in table, hold; builder decides)"
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "psia to MPa x 0.00689476"
+ ],
+ "notes": "Mapping for the 750 psia column. The sea-water slurry row is the only sea-water datum in Tables 2-4.",
+ "csv": "table_4.csv"
+}

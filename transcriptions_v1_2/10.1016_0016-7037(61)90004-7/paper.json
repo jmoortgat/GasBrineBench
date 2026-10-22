@@ -1,0 +1,53 @@
+{
+ "doi": "10.1016/0016-7037(61)90004-7",
+ "first_author": "Duffy, J. Regis",
+ "authors": "J. Regis Duffy, Norman O. Smith, Bartholomew Nagy",
+ "year": 1961,
+ "journal": "Geochimica et Cosmochimica Acta 24, 23-31",
+ "title": "Solubility of natural gases in aqueous salt solutions-I. Liquidus surfaces in the system CH4-H2O-NaCl2-CaCl2 at room temperatures and at pressures below 1000 psia",
+ "source_key": "DUFFY(1961)",
+ "experimental_method": "Pressure decline method at room temperatures (25 and 30 C), pressures up to about 1100 psia.",
+ "uncertainties_stated": "not checked in detail for this pass (only Table 3 extracted); see the existing DUFFY(1961) entry",
+ "quality_remarks": "Authors report solubilities in salt solutions appreciably larger than Michels et al. (1936) and attribute the difference to errors in Michels' method. The mixed solution is described in the text as nearly saturated with respect to NaCl but not with respect to CaCl2.6H2O. The PDF text layer gives '3.0 N CaCl2' for the 25 C right-hand block; the page image clearly reads 5.0 N.",
+ "how_extracted": "image_read (scanned PDF with OCR text layer; every cell read from the 250 dpi page image; text layer used as layout aid)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   27
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1 (CH4 in water)",
+   "reason": "already in GasBrineBench (DUFFY(1961))"
+  },
+  {
+   "table": "Table 2 (CH4 in aqueous NaCl at 30 C)",
+   "reason": "already in GasBrineBench (DUFFY(1961))"
+  },
+  {
+   "table": "Table 4 (invariant points at 30 C and 500 psia, mole %)",
+   "reason": "estimated/interpolated by the authors and from literature; not measured"
+  }
+ ],
+ "row_counts": {
+  "table_3": {
+   "printed_data_rows": 31,
+   "written_data_rows": 31,
+   "label_rows": 10,
+   "new_vs_database": "2 rows (1.53 N NaCl + 6.0 N CaCl2, 30 C); 29 CaCl2-only rows already in GasBrineBench"
+  }
+ },
+ "changes_after_image_check": [
+  "table_3 25C right block label: text layer '3.0 X CaCl2' -> 5.0 N CaCl2 (image)",
+  "other cells: text layer and image agree"
+ ],
+ "extraction_notes": "Printed decimal mid-dots written as full stops. Sanity: x increases with P within every block; at matched P x decreases with CaCl2 normality (25 C: 0.5 N > 1.0 N > 2.7 N > 5.0 N; 30 C: 2.7 N > 9.5 N > 14.7 N). Mixed block: 1.16 at 368 psia and 2.32 at 753 psia, between 2.7 N and 9.5 N CaCl2 at 30 C, plausible. No replicate rows.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned PDF; text-layer block label needed correction (3.0 -> 5.0 N)",
+ "pass2_diff": "2026-10-11: blind pass 2 diffed with diff_passes.py: 93 cells, 0 disagreements."
+}

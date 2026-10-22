@@ -1,0 +1,29 @@
+{
+ "table": "Table A-3 (right block, Averaged Experimental Data)",
+ "page_pdf": [
+  96,
+  97,
+  98,
+  99
+ ],
+ "title_as_printed": "Averaged Experimental Data",
+ "property": "gas_volume_solubility",
+ "gas": "ch4",
+ "do_not_ingest": true,
+ "derived_by_authors": true,
+ "columns": {
+  "value": {
+   "col": "CH4 SCF",
+   "unit": "SCF_per_bbl_brine",
+   "gas": "ch4",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "CO2 SCF",
+   "unit": "SCF_per_bbl_brine",
+   "gas": "co2",
+   "derived_by_authors": true
+  }
+ },
+ "notes": "Authors' per-condition means of the left block (one row per condition 1-27, keyed by Cond.). sigma columns hold the standard deviation printed under the mean (only where printed; '.4' written as printed). T, P, salinity are those of the condition in table_A3.csv. Kept for cross-checking only; the builder should use table_A3.csv. Averages that do not match the printed sample rows: cond 9 Total 58.5 (rows give 56.5, see 9-1 misprint), cond 13 CH4 48.9 (rows give 49.6), cond 17 CH4 42.6 (rows give 42.8), cond 21 CH4 47.3 (rows give 45.2), cond 23 CO2 1.3 (46.5 x 3.25% = 1.5), cond 26 CO2 14.8 and CH4 37.0 (rows give 14.2 and 37.6). Printed sigma values agree with the sample standard deviation of the rows (e.g. cond 1 3.3 and 2.5, cond 5 4.0 and 3.8)."
+}

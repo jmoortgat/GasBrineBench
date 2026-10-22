@@ -1,0 +1,42 @@
+{
+ "table": "Table 12",
+ "page_journal": 70,
+ "title_as_printed": "New Experimental Results for Simulated Sea Water Concentrates",
+ "footnotes_as_printed": "not captured (none printed)",
+ "property": "phi_osm",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "Not stated as total or partial in the table. Osmotic coefficients are 'at p = p0' i.e. 'Osmotic coefficients for pressures equal to vapor pressure of pure water at each temperature' (Table 2 Note 1). Solution vapor pressure = p0 - delta p (delta p measured 'corrected to 0 C' for mercury column, per text).",
+ "columns": {
+  "T": {
+   "col": "Temperature (C)",
+   "unit": "C"
+  },
+  "value": {
+   "col": "Mixture Osmotic Coefficient phi_SSW at p=p0",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "Vapor Pressure Lowering Delta p = P0-P (mm Hg)",
+   "unit": "mmHg",
+   "what": "measured vapor pressure lowering"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "Simulated sea water of Na+, Mg2+, Cl-, SO4 2- only. Concentrate multiple f of the Table 11 composition (molal basis, per kg H2O; unit concentration ratio): NaCl 0.42663, Na2SO4 0.02976, MgCl2 0.06726 mol/kg H2O (ions: Na+ 0.48615, Mg2+ 0.06726, Cl- 0.56115, SO4 2- 0.02976). Molality of each salt = f x the Table 11 value. Table 11 itself is the composition used experimentally (analysed; MgCl2 about 4% above the intended Table 10 value)."
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "concentrate multiple (column 'Concentrate Multiple of Simulated Sea Water') is the composition variable"
+ ],
+ "conversion_needs": [
+  "molality of NaCl, Na2SO4, MgCl2 = multiple x (0.42663, 0.02976, 0.06726) mol/kg H2O; mixture osmotic coefficient is defined by -ln a_w = 0.0180154 phi sum(m_i), sum over ionic molalities (eq. 10); a_w = (p0-dp)/p0"
+ ],
+ "notes": "Temperature filled down. The three concentration levels at one nominal T drift slightly because water evaporates into the vapor space; multiples are as printed."
+}

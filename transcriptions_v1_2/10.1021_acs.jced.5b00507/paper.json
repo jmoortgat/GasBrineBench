@@ -1,0 +1,38 @@
+{
+ "doi": "10.1021/acs.jced.5b00507",
+ "first_author": "Abdulagatov",
+ "year": 2016,
+ "journal": "J. Chem. Eng. Data 61(1), 234-246",
+ "title_as_printed": "Measurements of the Density, Speed of Sound, Viscosity, and Derived Thermodynamic Properties of Geothermal Fluids",
+ "source_key": "ABDULAGATOV(2016)",
+ "experimental_method": "Anton Paar DMA4500 densimeter, SVM3000 Stabinger viscodensimeter and DSA 5000M sound-speed analyser at atmospheric pressure, 277-343 K, on four natural geothermal brines of Dagestan.",
+ "uncertainties_stated": "Table 3 footnote: DMA4500 u(T)=0.01 K, u(rho)=0.00025%; SVM3000 u(T)=0.005 K, u(rho)=0.01%, u(eta)=0.17%; DSA 5000M u(rho)=0.005%, u(c)=0.05% (95% level). Abstract: combined expanded uncertainty rho 0.0005% (DMA), 0.02% (SVM), 0.01% (DSA); eta 0.35%; c 0.1%.",
+ "quality_remarks": "Natural multicomponent brines (salinity 0.9-6.3 g/L, mostly Na-Cl/SO4); not binary NaCl/KCl/CaCl2 solutions, so composition is only approximate for the six-ion set. Samples contain dissolved N2/CO2/CH4; authors report gas release above 343 K, so measurements stop at 343 K. Densities from the three instruments differ by up to ~1 kg/m3 (e.g. No. 4 at 333.15 K: 982.90 SVM vs 983.80 DSA). Source year: journal volume 61 (2016); DOI number 2015 in the key. Supporting Information noted but not needed.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   5
+  ],
+  "journal_pages": [
+   238
+  ]
+ },
+ "not_extracted_tables": [
+  "Table 1: chemical composition (mg/L) of the four brines: composition lookup, copied into other_species of the mappings",
+  "Table 2: percentage distribution of components (derived)",
+  "Table 4, 5: fitting coefficients (model parameters)",
+  "Further tables/figures with derived thermodynamic properties (compressibility, etc.): derived"
+ ],
+ "row_counts": {
+  "Table 3 group1": "printed 25 data rows + 4 label rows; written same",
+  "Table 3 group2": "28 + 4",
+  "Table 3 group3": "32 + 4"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Text layer parsed by script using column x-positions; all cells checked against the 200 dpi page image, no differences. Sanity: density decreases with T, viscosity decreases with T.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "text layer clean, every cell matched the page image",
+ "pass2_diff": "Table 3: 85 data rows over three instrument blocks; all 230 numbers identical between pass 1 (three group files) and pass 2 (one stacked table)."
+}

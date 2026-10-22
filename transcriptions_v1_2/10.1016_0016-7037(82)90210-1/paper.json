@@ -1,0 +1,42 @@
+{
+ "doi": "10.1016/0016-7037(82)90210-1",
+ "first_author": "Byrne, Patricia A.",
+ "authors": "Patricia A. Byrne, Ronald K. Stoessell",
+ "year": 1982,
+ "journal": "Geochimica et Cosmochimica Acta 46, 2395-2397 (Note)",
+ "title": "Methane solubilities in multisalt solutions",
+ "source_key": "BYRNE(1982)",
+ "experimental_method": "Equilibration of methane with the salt solution at 25 C and 550 psia in the rocking saturation vessel of Stoessell and Byrne (1982a); isobaric sampling and flashing of a liquid sample into an evacuated expansion loop, methane molarity from the manometric pressure change, converted to molality with pycnometer densities at 25 C; Matheson ultra-high-purity methane (99.97 mole %).",
+ "uncertainties_stated": "Gauge dead-weight accuracy within 1 psia. Precision of the measurements in molal units within 0.0005, averaging 0.0003. Each saturation value is the average of at least two measurements. Dissolved-gas volume correction generally less than 0.0001 molal.",
+ "quality_remarks": "Single pressure (550 psia) and temperature (25 C); the authors rely on their 1982b finding that salting coefficients are independent of pressure below 800 psia. Predicted columns are model values (Eqn 4) and the measured salting coefficients are computed by the authors from the measured molality and the distilled-water molality m_o of Stoessell and Byrne (1982b); m_o itself is not printed in this paper. Eight of the 14 solutions contain salts outside the six-ion set (K2SO4, MgSO4, Na2CO3, K2CO3). The text names the table 'Table 2' once ('Good agreement is shown in Table 2'); there is only one table (Table 1). Pressure basis (total vs methane partial) not stated.",
+ "how_extracted": "image_read (page rendered at 250 dpi, table read from the image; text layer used only as a layout aid)",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   2396
+  ]
+ },
+ "not_extracted_tables": [],
+ "row_counts": {
+  "Table 1": {
+   "printed": 14,
+   "written": 14,
+   "label_rows": 0
+  }
+ },
+ "changes_after_image_check": [
+  "Table 1 row 1: text layer '5.0286' -> 0.0286; '0.:14' -> 0.114",
+  "Table 1 row 2: text layer '0.08J' -> 0.083",
+  "Table 1 row 5: text layer 'II.074' -> 0.074; '0.07P' -> 0.078",
+  "Table 1 row 14: text layer '0.1.20' -> 0.120",
+  "Salt labels: text layer 'N&l', 'C&12', 'KC1', '(1.01' -> NaCl, CaCl2, KCl, (1.0)"
+ ],
+ "extraction_notes": "Typewritten table (scan with a text layer of poor quality). Every cell read from the 250 dpi image. Sanity checks (script): all measured molalities (0.0171-0.0358) lie below the 550 psia distilled-water value of the companion papers (0.0473-0.0483), as expected for salting out; the two MgCl2-MgSO4 rows give the higher value at the lower concentration (0.0358 at 0.25+0.25 m vs 0.0275 at 0.5+0.5 m); |measured - predicted| = 0.0004 (row 1), 0.0006, 0.0028 (max, row 3, as stated in text), 0.0018, 0.0009, 0.0005, 0.0013, 0.0000, 0.0014, 0.0011, 0.0013, 0.0010, 0.0000, 0.0001; mean absolute difference 0.00094 (text: 0.0010); mean signed difference -0.00007 (text: 'less than -0.0001' in magnitude). Molality columns 'parsed <salt> mol/kg' added by the extractor from the printed first column (see mapping conversion_needs).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Scanned typewritten table; text layer needed several corrections against the image.",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_0016-7037(82)90210-1, own layout) compared as multisets of numeric cells per table (msdiff.py in the session scratch, to be committed with the builder): identical. Eucken: temperature headings compared as sequences (pass 2 wrote '0 C'): identical."
+}

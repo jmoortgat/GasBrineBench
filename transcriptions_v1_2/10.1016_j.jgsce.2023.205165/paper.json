@@ -1,0 +1,42 @@
+{
+ "doi": "10.1016/j.jgsce.2023.205165",
+ "first_author": "Miller",
+ "year": 2023,
+ "journal": "Gas Science and Engineering 120 (2023) 205165",
+ "source_key": "MILLER(2023)",
+ "experimental_method": "In situ 1H NMR spectroscopy (600 MHz) of CH4 + ultrapure water equilibrated in a sealed high-pressure zirconia NMR tube (1.011 mL); liquid and vapour compositions measured on separate samples, each filling the active volume; liquid samples equilibrated overnight in a rotating oven with glass beads.",
+ "uncertainties_stated": "T: Cernox sensor calibration 0.36 K plus gradients/offsets, combined standard uncertainty 0.36-0.46 K (Table S1). p: transducer 0.0022 MPa; combined relative standard uncertainty 0.16 % to 0.52 % (Table S2). Composition: combined relative standard uncertainty per setpoint in Table 1 (x_methane 2.89 % to 21.41 %, y_water 8.27 % to 22.77 %).",
+ "quality_remarks": "Liquid-phase x_methane agrees with literature and Henry's law (authors). Vapour-phase y_water is systematically about half of literature data and of the GERG-2008 / Herrig models; the authors attribute it most likely to NMR peak overlap and say the vapour data are unresolved ('trustworthiness ... unlikely to be resolved without a careful study'). Recommend holding or flagging Table 3. One apparent outlier in each set of repeats at 307.98 K, 6.9 MPa, kept by the authors. The asterisk on the Table 3 pressure header has no printed footnote. Pressures are calculated from the pre-sealing transducer reading with an approximate correction (Eq. 1).",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   8,
+   9
+  ],
+  "journal_pages": [
+   8,
+   9
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 1",
+   "reason": "uncertainty budget per pressure setpoint (not data); its combined uncertainties are copied into the mapping notes"
+  },
+  {
+   "table": "Tables S1, S2 (Appendix A, supplementary)",
+   "reason": "T and p uncertainty details; supplementary file not available here"
+  }
+ ],
+ "row_counts": {
+  "Table 2": "printed 21 data rows, written 21",
+  "Table 3": "printed 22 data rows, written 22"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Script-parsed from the text layer (two-column page; a stray 'i.' from the neighbouring column in one Table 2 line was ignored by the parser); every cell checked against the 250 dpi page images, no corrections. T is printed only on the first row of each isotherm (fill_down). Sanity: x increases and y decreases with p in every isotherm apart from the repeat block at 6.9 MPa; p range 0.69-13.89 MPa; T 299.73, 307.98, 323.25 K.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, every cell matched the page image",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1016_j.jgsce.2023.205165, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical apart from values one pass fills down (T, mixture x) or keeps in label text (Masterton averages), whose counts match the block sizes. Pei brine compositions (mapping constants vs pass-2 table_1): identical."
+}

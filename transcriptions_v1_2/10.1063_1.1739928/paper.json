@@ -1,0 +1,48 @@
+{
+ "doi": "10.1063/1.1739928",
+ "first_author": "Masterton",
+ "year": 1954,
+ "journal": "J. Chem. Phys. 22 (1954) 1830-1833",
+ "source_key": "MASTERTON(1954)",
+ "experimental_method": "Specific gravity of dilute gas-saturated solutions relative to air-free conductivity water by a communicating-tube (Frivold) method in a thermostatted copper block (dye-flow null detection, volume withdrawn read in a capillary burette); concentration from the measured gas partial pressure via Henry's law and the solubilities of Claussen and Polglase; apparent molal volume from Eq. (1).",
+ "uncertainties_stated": "Specific gravity to one part in 10^7 (blank runs never exceeded this); air-bath temperature +/-0.01 C, columns equal within +/-0.00001 C. Henry's law assumed valid within 0.5 %. Author: precision for the aliphatic hydrocarbons considerably less than for benzene because the concentration data are less accurate. Gases 99 mol% pure (research grade).",
+ "quality_remarks": "Apparent molal volume taken equal to the partial molal volume (author: found identical in these very dilute solutions). Concentrations y are not analysed but calculated from literature solubility (Claussen and Polglase 1952). Two methane values (36.2 at 16.8 C, 35.9 at 35.1 C) flagged by the author with footnote a and omitted from the averages. Recomputed average of the 35.1 C methane block without the flagged value is 38.13, printed 38.2; other averages reproduce. Temperatures 16.8-35.1 C only; pressure not stated (near atmospheric).",
+ "how_extracted": "ocr",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   1832
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "TABLE I",
+   "reason": "apparent molal volumes of benzene in water: solute outside the gas set (liquid aromatic hydrocarbon)"
+  },
+  {
+   "table": "TABLE III",
+   "reason": "partial molal volumes of CH4 and C2H6 at 25 C in several solvents: organic-solvent values from the literature, water values are the author's smoothed/interpolated 25 C values (derived), with internal pressures from Hildebrand and Scott"
+  },
+  {
+   "table": "Fig. 3",
+   "reason": "curves of partial molal volume vs T (graph of Table I/II data)"
+  }
+ ],
+ "row_counts": {
+  "TABLE II": "printed 38 data rows (CH4 6+7+3+5 = 21, C2H6 1+4+2 = 7, C3H8 3+4+3 = 10) plus 9 average rows; written 38 data rows + 3 gas label rows + 10 temperature label rows + 9 'Av.=' summary rows = 60 rows"
+ },
+ "changes_after_image_check": [
+  "TABLE II headers: OCR 'XIO'' / 'X 10'' -> x10^5 for both y and 1-d/d0 (read on the 600 dpi image; physics check: CH4 y = 2.30e-5 g/cc agrees with the text '2.30x10-5 g/cc')",
+  "TABLE II T labels: OCR '16.S' -> 16.8, '3S.IOC' -> 35.1, '29.I' -> 29.1, '16.9\u00b7C' -> 16.9",
+  "TABLE II average row propane 29.1 C: OCR '67.S' -> 67.5",
+  "TABLE II rows 5 and 27: OCR glued footnote mark '36.2\"' / '35.9\"' -> 36.2 / 35.9 with note 'psi cc:a'"
+ ],
+ "extraction_notes": "Scanned page with an OCR text layer. All Table II numbers were read from the 250 dpi page image (headers at 600 dpi) and compared with the OCR layer: every data cell matched; the corrections were in headers, temperature labels, one average and the footnote marks. Side-by-side temperature sub-blocks stacked left to right within each gas (v2.1 rule 11). Column headers made ASCII: 'psi cc' for the printed Greek psi (apparent molal volume, cc), 'y x10^5', '1-d/d0 x10^5'. Property pmv with gas set per block (ch4, c2h6, c3h8) and T set per sub-block by label rows. Sanity: psi increases with T for each gas (CH4 33.2 -> 38.2, C2H6 48.2 -> 52.1, C3H8 63.6 -> 67.5 cc averages); 1-d/d0 roughly proportional to y within each block.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned page with OCR text layer; header exponents, temperature labels and footnote marks needed correction after the image check",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1063_1.1739928, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical apart from values one pass fills down (T, mixture x) or keeps in label text (Masterton averages), whose counts match the block sizes. Pei brine compositions (mapping constants vs pass-2 table_1): identical."
+}

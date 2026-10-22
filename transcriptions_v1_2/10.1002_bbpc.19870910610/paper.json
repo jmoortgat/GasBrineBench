@@ -1,0 +1,63 @@
+{
+ "doi": "10.1002/bbpc.19870910610",
+ "first_author": "Krader",
+ "year": 1987,
+ "journal": "Ber. Bunsenges. Phys. Chem. 91 (1987) 627-634",
+ "source_key": "KRADER(1987)",
+ "experimental_method": "Synthetic method in a variable-volume high-pressure autoclave with sapphire window, magnetic stirrer and electrodes: weighed NaCl (or CaCl2) solution plus weighed CH4 heated slowly (3-6 K/min) at constant volume; phase-boundary points from break points of the P-T isochores, confirmed visually and by the electrolytic resistance between two vertically mounted electrodes.",
+ "uncertainties_stated": "Pressure: maximum uncertainty 0.8 % at 30 MPa to 0.1 % at 300 MPa. Temperature: inhomogeneities along the autoclave not above 0.2 K. Salt solution amounts +/-0.1 %; CH4 amounts up to 0.4 % at small concentrations; sample volume 0.3-0.4 %. Molar volume: e.g. at 723 K, 100 MPa, 12.6 mol% CH4, 0.16 mol% NaCl, maximum error 1.2 %, most probable 0.7 %; up to 1.5 % at a few tens of MPa and at the highest pressures.",
+ "quality_remarks": "Points lie on the fluid-fluid phase boundary surface near the critical region (630-800 K, 40-265 MPa); they are homogenisation points of mixtures of known overall composition, not coexisting-phase compositions. Temperatures printed to 1 K. The Table 3 compositions correspond to about 8.6-8.7 wt% NaCl relative to water although the text says 8 wt%. Above about 70 mol% CH4 salt precipitates (no data there). Table 4 is interpolated. Binary H2O-CH4 isopleths of this work (16.8 and 62.9 mol% CH4) are shown only in Figs. 1-3; supercritical PVT isochor data are only referenced to the thesis [5].",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2,
+   3,
+   4
+  ],
+  "journal_pages": [
+   628,
+   629,
+   630
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table 4",
+   "reason": "interpolated molar volumes at round T, P, composition (800 K, 8 wt% NaCl), combined from isochor and boundary data: derived"
+  },
+  {
+   "table": "Figs. 1-7",
+   "reason": "isopleth / isotherm diagrams and model comparisons; binary H2O-CH4 isopleths only graphical"
+  }
+ ],
+ "row_counts": {
+  "Table 1": "printed 44 data rows in 7 isopleths (0.6 wt% NaCl rel. water); written 44 data rows + 7 label rows",
+  "Table 2": "printed 49 data rows in 7 isopleths (1.7 wt% NaCl); written 49 + 7 label rows",
+  "Table 3": "printed 45 data rows in 7 isopleths (8 wt% NaCl); written 45 + 7 label rows",
+  "Table 5": "printed 18 data rows in 3 isopleths (CaCl2, 23.5 mol% CH4); written 18 + 3 label rows"
+ },
+ "changes_after_image_check": [
+  "Table 1 row 9: T 610 -> 670",
+  "Table 1 row 15: T '65 1' -> 651",
+  "Table 1 row 43: T '71 8' -> 718",
+  "Table 1 row 46: T '69 1' -> 691",
+  "Table 1 row 49: P '22 1 .o' -> 221.0",
+  "Table 1 row 50: T '69 1' -> 691",
+  "Table 2 row 12: T '68 1' -> 681",
+  "Table 2 row 25: T '71 3' -> 713",
+  "Table 2 row 30: T '72 1' -> 721",
+  "Table 2 row 34: T '71 8' -> 718",
+  "Table 2 row 36: T '71 8' -> 718",
+  "Table 2 row 42: P '91 .O' -> 91.0",
+  "Table 2 row 52: T '68 1' -> 681",
+  "Table 3 row 10: T 691 -> 697 and V 41.6 -> 47.6 (confirmed at 500 dpi)",
+  "Table 3 row 19: T 145 -> 745",
+  "Table 3 rows 5-6 and Table 2 last block: OCR split/misaligned rows reassembled from the image; species labels (HzO, CHI, HtO, HjO, NaCI, CaClz) are OCR garbles of H2O, CH4, NaCl, CaCl2"
+ ],
+ "extraction_notes": "The PDF is a 300 dpi 1-bit scan with an OCR text layer that splits digits ('65 1', '22 1 .o') and misreads some (610 for 670, 145 for 745, 691/41.6 for 697/47.6). All four tables were therefore transcribed completely from the page images (250 dpi, problem cells at 500 dpi) and then diffed number-by-number against the OCR text layer; every disagreement is listed in changes_after_image_check. Layout: in each isopleth the three species mol% values are printed beside the first three data rows; each is written as one label row ('H2O 87.19 CH4 12.65 NaCl 0.160') followed by the data rows (v2.1 rule 10), and group_rows set composition.constant.H2O / CH4 / NaCl (or CaCl2) in mol%. Row indices 0-based after the header, label rows included. Checks: every block's mol% sum is 100.00 +/- 0.005; wt% NaCl relative to water from the mol% = 0.57-0.60 (Table 1), 1.69-1.73 (Table 2), 8.6-8.7 (Table 3); CaCl2 0.52, 1.6, 6.4 wt%. Molar volume V decreases monotonically along every isopleth (checked); P rises along every isopleth except Table 1 row 2 (44.7 -> 44.6 MPa) and Table 2 row 9 (47.0 -> 46.5 MPa), both as printed (the text notes flat pressure minima at low salt and low CH4). Property set to 'other' (phase-boundary isopleth with molar volume); see the mapping's property_description.",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned page with OCR text layer; 15 cells corrected after the image check",
+ "pass2_diff": "2026-10-11: blind pass 2 (extract_pass2/10.1002_bbpc.19870910610, own layout) compared as multisets of numeric cells per table (diff_multiset.py): identical apart from values one pass fills down (T, mixture x) or keeps in label text (Masterton averages), whose counts match the block sizes. Pei brine compositions (mapping constants vs pass-2 table_1): identical."
+}

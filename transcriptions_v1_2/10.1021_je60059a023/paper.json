@@ -1,0 +1,36 @@
+{
+ "doi": "10.1021/je60059a023",
+ "first_author": "Millero",
+ "authors": "Frank J. Millero, Jonathan H. Knox",
+ "title": "Apparent molal volumes of aqueous NaF, Na2SO4, KCl, K2SO4, MgCl2, and MgSO4 solutions at 0 and 50 C",
+ "year": 1973,
+ "journal": "J. Chem. Eng. Data 18(4), 407-410",
+ "source_key": "MILLERO(1973)",
+ "experimental_method": "Magnetic float densitometer (110 cm3 cell, borosilicate float) giving density differences between salt solutions made by weight and pure water at 0 and 50 C; apparent molal volumes calculated from them.",
+ "uncertainties_stated": "Duplicate density measurements agree to 2 ppm; density precision within a run about 0.3 ppm (0.2 ml/mol in Phi_V in the most dilute solutions); bath temperature set and regulated to 0.001 C (platinum resistance thermometer calibrated by NBS).",
+ "quality_remarks": "PDF page 1 (journal p. 407) is shared: it carries the end of another article (Table IV, tri-n-dodecylamine excess enthalpies) beside the start of this paper; Table I of this paper is on PDF page 2 (journal p. 408). K2SO4 50C first row Phi_V printed 24.556 while the next rows are 34.743, 35.089 (probably a misprint of 34.556; kept as printed). Non-monotonic order in K2SO4 0C (0.014920 before 0.014715). 1969 atomic weights used. KCl measured only at 50 C (0 C data taken from Dunn, not in this table). Pure-water densities from Kell.",
+ "how_extracted": "pdf_text_layer",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   2
+  ],
+  "journal_pages": [
+   408
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II (infinite dilution partial molal volumes, from Redlich extrapolation, with literature values): derived",
+  "Table III (partial molal expansibilities at infinite dilution): derived",
+  "PDF page 1 table of excess enthalpies of tri-n-dodecylamine with hydrocarbons: belongs to another article"
+ ],
+ "row_counts": {
+  "Table I": "printed 198 data rows in 11 blocks, written 198 data rows plus 11 label rows"
+ },
+ "changes_after_image_check": [],
+ "extraction_notes": "Word coordinates (pdftotext -bbox) assigned to the four page columns, rows grouped by y; the one Phi_V column anomaly was checked on a 300 dpi crop; whole page image read and block row counts compared with the image (NaF 0C 9, Na2SO4 0C 35, MgCl2 0C 22, KCl 50C 7, MgCl2 50C 19, MgSO4 50C 15, NaF 50C 10, K2SO4 0C 20, MgSO4 0C 22, Na2SO4 50C 17, K2SO4 50C 22). The value cell is the authors' Phi_V (derived); the measured density difference is value2.",
+ "status": "verified_pass2",
+ "needs_pass2": false,
+ "needs_pass2_reason": "clean text layer, all cells consistent with the page image; scan of modest resolution but digits sharp",
+ "pass2_diff": "Table I: 198 rows, 593/594 identical; the one disagreement (m 0.446998 vs 0.446996, printed as subscript 6) arbitrated on a 600 dpi crop: 0.446996, pass 1 corrected."
+}

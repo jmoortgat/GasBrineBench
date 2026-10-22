@@ -1,0 +1,70 @@
+{
+ "table": "Table 3",
+ "page_journal": 56,
+ "title_as_printed": "(no caption; text: examples of the water vapor densities obtained from the condensation points in the pvt experiments)",
+ "footnotes_as_printed": "not captured (table has no footnotes)",
+ "property": "other",
+ "property_description": "Water density (g H2O per cc of vapour) of the CO2-H2O vapour phase at the condensation (dew) point in the pvt experiments, with the water partial pressure pw = P - pi; pi = initial CO2 pressure (atm) charged into the vessel before water injection. Rows with pi = 0 are pure water checks. Overall composition in these runs about 5 mol% CO2 (text p. 56, for tables 3 and 4).",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "pi = initial CO2 pressure in the dry vessel at T (atm); P = total pressure at the condensation point (not printed); pw = P - pi (atm). The text assumes CO2 and steam pressures are additive.",
+ "columns": {
+  "T": {
+   "col": "T C",
+   "unit": "C"
+  },
+  "P": {
+   "col": "pi (atm)",
+   "unit": "atm",
+   "basis": "gas_partial",
+   "what": "initial CO2 pressure (see pressure_note)"
+  },
+  "value": {
+   "col": "Sat. water-vapor density rho_v (g H2O/cc)",
+   "unit": "g_H2O_per_cm3_vapour",
+   "scale": 1,
+   "what": "mass of water per volume of the saturated vapour at the condensation point"
+  },
+  "value2": {
+   "col": "rho_v0 Pure Steam",
+   "unit": "g/cm3",
+   "from_literature": true,
+   "what": "density of pure saturated steam at T (source not named; Dorsey 1940 used elsewhere)"
+  },
+  "pw": {
+   "col": "pw = P - pi (atm)",
+   "unit": "atm",
+   "derived_by_authors": true,
+   "what": "measured total pressure at condensation point minus pi; '-' = not given"
+  },
+  "p0w": {
+   "col": "p0w (atm)",
+   "unit": "atm",
+   "from_literature": true,
+   "what": "normal saturation pressure of pure steam"
+  },
+  "ratio": {
+   "col": "rho_v/rho_v0",
+   "unit": "dimensionless",
+   "derived_by_authors": true
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure water + CO2, no salt"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "rho_v0, p0w (literature)",
+  "pw, ratio (derived)"
+ ],
+ "conversion_needs": [
+  "Water content as g H2O per cm3 of vapour; converting to y_H2O needs the CO2 amount in the vapour (not printed).",
+  "Rows with pi = 0 (329 C, 260 C) are pure-water runs (gas-free)."
+ ],
+ "notes": "Authors: steam densities unlikely more accurate than +-5 percent. Printed em dash in the pw column of the 370 row written as '-'. Rows kept in printed order (not monotonic in T)."
+}

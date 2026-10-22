@@ -1,0 +1,51 @@
+{
+ "table": "Table I",
+ "page_journal": 499,
+ "title_as_printed": "Density, Apparent Molar Volume, and Molar Conductance of Aqueous Magnesium Chloride at 298.15 K (printed 298.15 deg K)",
+ "footnotes_as_printed": {
+  "a": "Values in parentheses are those of Wirth and Bangert (ref. 15)."
+ },
+ "property": "rho",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (presumably atmospheric)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "298.15"
+  },
+  "P": {
+   "col": "",
+   "unit": "",
+   "constant": "",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "rho (g-cm^-3)",
+   "unit": "g/cm3"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "MgCl2": {
+    "col": "m (mole-kg^-1)",
+    "unit": "mol/kg"
+   }
+  },
+  "constant": {},
+  "other_species": "water (doubly distilled)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [
+  "c (mole-liter^-1) molarity, calculated by authors from m and density",
+  "phi_v apparent molar volume, calculated by authors (this work) with limiting value 14.49 cm3/mol",
+  "phi_v Wirth and Bangert (literature values printed in parentheses)",
+  "Lambda_m molar conductance"
+ ],
+ "conversion_needs": [],
+ "notes": "13 of the 28 rows have no density (printed as a dash) and carry only conductance; the dash cells are written empty and the rows kept. Printed subscript digits (extra last digit) are written as normal digits (e.g. 0.01056 with subscript 3 -> 0.010563). The printed parenthesised values in the phi_v column are split into their own column. Density of pure water used by authors: 0.997048 g/cm3."
+}

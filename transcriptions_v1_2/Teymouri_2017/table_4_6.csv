@@ -1,0 +1,17 @@
+P-bar,y_w - ppm
+T = 5 C; Hydrate Dissociation Pressure - bar: 945.64 (printed without a label in this table),
+20.81,494.19
+32.12,431
+205.36,1588
+321.70,1663
+AAD % CPA 12.03; PC-SAFT 20.64,
+T = 0 C; Hydrate Dissociation Pressure - bar: 305.86 (printed without a label in this table),
+22.19,384
+20.32,428
+96.53,1313
+207.50,1379
+317.98,1430
+AAD % CPA 17.43; PC-SAFT 17.43,
+T = -5 C; Hydrate Dissociation Pressure - bar: 25.18 (printed without a label in this table),
+22.46,276
+AAD % CPA 22.71; PC-SAFT 30.13,

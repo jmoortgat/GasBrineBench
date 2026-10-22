@@ -1,0 +1,49 @@
+{
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "not stated (ordinary pressure; pycnometer and dilatometer work at 25 C)",
+ "property": "rho",
+ "volume_basis": "solution",
+ "volume_basis_evidence": "concentration column headed 'c/mole l.-1' (mole per litre)",
+ "gas_basis": "not_applicable",
+ "table": "Table 1",
+ "page_journal": 2350,
+ "title_as_printed": "Densities and apparent molar volumes of concentrated electrolyte solutions",
+ "footnotes_as_printed": "not captured (none on the table)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "d4 25",
+   "unit": "g_per_cm3",
+   "what": "density of the solution at 25 C (printed d4^25; author used 0.99707 g/ml for water at 25 C so the number is the density in g/ml); the measured quantity (two 50 ml Ostwald pycnometers, duplicates agree within 3 parts in 1e5)"
+  }
+ },
+ "composition": {
+  "basis": "molarity",
+  "per_row": {
+   "salt_from_column": {
+    "col": "solution",
+    "parse": "text after the comma gives the salt formula (HCl, KNO3, K2SO4, Na2SO4, MgCl2, CaCl2, BaCl2, LaCl3); the number before the comma is the stock-solution label",
+    "conc": {
+     "col": "c/mole l.-1",
+     "unit": "mol/L"
+    }
+   }
+  },
+  "constant": {},
+  "other_species": "in-scope salts: Na2SO4, MgCl2, CaCl2; out of the six-ion set: HCl, KNO3, K2SO4, BaCl2, LaCl3 (rows kept)"
+ },
+ "skip_rows": [],
+ "extra_unmapped": [
+  "phi_V/ml mole-1 (apparent molar volume, calculated by the author from the density; derived_by_authors)"
+ ],
+ "conversion_needs": [
+  "molarity (mol per litre of solution) to molality needs the density in column d4 25 (a molar mass is also needed)"
+ ],
+ "notes": "Subscript digits in the printed c and d4 25 columns (last significant digit written as a subscript) are written here as ordinary trailing digits: 0.8362 sub 4 -> 0.83624, 1.01179 sub 9 -> 1.011799. Text layer dropped the density column and misread two cells (row 11 MgCl2 c 0.69282 -> 0.69182 and row 16 CaCl2 phi_V 22.46 -> 21.46, both checked on the image). 27 rows."
+}

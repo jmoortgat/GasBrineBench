@@ -1,10 +1,10 @@
 # Supplementary tier
 
-`supplementary_measurements.csv` holds **5,174 verified measurements from 107
+`supplementary_measurements.csv` holds **7,803 verified measurements from 175
 tables** that the benchmark families (`data/*.csv`) cannot store without a
 model, an assumed density or an assumed pressure. They were extracted, checked
 and mapped by the same pipeline as the benchmark rows (see `CHANGELOG.md`,
-v1.2.1) and are published so that nothing verified is lost. **They are not
+v1.2.1 and v1.2.2) and are published so that nothing verified is lost. **They are not
 benchmark data**: they are not scored, carry no fit/test tag, and are not read
 by the `gasbrinebench` loader.
 
@@ -26,10 +26,10 @@ a user may want to choose.
 | column | meaning |
 |---|---|
 | `dataset_id`, `source`, `doi` | the block, the citation key (resolves in `SOURCES.md`), the paper's DOI |
-| `property_class` | one of the 13 classes below |
+| `property_class` | one of the 14 classes below |
 | `property_native` | the extraction's own property name |
 | `gas` | gas code when the measurement concerns a gas, else empty |
-| `T_K`, `P_bar` | temperature [K], pressure [bar]; `P_bar` is empty only in the classes conventionally reported without one (isopiestic pairs, enthalpies, water activities) |
+| `T_K`, `P_bar` | temperature [K], pressure [bar]; `P_bar` is empty only in the classes conventionally reported without one (isopiestic pairs, enthalpies, water activities), and on densities and viscosities measured at room pressure whose paper states no pressure (tag `pressure-unstated`) |
 | `solutes_mol_per_kg_water` | `Salt:molality;Salt:molality`, built only when the paper's basis is a molality, a mass fraction or a mole fraction of salts of known molar mass; otherwise empty |
 | `composition_as_printed` | the composition exactly as the mapping records it: basis, species, values and units |
 | `value`, `value_unit`, `value_what` | the measured number, the paper's unit, and what the column is |
@@ -43,20 +43,21 @@ a user may want to choose.
 
 | class | rows | what |
 |---|---:|---|
-| `isopiestic_pair` | 1,367 | molalities of two solutions in isopiestic equilibrium (`value`: test solution, `value2`: reference salt); no osmotic coefficient is computed |
-| `gas_solubility_coefficient` | 966 | Ostwald and Bunsen coefficients, whose conversion needs a gas partial pressure the paper does not give |
-| `apparent_molar_volume` | 706 | apparent and partial molar volumes [cm3/mol] |
-| `gas_solubility_other_basis` | 468 | solubility as g per 100 g solvent, cm3 per litre of solution, mass percent, mole fraction on a basis the mapping states |
+| `isopiestic_pair` | 1,513 | molalities of two solutions in isopiestic equilibrium (`value`: test solution, `value2`: reference salt); no osmotic coefficient is computed |
+| `gas_solubility_coefficient` | 1,035 | Ostwald and Bunsen coefficients, whose conversion needs a gas partial pressure the paper does not give |
+| `apparent_molar_volume` | 744 | apparent and partial molar volumes [cm3/mol] |
+| `gas_solubility_other_basis` | 1,147 | solubility as g per 100 g solvent, cm3 per litre of solution, mass percent, mole fraction on a basis the mapping states |
 | `enthalpy_of_dilution` | 391 | enthalpies of dilution, with the two molalities |
-| `density` | 358 | densities of solutions of salts outside the six-ion set, and density differences |
-| `mixture_volume` | 233 | molar and excess volumes of water + gas mixtures |
+| `density` | 1,293 | densities of solutions of salts outside the six-ion set, and density differences |
+| `mixture_volume` | 320 | molar and excess volumes of water + gas mixtures |
 | `other` | 203 | salt content of steam, hydrocarbon solubility in ppm by mass, fluid composition at the end of high-temperature runs |
 | `compression` | 164 | bulk compression and dv/dP |
 | `enthalpy_of_dissolution` | 87 | enthalpies of dissolution of salts in water |
-| `heat_capacity` | 74 | specific and apparent molar heat capacities, in the paper's units |
-| `water_activity` | 39 | water activities and vapor pressures of salt solutions at high temperature |
-| `henry_constant` | 37 | Henry constants as pressure per mole fraction |
+| `heat_capacity` | 208 | specific and apparent molar heat capacities, in the paper's units |
+| `water_activity` | 77 | water activities and vapor pressures of salt solutions at high temperature |
+| `henry_constant` | 125 | Henry constants as pressure per mole fraction |
 | `water_vapour_enhancement` | 14 | enhancement factor of water in a gas |
+| `viscosity` | 482 | viscosities of solutions of salts outside the six-ion set |
 
 Excluded even from this tier: critical loci and phase boundaries, synthetic
 filling compositions, gas-phase mixtures with no stated composition, and every

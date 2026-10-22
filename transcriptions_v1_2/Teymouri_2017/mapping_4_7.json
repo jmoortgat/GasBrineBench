@@ -1,0 +1,93 @@
+{
+ "table": "Table 4.7",
+ "page_journal": 163,
+ "page_pdf": 194,
+ "title_as_printed": "Experimental results of methane water content at elevated temperatures",
+ "footnotes_as_printed": "none",
+ "property": "y_h2o",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "equilibrium cell pressure (+-0.7 bar), held constant during sampling by hydraulic fluid behind the piston; absolute or gauge not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "set by group_rows (block header 'T = 150 C +-0.1 C' etc.)"
+  },
+  "P": {
+   "col": "P-bar +- 0.7",
+   "unit": "bar",
+   "basis": "total"
+  },
+  "value": {
+   "col": "y_w - ppmV",
+   "unit": "ppmV_water_in_gas",
+   "scale": 1e-06,
+   "what": "water content (y_w, ppm by volume) of the methane-rich gas phase"
+  },
+  "uncertainty": {
+   "col": "y_w uncertainty +- %",
+   "unit": "percent_relative"
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "deionized water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    5,
+    6,
+    13,
+    14,
+    17
+   ],
+   "reason": "temperature block label rows and 'AAD %' summary rows"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "150",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "100",
+     "unit": "C"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "50",
+     "unit": "C"
+    }
+   ]
+  }
+ ],
+ "row_regime_overrides": [],
+ "extra_unmapped": [
+  "AAD % CPA / PC-SAFT per block (authors' model deviations)"
+ ],
+ "conversion_needs": [
+  "ppmV to mole fraction (x1e-6)"
+ ],
+ "notes": "Side-by-side blocks (150, 100, 50 C) stacked left first. Each printed water content carries a '+-x.xx%' entry; the '+-' and '%' were moved to the header and the number written in its own column. Method (text pp.143-146, 162): 600 ml titanium piston cell in a Chandler PVT oven, >=24 h equilibration, sample through a heated line (200 C) and heated six-port valve to an HP 5890 GC (TCD for water and CO2, FID for methane; Poropak-Q column; calibration in number of moles, Figs 4.8-4.10). Text says 34.5 to 827.4 bar, but the 50 C block starts at 27.6 bar (as printed)."
+}

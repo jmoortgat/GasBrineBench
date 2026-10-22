@@ -1,0 +1,58 @@
+{
+ "doi": "10.1016/s0031-8914(36)80353-x",
+ "first_author": "Michels, A.",
+ "authors": "A. Michels, J. Gerver, A. Bijl",
+ "year": 1936,
+ "journal": "Physica 3, 797-808",
+ "title": "The influence of pressure on the solubility of gases",
+ "source_key": "MICHELS(1936)",
+ "experimental_method": "Synthetic pressure-decline method: a 300 cc stainless-steel tube with the solution and a 10 cc gas volume separated by a valve, rocked for hours in a thermostat (+-0.001 deg); dissolved CH4 from the pressure drop using CH4 isotherm data of Michels and Nederbragt; spring manometers calibrated against a pressure balance.",
+ "uncertainties_stated": "Manometer accuracy 0.02, 0.1 and 1 atm (ranges 50, 250, 1000 atm); solubility accuracy 'never reach 1%' (i.e. better than 1%) and occasionally of the order of 5% (text p. 801, wording ambiguous); at 100 C 1%, 125 C 1.5% (garbled in scan), 150 C 2% after the vapour correction (p. 804).",
+ "quality_remarks": "Authors say not much weight was given to highest accuracy (general survey). For 100-150 C a correction for water in the gas phase was estimated by analogy with N2 data (Bartlett). The solubility unit is mol CH4 per mol H2O, not mole fraction. Pressure unit not printed in the table (atm from text and figures). One printed value lacks its decimal point: NaCl 5.4 n 100 C 141.5 atm '0 425' (written 0.425). The same 'n' notation for the non-electrolytes in Table II (e.g. 'Glucose 1n') corresponds to '1 gr. m. per L' in Table I.",
+ "how_extracted": "image_read (scanned PDF; text layer garbled and used only as a layout aid); every cell read from 250/500 dpi renders with 900 dpi zooms of doubtful digits",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4
+  ],
+  "journal_pages": [
+   800
+  ]
+ },
+ "not_extracted_tables": [
+  {
+   "table": "Table I, H2O blocks (25 C 9 rows; 50, 75, 100, 125, 150 C 6 rows each; 39 rows)",
+   "reason": "water rows already in GasBrineBench (MICHELS(1936)); not re-extracted"
+  },
+  {
+   "table": "Table II (constants Delta v and F of the solubility formula)",
+   "reason": "derived by the authors from Table I (fitted)"
+  },
+  {
+   "table": "Table III (Delta v for He, H2, N2, CH4 in water and oil)",
+   "reason": "derived; partly from other authors' data"
+  },
+  {
+   "table": "Table IV (F, Delta v and volume contraction for 2.7 n solutions)",
+   "reason": "derived / literature contraction values"
+  }
+ ],
+ "row_counts": {
+  "table_1": {
+   "printed_data_rows_total": 178,
+   "printed_water_rows_not_written": 39,
+   "printed_non_water": 139,
+   "written_data_rows": 139,
+   "label_rows": 20,
+   "per_block": "NaCl 25C: 1n 5, 1.7n 4, 2.5n 8, 2.7n 4, 3.2n 4, 4n 4, 5.4n 8; 2.7n LiCl 4, KCl 4, CaCl2 4, NaBr 4, NaJ 4; cane sugar 1: 4, 2: 5; glucose 1: 4, 2: 5; formaldehyde 2: 4; NaCl 2.5n 50/75/100/125/150 C 6 each; NaCl 5.4n 50/75/100/125/150 C 6 each"
+  }
+ },
+ "changes_after_image_check": [
+  "All values read from the image directly; text layer was garbled (e.g. KCl '143.7' in text layer -> 148.7 on image; NaCl 2.7 n 150.6 row text '0.9 8' -> 0.98; NaCl 5.4n 100C '0 425' -> 0.425, missing printed decimal point)."
+ ],
+ "extraction_notes": "Concentration printed as italic 'n' (normal; text: '2,7 N solutions'). 'NaJ' = NaI (German notation), kept as printed in the label. Sanity checks (script): within every isothermal block P and alpha increase strictly; alpha decreases with NaCl normality at matched P at 25 C; NaCl 5.4 n alpha decreases monotonically with T at ~50 atm (0.195 -> 0.173) as printed. Non-electrolyte rows (cane sugar, glucose, formaldehyde) and LiCl, NaBr, NaI rows are kept; the builder decides scope. In-scope salts not yet in the database: NaCl (1-5.4 n, 25-150 C), KCl 2.7 n, CaCl2 2.7 n (25 C).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "scanned PDF, garbled text layer; all cells read from the image",
+ "pass2_diff": "2026-10-11: blind pass 2 diffed row by row in printed order (P and alpha; t is filled from block labels in pass 1): 139 rows, 278 cells, 0 disagreements. diff_passes.py could not be used as is because block labels repeat (NaCl 2.5 n x3, NaCl 5.4 n x2). Coordinator checked the pass-2 query (NaCl 2.5 n, 125 C, 179.8 bar) on the 300 dpi image: 0.94 as written; the '1 24' without decimal point is in the water block, not extracted."
+}

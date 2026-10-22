@@ -1,0 +1,58 @@
+{
+ "doi": "10.1007/bf00648141",
+ "first_author": "Dedick",
+ "year": 1990,
+ "journal": "Journal of Solution Chemistry 19(4), 353-375",
+ "title_as_printed": "The PVT Properties of Concentrated Aqueous Electrolytes IX. The Volume Properties of KCl and K2SO4 and their Mixtures with NaCl and Na2SO4 as a Function of Temperature (Dedick, Hershey, Sotolongo, Stade, Millero)",
+ "source_key": "DEDICK(1990)",
+ "experimental_method": "Vibrating-tube densimeters (Sodev flow densimeter at and below 25 C, Mettler/Parr DMA 602 HT above 25 C) calibrated with water, standard seawater and nitrogen; densities of KCl and K2SO4 solutions from dilute to near saturation at 5-95 C in 10 C steps and of six binary mixtures of KCl, K2SO4, NaCl, Na2SO4 at I = 1.95 mol/kg at 5, 25, 55, 95 C.",
+ "uncertainties_stated": "Bath temperatures set to +-0.002 C (HP quartz thermometer, IPTS-68), 25 C bath +-0.003 C, Mettler/Parr baths +-0.01 C; standard deviations of the density-difference fits 30 ppm (KCl) and 32 ppm (K2SO4).",
+ "quality_remarks": "Some table entries look like misprints (K2SO4 Table I: 45 C m 0.16143, 0.01015; 65 C m 0.02912; 75 C m 0.56016; Table VII 55 C KCl-Na2SO4 y3 0.5028); kept as printed. Abstract says I = 2.0, table title and text say 1.95. Molality of KCl and K2SO4 solutions was derived from 25 C densities using equations of state fitted to literature and this study's data.",
+ "how_extracted": "image_read",
+ "verified_against_page_image": {
+  "verified": true,
+  "pdf_pages": [
+   4,
+   5,
+   13,
+   14
+  ],
+  "journal_pages": [
+   356,
+   357,
+   365,
+   366
+  ]
+ },
+ "not_extracted_tables": [
+  "Table II: coefficients of density equation (fitted)",
+  "Table III, Table IV: Pitzer coefficients of specific volume fits (fitted)",
+  "Table V, Table VI: infinite-dilution partial molal volumes of KCl and K2SO4 (derived, comparison with literature)",
+  "Table VIII: v0, v1 parameters of volume of mixing (fitted)",
+  "Table IX: temperature effect on cross square rule, maximum Delta V_m (derived)",
+  "Table X: measured densities compared with calculated values with and without Delta V_m (comparison/derived)",
+  "Table XI: Pitzer theta interaction coefficients (fitted)"
+ ],
+ "row_counts": {
+  "Table I": "printed 221 data rows (KCl 118, K2SO4 103); written 221 plus 2 salt label rows and 20 temperature label rows",
+  "Table VII": "printed 223 data rows; written 223 plus 6 mixture label rows and 24 temperature label rows"
+ },
+ "changes_after_image_check": [
+  "table_1 KCl 25 C m 4.40058: 167566 -> 167.566 (text layer dropped the decimal point)",
+  "table_1 KCl 25 C m 2.36692: text 226692 -> 2.36692",
+  "table_1 KCl 65 C m 3.42506: text 1321940 -> 132.940",
+  "table_1 KCl 85 C m 3.50912: text 135306 -> 135.706",
+  "table_1 KCl 85 C m 1.23060: text 113060 -> 1.23060",
+  "table_1 K2SO4 35 C m 0.49574: text 63,040 -> 64.040",
+  "table_1 K2SO4 25 C m 0.24650: text 33.I40 -> 33.140",
+  "table_1 K2SO4 45 C m 0.45271: text 0.452'71 -> 0.45271",
+  "table_1 K2SO4 85 C m 0.51712: text 65A00 -> 65.400",
+  "table_1 K2SO4 85 C m 0.25913: text 33.723, -> 33.724",
+  "table_1 many cells: comma used for decimal point in text layer -> full stop"
+ ],
+ "extraction_notes": "Table I (KCl page 356, K2SO4 page 357) and Table VII (pages 365-366) written by reading the page images; Table VII was then compared to the text layer by a token script and agrees in every cell. Table I text layer needed the corrections listed. Blocks stacked with salt and temperature label rows; temperature given in each block heading (C); no pressure stated. Table VII has the footnote 'Units: g-cm-3'. The PDF contains only this paper (22 pages, journal pp. 353-375).",
+ "status": "verified_pass2",
+ "needs_pass2": true,
+ "needs_pass2_reason": "Table I text layer needed 10+ corrections after the image check; pass 2 required by SPEC convention 14.",
+ "pass2_diff": "Tables I and VII: 442/442 and 446/446 numbers identical (pass 2 named the second table by its printed number VII)."
+}

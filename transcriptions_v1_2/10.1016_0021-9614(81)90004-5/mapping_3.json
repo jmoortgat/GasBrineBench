@@ -1,0 +1,107 @@
+{
+ "table": "Table 3",
+ "page_journal": 1057,
+ "title_as_printed": "Experimental values of Ps/Pw, and calculated values of cp,s/cp,w and Cp,phi for NaCl solutions at other pressures",
+ "footnotes_as_printed": {
+  "a": "p is the pressure of the experiment.",
+  "b": "rho_s/rho_w is the ratio of the density of the solution to the density of water at 298.15 K and p. (refs 12, 13)",
+  "c": "T is the initial temperature of the experiment. In all experiments DeltaT calculated from the power input, the heat capacity of water, and the heat losses (f) is (2+/-0.2) K."
+ },
+ "property": "phi_Cp",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "flow calorimeter; pressure of the experiment printed in each block label (1.0 MPa at 320.55 K, 10 MPa at 572.14 K)",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "K",
+   "constant": "from block label",
+   "note": "initial temperature; temperature rise (2+/-0.2) K (footnote c)"
+  },
+  "P": {
+   "col": "",
+   "unit": "MPa",
+   "basis": "unspecified",
+   "constant": "from block label"
+  },
+  "value": {
+   "col": "Cp,phi J/K/mol",
+   "unit": "J/(mol K)",
+   "what": "apparent molar heat capacity of NaCl from cp,s/cp,w via eq (4)",
+   "derived_by_authors": true
+  },
+  "value2": {
+   "col": "cp,s/cp,w",
+   "unit": "dimensionless",
+   "what": "ratio of specific heat capacity of solution to water at T and p, eq (6)",
+   "derived_by_authors": true
+  },
+  "value3": {
+   "col": "Ps/Pw",
+   "unit": "dimensionless",
+   "what": "measured heater power ratio, solution to water (primary measured quantity)"
+  },
+  "value4": {
+   "col": "rho_s/rho_w",
+   "unit": "dimensionless",
+   "what": "density ratio solution/water at 298.15 K and p, from the literature equations (Fine and Millero; Chen, Emmet and Millero) used in eq (6)",
+   "from_literature": true
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {
+   "NaCl": {
+    "col": "m mol/kg",
+    "unit": "mol_per_kg_water"
+   }
+  },
+  "constant": {},
+  "other_species": "none; NaCl in water"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    6
+   ],
+   "reason": "temperature/pressure label rows (also carried by group_rows)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "320.55",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "1.0",
+     "unit": "MPa"
+    }
+   ]
+  },
+  {
+   "label_row": 6,
+   "sets": [
+    {
+     "path": "T.constant",
+     "value": "572.14",
+     "unit": "K"
+    },
+    {
+     "path": "P.constant",
+     "value": "10",
+     "unit": "MPa"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Footnotes c (on T) and a (on p) are printed in the first block label only; recorded as note T:c;p:a. Row 10 (572.14 K, 3.0000 mol/kg) cp,s/cp,w is printed 0.07330, an evident misprint: recomputing eq (6) from the printed Ps/Pw, f = 1.05 and rho_s/rho_w gives 0.70330, which also reproduces the printed Cp,phi -328.82; kept as printed. Row 6 (572.14 K, 0.0996 mol/kg): the printed ratio 0.97925 equals 1 + f(Ps/Pw - 1) without the density division; the printed Cp,phi -1084.15 corresponds to the density-corrected ratio 0.97534. Kept as printed; flagged."
+}

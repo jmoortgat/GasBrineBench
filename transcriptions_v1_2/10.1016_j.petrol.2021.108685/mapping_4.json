@@ -1,0 +1,61 @@
+{
+ "table": "Table 4",
+ "page_journal": 5,
+ "title_as_printed": "Solubility of the mixture of CO2 and CH4 in water (the mixing ratio of CO2 and CH4 is 1:1).",
+ "footnotes_as_printed": {
+  "a": "u(xCH4) is the standard uncertainties of CH4 solubility.",
+  "b": "u(xCO2) is the standard uncertainties of CO2 solubility."
+ },
+ "property": "solubility_x",
+ "gas": "ch4",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "column headed P/MPa; paper does not say whether total or partial; gas is a CO2+CH4 mixture, mixing ratio 1:1 (feed gas CH4 >=49.9 +-2% balance CO2)",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "P/MPa",
+   "unit": "MPa",
+   "basis": "unspecified"
+  },
+  "value": {
+   "col": "xCH4 x 10^3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001,
+   "gas": "ch4"
+  },
+  "value2": {
+   "col": "xCO2 x 10^2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.01,
+   "gas": "co2",
+   "what": "CO2 solubility from the same experiment"
+  },
+  "uncertainty": {
+   "col": "u(xCH4) x 10^3",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.001
+  },
+  "uncertainty2": {
+   "col": "u(xCO2) x 10^2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 0.01
+  }
+ },
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "pure deionized water; gas phase composition not measured, nominal 1:1 CO2:CH4 mixing ratio (gas phase composition per row not reported)"
+ },
+ "skip_rows": [],
+ "group_rows": [],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Temperature is printed only on the first row of each block; filled down in the CSV (SPEC v2.1 item 3). Footnote letters a, b are on headers u(xCH4) and u(xCO2) only. Authors' own mole fraction definition x=n_g/(n_l+n_g). Mixture water solubility; gas phase molar composition per row not tabulated.",
+ "volume_basis": "not_applicable",
+ "hold_table": "1:1 CO2+CH4 gas mixture; per-row gas-phase composition not given; a pure-gas row at total pressure would be wrong (audit 2026-10-02)"
+}

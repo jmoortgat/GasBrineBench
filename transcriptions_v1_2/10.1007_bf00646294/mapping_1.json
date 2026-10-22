@@ -1,0 +1,327 @@
+{
+ "table": "Table I",
+ "page_journal": 840,
+ "title_as_printed": "Experimental Densities of the Mixtures of the Major Sea Salts at Ionic Strengths of 1.0 and 3.0 at 25 C",
+ "footnotes_as_printed": {
+  "a": "In order to conserve space only one set of measurements considered representative of the duplicate or triplicate measured sets are presented in this table."
+ },
+ "property": "rho_diff",
+ "gas": "",
+ "regime": "",
+ "temperature_scale": "IPTS-68",
+ "pressure_note": "not stated",
+ "columns": {
+  "T": {
+   "col": "",
+   "unit": "C",
+   "constant": "25"
+  },
+  "value": {
+   "col": "10^3 Delta d (g cm^-3)",
+   "unit": "g/cm3",
+   "scale": 0.001,
+   "what": "density of the mixed solution minus density of pure water at 25 C (Delta d = d - d0; d0 from Kell)"
+  }
+ },
+ "composition": {
+  "basis": "ionic_strength",
+  "per_row": {
+   "y3": {
+    "col": "y3 (ionic strength fraction of electrolyte 3)",
+    "unit": "ionic_strength_fraction_of_salt_3"
+   }
+  },
+  "constant": {},
+  "other_species": "Binary mixtures of two of NaCl, Na2SO4, MgSO4, MgCl2 at constant molal ionic strength I = 1.0 or 3.0 (mol/kg water, molal ionic strength). y3 = w3 m3 / (w3 m3 + w2 m2), w = 1, 3, 4 for 1-1, 2-1, 2-2 electrolytes; the first-named salt is electrolyte (2), the second electrolyte (3). y3 = 0 and 1.0 rows are the pure binary solutions at that I.",
+  "ionic_strength_rule": {
+   "I": "ionic_strength",
+   "y": "y3",
+   "salt_y": "salt_3",
+   "salt_other": "salt_2"
+  }
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    14,
+    28,
+    40,
+    55,
+    70,
+    85,
+    100,
+    115,
+    130,
+    145,
+    160
+   ],
+   "reason": "mixture and ionic-strength block labels"
+  },
+  {
+   "rows": [
+    11,
+    12,
+    13,
+    25,
+    26,
+    27,
+    37,
+    38,
+    39,
+    52,
+    53,
+    54,
+    67,
+    68,
+    69,
+    82,
+    83,
+    84,
+    97,
+    98,
+    99,
+    112,
+    113,
+    114,
+    127,
+    128,
+    129,
+    142,
+    143,
+    144,
+    157,
+    158,
+    159,
+    172,
+    173,
+    174
+   ],
+   "reason": "summary rows: actual ionic strength of the stock-solution endpoints I(2), I(3) and mean I"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 14,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 28,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 40,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 55,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 70,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 85,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 100,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 115,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 130,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "NaCl"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "MgSO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 145,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 160,
+   "sets": [
+    {
+     "path": "composition.constant.salt_2",
+     "value": "MgCl2"
+    },
+    {
+     "path": "composition.constant.salt_3",
+     "value": "Na2SO4"
+    },
+    {
+     "path": "composition.constant.ionic_strength",
+     "value": "3.0",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "molality of each salt from y3, I and valence factors (m2 = I(1-y3)/w2, m3 = I y3/w3); no per-salt molalities printed",
+  "value is a density difference: needs Kell pure-water density at 25 C; scale 1e-3 applied"
+ ],
+ "notes": "Side-by-side blocks (I = 1.0 left, I = 3.0 right) are stacked, left first, one label row per mixture and I. Summary rows (I(2), I(3), Mean I) printed beneath each block are kept as rows and skipped; they give the true ionic strength of the two end-point solutions of the series. Printed '1.0' endpoints are written as printed."
+}

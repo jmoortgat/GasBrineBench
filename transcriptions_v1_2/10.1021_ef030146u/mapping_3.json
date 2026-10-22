@@ -1,0 +1,129 @@
+{
+ "table": "Table 3",
+ "page_journal": 398,
+ "title_as_printed": "Experimental Content of Water and Dew-Point Temperatures and Pressures for {Ethane + Carbon Dioxide + rho_water} Mixtures",
+ "footnotes_as_printed": "not captured (none printed); mixture compositions in Table 1 of the paper: mixture 1 CO2 20 / CH4 80, mixture 2 CO2 70 / CH4 30, mixture 3 CO2 45 / C2H6 55, mixture 4 CO2 95 / C2H6 5 mol %, each +/- 1",
+ "property": "water_content_mass",
+ "gas": "co2-c2h6",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "dew-point pressure recorded at the chilled-mirror inlet (PI6), set by a regulator valve; paper does not say absolute or gauge; 'pressure, P (10^5 Pa)'",
+ "columns": {
+  "T": {
+   "col": "temp, T (K)",
+   "unit": "K",
+   "what": "dew-point temperature of the gas of the given water content at pressure P"
+  },
+  "P": {
+   "col": "pressure, P (10^5 Pa)",
+   "unit": "bar",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "",
+   "unit": "kg_per_m3_normal",
+   "scale": 1e-06,
+   "what": "water content rho_water, in kg m-3(n), printed only in each block label as 'x 10^-6 kg m-3(n)'; set via group_rows value.constant; measured by Karl Fischer titration at the condenser outlet at atmospheric pressure"
+  }
+ },
+ "volume_basis": "not_stated",
+ "volume_basis_evidence": "printed unit 'kg m-3(n)'; the paper does not define '(n)' (normal conditions) nor whether the volume is of dry gas or humid gas",
+ "gas_basis": "not_applicable",
+ "composition": {
+  "basis": "none",
+  "per_row": {},
+  "constant": {},
+  "other_species": "gas phase: dry CH4/CO2 (Table 2) or C2H6/CO2 (Table 3) gravimetric mixtures with water; gas composition per block in group_rows path gas_composition"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    16,
+    27,
+    44
+   ],
+   "reason": "block label rows (mixture and water content)"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c2h6"
+    },
+    {
+     "path": "gas_composition",
+     "value": "CO2 45 +/- 1 / C2H6 55 +/- 1 mol %"
+    },
+    {
+     "path": "value.constant",
+     "value": "661.5",
+     "unit": "kg_per_m3_normal_x1e-6"
+    }
+   ]
+  },
+  {
+   "label_row": 16,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c2h6"
+    },
+    {
+     "path": "gas_composition",
+     "value": "CO2 45 +/- 1 / C2H6 55 +/- 1 mol %"
+    },
+    {
+     "path": "value.constant",
+     "value": "1274.6",
+     "unit": "kg_per_m3_normal_x1e-6"
+    }
+   ]
+  },
+  {
+   "label_row": 27,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c2h6"
+    },
+    {
+     "path": "gas_composition",
+     "value": "CO2 95 +/- 1 / C2H6 5 +/- 1 mol %"
+    },
+    {
+     "path": "value.constant",
+     "value": "728.8",
+     "unit": "kg_per_m3_normal_x1e-6"
+    }
+   ]
+  },
+  {
+   "label_row": 44,
+   "sets": [
+    {
+     "path": "gas",
+     "value": "co2-c2h6"
+    },
+    {
+     "path": "gas_composition",
+     "value": "CO2 95 +/- 1 / C2H6 5 +/- 1 mol %"
+    },
+    {
+     "path": "value.constant",
+     "value": "1285.2",
+     "unit": "kg_per_m3_normal_x1e-6"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [
+  "water content in kg m-3(n) needs the normal-condition definition (T, p) and dry/humid basis to become a mole fraction",
+  "dew points are one T-P curve per water content; builder must treat T,P as the dew-point conditions for that fixed water content"
+ ],
+ "notes": "Each block is printed as two side-by-side column pairs; stacked left pair first, then right pair (T and P increase continuously across the stack). Rows with T below 273.15 K (rows listed in paper.json) are dew points below the ice point (below_273K; water dew/frost point; paper does not say liquid or solid). Hydrate and liquid hydrocarbon phases were avoided according to the paper. below_273K rows: [1, 2, 3, 4, 5, 17, 18, 19, 20, 28, 29, 30, 31, 32, 33, 34, 45, 46, 47, 48]"
+}

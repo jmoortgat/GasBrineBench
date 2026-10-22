@@ -1,0 +1,97 @@
+{
+ "table": "Table 2",
+ "page_journal": 102,
+ "title_as_printed": "Bubble point data of the system CO2 + H2O + NaCl.",
+ "footnotes_as_printed": {
+  "u": "Standard uncertainties u are u(T) = 0.15 K, u(x) = 0.0002 and u(p) = 0.004 MPa. u(m) = 0.005 mol kg-1."
+ },
+ "property": "solubility_x",
+ "gas": "co2",
+ "regime": "",
+ "temperature_scale": "not stated",
+ "pressure_note": "bubble-point pressure (synthetic method: pressure at which the last CO2 bubble disappears at fixed T and fixed overall composition); transducer in cell; absolute/gauge not stated",
+ "columns": {
+  "T": {
+   "col": "T/K",
+   "unit": "K"
+  },
+  "P": {
+   "col": "p/MPa",
+   "unit": "MPa",
+   "basis": "saturation"
+  },
+  "value": {
+   "col": "x_CO2",
+   "unit": "mole_fraction_gas_in_aqueous_phase",
+   "scale": 1
+  },
+  "uncertainty": {
+   "col": "",
+   "unit": "mole_fraction",
+   "constant": "0.0002"
+  }
+ },
+ "composition": {
+  "basis": "molality",
+  "per_row": {},
+  "constant": {},
+  "other_species": "none"
+ },
+ "skip_rows": [
+  {
+   "rows": [
+    0,
+    13,
+    26,
+    38
+   ],
+   "reason": "label rows giving mNaCl in mol kg-1"
+  }
+ ],
+ "group_rows": [
+  {
+   "label_row": 0,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.25",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 13,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "0.50",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 26,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "1.0",
+     "unit": "mol/kg"
+    }
+   ]
+  },
+  {
+   "label_row": 38,
+   "sets": [
+    {
+     "path": "composition.constant.NaCl",
+     "value": "2.0",
+     "unit": "mol/kg"
+    }
+   ]
+  }
+ ],
+ "extra_unmapped": [],
+ "conversion_needs": [],
+ "notes": "Label rows 'mNaCl = ... mol kg-1' set NaCl molality for following rows. Molality basis (mol NaCl per kg water) as labelled; salt-free vs total basis of x_CO2 not stated. Same side-by-side to stacked conversion as Table 1.",
+ "gas_basis": "not_stated"
+}
